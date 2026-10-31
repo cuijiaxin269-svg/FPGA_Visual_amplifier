@@ -1,0 +1,45 @@
+# A constant-only gate ECO: reuse scheduling, arithmetic, AXI and FIFO RTL.
+# Candidate source has matching 2021.2 C simulation. No BD regeneration is needed.
+set root [file normalize [file join [file dirname [info script]] ..]]
+set workspace [file normalize [file join $root .. ..]]
+set baseline [file join $workspace vision v15spectra]
+if {![file exists [file join $baseline build candidate manifest.json]]} {error "Validated UI package must be sealed first"}
+if {[file exists [file join $workspace b16hw]]} {error "Preserve candidate output"}
+set_param general.maxThreads 2
+open_project [file join $workspace b15reuse c.xpr]
+save_project_as c [file join $workspace b16hw]
+config_ip_cache -disable_cache
+set obsolete [get_files -all -quiet *rgb2dvi_clocks.xdc]
+if {[llength $obsolete]!=1} {error "Ambiguous obsolete HDMI constraint"}
+set_property IS_ENABLED false $obsolete
+set own [file normalize [file join $workspace b16hw]]
+set log [open [file join $root reports effective_gate_sources.txt] w]
+foreach name {motion60_shared.v motion60_shared_phase_core_shared.v motion60_shared_phase_core_shared_1.v motion60_shared_phase_core_shared_2.v} {
+ set matches [get_files -all -filter "NAME =~ */$name"]
+ if {[llength $matches]!=1} {error "Ambiguous effective gate source $name: $matches"}
+ set path [file normalize [get_property NAME $matches]]
+ if {[string first [string tolower "$own/"] [string tolower $path]]!=0} {error "Refuse to edit a non-candidate HDL path: $path"}
+ set f [open $path rb];set text [read $f];close $f
+ if {[regsub -all {\.din1\(32'd1106247680\)} $text {.din1(32'd1112014848)} changed]!=1} {error "Expected exactly one alpha upper-limit gate in $name"}
+ set f [open [file join $root ip_repo motion60_shared hdl verilog $name] rb];set expected [read $f];close $f
+ if {$changed ne $expected} {error "Generated RTL differs from source-bound constant-only ECO: $name"}
+ set f [open $path wb];puts -nonewline $f $changed;close $f
+ puts $log "$name $path"
+}
+close $log
+# Bind the independent package for later regeneration; do not regenerate the BD.
+set_property ip_repo_paths [glob -types d [file join $root ip_repo *]] [current_project]
+update_ip_catalog
+reset_runs capture_motion_0_synth_1
+set stale {}
+foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
+ if {[get_property NEEDS_REFRESH $run]} {lappend stale $run}
+}
+if {[llength $stale]} {puts "ALPHA50_STALE_RUNS $stale";reset_runs $stale}
+reset_runs synth_1
+set_property INCREMENTAL_CHECKPOINT [file join $root provenance v15_postroute.dcp] [get_runs impl_1]
+set_property STEPS.INIT_DESIGN.TCL.POST [file join $root scripts check_button_preopt.tcl] [get_runs impl_1]
+set_property STEPS.POST_ROUTE_PHYS_OPT_DESIGN.TCL.PRE {} [get_runs impl_1]
+puts ALPHA50_GATE_ECO_PROJECT_PREPARED
+close_project
+exit

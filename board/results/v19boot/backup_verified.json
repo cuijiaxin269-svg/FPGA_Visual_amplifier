@@ -1,0 +1,12 @@
+{
+  "jedec_id": "ef4018",
+  "flash_capacity_bytes": 16777216,
+  "sr1": 0,
+  "sr2": 2,
+  "full_backup_sha256": "ad98a3cefadddc84ecb12c1ee796295cff5cfdc90a6de38a1fa299b97cab2bfc",
+  "crc32": "24f40dc7",
+  "independent_second_flash_read_matches": true,
+  "host_download_crc_matches": true,
+  "flash_written": false,
+  "original_non_ff_bytes": 6496181
+}

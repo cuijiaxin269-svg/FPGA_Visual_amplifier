@@ -1,0 +1,18 @@
+set root [file normalize [file join [file dirname [info script]] ..]]
+set mode synth
+if {[info exists ::env(CLIP_COPY_MODE)]} {set mode $::env(CLIP_COPY_MODE)}
+if {$mode ni {csim synth cosim}} {error "Invalid checked-copy mode"}
+set folder [file join $root build clip_copy_checked_$mode]
+open_component $folder -flow_target vivado
+cd $folder
+set_top clip_copy_checked
+add_files [file join $root hls motion60_shared clip_copy_checked.cpp] -cflags "-std=c++14"
+add_files -tb [file join $root hls motion60_shared test_copy_checked.cpp] -cflags "-std=c++14"
+set_part xc7z100ffg900-2
+create_clock -period 6.666667 -name default
+csim_design
+if {$mode ne "csim"} {csynth_design}
+if {$mode eq "cosim"} {cosim_design -rtl verilog -tool xsim}
+if {$mode eq "synth"} {export_design -format ip_catalog}
+puts "CLIP_COPY_CHECKED_PASSED mode=$mode"
+exit

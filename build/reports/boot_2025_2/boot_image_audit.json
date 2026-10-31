@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "boot_bytes": 13357152,
+  "flash_bytes": 16777216,
+  "partitions": [
+    {
+      "name": "fsbl.elf",
+      "offset": 5888,
+      "bytes": 81936,
+      "load": 0,
+      "entry": 0
+    },
+    {
+      "name": "capture.bit",
+      "offset": 87872,
+      "bytes": 13198272,
+      "load": 0,
+      "entry": 0
+    },
+    {
+      "name": "motion60.elf",
+      "offset": 13286144,
+      "bytes": 71008,
+      "load": 1048576,
+      "entry": 1048576
+    }
+  ],
+  "application_segments": [
+    {
+      "address": 1048576,
+      "file_bytes": 71008,
+      "memory_bytes": 124544
+    },
+    {
+      "address": 16711680,
+      "file_bytes": 0,
+      "memory_bytes": 532
+    },
+    {
+      "address": 16719872,
+      "file_bytes": 0,
+      "memory_bytes": 17272
+    }
+  ],
+  "physical_flash_boot_validated": false
+}

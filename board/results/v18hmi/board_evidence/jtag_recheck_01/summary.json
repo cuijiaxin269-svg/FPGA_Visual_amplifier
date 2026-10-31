@@ -1,0 +1,83 @@
+{
+  "uptime_ms": 5473588,
+  "sequence": 67924,
+  "running": 1,
+  "requested_run": 1,
+  "page": 0,
+  "online": 1,
+  "fields": {
+    "VIEW": {
+      "status": "APPLIED",
+      "generation": 402,
+      "target": 2,
+      "actual": 2
+    },
+    "ALPHA": {
+      "status": "APPLIED",
+      "generation": 475,
+      "target": 50,
+      "actual": 50
+    },
+    "EXPOSURE": {
+      "status": "APPLIED",
+      "generation": 152,
+      "target": 320,
+      "actual": 320
+    },
+    "RUN": {
+      "status": "RUNNING",
+      "generation": 404
+    }
+  },
+  "counters": {
+    "commands": 503,
+    "rejected": 36,
+    "native_packets": 6855,
+    "corrupt_packets": 2,
+    "overlong": 1,
+    "transport_faults": 0,
+    "native_errors": 0,
+    "reconnects": 2,
+    "rx_bytes": 39351,
+    "tx_bytes": 146492,
+    "rx_overflow": 0,
+    "rx_errors": 0,
+    "tx_full": 0,
+    "interrupts": 40108,
+    "unexpected_irq": 0
+  },
+  "device": {
+    "start_pending": 0,
+    "switch_pending": 0,
+    "booting": 0,
+    "stop_requested": 0,
+    "algorithm_busy": 1,
+    "capture_status": 2,
+    "capture_error": 0,
+    "algorithm_error": 0,
+    "processed_frames": 30947,
+    "display_frames": 15375,
+    "display_generation": 2543,
+    "panel_visible": 1,
+    "config_generation": 204,
+    "camera_revision": 45,
+    "applied_revision": 45,
+    "exposure_readback": 320
+  },
+  "trace": {
+    "rx": {
+      "retained_from": 31159,
+      "retained_until": 39351,
+      "bytes": 8192,
+      "counter_after": 39351,
+      "electrical_waveform": false
+    },
+    "tx": {
+      "retained_from": 138300,
+      "retained_until": 146492,
+      "bytes": 8192,
+      "counter_after": 146492,
+      "electrical_waveform": false
+    }
+  }
+}

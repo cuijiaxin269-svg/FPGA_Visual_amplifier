@@ -1,0 +1,10 @@
+wrong # args: should be "source ?-encoding name? fileName"
+    while executing
+"source -notrace {D:/xilinx/Vitis/2021.2\lib\scripts\rdi\misc\features.tcl}"
+    invoked from within
+"common::list_features"
+    invoked from within
+"hsi::help generate_app"
+    invoked from within
+"puts [hsi::help generate_app]"
+    (file "vision/v19boot/scripts/hsi_help.tcl" line 1)

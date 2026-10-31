@@ -1,0 +1,14 @@
+
+****** Xilinx Program Flash
+****** Program Flash v2021.2 (64-bit)
+  **** SW Build 1967 on 2021-10-14-04:42:58
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+Connected to hw_server @ tcp:127.0.0.1:3121
+Available targets and devices:
+JTAG chain configuration
+--------------------------------------------------
+1 Digilent 210299725543 
+	2    jsn-JTAG-HS3-210299725543-4ba00477-0  (name arm_dap  idcode 4ba00477)
+	3    jsn-JTAG-HS3-210299725543-03736093-0  (name xc7z100  idcode 03736093)

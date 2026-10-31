@@ -1,0 +1,14 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+INFO: [Hsi 55-2053] elapsed time for repository (D:/xilinx/Vitis/2021.2/data/embeddedsw) loading 1 seconds
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_ASSERT stopped=0
+HMI_ASSERT stopped_confirmation=5
+HMI_ASSERT no_rx_overflow=0
+HMI_ASSERT no_uart_errors=0
+HMI_ASSERT no_end_capture_error=0
+HMI_ASSERT no_end_algorithm_error=0
+HMI_NATIVE_TX get page0.rstatus.txt
+HMI_SCREEN_TEXT page0.rstatus.txt=STOPPED
+HMI_FINAL_STOP_DRAIN_READBACK_PASSED

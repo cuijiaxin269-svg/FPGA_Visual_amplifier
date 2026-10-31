@@ -1,0 +1,17 @@
+{
+  "confirmed_at": "2026-10-29T00:21:19.1473459+08:00",
+  "confirmation_source": "user message",
+  "user_observation": "已设置，均100mV，5Hz + 10Hz信号",
+  "roi_visible": true,
+  "source_aligned": true,
+  "expected_frequencies_hz": [
+    5,
+    10
+  ],
+  "generator_level_mV_each": 100,
+  "level_convention": "User did not specify peak, peak-to-peak, or RMS; frequency-only acceptance",
+  "source": "扬声器，斜向放置",
+  "roi_x": 512,
+  "roi_y": 272,
+  "roi_size": 256
+}

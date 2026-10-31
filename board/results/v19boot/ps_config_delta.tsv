@@ -1,0 +1,34 @@
+CONFIG.PCW_ACT_QSPI_PERIPHERAL_FREQMHZ	10.000000	200.000000
+CONFIG.PCW_EN_QSPI	0	1
+CONFIG.PCW_MIO_1_DIRECTION	<Select>	out
+CONFIG.PCW_MIO_1_IOTYPE	<Select>	LVCMOS 3.3V
+CONFIG.PCW_MIO_1_PULLUP	<Select>	enabled
+CONFIG.PCW_MIO_1_SLEW	<Select>	slow
+CONFIG.PCW_MIO_2_DIRECTION	<Select>	inout
+CONFIG.PCW_MIO_2_IOTYPE	<Select>	LVCMOS 3.3V
+CONFIG.PCW_MIO_2_PULLUP	<Select>	disabled
+CONFIG.PCW_MIO_2_SLEW	<Select>	slow
+CONFIG.PCW_MIO_3_DIRECTION	<Select>	inout
+CONFIG.PCW_MIO_3_IOTYPE	<Select>	LVCMOS 3.3V
+CONFIG.PCW_MIO_3_PULLUP	<Select>	disabled
+CONFIG.PCW_MIO_3_SLEW	<Select>	slow
+CONFIG.PCW_MIO_4_DIRECTION	<Select>	inout
+CONFIG.PCW_MIO_4_IOTYPE	<Select>	LVCMOS 3.3V
+CONFIG.PCW_MIO_4_PULLUP	<Select>	disabled
+CONFIG.PCW_MIO_4_SLEW	<Select>	slow
+CONFIG.PCW_MIO_5_DIRECTION	<Select>	inout
+CONFIG.PCW_MIO_5_IOTYPE	<Select>	LVCMOS 3.3V
+CONFIG.PCW_MIO_5_PULLUP	<Select>	disabled
+CONFIG.PCW_MIO_5_SLEW	<Select>	slow
+CONFIG.PCW_MIO_6_DIRECTION	<Select>	out
+CONFIG.PCW_MIO_6_IOTYPE	<Select>	LVCMOS 3.3V
+CONFIG.PCW_MIO_6_PULLUP	<Select>	disabled
+CONFIG.PCW_MIO_6_SLEW	<Select>	slow
+CONFIG.PCW_MIO_TREE_PERIPHERALS	unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#UART 0#UART 0#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned	unassigned#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#UART 0#UART 0#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned
+CONFIG.PCW_MIO_TREE_SIGNALS	unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#rx#tx#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned	unassigned#qspi0_ss_b#qspi0_io[0]#qspi0_io[1]#qspi0_io[2]#qspi0_io[3]/HOLD_B#qspi0_sclk#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#rx#tx#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned
+CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE	0	1
+CONFIG.PCW_QSPI_GRP_SINGLE_SS_IO	<Select>	MIO 1 .. 6
+CONFIG.PCW_QSPI_PERIPHERAL_DIVISOR0	1	9
+CONFIG.PCW_QSPI_PERIPHERAL_ENABLE	0	1
+CONFIG.PCW_QSPI_QSPI_IO	<Select>	MIO 1 .. 6
+CONFIG.PCW_SINGLE_QSPI_DATA_MODE	<Select>	x4

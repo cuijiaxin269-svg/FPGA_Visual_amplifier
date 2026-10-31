@@ -1,0 +1,22 @@
+In file included from D:/vision/submission/fpga_visual_amplifier/src/ps/hmi_protocol.h:3,
+                 from D:/vision/submission/fpga_visual_amplifier/src/ps/hmi_device.h:3,
+                 from D:/vision/submission/fpga_visual_amplifier/src/ps/hmi_link.h:3,
+                 from D:\vision\submission\fpga_visual_amplifier\sim\tests\test_hmi_protocol.cpp:1:
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h:9:16: fatal error: stdint.h: No such file or directory
+ # include_next <stdint.h>
+                ^~~~~~~~~~
+compilation terminated.
+In file included from D:\vision\submission\fpga_visual_amplifier\src\ps\hmi_protocol.h:3,
+                 from D:\vision\submission\fpga_visual_amplifier\src\ps\hmi_protocol.c:1:
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h:9:16: fatal error: stdint.h: No such file or directory
+ # include_next <stdint.h>
+                ^~~~~~~~~~
+compilation terminated.
+In file included from D:\vision\submission\fpga_visual_amplifier\src\ps\hmi_protocol.h:3,
+                 from D:\vision\submission\fpga_visual_amplifier\src\ps\hmi_device.h:3,
+                 from D:\vision\submission\fpga_visual_amplifier\src\ps\hmi_link.h:3,
+                 from D:\vision\submission\fpga_visual_amplifier\src\ps\hmi_link.c:1:
+D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h:9:16: fatal error: stdint.h: No such file or directory
+ # include_next <stdint.h>
+                ^~~~~~~~~~
+compilation terminated.

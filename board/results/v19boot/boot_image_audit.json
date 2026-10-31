@@ -1,0 +1,102 @@
+{
+  "boot_bytes": 13299932,
+  "flash_bytes": 16777216,
+  "erase_start": 0,
+  "erase_end_exclusive": 13303808,
+  "partitions": [
+    {
+      "name": "fsbl.elf",
+      "offset": 5888,
+      "bytes": 81928,
+      "load": 0,
+      "entry": 0
+    },
+    {
+      "name": "capture.bit",
+      "offset": 87872,
+      "bytes": 13142144,
+      "load": 0,
+      "entry": 0
+    },
+    {
+      "name": "motion60.elf",
+      "offset": 13230016,
+      "bytes": 69916,
+      "load": 1048576,
+      "entry": 1048576
+    }
+  ],
+  "application_segments": [
+    {
+      "address": 1048576,
+      "file_bytes": 69916,
+      "memory_bytes": 123456
+    },
+    {
+      "address": 16711680,
+      "file_bytes": 0,
+      "memory_bytes": 25464
+    }
+  ],
+  "defaults": {
+    "run": "STOPPED",
+    "view": 2,
+    "alpha": 12,
+    "exposure": 320
+  },
+  "artifacts": {
+    "boot.bif": {
+      "bytes": 73,
+      "sha256": "fada4177491f315278610509e0ab900ec31849559edcfceb1250a310d0026841"
+    },
+    "BOOT.BIN": {
+      "bytes": 13299932,
+      "sha256": "eae2d50a02ab3f8aaa2574d2fcd9573cc657461bc64690f1b1f17b84ba013e54"
+    },
+    "capture.bit": {
+      "bytes": 13142261,
+      "sha256": "9836f502522085ff01fde7f3194b2dfe9491ffe7e30447ca391e50e4363cc134"
+    },
+    "capture.ltx": {
+      "bytes": 139208,
+      "sha256": "1cd840b31593277f83e2630f93992cdc7a7820ef7e646fa43800cad2404938e9"
+    },
+    "capture.xsa": {
+      "bytes": 422696,
+      "sha256": "bb1fd7525051188e14840edb8ede828c5219e9d97d822e6c8b65ccde7ccad440"
+    },
+    "fsbl.elf": {
+      "bytes": 296284,
+      "sha256": "86383b7e4dbb6dcd4d50d0227b1be9649e555a27bfb5819e49137502f02e2133"
+    },
+    "motion60.elf": {
+      "bytes": 443028,
+      "sha256": "b066d1e63a11929eae0b8ca86c233da6d40929d3daa14621ef4b7a88622c7d98"
+    },
+    "ps7_init.c": {
+      "bytes": 369678,
+      "sha256": "971c98c7b91355de61adfe10b4f10cda17fad14d1751290d0469849b7cb20f99"
+    },
+    "ps7_init.h": {
+      "bytes": 3796,
+      "sha256": "356821f944f0ab68a3f83dcf85e2dea59fbad3641ef9168bbbf87143893afdb7"
+    },
+    "ps7_init.html": {
+      "bytes": 2123897,
+      "sha256": "445eeb60d6bc625cbe13ed7abc2d7e30d6fbffabe9363e69075ad65f26848f69"
+    },
+    "ps7_init.tcl": {
+      "bytes": 28484,
+      "sha256": "04df6ffc234c161889c6f7b27be02fcd9499b112774426fdcb88bbdc2068da75"
+    },
+    "ps7_init_gpl.c": {
+      "bytes": 370295,
+      "sha256": "fd9de97245651b1c4ad62d43291050950e451d4e91544f95cf58284189279518"
+    },
+    "ps7_init_gpl.h": {
+      "bytes": 4414,
+      "sha256": "cadfd27d45289ceb77306ab0d8a1d5f945fab9175348f1bd8631d038a75daaf5"
+    }
+  },
+  "physical_flash_boot_validated": false
+}

@@ -1,0 +1,5 @@
+rx_before=60713
+rx_after=60718
+tx_before=185051
+tx_after=185060
+hmi_sequence=110618

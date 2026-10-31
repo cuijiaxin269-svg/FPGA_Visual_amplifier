@@ -1,0 +1,280 @@
+
+*** Running vivado
+    with args -log capture_csi_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source capture_csi_0.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 30 21:06:31 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source capture_csi_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 664.578 ; gain = 222.176
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/clip_copy_checked'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_full_temporal_v2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_shared'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/rgb2dvi_v1_3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/roi256_v3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/spectrum256_pl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tool/vivado/2025.2/Vivado/data/ip'.
+Command: synth_design -top capture_csi_0 -part xc7z100ffg900-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31412
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1591.145 ; gain = 539.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'capture_csi_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/synth/capture_csi_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_adc2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_adc2_phy_0' [D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/.Xil/Vivado-33712-LAPTOP-39R8HM8E/realtime/bd_adc2_phy_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_adc2_phy_0' (0#1) [D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/.Xil/Vivado-33712-LAPTOP-39R8HM8E/realtime/bd_adc2_phy_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'init_done' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'cl_rxclkactivehs' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'cl_ulpsactivenot' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl0_ulpsactivenot' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl0_rxclkesc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl0_rxlpdtesc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl0_rxulpsesc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl0_rxtriggeresc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl0_rxdataesc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl0_rxvalidesc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl0_errsyncesc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl1_ulpsactivenot' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl1_rxclkesc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl1_rxlpdtesc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl1_rxulpsesc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl1_rxtriggeresc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl1_rxdataesc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl1_rxvalidesc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7071] port 'dl1_errsyncesc' of module 'bd_adc2_phy_0' is unconnected for instance 'phy' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+WARNING: [Synth 8-7023] instance 'phy' of module 'bd_adc2_phy_0' has 76 connections declared, but only 57 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:220]
+INFO: [Synth 8-6157] synthesizing module 'bd_adc2_r_sync_0' [D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/.Xil/Vivado-33712-LAPTOP-39R8HM8E/realtime/bd_adc2_r_sync_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_adc2_r_sync_0' (0#1) [D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/.Xil/Vivado-33712-LAPTOP-39R8HM8E/realtime/bd_adc2_r_sync_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_adc2_r_sync_0' is unconnected for instance 'r_sync' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:278]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_adc2_r_sync_0' is unconnected for instance 'r_sync' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:278]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'bd_adc2_r_sync_0' is unconnected for instance 'r_sync' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:278]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_adc2_r_sync_0' is unconnected for instance 'r_sync' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:278]
+WARNING: [Synth 8-7023] instance 'r_sync' of module 'bd_adc2_r_sync_0' has 10 connections declared, but only 6 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:278]
+INFO: [Synth 8-6157] synthesizing module 'bd_adc2_rx_0' [D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/.Xil/Vivado-33712-LAPTOP-39R8HM8E/realtime/bd_adc2_rx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_adc2_rx_0' (0#1) [D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/.Xil/Vivado-33712-LAPTOP-39R8HM8E/realtime/bd_adc2_rx_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'frame_rcvd_pulse_out' of module 'bd_adc2_rx_0' is unconnected for instance 'rx' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:285]
+WARNING: [Synth 8-7023] instance 'rx' of module 'bd_adc2_rx_0' has 69 connections declared, but only 68 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:285]
+INFO: [Synth 8-6157] synthesizing module 'bd_adc2_vfb_0_0' [D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/.Xil/Vivado-33712-LAPTOP-39R8HM8E/realtime/bd_adc2_vfb_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_adc2_vfb_0_0' (0#1) [D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/.Xil/Vivado-33712-LAPTOP-39R8HM8E/realtime/bd_adc2_vfb_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_adc2_xbar_0' [D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/.Xil/Vivado-33712-LAPTOP-39R8HM8E/realtime/bd_adc2_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_adc2_xbar_0' (0#1) [D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/.Xil/Vivado-33712-LAPTOP-39R8HM8E/realtime/bd_adc2_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'bd_adc2_xbar_0' is unconnected for instance 'xbar' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:382]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'bd_adc2_xbar_0' is unconnected for instance 'xbar' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:382]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'bd_adc2_xbar_0' is unconnected for instance 'xbar' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:382]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'bd_adc2_xbar_0' is unconnected for instance 'xbar' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:382]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'bd_adc2_xbar_0' has 59 connections declared, but only 55 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:382]
+INFO: [Synth 8-6155] done synthesizing module 'bd_adc2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/synth/bd_adc2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'capture_csi_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/synth/capture_csi_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1717.738 ; gain = 666.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1717.738 ; gain = 666.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1717.738 ; gain = 666.578
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1717.738 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_0/bd_adc2_xbar_0/bd_adc2_xbar_0_in_context.xdc] for cell 'inst/xbar'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_0/bd_adc2_xbar_0/bd_adc2_xbar_0_in_context.xdc] for cell 'inst/xbar'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/bd_adc2_phy_0_in_context.xdc] for cell 'inst/phy'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/bd_adc2_phy_0_in_context.xdc] for cell 'inst/phy'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_2/bd_adc2_rx_0/bd_adc2_rx_0_in_context.xdc] for cell 'inst/rx'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_2/bd_adc2_rx_0/bd_adc2_rx_0_in_context.xdc] for cell 'inst/rx'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_3/bd_adc2_vfb_0_0/bd_adc2_vfb_0_0_in_context.xdc] for cell 'inst/vfb_0'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_3/bd_adc2_vfb_0_0/bd_adc2_vfb_0_0_in_context.xdc] for cell 'inst/vfb_0'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_4/bd_adc2_r_sync_0/bd_adc2_r_sync_0_in_context.xdc] for cell 'inst/r_sync'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_4/bd_adc2_r_sync_0/bd_adc2_r_sync_0_in_context.xdc] for cell 'inst/r_sync'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/capture_csi_0_fixed_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/capture_csi_0_fixed_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/capture_csi_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/capture_csi_0_board.xdc] for cell 'inst'
+Parsing XDC File [D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1725.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1725.848 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1725.848 ; gain = 674.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1725.848 ; gain = 674.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1725.848 ; gain = 674.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1725.848 ; gain = 674.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1725.848 ; gain = 674.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1889.180 ; gain = 838.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1889.590 ; gain = 838.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1899.238 ; gain = 848.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2148.355 ; gain = 1097.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2148.355 ; gain = 1097.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2148.355 ; gain = 1097.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2148.355 ; gain = 1097.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2148.355 ; gain = 1097.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2148.355 ; gain = 1097.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |bd_adc2_phy_0    |         1|
+|2     |bd_adc2_r_sync_0 |         1|
+|3     |bd_adc2_rx_0     |         1|
+|4     |bd_adc2_vfb_0_0  |         1|
+|5     |bd_adc2_xbar_0   |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |bd_adc2_phy    |     1|
+|2     |bd_adc2_r_sync |     1|
+|3     |bd_adc2_rx     |     1|
+|4     |bd_adc2_vfb_0  |     1|
+|5     |bd_adc2_xbar   |     1|
++------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2148.355 ; gain = 1097.195
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 2148.355 ; gain = 1089.086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2148.355 ; gain = 1097.195
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2148.355 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2166.957 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8afd6837
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2170.922 ; gain = 1449.949
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/capture_csi_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP capture_csi_0, cache-ID = a090862af5cccb62
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_csi_0_synth_1/capture_csi_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file capture_csi_0_utilization_synth.rpt -pb capture_csi_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 21:07:20 2026...

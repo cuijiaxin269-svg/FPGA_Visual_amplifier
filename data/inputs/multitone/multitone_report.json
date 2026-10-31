@@ -1,0 +1,208 @@
+{
+  "schema": "roi-multitone-check-v1",
+  "expected_frequencies_hz": [
+    5.0,
+    10.0
+  ],
+  "measured_capture_fps": 60.37956260680654,
+  "bin_spacing_hz": 0.23585766643283804,
+  "window_seconds": 4.239845221587301,
+  "digital_health_pass": true,
+  "health_details": [
+    {
+      "snapshot": "first",
+      "transient_stats_5_7": [
+        0,
+        0,
+        0
+      ],
+      "sticky_csi_isr": 2147614720,
+      "sticky_csi_csr": 0,
+      "first_error_isr": 0,
+      "sticky_csi_clear": true,
+      "capture_sequence_gaps": 0
+    },
+    {
+      "snapshot": "last",
+      "transient_stats_5_7": [
+        0,
+        0,
+        0
+      ],
+      "sticky_csi_isr": 2147614720,
+      "sticky_csi_csr": 0,
+      "first_error_isr": 0,
+      "sticky_csi_clear": true,
+      "capture_sequence_gaps": 0
+    }
+  ],
+  "coherent_snapshots": 3,
+  "distinct_updates": 3,
+  "multitone_check_pass": true,
+  "snapshots": [
+    {
+      "snapshot": "spectrum_00",
+      "accepted": true,
+      "reasons": [],
+      "result_counter_after": 6257,
+      "epoch_after": 3,
+      "components": [
+        {
+          "expected_hz": 5.0,
+          "detected": true,
+          "peak_bin": 21,
+          "bin_hz": 4.953010995089599,
+          "interpolated_peak_hz": 5.012170826314428,
+          "local_maximum": true,
+          "peak_to_background_median": 16.63895426929933,
+          "dx_amplitude_px": 0.03680036962032318,
+          "dy_amplitude_px": 0.07588130235671997,
+          "combined_bin_amplitude_px": 0.08433409305580016
+        },
+        {
+          "expected_hz": 10.0,
+          "detected": true,
+          "peak_bin": 42,
+          "bin_hz": 9.906021990179198,
+          "interpolated_peak_hz": 10.003241733997367,
+          "local_maximum": true,
+          "peak_to_background_median": 30.620328561317276,
+          "dx_amplitude_px": 0.051703859120607376,
+          "dy_amplitude_px": 0.14633259177207947,
+          "combined_bin_amplitude_px": 0.15519831333715478
+        }
+      ],
+      "all_components_detected": true
+    },
+    {
+      "snapshot": "spectrum_01",
+      "accepted": false,
+      "reasons": [
+        "result_or_epoch_changed",
+        "buffer_changed_between_reads"
+      ],
+      "result_counter_after": 6261,
+      "epoch_after": 3
+    },
+    {
+      "snapshot": "spectrum_02",
+      "accepted": false,
+      "reasons": [
+        "result_or_epoch_changed",
+        "buffer_changed_between_reads"
+      ],
+      "result_counter_after": 6264,
+      "epoch_after": 3
+    },
+    {
+      "snapshot": "spectrum_03",
+      "accepted": false,
+      "reasons": [
+        "result_or_epoch_changed",
+        "buffer_changed_between_reads"
+      ],
+      "result_counter_after": 6267,
+      "epoch_after": 3
+    },
+    {
+      "snapshot": "spectrum_04",
+      "accepted": false,
+      "reasons": [
+        "result_or_epoch_changed"
+      ],
+      "result_counter_after": 6270,
+      "epoch_after": 3
+    },
+    {
+      "snapshot": "spectrum_05",
+      "accepted": true,
+      "reasons": [],
+      "result_counter_after": 6273,
+      "epoch_after": 3,
+      "components": [
+        {
+          "expected_hz": 5.0,
+          "detected": true,
+          "peak_bin": 21,
+          "bin_hz": 4.953010995089599,
+          "interpolated_peak_hz": 5.024177452130114,
+          "local_maximum": true,
+          "peak_to_background_median": 12.698471652771929,
+          "dx_amplitude_px": 0.03524509072303772,
+          "dy_amplitude_px": 0.08356377482414246,
+          "combined_bin_amplitude_px": 0.09069245218283131
+        },
+        {
+          "expected_hz": 10.0,
+          "detected": true,
+          "peak_bin": 42,
+          "bin_hz": 9.906021990179198,
+          "interpolated_peak_hz": 10.006230071294238,
+          "local_maximum": true,
+          "peak_to_background_median": 21.645771666637756,
+          "dx_amplitude_px": 0.046029794961214066,
+          "dy_amplitude_px": 0.14758244156837463,
+          "combined_bin_amplitude_px": 0.15459404608022304
+        }
+      ],
+      "all_components_detected": true
+    },
+    {
+      "snapshot": "spectrum_06",
+      "accepted": true,
+      "reasons": [],
+      "result_counter_after": 6276,
+      "epoch_after": 3,
+      "components": [
+        {
+          "expected_hz": 5.0,
+          "detected": true,
+          "peak_bin": 21,
+          "bin_hz": 4.953010995089599,
+          "interpolated_peak_hz": 5.008183594648148,
+          "local_maximum": true,
+          "peak_to_background_median": 12.471517337977101,
+          "dx_amplitude_px": 0.03815825283527374,
+          "dy_amplitude_px": 0.08572804182767868,
+          "combined_bin_amplitude_px": 0.09383682334269901
+        },
+        {
+          "expected_hz": 10.0,
+          "detected": true,
+          "peak_bin": 42,
+          "bin_hz": 9.906021990179198,
+          "interpolated_peak_hz": 9.997689171874855,
+          "local_maximum": true,
+          "peak_to_background_median": 21.603384899377414,
+          "dx_amplitude_px": 0.0496320016682148,
+          "dy_amplitude_px": 0.15478309988975525,
+          "combined_bin_amplitude_px": 0.16254582000493162
+        }
+      ],
+      "all_components_detected": true
+    },
+    {
+      "snapshot": "spectrum_07",
+      "accepted": false,
+      "reasons": [
+        "result_or_epoch_changed",
+        "buffer_changed_between_reads"
+      ],
+      "result_counter_after": 6280,
+      "epoch_after": 3
+    },
+    {
+      "snapshot": "spectrum_08",
+      "accepted": false,
+      "reasons": [
+        "result_or_epoch_changed"
+      ],
+      "result_counter_after": 6283,
+      "epoch_after": 3
+    }
+  ],
+  "real_displacement_gain_verified": false,
+  "stage5_fully_accepted": false,
+  "acceptance_rule": "At least 3 distinct coherent updates; every target has a local spectral maximum within one bin and peak/background-median >= 5 in every accepted update; clean advancing pipeline.",
+  "limitations": "Overlapping FFT windows are not statistically independent trials. Interpolated peak ranges do not establish calibrated frequency accuracy. ROI displacement amplitude is not generator voltage, physical displacement, or magnification. A pure-fundamental control is needed to distinguish generator-added and speaker/measurement-generated harmonics."
+}

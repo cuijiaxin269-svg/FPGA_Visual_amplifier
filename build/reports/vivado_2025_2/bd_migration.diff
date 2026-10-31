@@ -1,0 +1,35 @@
+--- original_v19/capture_qspi_bd.tcl
++++ src/bd/capture_qspi_bd.tcl
+@@ -1,3 +1,5 @@
++# Adapted from the v19 Vivado 2021.2 export for Vivado 2025.2.
++# CSI RX subsystem is recreated as v6.0; board runtime validation remains required.
+ 
+ ################################################################
+ # This is a generated script based on design: capture
+@@ -20,7 +22,7 @@
+ ################################################################
+ # Check if script is running in correct Vivado version.
+ ################################################################
+-set scripts_vivado_version 2021.2
++set scripts_vivado_version 2025.2
+ set current_vivado_version [version -short]
+ 
+ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+@@ -132,7 +134,7 @@
+    set list_check_ips "\ 
+ xilinx.com:hls:clip_copy_checked:1.0\
+ xilinx.com:ip:axi_gpio:2.0\
+-xilinx.com:ip:mipi_csi2_rx_subsystem:5.1\
++xilinx.com:ip:mipi_csi2_rx_subsystem:6.0\
+ xilinx.com:ip:axis_data_fifo:2.0\
+ xilinx.com:ip:axi_vdma:6.3\
+ xilinx.com:hls:clip_temporal_full:1.0\
+@@ -292,7 +294,7 @@
+  ] $core
+ 
+   # Create instance: csi, and set properties
+-  set csi [ create_bd_cell -type ip -vlnv xilinx.com:ip:mipi_csi2_rx_subsystem:5.1 csi ]
++  set csi [ create_bd_cell -type ip -vlnv xilinx.com:ip:mipi_csi2_rx_subsystem:6.0 csi ]
+   set_property -dict [ list \
+    CONFIG.CMN_INC_VFB {true} \
+    CONFIG.CMN_NUM_LANES {2} \

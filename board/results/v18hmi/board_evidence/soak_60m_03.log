@@ -1,0 +1,3 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+HMI_MONITOR mode=soak elapsed_ms=4 frames=135 display=66 rx_errors=0 capture_error=0
+Continuous run was interrupted or received a new command

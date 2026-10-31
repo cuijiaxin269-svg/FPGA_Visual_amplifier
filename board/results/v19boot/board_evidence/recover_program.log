@@ -1,0 +1,41 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+RECOVERY_ENTRY_IS_REJECTED_DDR_IMAGE_NO_FLASH_COMMANDS
+BUTTON_CORE core=1 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.1 target_id 3 level 1 name {ARM Cortex-A9 MPCore #1} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason Suspended is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Suspended)}
+BUTTON_CORE core=0 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason Suspended is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Suspended)}
+RECOVERY_PAGE_PROGRAM_COMPLETED_THEN_READBACK_REJECTED_SAFE_TO_RESTART
+RECOVERY_PRESERVE_DDR_RESUME_OFFSET 13299932
+BUTTON_CORE core=0 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason {Vector Catch} is_current 1 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Vector Catch)}
+RECOVERY_UPLOAD_COMPLETE_IMAGE_BEGIN
+RECOVERY_IMAGE_UPLOADED_BEGIN_READ_ONLY_PREFLIGHT
+BUTTON_CORE core=0 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason {Vector Catch} is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Vector Catch)}
+RECOVERY_DDR_CRC_ID_BIT_COMPATIBILITY_AND_UNTOUCHED_TAIL_VERIFIED
+RECOVERY_PROGRESS state=4 bytes=2048 programmed_pages=0 skipped_pages=16
+RECOVERY_PROGRESS state=4 bytes=2002432 programmed_pages=0 skipped_pages=7831
+RECOVERY_PROGRESS state=4 bytes=3449088 programmed_pages=674 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=3943680 programmed_pages=2607 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=4410624 programmed_pages=4430 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=4878080 programmed_pages=6256 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=5344768 programmed_pages=8079 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=5820928 programmed_pages=9939 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=6297344 programmed_pages=11800 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=6765056 programmed_pages=13627 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=7241216 programmed_pages=15487 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=7708928 programmed_pages=17314 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=8175360 programmed_pages=19136 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=8643584 programmed_pages=20966 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=9112320 programmed_pages=22796 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=9581568 programmed_pages=24630 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=10048256 programmed_pages=26452 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=10517248 programmed_pages=28284 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=10994176 programmed_pages=30147 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=11460608 programmed_pages=31969 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=11927040 programmed_pages=33791 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=12395264 programmed_pages=35620 skipped_pages=12800
+RECOVERY_PROGRESS state=4 bytes=12864768 programmed_pages=37454 skipped_pages=12800
+RECOVERY_PROGRESS state=5 bytes=13299932 programmed_pages=39153 skipped_pages=12800
+RECOVERY_PROGRESS state=5 bytes=13299932 programmed_pages=39153 skipped_pages=12800
+RECOVERY_PROGRESS state=5 bytes=13299932 programmed_pages=39153 skipped_pages=12800
+RECOVERY_PROGRESS state=5 bytes=13299932 programmed_pages=39153 skipped_pages=12800
+RECOVERY_PROGRESS state=5 bytes=13299932 programmed_pages=39153 skipped_pages=12800
+RECOVERY_PROGRESS state=6 bytes=13299932 programmed_pages=39153 skipped_pages=12800
+V19_FULL_IMAGE_READBACK_AND_UNTOUCHED_TAIL_VERIFIED

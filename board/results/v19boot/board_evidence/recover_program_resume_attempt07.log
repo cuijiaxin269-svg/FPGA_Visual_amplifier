@@ -1,0 +1,12 @@
+WAIT_OWNED_INVENTORY xc7z100* 0
+WAIT_OWNED_INVENTORY xc7z100* 1
+Owned target absent after bounded discovery: xc7z100*
+Owned target absent after bounded discovery: xc7z100*
+    while executing
+"error "Owned target absent after bounded discovery: $pattern""
+    (procedure "owned_properties" line 13)
+    invoked from within
+"owned_properties xc7z100*"
+    (procedure "owned_target" line 2)
+    invoked from within
+"owned_target"

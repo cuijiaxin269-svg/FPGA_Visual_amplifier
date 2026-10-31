@@ -1,0 +1,15 @@
+set root [file normalize [file join [file dirname [info script]] ..]]
+set workspace [file normalize [file join $root .. ..]]
+cd $workspace
+open_project a50test
+set_top motion60_shared
+set flags "-std=c++14 -DMOTION_WIDTH=128 -DMOTION_HEIGHT=96 -I[file join $root hls]"
+foreach source {pipeline.cpp phase_core.cpp} {add_files [file join $root hls $source] -cflags $flags}
+add_files -tb [file join $root sim baseline_phase.cpp] -cflags "$flags -Dphase_core_shared=baseline_phase_core_shared"
+add_files -tb [file join $root sim test_alpha50.cpp] -cflags $flags
+open_solution sol -flow_target vivado
+set_part xc7z100ffg900-2
+create_clock -period 6.666667 -name default
+csim_design
+puts ALPHA50_HLS_2021_CSIM_COMPLETED
+exit

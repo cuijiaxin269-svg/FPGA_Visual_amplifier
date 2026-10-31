@@ -1,0 +1,19 @@
+set root [file normalize [file join [file dirname [info script]] ..]]
+set mode csim
+if {[info exists ::env(SPECTRUM_PL_MODE)]} {set mode $::env(SPECTRUM_PL_MODE)}
+if {$mode ni {csim synth cosim}} {error "Invalid PL spectrum build mode"}
+set folder [file join $root build spectrum256_pl_$mode]
+open_component $folder -flow_target vivado
+cd $folder
+set_top spectrum256_pl
+add_files [file join $root hls spectrum256_pl spectrum256_pl.cpp] -cflags "-std=c++14"
+add_files -tb [file join $root hls spectrum256 spectrum256.cpp] -cflags "-std=c++14"
+add_files -tb [file join $root hls spectrum256_pl test_spectrum256_pl.cpp] -cflags "-std=c++14"
+set_part xc7z100ffg900-2
+create_clock -period 6.666667 -name default
+csim_design
+if {$mode ne "csim"} {csynth_design}
+if {$mode eq "cosim"} {cosim_design -rtl verilog -tool xsim}
+if {$mode eq "synth"} {export_design -format ip_catalog}
+puts "SPECTRUM256_PL_BUILD_PASSED mode=$mode"
+exit

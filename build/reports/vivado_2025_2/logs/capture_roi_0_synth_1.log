@@ -1,0 +1,1544 @@
+
+*** Running vivado
+    with args -log capture_roi_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source capture_roi_0.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 30 21:35:04 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source capture_roi_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 660.762 ; gain = 216.344
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/clip_copy_checked'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_full_temporal_v2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_shared'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/rgb2dvi_v1_3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/roi256_v3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/spectrum256_pl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tool/vivado/2025.2/Vivado/data/ip'.
+Command: synth_design -top capture_roi_0 -part xc7z100ffg900-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12252
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1532.422 ; gain = 538.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'capture_roi_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/synth/capture_roi_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'roi256' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_roi256_Pipeline_VITIS_LOOP_108_3_reference_re_RAM_2P_BRAM_1R1W' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_108_3_reference_re_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './roi256_roi256_Pipeline_VITIS_LOOP_108_3_reference_re_RAM_2P_BRAM_1R1W.dat' is read successfully [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_108_3_reference_re_RAM_2P_BRAM_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_roi256_Pipeline_VITIS_LOOP_108_3_reference_re_RAM_2P_BRAM_1R1W' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_108_3_reference_re_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_hann256_ROM_AUTO_1R' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_hann256_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_hann256_ROM_AUTO_1R.dat' is read successfully [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_hann256_ROM_AUTO_1R.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_hann256_ROM_AUTO_1R' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_hann256_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'roi256_uitofp_32ns_32_6_no_dsp_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_uitofp_32ns_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'roi256_uitofp_32ns_32_6_no_dsp_1_ip' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_32ns_32_6_no_dsp_1_ip/synth/roi256_uitofp_32ns_32_6_no_dsp_1_ip.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z100ffg900-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'd:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_32ns_32_6_no_dsp_1_ip/synth/roi256_uitofp_32ns_32_6_no_dsp_1_ip.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'roi256_uitofp_32ns_32_6_no_dsp_1_ip' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_32ns_32_6_no_dsp_1_ip/synth/roi256_uitofp_32ns_32_6_no_dsp_1_ip.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_uitofp_32ns_32_6_no_dsp_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_uitofp_32ns_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_mac_muladd_16ns_16ns_48s_48_4_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_mac_muladd_16ns_16ns_48s_48_4_1.v:45]
+INFO: [Synth 8-6157] synthesizing module 'roi256_mac_muladd_16ns_16ns_48s_48_4_1_DSP48_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_mac_muladd_16ns_16ns_48s_48_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_mac_muladd_16ns_16ns_48s_48_4_1_DSP48_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_mac_muladd_16ns_16ns_48s_48_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_mac_muladd_16ns_16ns_48s_48_4_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_mac_muladd_16ns_16ns_48s_48_4_1.v:45]
+INFO: [Synth 8-6157] synthesizing module 'roi256_flow_control_loop_pipe_sequential_init' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_flow_control_loop_pipe_sequential_init' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fft2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fft_line' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_line.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fft_line_ar_RAM_T2P_BRAM_1R1W' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_line_ar_RAM_T2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fft_line_ar_RAM_T2P_BRAM_1R1W' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_line_ar_RAM_T2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fft_line_Pipeline_VITIS_LOOP_43_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_line_Pipeline_VITIS_LOOP_43_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fft_line_Pipeline_VITIS_LOOP_43_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_line_Pipeline_VITIS_LOOP_43_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fft_stage' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_stage.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fft_stage_Pipeline_VITIS_LOOP_26_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_cos256_ROM_AUTO_1R' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_cos256_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_cos256_ROM_AUTO_1R.dat' is read successfully [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_cos256_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_cos256_ROM_AUTO_1R' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_cos256_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_sin256_ROM_AUTO_1R' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_sin256_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_sin256_ROM_AUTO_1R.dat' is read successfully [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_sin256_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_sin256_ROM_AUTO_1R' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_sin256_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fsub_32ns_32ns_32_8_full_dsp_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fsub_32ns_32ns_32_8_full_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip/synth/roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z100ffg900-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 6 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'd:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip/synth/roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip/synth/roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fsub_32ns_32ns_32_8_full_dsp_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fsub_32ns_32ns_32_8_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fadd_32ns_32ns_32_8_full_dsp_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fadd_32ns_32ns_32_8_full_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip/synth/roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z100ffg900-2 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 6 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'd:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip/synth/roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip/synth/roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fadd_32ns_32ns_32_8_full_dsp_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fadd_32ns_32ns_32_8_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fmul_32ns_32ns_32_4_max_dsp_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip/synth/roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z100ffg900-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'd:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip/synth/roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip/synth/roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fft_stage_Pipeline_VITIS_LOOP_26_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fft_stage' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_stage.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fft_line_Pipeline_VITIS_LOOP_52_3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_line_Pipeline_VITIS_LOOP_52_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fft_line_Pipeline_VITIS_LOOP_52_3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_line_Pipeline_VITIS_LOOP_52_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fft_line' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft_line.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fft2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fft2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_roi256_Pipeline_VITIS_LOOP_108_3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_108_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fdiv_32ns_32ns_32_22_no_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip/synth/roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z100ffg900-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 1 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 20 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'd:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip/synth/roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip/synth/roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fdiv_32ns_32ns_32_22_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fsqrt_32ns_32ns_32_28_no_dsp_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip/synth/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z100ffg900-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 1 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 26 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'd:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip/synth/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip/synth/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fsqrt_32ns_32ns_32_28_no_dsp_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_roi256_Pipeline_VITIS_LOOP_108_3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_108_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_roi256_Pipeline_VITIS_LOOP_121_4' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_121_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_roi256_Pipeline_VITIS_LOOP_121_4' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_121_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_control_s_axi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_control_s_axi.v:258]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_control_s_axi' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_load' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_fifo' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_srl' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_srl' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_fifo' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_reg_slice' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_reg_slice' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2053]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_fifo__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_srl__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_srl__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_fifo__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_fifo__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_mem' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2410]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_mem' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2410]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_fifo__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2157]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_load' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_read' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_fifo__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_srl__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_srl__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_fifo__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_burst_converter' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:1050]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_burst_sequential' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:1656]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_reg_slice__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_reg_slice__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_burst_sequential' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:1656]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_burst_converter' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:1050]
+INFO: [Synth 8-6157] synthesizing module 'roi256_image_r_m_axi_reg_slice__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_reg_slice__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi_read' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:796]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_image_r_m_axi' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_image_r_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_store' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_fifo' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_srl' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_srl' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_fifo' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_fifo__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_srl__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_srl__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_fifo__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_fifo__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_srl__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_srl__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_fifo__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_fifo__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_srl__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_srl__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_fifo__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_fifo__parameterized3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_srl__parameterized3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_srl__parameterized3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_fifo__parameterized3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2781]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_store' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_write' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:1112]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_burst_converter' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_burst_sequential' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2013]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_reg_slice' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_reg_slice' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_burst_sequential' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2013]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_burst_converter' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_throttle' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2408]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_fifo__parameterized4' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_srl__parameterized4' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_srl__parameterized4' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_fifo__parameterized4' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_reg_slice__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_reg_slice__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2677]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_reg_slice__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_reg_slice__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_throttle' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2408]
+INFO: [Synth 8-6157] synthesizing module 'roi256_result_m_axi_reg_slice__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_reg_slice__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi_write' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:1112]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_result_m_axi' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_faddfsub_32ns_32ns_32_8_full_dsp_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/synth/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z100ffg900-2 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 6 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'd:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/synth/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.vhd:223]
+INFO: [Synth 8-256] done synthesizing module 'roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/synth/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.vhd:74]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_faddfsub_32ns_32ns_32_8_full_dsp_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_uitofp_64ns_32_6_no_dsp_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_uitofp_64ns_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'roi256_uitofp_64ns_32_6_no_dsp_1_ip' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/synth/roi256_uitofp_64ns_32_6_no_dsp_1_ip.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z100ffg900-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'd:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/synth/roi256_uitofp_64ns_32_6_no_dsp_1_ip.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'roi256_uitofp_64ns_32_6_no_dsp_1_ip' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/synth/roi256_uitofp_64ns_32_6_no_dsp_1_ip.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_uitofp_64ns_32_6_no_dsp_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_uitofp_64ns_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_fcmp_32ns_32ns_1_2_no_dsp_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip/synth/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z100ffg900-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 1 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'd:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip/synth/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip.vhd:215]
+INFO: [Synth 8-256] done synthesizing module 'roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/hdl/ip/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip/synth/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_fcmp_32ns_32ns_1_2_no_dsp_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'roi256_mul_32ns_32ns_64_3_1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_mul_32ns_32ns_64_3_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'roi256_mul_32ns_32ns_64_3_1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_mul_32ns_32ns_64_3_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'roi256' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'capture_roi_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/synth/capture_roi_0.v:53]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_control_s_axi.v:351]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized19 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized19 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized19 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized19 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized19 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op_lat is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op_lat is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op_lat is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op_lat is either unconnected or has no load
+INFO: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op_lat is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized23 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized23 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized23 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized23 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized23 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized95 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized95 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized95 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized95 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized95 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized93 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized93 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized93 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized93 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized93 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized52 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized52 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized52 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized52 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized52 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized15 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized48 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized48 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized48 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized48 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized48 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module dsp48e1_wrapper__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SIGN in module flt_round_dsp_opt_full is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized21 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized21 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized21 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized21 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized21 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized82 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized82 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized82 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized82 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized82 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized80 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized80 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized80 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized80 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized80 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized91 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized91 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized91 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized91 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized91 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized29 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized29 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized29 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized89 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized89 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized89 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[31] in module special_detect__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized54 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized54 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized54 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized54 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized54 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized87 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized87 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized87 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized87 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized87 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized50 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 1931.090 ; gain = 936.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 1931.090 ; gain = 936.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 1931.090 ; gain = 936.680
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1931.090 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4949 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/constraints/roi256_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/constraints/roi256_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/vision/submission/_build/v25/c.runs/capture_roi_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/vision/submission/_build/v25/c.runs/capture_roi_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2033.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 30 instances were transformed.
+  FDE => FDRE: 30 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.743 . Memory (MB): peak = 2033.402 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 2033.402 ; gain = 1038.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 2033.402 ; gain = 1038.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:01:02 . Memory (MB): peak = 2033.402 ; gain = 1038.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln94_reg_618_pp0_iter12_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:879]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln94_reg_618_pp0_iter11_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:878]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln94_reg_618_pp0_iter10_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:877]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln94_reg_618_pp0_iter9_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:877]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln94_reg_618_pp0_iter8_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:886]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln94_reg_618_pp0_iter7_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:885]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln94_reg_618_pp0_iter6_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:884]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln94_reg_618_pp0_iter5_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:883]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln94_reg_618_pp0_iter4_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:882]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln94_reg_618_pp0_iter3_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:881]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln94_reg_618_pp0_iter2_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:880]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln95_reg_624_pp0_iter12_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:890]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln95_reg_624_pp0_iter11_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:889]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln95_reg_624_pp0_iter10_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:888]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln95_reg_624_pp0_iter9_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:888]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln95_reg_624_pp0_iter8_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:897]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln95_reg_624_pp0_iter7_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:896]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln95_reg_624_pp0_iter6_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:895]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln95_reg_624_pp0_iter5_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:894]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln95_reg_624_pp0_iter4_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:893]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln95_reg_624_pp0_iter3_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:892]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln95_reg_624_pp0_iter2_reg_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:891]
+INFO: [Synth 8-3936] Found unconnected internal register 'select_ln95_reg_624_reg' and it is trimmed from '9' to '8' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v:913]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'roi256_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'roi256_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'roi256_image_r_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'roi256_image_r_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'roi256_image_r_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'roi256_result_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'roi256_result_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'roi256_result_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'roi256_result_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "roi256_fft_line_ar_RAM_T2P_BRAM_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'roi256_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'roi256_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'roi256_image_r_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'roi256_image_r_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'roi256_image_r_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'roi256_result_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'roi256_result_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'roi256_result_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'roi256_result_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:01:08 . Memory (MB): peak = 2033.402 ; gain = 1038.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_fu_398/uitofp_32ns_32_6_no_dsp_1_U3/roi256_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized8) to 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized8) to 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized8) to 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized14) to 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized14) to 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized8) to 'roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_DELAY' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized14) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized14) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/fsqrt_32ns_32ns_32_28_no_dsp_1_U84/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/faddfsub_32ns_32ns_32_8_full_dsp_1_U93/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'inst/faddfsub_32ns_32ns_32_8_full_dsp_1_U93/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/faddfsub_32ns_32ns_32_8_full_dsp_1_U93/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'inst/faddfsub_32ns_32ns_32_8_full_dsp_1_U93/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized8) to 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized8) to 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized14) to 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized14) to 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'inst/uitofp_64ns_32_6_no_dsp_1_U96/roi256_uitofp_64ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U97/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U97/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U97/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U97/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U97/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U97/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U97/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized8) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U97/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '73' to '72' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2710]
+INFO: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '73' to '72' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fba7/hdl/verilog/roi256_result_m_axi.v:2731]
+INFO: [Synth 8-3971] The signal "inst/grp_fft2_fu_417/grp_fft_line_fu_61/ar_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/grp_fft2_fu_417/grp_fft_line_fu_61/ai_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/grp_fft2_fu_417/grp_fft_line_fu_61/br_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/grp_fft2_fu_417/grp_fft_line_fu_61/bi_U/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:53 . Memory (MB): peak = 2159.074 ; gain = 1164.664
+---------------------------------------------------------------------------------
+ Sort Area is roi256__GB3 mul_32ns_32ns_64_3_1_U98/tmp_product_2 : 0 0 : 3137 5981 : Used 1 time 0
+ Sort Area is roi256__GB3 mul_32ns_32ns_64_3_1_U98/tmp_product_2 : 0 1 : 2844 5981 : Used 1 time 0
+ Sort Area is roi256__GB3 mul_32ns_32ns_64_3_1_U98/tmp_product_5 : 0 0 : 2777 5484 : Used 1 time 0
+ Sort Area is roi256__GB3 mul_32ns_32ns_64_3_1_U98/tmp_product_5 : 0 1 : 2707 5484 : Used 1 time 0
+ Sort Area is roi256__GB1 mac_muladd_16ns_16ns_48s_48_4_1_U4/roi256_mac_muladd_16ns_16ns_48s_48_4_1_DSP48_0_U/p_reg_reg_0 : 0 0 : 3598 3598 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:37 ; elapsed = 00:02:00 . Memory (MB): peak = 2258.363 ; gain = 1263.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:02:06 . Memory (MB): peak = 2364.879 ; gain = 1370.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_re_U/ram_reg_1_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_28 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_29 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_30 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_roi256_Pipeline_VITIS_LOOP_108_3_fu_432/reference_im_U/ram_reg_1_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fft2_fu_417/grp_fft_line_fu_61/ar_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fft2_fu_417/grp_fft_line_fu_61/ar_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fft2_fu_417/grp_fft_line_fu_61/ai_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fft2_fu_417/grp_fft_line_fu_61/ai_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fft2_fu_417/grp_fft_line_fu_61/br_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fft2_fu_417/grp_fft_line_fu_61/br_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fft2_fu_417/grp_fft_line_fu_61/bi_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fft2_fu_417/grp_fft_line_fu_61/bi_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_18 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_19 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_20 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_21 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_22 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_24 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_25 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_26 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/data_im_U/ram_reg_1_27 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:50 ; elapsed = 00:02:14 . Memory (MB): peak = 2364.879 ; gain = 1370.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:55 ; elapsed = 00:02:19 . Memory (MB): peak = 2521.258 ; gain = 1526.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:55 ; elapsed = 00:02:19 . Memory (MB): peak = 2521.258 ; gain = 1526.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:58 ; elapsed = 00:02:21 . Memory (MB): peak = 2530.000 ; gain = 1535.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:58 ; elapsed = 00:02:22 . Memory (MB): peak = 2530.000 ; gain = 1535.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:58 ; elapsed = 00:02:22 . Memory (MB): peak = 2554.852 ; gain = 1560.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:58 ; elapsed = 00:02:22 . Memory (MB): peak = 2554.852 ; gain = 1560.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                            | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper_1374                                   | Dynamic           | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized0_1324                   | C'+(A'*B)'        | 24     | 16     | 35     | -      | 35     | 1    | 0    | 1    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_1146                   | (A*B)'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1147                   | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_1144                   | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_1118                   | (A*B)'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1119                   | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_1116                   | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_1092                   | (A*B)'            | 24     | 0      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1093                   | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_1090                   | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_1067                   | (A*B)'            | 24     | 0      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1068                   | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_1065                   | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_1043                                   | Dynamic           | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized0_993                    | C'+(A'*B)'        | 24     | 16     | 35     | -      | 35     | 1    | 0    | 1    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper_967                                    | Dynamic           | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized0_917                    | C'+(A'*B)'        | 24     | 16     | 35     | -      | 35     | 1    | 0    | 1    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper_891                                    | Dynamic           | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized0_841                    | C'+(A'*B)'        | 24     | 16     | 35     | -      | 35     | 1    | 0    | 1    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_810                    | (A*B)'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_811                    | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_808                    | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_782                    | (A*B)'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_783                    | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_780                    | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_754                    | (A*B)'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_755                    | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_752                    | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_726                    | (A*B)'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_727                    | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_724                    | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_703                                    | Dynamic           | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized0_653                    | C'+(A'*B)'        | 24     | 16     | 35     | -      | 35     | 1    | 0    | 1    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper_627                                    | Dynamic           | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized0_577                    | C'+(A'*B)'        | 24     | 16     | 35     | -      | 35     | 1    | 0    | 1    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper_551                                    | Dynamic           | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized0_501                    | C'+(A'*B)'        | 24     | 16     | 35     | -      | 35     | 1    | 0    | 1    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper_471                                    | Dynamic           | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized0_421                    | C'+(A'*B)'        | 24     | 16     | 35     | -      | 35     | 1    | 0    | 1    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper_395                                    | Dynamic           | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized0_351                    | C'+(A'*B)'        | 24     | 16     | 35     | -      | 35     | 1    | 0    | 1    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_206                    | (A*B)'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_207                    | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_204                    | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_178                    | (A*B)'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_179                    | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_176                    | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_150                    | (A*B)'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_151                    | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3_148                    | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1                        | (A*B)'            | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2                        | PCIN>>17+(A*B)'   | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3                        | PCIN+A:B+C        | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper                                        | Dynamic           | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized0                        | C'+(A'*B)'        | 24     | 16     | 35     | -      | 35     | 1    | 0    | 1    | -    | -     | 1    | 0    | 
+|roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2 | Dynamic           | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 1    | 1    | 
+|roi256                                                 | A'*B'             | 17     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|roi256                                                 | (PCIN>>17+A'*B')' | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|roi256                                                 | A'*B'             | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|roi256                                                 | (PCIN>>17+A'*B')' | 17     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++-------------------------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   206|
+|2     |DSP48E1  |    61|
+|10    |LUT1     |   266|
+|11    |LUT2     |  1217|
+|12    |LUT3     |  3430|
+|13    |LUT4     |  1380|
+|14    |LUT5     |  1440|
+|15    |LUT6     |  1858|
+|16    |MUXCY    |  2697|
+|17    |MUXF7    |    16|
+|18    |MUXF8    |     8|
+|19    |RAMB18E1 |     4|
+|22    |RAMB36E1 |   264|
+|26    |SRL16E   |   359|
+|27    |SRLC32E  |   275|
+|28    |XORCY    |  2124|
+|29    |FDE      |    30|
+|30    |FDRE     | 12238|
+|31    |FDSE     |    23|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:59 ; elapsed = 00:02:22 . Memory (MB): peak = 2554.852 ; gain = 1560.441
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:22 ; elapsed = 00:02:08 . Memory (MB): peak = 2554.852 ; gain = 1458.129
+Synthesis Optimization Complete : Time (s): cpu = 00:01:59 ; elapsed = 00:02:23 . Memory (MB): peak = 2554.852 ; gain = 1560.441
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.581 . Memory (MB): peak = 2554.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5410 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2577.504 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 791 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 761 instances
+  FDE => FDRE: 30 instances
+
+Synth Design complete | Checksum: d986cda
+INFO: [Common 17-83] Releasing license: Synthesis
+499 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:13 ; elapsed = 00:02:40 . Memory (MB): peak = 2577.504 ; gain = 1891.875
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2577.504 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_roi_0_synth_1/capture_roi_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP capture_roi_0, cache-ID = 9080c4c1d1d6900c
+INFO: [Coretcl 2-1174] Renamed 1851 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2577.504 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_roi_0_synth_1/capture_roi_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file capture_roi_0_utilization_synth.rpt -pb capture_roi_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 21:38:21 2026...

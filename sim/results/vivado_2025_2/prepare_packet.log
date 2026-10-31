@@ -1,0 +1,7 @@
+PASS non-bin-centred 5+10 Hz: two persistent peaks, no mainlobe duplicates
+PASS current 3.5+7+10.5 Hz: all three labels and no duplicate peaks
+PASS 14 components retained; text pagination has no top-N truncation
+PASS measured-frequency tick conversion and independent footer fields
+PASS vanished peaks removed immediately; silence cannot preserve old peaks
+MEASURED peaks=6 threshold_q16=924: 5.0Hz/52% 10.0Hz/100% 15.0Hz/19% 20.0Hz/59% 25.0Hz/33% 30.0Hz/24%
+SPECTRUM_UI_TEST_PASSED

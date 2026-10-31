@@ -1,0 +1,148 @@
+{
+  "pl_semantically_identical": true,
+  "csi_hwh_identical": true,
+  "bit_reused_sha256": "9836f502522085ff01fde7f3194b2dfe9491ffe7e30447ca391e50e4363cc134",
+  "xsa_sha256": "bb1fd7525051188e14840edb8ede828c5219e9d97d822e6c8b65ccde7ccad440",
+  "ps_changes": {
+    "PCW_ACT_QSPI_PERIPHERAL_FREQMHZ": [
+      "10.000000",
+      "200.000000"
+    ],
+    "PCW_QSPI_PERIPHERAL_DIVISOR0": [
+      "1",
+      "9"
+    ],
+    "PCW_EN_QSPI": [
+      "0",
+      "1"
+    ],
+    "PCW_QSPI_PERIPHERAL_ENABLE": [
+      "0",
+      "1"
+    ],
+    "PCW_QSPI_QSPI_IO": [
+      "<Select>",
+      "MIO 1 .. 6"
+    ],
+    "PCW_QSPI_GRP_SINGLE_SS_ENABLE": [
+      "0",
+      "1"
+    ],
+    "PCW_QSPI_GRP_SINGLE_SS_IO": [
+      "<Select>",
+      "MIO 1 .. 6"
+    ],
+    "PCW_SINGLE_QSPI_DATA_MODE": [
+      "<Select>",
+      "x4"
+    ],
+    "PCW_MIO_1_PULLUP": [
+      "<Select>",
+      "enabled"
+    ],
+    "PCW_MIO_1_IOTYPE": [
+      "<Select>",
+      "LVCMOS 3.3V"
+    ],
+    "PCW_MIO_1_DIRECTION": [
+      "<Select>",
+      "out"
+    ],
+    "PCW_MIO_1_SLEW": [
+      "<Select>",
+      "slow"
+    ],
+    "PCW_MIO_2_PULLUP": [
+      "<Select>",
+      "disabled"
+    ],
+    "PCW_MIO_2_IOTYPE": [
+      "<Select>",
+      "LVCMOS 3.3V"
+    ],
+    "PCW_MIO_2_DIRECTION": [
+      "<Select>",
+      "inout"
+    ],
+    "PCW_MIO_2_SLEW": [
+      "<Select>",
+      "slow"
+    ],
+    "PCW_MIO_3_PULLUP": [
+      "<Select>",
+      "disabled"
+    ],
+    "PCW_MIO_3_IOTYPE": [
+      "<Select>",
+      "LVCMOS 3.3V"
+    ],
+    "PCW_MIO_3_DIRECTION": [
+      "<Select>",
+      "inout"
+    ],
+    "PCW_MIO_3_SLEW": [
+      "<Select>",
+      "slow"
+    ],
+    "PCW_MIO_4_PULLUP": [
+      "<Select>",
+      "disabled"
+    ],
+    "PCW_MIO_4_IOTYPE": [
+      "<Select>",
+      "LVCMOS 3.3V"
+    ],
+    "PCW_MIO_4_DIRECTION": [
+      "<Select>",
+      "inout"
+    ],
+    "PCW_MIO_4_SLEW": [
+      "<Select>",
+      "slow"
+    ],
+    "PCW_MIO_5_PULLUP": [
+      "<Select>",
+      "disabled"
+    ],
+    "PCW_MIO_5_IOTYPE": [
+      "<Select>",
+      "LVCMOS 3.3V"
+    ],
+    "PCW_MIO_5_DIRECTION": [
+      "<Select>",
+      "inout"
+    ],
+    "PCW_MIO_5_SLEW": [
+      "<Select>",
+      "slow"
+    ],
+    "PCW_MIO_6_PULLUP": [
+      "<Select>",
+      "disabled"
+    ],
+    "PCW_MIO_6_IOTYPE": [
+      "<Select>",
+      "LVCMOS 3.3V"
+    ],
+    "PCW_MIO_6_DIRECTION": [
+      "<Select>",
+      "out"
+    ],
+    "PCW_MIO_6_SLEW": [
+      "<Select>",
+      "slow"
+    ],
+    "PCW_MIO_TREE_PERIPHERALS": [
+      "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#UART 0#UART 0#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned",
+      "unassigned#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#UART 0#UART 0#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned"
+    ],
+    "PCW_MIO_TREE_SIGNALS": [
+      "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#rx#tx#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned",
+      "unassigned#qspi0_ss_b#qspi0_io[0]#qspi0_io[1]#qspi0_io[2]#qspi0_io[3]/HOLD_B#qspi0_sclk#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#rx#tx#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned"
+    ]
+  },
+  "ps_init_non_qspi_identical": true,
+  "layout_route_inherited_from": "v18hmi verified implementation",
+  "new_place_route_performed": false,
+  "new_xsa_contains_bit": false
+}

@@ -1,0 +1,14 @@
+set root [file normalize [file join [file dirname [info script]] ..]]
+set folder [file join $root build motion60_full_temporal_v2_synth]
+open_component $folder -flow_target vivado
+cd $folder
+set_top clip_temporal_full
+add_files [file join $root hls motion60_shared clip_temporal_v2.cpp] -cflags "-std=c++14"
+add_files -tb [file join $root hls motion60_shared test_temporal_v2.cpp] -cflags "-std=c++14"
+set_part xc7z100ffg900-2
+create_clock -period 6.666667 -name default
+csim_design
+csynth_design
+export_design -format ip_catalog
+puts MOTION60_FULL_TEMPORAL_V2_SYNTHESIZED
+exit

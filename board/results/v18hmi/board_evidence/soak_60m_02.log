@@ -1,0 +1,5 @@
+WAIT_OWNED_INVENTORY xc7z100* 0
+WAIT_OWNED_INVENTORY xc7z100* 1
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+HMI_MONITOR mode=soak elapsed_ms=4 frames=1530 display=759 rx_errors=0 capture_error=0
+Continuous run was interrupted or received a new command

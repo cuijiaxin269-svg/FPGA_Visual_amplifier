@@ -1,0 +1,99 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Oct 30 22:27:28 2026
+| Host         : LAPTOP-39R8HM8E running 64-bit major release  (build 9200)
+| Command      : report_methodology -file D:/vision/submission/_build/v25/reports/methodology_standalone_qspi2025_2.txt
+| Design       : capture_wrapper
+| Device       : xc7z100ffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: impl_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 12
++-----------+----------+-------------------------------------------------+--------+
+| Rule      | Severity | Description                                     | Checks |
++-----------+----------+-------------------------------------------------+--------+
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 2      |
+| TIMING-9  | Warning  | Unknown CDC Logic                               | 1      |
+| TIMING-18 | Warning  | Missing input or output delay                   | 8      |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects     | 1      |
++-----------+----------+-------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell capture_i/display_mem/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X9Y194 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell capture_i/display_mem/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell capture_i/mem/s06_couplers/s06_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X9Y124 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell capture_i/mem/s06_couplers/s06_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on dphy_clk_lp_n relative to the rising and/or falling clock edge(s) of clk_fpga_0, clk_fpga_2.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on dphy_clk_lp_p relative to the rising and/or falling clock edge(s) of clk_fpga_0, clk_fpga_2.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on dphy_data_hs_p[0] relative to the rising and/or falling clock edge(s) of dphy_clk_hs_p.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on dphy_data_hs_p[1] relative to the rising and/or falling clock edge(s) of dphy_clk_hs_p.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on dphy_data_lp_n[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0, clk_fpga_2.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on dphy_data_lp_n[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0, clk_fpga_2.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on dphy_data_lp_p[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0, clk_fpga_2.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on dphy_data_lp_p[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0, clk_fpga_2.
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '5' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: D:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_hdmi_0/src/rgb2dvi.xdc (Line: 5)
+Related violations: <none>
+
+

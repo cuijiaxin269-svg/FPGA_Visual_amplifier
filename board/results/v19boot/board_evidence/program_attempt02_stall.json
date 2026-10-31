@@ -1,0 +1,7 @@
+{
+  "time": "2026-10-30T14:54:51.4996850+08:00",
+  "writer_pid": 31844,
+  "bridge_pid": 12692,
+  "last_log_time": "2026-10-30T14:48:28.1545171+08:00",
+  "reason": "Repeated host transfer stall; independently confirmed CPU suspended and QSPI disabled"
+}

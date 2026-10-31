@@ -1,0 +1,38 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+BUTTON_CORE core=0 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason {Vector Catch} is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Vector Catch)}
+BUTTON_CORE core=1 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.1 target_id 3 level 1 name {ARM Cortex-A9 MPCore #1} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason Suspended is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Suspended)}
+BUTTON_CORE core=0 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason {Vector Catch} is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Vector Catch)}
+RECOVERY_PRESERVE_DDR_RESUME_OFFSET 8060928
+BUTTON_CORE core=0 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason {Vector Catch} is_current 1 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Vector Catch)}
+RECOVERY_UPLOAD_COMPLETE_IMAGE_BEGIN
+RECOVERY_UPLOAD_PROGRESS bytes=8192000 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=8454144 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=8716288 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=8978432 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=9240576 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=9502720 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=9764864 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=10027008 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=10289152 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=10551296 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=10813440 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=11075584 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=11337728 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=11599872 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=11862016 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=12124160 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=12386304 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=12648448 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=12910592 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=13172736 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=13299932 total=13299932
+RECOVERY_IMAGE_UPLOADED_BEGIN_READ_ONLY_PREFLIGHT
+BUTTON_CORE core=0 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason {Vector Catch} is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Vector Catch)}
+RECOVERY_DDR_CRC_ID_BIT_COMPATIBILITY_AND_UNTOUCHED_TAIL_VERIFIED
+RECOVERY_PROGRESS state=4 bytes=2048 programmed_pages=0 skipped_pages=18
+RECOVERY_PROGRESS state=4 bytes=2009344 programmed_pages=0 skipped_pages=7858
+RECOVERY_PROGRESS state=57358 bytes=3276800 programmed_pages=0 skipped_pages=12800
+Recovery program failed: 1364676657 57358 2227921447 15679512 0 3276800 0 3276804 361302376 0 1095912753 0 12800 0 0 0
+Recovery program failed: 1364676657 57358 2227921447 15679512 0 3276800 0 3276804 361302376 0 1095912753 0 12800 0 0 0
+    while executing
+"error "Recovery program failed: [mrd -value 0x00ff0000 16]""

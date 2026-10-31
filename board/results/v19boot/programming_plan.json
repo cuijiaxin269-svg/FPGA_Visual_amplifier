@@ -1,0 +1,19 @@
+{
+  "authorized_task": "User requested flash consolidation; board only, functional peripheral tests deferred.",
+  "mode": "qspi-x4-single",
+  "target": "first QSPI flash on MIO1..6",
+  "jedec": "ef4018",
+  "image": "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\build\\candidate\\BOOT.BIN",
+  "image_sha256": "eae2d50a02ab3f8aaa2574d2fcd9573cc657461bc64690f1b1f17b84ba013e54",
+  "fsbl": "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\build\\candidate\\fsbl.elf",
+  "fsbl_sha256": "86383b7e4dbb6dcd4d50d0227b1be9649e555a27bfb5819e49137502f02e2133",
+  "offset": 0,
+  "bytes": 13299932,
+  "erase_end_exclusive": 13303808,
+  "backup": "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261030_v19boot_01\\flash_before_16MiB.bin",
+  "backup_sha256": "ad98a3cefadddc84ecb12c1ee796295cff5cfdc90a6de38a1fa299b97cab2bfc",
+  "baseline_preserved": true,
+  "expected_jtag_boot_mode": 0,
+  "expected_runtime": "STOPPED",
+  "functional_peripheral_validation": false
+}

@@ -1,0 +1,16 @@
+{
+  "checked_copy_files": 34,
+  "all_copied_files_sha256_match": true,
+  "tcl_syntax_complete": true,
+  "python_ast_valid": true,
+  "roi_generator_relocation_binary_equivalence": [
+    "input0.bin",
+    "input1.bin",
+    "input2.bin",
+    "input3.bin",
+    "expected.bin"
+  ],
+  "hls_csim_rerun": false,
+  "hls_synthesis_rerun": false,
+  "note": "ROI reference vectors only; no FPGA or physical test."
+}

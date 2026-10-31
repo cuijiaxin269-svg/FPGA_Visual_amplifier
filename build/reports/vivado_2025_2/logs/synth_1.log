@@ -1,0 +1,928 @@
+
+*** Running vivado
+    with args -log capture_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source capture_wrapper.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 30 21:43:41 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source capture_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 662.312 ; gain = 220.309
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/clip_copy_checked'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_full_temporal_v2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_shared'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/rgb2dvi_v1_3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/roi256_v3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/spectrum256_pl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tool/vivado/2025.2/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design D:/vision/submission/_build/v25/c.srcs/sources_1/bd/capture/capture.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ capture_lp_concat_0
+capture_lp_n_0_0
+capture_lp_n_1_0
+capture_lp_p_0_0
+capture_lp_p_1_0
+capture_one_0
+capture_zero_0
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 786.652 ; gain = 119.402
+Command: synth_design -top capture_wrapper -part xc7z100ffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8564
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1643.664 ; gain = 538.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'capture_wrapper' [D:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/hdl/capture_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
+INFO: [Synth 8-6157] synthesizing module 'capture' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:13]
+INFO: [Synth 8-6157] synthesizing module 'capture_clip_dma_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_clip_dma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_clip_dma_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_clip_dma_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_AWADDR' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_AWBURST' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_AWCACHE' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_AWID' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_AWLEN' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_AWLOCK' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_AWPROT' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_AWQOS' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_AWREGION' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_AWSIZE' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_AWVALID' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_BREADY' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_WDATA' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_WID' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_WLAST' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_WSTRB' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_input_mem_WVALID' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_ARADDR' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_ARBURST' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_ARCACHE' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_ARID' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_ARLEN' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_ARLOCK' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_ARPROT' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_ARQOS' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_ARREGION' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_ARSIZE' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_ARVALID' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_RREADY' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7071] port 'm_axi_output_mem_WID' of module 'capture_clip_dma_0' is unconnected for instance 'clip_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+WARNING: [Synth 8-7023] instance 'clip_dma' of module 'capture_clip_dma_0' has 100 connections declared, but only 69 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:957]
+INFO: [Synth 8-6157] synthesizing module 'capture_controls_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_controls_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_controls_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_controls_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_core_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_core_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_core_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_core_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_csi_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_csi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_csi_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_csi_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'system_rst_out' of module 'capture_csi_0' is unconnected for instance 'csi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1069]
+WARNING: [Synth 8-7071] port 'csirxss_csi_irq' of module 'capture_csi_0' is unconnected for instance 'csi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1069]
+WARNING: [Synth 8-7023] instance 'csi' of module 'capture_csi_0' has 42 connections declared, but only 40 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1069]
+INFO: [Synth 8-6157] synthesizing module 'capture_ctrl_intercon_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2861]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_18ARTCO' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:7210]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_18ARTCO' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:7210]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_6OAOT7' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:7858]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_6OAOT7' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:7858]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_KYYMCF' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:7973]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_KYYMCF' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:7973]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1KNNK64' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8100]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1KNNK64' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8100]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_1TNLG9J' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8209]
+INFO: [Synth 8-6157] synthesizing module 'capture_ctrl_intercon_imp_auto_cc_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_ctrl_intercon_imp_auto_cc_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_auto_cc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'capture_ctrl_intercon_imp_auto_cc_0' is unconnected for instance 'auto_cc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8332]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'capture_ctrl_intercon_imp_auto_cc_0' is unconnected for instance 'auto_cc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8332]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'capture_ctrl_intercon_imp_auto_cc_0' has 42 connections declared, but only 40 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8332]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1TNLG9J' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8209]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_TP1XAS' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8375]
+INFO: [Synth 8-6157] synthesizing module 'capture_ctrl_intercon_imp_auto_cc_1' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_auto_cc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_ctrl_intercon_imp_auto_cc_1' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_auto_cc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'capture_ctrl_intercon_imp_auto_cc_1' is unconnected for instance 'auto_cc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8498]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'capture_ctrl_intercon_imp_auto_cc_1' is unconnected for instance 'auto_cc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8498]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'capture_ctrl_intercon_imp_auto_cc_1' has 42 connections declared, but only 40 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8498]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_TP1XAS' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8375]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_FPHPHS' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8541]
+INFO: [Synth 8-6157] synthesizing module 'capture_ctrl_intercon_imp_auto_cc_2' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_auto_cc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_ctrl_intercon_imp_auto_cc_2' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_auto_cc_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'capture_ctrl_intercon_imp_auto_cc_2' is unconnected for instance 'auto_cc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8664]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'capture_ctrl_intercon_imp_auto_cc_2' is unconnected for instance 'auto_cc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8664]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'capture_ctrl_intercon_imp_auto_cc_2' has 42 connections declared, but only 40 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8664]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_FPHPHS' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8541]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1H248PF' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8707]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1H248PF' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8707]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_XRTDJA' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8834]
+INFO: [Synth 8-6157] synthesizing module 'capture_ctrl_intercon_imp_auto_cc_3' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_auto_cc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_ctrl_intercon_imp_auto_cc_3' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_auto_cc_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'capture_ctrl_intercon_imp_auto_cc_3' is unconnected for instance 'auto_cc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8957]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'capture_ctrl_intercon_imp_auto_cc_3' is unconnected for instance 'auto_cc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8957]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'capture_ctrl_intercon_imp_auto_cc_3' has 42 connections declared, but only 40 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8957]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_XRTDJA' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:8834]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_1YIC2V9' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:9000]
+INFO: [Synth 8-6157] synthesizing module 'capture_ctrl_intercon_imp_auto_cc_4' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_auto_cc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_ctrl_intercon_imp_auto_cc_4' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_auto_cc_4_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'capture_ctrl_intercon_imp_auto_cc_4' is unconnected for instance 'auto_cc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:9123]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'capture_ctrl_intercon_imp_auto_cc_4' is unconnected for instance 'auto_cc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:9123]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'capture_ctrl_intercon_imp_auto_cc_4' has 42 connections declared, but only 40 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:9123]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_1YIC2V9' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:9000]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_6TMY10' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:9380]
+INFO: [Synth 8-6157] synthesizing module 'capture_ctrl_intercon_imp_auto_pc_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_ctrl_intercon_imp_auto_pc_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_6TMY10' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:9380]
+INFO: [Synth 8-6157] synthesizing module 'capture_ctrl_intercon_imp_xbar_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_ctrl_intercon_imp_xbar_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ctrl_intercon_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_ctrl_intercon_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2861]
+INFO: [Synth 8-6157] synthesizing module 'capture_display_cdc_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_cdc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_display_cdc_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_cdc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'capture_display_cdc_0' is unconnected for instance 'display_cdc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1345]
+WARNING: [Synth 8-7023] instance 'display_cdc' of module 'capture_display_cdc_0' has 15 connections declared, but only 14 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1345]
+INFO: [Synth 8-6157] synthesizing module 'capture_display_dma_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_dma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_display_dma_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_dma_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_frame_ptr_out' of module 'capture_display_dma_0' is unconnected for instance 'display_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1360]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'capture_display_dma_0' is unconnected for instance 'display_dma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1360]
+WARNING: [Synth 8-7023] instance 'display_dma' of module 'capture_display_dma_0' has 41 connections declared, but only 39 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1360]
+INFO: [Synth 8-6157] synthesizing module 'capture_display_mem_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:4279]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1QJD5GN' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:7319]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1QJD5GN' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:7319]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_SEEN3V' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:10662]
+INFO: [Synth 8-6157] synthesizing module 'capture_display_mem_imp_auto_pc_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_mem_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_display_mem_imp_auto_pc_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_mem_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_display_mem_imp_s00_data_fifo_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_mem_imp_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_display_mem_imp_s00_data_fifo_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_mem_imp_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_SEEN3V' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:10662]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1QPD9A0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:10845]
+INFO: [Synth 8-6157] synthesizing module 'capture_display_mem_imp_auto_pc_1' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_mem_imp_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_display_mem_imp_auto_pc_1' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_mem_imp_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_wid' of module 'capture_display_mem_imp_auto_pc_1' is unconnected for instance 'auto_pc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:11113]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'capture_display_mem_imp_auto_pc_1' has 79 connections declared, but only 78 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:11113]
+INFO: [Synth 8-6157] synthesizing module 'capture_display_mem_imp_auto_us_df_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_mem_imp_auto_us_df_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_display_mem_imp_auto_us_df_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_mem_imp_auto_us_df_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1QPD9A0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:10845]
+INFO: [Synth 8-6157] synthesizing module 'capture_display_mem_imp_xbar_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_mem_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_display_mem_imp_xbar_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_display_mem_imp_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'capture_display_mem_imp_xbar_0' is unconnected for instance 'xbar' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:4857]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'capture_display_mem_imp_xbar_0' is unconnected for instance 'xbar' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:4857]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'capture_display_mem_imp_xbar_0' has 78 connections declared, but only 76 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:4857]
+INFO: [Synth 8-6155] done synthesizing module 'capture_display_mem_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:4279]
+INFO: [Synth 8-6157] synthesizing module 'capture_f_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_f_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_f_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_f_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'capture_f_0' is unconnected for instance 'f' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1499]
+WARNING: [Synth 8-7071] port 'm_axi_phase_mem_WID' of module 'capture_f_0' is unconnected for instance 'f' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1499]
+WARNING: [Synth 8-7023] instance 'f' of module 'capture_f_0' has 60 connections declared, but only 58 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1499]
+INFO: [Synth 8-6157] synthesizing module 'capture_hdmi_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_hdmi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_hdmi_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_hdmi_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'oen' of module 'capture_hdmi_0' is unconnected for instance 'hdmi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1558]
+WARNING: [Synth 8-7023] instance 'hdmi' of module 'capture_hdmi_0' has 12 connections declared, but only 11 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1558]
+INFO: [Synth 8-6157] synthesizing module 'capture_hdmi_health_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_hdmi_health_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_hdmi_health_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_hdmi_health_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_hdmi_observe_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_hdmi_observe_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_hdmi_observe_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_hdmi_observe_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_lp_concat_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_lp_concat_0/synth/capture_lp_concat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_7_xlconcat' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_7_xlconcat' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'capture_lp_concat_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_lp_concat_0/synth/capture_lp_concat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'capture_lp_n_0_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_lp_n_0_0/synth/capture_lp_n_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_5_xlslice' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_5_xlslice' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'capture_lp_n_0_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_lp_n_0_0/synth/capture_lp_n_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'capture_lp_n_1_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_lp_n_1_0/synth/capture_lp_n_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_5_xlslice__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_5_xlslice__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/6792/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'capture_lp_n_1_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_lp_n_1_0/synth/capture_lp_n_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'capture_lp_p_0_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_lp_p_0_0/synth/capture_lp_p_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'capture_lp_p_0_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_lp_p_0_0/synth/capture_lp_p_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'capture_lp_p_1_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_lp_p_1_0/synth/capture_lp_p_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'capture_lp_p_1_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_lp_p_1_0/synth/capture_lp_p_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:4936]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_PIOMEI' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:7560]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_ds_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_ds_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_PIOMEI' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:7560]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1P9BIT2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:9166]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_pc_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_pc_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_us_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_us_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1P9BIT2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:9166]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_PCRMPH' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:11267]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_pc_1' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_pc_1' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_s01_data_fifo_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_s01_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_s01_data_fifo_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_s01_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_PCRMPH' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:11267]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_2HPULT' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:11712]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_pc_2' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_pc_2' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_us_df_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_us_df_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_us_df_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_us_df_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_2HPULT' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:11712]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_13S1IEQ' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:11918]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_pc_3' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_pc_3' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_wid' of module 'capture_mem_imp_auto_pc_3' is unconnected for instance 'auto_pc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:12070]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'capture_mem_imp_auto_pc_3' has 44 connections declared, but only 43 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:12070]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_us_df_1' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_us_df_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_us_df_1' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_us_df_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_13S1IEQ' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:11918]
+INFO: [Synth 8-6157] synthesizing module 's04_couplers_imp_1CS4W1L' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:12157]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_pc_4' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_pc_4' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_us_df_2' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_us_df_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_us_df_2' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_us_df_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's04_couplers_imp_1CS4W1L' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:12157]
+INFO: [Synth 8-6157] synthesizing module 's05_couplers_imp_B7NEKA' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:12363]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_pc_5' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_pc_5' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_5_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_wid' of module 'capture_mem_imp_auto_pc_5' is unconnected for instance 'auto_pc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:12515]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'capture_mem_imp_auto_pc_5' has 44 connections declared, but only 43 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:12515]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_us_df_3' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_us_df_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_us_df_3' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_us_df_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's05_couplers_imp_B7NEKA' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:12363]
+INFO: [Synth 8-6157] synthesizing module 's06_couplers_imp_YE3SAM' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:12602]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_pc_6' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_pc_6' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_6_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_s06_data_fifo_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_s06_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_s06_data_fifo_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_s06_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's06_couplers_imp_YE3SAM' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:12602]
+INFO: [Synth 8-6157] synthesizing module 's07_couplers_imp_1Y0HUIL' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:12816]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_pc_7' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_pc_7' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_7_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_s07_data_fifo_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_s07_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_s07_data_fifo_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_s07_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's07_couplers_imp_1Y0HUIL' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:12816]
+INFO: [Synth 8-6157] synthesizing module 's08_couplers_imp_GBRI3S' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:13070]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_pc_8' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_pc_8' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_pc_8_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_wid' of module 'capture_mem_imp_auto_pc_8' is unconnected for instance 'auto_pc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:13338]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'capture_mem_imp_auto_pc_8' has 79 connections declared, but only 78 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:13338]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_us_df_4' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_us_df_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_us_df_4' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_auto_us_df_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's08_couplers_imp_GBRI3S' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:13070]
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_xbar_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_xbar_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_mem_imp_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (40) of port connection 's_axi_bid' does not match port width (45) of module 'capture_mem_imp_xbar_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:6564]
+WARNING: [Synth 8-689] width (35) of port connection 's_axi_rid' does not match port width (45) of module 'capture_mem_imp_xbar_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:6569]
+WARNING: [Synth 8-7071] port 'm_axi_wid' of module 'capture_mem_imp_xbar_0' is unconnected for instance 'xbar' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:6502]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'capture_mem_imp_xbar_0' has 78 connections declared, but only 77 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:6502]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:4936]
+INFO: [Synth 8-6157] synthesizing module 'capture_motion_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_motion_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_motion_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_motion_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'capture_motion_0' is unconnected for instance 'motion' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1901]
+WARNING: [Synth 8-7071] port 'm_axi_images_WID' of module 'capture_motion_0' is unconnected for instance 'motion' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1901]
+WARNING: [Synth 8-7071] port 'm_axi_state0_WID' of module 'capture_motion_0' is unconnected for instance 'motion' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1901]
+WARNING: [Synth 8-7071] port 'm_axi_state1_WID' of module 'capture_motion_0' is unconnected for instance 'motion' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1901]
+WARNING: [Synth 8-7071] port 'm_axi_state2_WID' of module 'capture_motion_0' is unconnected for instance 'motion' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1901]
+WARNING: [Synth 8-7023] instance 'motion' of module 'capture_motion_0' has 180 connections declared, but only 175 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1901]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2077]
+INFO: [Synth 8-6157] synthesizing module 'capture_observe_health_vio_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_observe_health_vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_observe_health_vio_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_observe_health_vio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_observe_pixel_vio_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_observe_pixel_vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_observe_pixel_vio_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_observe_pixel_vio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_one_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_one_0/synth/capture_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'capture_one_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_one_0/synth/capture_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'capture_overlay_cdc_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_overlay_cdc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_overlay_cdc_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_overlay_cdc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'capture_overlay_cdc_0' is unconnected for instance 'overlay_cdc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2104]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'capture_overlay_cdc_0' is unconnected for instance 'overlay_cdc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2104]
+WARNING: [Synth 8-7023] instance 'overlay_cdc' of module 'capture_overlay_cdc_0' has 42 connections declared, but only 40 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2104]
+INFO: [Synth 8-6157] synthesizing module 'capture_overlay_control_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_overlay_control_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_overlay_control_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_overlay_control_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_pixel_clock_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_pixel_clock_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_pixel_clock_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_pixel_clock_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_pixel_reset_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_pixel_reset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_pixel_reset_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_pixel_reset_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'capture_pixel_reset_0' is unconnected for instance 'pixel_reset' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2185]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'capture_pixel_reset_0' is unconnected for instance 'pixel_reset' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2185]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'capture_pixel_reset_0' is unconnected for instance 'pixel_reset' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2185]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'capture_pixel_reset_0' is unconnected for instance 'pixel_reset' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2185]
+WARNING: [Synth 8-7023] instance 'pixel_reset' of module 'capture_pixel_reset_0' has 10 connections declared, but only 6 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2185]
+INFO: [Synth 8-6157] synthesizing module 'capture_pixel_reset_guard_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_pixel_reset_guard_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_pixel_reset_guard_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_pixel_reset_guard_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_pixels_cdc_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_pixels_cdc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_pixels_cdc_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_pixels_cdc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_ps_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ps_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_ps_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_ps_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RCOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_WCOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RACOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_WACOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_BID' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RID' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RCOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_WCOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RACOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_WACOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_BID' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_RID' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_RCOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_WCOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_RACOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_WACOUNT' of module 'capture_ps_0' is unconnected for instance 'ps' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+WARNING: [Synth 8-7023] instance 'ps' of module 'capture_ps_0' has 256 connections declared, but only 234 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2214]
+INFO: [Synth 8-6157] synthesizing module 'capture_r100_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_r100_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_r100_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_r100_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'capture_r100_0' is unconnected for instance 'r100' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2449]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'capture_r100_0' is unconnected for instance 'r100' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2449]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'capture_r100_0' is unconnected for instance 'r100' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2449]
+WARNING: [Synth 8-7023] instance 'r100' of module 'capture_r100_0' has 10 connections declared, but only 7 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2449]
+INFO: [Synth 8-6157] synthesizing module 'capture_r150_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_r150_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_r150_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_r150_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'capture_r150_0' is unconnected for instance 'r150' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2457]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'capture_r150_0' is unconnected for instance 'r150' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2457]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'capture_r150_0' is unconnected for instance 'r150' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2457]
+WARNING: [Synth 8-7023] instance 'r150' of module 'capture_r150_0' has 10 connections declared, but only 7 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2457]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2465]
+INFO: [Synth 8-6157] synthesizing module 'capture_r200_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_r200_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_r200_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_r200_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'capture_r200_0' is unconnected for instance 'r200' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2465]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'capture_r200_0' is unconnected for instance 'r200' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2465]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'capture_r200_0' is unconnected for instance 'r200' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2465]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'capture_r200_0' is unconnected for instance 'r200' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2465]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'capture_r200_0' is unconnected for instance 'r200' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2465]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'r200' of module 'capture_r200_0' has 10 connections declared, but only 5 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2465]
+INFO: [Synth 8-6157] synthesizing module 'capture_roi_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_roi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_roi_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_roi_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'roi' of module 'capture_roi_0' has 100 connections declared, but only 69 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2471]
+INFO: [Synth 8-6157] synthesizing module 'capture_sccb_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_sccb_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_sccb_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_sccb_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'capture_spec_fft_0' [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_spec_fft_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_spec_fft_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_spec_fft_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'spec_fft' of module 'capture_spec_fft_0' has 100 connections declared, but only 69 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2559]
+INFO: [Synth 8-6157] synthesizing module 'capture_state_large_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:6582]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_77GUO1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:9626]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'capture_state_large_imp_auto_ds_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_state_large_imp_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_state_large_imp_auto_pc_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_state_large_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'capture_state_large_imp_s00_data_fifo_0' (0#1) [D:/vision/submission/_build/v25/c.runs/synth_1/.Xil/Vivado-21352-LAPTOP-39R8HM8E/realtime/capture_state_large_imp_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_77GUO1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:9626]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'vdma' of module 'capture_vdma_0' has 44 connections declared, but only 43 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2787]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'observe_pixel_vio'. This will prevent further optimization [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2083]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'hdmi_observe'. This will prevent further optimization [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1583]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'hdmi_health'. This will prevent further optimization [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:1570]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'observe_health_vio'. This will prevent further optimization [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/synth/capture.v:2077]
+WARNING: [Synth 8-7129] Port S_AXI_arlock[1] in module s00_couplers_imp_NNBYFC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awlock[1] in module s00_couplers_imp_NNBYFC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module capture_state_small_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module capture_state_small_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_arlock[1] in module s00_couplers_imp_77GUO1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awlock[1] in module s00_couplers_imp_77GUO1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module capture_state_large_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module capture_state_large_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s08_couplers_imp_GBRI3S is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s08_couplers_imp_GBRI3S is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_arlock[1] in module s08_couplers_imp_GBRI3S is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awlock[1] in module s08_couplers_imp_GBRI3S is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[4] in module s07_couplers_imp_1Y0HUIL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[3] in module s07_couplers_imp_1Y0HUIL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[2] in module s07_couplers_imp_1Y0HUIL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[1] in module s07_couplers_imp_1Y0HUIL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awlock[1] in module s07_couplers_imp_1Y0HUIL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[4] in module s06_couplers_imp_YE3SAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[3] in module s06_couplers_imp_YE3SAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[2] in module s06_couplers_imp_YE3SAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[1] in module s06_couplers_imp_YE3SAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_arlock[1] in module s06_couplers_imp_YE3SAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s05_couplers_imp_B7NEKA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s05_couplers_imp_B7NEKA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awlock[1] in module s05_couplers_imp_B7NEKA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s04_couplers_imp_1CS4W1L is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s04_couplers_imp_1CS4W1L is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_arlock[1] in module s04_couplers_imp_1CS4W1L is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s03_couplers_imp_13S1IEQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s03_couplers_imp_13S1IEQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awlock[1] in module s03_couplers_imp_13S1IEQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s02_couplers_imp_2HPULT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s02_couplers_imp_2HPULT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_arlock[1] in module s02_couplers_imp_2HPULT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[4] in module s01_couplers_imp_PCRMPH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[3] in module s01_couplers_imp_PCRMPH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[2] in module s01_couplers_imp_PCRMPH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_bid[1] in module s01_couplers_imp_PCRMPH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[4] in module s01_couplers_imp_PCRMPH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[3] in module s01_couplers_imp_PCRMPH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[2] in module s01_couplers_imp_PCRMPH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_rid[1] in module s01_couplers_imp_PCRMPH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_arlock[1] in module s01_couplers_imp_PCRMPH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awlock[1] in module s01_couplers_imp_PCRMPH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1P9BIT2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1P9BIT2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[63] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[62] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[61] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[60] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[59] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[58] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[57] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[56] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[55] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[54] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[53] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[52] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[51] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[50] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[49] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[48] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[47] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[46] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[45] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[44] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[43] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[42] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[41] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[40] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[39] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[38] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[37] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[36] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[35] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[34] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[33] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[32] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[63] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[62] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[61] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[60] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[59] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[58] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[57] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[56] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[55] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[54] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[53] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[52] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[51] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[50] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[49] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[48] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[47] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[46] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[45] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[44] in module m00_couplers_imp_PIOMEI is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1830.168 ; gain = 724.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1830.168 ; gain = 724.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1830.168 ; gain = 724.504
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.302 . Memory (MB): peak = 1830.168 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_clip_dma_0/capture_clip_dma_0/capture_clip_dma_0_in_context.xdc] for cell 'capture_i/clip_dma'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_clip_dma_0/capture_clip_dma_0/capture_clip_dma_0_in_context.xdc] for cell 'capture_i/clip_dma'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_controls_0/capture_controls_0/capture_controls_0_in_context.xdc] for cell 'capture_i/controls'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_controls_0/capture_controls_0/capture_controls_0_in_context.xdc] for cell 'capture_i/controls'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_core_0/capture_core_0/capture_core_0_in_context.xdc] for cell 'capture_i/core'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_core_0/capture_core_0/capture_core_0_in_context.xdc] for cell 'capture_i/core'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/capture_csi_0/capture_csi_0_in_context.xdc] for cell 'capture_i/csi'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/capture_csi_0/capture_csi_0_in_context.xdc] for cell 'capture_i/csi'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_xbar_0/capture_ctrl_intercon_imp_xbar_0/capture_ctrl_intercon_imp_xbar_0_in_context.xdc] for cell 'capture_i/ctrl_intercon/xbar'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_xbar_0/capture_ctrl_intercon_imp_xbar_0/capture_ctrl_intercon_imp_xbar_0_in_context.xdc] for cell 'capture_i/ctrl_intercon/xbar'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_auto_pc_0/capture_ctrl_intercon_imp_auto_pc_0/capture_ctrl_intercon_imp_auto_pc_0_in_context.xdc] for cell 'capture_i/ctrl_intercon/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_auto_pc_0/capture_ctrl_intercon_imp_auto_pc_0/capture_ctrl_intercon_imp_auto_pc_0_in_context.xdc] for cell 'capture_i/ctrl_intercon/s00_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_auto_cc_0/capture_ctrl_intercon_imp_auto_cc_0/capture_ctrl_intercon_imp_auto_cc_0_in_context.xdc] for cell 'capture_i/ctrl_intercon/m04_couplers/auto_cc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_auto_cc_0/capture_ctrl_intercon_imp_auto_cc_0/capture_ctrl_intercon_imp_auto_cc_0_in_context.xdc] for cell 'capture_i/ctrl_intercon/m04_couplers/auto_cc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_auto_cc_1/capture_ctrl_intercon_imp_auto_cc_1/capture_ctrl_intercon_imp_auto_cc_1_in_context.xdc] for cell 'capture_i/ctrl_intercon/m05_couplers/auto_cc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_auto_cc_1/capture_ctrl_intercon_imp_auto_cc_1/capture_ctrl_intercon_imp_auto_cc_1_in_context.xdc] for cell 'capture_i/ctrl_intercon/m05_couplers/auto_cc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_auto_cc_2/capture_ctrl_intercon_imp_auto_cc_2/capture_ctrl_intercon_imp_auto_cc_0_in_context.xdc] for cell 'capture_i/ctrl_intercon/m06_couplers/auto_cc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_auto_cc_2/capture_ctrl_intercon_imp_auto_cc_2/capture_ctrl_intercon_imp_auto_cc_0_in_context.xdc] for cell 'capture_i/ctrl_intercon/m06_couplers/auto_cc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_auto_cc_3/capture_ctrl_intercon_imp_auto_cc_3/capture_ctrl_intercon_imp_auto_cc_3_in_context.xdc] for cell 'capture_i/ctrl_intercon/m08_couplers/auto_cc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_auto_cc_3/capture_ctrl_intercon_imp_auto_cc_3/capture_ctrl_intercon_imp_auto_cc_3_in_context.xdc] for cell 'capture_i/ctrl_intercon/m08_couplers/auto_cc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_auto_cc_4/capture_ctrl_intercon_imp_auto_cc_4/capture_ctrl_intercon_imp_auto_cc_1_in_context.xdc] for cell 'capture_i/ctrl_intercon/m09_couplers/auto_cc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ctrl_intercon_imp_auto_cc_4/capture_ctrl_intercon_imp_auto_cc_4/capture_ctrl_intercon_imp_auto_cc_1_in_context.xdc] for cell 'capture_i/ctrl_intercon/m09_couplers/auto_cc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_cdc_0/capture_display_cdc_0/capture_display_cdc_0_in_context.xdc] for cell 'capture_i/display_cdc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_cdc_0/capture_display_cdc_0/capture_display_cdc_0_in_context.xdc] for cell 'capture_i/display_cdc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_dma_0/capture_display_dma_0/capture_display_dma_0_in_context.xdc] for cell 'capture_i/display_dma'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_dma_0/capture_display_dma_0/capture_display_dma_0_in_context.xdc] for cell 'capture_i/display_dma'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_mem_imp_xbar_0/capture_display_mem_imp_xbar_0/capture_display_mem_imp_xbar_0_in_context.xdc] for cell 'capture_i/display_mem/xbar'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_mem_imp_xbar_0/capture_display_mem_imp_xbar_0/capture_display_mem_imp_xbar_0_in_context.xdc] for cell 'capture_i/display_mem/xbar'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_mem_imp_s00_data_fifo_0/capture_display_mem_imp_s00_data_fifo_0/capture_display_mem_imp_s00_data_fifo_0_in_context.xdc] for cell 'capture_i/display_mem/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_mem_imp_s00_data_fifo_0/capture_display_mem_imp_s00_data_fifo_0/capture_display_mem_imp_s00_data_fifo_0_in_context.xdc] for cell 'capture_i/display_mem/s00_couplers/s00_data_fifo'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_mem_imp_auto_pc_0/capture_display_mem_imp_auto_pc_0/capture_display_mem_imp_auto_pc_0_in_context.xdc] for cell 'capture_i/display_mem/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_mem_imp_auto_pc_0/capture_display_mem_imp_auto_pc_0/capture_display_mem_imp_auto_pc_0_in_context.xdc] for cell 'capture_i/display_mem/s00_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_mem_imp_auto_pc_1/capture_display_mem_imp_auto_pc_1/capture_display_mem_imp_auto_pc_1_in_context.xdc] for cell 'capture_i/display_mem/s01_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_mem_imp_auto_pc_1/capture_display_mem_imp_auto_pc_1/capture_display_mem_imp_auto_pc_1_in_context.xdc] for cell 'capture_i/display_mem/s01_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_mem_imp_auto_us_df_0/capture_display_mem_imp_auto_us_df_0/capture_display_mem_imp_auto_us_df_0_in_context.xdc] for cell 'capture_i/display_mem/s01_couplers/auto_us_df'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_mem_imp_auto_us_df_0/capture_display_mem_imp_auto_us_df_0/capture_display_mem_imp_auto_us_df_0_in_context.xdc] for cell 'capture_i/display_mem/s01_couplers/auto_us_df'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_f_0/capture_f_0/capture_f_0_in_context.xdc] for cell 'capture_i/f'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_f_0/capture_f_0/capture_f_0_in_context.xdc] for cell 'capture_i/f'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_hdmi_0/capture_hdmi_0/capture_hdmi_0_in_context.xdc] for cell 'capture_i/hdmi'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_hdmi_0/capture_hdmi_0/capture_hdmi_0_in_context.xdc] for cell 'capture_i/hdmi'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_hdmi_health_0/capture_hdmi_health_0/capture_hdmi_health_0_in_context.xdc] for cell 'capture_i/hdmi_health'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_hdmi_health_0/capture_hdmi_health_0/capture_hdmi_health_0_in_context.xdc] for cell 'capture_i/hdmi_health'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_hdmi_observe_0/capture_hdmi_observe_0/capture_hdmi_observe_0_in_context.xdc] for cell 'capture_i/hdmi_observe'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_hdmi_observe_0/capture_hdmi_observe_0/capture_hdmi_observe_0_in_context.xdc] for cell 'capture_i/hdmi_observe'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_xbar_0/capture_mem_imp_xbar_0/capture_mem_imp_xbar_0_in_context.xdc] for cell 'capture_i/mem/xbar'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_xbar_0/capture_mem_imp_xbar_0/capture_mem_imp_xbar_0_in_context.xdc] for cell 'capture_i/mem/xbar'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_0/capture_mem_imp_auto_pc_0/capture_mem_imp_auto_pc_0_in_context.xdc] for cell 'capture_i/mem/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_0/capture_mem_imp_auto_pc_0/capture_mem_imp_auto_pc_0_in_context.xdc] for cell 'capture_i/mem/s00_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_0/capture_mem_imp_auto_us_0/capture_mem_imp_auto_us_0_in_context.xdc] for cell 'capture_i/mem/s00_couplers/auto_us'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_0/capture_mem_imp_auto_us_0/capture_mem_imp_auto_us_0_in_context.xdc] for cell 'capture_i/mem/s00_couplers/auto_us'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_s01_data_fifo_0/capture_mem_imp_s01_data_fifo_0/capture_mem_imp_s01_data_fifo_0_in_context.xdc] for cell 'capture_i/mem/s01_couplers/s01_data_fifo'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_s01_data_fifo_0/capture_mem_imp_s01_data_fifo_0/capture_mem_imp_s01_data_fifo_0_in_context.xdc] for cell 'capture_i/mem/s01_couplers/s01_data_fifo'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_1/capture_mem_imp_auto_pc_1/capture_mem_imp_auto_pc_1_in_context.xdc] for cell 'capture_i/mem/s01_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_1/capture_mem_imp_auto_pc_1/capture_mem_imp_auto_pc_1_in_context.xdc] for cell 'capture_i/mem/s01_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_2/capture_mem_imp_auto_pc_2/capture_mem_imp_auto_pc_2_in_context.xdc] for cell 'capture_i/mem/s02_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_2/capture_mem_imp_auto_pc_2/capture_mem_imp_auto_pc_2_in_context.xdc] for cell 'capture_i/mem/s02_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_df_0/capture_mem_imp_auto_us_df_0/capture_mem_imp_auto_us_df_0_in_context.xdc] for cell 'capture_i/mem/s02_couplers/auto_us_df'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_df_0/capture_mem_imp_auto_us_df_0/capture_mem_imp_auto_us_df_0_in_context.xdc] for cell 'capture_i/mem/s02_couplers/auto_us_df'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_3/capture_mem_imp_auto_pc_3/capture_mem_imp_auto_pc_3_in_context.xdc] for cell 'capture_i/mem/s03_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_3/capture_mem_imp_auto_pc_3/capture_mem_imp_auto_pc_3_in_context.xdc] for cell 'capture_i/mem/s03_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_df_1/capture_mem_imp_auto_us_df_1/capture_mem_imp_auto_us_df_1_in_context.xdc] for cell 'capture_i/mem/s03_couplers/auto_us_df'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_df_1/capture_mem_imp_auto_us_df_1/capture_mem_imp_auto_us_df_1_in_context.xdc] for cell 'capture_i/mem/s03_couplers/auto_us_df'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_4/capture_mem_imp_auto_pc_4/capture_mem_imp_auto_pc_2_in_context.xdc] for cell 'capture_i/mem/s04_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_4/capture_mem_imp_auto_pc_4/capture_mem_imp_auto_pc_2_in_context.xdc] for cell 'capture_i/mem/s04_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_df_2/capture_mem_imp_auto_us_df_2/capture_mem_imp_auto_us_df_0_in_context.xdc] for cell 'capture_i/mem/s04_couplers/auto_us_df'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_df_2/capture_mem_imp_auto_us_df_2/capture_mem_imp_auto_us_df_0_in_context.xdc] for cell 'capture_i/mem/s04_couplers/auto_us_df'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_5/capture_mem_imp_auto_pc_5/capture_mem_imp_auto_pc_3_in_context.xdc] for cell 'capture_i/mem/s05_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_5/capture_mem_imp_auto_pc_5/capture_mem_imp_auto_pc_3_in_context.xdc] for cell 'capture_i/mem/s05_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_df_3/capture_mem_imp_auto_us_df_3/capture_mem_imp_auto_us_df_1_in_context.xdc] for cell 'capture_i/mem/s05_couplers/auto_us_df'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_df_3/capture_mem_imp_auto_us_df_3/capture_mem_imp_auto_us_df_1_in_context.xdc] for cell 'capture_i/mem/s05_couplers/auto_us_df'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_s06_data_fifo_0/capture_mem_imp_s06_data_fifo_0/capture_mem_imp_s06_data_fifo_0_in_context.xdc] for cell 'capture_i/mem/s06_couplers/s06_data_fifo'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_s06_data_fifo_0/capture_mem_imp_s06_data_fifo_0/capture_mem_imp_s06_data_fifo_0_in_context.xdc] for cell 'capture_i/mem/s06_couplers/s06_data_fifo'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_6/capture_mem_imp_auto_pc_6/capture_mem_imp_auto_pc_6_in_context.xdc] for cell 'capture_i/mem/s06_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_6/capture_mem_imp_auto_pc_6/capture_mem_imp_auto_pc_6_in_context.xdc] for cell 'capture_i/mem/s06_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_s07_data_fifo_0/capture_mem_imp_s07_data_fifo_0/capture_mem_imp_s07_data_fifo_0_in_context.xdc] for cell 'capture_i/mem/s07_couplers/s07_data_fifo'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_s07_data_fifo_0/capture_mem_imp_s07_data_fifo_0/capture_mem_imp_s07_data_fifo_0_in_context.xdc] for cell 'capture_i/mem/s07_couplers/s07_data_fifo'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_7/capture_mem_imp_auto_pc_7/capture_mem_imp_auto_pc_7_in_context.xdc] for cell 'capture_i/mem/s07_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_7/capture_mem_imp_auto_pc_7/capture_mem_imp_auto_pc_7_in_context.xdc] for cell 'capture_i/mem/s07_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_8/capture_mem_imp_auto_pc_8/capture_display_mem_imp_auto_pc_1_in_context.xdc] for cell 'capture_i/mem/s08_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_pc_8/capture_mem_imp_auto_pc_8/capture_display_mem_imp_auto_pc_1_in_context.xdc] for cell 'capture_i/mem/s08_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_df_4/capture_mem_imp_auto_us_df_4/capture_mem_imp_auto_us_df_4_in_context.xdc] for cell 'capture_i/mem/s08_couplers/auto_us_df'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_df_4/capture_mem_imp_auto_us_df_4/capture_mem_imp_auto_us_df_4_in_context.xdc] for cell 'capture_i/mem/s08_couplers/auto_us_df'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_ds_0/capture_mem_imp_auto_ds_0/capture_mem_imp_auto_ds_0_in_context.xdc] for cell 'capture_i/mem/m00_couplers/auto_ds'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_ds_0/capture_mem_imp_auto_ds_0/capture_mem_imp_auto_ds_0_in_context.xdc] for cell 'capture_i/mem/m00_couplers/auto_ds'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_motion_0/capture_motion_0/capture_motion_0_in_context.xdc] for cell 'capture_i/motion'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_motion_0/capture_motion_0/capture_motion_0_in_context.xdc] for cell 'capture_i/motion'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_observe_health_vio_0/capture_observe_health_vio_0/capture_observe_health_vio_0_in_context.xdc] for cell 'capture_i/observe_health_vio'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_observe_health_vio_0/capture_observe_health_vio_0/capture_observe_health_vio_0_in_context.xdc] for cell 'capture_i/observe_health_vio'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_observe_pixel_vio_0/capture_observe_pixel_vio_0/capture_observe_pixel_vio_0_in_context.xdc] for cell 'capture_i/observe_pixel_vio'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_observe_pixel_vio_0/capture_observe_pixel_vio_0/capture_observe_pixel_vio_0_in_context.xdc] for cell 'capture_i/observe_pixel_vio'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_overlay_cdc_0/capture_overlay_cdc_0/capture_overlay_cdc_0_in_context.xdc] for cell 'capture_i/overlay_cdc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_overlay_cdc_0/capture_overlay_cdc_0/capture_overlay_cdc_0_in_context.xdc] for cell 'capture_i/overlay_cdc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_overlay_control_0/capture_overlay_control_0/capture_overlay_control_0_in_context.xdc] for cell 'capture_i/overlay_control'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_overlay_control_0/capture_overlay_control_0/capture_overlay_control_0_in_context.xdc] for cell 'capture_i/overlay_control'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_pixel_clock_0/capture_pixel_clock_0/capture_pixel_clock_0_in_context.xdc] for cell 'capture_i/pixel_clock'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_pixel_clock_0/capture_pixel_clock_0/capture_pixel_clock_0_in_context.xdc] for cell 'capture_i/pixel_clock'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_pixel_reset_0/capture_pixel_reset_0/capture_pixel_reset_0_in_context.xdc] for cell 'capture_i/pixel_reset'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_pixel_reset_0/capture_pixel_reset_0/capture_pixel_reset_0_in_context.xdc] for cell 'capture_i/pixel_reset'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_pixel_reset_guard_0/capture_pixel_reset_guard_0/capture_pixel_reset_guard_0_in_context.xdc] for cell 'capture_i/pixel_reset_guard'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_pixel_reset_guard_0/capture_pixel_reset_guard_0/capture_pixel_reset_guard_0_in_context.xdc] for cell 'capture_i/pixel_reset_guard'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_pixels_cdc_0/capture_pixels_cdc_0/capture_pixels_cdc_0_in_context.xdc] for cell 'capture_i/pixels_cdc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_pixels_cdc_0/capture_pixels_cdc_0/capture_pixels_cdc_0_in_context.xdc] for cell 'capture_i/pixels_cdc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ps_0/capture_ps_0/capture_ps_0_in_context.xdc] for cell 'capture_i/ps'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_ps_0/capture_ps_0/capture_ps_0_in_context.xdc] for cell 'capture_i/ps'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_r100_0/capture_r100_0/capture_r100_0_in_context.xdc] for cell 'capture_i/r100'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_r100_0/capture_r100_0/capture_r100_0_in_context.xdc] for cell 'capture_i/r100'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_r150_0/capture_r150_0/capture_r150_0_in_context.xdc] for cell 'capture_i/r150'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_r150_0/capture_r150_0/capture_r150_0_in_context.xdc] for cell 'capture_i/r150'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_r200_0/capture_r200_0/capture_r200_0_in_context.xdc] for cell 'capture_i/r200'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_r200_0/capture_r200_0/capture_r200_0_in_context.xdc] for cell 'capture_i/r200'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/capture_roi_0/capture_roi_0_in_context.xdc] for cell 'capture_i/roi'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_roi_0/capture_roi_0/capture_roi_0_in_context.xdc] for cell 'capture_i/roi'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_sccb_0/capture_sccb_0/capture_sccb_0_in_context.xdc] for cell 'capture_i/sccb'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_sccb_0/capture_sccb_0/capture_sccb_0_in_context.xdc] for cell 'capture_i/sccb'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_spec_fft_0/capture_spec_fft_0/capture_spec_fft_0_in_context.xdc] for cell 'capture_i/spec_fft'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_spec_fft_0/capture_spec_fft_0/capture_spec_fft_0_in_context.xdc] for cell 'capture_i/spec_fft'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_state_large_imp_s00_data_fifo_0/capture_state_large_imp_s00_data_fifo_0/capture_state_large_imp_s00_data_fifo_0_in_context.xdc] for cell 'capture_i/state_large/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_state_large_imp_s00_data_fifo_0/capture_state_large_imp_s00_data_fifo_0/capture_state_large_imp_s00_data_fifo_0_in_context.xdc] for cell 'capture_i/state_large/s00_couplers/s00_data_fifo'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_state_large_imp_auto_ds_0/capture_state_large_imp_auto_ds_0/capture_state_large_imp_auto_ds_0_in_context.xdc] for cell 'capture_i/state_large/s00_couplers/auto_ds'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_state_large_imp_auto_ds_0/capture_state_large_imp_auto_ds_0/capture_state_large_imp_auto_ds_0_in_context.xdc] for cell 'capture_i/state_large/s00_couplers/auto_ds'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_state_large_imp_auto_pc_0/capture_state_large_imp_auto_pc_0/capture_state_large_imp_auto_pc_0_in_context.xdc] for cell 'capture_i/state_large/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_state_large_imp_auto_pc_0/capture_state_large_imp_auto_pc_0/capture_state_large_imp_auto_pc_0_in_context.xdc] for cell 'capture_i/state_large/s00_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_state_small_imp_s00_data_fifo_0/capture_state_small_imp_s00_data_fifo_0/capture_state_large_imp_s00_data_fifo_0_in_context.xdc] for cell 'capture_i/state_small/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_state_small_imp_s00_data_fifo_0/capture_state_small_imp_s00_data_fifo_0/capture_state_large_imp_s00_data_fifo_0_in_context.xdc] for cell 'capture_i/state_small/s00_couplers/s00_data_fifo'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_state_small_imp_auto_ds_0/capture_state_small_imp_auto_ds_0/capture_state_large_imp_auto_ds_0_in_context.xdc] for cell 'capture_i/state_small/s00_couplers/auto_ds'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_state_small_imp_auto_ds_0/capture_state_small_imp_auto_ds_0/capture_state_large_imp_auto_ds_0_in_context.xdc] for cell 'capture_i/state_small/s00_couplers/auto_ds'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_state_small_imp_auto_pc_0/capture_state_small_imp_auto_pc_0/capture_state_large_imp_auto_pc_0_in_context.xdc] for cell 'capture_i/state_small/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_state_small_imp_auto_pc_0/capture_state_small_imp_auto_pc_0/capture_state_large_imp_auto_pc_0_in_context.xdc] for cell 'capture_i/state_small/s00_couplers/auto_pc'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_vdma_0/capture_vdma_0/capture_vdma_0_in_context.xdc] for cell 'capture_i/vdma'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_vdma_0/capture_vdma_0/capture_vdma_0_in_context.xdc] for cell 'capture_i/vdma'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_video_0/capture_video_0/capture_video_0_in_context.xdc] for cell 'capture_i/video'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_video_0/capture_video_0/capture_video_0_in_context.xdc] for cell 'capture_i/video'
+Parsing XDC File [D:/vision/submission/fpga_visual_amplifier/src/constraints/common.xdc]
+Finished Parsing XDC File [D:/vision/submission/fpga_visual_amplifier/src/constraints/common.xdc]
+Parsing XDC File [D:/vision/submission/fpga_visual_amplifier/src/constraints/motion60_hdmi.xdc]
+Finished Parsing XDC File [D:/vision/submission/fpga_visual_amplifier/src/constraints/motion60_hdmi.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vision/submission/fpga_visual_amplifier/src/constraints/motion60_hdmi.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/capture_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/capture_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/vision/submission/fpga_visual_amplifier/src/constraints/hmi_uart_p4.xdc]
+Finished Parsing XDC File [D:/vision/submission/fpga_visual_amplifier/src/constraints/hmi_uart_p4.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vision/submission/fpga_visual_amplifier/src/constraints/hmi_uart_p4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/capture_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/capture_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/vision/submission/_build/v25/c.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/vision/submission/_build/v25/c.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [D:/vision/submission/fpga_visual_amplifier/src/constraints/camera_amd.xdc]
+Finished Parsing XDC File [D:/vision/submission/fpga_visual_amplifier/src/constraints/camera_amd.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vision/submission/fpga_visual_amplifier/src/constraints/camera_amd.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/capture_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/capture_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1845.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1845.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1845.141 ; gain = 739.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1845.141 ; gain = 739.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1845.141 ; gain = 739.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1845.141 ; gain = 739.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 1845.141 ; gain = 739.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1988.961 ; gain = 883.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 1999.473 ; gain = 893.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 2012.738 ; gain = 907.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2254.711 ; gain = 1149.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2254.711 ; gain = 1149.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2254.711 ; gain = 1149.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2254.711 ; gain = 1149.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2254.711 ; gain = 1149.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2254.711 ; gain = 1149.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------------+----------+
+|      |BlackBox name                           |Instances |
++------+----------------------------------------+----------+
+|1     |capture_clip_dma_0                      |         1|
+|2     |capture_controls_0                      |         1|
+|3     |capture_core_0                          |         1|
+|4     |capture_csi_0                           |         1|
+|5     |capture_ctrl_intercon_imp_xbar_0        |         1|
+|6     |capture_ctrl_intercon_imp_auto_cc_0     |         1|
+|7     |capture_ctrl_intercon_imp_auto_cc_1     |         1|
+|8     |capture_ctrl_intercon_imp_auto_cc_2     |         1|
+|9     |capture_ctrl_intercon_imp_auto_cc_3     |         1|
+|10    |capture_ctrl_intercon_imp_auto_cc_4     |         1|
+|11    |capture_ctrl_intercon_imp_auto_pc_0     |         1|
+|12    |capture_display_cdc_0                   |         1|
+|13    |capture_display_dma_0                   |         1|
+|14    |capture_display_mem_imp_xbar_0          |         1|
+|15    |capture_display_mem_imp_auto_pc_0       |         1|
+|16    |capture_display_mem_imp_s00_data_fifo_0 |         1|
+|17    |capture_display_mem_imp_auto_pc_1       |         1|
+|18    |capture_display_mem_imp_auto_us_df_0    |         1|
+|19    |capture_f_0                             |         1|
+|20    |capture_hdmi_0                          |         1|
+|21    |capture_hdmi_health_0                   |         1|
+|22    |capture_hdmi_observe_0                  |         1|
+|23    |capture_mem_imp_xbar_0                  |         1|
+|24    |capture_mem_imp_auto_ds_0               |         1|
+|25    |capture_mem_imp_auto_pc_0               |         1|
+|26    |capture_mem_imp_auto_us_0               |         1|
+|27    |capture_mem_imp_auto_pc_1               |         1|
+|28    |capture_mem_imp_s01_data_fifo_0         |         1|
+|29    |capture_mem_imp_auto_pc_2               |         1|
+|30    |capture_mem_imp_auto_us_df_0            |         1|
+|31    |capture_mem_imp_auto_pc_3               |         1|
+|32    |capture_mem_imp_auto_us_df_1            |         1|
+|33    |capture_mem_imp_auto_pc_4               |         1|
+|34    |capture_mem_imp_auto_us_df_2            |         1|
+|35    |capture_mem_imp_auto_pc_5               |         1|
+|36    |capture_mem_imp_auto_us_df_3            |         1|
+|37    |capture_mem_imp_auto_pc_6               |         1|
+|38    |capture_mem_imp_s06_data_fifo_0         |         1|
+|39    |capture_mem_imp_auto_pc_7               |         1|
+|40    |capture_mem_imp_s07_data_fifo_0         |         1|
+|41    |capture_mem_imp_auto_pc_8               |         1|
+|42    |capture_mem_imp_auto_us_df_4            |         1|
+|43    |capture_motion_0                        |         1|
+|44    |capture_observe_health_vio_0            |         1|
+|45    |capture_observe_pixel_vio_0             |         1|
+|46    |capture_overlay_cdc_0                   |         1|
+|47    |capture_overlay_control_0               |         1|
+|48    |capture_pixel_clock_0                   |         1|
+|49    |capture_pixel_reset_0                   |         1|
+|50    |capture_pixel_reset_guard_0             |         1|
+|51    |capture_pixels_cdc_0                    |         1|
+|52    |capture_ps_0                            |         1|
+|53    |capture_r100_0                          |         1|
+|54    |capture_r150_0                          |         1|
+|55    |capture_r200_0                          |         1|
+|56    |capture_roi_0                           |         1|
+|57    |capture_sccb_0                          |         1|
+|58    |capture_spec_fft_0                      |         1|
+|59    |capture_state_large_imp_auto_ds_0       |         1|
+|60    |capture_state_large_imp_auto_pc_0       |         1|
+|61    |capture_state_large_imp_s00_data_fifo_0 |         1|
+|62    |capture_state_small_imp_auto_ds_0       |         1|
+|63    |capture_state_small_imp_auto_pc_0       |         1|
+|64    |capture_state_small_imp_s00_data_fifo_0 |         1|
+|65    |capture_vdma_0                          |         1|
+|66    |capture_video_0                         |         1|
++------+----------------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------------+------+
+|      |Cell                                  |Count |
++------+--------------------------------------+------+
+|1     |capture_clip_dma                      |     1|
+|2     |capture_controls                      |     1|
+|3     |capture_core                          |     1|
+|4     |capture_csi                           |     1|
+|5     |capture_ctrl_intercon_imp_auto_cc     |     5|
+|10    |capture_ctrl_intercon_imp_auto_pc     |     1|
+|11    |capture_ctrl_intercon_imp_xbar        |     1|
+|12    |capture_display_cdc                   |     1|
+|13    |capture_display_dma                   |     1|
+|14    |capture_display_mem_imp_auto_pc       |     2|
+|16    |capture_display_mem_imp_auto_us_df    |     1|
+|17    |capture_display_mem_imp_s00_data_fifo |     1|
+|18    |capture_display_mem_imp_xbar          |     1|
+|19    |capture_f                             |     1|
+|20    |capture_hdmi                          |     1|
+|21    |capture_hdmi_health                   |     1|
+|22    |capture_hdmi_observe                  |     1|
+|23    |capture_mem_imp_auto_ds               |     1|
+|24    |capture_mem_imp_auto_pc               |     9|
+|33    |capture_mem_imp_auto_us               |     1|
+|34    |capture_mem_imp_auto_us_df            |     5|
+|39    |capture_mem_imp_s01_data_fifo         |     1|
+|40    |capture_mem_imp_s06_data_fifo         |     1|
+|41    |capture_mem_imp_s07_data_fifo         |     1|
+|42    |capture_mem_imp_xbar                  |     1|
+|43    |capture_motion                        |     1|
+|44    |capture_observe_health_vio            |     1|
+|45    |capture_observe_pixel_vio             |     1|
+|46    |capture_overlay_cdc                   |     1|
+|47    |capture_overlay_control               |     1|
+|48    |capture_pixel_clock                   |     1|
+|49    |capture_pixel_reset                   |     1|
+|50    |capture_pixel_reset_guard             |     1|
+|51    |capture_pixels_cdc                    |     1|
+|52    |capture_ps                            |     1|
+|53    |capture_r100                          |     1|
+|54    |capture_r150                          |     1|
+|55    |capture_r200                          |     1|
+|56    |capture_roi                           |     1|
+|57    |capture_sccb                          |     1|
+|58    |capture_spec_fft                      |     1|
+|59    |capture_state_large_imp_auto_ds       |     1|
+|60    |capture_state_large_imp_auto_pc       |     1|
+|61    |capture_state_large_imp_s00_data_fifo |     1|
+|62    |capture_state_small_imp_auto_ds       |     1|
+|63    |capture_state_small_imp_auto_pc       |     1|
+|64    |capture_state_small_imp_s00_data_fifo |     1|
+|65    |capture_vdma                          |     1|
+|66    |capture_video                         |     1|
+|67    |IBUF                                  |     8|
+|68    |IOBUF                                 |     2|
+|69    |OBUF                                  |     1|
++------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2254.711 ; gain = 1149.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 2254.711 ; gain = 1134.074
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 2254.711 ; gain = 1149.047
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.266 . Memory (MB): peak = 2254.711 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2276.504 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Synth Design complete | Checksum: 8149585
+INFO: [Common 17-83] Releasing license: Synthesis
+237 Infos, 231 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 2276.504 ; gain = 1489.852
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2276.504 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/synth_1/capture_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file capture_wrapper_utilization_synth.rpt -pb capture_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 21:45:34 2026...

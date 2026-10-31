@@ -1,0 +1,21 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+BUTTON_CORE core=0 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason {Vector Catch} is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Vector Catch)}
+BUTTON_CORE core=1 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.1 target_id 3 level 1 name {ARM Cortex-A9 MPCore #1} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason Suspended is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Suspended)}
+BUTTON_CORE core=0 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason {Vector Catch} is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Vector Catch)}
+RESET_STATE_CONFIRMED phase=recovery_before_init DDR_CTRL=512 FPGA_RST_CTRL=32718607
+BUTTON_CORE core=0 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason {Vector Catch} is_current 1 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Vector Catch)}
+RECOVERY_UPLOAD_COMPLETE_IMAGE_BEGIN
+RECOVERY_UPLOAD_PROGRESS bytes=65536 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=327680 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=589824 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=851968 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=1114112 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=1376256 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=1638400 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=1900544 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=2162688 total=13299932
+RECOVERY_UPLOAD_PROGRESS bytes=2424832 total=13299932
+Memory write error at 0x102761E8. Cannot flush JTAG server queue. FT_Read returned 409, expected 744
+Memory write error at 0x102761E8. Cannot flush JTAG server queue. FT_Read returned 409, expected 744
+    while executing
+"error $download_error"

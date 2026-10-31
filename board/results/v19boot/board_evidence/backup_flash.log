@@ -1,0 +1,19 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+RESET_STATE_CONFIRMED phase=before_flash_read DDR_CTRL=512 FPGA_RST_CTRL=32718607
+INFO: [Hsi 55-2053] elapsed time for repository (D:/xilinx/Vitis/2021.2/data/embeddedsw) loading 1 seconds
+BUTTON_CORE core=1 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.1 target_id 3 level 1 name {ARM Cortex-A9 MPCore #1} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason Suspended is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Suspended)}
+BUTTON_CORE core=0 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason Suspended is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Suspended)}
+RESET_STATE_CONFIRMED phase=after_reset DDR_CTRL=512 FPGA_RST_CTRL=32718607
+FLASH_READ_PROGRESS status=0x2 id=0xef4018 bytes=20480
+FLASH_READ_PROGRESS status=0x2 id=0xef4018 bytes=2011136
+FLASH_READ_PROGRESS status=0x2 id=0xef4018 bytes=4001792
+FLASH_READ_PROGRESS status=0x2 id=0xef4018 bytes=6037504
+FLASH_READ_PROGRESS status=0x2 id=0xef4018 bytes=8089600
+FLASH_READ_PROGRESS status=0x2 id=0xef4018 bytes=10072064
+FLASH_READ_PROGRESS status=0x2 id=0xef4018 bytes=12079104
+FLASH_READ_PROGRESS status=0x2 id=0xef4018 bytes=14086144
+FLASH_READ_PROGRESS status=0x2 id=0xef4018 bytes=16154624
+FLASH_READ_PROGRESS status=0x3 id=0xef4018 bytes=16777216
+FLASH_STATUS 1364345905 3 15679512 0 2 16777216 0 0 0 0 0 0 0 0 0 0
+FLASH_BACKUP_DOWNLOAD_BEGIN
+V19_FLASH_READ_ONLY_BACKUP_DONE

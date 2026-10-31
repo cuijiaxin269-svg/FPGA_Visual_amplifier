@@ -1,0 +1,26 @@
+[
+  {
+    "case": "host",
+    "returncode": 1,
+    "receipt_status": "failed",
+    "error": "FileNotFoundError: C++ compiler not found: C:\\fpga_submission\\_work\\receipt_failure_validation\\missing\\g++.exe",
+    "previous_success_replaced": true,
+    "formal_report_unchanged": true
+  },
+  {
+    "case": "firmware",
+    "returncode": 1,
+    "receipt_status": "failed",
+    "error": "FileNotFoundError: Tool not found: C:\\fpga_submission\\_work\\receipt_failure_validation\\missing\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+    "previous_success_replaced": true,
+    "formal_report_unchanged": true
+  },
+  {
+    "case": "spectrum",
+    "returncode": 1,
+    "receipt_status": "failed",
+    "error": "FileNotFoundError: Vivado simulator tool not found: C:\\fpga_submission\\_work\\receipt_failure_validation\\missing\\bin\\xvlog.bat",
+    "previous_success_replaced": true,
+    "formal_report_unchanged": true
+  }
+]

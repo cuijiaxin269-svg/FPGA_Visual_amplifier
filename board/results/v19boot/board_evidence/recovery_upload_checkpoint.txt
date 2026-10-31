@@ -1,0 +1,4 @@
+next_offset=13299932
+image_sha256=eae2d50a02ab3f8aaa2574d2fcd9573cc657461bc64690f1b1f17b84ba013e54
+requires_preserved_ddr=true
+full_image_crc_before_flash_required=true

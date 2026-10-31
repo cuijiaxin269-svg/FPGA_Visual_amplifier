@@ -1,0 +1,7 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+{target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason {Vector Catch} is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1}
+0xf800025c 0x00000000
+0xf8006000 0x00000081
+0xf8000240 0x01f33f0f
+0xe000d014 0x00000000
+RECOVERY_DIAG 1364676657 57345 1220729560 0 0 0 0 0 0 0 0 0 0 0 0 0

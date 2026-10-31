@@ -1,0 +1,54 @@
+{
+  "xsa_sha256": "7744a47aed5b654eb9866f4d7be723e2a7ab7e5c47400b5a3e6ed6bc5a2d078a",
+  "all_matched": true,
+  "files": [
+    {
+      "source_archive": "capture.xsa",
+      "archive_member": "ps7_init.c",
+      "target": "ps7_init.c",
+      "bytes": 369678,
+      "sha256": "971c98c7b91355de61adfe10b4f10cda17fad14d1751290d0469849b7cb20f99",
+      "matches_fsbl_generation_output": true
+    },
+    {
+      "source_archive": "capture.xsa",
+      "archive_member": "ps7_init.h",
+      "target": "ps7_init.h",
+      "bytes": 3796,
+      "sha256": "356821f944f0ab68a3f83dcf85e2dea59fbad3641ef9168bbbf87143893afdb7",
+      "matches_fsbl_generation_output": true
+    },
+    {
+      "source_archive": "capture.xsa",
+      "archive_member": "ps7_init.tcl",
+      "target": "ps7_init.tcl",
+      "bytes": 28484,
+      "sha256": "04df6ffc234c161889c6f7b27be02fcd9499b112774426fdcb88bbdc2068da75",
+      "matches_fsbl_generation_output": true
+    },
+    {
+      "source_archive": "capture.xsa",
+      "archive_member": "ps7_init.html",
+      "target": "ps7_init.html",
+      "bytes": 2123897,
+      "sha256": "445eeb60d6bc625cbe13ed7abc2d7e30d6fbffabe9363e69075ad65f26848f69",
+      "matches_fsbl_generation_output": true
+    },
+    {
+      "source_archive": "capture.xsa",
+      "archive_member": "ps7_init_gpl.c",
+      "target": "ps7_init_gpl.c",
+      "bytes": 370295,
+      "sha256": "fd9de97245651b1c4ad62d43291050950e451d4e91544f95cf58284189279518",
+      "matches_fsbl_generation_output": true
+    },
+    {
+      "source_archive": "capture.xsa",
+      "archive_member": "ps7_init_gpl.h",
+      "target": "ps7_init_gpl.h",
+      "bytes": 4414,
+      "sha256": "cadfd27d45289ceb77306ab0d8a1d5f945fab9175348f1bd8631d038a75daaf5",
+      "matches_fsbl_generation_output": true
+    }
+  ]
+}

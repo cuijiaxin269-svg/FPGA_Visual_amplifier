@@ -1,0 +1,9 @@
+{
+  "pid": 34452,
+  "executable": "D:/xilinx/Vivado/2021.2/bin/unwrapped/win64.o/hw_server.exe",
+  "started_at": "2026-10-30T14:08:15.4278208+08:00",
+  "cable": "210299725543",
+  "jtag_hz": 1000000,
+  "prior_controllers": [],
+  "ready": true
+}

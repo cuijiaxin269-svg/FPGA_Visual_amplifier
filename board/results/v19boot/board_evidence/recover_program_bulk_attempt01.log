@@ -1,0 +1,37 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+BUTTON_CORE core=0 properties={target_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0.0 target_id 2 level 1 name {ARM Cortex-A9 MPCore #0} parent_ctx JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 parent APU state_reason Suspended is_current 0 bscan {} jtag_device_id 2 jtag_device_ctx jsn-JTAG-HS3-210299725543-4ba00477-0 jtag_cable_id 1 jtag_cable_ctx jsn-JTAG-HS3-210299725543 jtag_cable_name {Digilent JTAG-HS3 210299725543} jtag_device_index 0 jtag_cable_manufacturer Digilent jtag_cable_product JTAG-HS3 jtag_cable_serial 210299725543 suspended 1} direct_state={Stopped: (Suspended)}
+RESET_STATE_CONFIRMED phase=recovery_before_init DDR_CTRL=512 FPGA_RST_CTRL=32718607
+RECOVERY_UPLOAD_COMPLETE_IMAGE_BEGIN
+Memory write error at 0x10AEC000. Cannot flush JTAG server queue. FT_Write failed: io error
+Memory write error at 0x10AEC000. Cannot flush JTAG server queue. FT_Write failed: io error
+    invoked from within
+"::tcf::eval -progress {
+	    apply {{info} {
+		if { $::xsdb::silent_mode == 0 } {
+		    switch -- [lindex $info 0] {
+			"info" {
+			    puts -nonewline "\r[lindex $info 1]"
+			}
+			"warning" {
+			    puts "\n[lindex $info 1]"
+			}
+			"data" {
+			    puts -nonewline "\r[lindex $info 1] of [lindex $info 2] complete"
+			}
+			"done" {
+			    puts "\n[lindex $info 1]"
+			}
+		    }
+		    flush stdout
+		}
+		::xsdb::abort_check
+	    }}} {::tcf::cache_enter tcfchan#0 {tcf_cache_eval {download_cache_client ::tcfclient#0::arg}}}"
+    (procedure "::tcf::cache_eval_with_progress" line 2)
+    invoked from within
+"::tcf::cache_eval_with_progress $params(chan) [list download_cache_client $argvar] {
+	    apply {{info} {
+		if { $::xsdb::silent_mode == 0 } {
+		    s..."
+    (procedure "dow" line 99)
+    invoked from within
+"dow -data [file join $r build candidate BOOT.BIN] 0x10000000"

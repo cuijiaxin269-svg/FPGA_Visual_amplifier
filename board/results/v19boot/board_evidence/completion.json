@@ -1,0 +1,18 @@
+{
+  "completed_at": "2026-10-30T15:27:28.245679+08:00",
+  "flash_program_and_readback_verified": true,
+  "qspi_cold_boot_verified": true,
+  "boot_mode": 1,
+  "application_state": "STOPPED",
+  "boot_defaults": {
+    "run": "STOPPED",
+    "view": 2,
+    "alpha": 12,
+    "exposure": 320
+  },
+  "baseline_v18_preserved": true,
+  "peripheral_functional_tests_deferred": true,
+  "owned_hw_server_closed": true,
+  "board_reset_or_halt_during_final_read_only_validation": false,
+  "user_action_remaining": "None for flash consolidation; keep the currently verified QSPI switch position."
+}

@@ -1,0 +1,50 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+INFO: [Hsi 55-2053] elapsed time for repository (D:/xilinx/Vitis/2021.2/data/embeddedsw) loading 0 seconds
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=320
+HMI_NATIVE_TX page0.hexp.val=320
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 33 32 30 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 320
+HMI_ASSERT exposure_target=320
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_NATIVE_TX page0.alpha.val=50
+HMI_NATIVE_TX page0.hgain.val=50
+HMI_NATIVE_TX page0.p0.val=0
+HMI_NATIVE_TX page0.p12.val=0
+HMI_NATIVE_TX page0.p50.val=1
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_ASSERT alpha_actual=50
+HMI_NATIVE_TX get page0.alpha.val
+HMI_SCREEN_NUMBER page0.alpha.val=50
+HMI_NATIVE_TX page0.astatus.txt="WAIT ACK"
+HMI_NATIVE_TX page0.aack.en=1
+HMI_NATIVE_TX get page0.astatus.txt
+HMI_SCREEN_TEXT page0.astatus.txt=NO ACK
+HMI_ASSERT timeout_does_not_resend=492
+HMI_NATIVE_TX get page0.vstatus.txt
+HMI_SCREEN_TEXT page0.vstatus.txt=APPLIED
+HMI_NATIVE_TX get page0.estatus.txt
+HMI_SCREEN_TEXT page0.estatus.txt=APPLIED
+HMI_NATIVE_TX get page0.rstatus.txt
+HMI_SCREEN_TEXT page0.rstatus.txt=RUNNING
+HMI_NATIVE_THREE_SECOND_TIMER_PASSED
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX get page0.astatus.txt
+HMI_SCREEN_TEXT page0.astatus.txt=APPLIED
+HMI_ASSERT no_hardware_errors=0
+HMI_ASSERT no_hardware_errors=0
+HMI_ASSERT no_hardware_errors=0
+HMI_ASSERT no_hardware_errors=0
+HMI_ASSERT no_hardware_errors=0
+HMI_ASSERT view=2
+HMI_ASSERT alpha=50
+HMI_ASSERT exposure=320
+HMI_ASSERT running=4
+HMI_STANDARD_SOAK_READY

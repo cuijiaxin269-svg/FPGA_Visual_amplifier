@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "hardware_baseline": "v15spectra",
+  "firmware_baseline": "v17spectrum_stability",
+  "changed_production_files": [
+    "sw/motion60.c",
+    "sw/motion60_clip_pl.c",
+    "sw/motion60_clip_process.c",
+    "ip_repo/motion60_shared/hdl/verilog/motion60_shared.v",
+    "ip_repo/motion60_shared/hdl/verilog/motion60_shared_phase_core_shared.v",
+    "ip_repo/motion60_shared/hdl/verilog/motion60_shared_phase_core_shared_1.v",
+    "ip_repo/motion60_shared/hdl/verilog/motion60_shared_phase_core_shared_2.v"
+  ],
+  "csim_sources_identical": true
+}

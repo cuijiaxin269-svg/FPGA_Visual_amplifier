@@ -1,0 +1,27 @@
+
+*** Running vivado
+    with args -log capture_mem_imp_auto_pc_5.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source capture_mem_imp_auto_pc_5.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 30 21:21:33 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source capture_mem_imp_auto_pc_5.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 664.418 ; gain = 221.777
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/clip_copy_checked'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_full_temporal_v2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_shared'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/rgb2dvi_v1_3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/roi256_v3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/spectrum256_pl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tool/vivado/2025.2/Vivado/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP capture_mem_imp_auto_pc_5, cache-ID = 9a20ff998d4ae6e4.
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 21:21:50 2026...

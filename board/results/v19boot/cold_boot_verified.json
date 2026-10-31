@@ -1,0 +1,32 @@
+{
+  "verified": true,
+  "recorded_at": "2026-10-30T15:26:15.497035+08:00",
+  "power_cycle": "Physical power-off/on confirmed by user; switches changed while off.",
+  "boot_mode": 1,
+  "source": "QSPI",
+  "inspection": "Read-only; no reset, halt, ELF/bit download, START, or parameter write.",
+  "application_text_bytes": 69876,
+  "application_text_sha256": "dfb0041ccc0be071ae750dd9eb7f293dda556df764a3a278e184f0f35f0c2719",
+  "application_elf_sha256": "b066d1e63a11929eae0b8ca86c233da6d40929d3daa14621ef4b7a88622c7d98",
+  "uptime_before_ms": 26500,
+  "uptime_after_ms": 27600,
+  "defaults": {
+    "run": "STOPPED",
+    "view": 2,
+    "alpha": 12,
+    "exposure": 320
+  },
+  "peripheral_functional_validation": false,
+  "attached_peripherals": [],
+  "limitations": [
+    "No camera, HDMI or HMI test.",
+    "One observed cold boot; no repeated power-cycle or long soak test."
+  ],
+  "evidence_directory": "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261030_v19boot_01\\cold_boot_02",
+  "evidence": {
+    "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261030_v19boot_01\\cold_boot_02.log": "2ad18679cf87943908fb74debcec17cd53875cf38cf7eea1b644c636c15cb34d",
+    "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261030_v19boot_01\\cold_boot_02\\application_text.bin": "dfb0041ccc0be071ae750dd9eb7f293dda556df764a3a278e184f0f35f0c2719",
+    "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261030_v19boot_01\\cold_boot_02\\boot_registers.txt": "4859f42ea609d08eb6265123a7e31997b949b2d5dbf4eeb573e6ee8dae37b587",
+    "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261030_v19boot_01\\cold_boot_02\\hmi.bin": "fa48f8a211a0ff42d12f928e68c8bc4860334580e86b9e5df53a046460efed1e"
+  }
+}

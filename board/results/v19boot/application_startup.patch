@@ -1,0 +1,77 @@
+--- v18/sw/start.S
++++ v19/sw/start.S
+@@ -21,8 +21,9 @@
+  b .
+ reset:
+  cpsid if
+- // JTAG loader resets CPU then runs vendor-derived ps7_init before loading ELF.
+- // Start with MMU, L1/L2 data caches off: DMA buffers remain uncached throughout.
++ // Supported entry: matching AMD FSBL handoff or cold JTAG loader.
++ // FSBL flushes/disables data caches before loading partitions and hands off
++ // with MMU/I-cache disabled. DMA buffers remain uncached throughout.
+  mrc p15,0,r0,c1,c0,0
+  bic r0,r0,#1
+  bic r0,r0,#4
+@@ -31,6 +32,13 @@
+  bic r0,r0,#0x2000
+ #endif
+  mcr p15,0,r0,c1,c0,0
++ dsb sy
++ isb
++ mov r0,#0
++ mcr p15,0,r0,c7,c5,0
++ mcr p15,0,r0,c7,c5,6
++ mcr p15,0,r0,c8,c7,0
++ dsb sy
+  isb
+ #ifdef MOTION60_VFP
+  // Cortex-A9 CP10/CP11 access and FPEXC.EN, as in AMD standalone boot.S.
+@@ -61,6 +69,14 @@
+ 1: cmp r0,r1
+  strlo r2,[r0],#4
+  blo 1b
++ // ELF NOLOAD regions and fixed-address telemetry are not file payload.
++ // Clear the whole reserved mailbox page independently of the downloader.
++ ldr r0,=__mailbox_start
++ ldr r1,=__mailbox_end
++3: cmp r0,r1
++ strlo r2,[r0],#4
++ blo 3b
++ dsb sy
+  bl main
+ 2: b 2b
+ #ifdef MOTION60_HMI
+--- v18/sw/link.ld
++++ v19/sw/link.ld
+@@ -2,6 +2,8 @@
+ MEMORY { app (rwx) : ORIGIN = 0x00100000, LENGTH = 0x00e00000
+          mailbox (rw) : ORIGIN = 0x00ff0000, LENGTH = 0x00010000 }
+ SECTIONS {
++ __mailbox_start = ORIGIN(mailbox);
++ __mailbox_end = ORIGIN(mailbox) + LENGTH(mailbox);
+  .text : { KEEP(*(.vectors)) *(.text*) *(.rodata*) } > app
+  .data : { *(.data*) } > app
+  .bss (NOLOAD) : { . = ALIGN(8); __bss_start = .; *(.bss*) *(COMMON) . = ALIGN(8); __bss_end = .; } > app
+--- v18/sw/main.c
++++ v19/sw/main.c
+@@ -532,8 +532,18 @@
+  return 0;
+ }
+ void main(void){
+- // Loader resets A9 before start; explicitly disable PL310 and enable global timer.
+- wr(0xf8f02100u,0);wr(0xf8f00208u,1);
++ // AMD FSBL has already flushed/disabled caches. Cold JTAG resets the A9.
++ // Establish CPU0 interrupt/timer state before UART1 enables IRQs.
++ wr(0xf8f02100u,0);
++ wr(0xf8f00100u,0);wr(0xf8f01000u,0);
++ for(unsigned i=0;i<3;i++){
++  wr(0xf8f01180u+4*i,0xffffffffu);
++  wr(0xf8f01280u+4*i,0xffffffffu);
++ }
++ wr(0xf8f00600u,0);wr(0xf8f00608u,0);wr(0xf8f0060cu,1);
++ wr(0xf8f00208u,0);wr(0xf8f00200u,0);wr(0xf8f00204u,0);
++ wr(0xf8f0020cu,1);wr(0xf8f00208u,1);
++ __asm__ volatile("dsb sy\n isb":::"memory");
+  volatile uint32_t *m=(volatile uint32_t *)&mailbox;
+  for(unsigned i=0;i<sizeof(mailbox)/4;i++)m[i]=0;
+  mailbox.magic=0x9281ca01u;mailbox.duration_ms=60000;mailbox.status=1;mailbox.phy_hs_settle=147;mailbox.sensor_lp_drive=3;set_control(0);

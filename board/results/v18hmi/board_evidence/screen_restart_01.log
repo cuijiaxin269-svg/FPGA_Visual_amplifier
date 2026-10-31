@@ -1,0 +1,17 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX rest
+HMI_ASSERT no_implicit_business_command=430
+HMI_ASSERT no_implicit_start=0
+HMI_ASSERT stopped=5
+HMI_NATIVE_TX get page0.mode.val
+HMI_SCREEN_NUMBER page0.mode.val=2
+HMI_NATIVE_TX get page0.alpha.val
+HMI_SCREEN_NUMBER page0.alpha.val=50
+HMI_NATIVE_TX get page0.exposure.val
+HMI_SCREEN_NUMBER page0.exposure.val=320
+HMI_NATIVE_TX get page0.runreq.val
+HMI_SCREEN_NUMBER page0.runreq.val=0
+HMI_SCREEN_SOFT_RESTART_RESYNC_PASSED

@@ -1,0 +1,6 @@
+PASS debounce: boot-held, bounce, 25 ms press/release, long hold, polling gaps
+PASS v8 capture guards: six error counters, invalid frame, active CRC failure, input overwrite, deadline; parameter applies at next frame with history reset
+PASS v8 scheduler: 360 frames, PL spectrum cadence, STOP drains active transform, START waits for PL ownership
+PASS actual scheduler: alpha30 -> raw bypass -> alpha30; safe active-transaction drain; settings preserved; hold cannot repeat
+PASS arbitration: UART/JTAG STOP cancel restart, faults cancel, idle/bounded/RECORD/PROCESS/PLAY ignore, pending ownership blocks restart
+ALPHA50_FIRMWARE_CONTROLS_PASSED exact_ieee_754=1 upper_endpoint=1 reject_invalid=1 restore30=1

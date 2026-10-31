@@ -1,0 +1,17 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+HMI_MONITOR mode=soak elapsed_ms=3 frames=35204 display=17490 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=60001 frames=38827 display=19290 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=120001 frames=42449 display=21090 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=180000 frames=46072 display=22890 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=240000 frames=49695 display=24690 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=300007 frames=53318 display=26490 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=360007 frames=56947 display=28293 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=420007 frames=60563 display=30090 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=480006 frames=64186 display=31890 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=540006 frames=67815 display=33693 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=600005 frames=71432 display=35490 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=660004 frames=75054 display=37290 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=720004 frames=78677 display=39090 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=780003 frames=82300 display=40890 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=840003 frames=85923 display=42690 rx_errors=0 capture_error=0
+Continuous run was interrupted or received a new command

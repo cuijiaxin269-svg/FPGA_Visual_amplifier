@@ -1,0 +1,618 @@
+
+*** Running vivado
+    with args -log capture_clip_dma_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source capture_clip_dma_0.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 30 21:02:08 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source capture_clip_dma_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 665.277 ; gain = 219.957
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/clip_copy_checked'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_full_temporal_v2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_shared'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/rgb2dvi_v1_3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/roi256_v3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/spectrum256_pl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tool/vivado/2025.2/Vivado/data/ip'.
+Command: synth_design -top capture_clip_dma_0 -part xc7z100ffg900-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 35040
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1529.285 ; gain = 539.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'capture_clip_dma_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_clip_dma_0/synth/capture_clip_dma_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_block_RAM_2P_BRAM_1R1W' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_block_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_block_RAM_2P_BRAM_1R1W' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_block_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_19_2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_19_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_flow_control_loop_pipe_sequential_init' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_flow_control_loop_pipe_sequential_init' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_19_2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_19_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_27_4' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_27_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_27_4' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_27_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_control_s_axi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_control_s_axi.v:236]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_control_s_axi' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi_load' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi_fifo' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi_srl' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi_srl' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi_fifo' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi_fifo__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi_mem' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2410]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi_mem' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2410]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi_fifo__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2157]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi_load' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi_read' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi_fifo__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi_srl__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi_srl__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi_fifo__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi_burst_converter' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:1050]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi_burst_sequential' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:1656]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi_reg_slice' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi_reg_slice' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi_burst_sequential' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:1656]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi_burst_converter' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:1050]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_input_mem_m_axi_reg_slice__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi_reg_slice__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi_read' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:796]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_input_mem_m_axi' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_input_mem_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_store' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_fifo' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_srl' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_srl' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_fifo' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_fifo__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_srl__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_srl__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_fifo__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_fifo__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_mem' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:3034]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_mem' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:3034]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_fifo__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_fifo__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_srl__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_srl__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_fifo__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_fifo__parameterized3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_srl__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_srl__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_fifo__parameterized3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2781]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_store' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_write' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:1112]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_burst_converter' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_burst_sequential' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2013]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_reg_slice' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_reg_slice' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_burst_sequential' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2013]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_burst_converter' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_throttle' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2408]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_fifo__parameterized4' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_srl__parameterized3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_srl__parameterized3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_fifo__parameterized4' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_reg_slice__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_reg_slice__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2677]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_reg_slice__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_reg_slice__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_throttle' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2408]
+INFO: [Synth 8-6157] synthesizing module 'clip_copy_checked_output_mem_m_axi_reg_slice__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_reg_slice__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi_write' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:1112]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked_output_mem_m_axi' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'clip_copy_checked' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'capture_clip_dma_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_clip_dma_0/synth/capture_clip_dma_0.v:53]
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_control_s_axi.v:317]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port raddr[0] in module clip_copy_checked_output_mem_m_axi_srl__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[7] in module clip_copy_checked_output_mem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[6] in module clip_copy_checked_output_mem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[5] in module clip_copy_checked_output_mem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[4] in module clip_copy_checked_output_mem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[3] in module clip_copy_checked_output_mem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[2] in module clip_copy_checked_output_mem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[1] in module clip_copy_checked_output_mem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BURST_AWLEN[0] in module clip_copy_checked_output_mem_m_axi_throttle is either unconnected or has no load
+INFO: [Synth 8-7129] Port raddr[0] in module clip_copy_checked_output_mem_m_axi_srl__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BUS_BID[0] in module clip_copy_checked_output_mem_m_axi_write is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BUS_BRESP[1] in module clip_copy_checked_output_mem_m_axi_write is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BUS_BRESP[0] in module clip_copy_checked_output_mem_m_axi_write is either unconnected or has no load
+INFO: [Synth 8-7129] Port in_BUS_BUSER[0] in module clip_copy_checked_output_mem_m_axi_write is either unconnected or has no load
+INFO: [Synth 8-7129] Port raddr[0] in module clip_copy_checked_output_mem_m_axi_srl is either unconnected or has no load
+INFO: [Synth 8-7129] Port ARREADY in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RID[0] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[127] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[126] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[125] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[124] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[123] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[122] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[121] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[120] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[119] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[118] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[117] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[116] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[115] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[114] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[113] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[112] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[111] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[110] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[109] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[108] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[107] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[106] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[105] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[104] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[103] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[102] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[101] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[100] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[99] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[98] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[97] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[96] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[95] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[94] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[93] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[92] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[91] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[90] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[89] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[88] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[87] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[86] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[85] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[84] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[83] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[82] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[81] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[80] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[79] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[78] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[77] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[76] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[75] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[74] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[73] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[72] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[71] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[70] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[69] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[68] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[67] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[66] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[65] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[64] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[63] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[62] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[61] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[60] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[59] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[58] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[57] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[56] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[55] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[54] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[53] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[52] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[51] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[50] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[49] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[48] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[47] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[46] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port RDATA[45] in module clip_copy_checked_output_mem_m_axi is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1687.020 ; gain = 696.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1687.020 ; gain = 696.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1687.020 ; gain = 696.840
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1687.020 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_clip_dma_0/constraints/clip_copy_checked_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_clip_dma_0/constraints/clip_copy_checked_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/vision/submission/_build/v25/c.runs/capture_clip_dma_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/vision/submission/_build/v25/c.runs/capture_clip_dma_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1781.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 1781.582 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1781.582 ; gain = 791.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1781.582 ; gain = 791.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1781.582 ; gain = 791.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'i_2_reg_314_pp0_iter1_reg_reg' and it is trimmed from '8' to '7' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_19_2.v:303]
+INFO: [Synth 8-3936] Found unconnected internal register 'i_2_reg_314_reg' and it is trimmed from '8' to '7' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_19_2.v:302]
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'clip_copy_checked_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'clip_copy_checked_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'clip_copy_checked_input_mem_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'clip_copy_checked_input_mem_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'clip_copy_checked_output_mem_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'clip_copy_checked_output_mem_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'clip_copy_checked_output_mem_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'clip_copy_checked_output_mem_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'clip_copy_checked_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'clip_copy_checked_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'clip_copy_checked_input_mem_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'clip_copy_checked_input_mem_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'clip_copy_checked_output_mem_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'clip_copy_checked_output_mem_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'clip_copy_checked_output_mem_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'clip_copy_checked_output_mem_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1781.582 ; gain = 791.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 6     
+	   2 Input   20 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 4     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 7     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 10    
+	   2 Input    2 Bit       Adders := 24    
+	   2 Input    1 Bit       Adders := 16    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	              144 Bit    Registers := 1     
+	              130 Bit    Registers := 3     
+	              128 Bit    Registers := 4     
+	               97 Bit    Registers := 4     
+	               96 Bit    Registers := 2     
+	               73 Bit    Registers := 2     
+	               64 Bit    Registers := 8     
+	               60 Bit    Registers := 2     
+	               52 Bit    Registers := 2     
+	               32 Bit    Registers := 10    
+	               20 Bit    Registers := 4     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                9 Bit    Registers := 7     
+	                8 Bit    Registers := 18    
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 21    
+	                1 Bit    Registers := 126   
++---RAMs : 
+	              35K Bit	(255 X 144 bit)          RAMs := 1     
+	              32K Bit	(255 X 130 bit)          RAMs := 1     
+	              16K Bit	(128 X 128 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  130 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 2     
+	   2 Input   97 Bit        Muxes := 2     
+	   2 Input   73 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 8     
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input   20 Bit        Muxes := 4     
+	   2 Input   18 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 4     
+	   2 Input   12 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 3     
+	   4 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 6     
+	   4 Input    8 Bit        Muxes := 2     
+	   4 Input    7 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 8     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 10    
+	   2 Input    2 Bit        Muxes := 87    
+	   3 Input    2 Bit        Muxes := 19    
+	   4 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 143   
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '73' to '72' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2710]
+INFO: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '73' to '72' bits. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/09d1/hdl/verilog/clip_copy_checked_output_mem_m_axi.v:2731]
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module clip_copy_checked_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module clip_copy_checked_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1781.582 ; gain = 791.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst                    | block_U/ram_reg                            | 128 x 128(READ_FIRST)  | W |   | 128 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      | 
+|inst/input_mem_m_axi_U  | load_unit_0/buff_rdata/U_fifo_mem/mem_reg  | 255 x 130(READ_FIRST)  | W |   | 255 x 130(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      | 
+|inst/output_mem_m_axi_U | store_unit_0/buff_wdata/U_fifo_mem/mem_reg | 255 x 144(READ_FIRST)  | W |   | 255 x 144(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      | 
++------------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1881.793 ; gain = 891.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1927.836 ; gain = 937.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst                    | block_U/ram_reg                            | 128 x 128(READ_FIRST)  | W |   | 128 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      | 
+|inst/input_mem_m_axi_U  | load_unit_0/buff_rdata/U_fifo_mem/mem_reg  | 255 x 130(READ_FIRST)  | W |   | 255 x 130(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      | 
+|inst/output_mem_m_axi_U | store_unit_0/buff_wdata/U_fifo_mem/mem_reg | 255 x 144(READ_FIRST)  | W |   | 255 x 144(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      | 
++------------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/input_mem_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1942.980 ; gain = 952.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2158.184 ; gain = 1168.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2158.184 ; gain = 1168.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 2158.184 ; gain = 1168.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 2158.184 ; gain = 1168.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 2162.191 ; gain = 1172.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 2162.191 ; gain = 1172.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name   | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[5] | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[2] | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    71|
+|2     |LUT1     |    43|
+|3     |LUT2     |   105|
+|4     |LUT3     |   542|
+|5     |LUT4     |   460|
+|6     |LUT5     |   165|
+|7     |LUT6     |   223|
+|8     |RAMB36E1 |     6|
+|11    |SRL16E   |   132|
+|12    |FDRE     |  2344|
+|13    |FDSE     |    18|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 2162.191 ; gain = 1172.012
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 2162.191 ; gain = 1077.449
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 2162.191 ; gain = 1172.012
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 2171.312 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2181.812 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: b4112e0
+INFO: [Common 17-83] Releasing license: Synthesis
+237 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 2181.812 ; gain = 1495.801
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2181.812 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_clip_dma_0_synth_1/capture_clip_dma_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP capture_clip_dma_0, cache-ID = caaad7063997b2bd
+INFO: [Coretcl 2-1174] Renamed 44 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2181.812 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_clip_dma_0_synth_1/capture_clip_dma_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file capture_clip_dma_0_utilization_synth.rpt -pb capture_clip_dma_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 21:03:10 2026...

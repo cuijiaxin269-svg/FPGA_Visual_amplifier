@@ -1,0 +1,9 @@
+{
+  "time": "2026-10-30T15:27:24.4361537+08:00",
+  "pid": 37820,
+  "board_commands": 0,
+  "reset_commands": 0,
+  "stopped": true,
+  "was_running": true,
+  "termination_output": "SUCCESS: The process with PID 31868 (child process of PID 37820) has been terminated.\nSUCCESS: The process with PID 37820 (child process of PID 3568) has been terminated."
+}

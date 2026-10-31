@@ -1,0 +1,175 @@
+{
+  "source_root": "original FPGA_Visual_amplifier workspace",
+  "files": [
+    {
+      "source": "vision/v16alpha50/hls/motion60_shared/phase_core.cpp",
+      "destination": "src/hls/motion60_shared/phase_core.cpp",
+      "sha256": "8cdf982fb7ffeef0f46a87b2ae6ccbeac38f8e3a6460ddf52b68a24015ccb3d5"
+    },
+    {
+      "source": "vision/v16alpha50/hls/motion60_shared/phase_core.hpp",
+      "destination": "src/hls/motion60_shared/phase_core.hpp",
+      "sha256": "a282ef2815a54e0376dba77e8eb9460e2638c4bc155a1602772d06ba1d817637"
+    },
+    {
+      "source": "vision/v16alpha50/hls/motion60_shared/pipeline.cpp",
+      "destination": "src/hls/motion60_shared/pipeline.cpp",
+      "sha256": "5d6f6964d4da58cfbe3652ae99b9fb528807321e3ccb1f0b025d8b35c423bf73"
+    },
+    {
+      "source": "vision/ab12/hls/motion60_shared/clip_temporal_v2.cpp",
+      "destination": "src/hls/motion60_shared/clip_temporal_v2.cpp",
+      "sha256": "7d35d10029372428798dee4372c8f69938bdbd86034cfa8f76b716e3846d145b"
+    },
+    {
+      "source": "vision/ab12/hls/motion60_shared/clip_copy_checked.cpp",
+      "destination": "src/hls/motion60_shared/clip_copy_checked.cpp",
+      "sha256": "7c827ee72bcc33badce7d2b6455554b85c2e43bd54dd11c57e3e5c6e17d1d13a"
+    },
+    {
+      "source": "vision/ab12/hls/motion60_shared/test_temporal_v2.cpp",
+      "destination": "src/hls/motion60_shared/test_temporal_v2.cpp",
+      "sha256": "d830b71ec179e5ce7adad148f2d32acaf3104420aeb55ec4e2b452a791612398"
+    },
+    {
+      "source": "vision/ab12/hls/motion60_shared/test_copy_checked.cpp",
+      "destination": "src/hls/motion60_shared/test_copy_checked.cpp",
+      "sha256": "6bedb0b7375f96c8802c523ef8eaac167a277eca5b59a92e046e89b67bbe4212"
+    },
+    {
+      "source": "vision/ab12/hls/roi256/roi256.cpp",
+      "destination": "src/hls/roi256/roi256.cpp",
+      "sha256": "3eed84917b7c5c92601be9893aaba0f0bf6c4952626d0ad6545ff24e35816c21"
+    },
+    {
+      "source": "vision/ab12/hls/roi256/test_roi256.cpp",
+      "destination": "src/hls/roi256/test_roi256.cpp",
+      "sha256": "77d2f570eb1907cb7a13c148381ac821a893ca1383a053c83a35be8f9d57e00a"
+    },
+    {
+      "source": "vision/ab12/hls/spectrum256_pl/spectrum256_pl.cpp",
+      "destination": "src/hls/spectrum256_pl/spectrum256_pl.cpp",
+      "sha256": "c777d7a8edd541cd76b4515c387ef95cfbcb3a705dad8f41c13565d9608099bd"
+    },
+    {
+      "source": "vision/ab12/hls/spectrum256_pl/test_spectrum256_pl.cpp",
+      "destination": "src/hls/spectrum256_pl/test_spectrum256_pl.cpp",
+      "sha256": "432e6824e0e8cdd70fc17615fdfa26bc1586d5ce16bdf2cc0f3e44b11a00a3ad"
+    },
+    {
+      "source": "vision/ab12/hls/spectrum256/spectrum256.cpp",
+      "destination": "src/hls/spectrum256/spectrum256.cpp",
+      "sha256": "6027b65f71408ee315d26d09751a7279bb41b0befd87b975ac6e1cb1d3b4f4de"
+    },
+    {
+      "source": "vision/ab12/hls/spectrum256/tables.hpp",
+      "destination": "src/hls/spectrum256/tables.hpp",
+      "sha256": "11c0de89c626caad0e7ed9d37a4553d6a1d72d79e2fd67a3bd288bd7c45b0742"
+    },
+    {
+      "source": "vision/ab12/hls/spectrum256/test_spectrum256.cpp",
+      "destination": "src/hls/spectrum256/test_spectrum256.cpp",
+      "sha256": "44bf55b35c9bc5d73f4bcd5f08e74ceab3a779df5618da73851d17bd8acc7e27"
+    },
+    {
+      "source": "vision/alpha50_probe/sim/baseline_phase.cpp",
+      "destination": "src/hls/tests/alpha50/baseline_phase.cpp",
+      "sha256": "044c4b7fad6a27f9f675362d9d43e455dbda84b17ec4a112f534c1122871afa9"
+    },
+    {
+      "source": "vision/alpha50_probe/sim/test_alpha50.cpp",
+      "destination": "src/hls/tests/alpha50/test_alpha50.cpp",
+      "sha256": "38734101ff9b36b6856e420cb62e3c93e1c825d00fef18d7eb3d5a5437f6b225"
+    },
+    {
+      "source": "vision/ab12/algorithm/motion60_spectrum.py",
+      "destination": "src/hls/reference/motion60_spectrum.py",
+      "sha256": "09941485c30d36ecf3b22db71f073d28c486f3dce52f7da2e8594456dffc8303"
+    },
+    {
+      "source": "vision/v16alpha50/provenance/gate_only_patch.json",
+      "destination": "src/hls/provenance/alpha50/gate_only_patch.json",
+      "sha256": "07cc704f957de6adf86ba5a6588c2b9ec432c1e802301570e86912faa843ce62"
+    },
+    {
+      "source": "vision/v16alpha50/provenance/csim_2021.stdout.log",
+      "destination": "src/hls/provenance/alpha50/csim_2021.stdout.log",
+      "sha256": "4d927d1d9273a5ca7c0922b76b672a0f82689476fbdfa3aa33ff6a10813bb3a0"
+    },
+    {
+      "source": "vision/v16alpha50/provenance/limit_audit.json",
+      "destination": "src/hls/provenance/alpha50/limit_audit.json",
+      "sha256": "27bd4a18d2992a6eb36b7345f0498dffebb7025b40c14a8841dd2761d2f41fcb"
+    },
+    {
+      "source": "vision/v16alpha50/reports/source_audit.json",
+      "destination": "src/hls/provenance/alpha50/source_audit.json",
+      "sha256": "6c86ee0ecd91a7dbb4a86bc2421ee6008a042bdec0ac65c882c2a9e3cde35d8c"
+    },
+    {
+      "source": "vision/ab12/scripts/build_motion60_shared.tcl",
+      "destination": "build/scripts/hls/archive/build_motion60_shared.tcl.txt",
+      "sha256": "73581bccac68e0f47d62d13596612bf5ab23b6f4555f78ea864e37b32c18838f"
+    },
+    {
+      "source": "vision/ab12/scripts/build_motion60_full_temporal_v2.tcl",
+      "destination": "build/scripts/hls/archive/build_motion60_full_temporal_v2.tcl.txt",
+      "sha256": "453209042f945616539f5268e79068529c99a12977112a54a505b4bfac910a37"
+    },
+    {
+      "source": "vision/ab12/scripts/build_clip_copy_checked.tcl",
+      "destination": "build/scripts/hls/archive/build_clip_copy_checked.tcl.txt",
+      "sha256": "74f8324c187194f22d2eca1c24c3b280320f02582cab1bc1d2862903a9cb36de"
+    },
+    {
+      "source": "vision/ab12/scripts/build_roi256.tcl",
+      "destination": "build/scripts/hls/archive/build_roi256.tcl.txt",
+      "sha256": "b978577794fa601b87692b6c10c89cda97e94340057d8b5bc75914fda29e41d9"
+    },
+    {
+      "source": "vision/ab12/scripts/build_spectrum256_pl.tcl",
+      "destination": "build/scripts/hls/archive/build_spectrum256_pl.tcl.txt",
+      "sha256": "ce7df7f672d1eb995f9bf559cfb525b53768a2ffbbbdc51bb730c2ec2008735e"
+    },
+    {
+      "source": "vision/ab12/scripts/preserve_motion60_fifo_address.py",
+      "destination": "build/scripts/hls/archive/preserve_motion60_fifo_address.py.txt",
+      "sha256": "84a8004f8f2678b7dcead28cb3d3a0f44b3a3f338883ce910d383e9c335e848b"
+    },
+    {
+      "source": "vision/ab12/scripts/generate_roi256_vectors.py",
+      "destination": "build/scripts/hls/archive/generate_roi256_vectors.py.txt",
+      "sha256": "ca110c1e5a6b9f31b7ab0dbc621cedca0284b8a4bd9ae29c5f7e88f5e6ca2776"
+    },
+    {
+      "source": "vision/alpha50_probe/scripts/test_hls_2021.tcl",
+      "destination": "build/scripts/hls/archive/test_alpha50_2021.tcl.txt",
+      "sha256": "b300584ecabf819a81736e0c87a0e2c8679a6bf42fc00becf390c15168df6dbc"
+    },
+    {
+      "source": "vision/v16alpha50/scripts/prepare_gate_eco_2021.tcl",
+      "destination": "build/scripts/hls/archive/prepare_gate_eco_2021.tcl.txt",
+      "sha256": "d734fedfc15d11f416eff0b79f91fc30a157e142fe8f5a1479dd6fa75ae7c3ff"
+    },
+    {
+      "source": "vision/v16alpha50/scripts/audit_sources.py",
+      "destination": "build/scripts/hls/archive/audit_sources.py.txt",
+      "sha256": "279d8d2550e0aff3b3687bba7206ccf33ae9ba67de42ee379289123aff829c64"
+    },
+    {
+      "source": "vision/ab12/hls/motion60_shared/test_temporal.cpp",
+      "destination": "src/hls/motion60_shared/test_temporal.cpp",
+      "sha256": "28094a915932b3aa49dcb0cd7a7321843d8a10f6a9b7085ec0e96e00cf4cbf1b"
+    },
+    {
+      "source": "vision/ab12/hls/clip_copy/test_clip_copy.cpp",
+      "destination": "src/hls/clip_copy/test_clip_copy.cpp",
+      "sha256": "e9ae1ec1f445f83b407e9176115d397396b09a8c0402d2d725b698dbbc8f4e4a"
+    },
+    {
+      "source": "vision/ab12/scripts/preserve_motion60_fifo_address.py",
+      "destination": "build/scripts/hls/preserve_motion60_fifo_address.py",
+      "sha256": "84a8004f8f2678b7dcead28cb3d3a0f44b3a3f338883ce910d383e9c335e848b"
+    }
+  ]
+}

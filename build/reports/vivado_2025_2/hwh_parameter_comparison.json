@@ -1,0 +1,131 @@
+{
+  "inputs": {
+    "original_xsa_sha256": "bb1fd7525051188e14840edb8ede828c5219e9d97d822e6c8b65ccde7ccad440",
+    "new_hwh_sha256": "0081ba95326805419145b626bc26e250b108d0ca532722d945b964b84d66f685",
+    "new_nested_hwh_sha256": "aca2f630405c1b2225e3ef50713b233f55d7056c23da354717e23d9aa7f455cd",
+    "build_directory": "D:/vision/submission/_build/v25"
+  },
+  "ps": {
+    "original_vlnv": "xilinx.com:ip:processing_system7:5.5",
+    "migrated_vlnv": "xilinx.com:ip:processing_system7:5.5",
+    "parameter_differences": {}
+  },
+  "csi": {
+    "original_vlnv": "xilinx.com:ip:mipi_csi2_rx_subsystem:5.1",
+    "migrated_vlnv": "xilinx.com:ip:mipi_csi2_rx_subsystem:6.0",
+    "parameter_differences": {
+      "C_CLOCK_MASK": {
+        "original": null,
+        "migrated": "39"
+      },
+      "C_DBG_PORTS_ON": {
+        "original": null,
+        "migrated": "false"
+      },
+      "C_DEBUG_BUS": {
+        "original": null,
+        "migrated": "false"
+      },
+      "C_EXT_MMCM": {
+        "original": null,
+        "migrated": "0"
+      },
+      "C_HS_LINE_RATE": {
+        "original": "400",
+        "migrated": "800"
+      },
+      "C_INC_PHY": {
+        "original": null,
+        "migrated": "true"
+      },
+      "C_IS_KSB": {
+        "original": null,
+        "migrated": "false"
+      },
+      "C_MASTER_RIU": {
+        "original": null,
+        "migrated": "true"
+      },
+      "C_PHY_MODE": {
+        "original": null,
+        "migrated": "DPHY"
+      },
+      "C_RCVE_PREAMBLE_SEQ": {
+        "original": null,
+        "migrated": "false"
+      },
+      "C_SEP_RIU": {
+        "original": null,
+        "migrated": "false"
+      },
+      "C_STRETCH_LINE_RATE": {
+        "original": "3500",
+        "migrated": "4500"
+      }
+    }
+  },
+  "motion": {
+    "original_vlnv": "xilinx.com:hls:motion60_shared:1.0",
+    "migrated_vlnv": "xilinx.com:hls:motion60_shared:1.0",
+    "parameter_differences": {}
+  },
+  "roi": {
+    "original_vlnv": "xilinx.com:hls:roi256:1.0",
+    "migrated_vlnv": "xilinx.com:hls:roi256:1.0",
+    "parameter_differences": {}
+  },
+  "spec_fft": {
+    "original_vlnv": "xilinx.com:hls:spectrum256_pl:1.0",
+    "migrated_vlnv": "xilinx.com:hls:spectrum256_pl:1.0",
+    "parameter_differences": {}
+  },
+  "vdma": {
+    "original_vlnv": "xilinx.com:ip:axi_vdma:6.3",
+    "migrated_vlnv": "xilinx.com:ip:axi_vdma:6.3",
+    "parameter_differences": {}
+  },
+  "display_dma": {
+    "original_vlnv": "xilinx.com:ip:axi_vdma:6.3",
+    "migrated_vlnv": "xilinx.com:ip:axi_vdma:6.3",
+    "parameter_differences": {}
+  },
+  "nested_dphy": {
+    "original_vlnv": "xilinx.com:ip:mipi_dphy:4.3",
+    "migrated_vlnv": "xilinx.com:ip:mipi_dphy:4.3",
+    "key_parameters": {
+      "C_HS_LINE_RATE": {
+        "original": "400",
+        "migrated": "400"
+      },
+      "C_DPHY_LANES": {
+        "original": "2",
+        "migrated": "2"
+      },
+      "C_IDLY_TAP": {
+        "original": "1",
+        "migrated": "1"
+      },
+      "C_CAL_MODE": {
+        "original": "FIXED",
+        "migrated": "FIXED"
+      },
+      "C_SHARE_IDLYCTRL": {
+        "original": "true",
+        "migrated": "true"
+      },
+      "C_DPHY_MODE": {
+        "original": "SLAVE",
+        "migrated": "SLAVE"
+      },
+      "C_EN_REG_IF": {
+        "original": "1",
+        "migrated": "1"
+      },
+      "C_EN_TIMEOUT_REGS": {
+        "original": "0",
+        "migrated": "0"
+      }
+    },
+    "note": "Top-level CSI6 metadata C_HS_LINE_RATE defaults to 800, but actual nested PHY uses DPY_LINE_RATE=400."
+  }
+}

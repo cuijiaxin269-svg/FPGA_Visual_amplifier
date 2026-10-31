@@ -1,0 +1,9 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+HMI_MONITOR mode=soak elapsed_ms=7 frames=4561 display=2265 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=60003 frames=8184 display=4065 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=120011 frames=11807 display=5865 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=180014 frames=15436 display=7668 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=240012 frames=19052 display=9468 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=300001 frames=22675 display=11265 rx_errors=0 capture_error=0
+HMI_MONITOR mode=soak elapsed_ms=360001 frames=26298 display=13065 rx_errors=0 capture_error=0
+Invalid context

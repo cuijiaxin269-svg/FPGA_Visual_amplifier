@@ -1,0 +1,4 @@
+   text	   data	    bss	    dec	    hex	filename
+  69876	     40	  70844	 140760	  225d8	build/firmware/motion60.elf
+HMI_FIRMWARE_INPUT_RECEIPT_WRITTEN
+HMI_ARM_FIRMWARE_BUILT

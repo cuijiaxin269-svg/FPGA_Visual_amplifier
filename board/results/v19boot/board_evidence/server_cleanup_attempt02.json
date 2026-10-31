@@ -1,0 +1,9 @@
+{
+  "time": "2026-10-30T15:15:09.2421817+08:00",
+  "pid": 40748,
+  "board_commands": 0,
+  "reset_commands": 0,
+  "stopped": true,
+  "was_running": true,
+  "termination_output": "SUCCESS: The process with PID 11300 (child process of PID 40748) has been terminated.\nSUCCESS: The process with PID 40748 (child process of PID 33032) has been terminated."
+}

@@ -1,0 +1,139 @@
+
+****** Xilinx Program Flash
+****** Program Flash v2021.2 (64-bit)
+  **** SW Build 1967 on 2021-10-14-04:42:58
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+Connected to hw_server @ tcp:127.0.0.1:3121
+Supported Frequency list
+125000  250000  500000  1000000  2000000  3000000  3750000  5000000  6000000  7500000  10000000  15000000  30000000  
+
+Retrieving Flash info...
+
+Initialization done
+Using default mini u-boot image file - D:/xilinx/Vitis/2021.2/data\xicom\cfgmem\uboot\zynq_qspi_x4_single.bin
+===== mrd->addr=0xF800025C, data=0x00000000 =====
+BOOT_MODE REG = 0x00000000
+Downloading FSBL...
+Running FSBL...
+Finished running FSBL.
+===== mrd->addr=0xF8000110, data=0x000FA240 =====
+READ: ARM_PLL_CFG (0xF8000110) = 0x000FA240
+===== mrd->addr=0xF8000100, data=0x00030008 =====
+READ: ARM_PLL_CTRL (0xF8000100) = 0x00030008
+===== mrd->addr=0xF8000120, data=0x1F000200 =====
+READ: ARM_CLK_CTRL (0xF8000120) = 0x1F000200
+===== mrd->addr=0xF8000118, data=0x000FA240 =====
+READ: IO_PLL_CFG (0xF8000118) = 0x000FA240
+===== mrd->addr=0xF8000108, data=0x00036008 =====
+READ: IO_PLL_CTRL (0xF8000108) = 0x00036008
+Info:  Remapping 256KB of on-chip-memory RAM memory to 0xFFFC0000.
+===== mrd->addr=0xF8000008, data=0x00000000 =====
+===== mwr->addr=0xF8000008, data=0x0000DF0D =====
+MASKWRITE: addr=0xF8000008, mask=0x0000FFFF, newData=0x0000DF0D
+===== mwr->addr=0xF8000910, data=0x000001FF =====
+===== mrd->addr=0xF8000004, data=0x00000000 =====
+===== mwr->addr=0xF8000004, data=0x0000767B =====
+MASKWRITE: addr=0xF8000004, mask=0x0000FFFF, newData=0x0000767B
+
+
+
+
+U-Boot 2021.01-00102-g43adebe (Oct 11 2021 - 01:37:47 -0600)
+
+
+
+Model: Zynq CSE QSPI SINGLE Board
+
+DRAM:  256 KiB
+
+WARNING: Caches not enabled
+
+In:    dcc
+
+Out:   dcc
+
+Err:   dcc
+
+Zynq> sf probe 0 0 0
+
+
+SF: Detected w25q128 with page size 256 Bytes, erase size 64 KiB, total 16 MiB
+
+Zynq> Sector size = 65536.
+f probe 0 0 0
+
+
+Performing Program Operation...
+0%...sf write FFFC0000 0 20000
+
+
+device 0 offset 0x0, size 0x20000
+
+SF: 131072 bytes @ 0x0 Written: OK
+
+Zynq> sf write FFFC0000 20000 20000
+
+
+device 0 offset 0x20000, size 0x20000
+
+SF: 131072 bytes @ 0x20000 Written: OK
+
+Zynq> sf write FFFC0000 40000 20000
+
+
+device 0 offset 0x40000, size 0x20000
+
+SF: 131072 bytes @ 0x40000 Written: OK
+
+Zynq> sf write FFFC0000 60000 20000
+
+
+device 0 offset 0x60000, size 0x20000
+
+SF: 131072 bytes @ 0x60000 Written: OK
+
+Zynq> sf write FFFC0000 80000 20000
+
+
+device 0 offset 0x80000, size 0x20000
+
+SF: 131072 bytes @ 0x80000 Written: OK
+
+Zynq> sf write FFFC0000 A0000 20000
+
+
+device 0 offset 0xa0000, size 0x20000
+
+SF: 131072 bytes @ 0xa0000 Written: OK
+
+Zynq> sf write FFFC0000 C0000 20000
+
+
+device 0 offset 0xc0000, size 0x20000
+
+SF: 131072 bytes @ 0xc0000 Written: OK
+
+Zynq> sf write FFFC0000 E0000 20000
+
+
+device 0 offset 0xe0000, size 0x20000
+
+SF: 131072 bytes @ 0xe0000 Written: OK
+
+Zynq> sf write FFFC0000 100000 20000
+
+
+device 0 offset 0x100000, size 0x20000
+
+SF: 131072 bytes @ 0x100000 Written: OK
+
+Zynq> sf write FFFC0000 120000 20000
+
+
+device 0 offset 0x120000, size 0x20000
+
+SF: 131072 bytes @ 0x120000 Written: OK
+
+Zynq> 

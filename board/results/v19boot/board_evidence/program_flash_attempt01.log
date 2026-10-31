@@ -1,0 +1,2692 @@
+
+****** Xilinx Program Flash
+****** Program Flash v2021.2 (64-bit)
+  **** SW Build 1967 on 2021-10-14-04:42:58
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+Connected to hw_server @ tcp:127.0.0.1:3121
+Supported Frequency list
+125000  250000  500000  1000000  2000000  3000000  3750000  5000000  6000000  7500000  10000000  15000000  30000000  
+
+Retrieving Flash info...
+
+Initialization done
+Using default mini u-boot image file - D:/xilinx/Vitis/2021.2/data\xicom\cfgmem\uboot\zynq_qspi_x4_single.bin
+===== mrd->addr=0xF800025C, data=0x00000000 =====
+BOOT_MODE REG = 0x00000000
+Downloading FSBL...
+Running FSBL...
+Finished running FSBL.
+===== mrd->addr=0xF8000110, data=0x000FA240 =====
+READ: ARM_PLL_CFG (0xF8000110) = 0x000FA240
+===== mrd->addr=0xF8000100, data=0x00030008 =====
+READ: ARM_PLL_CTRL (0xF8000100) = 0x00030008
+===== mrd->addr=0xF8000120, data=0x1F000200 =====
+READ: ARM_CLK_CTRL (0xF8000120) = 0x1F000200
+===== mrd->addr=0xF8000118, data=0x000FA240 =====
+READ: IO_PLL_CFG (0xF8000118) = 0x000FA240
+===== mrd->addr=0xF8000108, data=0x00036008 =====
+READ: IO_PLL_CTRL (0xF8000108) = 0x00036008
+Info:  Remapping 256KB of on-chip-memory RAM memory to 0xFFFC0000.
+===== mrd->addr=0xF8000008, data=0x00000000 =====
+===== mwr->addr=0xF8000008, data=0x0000DF0D =====
+MASKWRITE: addr=0xF8000008, mask=0x0000FFFF, newData=0x0000DF0D
+===== mwr->addr=0xF8000910, data=0x000001FF =====
+===== mrd->addr=0xF8000004, data=0x00000000 =====
+===== mwr->addr=0xF8000004, data=0x0000767B =====
+MASKWRITE: addr=0xF8000004, mask=0x0000FFFF, newData=0x0000767B
+
+
+
+
+U-Boot 2021.01-00102-g43adebe (Oct 11 2021 - 01:37:47 -0600)
+
+
+
+Model: Zynq CSE QSPI SINGLE Board
+
+DRAM:  256 KiB
+
+WARNING: Caches not enabled
+
+In:    dcc
+
+Out:   dcc
+
+Err:   dcc
+
+Zynq> sf probe 0 0 0
+
+
+SF: Detected w25q128 with page size 256 Bytes, erase size 64 KiB, total 16 MiB
+
+Zynq> Sector size = 65536.
+f probe 0 0 0
+
+
+Performing Erase Operation...
+sf erase 0 CB0000
+
+
+SF: 13303808 bytes @ 0x0 Erased: OK
+
+Zynq> Erase Operation successful.
+INFO: [Xicom 50-44] Elapsed time = 50 sec.
+Performing Blank Check Operation...
+0%...sf read FFFC0000 0 10000
+
+
+device 0 offset 0x0, size 0x10000
+
+SF: 65536 bytes @ 0x0 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 10000 10000
+
+
+device 0 offset 0x10000, size 0x10000
+
+SF: 65536 bytes @ 0x10000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 20000 10000
+
+
+device 0 offset 0x20000, size 0x10000
+
+SF: 65536 bytes @ 0x20000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 30000 10000
+
+
+device 0 offset 0x30000, size 0x10000
+
+SF: 65536 bytes @ 0x30000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 40000 10000
+
+
+device 0 offset 0x40000, size 0x10000
+
+SF: 65536 bytes @ 0x40000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 50000 10000
+
+
+device 0 offset 0x50000, size 0x10000
+
+SF: 65536 bytes @ 0x50000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 60000 10000
+
+
+device 0 offset 0x60000, size 0x10000
+
+SF: 65536 bytes @ 0x60000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 70000 10000
+
+
+device 0 offset 0x70000, size 0x10000
+
+SF: 65536 bytes @ 0x70000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 80000 10000
+
+
+device 0 offset 0x80000, size 0x10000
+
+SF: 65536 bytes @ 0x80000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 90000 10000
+
+
+device 0 offset 0x90000, size 0x10000
+
+SF: 65536 bytes @ 0x90000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 A0000 10000
+
+
+device 0 offset 0xa0000, size 0x10000
+
+SF: 65536 bytes @ 0xa0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 B0000 10000
+
+
+device 0 offset 0xb0000, size 0x10000
+
+SF: 65536 bytes @ 0xb0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 C0000 10000
+
+
+device 0 offset 0xc0000, size 0x10000
+
+SF: 65536 bytes @ 0xc0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 D0000 10000
+
+
+device 0 offset 0xd0000, size 0x10000
+
+SF: 65536 bytes @ 0xd0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 E0000 10000
+
+
+device 0 offset 0xe0000, size 0x10000
+
+SF: 65536 bytes @ 0xe0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 F0000 10000
+
+
+device 0 offset 0xf0000, size 0x10000
+
+SF: 65536 bytes @ 0xf0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 100000 10000
+
+
+device 0 offset 0x100000, size 0x10000
+
+SF: 65536 bytes @ 0x100000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 110000 10000
+
+
+device 0 offset 0x110000, size 0x10000
+
+SF: 65536 bytes @ 0x110000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 120000 10000
+
+
+device 0 offset 0x120000, size 0x10000
+
+SF: 65536 bytes @ 0x120000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 130000 10000
+
+
+device 0 offset 0x130000, size 0x10000
+
+SF: 65536 bytes @ 0x130000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 140000 10000
+
+
+device 0 offset 0x140000, size 0x10000
+
+SF: 65536 bytes @ 0x140000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> 10%...sf read FFFC0000 150000 10000
+
+
+device 0 offset 0x150000, size 0x10000
+
+SF: 65536 bytes @ 0x150000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 160000 10000
+
+
+device 0 offset 0x160000, size 0x10000
+
+SF: 65536 bytes @ 0x160000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 170000 10000
+
+
+device 0 offset 0x170000, size 0x10000
+
+SF: 65536 bytes @ 0x170000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 180000 10000
+
+
+device 0 offset 0x180000, size 0x10000
+
+SF: 65536 bytes @ 0x180000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 190000 10000
+
+
+device 0 offset 0x190000, size 0x10000
+
+SF: 65536 bytes @ 0x190000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 1A0000 10000
+
+
+device 0 offset 0x1a0000, size 0x10000
+
+SF: 65536 bytes @ 0x1a0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 1B0000 10000
+
+
+device 0 offset 0x1b0000, size 0x10000
+
+SF: 65536 bytes @ 0x1b0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 1C0000 10000
+
+
+device 0 offset 0x1c0000, size 0x10000
+
+SF: 65536 bytes @ 0x1c0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 1D0000 10000
+
+
+device 0 offset 0x1d0000, size 0x10000
+
+SF: 65536 bytes @ 0x1d0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 1E0000 10000
+
+
+device 0 offset 0x1e0000, size 0x10000
+
+SF: 65536 bytes @ 0x1e0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 1F0000 10000
+
+
+device 0 offset 0x1f0000, size 0x10000
+
+SF: 65536 bytes @ 0x1f0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 200000 10000
+
+
+device 0 offset 0x200000, size 0x10000
+
+SF: 65536 bytes @ 0x200000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 210000 10000
+
+
+device 0 offset 0x210000, size 0x10000
+
+SF: 65536 bytes @ 0x210000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 220000 10000
+
+
+device 0 offset 0x220000, size 0x10000
+
+SF: 65536 bytes @ 0x220000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 230000 10000
+
+
+device 0 offset 0x230000, size 0x10000
+
+SF: 65536 bytes @ 0x230000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 240000 10000
+
+
+device 0 offset 0x240000, size 0x10000
+
+SF: 65536 bytes @ 0x240000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 250000 10000
+
+
+device 0 offset 0x250000, size 0x10000
+
+SF: 65536 bytes @ 0x250000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 260000 10000
+
+
+device 0 offset 0x260000, size 0x10000
+
+SF: 65536 bytes @ 0x260000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 270000 10000
+
+
+device 0 offset 0x270000, size 0x10000
+
+SF: 65536 bytes @ 0x270000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 280000 10000
+
+
+device 0 offset 0x280000, size 0x10000
+
+SF: 65536 bytes @ 0x280000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> 20%...sf read FFFC0000 290000 10000
+
+
+device 0 offset 0x290000, size 0x10000
+
+SF: 65536 bytes @ 0x290000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 2A0000 10000
+
+
+device 0 offset 0x2a0000, size 0x10000
+
+SF: 65536 bytes @ 0x2a0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 2B0000 10000
+
+
+device 0 offset 0x2b0000, size 0x10000
+
+SF: 65536 bytes @ 0x2b0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 2C0000 10000
+
+
+device 0 offset 0x2c0000, size 0x10000
+
+SF: 65536 bytes @ 0x2c0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 2D0000 10000
+
+
+device 0 offset 0x2d0000, size 0x10000
+
+SF: 65536 bytes @ 0x2d0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 2E0000 10000
+
+
+device 0 offset 0x2e0000, size 0x10000
+
+SF: 65536 bytes @ 0x2e0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 2F0000 10000
+
+
+device 0 offset 0x2f0000, size 0x10000
+
+SF: 65536 bytes @ 0x2f0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 300000 10000
+
+
+device 0 offset 0x300000, size 0x10000
+
+SF: 65536 bytes @ 0x300000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 310000 10000
+
+
+device 0 offset 0x310000, size 0x10000
+
+SF: 65536 bytes @ 0x310000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 320000 10000
+
+
+device 0 offset 0x320000, size 0x10000
+
+SF: 65536 bytes @ 0x320000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 330000 10000
+
+
+device 0 offset 0x330000, size 0x10000
+
+SF: 65536 bytes @ 0x330000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 340000 10000
+
+
+device 0 offset 0x340000, size 0x10000
+
+SF: 65536 bytes @ 0x340000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 350000 10000
+
+
+device 0 offset 0x350000, size 0x10000
+
+SF: 65536 bytes @ 0x350000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 360000 10000
+
+
+device 0 offset 0x360000, size 0x10000
+
+SF: 65536 bytes @ 0x360000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 370000 10000
+
+
+device 0 offset 0x370000, size 0x10000
+
+SF: 65536 bytes @ 0x370000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 380000 10000
+
+
+device 0 offset 0x380000, size 0x10000
+
+SF: 65536 bytes @ 0x380000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 390000 10000
+
+
+device 0 offset 0x390000, size 0x10000
+
+SF: 65536 bytes @ 0x390000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 3A0000 10000
+
+
+device 0 offset 0x3a0000, size 0x10000
+
+SF: 65536 bytes @ 0x3a0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 3B0000 10000
+
+
+device 0 offset 0x3b0000, size 0x10000
+
+SF: 65536 bytes @ 0x3b0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 3C0000 10000
+
+
+device 0 offset 0x3c0000, size 0x10000
+
+SF: 65536 bytes @ 0x3c0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> 30%...sf read FFFC0000 3D0000 10000
+
+
+device 0 offset 0x3d0000, size 0x10000
+
+SF: 65536 bytes @ 0x3d0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 3E0000 10000
+
+
+device 0 offset 0x3e0000, size 0x10000
+
+SF: 65536 bytes @ 0x3e0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 3F0000 10000
+
+
+device 0 offset 0x3f0000, size 0x10000
+
+SF: 65536 bytes @ 0x3f0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 400000 10000
+
+
+device 0 offset 0x400000, size 0x10000
+
+SF: 65536 bytes @ 0x400000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 410000 10000
+
+
+device 0 offset 0x410000, size 0x10000
+
+SF: 65536 bytes @ 0x410000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 420000 10000
+
+
+device 0 offset 0x420000, size 0x10000
+
+SF: 65536 bytes @ 0x420000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 430000 10000
+
+
+device 0 offset 0x430000, size 0x10000
+
+SF: 65536 bytes @ 0x430000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 440000 10000
+
+
+device 0 offset 0x440000, size 0x10000
+
+SF: 65536 bytes @ 0x440000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 450000 10000
+
+
+device 0 offset 0x450000, size 0x10000
+
+SF: 65536 bytes @ 0x450000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 460000 10000
+
+
+device 0 offset 0x460000, size 0x10000
+
+SF: 65536 bytes @ 0x460000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 470000 10000
+
+
+device 0 offset 0x470000, size 0x10000
+
+SF: 65536 bytes @ 0x470000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 480000 10000
+
+
+device 0 offset 0x480000, size 0x10000
+
+SF: 65536 bytes @ 0x480000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 490000 10000
+
+
+device 0 offset 0x490000, size 0x10000
+
+SF: 65536 bytes @ 0x490000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 4A0000 10000
+
+
+device 0 offset 0x4a0000, size 0x10000
+
+SF: 65536 bytes @ 0x4a0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 4B0000 10000
+
+
+device 0 offset 0x4b0000, size 0x10000
+
+SF: 65536 bytes @ 0x4b0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 4C0000 10000
+
+
+device 0 offset 0x4c0000, size 0x10000
+
+SF: 65536 bytes @ 0x4c0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 4D0000 10000
+
+
+device 0 offset 0x4d0000, size 0x10000
+
+SF: 65536 bytes @ 0x4d0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 4E0000 10000
+
+
+device 0 offset 0x4e0000, size 0x10000
+
+SF: 65536 bytes @ 0x4e0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 4F0000 10000
+
+
+device 0 offset 0x4f0000, size 0x10000
+
+SF: 65536 bytes @ 0x4f0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 500000 10000
+
+
+device 0 offset 0x500000, size 0x10000
+
+SF: 65536 bytes @ 0x500000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> 40%...sf read FFFC0000 510000 10000
+
+
+device 0 offset 0x510000, size 0x10000
+
+SF: 65536 bytes @ 0x510000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 520000 10000
+
+
+device 0 offset 0x520000, size 0x10000
+
+SF: 65536 bytes @ 0x520000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 530000 10000
+
+
+device 0 offset 0x530000, size 0x10000
+
+SF: 65536 bytes @ 0x530000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 540000 10000
+
+
+device 0 offset 0x540000, size 0x10000
+
+SF: 65536 bytes @ 0x540000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 550000 10000
+
+
+device 0 offset 0x550000, size 0x10000
+
+SF: 65536 bytes @ 0x550000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 560000 10000
+
+
+device 0 offset 0x560000, size 0x10000
+
+SF: 65536 bytes @ 0x560000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 570000 10000
+
+
+device 0 offset 0x570000, size 0x10000
+
+SF: 65536 bytes @ 0x570000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 580000 10000
+
+
+device 0 offset 0x580000, size 0x10000
+
+SF: 65536 bytes @ 0x580000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 590000 10000
+
+
+device 0 offset 0x590000, size 0x10000
+
+SF: 65536 bytes @ 0x590000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 5A0000 10000
+
+
+device 0 offset 0x5a0000, size 0x10000
+
+SF: 65536 bytes @ 0x5a0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 5B0000 10000
+
+
+device 0 offset 0x5b0000, size 0x10000
+
+SF: 65536 bytes @ 0x5b0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 5C0000 10000
+
+
+device 0 offset 0x5c0000, size 0x10000
+
+SF: 65536 bytes @ 0x5c0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 5D0000 10000
+
+
+device 0 offset 0x5d0000, size 0x10000
+
+SF: 65536 bytes @ 0x5d0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 5E0000 10000
+
+
+device 0 offset 0x5e0000, size 0x10000
+
+SF: 65536 bytes @ 0x5e0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 5F0000 10000
+
+
+device 0 offset 0x5f0000, size 0x10000
+
+SF: 65536 bytes @ 0x5f0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 600000 10000
+
+
+device 0 offset 0x600000, size 0x10000
+
+SF: 65536 bytes @ 0x600000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 610000 10000
+
+
+device 0 offset 0x610000, size 0x10000
+
+SF: 65536 bytes @ 0x610000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 620000 10000
+
+
+device 0 offset 0x620000, size 0x10000
+
+SF: 65536 bytes @ 0x620000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 630000 10000
+
+
+device 0 offset 0x630000, size 0x10000
+
+SF: 65536 bytes @ 0x630000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 640000 10000
+
+
+device 0 offset 0x640000, size 0x10000
+
+SF: 65536 bytes @ 0x640000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> 50%...sf read FFFC0000 650000 10000
+
+
+device 0 offset 0x650000, size 0x10000
+
+SF: 65536 bytes @ 0x650000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 660000 10000
+
+
+device 0 offset 0x660000, size 0x10000
+
+SF: 65536 bytes @ 0x660000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 670000 10000
+
+
+device 0 offset 0x670000, size 0x10000
+
+SF: 65536 bytes @ 0x670000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 680000 10000
+
+
+device 0 offset 0x680000, size 0x10000
+
+SF: 65536 bytes @ 0x680000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 690000 10000
+
+
+device 0 offset 0x690000, size 0x10000
+
+SF: 65536 bytes @ 0x690000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 6A0000 10000
+
+
+device 0 offset 0x6a0000, size 0x10000
+
+SF: 65536 bytes @ 0x6a0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 6B0000 10000
+
+
+device 0 offset 0x6b0000, size 0x10000
+
+SF: 65536 bytes @ 0x6b0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 6C0000 10000
+
+
+device 0 offset 0x6c0000, size 0x10000
+
+SF: 65536 bytes @ 0x6c0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 6D0000 10000
+
+
+device 0 offset 0x6d0000, size 0x10000
+
+SF: 65536 bytes @ 0x6d0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 6E0000 10000
+
+
+device 0 offset 0x6e0000, size 0x10000
+
+SF: 65536 bytes @ 0x6e0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 6F0000 10000
+
+
+device 0 offset 0x6f0000, size 0x10000
+
+SF: 65536 bytes @ 0x6f0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 700000 10000
+
+
+device 0 offset 0x700000, size 0x10000
+
+SF: 65536 bytes @ 0x700000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 710000 10000
+
+
+device 0 offset 0x710000, size 0x10000
+
+SF: 65536 bytes @ 0x710000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 720000 10000
+
+
+device 0 offset 0x720000, size 0x10000
+
+SF: 65536 bytes @ 0x720000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 730000 10000
+
+
+device 0 offset 0x730000, size 0x10000
+
+SF: 65536 bytes @ 0x730000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 740000 10000
+
+
+device 0 offset 0x740000, size 0x10000
+
+SF: 65536 bytes @ 0x740000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 750000 10000
+
+
+device 0 offset 0x750000, size 0x10000
+
+SF: 65536 bytes @ 0x750000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 760000 10000
+
+
+device 0 offset 0x760000, size 0x10000
+
+SF: 65536 bytes @ 0x760000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 770000 10000
+
+
+device 0 offset 0x770000, size 0x10000
+
+SF: 65536 bytes @ 0x770000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 780000 10000
+
+
+device 0 offset 0x780000, size 0x10000
+
+SF: 65536 bytes @ 0x780000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 790000 10000
+
+
+device 0 offset 0x790000, size 0x10000
+
+SF: 65536 bytes @ 0x790000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> 60%...sf read FFFC0000 7A0000 10000
+
+
+device 0 offset 0x7a0000, size 0x10000
+
+SF: 65536 bytes @ 0x7a0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 7B0000 10000
+
+
+device 0 offset 0x7b0000, size 0x10000
+
+SF: 65536 bytes @ 0x7b0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 7C0000 10000
+
+
+device 0 offset 0x7c0000, size 0x10000
+
+SF: 65536 bytes @ 0x7c0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 7D0000 10000
+
+
+device 0 offset 0x7d0000, size 0x10000
+
+SF: 65536 bytes @ 0x7d0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 7E0000 10000
+
+
+device 0 offset 0x7e0000, size 0x10000
+
+SF: 65536 bytes @ 0x7e0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 7F0000 10000
+
+
+device 0 offset 0x7f0000, size 0x10000
+
+SF: 65536 bytes @ 0x7f0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 800000 10000
+
+
+device 0 offset 0x800000, size 0x10000
+
+SF: 65536 bytes @ 0x800000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 810000 10000
+
+
+device 0 offset 0x810000, size 0x10000
+
+SF: 65536 bytes @ 0x810000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 820000 10000
+
+
+device 0 offset 0x820000, size 0x10000
+
+SF: 65536 bytes @ 0x820000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 830000 10000
+
+
+device 0 offset 0x830000, size 0x10000
+
+SF: 65536 bytes @ 0x830000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 840000 10000
+
+
+device 0 offset 0x840000, size 0x10000
+
+SF: 65536 bytes @ 0x840000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 850000 10000
+
+
+device 0 offset 0x850000, size 0x10000
+
+SF: 65536 bytes @ 0x850000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 860000 10000
+
+
+device 0 offset 0x860000, size 0x10000
+
+SF: 65536 bytes @ 0x860000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 870000 10000
+
+
+device 0 offset 0x870000, size 0x10000
+
+SF: 65536 bytes @ 0x870000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 880000 10000
+
+
+device 0 offset 0x880000, size 0x10000
+
+SF: 65536 bytes @ 0x880000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 890000 10000
+
+
+device 0 offset 0x890000, size 0x10000
+
+SF: 65536 bytes @ 0x890000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 8A0000 10000
+
+
+device 0 offset 0x8a0000, size 0x10000
+
+SF: 65536 bytes @ 0x8a0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 8B0000 10000
+
+
+device 0 offset 0x8b0000, size 0x10000
+
+SF: 65536 bytes @ 0x8b0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 8C0000 10000
+
+
+device 0 offset 0x8c0000, size 0x10000
+
+SF: 65536 bytes @ 0x8c0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 8D0000 10000
+
+
+device 0 offset 0x8d0000, size 0x10000
+
+SF: 65536 bytes @ 0x8d0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> 70%...sf read FFFC0000 8E0000 10000
+
+
+device 0 offset 0x8e0000, size 0x10000
+
+SF: 65536 bytes @ 0x8e0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 8F0000 10000
+
+
+device 0 offset 0x8f0000, size 0x10000
+
+SF: 65536 bytes @ 0x8f0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 900000 10000
+
+
+device 0 offset 0x900000, size 0x10000
+
+SF: 65536 bytes @ 0x900000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 910000 10000
+
+
+device 0 offset 0x910000, size 0x10000
+
+SF: 65536 bytes @ 0x910000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 920000 10000
+
+
+device 0 offset 0x920000, size 0x10000
+
+SF: 65536 bytes @ 0x920000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 930000 10000
+
+
+device 0 offset 0x930000, size 0x10000
+
+SF: 65536 bytes @ 0x930000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 940000 10000
+
+
+device 0 offset 0x940000, size 0x10000
+
+SF: 65536 bytes @ 0x940000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 950000 10000
+
+
+device 0 offset 0x950000, size 0x10000
+
+SF: 65536 bytes @ 0x950000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 960000 10000
+
+
+device 0 offset 0x960000, size 0x10000
+
+SF: 65536 bytes @ 0x960000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 970000 10000
+
+
+device 0 offset 0x970000, size 0x10000
+
+SF: 65536 bytes @ 0x970000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 980000 10000
+
+
+device 0 offset 0x980000, size 0x10000
+
+SF: 65536 bytes @ 0x980000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 990000 10000
+
+
+device 0 offset 0x990000, size 0x10000
+
+SF: 65536 bytes @ 0x990000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 9A0000 10000
+
+
+device 0 offset 0x9a0000, size 0x10000
+
+SF: 65536 bytes @ 0x9a0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 9B0000 10000
+
+
+device 0 offset 0x9b0000, size 0x10000
+
+SF: 65536 bytes @ 0x9b0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 9C0000 10000
+
+
+device 0 offset 0x9c0000, size 0x10000
+
+SF: 65536 bytes @ 0x9c0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 9D0000 10000
+
+
+device 0 offset 0x9d0000, size 0x10000
+
+SF: 65536 bytes @ 0x9d0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 9E0000 10000
+
+
+device 0 offset 0x9e0000, size 0x10000
+
+SF: 65536 bytes @ 0x9e0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 9F0000 10000
+
+
+device 0 offset 0x9f0000, size 0x10000
+
+SF: 65536 bytes @ 0x9f0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 A00000 10000
+
+
+device 0 offset 0xa00000, size 0x10000
+
+SF: 65536 bytes @ 0xa00000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 A10000 10000
+
+
+device 0 offset 0xa10000, size 0x10000
+
+SF: 65536 bytes @ 0xa10000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> 80%...sf read FFFC0000 A20000 10000
+
+
+device 0 offset 0xa20000, size 0x10000
+
+SF: 65536 bytes @ 0xa20000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 A30000 10000
+
+
+device 0 offset 0xa30000, size 0x10000
+
+SF: 65536 bytes @ 0xa30000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 A40000 10000
+
+
+device 0 offset 0xa40000, size 0x10000
+
+SF: 65536 bytes @ 0xa40000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 A50000 10000
+
+
+device 0 offset 0xa50000, size 0x10000
+
+SF: 65536 bytes @ 0xa50000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 A60000 10000
+
+
+device 0 offset 0xa60000, size 0x10000
+
+SF: 65536 bytes @ 0xa60000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 A70000 10000
+
+
+device 0 offset 0xa70000, size 0x10000
+
+SF: 65536 bytes @ 0xa70000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 A80000 10000
+
+
+device 0 offset 0xa80000, size 0x10000
+
+SF: 65536 bytes @ 0xa80000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 A90000 10000
+
+
+device 0 offset 0xa90000, size 0x10000
+
+SF: 65536 bytes @ 0xa90000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 AA0000 10000
+
+
+device 0 offset 0xaa0000, size 0x10000
+
+SF: 65536 bytes @ 0xaa0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 AB0000 10000
+
+
+device 0 offset 0xab0000, size 0x10000
+
+SF: 65536 bytes @ 0xab0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 AC0000 10000
+
+
+device 0 offset 0xac0000, size 0x10000
+
+SF: 65536 bytes @ 0xac0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 AD0000 10000
+
+
+device 0 offset 0xad0000, size 0x10000
+
+SF: 65536 bytes @ 0xad0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 AE0000 10000
+
+
+device 0 offset 0xae0000, size 0x10000
+
+SF: 65536 bytes @ 0xae0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 AF0000 10000
+
+
+device 0 offset 0xaf0000, size 0x10000
+
+SF: 65536 bytes @ 0xaf0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 B00000 10000
+
+
+device 0 offset 0xb00000, size 0x10000
+
+SF: 65536 bytes @ 0xb00000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 B10000 10000
+
+
+device 0 offset 0xb10000, size 0x10000
+
+SF: 65536 bytes @ 0xb10000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 B20000 10000
+
+
+device 0 offset 0xb20000, size 0x10000
+
+SF: 65536 bytes @ 0xb20000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 B30000 10000
+
+
+device 0 offset 0xb30000, size 0x10000
+
+SF: 65536 bytes @ 0xb30000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 B40000 10000
+
+
+device 0 offset 0xb40000, size 0x10000
+
+SF: 65536 bytes @ 0xb40000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 B50000 10000
+
+
+device 0 offset 0xb50000, size 0x10000
+
+SF: 65536 bytes @ 0xb50000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> 90%...sf read FFFC0000 B60000 10000
+
+
+device 0 offset 0xb60000, size 0x10000
+
+SF: 65536 bytes @ 0xb60000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 B70000 10000
+
+
+device 0 offset 0xb70000, size 0x10000
+
+SF: 65536 bytes @ 0xb70000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 B80000 10000
+
+
+device 0 offset 0xb80000, size 0x10000
+
+SF: 65536 bytes @ 0xb80000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 B90000 10000
+
+
+device 0 offset 0xb90000, size 0x10000
+
+SF: 65536 bytes @ 0xb90000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 BA0000 10000
+
+
+device 0 offset 0xba0000, size 0x10000
+
+SF: 65536 bytes @ 0xba0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 BB0000 10000
+
+
+device 0 offset 0xbb0000, size 0x10000
+
+SF: 65536 bytes @ 0xbb0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 BC0000 10000
+
+
+device 0 offset 0xbc0000, size 0x10000
+
+SF: 65536 bytes @ 0xbc0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 BD0000 10000
+
+
+device 0 offset 0xbd0000, size 0x10000
+
+SF: 65536 bytes @ 0xbd0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 BE0000 10000
+
+
+device 0 offset 0xbe0000, size 0x10000
+
+SF: 65536 bytes @ 0xbe0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 BF0000 10000
+
+
+device 0 offset 0xbf0000, size 0x10000
+
+SF: 65536 bytes @ 0xbf0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 C00000 10000
+
+
+device 0 offset 0xc00000, size 0x10000
+
+SF: 65536 bytes @ 0xc00000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 C10000 10000
+
+
+device 0 offset 0xc10000, size 0x10000
+
+SF: 65536 bytes @ 0xc10000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 C20000 10000
+
+
+device 0 offset 0xc20000, size 0x10000
+
+SF: 65536 bytes @ 0xc20000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 C30000 10000
+
+
+device 0 offset 0xc30000, size 0x10000
+
+SF: 65536 bytes @ 0xc30000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 C40000 10000
+
+
+device 0 offset 0xc40000, size 0x10000
+
+SF: 65536 bytes @ 0xc40000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 C50000 10000
+
+
+device 0 offset 0xc50000, size 0x10000
+
+SF: 65536 bytes @ 0xc50000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 C60000 10000
+
+
+device 0 offset 0xc60000, size 0x10000
+
+SF: 65536 bytes @ 0xc60000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 C70000 10000
+
+
+device 0 offset 0xc70000, size 0x10000
+
+SF: 65536 bytes @ 0xc70000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 C80000 10000
+
+
+device 0 offset 0xc80000, size 0x10000
+
+SF: 65536 bytes @ 0xc80000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> sf read FFFC0000 C90000 10000
+
+
+device 0 offset 0xc90000, size 0x10000
+
+SF: 65536 bytes @ 0xc90000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 10000
+
+
+Total of 65536 byte(s) were the same
+
+Zynq> 100%
+sf read FFFC0000 CA0000 F0DC
+
+
+device 0 offset 0xca0000, size 0xf0dc
+
+SF: 61660 bytes @ 0xca0000 Read: OK
+
+Zynq> cmp.b FFFC0000 FFFD0000 F0DC
+
+
+Total of 61660 byte(s) were the same
+
+Zynq> INFO: [Xicom 50-44] Elapsed time = 263 sec.
+Blank Check Operation successful. The part is blank.
+Performing Program Operation...
+0%...sf write FFFC0000 0 20000
+
+
+device 0 offset 0x0, size 0x20000
+
+SF: 131072 bytes @ 0x0 Written: OK
+
+Zynq> sf write FFFC0000 20000 20000
+
+
+device 0 offset 0x20000, size 0x20000
+
+SF: 131072 bytes @ 0x20000 Written: OK
+
+Zynq> sf write FFFC0000 40000 20000
+
+
+device 0 offset 0x40000, size 0x20000
+
+SF: 131072 bytes @ 0x40000 Written: OK
+
+Zynq> sf write FFFC0000 60000 20000
+
+
+device 0 offset 0x60000, size 0x20000
+
+SF: 131072 bytes @ 0x60000 Written: OK
+
+Zynq> sf write FFFC0000 80000 20000
+
+
+device 0 offset 0x80000, size 0x20000
+
+SF: 131072 bytes @ 0x80000 Written: OK
+
+Zynq> sf write FFFC0000 A0000 20000
+
+
+device 0 offset 0xa0000, size 0x20000
+
+SF: 131072 bytes @ 0xa0000 Written: OK
+
+Zynq> sf write FFFC0000 C0000 20000
+
+
+device 0 offset 0xc0000, size 0x20000
+
+SF: 131072 bytes @ 0xc0000 Written: OK
+
+Zynq> sf write FFFC0000 E0000 20000
+
+
+device 0 offset 0xe0000, size 0x20000
+
+SF: 131072 bytes @ 0xe0000 Written: OK
+
+Zynq> sf write FFFC0000 100000 20000
+
+
+device 0 offset 0x100000, size 0x20000
+
+SF: 131072 bytes @ 0x100000 Written: OK
+
+Zynq> sf write FFFC0000 120000 20000
+
+
+device 0 offset 0x120000, size 0x20000
+
+SF: 131072 bytes @ 0x120000 Written: OK
+
+Zynq> sf write FFFC0000 140000 20000
+
+
+device 0 offset 0x140000, size 0x20000
+
+SF: 131072 bytes @ 0x140000 Written: OK
+
+Zynq> 10%...sf write FFFC0000 160000 20000
+
+
+device 0 offset 0x160000, size 0x20000
+
+SF: 131072 bytes @ 0x160000 Written: OK
+
+Zynq> sf write FFFC0000 180000 20000
+
+
+device 0 offset 0x180000, size 0x20000
+
+SF: 131072 bytes @ 0x180000 Written: OK
+
+Zynq> sf write FFFC0000 1A0000 20000
+
+
+device 0 offset 0x1a0000, size 0x20000
+
+SF: 131072 bytes @ 0x1a0000 Written: OK
+
+Zynq> sf write FFFC0000 1C0000 20000
+
+
+device 0 offset 0x1c0000, size 0x20000
+
+SF: 131072 bytes @ 0x1c0000 Written: OK
+
+Zynq> sf write FFFC0000 1E0000 20000
+
+
+device 0 offset 0x1e0000, size 0x20000
+
+SF: 131072 bytes @ 0x1e0000 Written: OK
+
+Zynq> sf write FFFC0000 200000 20000
+
+
+device 0 offset 0x200000, size 0x20000
+
+SF: 131072 bytes @ 0x200000 Written: OK
+
+Zynq> sf write FFFC0000 220000 20000
+
+
+device 0 offset 0x220000, size 0x20000
+
+SF: 131072 bytes @ 0x220000 Written: OK
+
+Zynq> sf write FFFC0000 240000 20000
+
+
+device 0 offset 0x240000, size 0x20000
+
+SF: 131072 bytes @ 0x240000 Written: OK
+
+Zynq> sf write FFFC0000 260000 20000
+
+
+device 0 offset 0x260000, size 0x20000
+
+SF: 131072 bytes @ 0x260000 Written: OK
+
+Zynq> sf write FFFC0000 280000 20000
+
+
+device 0 offset 0x280000, size 0x20000
+
+SF: 131072 bytes @ 0x280000 Written: OK
+
+Zynq> 20%...sf write FFFC0000 2A0000 20000
+
+
+device 0 offset 0x2a0000, size 0x20000
+
+SF: 131072 bytes @ 0x2a0000 Written: OK
+
+Zynq> sf write FFFC0000 2C0000 20000
+
+
+device 0 offset 0x2c0000, size 0x20000
+
+SF: 131072 bytes @ 0x2c0000 Written: OK
+
+Zynq> sf write FFFC0000 2E0000 20000
+
+
+device 0 offset 0x2e0000, size 0x20000
+
+SF: 131072 bytes @ 0x2e0000 Written: OK
+
+Zynq> sf write FFFC0000 300000 20000
+
+
+device 0 offset 0x300000, size 0x20000
+
+SF: 131072 bytes @ 0x300000 Written: OK
+
+Zynq> 

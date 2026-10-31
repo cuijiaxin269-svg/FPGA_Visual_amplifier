@@ -1,0 +1,12 @@
+{
+  "width": 640,
+  "height": 480,
+  "fps": 120,
+  "frequency_hz": 10,
+  "amplitude_px": 2,
+  "duration_s": 5,
+  "x0": 320,
+  "roi": [280, 160, 80, 160],
+  "detrend": false,
+  "seed": 2026
+}

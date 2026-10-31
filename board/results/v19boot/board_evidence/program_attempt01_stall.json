@@ -1,0 +1,7 @@
+{
+  "time": "2026-10-30T14:47:02.8035672+08:00",
+  "reason": "No progress after successful 0x300000 block; CPU suspended, QSPI disabled; original backup verified",
+  "writer_pid": 40768,
+  "bridge_pid": 34900,
+  "last_log_time": "2026-10-30T14:39:18.0991766+08:00"
+}

@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-30T22:13:43.9588934+08:00",
+  "scope": "Input hashes of completed host tests, RTL simulation and ARM compilation; hardware build is recorded separately.",
+  "checks": [
+    {
+      "receipt": "sim/results/current_host/result.json",
+      "passed": true,
+      "inputs_checked": 58,
+      "mismatches": []
+    },
+    {
+      "receipt": "sim/results/vivado_2025_2/result.json",
+      "passed": true,
+      "inputs_checked": 6,
+      "mismatches": []
+    },
+    {
+      "receipt": "build/reports/firmware_2025_2/result.json",
+      "passed": true,
+      "inputs_checked": 43,
+      "mismatches": []
+    }
+  ]
+}

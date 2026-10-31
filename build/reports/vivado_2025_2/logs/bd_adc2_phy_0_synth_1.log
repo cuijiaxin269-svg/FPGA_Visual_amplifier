@@ -1,0 +1,622 @@
+
+*** Running vivado
+    with args -log bd_adc2_phy_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_adc2_phy_0.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 30 21:03:53 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_adc2_phy_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 661.898 ; gain = 219.801
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/clip_copy_checked'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_full_temporal_v2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_shared'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/rgb2dvi_v1_3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/roi256_v3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/spectrum256_pl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tool/vivado/2025.2/Vivado/data/ip'.
+Command: synth_design -top bd_adc2_phy_0 -part xc7z100ffg900-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34928
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1547.562 ; gain = 538.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'dl0_rxskewcalhs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:776]
+INFO: [Synth 8-11241] undeclared symbol 'dl1_rxskewcalhs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:813]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_rxvalidhs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:848]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_rxactivehs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:849]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_rxsynchs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:851]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_stopstate', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:854]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_ulpsactivenot', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:856]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_rxclkesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:858]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_rxlpdtesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:859]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_rxulpsesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:860]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_rxvalidesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:863]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_errsoths', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:865]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_errsotsynchs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:866]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_erresc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:867]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_errsyncesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:868]
+INFO: [Synth 8-11241] undeclared symbol 'dl2_errcontrol', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:869]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_rxvalidhs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:884]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_rxactivehs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:885]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_rxsynchs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:887]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_stopstate', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:890]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_ulpsactivenot', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:892]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_rxclkesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:894]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_rxlpdtesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:895]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_rxulpsesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:896]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_rxvalidesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:899]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_errsoths', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:901]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_errsotsynchs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:902]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_erresc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:903]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_errsyncesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:904]
+INFO: [Synth 8-11241] undeclared symbol 'dl3_errcontrol', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:905]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_rxvalidhs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:928]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_rxactivehs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:929]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_rxsynchs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:931]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_stopstate', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:936]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_ulpsactivenot', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:938]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_rxclkesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:942]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_rxlpdtesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:943]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_rxulpsesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:944]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_rxvalidesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:947]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_errsoths', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:951]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_errsotsynchs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:952]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_erresc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:953]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_errsyncesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:954]
+INFO: [Synth 8-11241] undeclared symbol 'dl4_errcontrol', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:955]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_rxvalidhs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:978]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_rxactivehs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:979]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_rxsynchs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:981]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_stopstate', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:986]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_ulpsactivenot', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:988]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_rxclkesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:992]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_rxlpdtesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:993]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_rxulpsesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:994]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_rxvalidesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:997]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_errsoths', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1001]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_errsotsynchs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1002]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_erresc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1003]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_errsyncesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1004]
+INFO: [Synth 8-11241] undeclared symbol 'dl5_errcontrol', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1005]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_rxvalidhs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1027]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_rxactivehs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1028]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_rxsynchs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1030]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_stopstate', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1035]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_ulpsactivenot', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1037]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_rxclkesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1041]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_rxlpdtesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1042]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_rxulpsesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1043]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_rxvalidesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1046]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_errsoths', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1050]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_errsotsynchs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1051]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_erresc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1052]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_errsyncesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1053]
+INFO: [Synth 8-11241] undeclared symbol 'dl6_errcontrol', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1054]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_rxvalidhs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1076]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_rxactivehs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1077]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_rxsynchs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1079]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_stopstate', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1084]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_ulpsactivenot', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1086]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_rxclkesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1090]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_rxlpdtesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1091]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_rxulpsesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1092]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_rxvalidesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1095]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_errsoths', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1099]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_errsotsynchs', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1100]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_erresc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1101]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_errsyncesc', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1102]
+INFO: [Synth 8-11241] undeclared symbol 'dl7_errcontrol', assumed default net type 'wire' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1103]
+INFO: [Synth 8-6157] synthesizing module 'bd_adc2_phy_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0.v:90]
+INFO: [Synth 8-6157] synthesizing module 'bd_adc2_phy_0_core' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0_core.v:92]
+INFO: [Synth 8-6157] synthesizing module 'bd_adc2_phy_0_c1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0_c1.v:98]
+INFO: [Synth 8-6157] synthesizing module 'bd_adc2_phy_0_support' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:101]
+INFO: [Synth 8-7071] port 'lane0_tap' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'lane1_tap' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'lane2_tap' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'lane3_tap' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'lane4_tap' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'lane5_tap' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'lane6_tap' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'lane7_tap' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'alt_skew_calb' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'init_periodic_skew_calb' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_valid_l0' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_rd_data_l0' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_addr_l0' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_wr_data_l0' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_wr_en_l0' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_nibble_sel_l0' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'calib_status_l0' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_valid_l1' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_rd_data_l1' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_addr_l1' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_wr_data_l1' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_wr_en_l1' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_nibble_sel_l1' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'calib_status_l1' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_valid_l2' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_rd_data_l2' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_addr_l2' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_wr_data_l2' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_wr_en_l2' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_nibble_sel_l2' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'calib_status_l2' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_valid_l3' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_rd_data_l3' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_addr_l3' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_wr_data_l3' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_wr_en_l3' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'riu_nibble_sel_l3' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7071] port 'calib_status_l3' of module 'mipi_dphy_v4_3_17_rx_fab_top' is unconnected for instance 'dphy_rx_fab_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-7023] instance 'dphy_rx_fab_top' of module 'mipi_dphy_v4_3_17_rx_fab_top' has 320 connections declared, but only 282 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:723]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:85096]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:85096]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:85109]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:85109]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82819]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (0#1) [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82819]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:90334]
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (0#1) [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:90334]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2951]
+INFO: [Synth 8-6157] synthesizing module 'BUFR' [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3017]
+INFO: [Synth 8-6155] done synthesizing module 'BUFR' (0#1) [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3017]
+INFO: [Synth 8-7071] port 'dlyctrl_rdy_in' of module 'mipi_dphy_v4_3_17_rx_ioi_7series' is unconnected for instance 'bd_adc2_phy_0_rx_ioi_i' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1171]
+INFO: [Synth 8-7071] port 'idelay_tap_dyn_val_out' of module 'mipi_dphy_v4_3_17_rx_ioi_7series' is unconnected for instance 'bd_adc2_phy_0_rx_ioi_i' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1171]
+INFO: [Synth 8-7023] instance 'bd_adc2_phy_0_rx_ioi_i' of module 'mipi_dphy_v4_3_17_rx_ioi_7series' has 20 connections declared, but only 18 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:1171]
+INFO: [Synth 8-6155] done synthesizing module 'bd_adc2_phy_0_support' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'bd_adc2_phy_0_c1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0_c1.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'bd_adc2_phy_0_core' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0_core.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'bd_adc2_phy_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0.v:90]
+INFO: [Synth 8-3848] Net rx_dl2_lp_dp_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:473]
+INFO: [Synth 8-3848] Net rx_dl2_lp_dn_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:474]
+INFO: [Synth 8-3848] Net rx_dl2_hs_dp_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:476]
+INFO: [Synth 8-3848] Net rx_dl3_lp_dp_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:486]
+INFO: [Synth 8-3848] Net rx_dl3_lp_dn_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:487]
+INFO: [Synth 8-3848] Net rx_dl3_hs_dp_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:489]
+INFO: [Synth 8-3848] Net rx_dl4_lp_dp_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:501]
+INFO: [Synth 8-3848] Net rx_dl4_lp_dn_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:502]
+INFO: [Synth 8-3848] Net rx_dl4_hs_dp_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:504]
+INFO: [Synth 8-3848] Net rx_dl5_lp_dp_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:516]
+INFO: [Synth 8-3848] Net rx_dl5_lp_dn_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:517]
+INFO: [Synth 8-3848] Net rx_dl5_hs_dp_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:519]
+INFO: [Synth 8-3848] Net rx_dl6_lp_dp_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:531]
+INFO: [Synth 8-3848] Net rx_dl6_lp_dn_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:532]
+INFO: [Synth 8-3848] Net rx_dl6_hs_dp_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:534]
+INFO: [Synth 8-3848] Net rx_dl7_lp_dp_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:546]
+INFO: [Synth 8-3848] Net rx_dl7_lp_dn_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:547]
+INFO: [Synth 8-3848] Net rx_dl7_hs_dp_w in module/entity bd_adc2_phy_0_support does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0/support/bd_adc2_phy_0_support.v:549]
+INFO: [Synth 8-7129] Port io_reset in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port rx_clk_active in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port cal_start in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port dlyctrl_rdy_in in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_val_pass_in[7] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_val_pass_in[6] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_val_pass_in[5] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_val_pass_in[4] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_val_pass_in[3] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_val_pass_in[2] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_val_pass_in[1] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_val_pass_in[0] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[63] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[62] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[61] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[60] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[59] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[58] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[57] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[56] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[55] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[54] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[53] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[52] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[51] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[50] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[49] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[48] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[47] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[46] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[45] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[44] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[43] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[42] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[41] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[40] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[39] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[38] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[37] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[36] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[35] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[34] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[33] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[32] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[31] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[30] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[29] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[28] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[27] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[26] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[25] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[24] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[23] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[22] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[21] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[20] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[19] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[18] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[17] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[16] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[15] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[14] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[13] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[7] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[6] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port tap_ioi_dyn[5] in module mipi_dphy_v4_3_17_rx_ioi_7series is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_aclk in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_rst_n in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_vect_in[1] in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_vect_in[0] in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port scndry_rst_n in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized10 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_aclk in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_rst_n in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_vect_in[1] in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_vect_in[0] in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_aclk in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_rst_n in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_vect_in[1] in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_vect_in[0] in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_aclk in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_rst_n in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_in in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_aclk in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_rst_n in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_in in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized5 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_aclk in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_rst_n in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_in in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized8 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_aclk in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_rst_n in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_in in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_aclk in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_rst_n in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_in in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_aclk in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_rst_n in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_in in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized4 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_aclk in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_rst_n in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port prmry_in in module mipi_dphy_v4_3_17_rx_sync_cell__parameterized3 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1713.004 ; gain = 704.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1713.004 ; gain = 704.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1713.004 ; gain = 704.395
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1713.004 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0.xdc] for cell 'inst'
+Parsing XDC File [D:/vision/submission/_build/v25/c.runs/bd_adc2_phy_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/vision/submission/_build/v25/c.runs/bd_adc2_phy_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_csi_0/bd_0/ip/ip_1/bd_adc2_phy_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_adc2_phy_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_adc2_phy_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1753.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1753.129 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1753.129 ; gain = 744.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1753.129 ; gain = 744.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1753.129 ; gain = 744.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rst_blk_state_reg' in module 'mipi_dphy_v4_3_17_rx_rst_logic_7series'
+INFO: [Synth 8-802] inferred FSM for state register 'dl_rx_state_reg' in module 'mipi_dphy_v4_3_17_csi_rx_data_lane_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_hs_high_rates_spec_v1_1.dl_state_reg' in module 'mipi_dphy_v4_3_17_rx_data_lane'
+INFO: [Synth 8-802] inferred FSM for state register 'rst_blk_state_reg' in module 'mipi_dphy_v4_3_17_rx_support_rst_logic'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               RST_BEGIN |                               00 |                               00
+          RESET_FSM_DONE |                               01 |                               10
+         WAIT_FOR_ENABLE |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rst_blk_state_reg' using encoding 'sequential' in module 'mipi_dphy_v4_3_17_rx_rst_logic_7series'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             DL_RX_BEGIN |                             0000 |                             0000
+        DL_WO_INIT_LP_11 |                             0001 |                             0001
+         DL_RX_INIT_DONE |                             0010 |                             0010
+              DL_RX_STOP |                             0011 |                             0011
+           DL_RX_HS_RQST |                             0100 |                             0100
+           DL_RX_HS_TERM |                             0101 |                             0101
+           DL_RX_HS_SYNC |                             0110 |                             0110
+            DL_RX_HS_RUN |                             0111 |                             0111
+          DL_RX_HS_ABORT |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dl_rx_state_reg' using encoding 'sequential' in module 'mipi_dphy_v4_3_17_csi_rx_data_lane_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                DL_START |                               00 |                               00
+                 DL_STOP |                               01 |                               01
+               DL_ACTIVE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_hs_high_rates_spec_v1_1.dl_state_reg' using encoding 'sequential' in module 'mipi_dphy_v4_3_17_rx_data_lane'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               RST_BEGIN |                              000 |                              000
+       ASSERT_ALL_RESETS |                              001 |                              001
+       RELEASE_PHY_RESET |                              010 |                              010
+          RESET_FSM_DONE |                              011 |                              100
+              CHECK_SRST |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rst_blk_state_reg' using encoding 'sequential' in module 'mipi_dphy_v4_3_17_rx_support_rst_logic'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1753.129 ; gain = 744.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/d_termen_reg_sync' (mipi_dphy_v4_3_17_rx_sync_cell__parameterized9) to 'inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/hs_skip_reg_sync'
+INFO: [Synth 8-223] decloning instance 'inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/d_termen_reg_sync' (mipi_dphy_v4_3_17_rx_sync_cell__parameterized9) to 'inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/clk_termen_reg_sync'
+INFO: [Synth 8-223] decloning instance 'inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/d_termen_reg_sync' (mipi_dphy_v4_3_17_rx_sync_cell__parameterized9) to 'inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/clk_settle_reg_sync'
+INFO: [Synth 8-223] decloning instance 'inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/d_termen_reg_sync' (mipi_dphy_v4_3_17_rx_sync_cell__parameterized9) to 'inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/clk_prepare_reg_sync'
+INFO: [Synth 8-223] decloning instance 'inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/d_termen_reg_sync' (mipi_dphy_v4_3_17_rx_sync_cell__parameterized9) to 'inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/clk_zero_reg_sync'
+INFO: [Synth 8-223] decloning instance 'inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/d_termen_reg_sync' (mipi_dphy_v4_3_17_rx_sync_cell__parameterized9) to 'inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/esc_timeout_sync'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 8     
+	   2 Input    8 Bit       Adders := 5     
+	   2 Input    5 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 6     
+	               32 Bit    Registers := 24    
+	               23 Bit    Registers := 1     
+	               18 Bit    Registers := 6     
+	               16 Bit    Registers := 51    
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 86    
+	                8 Bit    Registers := 23    
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 239   
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 8     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 9     
+	   2 Input    9 Bit        Muxes := 10    
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 5     
+	  18 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   6 Input    3 Bit        Muxes := 2     
+	  12 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 9     
+	   3 Input    1 Bit        Muxes := 15    
+	   2 Input    1 Bit        Muxes := 120   
+	   9 Input    1 Bit        Muxes := 23    
+	   8 Input    1 Bit        Muxes := 3     
+	  14 Input    1 Bit        Muxes := 12    
+	  15 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1978.262 ; gain = 969.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1980.543 ; gain = 971.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1981.594 ; gain = 972.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2010.234 ; gain = 1001.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2181.758 ; gain = 1173.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2181.758 ; gain = 1173.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2181.758 ; gain = 1173.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2181.758 ; gain = 1173.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2181.758 ; gain = 1173.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2181.758 ; gain = 1173.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------------+-------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                  | RTL Name                                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------------+-------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|mipi_dphy_v4_3_17_rx_fab_top | gen_csi_rx_clk_lane.dphy_rx_clk_lane/en_init_to_reg.init_to_r_2_reg[12] | 3      | 13    | NO           | NO                 | YES               | 13     | 0       | 
++-----------------------------+-------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFIO      |     1|
+|2     |BUFR       |     1|
+|3     |CARRY4     |    24|
+|4     |IDELAYCTRL |     1|
+|5     |IDELAYE2   |     2|
+|6     |ISERDESE2  |     2|
+|7     |LUT1       |   940|
+|8     |LUT2       |    88|
+|9     |LUT3       |   116|
+|10    |LUT4       |    76|
+|11    |LUT5       |   147|
+|12    |LUT6       |   448|
+|13    |MUXF7      |     7|
+|14    |SRL16E     |    13|
+|15    |FDCE       |   310|
+|16    |FDPE       |    61|
+|17    |FDRE       |  2917|
+|18    |IBUFDS     |     3|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2181.758 ; gain = 1173.148
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 2181.758 ; gain = 1133.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2181.758 ; gain = 1173.148
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.050 . Memory (MB): peak = 2181.758 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2201.312 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 32c25642
+INFO: [Common 17-83] Releasing license: Synthesis
+309 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 2201.312 ; gain = 1515.316
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2201.312 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/bd_adc2_phy_0_synth_1/bd_adc2_phy_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_adc2_phy_0, cache-ID = b4cebcd3397a7f5b
+INFO: [Coretcl 2-1174] Renamed 64 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2201.312 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/bd_adc2_phy_0_synth_1/bd_adc2_phy_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_adc2_phy_0_utilization_synth.rpt -pb bd_adc2_phy_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 21:04:57 2026...

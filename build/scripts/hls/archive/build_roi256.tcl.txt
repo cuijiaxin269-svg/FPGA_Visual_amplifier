@@ -1,0 +1,18 @@
+set root [file normalize [file join [file dirname [info script]] ..]]
+set mode csim
+if {[info exists ::env(ROI_HLS_MODE)]} {set mode $::env(ROI_HLS_MODE)}
+if {$mode ni {csim synth cosim}} {error "Invalid ROI mode"}
+set folder [file join $root build roi256_v3_$mode]
+open_component $folder -flow_target vivado
+cd $folder
+set_top roi256
+add_files [file join $root hls roi256 roi256.cpp] -cflags "-std=c++14"
+add_files -tb [file join $root hls roi256 test_roi256.cpp] -cflags "-std=c++14"
+set_part xc7z100ffg900-2
+create_clock -period 6.666667 -name default
+csim_design -argv [file join $root build roi256_vectors]
+if {$mode ne "csim"} {csynth_design}
+if {$mode eq "cosim"} {cosim_design -rtl verilog -tool xsim -argv [file join $root build roi256_vectors]}
+if {$mode eq "synth"} {export_design -format ip_catalog}
+puts "ROI256_BUILD_PASSED mode=$mode"
+exit

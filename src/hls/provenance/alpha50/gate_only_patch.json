@@ -1,0 +1,37 @@
+{
+  "schema": "alpha-gate-only-rtl-eco-v1",
+  "source_limits_changed": 2,
+  "rtl_gates_changed": 4,
+  "datapath_changed": false,
+  "changes": [
+    {
+      "file": "motion60_shared.v",
+      "before_sha256": "65422c3ca7adeb06d9bc68630b75f4f2d244b1486ed254fae592f33b160de9a6",
+      "after_sha256": "56c24f81bdc8a13039d09bc6d68ae43b665f69ae191ee1d28eae9c696fb12b48",
+      "old_literal": ".din1(32'd1106247680)",
+      "new_literal": ".din1(32'd1112014848)"
+    },
+    {
+      "file": "motion60_shared_phase_core_shared.v",
+      "before_sha256": "f99b64c67624560b2fd5385ae5cd5159f59903b8220aa144803c768e7e847469",
+      "after_sha256": "01ef9df1d7f50060c04c3581cc54d544bafaf6d4f535ace36ed386707295517c",
+      "old_literal": ".din1(32'd1106247680)",
+      "new_literal": ".din1(32'd1112014848)"
+    },
+    {
+      "file": "motion60_shared_phase_core_shared_1.v",
+      "before_sha256": "34076f8f7dfe2fe6846776f8b21b7c71443558306e408ed56437927757e2df19",
+      "after_sha256": "8505877bf3958233ba4500d084545d3c53abdee8fa17864542b934bde92e1c86",
+      "old_literal": ".din1(32'd1106247680)",
+      "new_literal": ".din1(32'd1112014848)"
+    },
+    {
+      "file": "motion60_shared_phase_core_shared_2.v",
+      "before_sha256": "a9352bbe65ff012b029314204122eee8edc0e2977b0dbf5ebabc032564fae34e",
+      "after_sha256": "175cb2d0e99eb7de61c5694d02d53bc96d0967ba540262acd06912693a7bec8c",
+      "old_literal": ".din1(32'd1106247680)",
+      "new_literal": ".din1(32'd1112014848)"
+    }
+  ],
+  "source_rebuild_validation": "2021.2 C simulation; RTL gates are patched without rescheduling arithmetic or changing interfaces"
+}

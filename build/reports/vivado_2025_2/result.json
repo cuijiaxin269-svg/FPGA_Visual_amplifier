@@ -1,0 +1,258 @@
+{
+  "status": "passed",
+  "stage": "bitstream_and_xsa_export_complete",
+  "passed": true,
+  "validation_scope": "Vivado synthesis, implementation, bitstream generation and XSA export against the preserved constraints; no board test",
+  "vivado_version": "2025.2",
+  "sw_build": "6299465",
+  "ip_build": "6300035",
+  "part": "xc7z100ffg900-2",
+  "project_directory": "D:/vision/submission/_build/v25",
+  "recorded_at": "2026-10-30T22:34:21.301661+08:00",
+  "block_design_creation_passed": true,
+  "output_products_generated": true,
+  "ip_synthesis_completed": 71,
+  "ip_synthesis_total": 71,
+  "ip_synthesis_failed": 0,
+  "top_level_synthesis_passed": true,
+  "implementation_passed": true,
+  "bitstream_generation_passed": true,
+  "xsa_export_passed": true,
+  "board_runtime_validated": false,
+  "from_hls_cpp_resynthesized": false,
+  "artifacts": {
+    "capture.bit": {
+      "path": "D:/vision/submission/_build/v25/artifacts/capture.bit",
+      "bytes": 13198397,
+      "sha256": "d05b1a2806b50cbcfc7e642b6c4166afee59d63c74d284197401a1332e67336a"
+    },
+    "capture.xsa": {
+      "path": "D:/vision/submission/_build/v25/artifacts/capture.xsa",
+      "bytes": 5886039,
+      "sha256": "7744a47aed5b654eb9866f4d7be723e2a7ab7e5c47400b5a3e6ed6bc5a2d078a"
+    },
+    "capture.ltx": {
+      "path": "D:/vision/submission/_build/v25/artifacts/capture.ltx",
+      "bytes": 139492,
+      "sha256": "dd5ba2d10d069cfafb33561bf51d0a34b809c0ea5ba2ca8195847a8ff5d96613"
+    }
+  },
+  "xsa_embedded_bit_matches": true,
+  "timing": {
+    "wns_ns": 0.177,
+    "tns_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "whs_ns": 0.01,
+    "ths_ns": 0.0,
+    "hold_failing_endpoints": 0,
+    "wpws_ns": 0.264,
+    "tpws_ns": 0.0,
+    "pulse_width_failing_endpoints": 0,
+    "all_user_specified_constraints_met": true,
+    "checks": {
+      "no_clock": 0,
+      "constant_clock": 0,
+      "pulse_width_clock": 0,
+      "unconstrained_internal_endpoints": 0,
+      "no_input_delay": 9,
+      "no_output_delay": 4,
+      "multiple_clock": 0,
+      "generated_clocks": 0,
+      "loops": 0,
+      "partial_input_delay": 0,
+      "partial_output_delay": 0,
+      "latch_loops": 0
+    }
+  },
+  "resources": {
+    "lut": {
+      "used": 138026.0,
+      "available": 277400.0,
+      "percent": 49.76
+    },
+    "ff": {
+      "used": 206397.0,
+      "available": 554800.0,
+      "percent": 37.2
+    },
+    "bram_tiles": {
+      "used": 744.5,
+      "available": 755.0,
+      "percent": 98.61
+    },
+    "dsp": {
+      "used": 826.0,
+      "available": 2020.0,
+      "percent": 40.89
+    }
+  },
+  "gates": {
+    "routed_drc_errors": 0,
+    "routed_drc_critical_warnings": 0,
+    "cdc_critical": 0,
+    "methodology_critical_warnings": 0,
+    "bus_skew_violations": 0,
+    "single_display_clock_passed": true,
+    "hmi_key_pin_checks_passed": true,
+    "key_synchronizer_passed": true,
+    "pixel_reset_guard_16_stages": true,
+    "camera_external_termination_passed": true,
+    "alpha50_source_consistency_passed": true
+  },
+  "cdc_summary": [
+    {
+      "id": "CDC-3",
+      "severity": "Info",
+      "count": 135,
+      "description": "1-bit synchronized with ASYNC_REG property"
+    },
+    {
+      "id": "CDC-6",
+      "severity": "Warning",
+      "count": 6,
+      "description": "Multi-bit synchronized with ASYNC_REG property"
+    },
+    {
+      "id": "CDC-9",
+      "severity": "Info",
+      "count": 5,
+      "description": "Asynchronous reset synchronized with ASYNC_REG property"
+    },
+    {
+      "id": "CDC-15",
+      "severity": "Warning",
+      "count": 6,
+      "description": "Clock enable controlled CDC structure detected"
+    }
+  ],
+  "methodology_warnings": [
+    {
+      "id": "PDRC-190",
+      "count": 2,
+      "description": "Suboptimally placed synchronized register chain"
+    },
+    {
+      "id": "TIMING-9",
+      "count": 1,
+      "description": "Unknown CDC Logic"
+    },
+    {
+      "id": "TIMING-18",
+      "count": 8,
+      "description": "Missing input or output delay"
+    },
+    {
+      "id": "XDCB-5",
+      "count": 1,
+      "description": "Runtime inefficient way to find pin objects"
+    }
+  ],
+  "bd_critical_warnings": [
+    "CRITICAL WARNING: [BD 41-1343] Reset pin /hdmi/aRst_n (associated clock /hdmi/SerialClk) is connected to reset source /pixel_reset_guard/resetn (synchronous to clock source /pixel_clock/pixel).",
+    "CRITICAL WARNING: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /mem/xbar/S01_AXI(16) and /mem/s01_couplers/s01_data_fifo/M_AXI(256)",
+    "CRITICAL WARNING: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /mem/xbar/S06_AXI(16) and /mem/s06_couplers/s06_data_fifo/M_AXI(256)",
+    "CRITICAL WARNING: [BD 41-237] Bus Interface property MAX_BURST_LENGTH does not match between /mem/xbar/S07_AXI(16) and /mem/s07_couplers/s07_data_fifo/M_AXI(256)"
+  ],
+  "license": {
+    "csi_6_0_ip_status": "Included",
+    "actual_write_bitstream_passed": true,
+    "license_blocker_observed": false
+  },
+  "changes": [
+    "Rebased standalone build scripts to submission layout",
+    "BD tool version 2021.2 -> 2025.2; MIPI CSI-2 RX Subsystem 5.1 -> installed 6.0",
+    "Vendor sub-IP output products regenerated by Vivado 2025.2; packaged RTL, IP source and pin/clock constraints unchanged"
+  ],
+  "limitations": [
+    "No programming, flash write or board runtime test was performed",
+    "MIPI LP and KEY0 use asynchronous synchronizers; HS input data windows and external TMDS link are outside this internal STA closure",
+    "CSI upgrade and fixed IDELAY/HS_SETTLE settings require camera and display board regression",
+    "Normal DRC/CDC/methodology warnings remain and are retained in the full reports"
+  ],
+  "input_receipt": {
+    "path": "input_sha256.json",
+    "files": 825,
+    "all_hashes_match_after_build": true
+  },
+  "logs": [
+    "logs/bd_adc2_phy_0_synth_1.log",
+    "logs/bd_adc2_r_sync_0_synth_1.log",
+    "logs/bd_adc2_rx_0_synth_1.log",
+    "logs/bd_adc2_vfb_0_0_synth_1.log",
+    "logs/bd_adc2_xbar_0_synth_1.log",
+    "logs/capture_clip_dma_0_synth_1.log",
+    "logs/capture_controls_0_synth_1.log",
+    "logs/capture_core_0_synth_1.log",
+    "logs/capture_csi_0_synth_1.log",
+    "logs/capture_ctrl_intercon_imp_auto_cc_0_synth_1.log",
+    "logs/capture_ctrl_intercon_imp_auto_cc_1_synth_1.log",
+    "logs/capture_ctrl_intercon_imp_auto_cc_2_synth_1.log",
+    "logs/capture_ctrl_intercon_imp_auto_cc_3_synth_1.log",
+    "logs/capture_ctrl_intercon_imp_auto_cc_4_synth_1.log",
+    "logs/capture_ctrl_intercon_imp_auto_pc_0_synth_1.log",
+    "logs/capture_ctrl_intercon_imp_xbar_0_synth_1.log",
+    "logs/capture_display_cdc_0_synth_1.log",
+    "logs/capture_display_dma_0_synth_1.log",
+    "logs/capture_display_mem_imp_auto_pc_0_synth_1.log",
+    "logs/capture_display_mem_imp_auto_pc_1_synth_1.log",
+    "logs/capture_display_mem_imp_auto_us_df_0_synth_1.log",
+    "logs/capture_display_mem_imp_s00_data_fifo_0_synth_1.log",
+    "logs/capture_display_mem_imp_xbar_0_synth_1.log",
+    "logs/capture_f_0_synth_1.log",
+    "logs/capture_hdmi_0_synth_1.log",
+    "logs/capture_hdmi_health_0_synth_1.log",
+    "logs/capture_hdmi_observe_0_synth_1.log",
+    "logs/capture_mem_imp_auto_ds_0_synth_1.log",
+    "logs/capture_mem_imp_auto_pc_0_synth_1.log",
+    "logs/capture_mem_imp_auto_pc_1_synth_1.log",
+    "logs/capture_mem_imp_auto_pc_2_synth_1.log",
+    "logs/capture_mem_imp_auto_pc_3_synth_1.log",
+    "logs/capture_mem_imp_auto_pc_4_synth_1.log",
+    "logs/capture_mem_imp_auto_pc_5_synth_1.log",
+    "logs/capture_mem_imp_auto_pc_6_synth_1.log",
+    "logs/capture_mem_imp_auto_pc_7_synth_1.log",
+    "logs/capture_mem_imp_auto_pc_8_synth_1.log",
+    "logs/capture_mem_imp_auto_us_0_synth_1.log",
+    "logs/capture_mem_imp_auto_us_df_0_synth_1.log",
+    "logs/capture_mem_imp_auto_us_df_1_synth_1.log",
+    "logs/capture_mem_imp_auto_us_df_2_synth_1.log",
+    "logs/capture_mem_imp_auto_us_df_3_synth_1.log",
+    "logs/capture_mem_imp_auto_us_df_4_synth_1.log",
+    "logs/capture_mem_imp_s01_data_fifo_0_synth_1.log",
+    "logs/capture_mem_imp_s06_data_fifo_0_synth_1.log",
+    "logs/capture_mem_imp_s07_data_fifo_0_synth_1.log",
+    "logs/capture_mem_imp_xbar_0_synth_1.log",
+    "logs/capture_motion_0_synth_1.log",
+    "logs/capture_observe_health_vio_0_synth_1.log",
+    "logs/capture_observe_pixel_vio_0_synth_1.log",
+    "logs/capture_overlay_cdc_0_synth_1.log",
+    "logs/capture_overlay_control_0_synth_1.log",
+    "logs/capture_pixel_clock_0_synth_1.log",
+    "logs/capture_pixel_reset_0_synth_1.log",
+    "logs/capture_pixel_reset_guard_0_synth_1.log",
+    "logs/capture_pixels_cdc_0_synth_1.log",
+    "logs/capture_ps_0_synth_1.log",
+    "logs/capture_r100_0_synth_1.log",
+    "logs/capture_r150_0_synth_1.log",
+    "logs/capture_r200_0_synth_1.log",
+    "logs/capture_roi_0_synth_1.log",
+    "logs/capture_sccb_0_synth_1.log",
+    "logs/capture_spec_fft_0_synth_1.log",
+    "logs/capture_state_large_imp_auto_ds_0_synth_1.log",
+    "logs/capture_state_large_imp_auto_pc_0_synth_1.log",
+    "logs/capture_state_large_imp_s00_data_fifo_0_synth_1.log",
+    "logs/capture_state_small_imp_auto_ds_0_synth_1.log",
+    "logs/capture_state_small_imp_auto_pc_0_synth_1.log",
+    "logs/capture_state_small_imp_s00_data_fifo_0_synth_1.log",
+    "logs/capture_vdma_0_synth_1.log",
+    "logs/capture_video_0_synth_1.log",
+    "logs/impl_1.log",
+    "logs/synth_1.log"
+  ],
+  "previous_attempt": {
+    "status": "stopped_by_user_location_change",
+    "completed_ip_synthesis_jobs": 6,
+    "interrupted_ip_synthesis_jobs": 2,
+    "note": "Prior C-drive attempt was stopped; this is a fresh D-drive build."
+  }
+}

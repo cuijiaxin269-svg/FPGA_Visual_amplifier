@@ -1,0 +1,51 @@
+{
+  "verified": true,
+  "recorded_at": "2026-10-30T15:22:34.793045+08:00",
+  "image_bytes": 13299932,
+  "image_sha256": "eae2d50a02ab3f8aaa2574d2fcd9573cc657461bc64690f1b1f17b84ba013e54",
+  "image_crc32": "84cb6227",
+  "jedec": "ef4018",
+  "method": "Board-side XQspiPs writer; bounded 256-byte page programs; no additional erase.",
+  "verification": "Every page compared byte-for-byte against CRC-checked DDR image; complete final Flash image CRC32; unchanged tail CRC32.",
+  "programmed_pages": 39153,
+  "identical_skipped_pages": 12800,
+  "final_status_register_1": 0,
+  "untouched_tail": {
+    "start": 13303808,
+    "end_exclusive": 16777216,
+    "crc32": "15890968"
+  },
+  "initial_erase": "Official program_flash attempt 1 erased and blank-checked [0, 0xcb0000).",
+  "official_programmer_attempts": {
+    "count": 2,
+    "successful": false,
+    "reason": "Stalled during host chunk transfer."
+  },
+  "bulk_upload_attempt": "FT_Write I/O error; helper rejected incomplete DDR image before issuing Flash commands.",
+  "upload_recovery": "User replaced USB cable; preserved DDR and resumed at byte 8060928; complete DDR CRC verified before programming.",
+  "initial_recovery_page_program": "Readback rejected the first new page at 0x320000 after only its first four data bytes were programmed. Fixed writer to pass NULL receive buffer for transmit-only commands, as required by qspips_v3_9 dummy-data optimization. Same image retained in DDR and revalidated; no new erase.",
+  "helper_source_sha256": "1d57d2a03d868075e97992d219073f5548fb0364b37d4e6d0aa83de6c22c3c19",
+  "helper_elf_sha256": "bb0d8e970fbbb0aa85c8988803913ba74f63acbfef6d332ae02a26fb9cf46330",
+  "backup_sha256": "ad98a3cefadddc84ecb12c1ee796295cff5cfdc90a6de38a1fa299b97cab2bfc",
+  "evidence": {
+    "recover_program.log": "02dcbc6082939bf64602f3f03c41e66df576ade17030fd42d9f8fe402dcfebc4",
+    "recovery_ready.bin": "daf8a637497be476949fc60e955f95d16f5de8c90efbfeade126e4482e7995e1",
+    "recovery_verified.bin": "738389a4d14d54df1991e01d1f451583b33aaea6581ba4a4c035f68e983519da",
+    "program_flash_attempt01.log": "5bb76511b017704228f1aa775942f80f3dfabde87814410bc8488ea1e7903124",
+    "program_flash_attempt02.log": "20ab1f545b16a78e2db6879907d16d641567e5f288b87d750b9c4487915606e2",
+    "recover_program_bulk_attempt01.log": "dbc5594946e3b72bbf16948fcf93b2c02acf39652db783e88f46785cf9eb7796",
+    "recover_program_guard_attempt02.log": "a8d92428b8eb9d3ffee567f8b452402a8bd4f4eeece23a94672c8a59113748d4",
+    "recover_program_cpu_attempt03.log": "dc0ef39dbb9470de1c16569d5df51949cc38feb1f963abc4534f42010a8dd9c4",
+    "recover_program_api_attempt04.log": "365ca94bbd59152155d5289da3b71b3bd08193f2106628d919ff2321a28c3d48",
+    "recover_program_ap_attempt05.log": "4738d389aa34e2f669c6d738491888b042a5baaab0357172123043dfa9691ccf",
+    "recover_program_ap_attempt06.log": "d9c2d960d5d4eb2ba1e3129953ae40fc8cbdea502c5103fb7ae64193ca64cd3d",
+    "recover_program_resume_attempt07.log": "5a2828f63dd769cf53eb16cb6cd0468082c47364ef41d57205da28bbbe3a5ec0",
+    "recover_program_page_attempt08.log": "18d22a198c4f3399d8bfb9c82794e355a84b17cbdbde7e7f7d00b32d40a420a0",
+    "failed_page_rx.bin": "c8cf132a31c0ecd5dd1b106427b306e3984984ddd86ebfafa1f40cf0b16d6aad",
+    "failed_page_expected.bin": "40215017b0dc42408c511774259dbfcfb5aabecbb5e94d2676645994ea915543",
+    "failed_page_diag.bin": "d6b6c64bc718de0dbcb2cc08693d9d96a61573c8f5a827ec0fba444d279b7ebf",
+    "qspi_program_attempt01.c": "f19449dedc36a2d190f6258b75aa4d30d8d003c7cfa4bc164b12de952c2591fa",
+    "qspi_program_attempt01.elf": "dc23e8940a402a4a681f856b670a34ab412a56bc5a993c061f8e64c3cf15d702"
+  },
+  "cold_boot_validated_by_this_report": false
+}

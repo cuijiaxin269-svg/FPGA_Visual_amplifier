@@ -1,0 +1,158 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source D:/xilinx/Vitis_HLS/2021.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'D:/xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Frederich' on host 'laptop-0iphgihq' (Windows NT_amd64 version 6.2) on Thu Oct 29 01:14:31 +0800 2026
+INFO: [HLS 200-10] In directory 'D:/SWJTU/FPGA_Visual_amplifier'
+Sourcing Tcl script 'vision/alpha50_probe/scripts/test_hls_2021.tcl'
+INFO: [HLS 200-1510] Running: open_project a50test 
+INFO: [HLS 200-10] Creating and opening project 'D:/SWJTU/FPGA_Visual_amplifier/a50test'.
+INFO: [HLS 200-1510] Running: set_top motion60_shared 
+INFO: [HLS 200-1510] Running: add_files D:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/hls/pipeline.cpp -cflags -std=c++14 -DMOTION_WIDTH=128 -DMOTION_HEIGHT=96 -ID:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/hls 
+INFO: [HLS 200-10] Adding design file 'D:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/hls/pipeline.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files D:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/hls/phase_core.cpp -cflags -std=c++14 -DMOTION_WIDTH=128 -DMOTION_HEIGHT=96 -ID:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/hls 
+INFO: [HLS 200-10] Adding design file 'D:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/hls/phase_core.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb D:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/sim/baseline_phase.cpp -cflags -std=c++14 -DMOTION_WIDTH=128 -DMOTION_HEIGHT=96 -ID:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/hls -Dphase_core_shared=baseline_phase_core_shared 
+INFO: [HLS 200-10] Adding test bench file 'D:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/sim/baseline_phase.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb D:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/sim/test_alpha50.cpp -cflags -std=c++14 -DMOTION_WIDTH=128 -DMOTION_HEIGHT=96 -ID:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/hls 
+INFO: [HLS 200-10] Adding test bench file 'D:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/sim/test_alpha50.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution sol -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'D:/SWJTU/FPGA_Visual_amplifier/a50test/sol'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z100ffg900-2 
+INFO: [HLS 200-1611] Setting target device to 'xc7z100-ffg900-2'
+INFO: [HLS 200-1510] Running: create_clock -period 6.666667 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.667ns.
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../vision/alpha50_probe/sim/test_alpha50.cpp in debug mode
+   Compiling ../../../../vision/alpha50_probe/sim/baseline_phase.cpp in debug mode
+   Compiling ../../../../vision/alpha50_probe/hls/phase_core.cpp in debug mode
+   Compiling ../../../../vision/alpha50_probe/hls/pipeline.cpp in debug mode
+   Generating csim.exe
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_fpo.h:189,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/etc/ap_private.h:98,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_common.h:658,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_int.h:55,
+                 from D:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/hls/phase_core.hpp:2,
+                 from ../../../../vision/alpha50_probe/sim/test_alpha50.cpp:1:
+D:/xilinx/Vitis_HLS/2021.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/hls_fpo.h:189:0,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/etc/ap_private.h:98,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_common.h:658,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_int.h:55,
+                 from D:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/hls/phase_core.hpp:2,
+                 from ../../../../vision/alpha50_probe/sim/test_alpha50.cpp:1:
+D:/xilinx/Vitis_HLS/2021.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_fpo.h:189,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/etc/ap_private.h:98,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_common.h:658,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_int.h:55,
+                 from D:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/hls/phase_core.hpp:2,
+                 from ../../../../vision/alpha50_probe/sim/baseline_phase.cpp:1:
+D:/xilinx/Vitis_HLS/2021.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/hls_fpo.h:189:0,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/etc/ap_private.h:98,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_common.h:658,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_int.h:55,
+                 from D:/SWJTU/FPGA_Visual_amplifier/vision/alpha50_probe/hls/phase_core.hpp:2,
+                 from ../../../../vision/alpha50_probe/sim/baseline_phase.cpp:1:
+D:/xilinx/Vitis_HLS/2021.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/hls_hotbm_apfixed.h:45:0,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_math.h:1065,
+                 from ../../../../vision/alpha50_probe/sim/baseline_phase.cpp:2:
+D:/xilinx/Vitis_HLS/2021.2/include/utils/x_hls_utils.h:246:10: warning: 'hls_preserve' attribute directive ignored [-Wattributes]
+ T reg(T d)
+          ^
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_fpo.h:189,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/etc/ap_private.h:98,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_common.h:658,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_int.h:55,
+                 from ../../../../vision/alpha50_probe/hls/phase_core.hpp:2,
+                 from ../../../../vision/alpha50_probe/hls/phase_core.cpp:1:
+D:/xilinx/Vitis_HLS/2021.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/hls_fpo.h:189:0,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/etc/ap_private.h:98,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_common.h:658,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_int.h:55,
+                 from ../../../../vision/alpha50_probe/hls/phase_core.hpp:2,
+                 from ../../../../vision/alpha50_probe/hls/phase_core.cpp:1:
+D:/xilinx/Vitis_HLS/2021.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/hls_hotbm_apfixed.h:45:0,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_math.h:1065,
+                 from ../../../../vision/alpha50_probe/hls/phase_core.cpp:2:
+D:/xilinx/Vitis_HLS/2021.2/include/utils/x_hls_utils.h:246:10: warning: 'hls_preserve' attribute directive ignored [-Wattributes]
+ T reg(T d)
+          ^
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_fpo.h:189,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/etc/ap_private.h:98,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_common.h:658,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_int.h:55,
+                 from ../../../../vision/alpha50_probe/hls/phase_core.hpp:2,
+                 from ../../../../vision/alpha50_probe/hls/pipeline.cpp:1:
+D:/xilinx/Vitis_HLS/2021.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/hls_fpo.h:189:0,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half_fpo.h:64,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_half.h:71,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/etc/ap_private.h:98,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_common.h:658,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/ap_int.h:55,
+                 from ../../../../vision/alpha50_probe/hls/phase_core.hpp:2,
+                 from ../../../../vision/alpha50_probe/hls/pipeline.cpp:1:
+D:/xilinx/Vitis_HLS/2021.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/hls_hotbm_apfixed.h:45:0,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_math.h:1065,
+                 from ../../../../vision/alpha50_probe/hls/pipeline.cpp:2:
+D:/xilinx/Vitis_HLS/2021.2/include/utils/x_hls_utils.h:246:10: warning: 'hls_preserve' attribute directive ignored [-Wattributes]
+ T reg(T d)
+          ^
+PASS alpha30 phase output and history exactly match original source
+PASS phase alpha=0/30/50 numeric reconstruction and invalid endpoint rejection
+PASS 128x96 live pipeline: alpha0/30/50 DN differences=372316/373197/374893; no physical gain claim
+ALPHA50_CSIM_PASSED
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 30.072 seconds; current allocated memory: 0.000 MB.
+ALPHA50_HLS_2021_CSIM_COMPLETED
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 4 seconds. Total elapsed time: 35.486 seconds; peak allocated memory: 1.137 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Thu Oct 29 01:15:05 2026...

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Fri Oct 30 14:08:10 2026
+# Process ID: 7548
+# Current directory: D:/SWJTU/FPGA_Visual_amplifier
+# Command line: vivado.exe -mode batch -notrace -source vision/v19boot/scripts/prepare_qspi_platform.tcl -log vision/v19boot/reports/prepare_qspi.log -journal vision/v19boot/reports/prepare_qspi.jou
+# Log file: D:/SWJTU/FPGA_Visual_amplifier/vision/v19boot/reports/prepare_qspi.log
+# Journal file: D:/SWJTU/FPGA_Visual_amplifier\vision/v19boot/reports/prepare_qspi.jou
+# Running On: LAPTOP-0IPHGIHQ, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 8, Host memory: 33840 MB
+#-----------------------------------------------------------
+source vision/v19boot/scripts/prepare_qspi_platform.tcl -notrace

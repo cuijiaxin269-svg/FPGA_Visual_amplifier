@@ -1,0 +1,208 @@
+INFO: [Hsi 55-2053] elapsed time for repository (D:/xilinx/Vitis/2021.2/data/embeddedsw) loading 0 seconds
+WARNING : No interface that uses file system is available 
+
+"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_10/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/clip_copy_checked_v1_0/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/clip_temporal_full_v1_0/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/csi_v1_5/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/dphy_v1_5/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_9/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_8/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_14/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/mipicsiss_v1_6/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/motion60_shared_v1_0/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_9/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/roi256_v1_0/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_6/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_3/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/spectrum256_pl_v1_0/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_6/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_11/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_6/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_6/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/clip_copy_checked_v1_0/src"
+
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+
+"Building clip_copy_checked"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/clip_temporal_full_v1_0/src"
+
+"Building clip_temporal_full"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/motion60_shared_v1_0/src"
+
+"Building motion60_shared"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/roi256_v1_0/src"
+
+"Building roi256"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/spectrum256_pl_v1_0/src"
+
+"Building spectrum256_pl"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+'Finished building libraries sequentially.'
+
+"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_10/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/clip_copy_checked_v1_0/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/clip_temporal_full_v1_0/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/csi_v1_5/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/dphy_v1_5/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_9/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_8/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_14/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/mipicsiss_v1_6/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/motion60_shared_v1_0/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_9/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/roi256_v1_0/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_6/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_3/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/spectrum256_pl_v1_0/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_6/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_11/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_6/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_6/src"
+
+"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_10/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/csi_v1_5/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_8/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/dphy_v1_5/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_9/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_8/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_14/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/mipicsiss_v1_6/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_9/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_6/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_3/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_6/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_11/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_6/src"
+
+"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_6/src"
+
+xtime_l.c:45:9: note: '#pragma message: For the sleep routines, Global timer is being used'
+   45 | #pragma message ("For the sleep routines, Global timer is being used")
+      |         ^~~~~~~
+'Finished building libraries parallelly.'
+
+'Finished building libraries'
+
+arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c sd.c -o sd.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c nand.c -o nand.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c nor.c -o nor.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c image_mover.c -o image_mover.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c md5.c -o md5.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c fsbl_hooks.c -o fsbl_hooks.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c main.c -o main.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c rsa.c -o rsa.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c qspi.c -o qspi.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c ps7_init.c -o ps7_init.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c pcap.c -o pcap.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c fsbl_handoff.S -o fsbl_handoff.o -Izynq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+arm-none-eabi-gcc -o executable.elf fsbl_handoff.o fsbl_hooks.o image_mover.o main.o md5.o nand.o nor.o pcap.o ps7_init.o qspi.o rsa.o sd.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                                            -Wl,--gc-sections -Lzynq_fsbl_bsp/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+hsi::generate_app: Time (s): cpu = 00:00:04 ; elapsed = 00:00:42 . Memory (MB): peak = 1246.602 ; gain = 0.000
+V19_FSBL_BUILT

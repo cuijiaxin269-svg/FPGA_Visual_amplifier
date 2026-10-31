@@ -1,0 +1,31 @@
+{
+  "source_limits": 2,
+  "instantiated_rtl_limits": 4,
+  "rtl": [
+    {
+      "file": "motion60_shared.v",
+      "sha256": "65422c3ca7adeb06d9bc68630b75f4f2d244b1486ed254fae592f33b160de9a6",
+      "gate": "IEEE 754 alpha <= 30.0, comparator opcode 5",
+      "replacement": "alpha <= 50.0, 0x42480000"
+    },
+    {
+      "file": "motion60_shared_phase_core_shared.v",
+      "sha256": "f99b64c67624560b2fd5385ae5cd5159f59903b8220aa144803c768e7e847469",
+      "gate": "IEEE 754 alpha <= 30.0, comparator opcode 5",
+      "replacement": "alpha <= 50.0, 0x42480000"
+    },
+    {
+      "file": "motion60_shared_phase_core_shared_1.v",
+      "sha256": "34076f8f7dfe2fe6846776f8b21b7c71443558306e408ed56437927757e2df19",
+      "gate": "IEEE 754 alpha <= 30.0, comparator opcode 5",
+      "replacement": "alpha <= 50.0, 0x42480000"
+    },
+    {
+      "file": "motion60_shared_phase_core_shared_2.v",
+      "sha256": "a9352bbe65ff012b029314204122eee8edc0e2977b0dbf5ebabc032564fae34e",
+      "gate": "IEEE 754 alpha <= 30.0, comparator opcode 5",
+      "replacement": "alpha <= 50.0, 0x42480000"
+    }
+  ],
+  "plan": "Constant-only RTL gate update after C simulation; preserve all datapath operations, interfaces, FIFOs, clocks and latency. Synthesize changed IP with Vivado 2021.2, then reuse v15 physical reference."
+}

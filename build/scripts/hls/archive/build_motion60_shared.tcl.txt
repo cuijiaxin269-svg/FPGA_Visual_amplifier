@@ -1,0 +1,18 @@
+set root [file normalize [file join [file dirname [info script]] ..]]
+set folder [file join $root build motion60_shared_synth]
+open_component $folder -flow_target vivado
+cd $folder
+set_top motion60_shared
+set flags "-std=c++14 -DMOTION_WIDTH=1280 -DMOTION_HEIGHT=800"
+foreach source {pipeline.cpp phase_core.cpp} {
+ add_files [file join $root hls motion60_shared $source] -cflags $flags
+}
+set_part xc7z100ffg900-2
+create_clock -period 6.666667 -name default
+csynth_design
+export_design -format ip_catalog
+set fifo [glob -nocomplain [file join $folder hls impl ip hdl verilog *_fifo_w32_d131072_A.v]]
+if {[llength $fifo]!=1} {error "Expected exactly one reviewed 128K startup FIFO"}
+puts [exec [file join $root build motion60_venv Scripts python.exe] [file join $root scripts preserve_motion60_fifo_address.py] [lindex $fifo 0]]
+puts MOTION60_SHARED_FULL_SYNTHESIZED
+exit

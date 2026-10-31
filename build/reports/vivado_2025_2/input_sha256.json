@@ -1,0 +1,4131 @@
+{
+  "recorded_at": "2026-10-30T22:16:26.9676552+08:00",
+  "scope": "Hardware input-directory snapshot during implementation; includes unused files in src/rtl, src/ip and src/constraints. The create_project.tcl entry point selects the actual files. Sources remain unchanged through this build.",
+  "files": [
+    {
+      "path": "build/scripts/build_hardware.ps1",
+      "sha256": "21ceb35a062ba47e04d54b9aa7cf6f611c38feafa49779cbdcfac6b4c6bdf4ec",
+      "bytes": 1584
+    },
+    {
+      "path": "build/scripts/build_hardware.tcl",
+      "sha256": "dd3be2143ea273c21e67a8bd0651e5b15c4b566011e9c1a2515de7527b3e0a9d",
+      "bytes": 6571
+    },
+    {
+      "path": "build/scripts/check_button_preopt.tcl",
+      "sha256": "aa26490f7296ed9d0c689c19163f2dc501ec106696083808d2b5cadd6f693a34",
+      "bytes": 980
+    },
+    {
+      "path": "build/scripts/check_motion60_single_clock.tcl",
+      "sha256": "2152bb58de7f2010fa74ef1fa8cea980a54ee1c0068c5cb09c320a349327b90d",
+      "bytes": 2227
+    },
+    {
+      "path": "build/scripts/create_project.tcl",
+      "sha256": "009168160edbe14edf94ddadbf8ba772ccb2e5eb15161a28fcf45c4a3acd4049",
+      "bytes": 8259
+    },
+    {
+      "path": "build/scripts/verify_standalone_sources.tcl",
+      "sha256": "4a9b0653d4a253432783bfae8f23dd283d60ac856be1c29f764110f2dd7c33c1",
+      "bytes": 1077
+    },
+    {
+      "path": "src/bd/capture_qspi_bd.tcl",
+      "sha256": "e760e152aa73ac2ada5e563dce0b045aa05ee42c7a69b2d5eda8af2a0526789f",
+      "bytes": 62256
+    },
+    {
+      "path": "src/constraints/camera_amd.xdc",
+      "sha256": "870f1c6d23323903de67ccc704c24fcb5edff423221cac28bd1d2dd9433e5d1b",
+      "bytes": 1824
+    },
+    {
+      "path": "src/constraints/camera_counter_cdc.xdc",
+      "sha256": "65880e4507b09f3a4ba28674dd5e2c13f11c44b459853b81dd8cfd3a09f57754",
+      "bytes": 297
+    },
+    {
+      "path": "src/constraints/camera_performance.xdc",
+      "sha256": "4cc5c5f22c6ce19f63866d1e2883935d3a18cc0f0d377e6c1def80edaa9e589f",
+      "bytes": 280
+    },
+    {
+      "path": "src/constraints/camera.xdc",
+      "sha256": "b55859fa600a5b3b6fc25fef06e508ca2e5ce79d5b238e9bc1ef480b5b831a35",
+      "bytes": 2372
+    },
+    {
+      "path": "src/constraints/common.xdc",
+      "sha256": "baec6d286a15ae6286d503e9df29557a1e1e60c2f78384294238e3d26bac9936",
+      "bytes": 199
+    },
+    {
+      "path": "src/constraints/control.xdc",
+      "sha256": "d148bb6a7f274c624c041433b8d725a43d3da704ffa6b502c9e10e7f55832ee4",
+      "bytes": 303
+    },
+    {
+      "path": "src/constraints/hmi_uart_p4.xdc",
+      "sha256": "e463b65cc1321c9b11c936617e95a6c79599ebe532caac0bc5264bd05c9fdc04",
+      "bytes": 1554
+    },
+    {
+      "path": "src/constraints/mode_button.xdc",
+      "sha256": "1ee43fad86a1885f05645d644d624faff2e2263aaf4d2bf4947c74a7523379a1",
+      "bytes": 691
+    },
+    {
+      "path": "src/constraints/motion60_hdmi.xdc",
+      "sha256": "34124467625e97a4efadaa04f22d0674fb6b41b7642e5e92c685a0fd036dfd8b",
+      "bytes": 473
+    },
+    {
+      "path": "src/constraints/observe_debug_hub.xdc",
+      "sha256": "89e8a1f7b0eb5e15dc67ba9630818eddfe6a27ceb0efbc8d42205a1af2f710bc",
+      "bytes": 203
+    },
+    {
+      "path": "src/constraints/pixel_reset_guard_async.xdc",
+      "sha256": "2614b0f084829f110dcf74bbc70446dc52bc3cddc8112c0c8162756bcc799255",
+      "bytes": 548
+    },
+    {
+      "path": "src/ip/clip_copy_checked/component.xml",
+      "sha256": "6f310bd2550d0750d9b7a9e7ea6c1e14149d33a5c29fc554b9b0f33b4ef7fa0a",
+      "bytes": 203492
+    },
+    {
+      "path": "src/ip/clip_copy_checked/constraints/clip_copy_checked_ooc.xdc",
+      "sha256": "d1e51ede117e1cccd28b20ed92b577531ffa757188618d14436668dda6eb09b4",
+      "bytes": 394
+    },
+    {
+      "path": "src/ip/clip_copy_checked/dfx_runtime.txt",
+      "sha256": "1c116946a77d7f3f1e9d1fb2ba1738ef08f9f5c2b1178a80d0a58be8f7cb2ca0",
+      "bytes": 113
+    },
+    {
+      "path": "src/ip/clip_copy_checked/doc/ReleaseNotes.txt",
+      "sha256": "4d014e57437c591bbcbdc72877633719249182e1946ab02a04358201679a3aa4",
+      "bytes": 112
+    },
+    {
+      "path": "src/ip/clip_copy_checked/drivers/clip_copy_checked_v1_0/data/clip_copy_checked.mdd",
+      "sha256": "6ec9036f92823c3e467cf40b52c057ea8193d3c1d178195f34fd47fbe7df6fc9",
+      "bytes": 631
+    },
+    {
+      "path": "src/ip/clip_copy_checked/drivers/clip_copy_checked_v1_0/data/clip_copy_checked.tcl",
+      "sha256": "6f7355d9f38d25d0ce5e2737b486a74b27331213fc7a0df9b4c7f70839996891",
+      "bytes": 936
+    },
+    {
+      "path": "src/ip/clip_copy_checked/drivers/clip_copy_checked_v1_0/data/clip_copy_checked.yaml",
+      "sha256": "9df18d09ca156069af365988fad3cff9dae32802e8c29a559703efcde5380bad",
+      "bytes": 680
+    },
+    {
+      "path": "src/ip/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/CMakeLists.txt",
+      "sha256": "bb831c291a3584f3645788ef37592a354459268f81e392a6eacf7820adc29bac",
+      "bytes": 1264
+    },
+    {
+      "path": "src/ip/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/Makefile",
+      "sha256": "fcaf662b53c2698176264c74ba3413c5ce9132f30563ee8219824aea6477715e",
+      "bytes": 1512
+    },
+    {
+      "path": "src/ip/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked_hw.h",
+      "sha256": "29737ecaee1a3a7c47f63ebeb6ac2a87b35f001753c5947ba570d9e5cb1e9aca",
+      "bytes": 2804
+    },
+    {
+      "path": "src/ip/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked_linux.c",
+      "sha256": "90c67afd020e45f5d82a39fb7432c5a8e19b9c015dc731de0af28ac6f5441215",
+      "bytes": 4940
+    },
+    {
+      "path": "src/ip/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked_sinit.c",
+      "sha256": "49c027ed506e971f63ff0e9d4217665e9b916ba6de0f6ffa96eb65a92894db6d",
+      "bytes": 2236
+    },
+    {
+      "path": "src/ip/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked.c",
+      "sha256": "76113a6c4a3725e2b30e5b3fe6fa5252614bc592530bcfa936830a2690ffebdc",
+      "bytes": 8952
+    },
+    {
+      "path": "src/ip/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked.h",
+      "sha256": "9ec4a8c726c4f26f3b0079e8fd036243966370990ce872baa9427a611abf2e01",
+      "bytes": 4628
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/verilog/clip_copy_checked_block_RAM_2P_BRAM_1R1W.v",
+      "sha256": "ea05e3103b969d1931ec9770e7a2af6ec6f00c17403427ed17f011526b11e5c4",
+      "bytes": 1101
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/verilog/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_19_2.v",
+      "sha256": "11184a789da883c7342557580de7b138d4bc8d62d1ca384ae08f0091ac1f65c8",
+      "bytes": 18009
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/verilog/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_27_4.v",
+      "sha256": "0dc67964dd3e64c19faef4f8fc6214f68992cb8a463cde0940bdfc105cac2a41",
+      "bytes": 13143
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/verilog/clip_copy_checked_control_s_axi.v",
+      "sha256": "3758ffa261874a8bdf61d1f1195a3d7dfd3f8645c97b71d0f2afeaacf93eea78",
+      "bytes": 16200
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/verilog/clip_copy_checked_flow_control_loop_pipe_sequential_init.v",
+      "sha256": "406b5f5e11e630d8fa135e656bbbbbd099f74fef8f6a6c73b55e6ca2aa08ae66",
+      "bytes": 2937
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/verilog/clip_copy_checked_input_mem_m_axi.v",
+      "sha256": "cd49b53c7b409f0f6d1dfbc733587e927a5a39c5f55cfcae18cb37c9c17fc542",
+      "bytes": 93049
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/verilog/clip_copy_checked_output_mem_m_axi.v",
+      "sha256": "fa03be7478a57fa2710341af3e3c09e807477d8f7baba874b0fad1f30ed5dbfb",
+      "bytes": 120172
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/verilog/clip_copy_checked.v",
+      "sha256": "8cdebdf8b12b95945d2a6a6bd9caf97851743e2e828bdaa06ca827010425ceb8",
+      "bytes": 55049
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/vhdl/clip_copy_checked_block_RAM_2P_BRAM_1R1W.vhd",
+      "sha256": "81dc5a300834fd7c9805aeb863c285cb029f29c11b179a6b915c52cbd84dec60",
+      "bytes": 2480
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/vhdl/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_19_2.vhd",
+      "sha256": "b6975e156470f32b3b6009340072b1db9ecccb276107fddd8e378f4e245876d4",
+      "bytes": 27230
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/vhdl/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_27_4.vhd",
+      "sha256": "43f09ccd630a28192b22eb8b4165a6e2f8b0c9e2743ba7dca10917e9f3e56a2d",
+      "bytes": 18958
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/vhdl/clip_copy_checked_control_s_axi.vhd",
+      "sha256": "e4fb2cb0ab1e76d0f1e441cf3c2dd54d87c09759a089732468f5025e8688f8c7",
+      "bytes": 21919
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/vhdl/clip_copy_checked_flow_control_loop_pipe_sequential_init.vhd",
+      "sha256": "04bbc5a08f0b02238f0d4488b098476452e0df523dce1915fff97fd86ebf6c2d",
+      "bytes": 3591
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/vhdl/clip_copy_checked_input_mem_m_axi.vhd",
+      "sha256": "54c871c9157ae808e0ad1d64ed44a2cedd99d31ae4468e92ba35b1a33bebd32d",
+      "bytes": 128990
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/vhdl/clip_copy_checked_output_mem_m_axi.vhd",
+      "sha256": "be9cb84a3cccfc49bc976ea0aebdf2ce6a944c5fbede54cc4252cb3ceaf595bf",
+      "bytes": 164580
+    },
+    {
+      "path": "src/ip/clip_copy_checked/hdl/vhdl/clip_copy_checked.vhd",
+      "sha256": "478750fc4f789b23c15d6797f1cdbad5ae2f250f25aeb9b08cb925a5b03d3839",
+      "bytes": 89340
+    },
+    {
+      "path": "src/ip/clip_copy_checked/misc/logo.png",
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af",
+      "bytes": 2297
+    },
+    {
+      "path": "src/ip/clip_copy_checked/pack.bat",
+      "sha256": "24fe78d5164172fe4aa4a31c9fe74ede817091d545e9ae80bff0f1bf8762fd58",
+      "bytes": 488
+    },
+    {
+      "path": "src/ip/clip_copy_checked/run_ippack.tcl",
+      "sha256": "f470a0aa5675910c024e700a8440c1eed7288bed9f057c3f5f8e5e0046c740ab",
+      "bytes": 923
+    },
+    {
+      "path": "src/ip/clip_copy_checked/sysgen_info.xml",
+      "sha256": "4f28c42dba9cf38eaa3f340388fb2bf93effe1ac7e11ba8da1efaf9e827a2a18",
+      "bytes": 346
+    },
+    {
+      "path": "src/ip/clip_copy_checked/xgui/clip_copy_checked_v1_0.tcl",
+      "sha256": "858e7599f52dd0f6aaf578bca1df482e98efe8f98795313df0d2a640c0cdbec8",
+      "bytes": 21073
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/component.xml",
+      "sha256": "0934b426f05a706577dbf7fe9008dfb38425849cc6ef0875076283f6cd58dc80",
+      "bytes": 185234
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/constraints/clip_temporal_full_ooc.xdc",
+      "sha256": "d1e51ede117e1cccd28b20ed92b577531ffa757188618d14436668dda6eb09b4",
+      "bytes": 394
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/dfx_runtime.txt",
+      "sha256": "dc4c562ec534ec6ae12827b6d675ef5dbcc15f42e5a44e08d37a2fe80a825bfe",
+      "bytes": 114
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/doc/ReleaseNotes.txt",
+      "sha256": "4d014e57437c591bbcbdc72877633719249182e1946ab02a04358201679a3aa4",
+      "bytes": 112
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/data/clip_temporal_full.mdd",
+      "sha256": "4c0c5ec78ac3289d58d1b72ef6e607a61bb8a8ffeb6b4e6f4b523d418134c5fd",
+      "bytes": 634
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/data/clip_temporal_full.tcl",
+      "sha256": "459a4c84ae48d9f20d153b5ddc90363b50221640c23bae6b901ac8e5970e86b8",
+      "bytes": 940
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/data/clip_temporal_full.yaml",
+      "sha256": "28d948f132dab3b915b134933d5ed0b7bb002badd75a18461252a2b6cb17a6a3",
+      "bytes": 683
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/CMakeLists.txt",
+      "sha256": "14c01e7c205a280465e1ed38e5bff17e0b5bd1ecf6087183c7cc8bc696392abd",
+      "bytes": 1273
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/Makefile",
+      "sha256": "1aedd0faf3c284ac0a34ebd4b88c77d03d3cbeb8fb383784ddc8b3eafe38da3e",
+      "bytes": 1513
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full_hw.h",
+      "sha256": "b71cc3751accd242f28cbbc094628ca76354b6d45eb8b52d0824da9175e50543",
+      "bytes": 3811
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full_linux.c",
+      "sha256": "2ccadf3643875edf33a07d240c1215a3f2da4892db5caa13fa34ee6696c7dabf",
+      "bytes": 4955
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full_sinit.c",
+      "sha256": "9504706bb835be0f03a11ac07b120ebe9368b07561aae933b935962b6a95009b",
+      "bytes": 2261
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full.c",
+      "sha256": "57d7962e98b8046d3675468f157ca5ccf21818b790d8aa10c8987bd1ecd6235d",
+      "bytes": 12246
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full.h",
+      "sha256": "6e0c8536a5a2b4e263bb2744e5457e75f64beeb2b7e5859712c2026810c5758e",
+      "bytes": 5282
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_ip/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_ip.xci",
+      "sha256": "0ccd820f24a39b05af25577ed674cf98ed296f8b227dc8b7ba13df24b1a9dc03",
+      "bytes": 62225
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x_ip/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x_ip.xci",
+      "sha256": "770989dd20ca76354c87848c9025a183fac68246c909083493c8043842501cc7",
+      "bytes": 62231
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_ip/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_ip.xci",
+      "sha256": "952e15e47c2735138533501e3db818622c287df084ce4c6e6d0c1c5d79f4d739",
+      "bytes": 68374
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x_ip/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x_ip.xci",
+      "sha256": "97f598638301a479a2e8f54024a64b7c4119855fd0fb8b9272ae159c2969900d",
+      "bytes": 68380
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_ip/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_ip.xci",
+      "sha256": "9c2417e880347449c35ac6db2a298c218e3b5febc9c716f18cb55d34adf292ad",
+      "bytes": 62217
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x_ip/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x_ip.xci",
+      "sha256": "7cc12c5f2aca26f83308ba06e31dc350290307eb15e83c5ec43de30b3f1484e4",
+      "bytes": 62223
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_ip/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_ip.xci",
+      "sha256": "5de9e36ff1500958ce6fa9418a32939b1e0e93d605f6ec9d65936c65155ff5d6",
+      "bytes": 62218
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x_ip/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x_ip.xci",
+      "sha256": "d384dbc0c40b4cb90388710763d7c3dcb923f3fcd50878071e0bdc095a6acc27",
+      "bytes": 62224
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1_ip/clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1_ip.xci",
+      "sha256": "811113c117d45c2ff5c6709ff18b8d5f73db74142d749a175491e7cb9c65ecdc",
+      "bytes": 62230
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "sha256": "90885390c7ebca741501b4c05f6ec387b28e2e985c8d102fdeec5e4c24018ec6",
+      "bytes": 68539
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1_ip/clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci",
+      "sha256": "191b3847abbde2ef58d442c285a907626c4d23163ce88f37dd1176b7285da8c1",
+      "bytes": 68014
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1_ip/clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+      "sha256": "c9c0a1c2ea966cc697f4e1a11b94b12805b82c7bec557c071aa40b9d7c7ae9c1",
+      "bytes": 62216
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1_ip/clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1_ip.xci",
+      "sha256": "41ad237e6aa7525e07da326bd51105f9198d78a2b842fcadb1b07d011ab04412",
+      "bytes": 55479
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_ip/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_ip.xci",
+      "sha256": "05a00bcb2f78152a75be4dfd8abc0c3a0366248a8b8fa3c0d4c282c9754e118f",
+      "bytes": 55832
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x_ip/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x_ip.xci",
+      "sha256": "6dc4a7369aa54cddb3d34a215400da46059eaa53fd2527c891944e905b71d4c6",
+      "bytes": 55838
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_42_2.v",
+      "sha256": "3f40b95bf063d0cf67687ba7d45c30b01173b5500ddfbbf2a826a8fa9047a476",
+      "bytes": 104214
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_52_4_VITIS_LOOP_52_5.v",
+      "sha256": "a577e3d0c25a5f7a49f751c4f107a02df4c74abf0dd3a038d6eda95554d51aa2",
+      "bytes": 31656
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_60_7.v",
+      "sha256": "a054b06bd1149284894392f67613eb459e096ac4b15cdf405eaa9ccb1e969458",
+      "bytes": 31083
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_68_9.v",
+      "sha256": "1a4c569485881d8e8300a92cf7caa046df7eaaaafe3f88b390ef4a5014679aa4",
+      "bytes": 5718
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_72_10_VITIS_LOOP_74_11.v",
+      "sha256": "313b646e7ff8ba06c46cb0d10959956118c63b5d6d6aa49f8cfee3f775f2597f",
+      "bytes": 24164
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_80_12.v",
+      "sha256": "e4ad7143b215607c252c836e417510a61b8ba6d7c493c9e68fdc21ace2a9202f",
+      "bytes": 9614
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_85_13.v",
+      "sha256": "5f4e985bab88dccf864b5a8ec270367e031cba0c9b90b5a0bdea0c2b92237fd4",
+      "bytes": 13659
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_coefficients_RAM_AUTO_1R1W.v",
+      "sha256": "fb3d5c82b9bd4c5dd40eb276887f2831d4e17332cda13e7defe4990dd5b6abfd",
+      "bytes": 980
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_control_s_axi.v",
+      "sha256": "f8b989262a524b516289d6a5ce287c51405f3d89da11a9849bbdbe3b22040f3b",
+      "bytes": 19803
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x.v",
+      "sha256": "884d5632c761eb6be6556a14325d79de6a4436a08631db8ee106cf904c31c681",
+      "bytes": 2325
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1.v",
+      "sha256": "2d0c99b3dd9f9650515f7ffd92678765581cbc792c2f34c1a53ee2b725e80d0a",
+      "bytes": 2319
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x.v",
+      "sha256": "ec65784155a10ad8e283d3304b6d7b0dff3327badc0439a3d73b575f6136551d",
+      "bytes": 3484
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1.v",
+      "sha256": "18364688da0d57fdb8d2444c889f20756b32c2945913f009dc3ec0a3582e26d8",
+      "bytes": 3478
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x.v",
+      "sha256": "0246bde458b2691e3f9ba185bac7f20c8a00128c4cec27fa839b3a25fb1253ca",
+      "bytes": 2322
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1.v",
+      "sha256": "c1555c238536aaaa277ad64539c01feab0c9e82f76c88bd23183ba511f5f7919",
+      "bytes": 2316
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x.v",
+      "sha256": "baa30294ca01d7e9c0d9c69afdebce9c9235c7f7e72dfa37ca13b33cfdd2f023",
+      "bytes": 2322
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1.v",
+      "sha256": "519dbb25cf7d28b4a098c861b366c34d583ebc969430359afb74eb1a32edea47",
+      "bytes": 2316
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1.v",
+      "sha256": "d244e0f9f11db420d949c14e49c91e51da72c33f5047877aa578f90bb19938c1",
+      "bytes": 2319
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1.v",
+      "sha256": "7818719c1157fe1be8e84d0d55a20371db92d99c2718e915a3e34c5acb96204b",
+      "bytes": 2664
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1.v",
+      "sha256": "8200fd49e7f945299d18a2c7af37b31f7758d24fba07677471b7e9a6459cd8cc",
+      "bytes": 3285
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_flow_control_loop_pipe_sequential_init.v",
+      "sha256": "578ccacb0d03b08f0b68d9808df33944e3ba23a71e85e8e8c18903b885f70979",
+      "bytes": 2938
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1.v",
+      "sha256": "6542a594de67ab18b6803ede42c8f9b7da3ff9251bae35bca918d3bcc1990a68",
+      "bytes": 2316
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1.v",
+      "sha256": "d27368be0674a298306116645306f62ce49ff1b8ce882fad17eadf7b8f91d6b1",
+      "bytes": 1817
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_kernel_cos.v",
+      "sha256": "3a640c242fd12aa97c9dc81003b858d4c298837d4ad2e325c7b954032b11db2b",
+      "bytes": 64428
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_mac_muladd_20ns_7ns_32s_32_4_1.v",
+      "sha256": "72401a6ddcafd104c529d9485be2593b8f2cdf31b42affef1765411f243aebcf",
+      "bytes": 2015
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_mul_32ns_31ns_63_3_1.v",
+      "sha256": "45578d2c0d0d526a1d401398e0c6d7734da5792a4f85a6822a112002878a5499",
+      "bytes": 1070
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_mul_32ns_32ns_64_3_1.v",
+      "sha256": "8044f7e09943414f8b5c431722145a101da4fa48421b1a7db0356234a2936acc",
+      "bytes": 1070
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_mul_7ns_31ns_32_3_1.v",
+      "sha256": "4178068a86ba63c8c9b195dc97d7af0af9e24638737c3266377a7e9fe8a1353c",
+      "bytes": 1069
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_phase_mem_m_axi.v",
+      "sha256": "b2a9572308ba76a1b20a94ad35f3c22fc5ef9d133cfe414b499e3778808addf8",
+      "bytes": 154924
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_samples_RAM_2P_BRAM_1R1W.v",
+      "sha256": "9f975f2ee1a5cdb79f96f8abc5e8ae84f7b1d5e7f9e53189de43eea4492013c7",
+      "bytes": 1105
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_sum_RAM_2P_LUTRAM_2R1W.v",
+      "sha256": "87cf0ba11e5c5e348f57b7a8095cc137ad138421434befb1a70fa24691e6fab9",
+      "bytes": 1305
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x.v",
+      "sha256": "e4de76acdadfcb4dedd81002e068179b8862466f144f0b7d13c809aa1e9e2049",
+      "bytes": 2005
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1.v",
+      "sha256": "570229c974426a9ffb371687249414ab21bae4ab5ccda3c257950f927b6c4859",
+      "bytes": 1999
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_urem_32ns_32ns_32_36_1.v",
+      "sha256": "047640b487edf8b67325c9b6e4073355c4b08b7b350d5a7764dd98757d73394a",
+      "bytes": 4111
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full.v",
+      "sha256": "5d0e46b519796a92858b4c8add073eb09504d144762a0f7493e25a1d5c033105",
+      "bytes": 114748
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_42_2.vhd",
+      "sha256": "370501c833d22d038dc0943895d6a163a489bf7abd154fdc59d471309f269fbe",
+      "bytes": 161360
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_52_4_VITIS_LOOP_52_5.vhd",
+      "sha256": "f92582cbb73c4e7348a60be3c143f148a52f303574e4fb33b8da007d8af92930",
+      "bytes": 47951
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_60_7.vhd",
+      "sha256": "37b5ed68f0456744932c56e09452b3fcb1d9055733eebba7a64ee7deb6968e1a",
+      "bytes": 52176
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_68_9.vhd",
+      "sha256": "578a1cacbc41eb55ca799a85ec8f1ba8eef8cfbda319528ff17f026dfbedc354",
+      "bytes": 10042
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_72_10_VITIS_LOOP_74_11.vhd",
+      "sha256": "9f6e93fcb65ef3444ef8e800f992f9c66f3989881d1a4bb95b7919d6a6841041",
+      "bytes": 37990
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_80_12.vhd",
+      "sha256": "d7ced9f17ad1792bad68d82643159567002c2a836bc8e4c5f96bca5e48c02f20",
+      "bytes": 16101
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_85_13.vhd",
+      "sha256": "2668ce7af62f790eb54af5884e51d206fdba9630458c31e1d2b37184e3975ea6",
+      "bytes": 19771
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_coefficients_RAM_AUTO_1R1W.vhd",
+      "sha256": "d502fa6a04e90b4d39c48d40c09a9610c06bfd0a06274ce1b552e1ef7a8adae1",
+      "bytes": 2255
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_control_s_axi.vhd",
+      "sha256": "a05d12965e5447a432032e6d87ed992550a16962904c9a0331fd0d26a7731c2b",
+      "bytes": 27558
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x.vhd",
+      "sha256": "b18901bdad892b186a503e37ba16113c4b832a253954f3c21c565bd7ffb232bd",
+      "bytes": 3992
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1.vhd",
+      "sha256": "5952816df276738fdf9e236117f3c914f450b5c96acd71674593f74913645e8e",
+      "bytes": 3982
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x.vhd",
+      "sha256": "c827b780512bc4fc5d375a2f864712fd526594d55d50987b3507a22984899aaa",
+      "bytes": 6083
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1.vhd",
+      "sha256": "062a0e8faec333d26bbe82d77adca321c65e81f50776c1047bd0c03fb7484fca",
+      "bytes": 6073
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x.vhd",
+      "sha256": "c7beb21dd7aebcb1b47ad01eae1d61d433daac010ce04f3ea043b0557b234ec5",
+      "bytes": 3987
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1.vhd",
+      "sha256": "762c5d22b060d25eba531ba827a906fa1e874a8b75541fc5996462d5eba8089d",
+      "bytes": 3977
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x.vhd",
+      "sha256": "99aa682126949757fedfddd78ae797726c770011a4c056ff5a85b8bf1455c96c",
+      "bytes": 3987
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1.vhd",
+      "sha256": "041d486a6da19ae78ca59a84d8f0584cc8e000bbb2f721ea3f3504ecadb3f1cc",
+      "bytes": 3977
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1.vhd",
+      "sha256": "03af2d7dc678a63847a3ff540b5e8d7900fbb15a63d26115f4982e44080aeedd",
+      "bytes": 3982
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "sha256": "fcb4a114bf7fd2a3506d21b3d32419251a90c76c05c812ce747cd17cb0f1e129",
+      "bytes": 4531
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1.vhd",
+      "sha256": "547c3c5e9942b09a9d6c44a15920fbce737b4effdba29bb1b72bfb40a170a3c7",
+      "bytes": 5730
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_flow_control_loop_pipe_sequential_init.vhd",
+      "sha256": "6dd1b17f4eb6ea2d88487de5c558f6f68fcdfc61497f790654cead216f140fcd",
+      "bytes": 3594
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
+      "sha256": "66a88c9b7150fa8fd53be5f57717d2a35b06a01a802daf7298feef6d01ba2b1c",
+      "bytes": 3920
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1.vhd",
+      "sha256": "099d8a16e4f297d61ccf5dca9fb2d002d38c7ecff5b87e5e1b8d13dea0bf7377",
+      "bytes": 3101
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_kernel_cos.vhd",
+      "sha256": "bfd795680cc7f0e80982ee8a16f1cc202e087d165c790ecb1b6ed6eef3813798",
+      "bytes": 93134
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_mac_muladd_20ns_7ns_32s_32_4_1.vhd",
+      "sha256": "df56af56e3fba2526c04f340289539c4d0d69b873d96609658f5b0e85d2ac000",
+      "bytes": 3303
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_mul_32ns_31ns_63_3_1.vhd",
+      "sha256": "e31718d5d1431961f5794087fd55af860e2c3589defc159a740d680bd6a794b3",
+      "bytes": 1936
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_mul_32ns_32ns_64_3_1.vhd",
+      "sha256": "7c2612848dabe0bf8d25a432d2546fff60c72f7230ebfa3e666aabb1d3e48781",
+      "bytes": 1936
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_mul_7ns_31ns_32_3_1.vhd",
+      "sha256": "5e36fe9bc2f64142ff690dcb7b7b7248d1d987f2cd8c54049499642bcfdf247c",
+      "bytes": 1934
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_phase_mem_m_axi.vhd",
+      "sha256": "1ea9d751a37054674a347b13507e613635267ac809d0eb3006f4c6ad37a99730",
+      "bytes": 215722
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_samples_RAM_2P_BRAM_1R1W.vhd",
+      "sha256": "220ad164f2cf826b12d1d2bdfb6df319443040fd7b1aa9ea52a3a7872349a7ae",
+      "bytes": 2487
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_sum_RAM_2P_LUTRAM_2R1W.vhd",
+      "sha256": "9b6cedc5137b9639ec5e476caa2f047183432b304409828eba93e70648d60934",
+      "bytes": 2814
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x.vhd",
+      "sha256": "9815794e177bb51e9e0cf90a396305396399344f8a01fde57b0bfffa91c80264",
+      "bytes": 3403
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1.vhd",
+      "sha256": "3c324d1b1157787f39f34012da816539cc5eefdaf8656c9d1be180165d6639ea",
+      "bytes": 3393
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_urem_32ns_32ns_32_36_1.vhd",
+      "sha256": "0889878933c269a8122e9c95021424d21867a86042fe1a29b747661b7250eff7",
+      "bytes": 6302
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full.vhd",
+      "sha256": "6db4cbcd1c03391bd890c95bf8053ee8b781018f44604a00681f30abf025bcc9",
+      "bytes": 191041
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/misc/logo.png",
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af",
+      "bytes": 2297
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/pack.bat",
+      "sha256": "24fe78d5164172fe4aa4a31c9fe74ede817091d545e9ae80bff0f1bf8762fd58",
+      "bytes": 488
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/run_ippack.tcl",
+      "sha256": "4f0069f262c29cb4ef1177908ed8546c5c0aeb5049055c0ef7ffe03ebd01aa9a",
+      "bytes": 939
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/sysgen_info.xml",
+      "sha256": "82206d47cb35ce6b54e5df3cd28fb06c437fad5c18a101707d73224a189a7f58",
+      "bytes": 345
+    },
+    {
+      "path": "src/ip/motion60_full_temporal_v2/xgui/clip_temporal_full_v1_0.tcl",
+      "sha256": "ac2be8edbf594bce6683d1604d23afea0a5b2780f68fc4de34030d550a7f0de3",
+      "bytes": 10786
+    },
+    {
+      "path": "src/ip/motion60_shared/component.xml",
+      "sha256": "e819fbce8c251e6e3e58422a182aa9ad3e71cac2d2f3e691f49b6253aa52bcea",
+      "bytes": 537606
+    },
+    {
+      "path": "src/ip/motion60_shared/constraints/motion60_shared_ooc.xdc",
+      "sha256": "d1e51ede117e1cccd28b20ed92b577531ffa757188618d14436668dda6eb09b4",
+      "bytes": 394
+    },
+    {
+      "path": "src/ip/motion60_shared/dfx_runtime.txt",
+      "sha256": "a913b7a5516b473c08e79a4cf854b29c96165d4dc0f0189d31e560e497d34ab2",
+      "bytes": 114
+    },
+    {
+      "path": "src/ip/motion60_shared/doc/ReleaseNotes.txt",
+      "sha256": "4d014e57437c591bbcbdc72877633719249182e1946ab02a04358201679a3aa4",
+      "bytes": 112
+    },
+    {
+      "path": "src/ip/motion60_shared/drivers/motion60_shared_v1_0/data/motion60_shared.mdd",
+      "sha256": "617a5cc0aaf55711560d213b8518dabebc1c049c5ee9e8075805ad3cbeefb693",
+      "bytes": 625
+    },
+    {
+      "path": "src/ip/motion60_shared/drivers/motion60_shared_v1_0/data/motion60_shared.tcl",
+      "sha256": "0484711a3cb62b2206a6d65bea7256d4a508ed710d0bda142d6777a265279d95",
+      "bytes": 928
+    },
+    {
+      "path": "src/ip/motion60_shared/drivers/motion60_shared_v1_0/data/motion60_shared.yaml",
+      "sha256": "3fcca6f00bac0c228a3cad8c8373dcb85c2fe69ff28f81d84e798bb341bf4542",
+      "bytes": 674
+    },
+    {
+      "path": "src/ip/motion60_shared/drivers/motion60_shared_v1_0/src/CMakeLists.txt",
+      "sha256": "5048cd384ab88ac4445912a357da1a8afbb4d026b6918d8a3cb27d23ab7ae64e",
+      "bytes": 1246
+    },
+    {
+      "path": "src/ip/motion60_shared/drivers/motion60_shared_v1_0/src/Makefile",
+      "sha256": "db84eaad5941132e2d7a7679ab44b482abbe93323d37b8780d129f5649072d26",
+      "bytes": 1510
+    },
+    {
+      "path": "src/ip/motion60_shared/drivers/motion60_shared_v1_0/src/xmotion60_shared_hw.h",
+      "sha256": "5ae43522db0af1de9a772003ca9acbc3cb7a78f7e7216dfc963c7547f5f9467c",
+      "bytes": 4976
+    },
+    {
+      "path": "src/ip/motion60_shared/drivers/motion60_shared_v1_0/src/xmotion60_shared_linux.c",
+      "sha256": "e03935ae2b67feea8b2f3d6b82f3a3c8f487005e4b0fbf1fef009070be23f5ef",
+      "bytes": 4910
+    },
+    {
+      "path": "src/ip/motion60_shared/drivers/motion60_shared_v1_0/src/xmotion60_shared_sinit.c",
+      "sha256": "2c625922723acc7e664bd7f0a773881829378e09d94f6f7b158ac70c12fa7f31",
+      "bytes": 2186
+    },
+    {
+      "path": "src/ip/motion60_shared/drivers/motion60_shared_v1_0/src/xmotion60_shared.c",
+      "sha256": "8f779e5b7c46561803926914f603ccc69a6e0aa4d660f5028009ecd76c45bb87",
+      "bytes": 15352
+    },
+    {
+      "path": "src/ip/motion60_shared/drivers/motion60_shared_v1_0/src/xmotion60_shared.h",
+      "sha256": "25ddb72f102aebd94cc7f9ac161ad1fae6cd9458ca89d6e4b4767a41d47b559b",
+      "bytes": 5733
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/ip/motion60_shared_fadd_32ns_32ns_32_8_full_dsp_1_ip/motion60_shared_fadd_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "sha256": "2782dfa6395a4321f8d9fc886c8b356c1ecfd72918239668a5f523bf98251106",
+      "bytes": 62214
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/ip/motion60_shared_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/motion60_shared_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "sha256": "b4d50b8545252ad96c1505a22434c9c5a51ee5ce52af252672724723b15ec8cd",
+      "bytes": 68530
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/ip/motion60_shared_fcmp_32ns_32ns_1_2_no_dsp_0_ip/motion60_shared_fcmp_32ns_32ns_1_2_no_dsp_0_ip.xci",
+      "sha256": "9a39ce8620667099475b1c58a05b5465eaade1f3a68e8855dda5d8eabea9ee53",
+      "bytes": 68005
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/ip/motion60_shared_fdiv_32ns_32ns_32_22_no_dsp_1_ip/motion60_shared_fdiv_32ns_32ns_32_22_no_dsp_1_ip.xci",
+      "sha256": "df8896e046e43dddcf4a6b5b434ca96176f2b82cff33acb775460ae2e74acdec",
+      "bytes": 62206
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/ip/motion60_shared_fmul_32ns_32ns_32_4_max_dsp_1_ip/motion60_shared_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+      "sha256": "d581be2a901cc2cc57fe8ff7345492240ddd4530da65b2913a4c83ba3b584859",
+      "bytes": 62207
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/ip/motion60_shared_fsqrt_32ns_32ns_32_28_no_dsp_1_ip/motion60_shared_fsqrt_32ns_32ns_32_28_no_dsp_1_ip.xci",
+      "sha256": "795c8e2512779c649c763f21ce09d9ba8a3a3f25b2db718a85c9eb0c0d3893c9",
+      "bytes": 55839
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/ip/motion60_shared_fsub_32ns_32ns_32_8_full_dsp_1_ip/motion60_shared_fsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "sha256": "333d684d4566cf99131c73b9d31a11cf51a4ccce96ced33c4062574abdf2c1c6",
+      "bytes": 62219
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/ip/motion60_shared_uitofp_32ns_32_6_no_dsp_1_ip/motion60_shared_uitofp_32ns_32_6_no_dsp_1_ip.xci",
+      "sha256": "2a838a52684ec04268bf2d239a0b6a631cc23e3b8b30ecc00a00cc9fa809c2b9",
+      "bytes": 55822
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s.v",
+      "sha256": "0a81e38adb32dae8fff84c5d6ae63b02e4b48ef2620d8e89540af2f06b6ecfbf",
+      "bytes": 1150
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s.v",
+      "sha256": "8c26173fadfe46bdc7c5470de87949c01e303000ef92fc7b68c4255ff1480c48",
+      "bytes": 1043
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s.v",
+      "sha256": "4ad763343c286180e25320e9291c1a11c374e27f648bbf4476f091fecf873a8d",
+      "bytes": 1191
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_atan2_cordic_float_s.v",
+      "sha256": "4e2ad990126263e938fd7c6ecef455dfe1d417b5bceaacda027ce669a13f43c5",
+      "bytes": 152785
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_atan2_generic_float_s.v",
+      "sha256": "8f73ee1328f54ea53cc35a6027c3a445b2994465ad8699b6340d1e1fde436874",
+      "bytes": 219014
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_bitselect_1ns_40ns_6ns_1_1_1.v",
+      "sha256": "b457ec100cbc0bf124770cc7fe335f24f7d3040b1e9c105a42542378154e82fe",
+      "bytes": 1753
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_blur_fork_1024000_s.v",
+      "sha256": "b9b32adfab8e41942ca41b2b880e75d0812c208e4c0a1d6402b9bd249fbb8961",
+      "bytes": 10746
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_blur_fork_256000_s.v",
+      "sha256": "fde3a853798dc99702911150cbd7fe6e175f266a8af606024cb275794192d5af",
+      "bytes": 10743
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_blur_fork_64000_s.v",
+      "sha256": "2caae9c7d3af52ae317dfce70399085b26daac5e6e1c452c98596f133711a5bf",
+      "bytes": 10740
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_combine_1024000_false_s.v",
+      "sha256": "e568fc15c030558102c0c9bd75518afeddd4730b4e67348d051af33ceb801051",
+      "bytes": 15763
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_combine_1024000_true_s.v",
+      "sha256": "bab15c6dc1885c7fbc1311bb6156a6ca3413a9f02577c56fd01137ee653f1c0c",
+      "bytes": 15652
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_combine_256000_false_s.v",
+      "sha256": "34da96d0ee0d14b5fb22aba9cd2123cf5a704516152f837b0e6dd5ae092fd611",
+      "bytes": 15760
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_combine_256000_true_s.v",
+      "sha256": "dfd6d92b8c6e2e8efd0d77e4616b8f503246fd3e05951941aab82eb18c0b8115",
+      "bytes": 15649
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_combine_64000_false_s.v",
+      "sha256": "0551dcc685059a6bfbcda8416bace0e7d4fce5a108bb172fb50d1a34e87eb28e",
+      "bytes": 15757
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_combine_64000_true_s.v",
+      "sha256": "0bfea4c82640f2205036004a4ba206a427201d4dc230f0125aace5b0cafd1c0e",
+      "bytes": 15646
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_compute_phase11.v",
+      "sha256": "aa8644bd1c0a594243adab3e57e1d3c908cbf8d78610038319a1b49e4612d6bf",
+      "bytes": 462134
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_compute_phase14.v",
+      "sha256": "26a4c67ccf117f311f0aea3fb32d76f30137887fa2f0e92b005afc99c67a3010",
+      "bytes": 462133
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_compute_phase8.v",
+      "sha256": "ed095a97dee66781bc09b8d72289c6bd052d6d55b2750ccad4a3b0ea0e6e3683",
+      "bytes": 462133
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_control_s_axi.v",
+      "sha256": "7784d9155fcc1bcdd3c7b9a1d96cb30f3ab3f7d8cdfdf9a36e85482eda289b10",
+      "bytes": 23992
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_ctlz_30_30_1_0.v",
+      "sha256": "de56347ea7a07ce5e17f01475f0d8b9bf3188685a223ec686d1313b1f5b63a34",
+      "bytes": 2657
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_ctlz_32_32_1_0.v",
+      "sha256": "035ee591c1bc8387ef9fa19169e3db723655a5ab58b9a7964f86307a4874bc37",
+      "bytes": 2789
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_ctlz_40_40_1_1.v",
+      "sha256": "47467b2d07645ac84ae8acbdfc439c1dc55b005321816dfae1020cf4fe95586c",
+      "bytes": 3317
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_downsample_1280_800_s_line_RAM_AUTO_1R1W.v",
+      "sha256": "83f931e50b0a812ce9487e9f2c056e5f885bd9eb486c332c75a3d58091a25959",
+      "bytes": 1116
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_downsample_1280_800_s.v",
+      "sha256": "0605fba92b118aa8787f56b67e2723045507269c41448790e08b02fb3911978b",
+      "bytes": 40850
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_downsample_320_200_s_line_RAM_AUTO_1R1W.v",
+      "sha256": "b3c8fee7d7a4489821a9e7d8a7ea4067ffb359c5fb49a3dfeebd7d7654889020",
+      "bytes": 1114
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_downsample_320_200_s.v",
+      "sha256": "752a973779ecccf9994fe89290b69263d926539164eb3e7a87444fef7ed0b7f7",
+      "bytes": 40471
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_downsample_640_400_s_line_RAM_AUTO_1R1W.v",
+      "sha256": "a2cfaee1d45a9fcaaa9e4e58b9a46a0fbccec9fa1865554f56add84b3598ca9f",
+      "bytes": 1114
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_downsample_640_400_s.v",
+      "sha256": "3540550f78eb642633286cba4884722b2d37c9e49e3d27e9c810a94fe12cfa56",
+      "bytes": 40472
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fadd_32ns_32ns_32_8_full_dsp_1.v",
+      "sha256": "33a562a32851857f6f59f61790d0af014e3d8d1b2841ae4141a80b16d87e02e2",
+      "bytes": 2310
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_faddfsub_32ns_32ns_32_8_full_dsp_1.v",
+      "sha256": "58de4ca1a0b1b3ef68d43ec04e73b41c255499f4f34d31b325bffaeba5947894",
+      "bytes": 2655
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fcmp_32ns_32ns_1_2_no_dsp_0.v",
+      "sha256": "643e6f1210751acefd0258638e76595c26e207eb9930c033edd6b40294baf904",
+      "bytes": 3276
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fdiv_32ns_32ns_32_22_no_dsp_1.v",
+      "sha256": "fa5f710c038650618278663754e9008b354c968ca12085c2c2b67d02caee3c62",
+      "bytes": 2307
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w128_d128_A_x.v",
+      "sha256": "b7f26756884fd7a4d9e4262045f9828755fbc925c0599cd8e5be4750405675a7",
+      "bytes": 6697
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w128_d128_A_x0.v",
+      "sha256": "9f78e54cc9e6720a8bcdb5b29d0b67b3355ea66560de847acae9c9244313bf4d",
+      "bytes": 6701
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w128_d128_A.v",
+      "sha256": "6d4267db3c28714245798ff0483b35ed73c4cf34393da6deea376d76685476e9",
+      "bytes": 6689
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d131072_A.v",
+      "sha256": "d43d31d5607d0ae03880481d6e1952caf7aab69b8b2140a8337362b25f46cfc5",
+      "bytes": 6755
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d16384_A.v",
+      "sha256": "4249267376d304f2b5304db1ad828126f64068f5b3f143f03d3af29283c20991",
+      "bytes": 6697
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d32_S_x.v",
+      "sha256": "3711f074127ca4ee4434c70ac0f6ecb4d860f9fce2fe63242776cea79539d0af",
+      "bytes": 4332
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d32_S_x0.v",
+      "sha256": "e828a1e7fb5fc48e2e2133f201a2c38fb0d25fc6933a897849c8792706b6b6c8",
+      "bytes": 4336
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d32_S.v",
+      "sha256": "66de94bcc354dc3f569213a2b6f235b42621cc220245a679bfa61e30bb51a89b",
+      "bytes": 4324
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d64_A_x.v",
+      "sha256": "6a9c4eb92aa8c909035e87b5d1f9dcd6fb7d0b1f1fba25e0c6035dc6ce58cd21",
+      "bytes": 6685
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d64_A_x0.v",
+      "sha256": "507a01510cbe964604ac3dd89403156b3836ebef020b4c0ad83b6410c7dd983f",
+      "bytes": 6689
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d64_A.v",
+      "sha256": "d40127d52381541eda66e3e379ae19a1b3e82effb06483e6e818755a953eb073",
+      "bytes": 6677
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d8192_A_x.v",
+      "sha256": "00d44bf85d5ba6547aa3eefc15a9cabc2ae17b78b55383102dbe440b0b37ed7a",
+      "bytes": 6699
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d8192_A_x0.v",
+      "sha256": "1d984e31868204bb58355a618c9e84261141fa16ae6bac5582e2bcdf72a1d6fc",
+      "bytes": 6703
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d8192_A_x1.v",
+      "sha256": "1e249cf22bab7f1a5632bf4e25fd2537e7e41623ec5fc3ab75220ac473cd6f43",
+      "bytes": 6703
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d8192_A.v",
+      "sha256": "03ecf2ef72a19753592cdfb88e4c65e92e59bd15bf9a09bcdf3a9dd5d9dfb438",
+      "bytes": 6691
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w96_d32_A_x.v",
+      "sha256": "2cb90b93f15924aee89a90a66cb86c4ded9b39f4b6b1d2a89ff394fee297aeee",
+      "bytes": 6685
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w96_d32_A_x0.v",
+      "sha256": "6d09581a5c4c22978d3724462ae737166cb9ab0c4ca5748fb2566f2fd7973cb3",
+      "bytes": 6689
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w96_d32_A.v",
+      "sha256": "c394c1a0d2e865207515b1fea87642216c668338c493376a729b2417d6e55095",
+      "bytes": 6677
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w96_d64_A_x.v",
+      "sha256": "164bd4dcf43fbf9ea3647352b5dd3d6fa42a51487001f7db46d2095ea9a1dde5",
+      "bytes": 6685
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w96_d64_A_x0.v",
+      "sha256": "62c35f189c4710a4ca0d2e9435eb1a1b45ad3355262e79d5d5067c7b4ef911f0",
+      "bytes": 6689
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fifo_w96_d64_A.v",
+      "sha256": "1a22e91eb1d70f28f3fbc9fea3ba530f46c248693600b8457f1a0bf9ce5458c0",
+      "bytes": 6677
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_flow_control_loop_delay_pipe.v",
+      "sha256": "6cfe003848009aab90f6055439b52036ab4bde1c24fa2c7765161abf6354f84f",
+      "bytes": 2694
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_flow_control_loop_pipe_sequential_init.v",
+      "sha256": "3d6edfdf683a5dd2e1b790be9b539910778ccec6a3ecbaeae93809c3de7dcd62",
+      "bytes": 2935
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_flow_control_loop_pipe.v",
+      "sha256": "1bb5b62acbc1c937fef825c2f256118409e42ed4b702f6e2aefee8a44f608a03",
+      "bytes": 1940
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fmul_32ns_32ns_32_4_max_dsp_1.v",
+      "sha256": "366a04997962be08d668807ed4fa5b180b01b9438cc4790652981005f6b80d67",
+      "bytes": 2307
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fork_float_16000_s.v",
+      "sha256": "be3cc27af4e48f4ddd44b66ede51ad340352942721aabc09410b77474f8f24fe",
+      "bytes": 10714
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fork_float_256000_s.v",
+      "sha256": "cbe23129cf6a6d0cca94fd7068f61657cdee5b78186c60765f05031d1ae6d9f2",
+      "bytes": 10698
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fork_float_64000_s.v",
+      "sha256": "98c5109a4f9e7ae1f379a2016bc13badee947945c6c892a64d073470cf21680f",
+      "bytes": 10695
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fsqrt_32ns_32ns_32_28_no_dsp_1.v",
+      "sha256": "ed8cf2d0c48f748a164e5ec712b76689649d4127d7b4631206bd04a7f34fd3bb",
+      "bytes": 2047
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_fsub_32ns_32ns_32_8_full_dsp_1.v",
+      "sha256": "d167369b53fb244e148fe2360df9ab7ae3c545772e011e99933a67c717b1053f",
+      "bytes": 2310
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_hls_deadlock_detection_unit.v",
+      "sha256": "b6f502fc29a1a63ee5f583f97dfdc7aecac12da034afa06fe69ae96716ed6f15",
+      "bytes": 3264
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_hls_deadlock_detector.vh",
+      "sha256": "86d85175191c31f0f497b2ebc10816aad6edf06a0c9d412f37f15743dc1ed6b3",
+      "bytes": 378861
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_hls_deadlock_report_unit.vh",
+      "sha256": "3ef402fff2814a277c32261473905fd2dd03433ee761067d1418a82fb7931fc8",
+      "bytes": 519538
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_images_m_axi.v",
+      "sha256": "347a3de0986f3a87919fd2a4e40b22c78a2110e55baa75ddc422b5d475240829",
+      "bytes": 154618
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_mul_15ns_15ns_30_1_0.v",
+      "sha256": "a0bedb294c2c9f4e48742243e9f834c4e77ea6b7f73ff6fa78abbd4b8f10a48b",
+      "bytes": 709
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_mul_15ns_15s_30_1_0.v",
+      "sha256": "2078efb0471b71e8301452fd97f93fb7925097e0bab681bb4451cc2614a83b62",
+      "bytes": 700
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_mul_23s_22ns_45_4_0.v",
+      "sha256": "1b8033d2c2214cab4b48b68a1059df19732f961cf417c46f18f3e024fab4c5ae",
+      "bytes": 1127
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_mul_30s_29ns_58_3_0.v",
+      "sha256": "d9cb16af0e3ba343fd5de044c9304bd30ce9cc29ca2ae58353529bf1fd600f9b",
+      "bytes": 1058
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_mul_80s_24ns_80_5_0.v",
+      "sha256": "c6adcdb2268699951ff4a19548dbc9dabf5557e39b7fa31065f3f9148cf001e7",
+      "bytes": 1196
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_pack_history12.v",
+      "sha256": "f07bdd3efd885efb4f788171a976afdac9e37399a5bc0ea900eff058f62d7fe8",
+      "bytes": 29209
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_pack_history15.v",
+      "sha256": "83d5b5f479b803e0b45265dda37f43ac364c0f3ade3ee6386633ee2e9e0f2dd9",
+      "bytes": 29187
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_pack_history9.v",
+      "sha256": "8b099375a768f8f08f60405b643326ba3b369a2840b0b72d688b48de3710c9ea",
+      "bytes": 29181
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_phase_band_1280_800_s.v",
+      "sha256": "2abe9a1bc08bffb8624dd0f9ffe660eb592b752a202f22768766d1d560a04d36",
+      "bytes": 19266
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_phase_band_320_200_s.v",
+      "sha256": "1ca6646399638c4b6894e0aaffcdc0108844b5e11aae1d0a771d6593584d0c83",
+      "bytes": 19491
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_phase_band_640_400_s.v",
+      "sha256": "1a83cf60505b46c233366c18277b56f7ef1fe3d4ac081db030bfb566988f849a",
+      "bytes": 19490
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_phase_core_shared_1.v",
+      "sha256": "8505877bf3958233ba4500d084545d3c53abdee8fa17864542b934bde92e1c86",
+      "bytes": 24281
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_phase_core_shared_2.v",
+      "sha256": "175cb2d0e99eb7de61c5694d02d53bc96d0967ba540262acd06912693a7bec8c",
+      "bytes": 24278
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_phase_core_shared.v",
+      "sha256": "01ef9df1d7f50060c04c3581cc54d544bafaf6d4f535ace36ed386707295517c",
+      "bytes": 23981
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_phase_dataflow_6.v",
+      "sha256": "beaae5d10a50afd9109ef764aa207d9f9424f8c1958ab3ed912329f84ff38030",
+      "bytes": 30478
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_phase_dataflow_7.v",
+      "sha256": "cd3de363bdfbfc80ee03060eb41ba1a1bae83f249b7453c5cb0fe8affb530351",
+      "bytes": 30702
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_phase_dataflow.v",
+      "sha256": "8b1c863b3ef000c963f5b8d254b31dfe5d899e51b26db904afaa6947709846fa",
+      "bytes": 29869
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_pyramid_1280_800_s.v",
+      "sha256": "397e87f3ffb042c5ff399ae10e1aa263cc990913350edd0b53a45d42865cc9cc",
+      "bytes": 22713
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_pyramid_320_200_s.v",
+      "sha256": "b7ab39c00c37082677c3caf1639170eb5215ad14c64939b081a96fd219eec838",
+      "bytes": 21349
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_pyramid_640_400_s.v",
+      "sha256": "4cb60e06a7fa385e4210dec2b82f5a6d0ab857009c078f86b080bcd10cfe78cc",
+      "bytes": 22546
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_read_image_Pipeline_VITIS_LOOP_155_1.v",
+      "sha256": "3434a93103ec11e733fb25beb2c010402f69fe5398e8a75460f1c88a9584e45b",
+      "bytes": 17176
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_read_image.v",
+      "sha256": "a3f83d9c821f055c7992d402ade1a291c196e6ba5f41fa26d37abd6de2d564f7",
+      "bytes": 24224
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_read_words_10_Pipeline_VITIS_LOOP_10_1.v",
+      "sha256": "0f09a6f643e2e6248c26928c19c377d60f9bbe4e8b1e42e9250f79a7a622add7",
+      "bytes": 15331
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_read_words_10.v",
+      "sha256": "1e0a40bd5939d920b274c1f34494ef963dc72294a1ca37b71fbf44c1ea7a48af",
+      "bytes": 26466
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_read_words_8_Pipeline_VITIS_LOOP_10_1.v",
+      "sha256": "6a7dce3153e76f7c1869bc2ef4f0b5e15017ef07ee82fdaf0fcb7c6a39bbde82",
+      "bytes": 15329
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_read_words_8.v",
+      "sha256": "e99106e7fe80bfc9f2d0f78cdc74f693db346fcf6cdbdd0306903006adf78bdb",
+      "bytes": 26368
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_read_words_Pipeline_VITIS_LOOP_10_1.v",
+      "sha256": "04494f555612a81767a2839a2fd27ea389116ce32854fd95801b928967ba0dc9",
+      "bytes": 15325
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_read_words.v",
+      "sha256": "39ad380a03dcfc3027415a257c9d09b79f44d10835395a374a26a5cedb8fb9da",
+      "bytes": 26162
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_reconstruct_1280_800_s.v",
+      "sha256": "77647c9de63982e9817ad6976c186458568f65aa11a6fcf7fbdf885d5ed52cca",
+      "bytes": 7817
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_reconstruct_320_200_s.v",
+      "sha256": "86af374291fb57629ad5c04005f6aa4650273e9aef4282bbdf3ce19fad802b7e",
+      "bytes": 6475
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_reconstruct_640_400_s.v",
+      "sha256": "5668cc10d790408aabf20292531aceb3b5becb694d20c8579850be71735bd639",
+      "bytes": 6538
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_shared_dataflow.v",
+      "sha256": "6a4f9f7dea1c333c6518f9ba1e742fcc91dfb6ba15d6f2e92f9d3983afaef1b5",
+      "bytes": 85129
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_ref_4oPi_table_100_ROM_1P_LUTRAM_1R.dat",
+      "sha256": "23e7b6ada4960c44799063428d0699a45535601591133b306f5aa790263ae17e",
+      "bytes": 351
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_ref_4oPi_table_100_ROM_1P_LUTRAM_1R.v",
+      "sha256": "364d8ee17f370c0a16ffec7dd97e5f0fdfeeb221cdc5b52153e913739748b4b2",
+      "bytes": 1031
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K0_ROM_1P_LUTRAM_1R.dat",
+      "sha256": "0b18fd5bc1d7956a7dd46c124f9702f0ab2b9c74604b6390ccdab2e2494daeb3",
+      "bytes": 2560
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K0_ROM_1P_LUTRAM_1R.v",
+      "sha256": "4a60a856ad6cb0e307046fd1b997f7bd5aa316d7277b4432401b51666a304eb2",
+      "bytes": 1053
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K1_ROM_1P_LUTRAM_1R.dat",
+      "sha256": "f47e4abaadfe719f7ef3fbff6e665150ac9e4b1582c4a73593b06c9ede1fb5d0",
+      "bytes": 2048
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K1_ROM_1P_LUTRAM_1R.v",
+      "sha256": "61b62c8238c94ac95cd61ec2003a8d540b927d75e57cf54342de3279b6018ba5",
+      "bytes": 1053
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K2_ROM_1P_LUTRAM_1R.dat",
+      "sha256": "bef4d5d1dae7ddf041a4beec5974a6aa9784f867c47cfe9451d79b090245c12c",
+      "bytes": 1536
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K2_ROM_1P_LUTRAM_1R.v",
+      "sha256": "5f9d7e09c6b232c257f5085adb5468b687bdac799b87bbbff26fd4ea40ca201f",
+      "bytes": 1053
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s.v",
+      "sha256": "4954e0db899fd58ae43fbcef24f3da5906ea782dfd4ae5b180cbf1f0aa825ec7",
+      "bytes": 44376
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_sparsemux_11_3_32_1_1.v",
+      "sha256": "61dd9001e712a780e2cf84c76f729c837f87124f02e1366a6930af805c06506e",
+      "bytes": 1555
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_sparsemux_17_3_1_1_0.v",
+      "sha256": "dab24eb26aca1f251d7e51c495c4395a81f83611b1ef4b643e06b018756d6200",
+      "bytes": 1980
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_sparsemux_33_4_1_1_0.v",
+      "sha256": "a51be135dea196a239a99ecc03eadbbdf9d546a8dad4c06f908d72bcc05d72b5",
+      "bytes": 3158
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_srem_10ns_4ns_3_14_seq_1.v",
+      "sha256": "58f813710207eec27b91719954a042401aed5be4200462a6ba411cdb54caaa85",
+      "bytes": 5517
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_srem_11ns_4ns_3_15_seq_1.v",
+      "sha256": "7591d590c9a8693143cae1762fdf7b73327c901220ac2c4c1eca9bbf8801c554",
+      "bytes": 5517
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_srem_9ns_4ns_3_13_seq_1.v",
+      "sha256": "d54d4dd33e33f4988df1fea31a2bf973be19e4ac12c3d24ebcb60de16d903b47",
+      "bytes": 5513
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_blur_fork_1024000_U0.v",
+      "sha256": "f9bd84bd28c0cce7eb5ad6301f07d07c4748da7e3594a0c3ca6b4ff85dc2c596",
+      "bytes": 4176
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_blur_fork_256000_U0.v",
+      "sha256": "4c242f0a838de444984f58076d649f5271b961cd8ca733fe0f86fd9556cd207c",
+      "bytes": 4172
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_blur_fork_64000_U0.v",
+      "sha256": "22c276d733f7f7fcd5d2f80a85cdafa269b703ddf421628f5ce3b2de23a05ee2",
+      "bytes": 4168
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_combine_1024000_false_U0.v",
+      "sha256": "7dafc636961e545b4f1afb6fbc1eab26b9e4bc1dea1b3226cc6cd1c1c3336b97",
+      "bytes": 4192
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_combine_1024000_true_U0.v",
+      "sha256": "626613967256ed0fb76a8296c93fd5406014274534ecaf56db10d4c988edff56",
+      "bytes": 4188
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_combine_256000_false_U0.v",
+      "sha256": "15053a8414c4a4933e882cf416cb3461fda3deac7f21de3b8958010a3220bdd1",
+      "bytes": 4188
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_combine_256000_true_U0.v",
+      "sha256": "7653db712cab8db89ca41353b7ad9d7639d4bd2361518bc3e9e56df225716b88",
+      "bytes": 4184
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_combine_64000_false_U0.v",
+      "sha256": "b088728d8e6800b9acce820fed67008fcba88f520b1c9531d7dcda35effd617f",
+      "bytes": 4184
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_combine_64000_true_U0.v",
+      "sha256": "2b0aa6b9566ced335fd80bd082e14500282bf9025ca150713e4869bb1fd4048e",
+      "bytes": 4180
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_compute_phase11_U0.v",
+      "sha256": "d168a630fdbb9b5a4584ad08ce6ca3809d2003f1920757bb4e0cbf995ef8848c",
+      "bytes": 4168
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_compute_phase14_U0.v",
+      "sha256": "8da53aa747b91809b9a06b467b4bc5568cc76ce252e32e217068559c2465419f",
+      "bytes": 4168
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_compute_phase8_U0.v",
+      "sha256": "0cfa95333638b02f1f432ab3b9d17cb94fb921f656ddc2038d171b56aff888a5",
+      "bytes": 4164
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_downsample_1280_800_U0.v",
+      "sha256": "92eaf0700b279a6db60d29ec0e618b89ba50edf82e5c6ebb55e2827a9a1197f3",
+      "bytes": 4184
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_downsample_320_200_U0.v",
+      "sha256": "3b0f7db17dfd6f74efa819bfe8aa404e49f8f1b54364210a676ee07ba093bdd7",
+      "bytes": 4180
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_downsample_640_400_U0.v",
+      "sha256": "c71bc7f88d400aa2c370779af7c20eca7053e4f17059e77b25039401e700933e",
+      "bytes": 4180
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_fork_float_16000_U0.v",
+      "sha256": "c426e9bf2956a9668f714ff771db54a723bc457b526fb1fbe8f55af63b77f89a",
+      "bytes": 4172
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_fork_float_256000_U0.v",
+      "sha256": "4e997be0ae4021fbf710ae46f3249329c95f53df3183629d665d41a5fc81f4bc",
+      "bytes": 4176
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_fork_float_64000_U0.v",
+      "sha256": "8675f2c7130e14cb1b290a655cc7c52b98457b30c2a1186e875eb8e566931cc8",
+      "bytes": 4172
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_pack_history12_U0.v",
+      "sha256": "6c9f069642542a95eeb9c74354e5d24ec66453c6cff3fb28b707925107854b48",
+      "bytes": 4164
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_pack_history15_U0.v",
+      "sha256": "2dbc3029b51f7287b94111b6086d9562fbf65c8c41b7b0e07a119017a3c1c36e",
+      "bytes": 4164
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_pack_history9_U0.v",
+      "sha256": "8cc0d6301fae6ff883fff35fbc70aa2e2911b25f257fece76ca5d5ce4737e732",
+      "bytes": 4160
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_pyramid_1280_800_U0.v",
+      "sha256": "382c04dabe608a0eefb8d15b10a3b1d5555cfa297a3b3d56728c86ad29c9f898",
+      "bytes": 4172
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_pyramid_320_200_U0.v",
+      "sha256": "76c9d93765e136f39ec779e57b2793c6cd62540c76809cda2bd1bb19a3e50d62",
+      "bytes": 4168
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_pyramid_640_400_U0.v",
+      "sha256": "e6415143769aad7350be24a26a58027633a9788024bffc9f524bbf7b6401aa28",
+      "bytes": 4168
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_reconstruct_1280_800_U0.v",
+      "sha256": "41af6e572fd5c6163b6333587b9250d1ae6863fa61a69c8c21516d1824d14202",
+      "bytes": 4188
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_reconstruct_320_200_U0.v",
+      "sha256": "01c4836ffad9286f1982e0fce16eb5fd398d20b711968c2ce4b2c09930ae0ae3",
+      "bytes": 4184
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_reconstruct_640_400_U0.v",
+      "sha256": "3ee1df514a6510f9ca6cfde0cfc52bc1a571db474cee4da506f4a35ab5e99a34",
+      "bytes": 4184
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_unpack_history10_U0.v",
+      "sha256": "d9d0f006576878fabf8c732a8677b3dd0ad6d5362e5183a12df2bcf5ea8e6d09",
+      "bytes": 4172
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_unpack_history13_U0.v",
+      "sha256": "acccf8135a2034fa12ab8f33565c7cc05aa12ccef1670d65e5b2ef61daee0431",
+      "bytes": 4172
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_unpack_history7_U0.v",
+      "sha256": "4242038b696ec240a3ae6800811625ee4e38c35232656e3b9d31e838a259ff46",
+      "bytes": 4168
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_upsample_160_100_U0.v",
+      "sha256": "ddcfa4a3d3c7eb1048a2f059d4137bd58bfe27409862f28772b05c13abeb3a02",
+      "bytes": 4172
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_upsample_320_200_U0.v",
+      "sha256": "484975f02828e33b6da43369c0022049132acef2bfcd2024c6d99b4d01181f79",
+      "bytes": 4172
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_upsample_640_400_U0.v",
+      "sha256": "9398515c3694660ba777e4876b31427e8e251c1da4207fa1def3dc1d51429e8a",
+      "bytes": 4172
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_write_image_U0.v",
+      "sha256": "62f98a695e7253dc3b6b5cffa87e1a3c91c8e63d2c4c666f864acf75accf36f5",
+      "bytes": 4152
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_write_words_11_U0.v",
+      "sha256": "830ac016deb227033e4819794e9e2c2888105ca8dd9d54cb10b1220567307e47",
+      "bytes": 4164
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_write_words_9_U0.v",
+      "sha256": "d056604612109bec56186c41de1849d2fcb0c36c600b198f07a1ed9c17e8d5e5",
+      "bytes": 4160
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_start_for_write_words_U0.v",
+      "sha256": "ae554e3fd55bafd60ad7c205e1515ca4af6b77a95fe6c10be5c0f85449326110",
+      "bytes": 4152
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_state0_m_axi.v",
+      "sha256": "3a191095f956b59dfd75ad90e7b874c6ac29c97b5ff1f5ac7c962c2e83a5c8b1",
+      "bytes": 154618
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_state1_m_axi.v",
+      "sha256": "d82d6de65cd8678cc4d0c83c6424c424d127c6660caf1d7022e460a1801d400c",
+      "bytes": 154618
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_state2_m_axi.v",
+      "sha256": "8ae53b894030dd25bb2b71ecd7f697c4f84a3a627225c1dd35c235235740ee60",
+      "bytes": 154618
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_false_Pipeline_horizontal.v",
+      "sha256": "dbf0493cb5fccba33359feaa717720df53abd428a70d524e5b49d135b0e21bc4",
+      "bytes": 55836
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_false_Pipeline_vertical.v",
+      "sha256": "aac356a258d73d7fc0173c1edda5628daabe33234e1d691f28373bde00f30454",
+      "bytes": 48189
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_false_s_even_RAM_2P_BRAM_1R1W.v",
+      "sha256": "da06bdf2dd7fd628b9e46de6e71e489caa917b0ac56a4e0fc3b76a8244eadb97",
+      "bytes": 1124
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_false_s.v",
+      "sha256": "c67e820ad377d4dddb4751e1a08bdf07d6c6867d258531c726c00574a86f3fff",
+      "bytes": 64259
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_true_Pipeline_horizontal.v",
+      "sha256": "e9b459b4d05bf139e387289b982115a97164091604b080b335bda602d6a4091f",
+      "bytes": 79660
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_true_Pipeline_vertical.v",
+      "sha256": "d503ba4eb8971018824dfea38b397b0540ee859a59b26bd080fce5b5dd1ea9e4",
+      "bytes": 76639
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_true_s.v",
+      "sha256": "423b3e7cb07323e9691409c639f9c485ba37608acd1a5bab823be7f66864bc7d",
+      "bytes": 104689
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_false_Pipeline_horizontal.v",
+      "sha256": "fcc7628923c120c15abb75304775fa7ce9b8a1ae2d2d6371ca691e09a7bb9213",
+      "bytes": 55771
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_false_Pipeline_vertical.v",
+      "sha256": "71b3a010352d5027fe7d2ecbff90ebd7dbff2967d53f0be4fb4f54f8a4bf7031",
+      "bytes": 48178
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_false_s_even_RAM_2P_BRAM_1R1W.v",
+      "sha256": "6361801c7b0a024b464194b45935dec3bbd65b79b20a0f46b049b82254ed5e5a",
+      "bytes": 1121
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_false_s.v",
+      "sha256": "42bc32e0a29dcbef9340322943829a9823cfe25df9b093fe38731e02c91afb8e",
+      "bytes": 64732
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_true_Pipeline_horizontal.v",
+      "sha256": "62b6f73462892677e3f743855c842346f743c627f9c4d43925cfa928d0f6693f",
+      "bytes": 79553
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_true_Pipeline_vertical.v",
+      "sha256": "f32dcaaf05130bb895b34f5b45b02dd7043cda2ae5067a6ded8f55bc862ecdba",
+      "bytes": 76567
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_true_s.v",
+      "sha256": "be35c89eabadd242b0304b967a3e15690140a00396d4e7e920df6c44a8d1ca93",
+      "bytes": 104776
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_false_Pipeline_horizontal.v",
+      "sha256": "08d687fb597bb14b3cf499348abd2ba8f9e01a401967213465f56671afd268e3",
+      "bytes": 55758
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_false_Pipeline_vertical.v",
+      "sha256": "a481bb371a48cbb7ac7e69ed44e567a8a310a64ed268eea308b19d3ef78fada1",
+      "bytes": 48168
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_false_s_even_RAM_2P_BRAM_1R1W.v",
+      "sha256": "ee2c37b4699538a87ee96be6d19e2519d417612599394c1d056e171042160f06",
+      "bytes": 1122
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_false_s.v",
+      "sha256": "c86bb9eb7ac493c47debd18da465b3efb252149dcc9adcc32750600872d0555e",
+      "bytes": 63664
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_true_Pipeline_horizontal.v",
+      "sha256": "5809a0e49985371ed1e7a6851a97d5b2c35087d90b9ae5f0ae220d2309ed6412",
+      "bytes": 79521
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_true_Pipeline_vertical.v",
+      "sha256": "d633d7f9c400eec4158e78dba2957c62fc277d8597862a2d4193ad3db7e3a220",
+      "bytes": 76551
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_true_s.v",
+      "sha256": "23dffc774a454798a6275e09e696f8d7c5fa15c8596e3241f52af8a989050ff8",
+      "bytes": 103737
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_uitofp_32ns_32_6_no_dsp_1.v",
+      "sha256": "ae623c2d565cf87967585e829075f94e866d37d82f6592876b79382c1a5faf48",
+      "bytes": 1990
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_unpack_history10.v",
+      "sha256": "a045dff9927610bff06262440adf5da9a8bb303a05ed5d1ca5ffc3734b2a8c50",
+      "bytes": 30154
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_unpack_history13.v",
+      "sha256": "7fc690b2108356688afd99eb43b9ded64fbcf3ff439d60d7a99f36f967eece06",
+      "bytes": 30144
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_unpack_history7.v",
+      "sha256": "1564f18e7a28797d538b00a14007a0e097d4b089906f5e7305880439bb2ffa96",
+      "bytes": 30111
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_3_Pipeline_VITIS_LOOP_104_3.v",
+      "sha256": "36a247b2cec8b23338c26bc802da39816223637a789abad444e4989beffac6de",
+      "bytes": 38223
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_3_Pipeline_VITIS_LOOP_98_2.v",
+      "sha256": "e53b35e72e51f408b68520a3988ea3633cd671cddf6d0e5287e792ab28256b69",
+      "bytes": 11037
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_3.v",
+      "sha256": "451618664296cc3893b5da0c4cd080030dff08baf008cdc5dc6384b6898a470b",
+      "bytes": 25910
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_Pipeline_VITIS_LOOP_104_3.v",
+      "sha256": "f9a0ed0eb8e698ba545cae709070e2a8479fa5f5e9fbb2414fd1549be0cdd6e8",
+      "bytes": 38215
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_Pipeline_VITIS_LOOP_98_2.v",
+      "sha256": "47bffdfd9de4b6b60a2765b91a634c9e40fbd728bcdf40427a0df0103d4ea10a",
+      "bytes": 11127
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_s_rows_RAM_2P_BRAM_1R1W.v",
+      "sha256": "ee9d7e2bd046e790c280a41085a5498a46ef645a361a0e66b7f243415a447b9d",
+      "bytes": 1202
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_s.v",
+      "sha256": "7a01fcc33a56236cc4d4d634928e53a0539dda115ff63ac8c454909e1015d187",
+      "bytes": 24732
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_4_Pipeline_VITIS_LOOP_104_3.v",
+      "sha256": "6ba197781723092997ba2c812b03f50626712c4c691a4968e5ccc7325dcefc05",
+      "bytes": 38232
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_4_Pipeline_VITIS_LOOP_98_2.v",
+      "sha256": "92e3fb91fbebb2a315ce8ab10027a1d8142f3ffddc19631e20e26dae711f3da4",
+      "bytes": 11001
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_4.v",
+      "sha256": "28d1e2e5eaca28fee96f5adc4b0e5241c0946628aa01c0bc78af837761b9a41b",
+      "bytes": 25859
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_Pipeline_VITIS_LOOP_104_3.v",
+      "sha256": "fc426e39dc78f1620b27176aa1132664e78b86df7cfbb1a47dc0e03737e6cb05",
+      "bytes": 38223
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_Pipeline_VITIS_LOOP_98_2.v",
+      "sha256": "c6b3655685f9b286967dd6a121c4b9c37fe0d7faa29966cdc555fefb1b6bc739",
+      "bytes": 11115
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_s_rows_RAM_2P_BRAM_1R1W.v",
+      "sha256": "b8cf67ca9907a3b9f4f0ba511dbbfa34bae5c771b1c4764cc21c35594d98371b",
+      "bytes": 1202
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_s.v",
+      "sha256": "a4616ba98551cabb3db9ccf9ff4840c173bfe5adc95bedb0eb7a8c30e240e837",
+      "bytes": 24732
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_5_Pipeline_VITIS_LOOP_104_3.v",
+      "sha256": "86b492443b1ed93d008a4685da1bea64bc0413f7710fb04b3c01074476de29ba",
+      "bytes": 38241
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_5_Pipeline_VITIS_LOOP_98_2.v",
+      "sha256": "1c4b29e4638a73972ac4ada9544811ce7ea02b741813a993ce8201d8188d8904",
+      "bytes": 11006
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_5.v",
+      "sha256": "c757ef860615f3a5b3d3ea2ebd682c3b4224a00837ad40b86bf2bd026ffe7271",
+      "bytes": 25869
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_Pipeline_VITIS_LOOP_104_3.v",
+      "sha256": "b000ef8ed1f461435c34396803bde241a84e94b423e5c07add1d391d4c869ae7",
+      "bytes": 38228
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_Pipeline_VITIS_LOOP_98_2.v",
+      "sha256": "7e9f466dc5dbb914907dc424b399ddd8ff08987dfd8ce1e787c7a9645bdaf02e",
+      "bytes": 11120
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_s_rows_RAM_2P_BRAM_1R1W.v",
+      "sha256": "3dfb97bbdd610558d743081134228f1b84704203a87a1f185514a9727d07e75d",
+      "bytes": 1203
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_s.v",
+      "sha256": "70b501f9f0ff555efeb644b42a222fa5ec339ba7d552bb246c4f4f51f7455f33",
+      "bytes": 24712
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_urem_10ns_4ns_3_14_seq_1.v",
+      "sha256": "61a3dc61ac3fd1a410835817cfe3e2deb15e5a02b5033ee684b0175dd74b9627",
+      "bytes": 4671
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_urem_11ns_4ns_3_15_seq_1.v",
+      "sha256": "b0f2e44e0e78c8774f9d3d28f968a1997737ea2a5d8aecadfbd22c8579ec5708",
+      "bytes": 4671
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_urem_8ns_4ns_3_12_seq_1.v",
+      "sha256": "251516a946f781a5ae0779c923a0eae00ea3d7d43bbce6819a1a46a7ce227ebf",
+      "bytes": 4667
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_urem_9ns_4ns_3_13_seq_1.v",
+      "sha256": "99c675dbe58b1773fb6a20e75c9147bbb382ad0d31f76123faaf8a47352552f2",
+      "bytes": 4667
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_write_image_Pipeline_VITIS_LOOP_161_1.v",
+      "sha256": "586c62509a2cba61a3f127eb74c6a143a0c9686835895973686d5881b233d46b",
+      "bytes": 26382
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_write_image.v",
+      "sha256": "8bed44104a2a82b1bf21c8ad276a5b31c1b7f33e786fb0956598d6f3acb08f9e",
+      "bytes": 23829
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_write_words_11_Pipeline_VITIS_LOOP_17_1.v",
+      "sha256": "141ba97fb6b08aa3b7ad9ac972f80b559f3cd26a47e99e5b6dbd5e2d5756e000",
+      "bytes": 13775
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_write_words_11.v",
+      "sha256": "14356e7be9a002fac62eacbe71c1db54b1f34944cb024a982e4f5a2e8105bab9",
+      "bytes": 26045
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_write_words_9_Pipeline_VITIS_LOOP_17_1.v",
+      "sha256": "38fdc6e54b8140ded0a3b57ab74b8c36e461a6848f01dd763ad5cc8f39b177c0",
+      "bytes": 13773
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_write_words_9.v",
+      "sha256": "e85a8412ab5352bd685a5e883fd23b551c42ec6a593b19f8bb62396f01a6c5d0",
+      "bytes": 25947
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_write_words_Pipeline_VITIS_LOOP_17_1.v",
+      "sha256": "a62fa62ea8d5bce4e4743ac7203002b5690c882e79b528952e8afd145788c78e",
+      "bytes": 13769
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared_write_words.v",
+      "sha256": "41f61f6a3ce7fa8f47b9551ed22a0f5359d3da4ed292730051d20fb1930ab0fa",
+      "bytes": 25741
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/verilog/motion60_shared.v",
+      "sha256": "56c24f81bdc8a13039d09bc6d68ae43b665f69ae191ee1d28eae9c696fb12b48",
+      "bytes": 71851
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s.vhd",
+      "sha256": "45dfe74e364ed0c1a4331e124f7e53d9b71c9f8ca0830f04bd880ebb427d1447",
+      "bytes": 1794
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s.vhd",
+      "sha256": "aca5bab3e7dcd8d768b959cc4042248ab0c66a5c89f4051131b339b8404fba44",
+      "bytes": 1605
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s.vhd",
+      "sha256": "1650f12f7139ec4350d0a25405e882fa02a3de5995fc70866dc351f07d428251",
+      "bytes": 1784
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_atan2_cordic_float_s.vhd",
+      "sha256": "9bdbd0de354b06fc275d84006c3142de17fe39dc74dbcaf655701b7c5f1f71c4",
+      "bytes": 211951
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_atan2_generic_float_s.vhd",
+      "sha256": "bdec1c9a2e846af4ca6e455236e9173dbcd68b381a49e626252717aff30c24dd",
+      "bytes": 301066
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_bitselect_1ns_40ns_6ns_1_1_1.vhd",
+      "sha256": "8d01f30b0e4971c7557c93255c5c06976907c0ffceff3740787e57d6bf87f118",
+      "bytes": 4427
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_blur_fork_1024000_s.vhd",
+      "sha256": "a64e707329e8eb09aca80ce0a7596efbcbf7a133cac230e2b58afd00bbc87be9",
+      "bytes": 18238
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_blur_fork_256000_s.vhd",
+      "sha256": "b8d265db199d779d9fc7f6c28c8fdeabb7f5d07d4cd94d3e1850285588f1bcfd",
+      "bytes": 18228
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_blur_fork_64000_s.vhd",
+      "sha256": "27176c036c0ca0f03a2c307d3fbb497838b338392046f80ce8ba1e0de0d0675e",
+      "bytes": 18216
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_combine_1024000_false_s.vhd",
+      "sha256": "a6eb973af308635ce2fca729081d768fc4cc712817648bc7efda794071416a92",
+      "bytes": 26489
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_combine_1024000_true_s.vhd",
+      "sha256": "3f3e9a4735c74e355a1942a8611baff6e0c94a96ce5b1e892b5a420b0d4e4add",
+      "bytes": 26379
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_combine_256000_false_s.vhd",
+      "sha256": "7d640849d7dde6e2c115f9aa23b24c3897dae47f689c287e9eebe17ed29c89cb",
+      "bytes": 26479
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_combine_256000_true_s.vhd",
+      "sha256": "7fb0105965b6e42fb2194779e497cc1cf46d76650f77d73c051aabf832ae09a7",
+      "bytes": 26369
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_combine_64000_false_s.vhd",
+      "sha256": "7cf8bd2955a04d405d2afb1d8a97f1de6d721af687d58898ad34797b19f9dfc7",
+      "bytes": 26467
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_combine_64000_true_s.vhd",
+      "sha256": "5257208d06179ff63e2385682809da5215338c029997954706b0b3852134d6a8",
+      "bytes": 26357
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_compute_phase11.vhd",
+      "sha256": "8516bf6ef15af6f5820e49001f319fff1c8457b7060d0ed27b5fe2d1e4d11d35",
+      "bytes": 652312
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_compute_phase14.vhd",
+      "sha256": "e6652c4fb66b8e5c3c41023260f84ef5a25b4aac21f324bd50a8067e8e28bb64",
+      "bytes": 652302
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_compute_phase8.vhd",
+      "sha256": "71b20bde2f08a224f504370ab492b3de27f0d07cb92f327ddb575e2786d54d39",
+      "bytes": 652318
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_control_s_axi.vhd",
+      "sha256": "439390e2c7338475aef179b018f62ceb5067c375f3d696f470eedb19780c2fdc",
+      "bytes": 33784
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_ctlz_30_30_1_0.vhd",
+      "sha256": "29998f354664308476c2eb028a522e6415134427fa15b5efb1f9b00162d01e78",
+      "bytes": 1273
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_ctlz_32_32_1_0.vhd",
+      "sha256": "4de0a85254fa84deb9473a29c41a70e2a4a261335c619b8b75efc8409841fd92",
+      "bytes": 1273
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_ctlz_40_40_1_1.vhd",
+      "sha256": "e43bd5bc65a7d6a2542061f9fbf769f112c22ff6c067567e885ea8c4227db6f1",
+      "bytes": 1273
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_downsample_1280_800_s_line_RAM_AUTO_1R1W.vhd",
+      "sha256": "a2e83a3121eae099ca27f8bcf72d9ad9ddfab92a36589657798172275568f14b",
+      "bytes": 2506
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_downsample_1280_800_s.vhd",
+      "sha256": "162ccd8b48a7dd98bbf44b0862883be88e60857d55d496fdf0e48558cb2a1734",
+      "bytes": 68914
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_downsample_320_200_s_line_RAM_AUTO_1R1W.vhd",
+      "sha256": "6a00763e0258259f05921808e43a842d51e5abf487174a91b045d9d37d1ef12b",
+      "bytes": 2503
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_downsample_320_200_s.vhd",
+      "sha256": "cfae7cd55fe27d67a833f36b99c2df18c4ca9dc895b1f05cfa4c18054b56b215",
+      "bytes": 68145
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_downsample_640_400_s_line_RAM_AUTO_1R1W.vhd",
+      "sha256": "f7144aaac42c1c2510c7382db69ef9e8c7d874894d5def58efd0b8234d8f3d01",
+      "bytes": 2503
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_downsample_640_400_s.vhd",
+      "sha256": "6c9aad60aafea0be088a59ba1ccacdc88e0b95d4849178a0fb333f09008198d9",
+      "bytes": 68162
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fadd_32ns_32ns_32_8_full_dsp_1.vhd",
+      "sha256": "6a5474a46cc3a59af203732ecb12814820a7e8a7278afe6dd909a2c6ff01134f",
+      "bytes": 3910
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_faddfsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "sha256": "4468472611b87a64b48841ce3631cd52142d5d5a9195c5d3c39902a82afe022e",
+      "bytes": 4516
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fcmp_32ns_32ns_1_2_no_dsp_0.vhd",
+      "sha256": "83eec69238c3ed09d1958f69c10ec913490605f85aa3bf998d761a1c15c53044",
+      "bytes": 5715
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fdiv_32ns_32ns_32_22_no_dsp_1.vhd",
+      "sha256": "734211582d68ca58147b4437e8b41e6c2aa547eb32e78c14437c9e7cf97386ee",
+      "bytes": 3905
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w128_d128_A_x.vhd",
+      "sha256": "ca10ef369783a24111229b958c405eb1f3f99f3955fea5751d5acb648a783b0b",
+      "bytes": 10303
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w128_d128_A_x0.vhd",
+      "sha256": "b7014bba79bc4930ee2b17c536cc7595711b3bd24ca28bb9b76a73f54f59de74",
+      "bytes": 10310
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w128_d128_A.vhd",
+      "sha256": "5f41a874aaed64dbed1904c40e98a9f5942acae2a105a72a5550b13e92a2397d",
+      "bytes": 10289
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d131072_A.vhd",
+      "sha256": "a3fc3041b65eeba0bbbb52c038c21d4a071472c7f8d7a3b694702f93b0a42fa6",
+      "bytes": 10312
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d16384_A.vhd",
+      "sha256": "ba8d657a4142b95ba264387a15580d30b5b709e4ab70a9113c2b3748e742cb17",
+      "bytes": 10302
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d32_S_x.vhd",
+      "sha256": "7d604f4ae007c5f6ddfb12a74e034f697361cdebb2979521d8b343b3bb85df80",
+      "bytes": 6557
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d32_S_x0.vhd",
+      "sha256": "025077b64615786fdfc1b550128b46627ff9645952d7808e2c1283c03be28f1b",
+      "bytes": 6565
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d32_S.vhd",
+      "sha256": "7e865f12078196815702322058baa044061ed90a4458e4e7d9d1c29dc9084a75",
+      "bytes": 6541
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d64_A_x.vhd",
+      "sha256": "e19a67a48d7b019dd858f31a696f6c84c5132d2b9e3e97c374fb0480723ecc1d",
+      "bytes": 10283
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d64_A_x0.vhd",
+      "sha256": "163be5e8681fc8bf77353db8349fbccc57819b1059acf7fa1c59f5d59941c6a7",
+      "bytes": 10290
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d64_A.vhd",
+      "sha256": "529052beeb288dd1dde118dcb76534029bc25500470a46de9cfcd58376ba2cbc",
+      "bytes": 10269
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d8192_A_x.vhd",
+      "sha256": "de8430fc993d04f3bdb6f0664a99b5283210243c8c98cce54a3eb4ef1f6615d2",
+      "bytes": 10306
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d8192_A_x0.vhd",
+      "sha256": "2b715487bc369a25198b7adb10b7cba86475eda8858039001d79e3b167cdb64c",
+      "bytes": 10313
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d8192_A_x1.vhd",
+      "sha256": "a699f064bee698e3bb2cdce91cb76377ced9d2c8b35aa4b63e94af7a3ac65f6e",
+      "bytes": 10313
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d8192_A.vhd",
+      "sha256": "f596a8300aa17b3f2318811c7e9a6050295235577426797a60fa524a5e37fee6",
+      "bytes": 10292
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w96_d32_A_x.vhd",
+      "sha256": "dba983f206efb091600a5556344b6f1dfaf3a7502257a59333b83c646289fe4f",
+      "bytes": 10283
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w96_d32_A_x0.vhd",
+      "sha256": "90d1089f8e63ef7522303167a3ad7e14ec3ec8b8ffbcb3275d0de5a163adafbe",
+      "bytes": 10290
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w96_d32_A.vhd",
+      "sha256": "5af2c992cc53d59e716fd9f498c55921dfdd46ca58f31501063e840fa97e767b",
+      "bytes": 10269
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w96_d64_A_x.vhd",
+      "sha256": "786b8fa6bb996d3a5815c8cfc7f699783c4ea16ac81ad40039f1240a11a0467b",
+      "bytes": 10283
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w96_d64_A_x0.vhd",
+      "sha256": "4653ae564ce9f56bc552acf0dab7c15767020c055bd727c881bf004038054cc5",
+      "bytes": 10290
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fifo_w96_d64_A.vhd",
+      "sha256": "bcfe56cb1c436de89eb3b0ee9e34934d671b2d0a041571d1ef686a08d12e466f",
+      "bytes": 10269
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_flow_control_loop_delay_pipe.vhd",
+      "sha256": "013e9eac2bee30229cfe24cbe024675a667981a4d5faae0618230c05c43b5a0e",
+      "bytes": 3271
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_flow_control_loop_pipe_sequential_init.vhd",
+      "sha256": "5de5baee018ed124ac1524823c6e5d39ea198ed631b1e8f7df6f2223ad46b9d9",
+      "bytes": 3585
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_flow_control_loop_pipe.vhd",
+      "sha256": "e0579731361c2f7040261707d36c31b8655132c5a256c5418750cd89b81545cd",
+      "bytes": 2284
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
+      "sha256": "45125a85c2b2e85822e2c955656c0bec4ba35c5e57d406b0d2c075cf9b85fd3c",
+      "bytes": 3905
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fork_float_16000_s.vhd",
+      "sha256": "a05b37e313eb4aac9d95f92da26aa81aeb345a156e595afc7280c0bf01c387b7",
+      "bytes": 18141
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fork_float_256000_s.vhd",
+      "sha256": "1f41f46b8c4d0d50960a0a9417c94e6da77f3cf5a0e0eaf037bb1c1d10e8e290",
+      "bytes": 18144
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fork_float_64000_s.vhd",
+      "sha256": "19d9f4b1ed5aa8d5b8056ba2d30c4642d3676901e5d5fae54b90f4b2fc835140",
+      "bytes": 18132
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fsqrt_32ns_32ns_32_28_no_dsp_1.vhd",
+      "sha256": "3f82d4c8a5e0e7a45f49be565986c44056a2b31d6af549c353317f587a204fe6",
+      "bytes": 3462
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_fsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "sha256": "97122d13866c1ace74a8d36a598b9103ce4759bea92e1fbadb2e67345405ba87",
+      "bytes": 3910
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_images_m_axi.vhd",
+      "sha256": "8de3c6b7dcb1672227e0b1a44be0bca0b0477824aba669c877a63e019ec454f6",
+      "bytes": 214996
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_mul_15ns_15ns_30_1_0.vhd",
+      "sha256": "93f5f8d05ba5c987d1779f84335845d35af2e26ab48cb93389228e1bf1f3c96e",
+      "bytes": 1353
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_mul_15ns_15s_30_1_0.vhd",
+      "sha256": "3237ee40ffe4a3ee927fa157e2d1cbfc52c04d7793bac64352a1c9b677338759",
+      "bytes": 1381
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_mul_23s_22ns_45_4_0.vhd",
+      "sha256": "8de8c7dd6132ddc6729adf7c1f8d61a2505a041aacd5ba44edb8a9360725014e",
+      "bytes": 2062
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_mul_30s_29ns_58_3_0.vhd",
+      "sha256": "d340fcce3cc44e5e35c309ac4d09e24c1fffa1a989377d658218ca974a65a69a",
+      "bytes": 1958
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_mul_80s_24ns_80_5_0.vhd",
+      "sha256": "bf687fe5b5c8b3bde9a9ded9b1860f0acc7c8d53a6f2086d86ce69b73386fa26",
+      "bytes": 2166
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_pack_history12.vhd",
+      "sha256": "17f425e979d5fd38accde3ac3686314b2fc93da3bb30eb332af23cbec843b2cb",
+      "bytes": 50935
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_pack_history15.vhd",
+      "sha256": "eea4aca21fa155bad0aaa1150e2b7f06fce1b1a172796608193d547ec963b720",
+      "bytes": 50904
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_pack_history9.vhd",
+      "sha256": "26831fc2ed15cb97f1c743afb24a6da6964432db41823c37b1626171b39f69e2",
+      "bytes": 50914
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_phase_band_1280_800_s.vhd",
+      "sha256": "c74c3f66389e02bf5aafa746df5e9043944bbb13fdfce94b8ee1d2add8115689",
+      "bytes": 27888
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_phase_band_320_200_s.vhd",
+      "sha256": "dd7778f7fc5c75874725cdac2117ee5cd52b8852b434af049969f7c731b0da88",
+      "bytes": 28117
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_phase_band_640_400_s.vhd",
+      "sha256": "395c2d83cca908d2c5f21e71191e4b94b9b160e763c9c241b51b6a6d744052f4",
+      "bytes": 28115
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_phase_core_shared_1.vhd",
+      "sha256": "a12c803400ecbdd86e628439002c0382d5dbd6a03851b0944b7b6645a6f05596",
+      "bytes": 37044
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_phase_core_shared_2.vhd",
+      "sha256": "81654863eb630e385815f594b1581bd6622eec163441b9594aa66aedbcfe021b",
+      "bytes": 37041
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_phase_core_shared.vhd",
+      "sha256": "d64a1d2f80b0a988a4c48d1b84b593cc8542914313c271ef04766127d23172c4",
+      "bytes": 36736
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_phase_dataflow_6.vhd",
+      "sha256": "3d20d803bca646fa30782030c75bdbc409e85f6932dbc0dd584113182adeb7e3",
+      "bytes": 50978
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_phase_dataflow_7.vhd",
+      "sha256": "af16e4c04636121395a83d7199863c30fa85b08e58fb627d8500916e4697e95e",
+      "bytes": 51206
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_phase_dataflow.vhd",
+      "sha256": "3b990bfd582bac7119f0102d5d3bea42c0f1424d57ed14e723491d906c58b77c",
+      "bytes": 50355
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_pyramid_1280_800_s.vhd",
+      "sha256": "8096e6b9849fa9011eb67b6efe29e42e8b5241dd417b136118d18b8951844cef",
+      "bytes": 40259
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_pyramid_320_200_s.vhd",
+      "sha256": "2544afe9793b583e44a73f7642d40e549d9f9bea2296239573c23e2ccc4ba871",
+      "bytes": 38373
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_pyramid_640_400_s.vhd",
+      "sha256": "e37b21f4298bbb5952b91bf5edac6bdd29dfd7118f0a4d3d9fe233a85c5765b6",
+      "bytes": 40089
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_read_image_Pipeline_VITIS_LOOP_155_1.vhd",
+      "sha256": "54dce47445cf0cf5dc92c7ee4e04390a23908f1eb239fc5cc1bac866f4cb41c0",
+      "bytes": 26254
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_read_image.vhd",
+      "sha256": "83d4d32f8a423eb18fd5c78356bbb28e44acbb7d1afccca469248080efbb19dd",
+      "bytes": 36807
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_read_words_10_Pipeline_VITIS_LOOP_10_1.vhd",
+      "sha256": "a76dbcee7fb01caa8da71a3b634ada58f741d90bbf9897cb7d6c7b8e0bfb3658",
+      "bytes": 23450
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_read_words_10.vhd",
+      "sha256": "0c10f2ee086d6d726c111c093714a48bfb33a9f720b7525d6f4efc835a410f60",
+      "bytes": 40332
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_read_words_8_Pipeline_VITIS_LOOP_10_1.vhd",
+      "sha256": "dadc273cf543a3f1d95d081daa8896fb69414924bb96ad1b9b2f37340aa8fd55",
+      "bytes": 23540
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_read_words_8.vhd",
+      "sha256": "c329b3a0a539c92af44b696901770c7bfce76003efab0e097d4a2e2c27e4f7f4",
+      "bytes": 40308
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_read_words_Pipeline_VITIS_LOOP_10_1.vhd",
+      "sha256": "b85fbc1bd07ab3966f780f1006222a5115e81e63366f3e998994f2a761dc71ff",
+      "bytes": 23542
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_read_words.vhd",
+      "sha256": "07b71d1003ccd4be2b07d1dfbb687d17f32fa77bde064952b0432b99d3532ec2",
+      "bytes": 40072
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_reconstruct_1280_800_s.vhd",
+      "sha256": "b8d35f50df263608266ae21938a9e15fb60e1ee21a0eead790fea3985fd9901d",
+      "bytes": 13205
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_reconstruct_320_200_s.vhd",
+      "sha256": "1265c99e869f2dc79c0aebfa3a8e05ec3c6199a3ae88d4a9dc63d63973d0174f",
+      "bytes": 11255
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_reconstruct_640_400_s.vhd",
+      "sha256": "5894dd2d506fc7eff96cc8e5b7773ae49a82ebd45ea14661326d7d32090bbf73",
+      "bytes": 11405
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_shared_dataflow.vhd",
+      "sha256": "d3e5bc865725b6bf4725182f4678d601c0010b22d0d784cfb0df4eefada48efd",
+      "bytes": 134942
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_sin_or_cos_float_s_ref_4oPi_table_100_ROM_1P_LUTRAM_1R.vhd",
+      "sha256": "5a925761a161633ff4c994662f23c054d104e71962864e78daa50aa8eb3c7411",
+      "bytes": 3573
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K0_ROM_1P_LUTRAM_1R.vhd",
+      "sha256": "eca82099574d485fc2f03df9f4a47f87bd587ad085293bfbb033302faf62b455",
+      "bytes": 12921
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K1_ROM_1P_LUTRAM_1R.vhd",
+      "sha256": "193e1c4072a1200f59897b88769fc6a73f1c679ca909143f94514a4006f2cac0",
+      "bytes": 11129
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K2_ROM_1P_LUTRAM_1R.vhd",
+      "sha256": "ddce6b7e451ce7141feac0916c54df8eab36feb437edeb07e01ee6f030c81977",
+      "bytes": 9081
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_sin_or_cos_float_s.vhd",
+      "sha256": "307d31d6363ab66b9ccb902d913eebc6b90709f668403ffc99ed8abd9db7a594",
+      "bytes": 75394
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_sparsemux_11_3_32_1_1.vhd",
+      "sha256": "b70e88c485e02877e90ad12eb366fc564e2481e869839953cd4a81e35b076794",
+      "bytes": 2399
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_sparsemux_17_3_1_1_0.vhd",
+      "sha256": "963c1eddbc9df9eb14fe48ab35bc43b5ba5b2cfa9d051b14b57285c6e759a2ea",
+      "bytes": 3069
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_sparsemux_33_4_1_1_0.vhd",
+      "sha256": "65d6f208a8577c6e3413a7384b0fddec21092b35d8a04fb5084f8ac18d2f8151",
+      "bytes": 4903
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_srem_10ns_4ns_3_14_seq_1.vhd",
+      "sha256": "e5326d3af5b1893595ff31951af36342e9f0ae737784e5b7976965062cdf5c8a",
+      "bytes": 8321
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_srem_11ns_4ns_3_15_seq_1.vhd",
+      "sha256": "ad90baa04af0b75a5cc02c47092858fdc776e80adf816b3d1bb98a08230aa79e",
+      "bytes": 8321
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_srem_9ns_4ns_3_13_seq_1.vhd",
+      "sha256": "b4292e2232d4df1927ff7fc22df9c0ee48d4853bbf5bca567be7147163727476",
+      "bytes": 8314
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_blur_fork_1024000_U0.vhd",
+      "sha256": "ed50e5a39800ffb0b1e93ef072a3bb8dd7e4adacde77147478e7e1ba21e44298",
+      "bytes": 6297
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_blur_fork_256000_U0.vhd",
+      "sha256": "7067bab875ad196d729ebe0f7ab502c0ec0f60caa6adf0f1423f734423c20468",
+      "bytes": 6289
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_blur_fork_64000_U0.vhd",
+      "sha256": "e81836d8d8b35368ee3f4cfe00e81dafe2045e1d8249d128aa47749ed2f462fa",
+      "bytes": 6281
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_combine_1024000_false_U0.vhd",
+      "sha256": "e9048037dbc0bcac7632654210e73ecad9fbc2795d20d8e36365b96aa7789c01",
+      "bytes": 6329
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_combine_1024000_true_U0.vhd",
+      "sha256": "994b6e862f01d5f61cfe9ec9091979a6cf075c053461f7bb2c49dea4fb8910ac",
+      "bytes": 6321
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_combine_256000_false_U0.vhd",
+      "sha256": "522daa4a67927e223b456beef5f374694fc97597bb2ff2234d1fd75fc13673b1",
+      "bytes": 6321
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_combine_256000_true_U0.vhd",
+      "sha256": "69d8ef3839bfde7d498b0401700dd7bfe673f128c422df0671026156f54c2995",
+      "bytes": 6313
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_combine_64000_false_U0.vhd",
+      "sha256": "57bcdca817b1be447c105c8f3eb97c3d6a42ede69ffe9943efd967157e362b16",
+      "bytes": 6313
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_combine_64000_true_U0.vhd",
+      "sha256": "6c327316ea5d242ea411bac82500da990cc73f27b0c2d112d885e15557fa8787",
+      "bytes": 6305
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_compute_phase11_U0.vhd",
+      "sha256": "fce2e3a4ee0fdd978e8ef12c201199a83b5acba213fbf259b244cc049abe8738",
+      "bytes": 6281
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_compute_phase14_U0.vhd",
+      "sha256": "98865ab950b1d8a9dcc41300c08a3c142a1bc8dfff568cbe7eabbbb84e940a7a",
+      "bytes": 6281
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_compute_phase8_U0.vhd",
+      "sha256": "b8a0ce8486631112c94b5a2b5847b1d6b539fba4cc02e0083eb694f3ae661c82",
+      "bytes": 6273
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_downsample_1280_800_U0.vhd",
+      "sha256": "43ae3a2a35cc2bef917c00f3be73b1232213b7ebcfa0cea7911f66d663a46b20",
+      "bytes": 6313
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_downsample_320_200_U0.vhd",
+      "sha256": "301fd586e511fe68e1c6b6870eecbac90344d8496df0e72f8cd75d4b61a02aa5",
+      "bytes": 6305
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_downsample_640_400_U0.vhd",
+      "sha256": "26f34554fb2bd2b35c393fac14a9f1853173e7db8ca0e4c3d2877aae058601b3",
+      "bytes": 6305
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_fork_float_16000_U0.vhd",
+      "sha256": "a76db592bff1e788d71515531d88813e0c6d87098daf4ba4c640770997bc5dd0",
+      "bytes": 6289
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_fork_float_256000_U0.vhd",
+      "sha256": "adff36aa8939aa0da4d02a6c183df587130c71472cf00295d5cdefab7b2baafc",
+      "bytes": 6297
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_fork_float_64000_U0.vhd",
+      "sha256": "3f6fbb7526d7f29e58ef903b787e6e43b0eb353758bdbc87572214188ff17096",
+      "bytes": 6289
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_pack_history12_U0.vhd",
+      "sha256": "3d5b3cfc8d4527d6d3bb8a75193e22dbca28723d3b1e148528f0c11ca3a81465",
+      "bytes": 6273
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_pack_history15_U0.vhd",
+      "sha256": "cf12da8fc7f2e4e05e2eaa193284cc43c1f4d373b5f029c0234da3ac3c0355cc",
+      "bytes": 6273
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_pack_history9_U0.vhd",
+      "sha256": "530558e42440fea45840b450bd51de8e13d29ac8a01e8b89aa4606dd42052868",
+      "bytes": 6265
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_pyramid_1280_800_U0.vhd",
+      "sha256": "726d895f093338697d077c481501e8ad39728a8c86b0546e91dd0fbb5469c066",
+      "bytes": 6289
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_pyramid_320_200_U0.vhd",
+      "sha256": "d35f36abe219bfee8ffb46eef4569a6fb3c0c69ce228202446b9104a137d1ccc",
+      "bytes": 6281
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_pyramid_640_400_U0.vhd",
+      "sha256": "0124a3a5794b3145c1eae0932704a095af3bd2a31d7486b0e347b1d1734a7669",
+      "bytes": 6281
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_reconstruct_1280_800_U0.vhd",
+      "sha256": "d7167bb94f5fddffcc5859e177ed7444390f8b35147aae7f7bc1b8f8249ffbaf",
+      "bytes": 6321
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_reconstruct_320_200_U0.vhd",
+      "sha256": "6a3b8bad7a0323809b883ebcc2b0e6fb1594825da21bd4ef31f824d28e2f8e48",
+      "bytes": 6313
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_reconstruct_640_400_U0.vhd",
+      "sha256": "c64122d309e619b9d299d7d56f3a5d9c211e5c59b992a44b0c3e897c2cda80e6",
+      "bytes": 6313
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_unpack_history10_U0.vhd",
+      "sha256": "298d12952e332b7c9db6430ba2142ab47dbaba6584702a93144fa63b7fd8b634",
+      "bytes": 6289
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_unpack_history13_U0.vhd",
+      "sha256": "dfbfda4e51a25aa92bba966c026c675a47003c3dc77fecacc2fc3f56d1104854",
+      "bytes": 6289
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_unpack_history7_U0.vhd",
+      "sha256": "7592b06adff97ffa0e4768a35082f11b5adb2214c2a2cd773d3af868d50e7134",
+      "bytes": 6281
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_upsample_160_100_U0.vhd",
+      "sha256": "cc796d5ac98a69c8ec95d589f1e60ed5eb0291487d70a602515e15da46aa0955",
+      "bytes": 6289
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_upsample_320_200_U0.vhd",
+      "sha256": "08cd7548d0716de9373a0a66f11ef5a39c6b560dcb6dc7638eeb595ca7e2f347",
+      "bytes": 6289
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_upsample_640_400_U0.vhd",
+      "sha256": "25ecd2f8f5b01a95e42e5dfb95903d5acea24f469e04d7e289236b6776fa1341",
+      "bytes": 6289
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_write_image_U0.vhd",
+      "sha256": "d42e75f476ef0923d4ea1d950427739c1e117867ad891035dd7d95c5fbb2b740",
+      "bytes": 6249
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_write_words_11_U0.vhd",
+      "sha256": "c38f9521601c52d240ac1129573eec327406cd9a80f0377dd1fc0a4dac8ec031",
+      "bytes": 6273
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_write_words_9_U0.vhd",
+      "sha256": "527ece0b70f1c83bfbc2b66c3e78a3f6e50aa9033e00aebd6a9fc3291614e21d",
+      "bytes": 6265
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_start_for_write_words_U0.vhd",
+      "sha256": "8719707bcb11e62cfa2faaaeb12742e29ef24958436e34e11476d38d68cde73d",
+      "bytes": 6249
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_state0_m_axi.vhd",
+      "sha256": "4f09efb2a1fdfa15d2bf8e3eadca19ffce18cda599fbe00c3e5dd7de39aea337",
+      "bytes": 214996
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_state1_m_axi.vhd",
+      "sha256": "5be17af7ed6745a80ca39d2489e9855eff617f913cde8c5ddf21a71ff3b766ed",
+      "bytes": 214996
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_state2_m_axi.vhd",
+      "sha256": "a899e38dc92193d23b6cb390f54ec377513a47140dad412ba43353847d41be05",
+      "bytes": 214996
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_false_Pipeline_horizontal.vhd",
+      "sha256": "be7096b93fc2586c1e6fcf2a94ee916a485b1016e8552aff2276e3baa41f89e6",
+      "bytes": 84958
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_false_Pipeline_vertical.vhd",
+      "sha256": "3e0d0b2a9eff2460c2183a246a3c200833d45c189f6879e8d9594d476606f140",
+      "bytes": 72997
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_false_s_even_RAM_2P_BRAM_1R1W.vhd",
+      "sha256": "ebd5d67956e455a5927de5a77489c1e1c7758691af873403e578c739e6ae0c16",
+      "bytes": 2525
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_false_s.vhd",
+      "sha256": "a9e7df53f0ecebc462a76b78e3ba527db0681b21f553e5cb556d73c0d4eaaaed",
+      "bytes": 107326
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_true_Pipeline_horizontal.vhd",
+      "sha256": "a94f2f7c5d1b02c1ce33fefc8104b3349ca57a2f6afb7d770d99efb7e5b5d5df",
+      "bytes": 118278
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_true_Pipeline_vertical.vhd",
+      "sha256": "4a8aa8d9f0614117b3dbd41069bb2da96ff31ddab42fc34574f5cb3c95440488",
+      "bytes": 110994
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_true_s.vhd",
+      "sha256": "7027cd61f1961b43b2b78f24154c05340075aef1598c8f82dcec744987978b4f",
+      "bytes": 172348
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_false_Pipeline_horizontal.vhd",
+      "sha256": "3695120e301de52044bc9d2b706f0f41cb2b03ad8806464d1892646e5e811301",
+      "bytes": 84871
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_false_Pipeline_vertical.vhd",
+      "sha256": "008a8945461aef40e5e38cf57cd485225c711f36f7231c720aebb824f88b1539",
+      "bytes": 72969
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_false_s_even_RAM_2P_BRAM_1R1W.vhd",
+      "sha256": "6e265c49f0c61760f492de4a50927d0c8d18450104cef77cdf20787c0f4a6505",
+      "bytes": 2521
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_false_s.vhd",
+      "sha256": "ab90c6ad0f73007ccf35edb74eec1213609f00398ec358b139340bacdf0e004c",
+      "bytes": 108696
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_true_Pipeline_horizontal.vhd",
+      "sha256": "0e5197f3b242af8b50f5c95d353405fd0cfed6f921488a535701132989f7d471",
+      "bytes": 118139
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_true_Pipeline_vertical.vhd",
+      "sha256": "ca40154d96c0f9df202cdd679813ea55fb5f2c92d402b56326ef8c1831c9a89b",
+      "bytes": 110895
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_true_s.vhd",
+      "sha256": "1861eb64887a4dc612d622fa55dd94ded41476d63a2d6eb16c719a9c783f371f",
+      "bytes": 173242
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_false_Pipeline_horizontal.vhd",
+      "sha256": "6ff761faa6afa78353126094ab1f8110fff4eba16119cbb0f396966aa4d1b848",
+      "bytes": 84873
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_false_Pipeline_vertical.vhd",
+      "sha256": "8169e125c7968fd4e37b8c56037ea31f98fe13d73487fc5e468b5fb2f07d1a1f",
+      "bytes": 72970
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_false_s_even_RAM_2P_BRAM_1R1W.vhd",
+      "sha256": "f14243f8169b7a88f387f7326a298195f4d95887c608a2a458b3ae8290d2a70a",
+      "bytes": 2522
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_false_s.vhd",
+      "sha256": "69624dccf93b61caed244cdc3154d2a16eceaaddaffc7f5c12207a9a730b6b6e",
+      "bytes": 106525
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_true_Pipeline_horizontal.vhd",
+      "sha256": "9181ee37b98bec6e7f8029dbeea5bc4958fc4fec5b8d82ff5f58e87b5a38c84a",
+      "bytes": 118132
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_true_Pipeline_vertical.vhd",
+      "sha256": "673b7140124bcb92769af5462107b87e3191ddc059bf458ee6117095aa166b97",
+      "bytes": 110900
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_true_s.vhd",
+      "sha256": "eeff83ddbcbdc9bcc6507fd399df8c58ba517528b5522a40d62e864f7f91060f",
+      "bytes": 171100
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_uitofp_32ns_32_6_no_dsp_1.vhd",
+      "sha256": "8cc3a45aaa02e9860507334aea4c3f7f4b355d8909d22dcc8d69ef86bed2f3d6",
+      "bytes": 3378
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_unpack_history10.vhd",
+      "sha256": "6f16f25302b1d66e70cbcdb5c082af9028872d9aeaef861c91929fa1596a28b1",
+      "bytes": 53057
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_unpack_history13.vhd",
+      "sha256": "6007e3b065bbce5a480600b4a8d45628e0bb14230abf08f79f412a5312d2bedb",
+      "bytes": 53037
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_unpack_history7.vhd",
+      "sha256": "c1426b024170452bbfbcc709903d498ba5a0b9afbd3639fd649ca768ce11b541",
+      "bytes": 53017
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_3_Pipeline_VITIS_LOOP_104_3.vhd",
+      "sha256": "fa2430fb62f490b1f29f76b497f6f5ccaf508e567de237deb8aedf48e4a582b6",
+      "bytes": 59900
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_3_Pipeline_VITIS_LOOP_98_2.vhd",
+      "sha256": "56c63b88f804ed0bb6412a4f06344c3b75fcb51a88387e905f5fe0786bb60b91",
+      "bytes": 18229
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_3.vhd",
+      "sha256": "da67a083f35ee866cfc2affbce6d6190c0570258a9adcc0197ada2c5be764117",
+      "bytes": 43221
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_Pipeline_VITIS_LOOP_104_3.vhd",
+      "sha256": "4e845d74f3e4866a17f564010c20fcf347dbe8aa0f916cd693b842d039d09128",
+      "bytes": 59893
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_Pipeline_VITIS_LOOP_98_2.vhd",
+      "sha256": "8404460420cf5a9e7522c5dd92514d7c6805314c200c61685fe9989e20df3a39",
+      "bytes": 18319
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_s_rows_RAM_2P_BRAM_1R1W.vhd",
+      "sha256": "fb24175f4404095de6d20c1ef87caef65eb80ed6e261386bdad58a9a0c99055e",
+      "bytes": 3033
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_s.vhd",
+      "sha256": "ccb3ab5b6f97ec1b217b795aeeeab87c4dec624d7f5c85a6cc616a8921c4bae0",
+      "bytes": 41473
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_4_Pipeline_VITIS_LOOP_104_3.vhd",
+      "sha256": "0e7848f2bb04f71c74240561efe3d8beb0f888f5b5514e1c1753a5272c5615d2",
+      "bytes": 59922
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_4_Pipeline_VITIS_LOOP_98_2.vhd",
+      "sha256": "1057762238902ab6a8f746c08a5756c9fae408c6d27951fe3a5ba6d0ed010fa2",
+      "bytes": 18198
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_4.vhd",
+      "sha256": "33b54335180c53596d2e1f182d2b719b8759b768dff4193f2969aad8144e9738",
+      "bytes": 43181
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_Pipeline_VITIS_LOOP_104_3.vhd",
+      "sha256": "c706123b7c95285527f1bdb8519c25d9a7fbdc373c9c14bd0fc87600b1e1a8ac",
+      "bytes": 59913
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_Pipeline_VITIS_LOOP_98_2.vhd",
+      "sha256": "92a81bcfdf2310687aa848a1e06227ac49f1fbab60fa9c0f8e34cc6d5922f3d9",
+      "bytes": 18312
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_s_rows_RAM_2P_BRAM_1R1W.vhd",
+      "sha256": "524f58fac6adbc4729a2181f984657786dc84f4f7cfbfb222975b2ce7c75189b",
+      "bytes": 3033
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_s.vhd",
+      "sha256": "0c484fc1086c18eadf12165c65afd402072a321d89dcc57a66b643b1de1a5d6f",
+      "bytes": 41484
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_5_Pipeline_VITIS_LOOP_104_3.vhd",
+      "sha256": "34711d5906f809ae38ea5754e330b2884825a3b748440e8249ca1459089d1c39",
+      "bytes": 59948
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_5_Pipeline_VITIS_LOOP_98_2.vhd",
+      "sha256": "b8a04dea7e92d6a92c1f58eebbe84f909b56696eb96236e86f5eec6a1a629fa5",
+      "bytes": 18211
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_5.vhd",
+      "sha256": "ee2332d66a50783452b03b1aad98a78501de4d0d6687db43c22394083a77162c",
+      "bytes": 43204
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_Pipeline_VITIS_LOOP_104_3.vhd",
+      "sha256": "a73162ca61df2a0eaa1618ad784282831a9ff64a424ee9fdee29bcb1c20b0921",
+      "bytes": 59935
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_Pipeline_VITIS_LOOP_98_2.vhd",
+      "sha256": "ccf9166ec8ba5142942ee39b929874a83971df650da3b76eecf8e30c10046c78",
+      "bytes": 18325
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_s_rows_RAM_2P_BRAM_1R1W.vhd",
+      "sha256": "2cb54697dc50ee5d41f53584140bae8befd15376ba2f4c54c3a348744820971e",
+      "bytes": 3034
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_s.vhd",
+      "sha256": "15cc5fb0b644be5a10aae4b648c68ff7fd7c1365059f7c0912fbec1793815310",
+      "bytes": 41477
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_urem_10ns_4ns_3_14_seq_1.vhd",
+      "sha256": "c345da21acec5a3a3d2b0a2d72b7cad9a49a96c3372a276cf2667626f8cfcf60",
+      "bytes": 7054
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_urem_11ns_4ns_3_15_seq_1.vhd",
+      "sha256": "ae66e2091bb57b306b6fc748830d98f3e62f45eb1c9a95dad1f5be248890d330",
+      "bytes": 7054
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_urem_8ns_4ns_3_12_seq_1.vhd",
+      "sha256": "029edcc27b47291934206c1b697acb76e3852d363b8fd7d9869dd1166772d047",
+      "bytes": 7047
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_urem_9ns_4ns_3_13_seq_1.vhd",
+      "sha256": "2e3b9cd130bd02a4592ba6594aa23649d71ee20750cfcef3d9070d1fffb6b5b7",
+      "bytes": 7047
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_write_image_Pipeline_VITIS_LOOP_161_1.vhd",
+      "sha256": "e442e8aab089a1b2f58d097ded25867da24ff43128e4de03a0f6ec0765ddff05",
+      "bytes": 41606
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_write_image.vhd",
+      "sha256": "0f110f98889efb92dcdfa2bdfb1c36a64d68aad79ae8465f80ab01af600749d4",
+      "bytes": 36398
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_write_words_11_Pipeline_VITIS_LOOP_17_1.vhd",
+      "sha256": "0ef60e9fcfa86d54c75c3cb3dd5e0248c911f0ca7fdd2bba18c46ae2fd0c47f7",
+      "bytes": 20586
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_write_words_11.vhd",
+      "sha256": "954fa6ae53983ed4bed274527665c86e15956ab58b81ba36070743a99afc8a78",
+      "bytes": 39971
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_write_words_9_Pipeline_VITIS_LOOP_17_1.vhd",
+      "sha256": "6b2fc96ed1ab7938151307512ded7a12b0825bd4cd667af7ebe086d1279f7dca",
+      "bytes": 20590
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_write_words_9.vhd",
+      "sha256": "9918fb1627488e86c3dd7037c6a037f4b02dec34b1e0ee729a6b84980ec92eeb",
+      "bytes": 39862
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_write_words_Pipeline_VITIS_LOOP_17_1.vhd",
+      "sha256": "47b594ffbcad099fa1c251833346ba6471628094a1575fa2d7e1045be4e50882",
+      "bytes": 20592
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_write_words.vhd",
+      "sha256": "7c4547c00f806a0401e7bddcbe552448a8a5716a349ba33baf448514efe8ce11",
+      "bytes": 39628
+    },
+    {
+      "path": "src/ip/motion60_shared/hdl/vhdl/motion60_shared.vhd",
+      "sha256": "cad1cfc9e1354ac075a08fa48d2fece6e80b6cf4d98e3968baff6f02b835a78f",
+      "bytes": 122059
+    },
+    {
+      "path": "src/ip/motion60_shared/misc/logo.png",
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af",
+      "bytes": 2297
+    },
+    {
+      "path": "src/ip/motion60_shared/pack.bat",
+      "sha256": "24fe78d5164172fe4aa4a31c9fe74ede817091d545e9ae80bff0f1bf8762fd58",
+      "bytes": 488
+    },
+    {
+      "path": "src/ip/motion60_shared/run_ippack.tcl",
+      "sha256": "50211b860e1c0857c8a4606d68c51da332fad4271b288e1f624624eb3c2b57eb",
+      "bytes": 919
+    },
+    {
+      "path": "src/ip/motion60_shared/sysgen_info.xml",
+      "sha256": "a0e20357041c4c0d35fc9b87edfdea2244222a8918b0452585e3c9134ab3d064",
+      "bytes": 347
+    },
+    {
+      "path": "src/ip/motion60_shared/xgui/motion60_shared_v1_0.tcl",
+      "sha256": "0f2a9589d623a198e315a195571afe5cddb9ad94de968cc39b2007254e26a3a2",
+      "bytes": 39622
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/component.xml",
+      "sha256": "ab1b3a6b954dc7739b702562cd6ecec044f037aae335cd87747acfba40883f33",
+      "bytes": 31599
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/docs/rgb2dvi_v1_2.pdf",
+      "sha256": "cbd8609fb8b415031e6260db92a324f71697afe4f606f95c5216045e320fa04b",
+      "bytes": 385156
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/src/ClockGen.vhd",
+      "sha256": "5df9265e586b55396a75070197b141eb00a36f6dfd0ed69c8b544257405a83ef",
+      "bytes": 8316
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/src/DVI_Constants.vhd",
+      "sha256": "d8dbbbc3c8696d4527ee0d3c4757f1a40d0acebc845899483bc61c2bb8270cde",
+      "bytes": 3151
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/src/OutputSERDES.vhd",
+      "sha256": "6205d58405919d4f899a525256e2cafa725408f6644642755cd0de63e69b286e",
+      "bytes": 8366
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/src/rgb2dvi_clocks.xdc",
+      "sha256": "d39d2f58a6cf74c30eef3c4b7d37c436359ea3fcfaff3ddcc0a1a69388b73ac8",
+      "bytes": 114
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/src/rgb2dvi_ooc.xdc",
+      "sha256": "77f9820235b2c3ce1e99d369db4932a76705633eeb5f950908855183931dc1a2",
+      "bytes": 136
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/src/rgb2dvi.vhd",
+      "sha256": "9ef5ceb9dbee2c77a524cf076baa2563f9d1d1e015c1da3c5e0c081506de3f23",
+      "bytes": 7834
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/src/rgb2dvi.xdc",
+      "sha256": "51b9ac7f1229a2250cddb1d490e45e536dd836eb5c42851f67359c7a5aef6130",
+      "bytes": 292
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/src/SyncAsync.vhd",
+      "sha256": "5561ac8099ed13f3114e97387aab5f7f30ad28a8be2fc540004cbee3f19eb3a7",
+      "bytes": 3727
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/src/SyncAsyncReset.vhd",
+      "sha256": "3ce7ade3267959da59b4d448cc6641018e4f0ac3de9f8f998d0b9ff84a3794bc",
+      "bytes": 3734
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/src/TMDS_Encoder.vhd",
+      "sha256": "b047a257c1172412d1b354a98e3cc77d013d0f3c1af6ff646233abf8b669c196",
+      "bytes": 7863
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/xgui/rgb2dvi_v1_1.tcl",
+      "sha256": "44d93693f4a4eac11a86d7ff2be4dc03e2bab44a407c342bd3dd8f1477c55f92",
+      "bytes": 2930
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/xgui/rgb2dvi_v1_2.tcl",
+      "sha256": "a2d21c71fd3908455a5d9bafd53b784fa650bf7290cb777b449bdeb8e04df566",
+      "bytes": 3055
+    },
+    {
+      "path": "src/ip/rgb2dvi_v1_3/xgui/rgb2dvi_v1_3.tcl",
+      "sha256": "a2d21c71fd3908455a5d9bafd53b784fa650bf7290cb777b449bdeb8e04df566",
+      "bytes": 3055
+    },
+    {
+      "path": "src/ip/roi256_v3/component.xml",
+      "sha256": "fb8d5c46e4fcaac7ebe06e0dbb621b5cc50b780eaf1ac485b13bb443d12b5470",
+      "bytes": 237224
+    },
+    {
+      "path": "src/ip/roi256_v3/constraints/roi256_ooc.xdc",
+      "sha256": "d1e51ede117e1cccd28b20ed92b577531ffa757188618d14436668dda6eb09b4",
+      "bytes": 394
+    },
+    {
+      "path": "src/ip/roi256_v3/dfx_runtime.txt",
+      "sha256": "dc4c562ec534ec6ae12827b6d675ef5dbcc15f42e5a44e08d37a2fe80a825bfe",
+      "bytes": 114
+    },
+    {
+      "path": "src/ip/roi256_v3/doc/ReleaseNotes.txt",
+      "sha256": "4d014e57437c591bbcbdc72877633719249182e1946ab02a04358201679a3aa4",
+      "bytes": 112
+    },
+    {
+      "path": "src/ip/roi256_v3/drivers/roi256_v1_0/data/roi256.mdd",
+      "sha256": "65b1932378625380a515725188d4fe45d795c5fa463515e0a3d38d7c3772c263",
+      "bytes": 598
+    },
+    {
+      "path": "src/ip/roi256_v3/drivers/roi256_v1_0/data/roi256.tcl",
+      "sha256": "06b532d7af4f91dbc1eb2a25587f7c1d9ab028e747d332c1465ba855f9211106",
+      "bytes": 892
+    },
+    {
+      "path": "src/ip/roi256_v3/drivers/roi256_v1_0/data/roi256.yaml",
+      "sha256": "54da745e7244309d461970a1ddcc62a02b48a0ff2e5f17fa08a92163c305f9eb",
+      "bytes": 647
+    },
+    {
+      "path": "src/ip/roi256_v3/drivers/roi256_v1_0/src/CMakeLists.txt",
+      "sha256": "eadfb9c0a5f4763c0552085dc697d9eff76d079c3c3787e556dbf07b86ab3e65",
+      "bytes": 1165
+    },
+    {
+      "path": "src/ip/roi256_v3/drivers/roi256_v1_0/src/Makefile",
+      "sha256": "8e10229ed9a0497a4969c446a34eaa52218e6c0ed0dd0108e8d49690ee6bbc74",
+      "bytes": 1501
+    },
+    {
+      "path": "src/ip/roi256_v3/drivers/roi256_v1_0/src/xroi256_hw.h",
+      "sha256": "a6ff74b6b1d6d881a95e97e2690478061dfe88d96801c0b3201b6a4b8ca4ed64",
+      "bytes": 3260
+    },
+    {
+      "path": "src/ip/roi256_v3/drivers/roi256_v1_0/src/xroi256_linux.c",
+      "sha256": "6c61c8459b91efa02832e5351704c442ae7d64d84ce479819ff1377616114ae4",
+      "bytes": 4775
+    },
+    {
+      "path": "src/ip/roi256_v3/drivers/roi256_v1_0/src/xroi256_sinit.c",
+      "sha256": "4d69269c5fee8fdce13a47aa4b813ffc1a00163b162f904fc534f5ecfcc8e054",
+      "bytes": 1961
+    },
+    {
+      "path": "src/ip/roi256_v3/drivers/roi256_v1_0/src/xroi256.c",
+      "sha256": "18318a097b4430c7efe091617a92ad7fc76438b1856434d8a96d7b440a0f98e7",
+      "bytes": 9528
+    },
+    {
+      "path": "src/ip/roi256_v3/drivers/roi256_v1_0/src/xroi256.h",
+      "sha256": "3707b866ed50caaf291809faca0d4bc6b7697f2283e417ca6027cf7cba0221d8",
+      "bytes": 4201
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/ip/roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip/roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "sha256": "1669ebdf85950f2a9a4a0c57bbb681fe7487fe7fa33ec136754bd558a92236e6",
+      "bytes": 62187
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/ip/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "sha256": "a7803cab52a17d4f5f276e90371eb96d4030a2e8a453d4a45e76b122ee284373",
+      "bytes": 68503
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/ip/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci",
+      "sha256": "b47c71d9c73cbb33fe9729c704a7013eaf3e3b2ee5f2599c6143a6a089154690",
+      "bytes": 67978
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/ip/roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip/roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip.xci",
+      "sha256": "05f9193ff38ff07a36063ad167c0e596ec30f98034cc96dc802f5a565066031e",
+      "bytes": 62179
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/ip/roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip/roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+      "sha256": "4daa6dda70b995d6bb2e0a0a9e1d52e7051a35f13d46944e2e559a9fc6be87c2",
+      "bytes": 62180
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/ip/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip.xci",
+      "sha256": "7884856d9ebe59abbe5fd84e39cfc364cc47caf1cb6e033f984efa5ca8dde848",
+      "bytes": 55812
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/ip/roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip/roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "sha256": "c5bff84c81fea22bc485f8ba6924916bc46243dd16d83ee0e10bc723b05134cc",
+      "bytes": 62192
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/ip/roi256_uitofp_32ns_32_6_no_dsp_1_ip/roi256_uitofp_32ns_32_6_no_dsp_1_ip.xci",
+      "sha256": "d237db7d34ee38386ec4d70bb61233d772ddb19314663bac494bb78672e79912",
+      "bytes": 55795
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip.xci",
+      "sha256": "90b7522317d7ec102483d8c984de836de5f487b3d1bd7508c49743cd8e1f1035",
+      "bytes": 55795
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_control_s_axi.v",
+      "sha256": "d8f257ee8a51a994a790021e07cab298efe1ea3512aa38161c139f56e6caed55",
+      "bytes": 18212
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fadd_32ns_32ns_32_8_full_dsp_1.v",
+      "sha256": "68a57ba28332672e3cb3dd104ccd7252984893941cfdd1a274c7173269b13e4a",
+      "bytes": 2283
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1.v",
+      "sha256": "49a55f4a4c71d106ae5ab0ce005210c28a9e1b44c57ced22634dc05e5c44776a",
+      "bytes": 2628
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fcmp_32ns_32ns_1_2_no_dsp_1.v",
+      "sha256": "491bd30438189f4f7b383a2331976e6f28eded3fb44790e0a40072aec149cb65",
+      "bytes": 3249
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fdiv_32ns_32ns_32_22_no_dsp_1.v",
+      "sha256": "673b42408a6c0b010ae4b34f57c9c0414b3a13a8aedc31b1bb73a33c5ade0e4a",
+      "bytes": 2280
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fft_line_ar_RAM_T2P_BRAM_1R1W.v",
+      "sha256": "799547b630ae8d341e42a9dfa1cc3743a49cd34d1f15ee7b5daf8c46c8e41ce1",
+      "bytes": 1302
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fft_line_Pipeline_VITIS_LOOP_43_1.v",
+      "sha256": "23f4d32bd403519f1b24ea8a571078be8b62370d27863dbff40f3a3dd004f5cf",
+      "bytes": 11171
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fft_line_Pipeline_VITIS_LOOP_52_3.v",
+      "sha256": "ad4412d16cca0247d6055e62586c919bd155adc9ea4fe0fa6292a93ab75cd996",
+      "bytes": 13520
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fft_line.v",
+      "sha256": "99565e985e3e78e899e5d440281a163b58cb7d6a0fddf52e7bcc224b130173b8",
+      "bytes": 33720
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_cos256_ROM_AUTO_1R.dat",
+      "sha256": "f0aac5f7c4cbae822e40c3db071672de86b4c4989e32d8949081a3b65b8835b0",
+      "bytes": 2560
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_cos256_ROM_AUTO_1R.v",
+      "sha256": "07172c91683d7d5b16e3259b2e1ff2fa35f0d680cbb79470fcad458f7c3cb745",
+      "bytes": 980
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_sin256_ROM_AUTO_1R.dat",
+      "sha256": "6f7e5c75c109241e999203083663dc64ec564a496bf21a5cc56156e7efa85d0f",
+      "bytes": 2560
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_sin256_ROM_AUTO_1R.v",
+      "sha256": "2e87574fb383aa4724613bd7e4c78be0a95ce7df557dcda2d63a79003bdabcb7",
+      "bytes": 980
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1.v",
+      "sha256": "23c8880138548cd3e2415a275105bb789ba2fee541e0e1ecf3d2580ad4a07860",
+      "bytes": 41019
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fft_stage.v",
+      "sha256": "c90110a487e06ed0cd628333187243e318568f0cd1cbc19b2ca3c8cf898e5fc0",
+      "bytes": 12518
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fft2.v",
+      "sha256": "a20d92641f96e19038650bffb3b9d4b2c714990cff77872f5ce694c8f8e2c24f",
+      "bytes": 9378
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_flow_control_loop_pipe_sequential_init.v",
+      "sha256": "2af4bc6d82a3b7314147944a18ce4ac0123a2cad825b0e48ceb95681b94dfc67",
+      "bytes": 2926
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fmul_32ns_32ns_32_4_max_dsp_1.v",
+      "sha256": "31f40af1ee1576469cfee090ad9a4799edab76cf879007f273cf3618a96f93ea",
+      "bytes": 2280
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1.v",
+      "sha256": "ab52c57e17c4f01499a91f6c63c9e476eb10db9eadbb23ab25ed8d733e160ac0",
+      "bytes": 2020
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_fsub_32ns_32ns_32_8_full_dsp_1.v",
+      "sha256": "b7a55664e3aa4b3c2b3c571fe07776d6f0d5c186dc752ba39d388567bfee24ba",
+      "bytes": 2283
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_image_r_m_axi.v",
+      "sha256": "4e1c5f94c3969f047a22b2a422e7b7725d18f17c479bd37465dbdd3ba206eb27",
+      "bytes": 92672
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_mac_muladd_16ns_16ns_48s_48_4_1.v",
+      "sha256": "85b43f6a4857b04500fcbdc6f018f5c67cd86a30bdb019e7670fff97af75792a",
+      "bytes": 1972
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_mul_32ns_32ns_64_3_1.v",
+      "sha256": "ccbe2d63c50f23dbcfbbf76bcd2aeef35e0e37fddbd02ac35a8ae111c88d8c41",
+      "bytes": 1058
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_result_m_axi.v",
+      "sha256": "6e597166652572fed4b0f13debc1253b792429ff495590095b189674b8053da9",
+      "bytes": 119587
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_108_3_reference_re_RAM_2P_BRAM_1R1W.dat",
+      "sha256": "e93a2e475da7ca7a3c01f7185e15b74262f83a79682f32dbb7046bf395df2cd7",
+      "bytes": 196608
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_108_3_reference_re_RAM_2P_BRAM_1R1W.v",
+      "sha256": "adee1628190564149d15fa24ed450b8ada72a3429bf8cc8a716199f71ca0867c",
+      "bytes": 1252
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_108_3.v",
+      "sha256": "63e9ab5374c5e313929248768649d0a0074fc46121e4a8891f527238b251e7b7",
+      "bytes": 96187
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_121_4.v",
+      "sha256": "201436833164c551f97b2cc72fb5a517352cb0d0cc0a22f29df8c495b3ca9a3f",
+      "bytes": 9722
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_hann256_ROM_AUTO_1R.dat",
+      "sha256": "8f096b806ea0e54ade7be2d8759b48420ad1c3901bcd3ac142ff3888352426e8",
+      "bytes": 2560
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_hann256_ROM_AUTO_1R.v",
+      "sha256": "61c00e0995632bacfa8727198111642eee4438679d47c29e9bc4ba9d89c6f42b",
+      "bytes": 1221
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v",
+      "sha256": "13bca752b5549f55127ea5bc7666050ed8a6d84ab88e56d030465b92a546a3aa",
+      "bytes": 52761
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_uitofp_32ns_32_6_no_dsp_1.v",
+      "sha256": "68e3fb8449471f78f3cb3f694f483ab557cdfd40910ef83a2394d646fcbb878a",
+      "bytes": 1963
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256_uitofp_64ns_32_6_no_dsp_1.v",
+      "sha256": "a7dcd2f7b7a2324f1e58af0b54829a5cf9bc904215099a5c794410bb13370bf0",
+      "bytes": 1963
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/verilog/roi256.v",
+      "sha256": "d64f324b64ab1b40723534f3fa7c528e5ef98ed887b8dfb02c4daf370847ed74",
+      "bytes": 139760
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_control_s_axi.vhd",
+      "sha256": "1a0dd3eb03e9494888b1d763712d664a9a2465efeb0b7d8f377c80d4e22f5c2a",
+      "bytes": 25003
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fadd_32ns_32ns_32_8_full_dsp_1.vhd",
+      "sha256": "ef54d0d0715d8692d53edab1a709597e185090a52b244a6da8a8ca77420fe539",
+      "bytes": 3865
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "sha256": "310c7465186fee01cb531dcce97756b0b690287f14cd08aa91e706629ca6e65c",
+      "bytes": 4471
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fcmp_32ns_32ns_1_2_no_dsp_1.vhd",
+      "sha256": "3e0ed75c25db2f453d381b8ffde0973630b32688f525122ad5cf72afa0852451",
+      "bytes": 5670
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fdiv_32ns_32ns_32_22_no_dsp_1.vhd",
+      "sha256": "a62e61e7a4748400a6b3c65480db8d1a25f81ebe5690a6c630fc4d76b5bca7aa",
+      "bytes": 3860
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fft_line_ar_RAM_T2P_BRAM_1R1W.vhd",
+      "sha256": "146f1d53806559a69d8360403bdca10a8e4ff14fbab409a1976913f3ae3e2d45",
+      "bytes": 3222
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fft_line_Pipeline_VITIS_LOOP_43_1.vhd",
+      "sha256": "c3157d7cc4cbb8e5aaaf8296d9ac2c78ad244e1052d2e06ad8c29075ce55b09a",
+      "bytes": 19488
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fft_line_Pipeline_VITIS_LOOP_52_3.vhd",
+      "sha256": "2a70c4f09db4332fcd93f7b92a4ffa10cd291ea62ce113c553a50812f7128892",
+      "bytes": 21836
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fft_line.vhd",
+      "sha256": "08505056f2b60eadcdf6de98f516a7a5327b563efa64f27bdfb8ee97a8892e0c",
+      "bytes": 55316
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_cos256_ROM_AUTO_1R.vhd",
+      "sha256": "3a7f78748de143a7a8824cfaebba761f5d2910ecac5ebc3521fe9f0b6367698c",
+      "bytes": 13202
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_sin256_ROM_AUTO_1R.vhd",
+      "sha256": "8af54e1e244819c20e3b5624dc4cf38b75a9986a6112288712704aa8c57791df",
+      "bytes": 13202
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1.vhd",
+      "sha256": "444f1a5b4b9afad9ec955a451dcbdebd1eee0677e33312408891b2ed08cb23e5",
+      "bytes": 62967
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fft_stage.vhd",
+      "sha256": "86ffb827057aa053a0631d3a458b12f9462eaa7c742dc7d165adabccdf9afff2",
+      "bytes": 18866
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fft2.vhd",
+      "sha256": "488b5d963e9565986b11cba33b65e2b6b1b9d37d1035a82eabd54154106667a3",
+      "bytes": 15329
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_flow_control_loop_pipe_sequential_init.vhd",
+      "sha256": "397013147f74e50ba04f890bc264d7ec286a39559585aa6da12f705aadbb8bcc",
+      "bytes": 3558
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
+      "sha256": "c0c186d1b08909b1f9c5cf0e6d1859f1b990be5bb32ae46800ac247a7d724b74",
+      "bytes": 3860
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1.vhd",
+      "sha256": "97abbc86b957af3eb148b8fb0415604a64aa5ea62f021bd0dec599f7371bd96b",
+      "bytes": 3417
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_fsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "sha256": "185bc13d8cfb893731aec60d54e1aedf6af6f4376f21c4cd123827b812f8dd5e",
+      "bytes": 3865
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_image_r_m_axi.vhd",
+      "sha256": "1041802a67ebabadbcda96977647b283e08ed149edf074b052100c58a4484232",
+      "bytes": 128015
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_mac_muladd_16ns_16ns_48s_48_4_1.vhd",
+      "sha256": "47c73efe8ca0f4ad7b7f2f177656af9486b77d4a8e654d0d0f565b6ec50aa405",
+      "bytes": 3227
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_mul_32ns_32ns_64_3_1.vhd",
+      "sha256": "54c1cd8e3cc536feb19f9d21d64af9725e5c8adce54939996d7573b2774016b8",
+      "bytes": 1912
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_result_m_axi.vhd",
+      "sha256": "a0e56bc22f54571242be20d1695ab973b2d79cdc1563cc852395d9ea733e17b8",
+      "bytes": 163215
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_roi256_Pipeline_VITIS_LOOP_108_3_reference_re_RAM_2P_BRAM_1R1W.vhd",
+      "sha256": "d79f731b10e33130d3134c9fd3a5087b2665411438c1efe6b80958a2ea6b9f15",
+      "bytes": 2573
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_roi256_Pipeline_VITIS_LOOP_108_3.vhd",
+      "sha256": "6c047a994b92048bed2c2143b50a8703960ad78bbc6f3e0a9c119cfc2116f8cd",
+      "bytes": 141492
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_roi256_Pipeline_VITIS_LOOP_121_4.vhd",
+      "sha256": "d02b0e1cfcfbceadf0d9a44b054c6e00dc46bd4edb837493a7f9cae4771e5be1",
+      "bytes": 16354
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_hann256_ROM_AUTO_1R.vhd",
+      "sha256": "f5c5b1488b9ddb7c5efc375dc617371dd142b1ac4d76a7141de71a7fafa742e0",
+      "bytes": 13921
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.vhd",
+      "sha256": "df8720abbc6964c8a3694048215f2afac0296e3a9bc88aed94df9852399ea4dc",
+      "bytes": 80186
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_uitofp_32ns_32_6_no_dsp_1.vhd",
+      "sha256": "f2a2a19e553f3e79039f3f97aff38d8536eb4e6cc0ea95671965fd55b55b721a",
+      "bytes": 3333
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256_uitofp_64ns_32_6_no_dsp_1.vhd",
+      "sha256": "65cb795f860e9dc7fdcb2996b8d48b3d2e8115569e277dca02209a8c93f207bc",
+      "bytes": 3333
+    },
+    {
+      "path": "src/ip/roi256_v3/hdl/vhdl/roi256.vhd",
+      "sha256": "c4d8100d9fa69de4abcbf8c438dc36c781cd93820dd43d2d89217528712496fa",
+      "bytes": 254890
+    },
+    {
+      "path": "src/ip/roi256_v3/misc/logo.png",
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af",
+      "bytes": 2297
+    },
+    {
+      "path": "src/ip/roi256_v3/pack.bat",
+      "sha256": "24fe78d5164172fe4aa4a31c9fe74ede817091d545e9ae80bff0f1bf8762fd58",
+      "bytes": 488
+    },
+    {
+      "path": "src/ip/roi256_v3/run_ippack.tcl",
+      "sha256": "0841c3272f22f477af28ad6cd9d7bbcbfe0b4f88b847cd560552a1ab5183822f",
+      "bytes": 907
+    },
+    {
+      "path": "src/ip/roi256_v3/sysgen_info.xml",
+      "sha256": "df60404a20f07341d4d997d8332e005df22afbd0cb983f7d48086b38faf04006",
+      "bytes": 347
+    },
+    {
+      "path": "src/ip/roi256_v3/xgui/roi256_v1_0.tcl",
+      "sha256": "6af40bf7b062a4426f3569255b021edf000363463944cc43abf4cb31f24008d4",
+      "bytes": 20263
+    },
+    {
+      "path": "src/ip/spectrum256_pl/component.xml",
+      "sha256": "77ac20d44598437998354ad83b712c45a944c5d18fd24e732dd50bda09367816",
+      "bytes": 252443
+    },
+    {
+      "path": "src/ip/spectrum256_pl/constraints/spectrum256_pl_ooc.xdc",
+      "sha256": "d1e51ede117e1cccd28b20ed92b577531ffa757188618d14436668dda6eb09b4",
+      "bytes": 394
+    },
+    {
+      "path": "src/ip/spectrum256_pl/dfx_runtime.txt",
+      "sha256": "dc4c562ec534ec6ae12827b6d675ef5dbcc15f42e5a44e08d37a2fe80a825bfe",
+      "bytes": 114
+    },
+    {
+      "path": "src/ip/spectrum256_pl/doc/ReleaseNotes.txt",
+      "sha256": "4d014e57437c591bbcbdc72877633719249182e1946ab02a04358201679a3aa4",
+      "bytes": 112
+    },
+    {
+      "path": "src/ip/spectrum256_pl/drivers/spectrum256_pl_v1_0/data/spectrum256_pl.mdd",
+      "sha256": "5ddb5f3f6a959bc28e3c5908f872a197c851d1ca65b61835246702d07bf5dd59",
+      "bytes": 622
+    },
+    {
+      "path": "src/ip/spectrum256_pl/drivers/spectrum256_pl_v1_0/data/spectrum256_pl.tcl",
+      "sha256": "07b7aaafbcb0f402c3a07fb2a3ea5820b7bbff92b15806bcebad98d2bb9a9611",
+      "bytes": 924
+    },
+    {
+      "path": "src/ip/spectrum256_pl/drivers/spectrum256_pl_v1_0/data/spectrum256_pl.yaml",
+      "sha256": "74a577145a831ecc6ff79e9f38f51ede6ac1f0ca264b3dd38201d1897db3dec7",
+      "bytes": 671
+    },
+    {
+      "path": "src/ip/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/CMakeLists.txt",
+      "sha256": "2dd9354246ca0e7b5dd79404deb85426944ba113fbed5e2f4b337b3a236dcce8",
+      "bytes": 1237
+    },
+    {
+      "path": "src/ip/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/Makefile",
+      "sha256": "095e641c5aafdb4134396804fa341352f3537320c50cb485636ab9d017e9462b",
+      "bytes": 1509
+    },
+    {
+      "path": "src/ip/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl_hw.h",
+      "sha256": "e0f347f8f28f3eea67932df81f5977c2a256f28a00f232641a380f242b54ad7d",
+      "bytes": 4746
+    },
+    {
+      "path": "src/ip/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl_linux.c",
+      "sha256": "bfe7ac9dea0f983c49d662092929e1f9e9427cf3ed3c37df5fc4c14e2a733fb3",
+      "bytes": 4895
+    },
+    {
+      "path": "src/ip/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl_sinit.c",
+      "sha256": "0fdb95ba528deec1d2b812fabbd214c566d5c018d4be8e9067cd3379d3169c8c",
+      "bytes": 2161
+    },
+    {
+      "path": "src/ip/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl.c",
+      "sha256": "db53065a9cd515b1a5f6a1c31b067a912e267fe5885d2bfd88cb510de088d68a",
+      "bytes": 12712
+    },
+    {
+      "path": "src/ip/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl.h",
+      "sha256": "31176897cffa4505ccef0e821e81e8975db018f67439d2a05952962ddb54f77c",
+      "bytes": 5254
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/ip/spectrum256_pl_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/spectrum256_pl_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "sha256": "20cc49bcec7041ea84136359ad4b7c9a6a7e26a50c573dbe9c6cdac6ec2d97c0",
+      "bytes": 68527
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/ip/spectrum256_pl_fcmp_32ns_32ns_1_2_no_dsp_1_ip/spectrum256_pl_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci",
+      "sha256": "599e38d721eda4d67372dcf27998201fd78acc5d4ff8f0e2ab417b3a9c768c66",
+      "bytes": 68002
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/ip/spectrum256_pl_fdiv_32ns_32ns_32_22_no_dsp_1_ip/spectrum256_pl_fdiv_32ns_32ns_32_22_no_dsp_1_ip.xci",
+      "sha256": "e37c836290bdb2514dea06d79ce22766a995c541f2576ecb19ca914cf2e22a49",
+      "bytes": 62203
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/ip/spectrum256_pl_fmul_32ns_32ns_32_4_max_dsp_1_ip/spectrum256_pl_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+      "sha256": "6ddc2e10c280c0bb1aad2213c853d2cb1962fafb5a853ef3acdd16389f632936",
+      "bytes": 62204
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/ip/spectrum256_pl_fsqrt_32ns_32ns_32_28_no_dsp_1_ip/spectrum256_pl_fsqrt_32ns_32ns_32_28_no_dsp_1_ip.xci",
+      "sha256": "2946aa39579aa50555ab4f2edc26fd3f219053b7ba6c9ee495c7fbcf5a13fcaa",
+      "bytes": 55836
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/ip/spectrum256_pl_fsub_32ns_32ns_32_8_full_dsp_1_ip/spectrum256_pl_fsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "sha256": "9b2ec5d967a74e23bf685541620396d04b80f373fbe4ed42317da20b47d5105e",
+      "bytes": 62216
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/ip/spectrum256_pl_sitofp_32ns_32_7_no_dsp_1_ip/spectrum256_pl_sitofp_32ns_32_7_no_dsp_1_ip.xci",
+      "sha256": "c8adf640285b98f0af326c244e009918f61518c8692f2a054ae3b67d1a2398ab",
+      "bytes": 55819
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_amplitude_RAM_AUTO_1R1W.v",
+      "sha256": "ac0df7e59b6b1cc76f28c6a0f38b56f8486bc42e30d70d41f78ae652323018f1",
+      "bytes": 973
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_chronological_RAM_AUTO_1R1W.v",
+      "sha256": "ab47f204241232a971f8c6ba96c6aa320ffb5bdacf1bfcc57a029fcf3cb92b72",
+      "bytes": 1221
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_control_s_axi.v",
+      "sha256": "6eba0708a45bf972e710a66c3eba49063c18c6937b21910cee833b7792f78cd0",
+      "bytes": 22846
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_faddfsub_32ns_32ns_32_8_full_dsp_1.v",
+      "sha256": "36cafc5f0736a1890ce4ed4800a211984aa3c6b4cebea56cd02161e6d806c29d",
+      "bytes": 2652
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_fcmp_32ns_32ns_1_2_no_dsp_1.v",
+      "sha256": "d9e2e9653d4f2c79d07461e65c9e484e15fbebb563839703c328edef0b72459f",
+      "bytes": 3273
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_fdiv_32ns_32ns_32_22_no_dsp_1.v",
+      "sha256": "b42c159cc8535747c2cb9dd3f93271993a804815d2e2ada740fa461b7daf0995",
+      "bytes": 2304
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_flow_control_loop_pipe_sequential_init.v",
+      "sha256": "5d0c07b3795ec4eef823185201b650be054ef262ccfc6cb84f0648f30fb89c32",
+      "bytes": 2934
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_fmul_32ns_32ns_32_4_max_dsp_1.v",
+      "sha256": "ab22e0935f292c0ef6639993a9be21bc2c328bc4f3cd5a01c716e6dbe4abf68b",
+      "bytes": 2304
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_fsqrt_32ns_32ns_32_28_no_dsp_1.v",
+      "sha256": "6d67dd69a2ef09e601a3f1bc6d23878a7b0197a8afd4943f31e2d02a4cd426bb",
+      "bytes": 2044
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_fsub_32ns_32ns_32_8_full_dsp_1.v",
+      "sha256": "88b89a8c163562321b2cd21e816ea6eeba90847c69e1a4e0025454b45a37ef8a",
+      "bytes": 2307
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_input_mem_m_axi.v",
+      "sha256": "c3056dbee0997532dc018748d3b2bff7602903a64aa97af00ec78a67bad4f3d1",
+      "bytes": 92962
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_mul_8s_8s_8_1_1.v",
+      "sha256": "1403a1761c92e51a49787f8a82d0da7c27c71415cf94dad07b6a79484e317387",
+      "bytes": 687
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_output_mem_m_axi.v",
+      "sha256": "6314f5dbf8ee39bd8bfefb412070f0984ecf17190bbd36167843a4adfa768da1",
+      "bytes": 120055
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_ring_RAM_2P_BRAM_1R1W.dat",
+      "sha256": "1d4cc10b1b05a5299a031ae8d0f6ea63ab377fbf85c45521fbeaa059786d0a75",
+      "bytes": 1536
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_ring_RAM_2P_BRAM_1R1W.v",
+      "sha256": "759af3119e1bd6eb34bb5de1d2bf93225914845d7cfb09745e5c6ca70f580bd3",
+      "bytes": 1269
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_sitofp_32ns_32_7_no_dsp_1.v",
+      "sha256": "5415097bfa038da4d420b084d94e1bb9035b418e927d236754839028cf92fec9",
+      "bytes": 1987
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_sparsemux_7_2_32_1_1.v",
+      "sha256": "0452122e0b7a0e088360986e3d04b1c102e655b923fa6913106e085d6a3d9378",
+      "bytes": 1269
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_13_1.v",
+      "sha256": "42dd30e01e2871b5941241e42cd7501255e2861a5b9666e6281da640f43c3270",
+      "bytes": 10492
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_22_3.v",
+      "sha256": "9705718165219252d570a71631cfe3e9c20c6ffa80a89a16926396125a726c77",
+      "bytes": 19992
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_30_4_hann256_ROM_AUTO_1R.dat",
+      "sha256": "8f096b806ea0e54ade7be2d8759b48420ad1c3901bcd3ac142ff3888352426e8",
+      "bytes": 2560
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_30_4_hann256_ROM_AUTO_1R.v",
+      "sha256": "0c90ae96905c0161dd85415c24c05313314a6962bedf66ade4561ce6ffc6e57b",
+      "bytes": 1014
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_30_4.v",
+      "sha256": "5421c1b07326d70c112a33a4c628d6a7edbedcf0ea88b9c04cc693c148666568",
+      "bytes": 32596
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6_cos256_ROM_AUTO_1R.dat",
+      "sha256": "f0aac5f7c4cbae822e40c3db071672de86b4c4989e32d8949081a3b65b8835b0",
+      "bytes": 2560
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6_cos256_ROM_AUTO_1R.v",
+      "sha256": "718defc25cdcb3a5624adf242444678e803679f51c585e6cbeceb318672e351d",
+      "bytes": 1044
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6_sin256_ROM_AUTO_1R.dat",
+      "sha256": "6f7e5c75c109241e999203083663dc64ec564a496bf21a5cc56156e7efa85d0f",
+      "bytes": 2560
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6_sin256_ROM_AUTO_1R.v",
+      "sha256": "4f2b85ab69e10da7732f66205f9e66a36f37b2d4ab0cc776e12a61798c8f764f",
+      "bytes": 1044
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6.v",
+      "sha256": "6a62544350adb01f6b3f02db3a8b74b19ca86aed3aa7f093f2ea1cf8580cd21d",
+      "bytes": 30844
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_47_7.v",
+      "sha256": "2e4da70a1a57de1748a729199c6d8fdf60a9384e63174c93f149da32fab2bcf2",
+      "bytes": 8497
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_result_RAM_AUTO_1R1W.v",
+      "sha256": "7cdd985fa0dd86d21767c7c4808706f77af16c0e2a1e8dfac4907bdcd1dd0e68",
+      "bytes": 988
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_samples_RAM_AUTO_1R1W.v",
+      "sha256": "97ce70a058a963becbb218f03fb766e27ec6949237580badd6f47a3b0304e50a",
+      "bytes": 989
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_windowed_RAM_AUTO_1R1W.v",
+      "sha256": "fd675b3dae15975dd7da669955676e8dccd6cdb97e118efd7d300e436317b70f",
+      "bytes": 990
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array.v",
+      "sha256": "24fef70baf99710d664a52ce1b4fb8da0f5c22d4f1d96d323ddbe20be056b298",
+      "bytes": 46613
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_pl_Pipeline_VITIS_LOOP_101_2_VITIS_LOOP_103_3.v",
+      "sha256": "977bb1351abe98964d35780f9db38a8e2926bae180800f55e548e0f5e76cb121",
+      "bytes": 43054
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_pl_Pipeline_VITIS_LOOP_116_4.v",
+      "sha256": "2b02f4f49fb9f7170d983380605c1465b9a24db74145ced313a2145ba5328a89",
+      "bytes": 13097
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_pl_Pipeline_VITIS_LOOP_94_1.v",
+      "sha256": "27f22313559ef2187643755ac4d25a7ce971627a904534434f733a946ea52a7c",
+      "bytes": 11673
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl_words_RAM_AUTO_1R1W.v",
+      "sha256": "73ea5dad15dba1ed0d4cd002d5f3923ce65a724dcc3be20884ae1fb0dbda5e2d",
+      "bytes": 969
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/verilog/spectrum256_pl.v",
+      "sha256": "6e32e3bc2e8345688d1d2968e5a47f5bec228ab5b3657a02b7d65bd63d9f610a",
+      "bytes": 101347
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_amplitude_RAM_AUTO_1R1W.vhd",
+      "sha256": "0f61c0e9a5b276b809903f909cc1e75e7d17db0178a40f04a8e618cc7b786879",
+      "bytes": 2241
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_chronological_RAM_AUTO_1R1W.vhd",
+      "sha256": "058351b4d74b588d919b103323aa00253769eff5bcdaae2b136b412316e42770",
+      "bytes": 2719
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_control_s_axi.vhd",
+      "sha256": "df9548b763b9178d7d8cc95bdc877bf4e05a75a4904e3759837b0e305985fa70",
+      "bytes": 30904
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_faddfsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "sha256": "9fef0aae88216fecb9137cc849a40126455e708406c743d40c2952fc9ca658ca",
+      "bytes": 4511
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_fcmp_32ns_32ns_1_2_no_dsp_1.vhd",
+      "sha256": "a692b951d5e44f26ed912e3c60990e94c374a875169931c4ddf2db5a2d60c367",
+      "bytes": 5710
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_fdiv_32ns_32ns_32_22_no_dsp_1.vhd",
+      "sha256": "ce2c06e038aedc7e57c4624401ff9cac6c5edb9b9c4af16a339bce346be7103d",
+      "bytes": 3900
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_flow_control_loop_pipe_sequential_init.vhd",
+      "sha256": "c4f1511acc68aeda8aada8b6da051cec9611b2d568dde26012707d4c967dfed0",
+      "bytes": 3582
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
+      "sha256": "b5fa03fb1bf3c97749decea83696ac87cb118c4951e33b9e5940c4ea765bb2eb",
+      "bytes": 3900
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_fsqrt_32ns_32ns_32_28_no_dsp_1.vhd",
+      "sha256": "97b2f296b74393f45d4d436508d0955cc02209283f959ae0e119489e08b2cf87",
+      "bytes": 3457
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_fsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "sha256": "cae20e9777be277e0cf44dea1aa6f7ba6a4db65f5e5d2680ca955dea952b6bfa",
+      "bytes": 3905
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_input_mem_m_axi.vhd",
+      "sha256": "f1da0aa2bf54b16b8511f0a6c5832accd45df3893831967da78d4719455e30c6",
+      "bytes": 128765
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_mul_8s_8s_8_1_1.vhd",
+      "sha256": "ceebd93eb5cb7c8d8eb2c6e1e0b107c9ca0071f3be70ffb2b628e77ef299c457",
+      "bytes": 1365
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_output_mem_m_axi.vhd",
+      "sha256": "a5681a1e80975762b9ffea596bfab31f4e998bc5651e1f4fa91f640c9626b4e7",
+      "bytes": 164307
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_ring_RAM_2P_BRAM_1R1W.vhd",
+      "sha256": "5727797cab72f5151a26ae8e02da5ea3f3d1df1fb41a863ed7d3f79b607473c7",
+      "bytes": 3026
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_sitofp_32ns_32_7_no_dsp_1.vhd",
+      "sha256": "60209b5b0b8c3969c7acf906dd2d1e5f9a09c3ed48a3dd780ee53af542731132",
+      "bytes": 3373
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_sparsemux_7_2_32_1_1.vhd",
+      "sha256": "f8ce55e862906c5468bbf6b05e1cff242fbd910065562004801edf2ea403df9d",
+      "bytes": 1947
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_13_1.vhd",
+      "sha256": "35886b5cbac1d9f9dbfd75da89de58f938d5f3640b42e501772165af170b4243",
+      "bytes": 17368
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_22_3.vhd",
+      "sha256": "4421c9a74b5caee44ead6370e75b145f0ae4280206650f3fefbafc51e3135f16",
+      "bytes": 33684
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_30_4_hann256_ROM_AUTO_1R.vhd",
+      "sha256": "f9d6cdbb6bd929602e491c619a57e2e9d6f06cf926ef0a59982196c5f7ae1b8c",
+      "bytes": 13236
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_30_4.vhd",
+      "sha256": "c9d70bb545af7e3ba6403569cf8f424ea91adb18b22d267897e61f55d600c98c",
+      "bytes": 50879
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6_cos256_ROM_AUTO_1R.vhd",
+      "sha256": "d2d361472b85a4d2e69e5b20c3ef5209cba23fe5050fb23028bcd1c530c0ceda",
+      "bytes": 13266
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6_sin256_ROM_AUTO_1R.vhd",
+      "sha256": "5ccd2e5b3fd050d0894b04a44a0e8cd29d008e99720d9316d36aec00a7afd8d2",
+      "bytes": 13266
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6.vhd",
+      "sha256": "371b0081935de2d2e812d24927c3b85828ee7c9f9971b2e178fdac8d17844cf4",
+      "bytes": 52461
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_47_7.vhd",
+      "sha256": "84576a7f677b8aeaeba2d21092b090e378fa17df167832ac3b0f1de22bd11721",
+      "bytes": 13899
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_result_RAM_AUTO_1R1W.vhd",
+      "sha256": "774ca2d7925f2eb04fd5ab354569b7cffb99906fbd95ad59e6b2de2fe59182d2",
+      "bytes": 2271
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_samples_RAM_AUTO_1R1W.vhd",
+      "sha256": "97e3cc45a077e7536f59bf67dce0117c7f7f2b01214b6ac62d6e144868b179c3",
+      "bytes": 2273
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_windowed_RAM_AUTO_1R1W.vhd",
+      "sha256": "59caa22d8fde7fc12b0c3dc452337f5e67f2da1c621aa7a48edf3a41e75df24a",
+      "bytes": 2275
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array.vhd",
+      "sha256": "201ffe837b0f6e4a8556712ac1d551a0fb0fa0a0a3e6e7d5f63ee4aeadf690be",
+      "bytes": 76272
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_pl_Pipeline_VITIS_LOOP_101_2_VITIS_LOOP_103_3.vhd",
+      "sha256": "eb9cad2e5d5042b659903e7b7beff2450c3c4139c72253c8661fe9802d37ce6f",
+      "bytes": 69834
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_pl_Pipeline_VITIS_LOOP_116_4.vhd",
+      "sha256": "d0b0f4ce0227747642db63bc60cf1cfd2761997ae2edc480da2370aaf8b7f1f8",
+      "bytes": 18903
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_pl_Pipeline_VITIS_LOOP_94_1.vhd",
+      "sha256": "56fcc01aa34eaa7e9cd8592d00af638e8946aa7c0c1de582075b3ce6a2e7b918",
+      "bytes": 18796
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl_words_RAM_AUTO_1R1W.vhd",
+      "sha256": "aca0800c9638d5fc7e68d7f31ad68f1491a2e403357524f4638da833b1b7e1f2",
+      "bytes": 2233
+    },
+    {
+      "path": "src/ip/spectrum256_pl/hdl/vhdl/spectrum256_pl.vhd",
+      "sha256": "9a431fb109ebb3ade9ac3523950dbd1e1e087e4316fc578451433913bf2e8d27",
+      "bytes": 168113
+    },
+    {
+      "path": "src/ip/spectrum256_pl/misc/logo.png",
+      "sha256": "4d978370b877dccf3f3bfaf7a8fdb3554e936ee2d2d3356bdaa64c0c4e30c9af",
+      "bytes": 2297
+    },
+    {
+      "path": "src/ip/spectrum256_pl/pack.bat",
+      "sha256": "24fe78d5164172fe4aa4a31c9fe74ede817091d545e9ae80bff0f1bf8762fd58",
+      "bytes": 488
+    },
+    {
+      "path": "src/ip/spectrum256_pl/run_ippack.tcl",
+      "sha256": "9a046a92ae6cd8570f4d216f9a491145a0652eea69e5f72a0a33cf846a2790fe",
+      "bytes": 917
+    },
+    {
+      "path": "src/ip/spectrum256_pl/sysgen_info.xml",
+      "sha256": "2e908f8a5814738578a9e0d80e974237c4aa75b67fc9c3d71a7ac67ff533da83",
+      "bytes": 346
+    },
+    {
+      "path": "src/ip/spectrum256_pl/xgui/spectrum256_pl_v1_0.tcl",
+      "sha256": "943bdc53b64a7af90a202718f194696746ad6684c14c876f0f12d944fe9310d1",
+      "bytes": 21073
+    },
+    {
+      "path": "src/ip/tmds_v1_0/tmds_rtl.xml",
+      "sha256": "f79979c9844723343c83a80cc6bb9d1e49bdeb0796729517f5e339965e70d2c1",
+      "bytes": 3607
+    },
+    {
+      "path": "src/ip/tmds_v1_0/tmds.xml",
+      "sha256": "c6a3cbcfa3de47ca91a2fbe49de15f1f61c7196039f14381d1598a26233be489",
+      "bytes": 908
+    },
+    {
+      "path": "src/rtl/camera_clock_gate.v",
+      "sha256": "9265502bb6cb336ef38185de98c8091fcd4a29a33444c9ab259d7bb24019c834",
+      "bytes": 347
+    },
+    {
+      "path": "src/rtl/capture_core.sv",
+      "sha256": "e9bebdeb1c9808d18b524a6c689bd1344d8ff57312aadfbfa5a6c3c23cc4626f",
+      "bytes": 5468
+    },
+    {
+      "path": "src/rtl/capture_core.v",
+      "sha256": "2762e33b75ba95d30dc3009ac7de34c4d326d955da28b7a7645421448d9df63c",
+      "bytes": 1432
+    },
+    {
+      "path": "src/rtl/capture_csi_core.v",
+      "sha256": "c49dd86813fd12fe8979ab1648c2b01bc6015d43d3b5f1d5daac53aae22b8469",
+      "bytes": 5675
+    },
+    {
+      "path": "src/rtl/capture_test_source.sv",
+      "sha256": "7fab73c0a523b7823ee1c35d30577b5adae684be901017937b3a952a20f97a03",
+      "bytes": 783
+    },
+    {
+      "path": "src/rtl/csi2_raw10_rx.sv",
+      "sha256": "7d691bcd3d5ee4ac5711e61aea654c9e8df4735cc7fe194e33dbf1cc52dc1064",
+      "bytes": 4585
+    },
+    {
+      "path": "src/rtl/full_hdmi_health.v",
+      "sha256": "f164cbe0f6393cef6151a291d18148139c2f1c613c034486899f656320e67944",
+      "bytes": 2377
+    },
+    {
+      "path": "src/rtl/full_hdmi_observe.v",
+      "sha256": "b25910fdf012c5f927094a3eb098dbe4e90d18479880e9ea21a19ad36132199a",
+      "bytes": 4670
+    },
+    {
+      "path": "src/rtl/hdmi_1080_clock.v",
+      "sha256": "e8ccd3878f8fa0e1c8615727a68c8e396c59af588ea7ede21ec10eb1d7e7ad67",
+      "bytes": 1044
+    },
+    {
+      "path": "src/rtl/hdmi_diagnostic_motion_ui.v",
+      "sha256": "97ffab6d9478edd83ab7e6674eefbf6b7ab0884c98045426d2f0554ab515a6a3",
+      "bytes": 1097
+    },
+    {
+      "path": "src/rtl/hdmi_diagnostic_pattern.v",
+      "sha256": "aa9e08ec2c4c28292fedd56ae79f18fa71a8756f23c1e3d0341eb8277bcff44a",
+      "bytes": 1147
+    },
+    {
+      "path": "src/rtl/mipi_lane_merge.vhd",
+      "sha256": "a9dc4ec389026156fa9c61e7408a457a136e03c1db6a22c6d8513fff004d0302",
+      "bytes": 2146
+    },
+    {
+      "path": "src/rtl/motion60_overlay_control.v",
+      "sha256": "e8973722f199fca27877a080ce4fa4122ddb0317df1453d391b3f461adf8a3f0",
+      "bytes": 5244
+    },
+    {
+      "path": "src/rtl/motion60_spectrum_overlay.v",
+      "sha256": "1681f7ae88e9ba7d9321fe9dc6e5120e708b533ec07721c40aa698c0f3630493",
+      "bytes": 10658
+    },
+    {
+      "path": "src/rtl/motion60_video_osd.v",
+      "sha256": "d836e7421105e95e2b12f41f97c2308c1bc781a6b87502802b7735835110c5ee",
+      "bytes": 3062
+    },
+    {
+      "path": "src/rtl/motion60_video.v",
+      "sha256": "1c5d462747b33789ca3ccc1f2abfa77cad637c738c90f66868399c4220320eed",
+      "bytes": 2897
+    },
+    {
+      "path": "src/rtl/pixel_reset_guard.v",
+      "sha256": "5562f72b4e40b4cb1c037059ab962755474184e73392045f7e18aa05c26a4d97",
+      "bytes": 1361
+    },
+    {
+      "path": "src/rtl/raw10_axis_guard.sv",
+      "sha256": "2529ef35242d552fcdf273a3d033313a521b15e654b6187686f3b4ead8c84134",
+      "bytes": 2415
+    },
+    {
+      "path": "src/rtl/sccb_bridge.v",
+      "sha256": "31bcb64e7c4d49b43a2da3588c41beff495189963f5677e28c805ebcfe15474c",
+      "bytes": 2060
+    }
+  ]
+}

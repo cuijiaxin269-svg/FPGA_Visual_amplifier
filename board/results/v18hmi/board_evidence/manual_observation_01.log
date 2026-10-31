@@ -1,0 +1,6 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+HMI_MONITOR mode=interaction elapsed_ms=3 frames=12024 display=5973 rx_errors=0 capture_error=0
+HMI_MONITOR mode=interaction elapsed_ms=60009 frames=15647 display=7773 rx_errors=0 capture_error=0
+HMI_MONITOR mode=interaction elapsed_ms=120004 frames=19270 display=9573 rx_errors=0 capture_error=0
+HMI_MONITOR mode=interaction elapsed_ms=180004 frames=22893 display=11373 rx_errors=0 capture_error=0
+HMI_MONITOR_PASSED mode=interaction seconds=180 samples=19

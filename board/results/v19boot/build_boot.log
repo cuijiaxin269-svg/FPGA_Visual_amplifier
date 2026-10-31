@@ -1,0 +1,12 @@
+V19_PLATFORM_COMPATIBILITY_PASSED 34 QSPI-only parameters
+bin\make.exe: Nothing to be done for 'all'.
+
+
+****** Xilinx Bootgen v2021.2
+  **** Build date : Oct 19 2021-03:13:27
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+[INFO]   : Bootimage generated successfully
+
+V19_BOOT_IMAGE_BUILT

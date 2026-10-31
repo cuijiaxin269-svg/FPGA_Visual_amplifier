@@ -1,0 +1,732 @@
+
+*** Running vivado
+    with args -log capture_display_dma_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source capture_display_dma_0.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 30 21:09:26 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source capture_display_dma_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 664.320 ; gain = 220.055
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/clip_copy_checked'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_full_temporal_v2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_shared'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/rgb2dvi_v1_3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/roi256_v3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/spectrum256_pl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tool/vivado/2025.2/Vivado/data/ip'.
+Command: synth_design -top capture_display_dma_0 -part xc7z100ffg900-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2748
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1535.723 ; gain = 539.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'capture_display_dma_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_dma_0/synth/capture_display_dma_0.vhd:105]
+	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DLYTMR_RESOLUTION bound to: 125 - type: integer 
+	Parameter C_PRMRY_IS_ACLK_ASYNC bound to: 0 - type: integer 
+	Parameter C_ENABLE_VIDPRMTR_READS bound to: 1 - type: integer 
+	Parameter C_DYNAMIC_RESOLUTION bound to: 1 - type: integer 
+	Parameter C_NUM_FSTORES bound to: 3 - type: integer 
+	Parameter C_USE_FSYNC bound to: 1 - type: integer 
+	Parameter C_USE_MM2S_FSYNC bound to: 0 - type: integer 
+	Parameter C_USE_S2MM_FSYNC bound to: 2 - type: integer 
+	Parameter C_FLUSH_ON_FSYNC bound to: 1 - type: integer 
+	Parameter C_INCLUDE_INTERNAL_GENLOCK bound to: 1 - type: integer 
+	Parameter C_INCLUDE_SG bound to: 0 - type: integer 
+	Parameter C_M_AXI_SG_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_SG_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_INCLUDE_MM2S bound to: 1 - type: integer 
+	Parameter C_MM2S_GENLOCK_MODE bound to: 0 - type: integer 
+	Parameter C_MM2S_GENLOCK_NUM_MASTERS bound to: 1 - type: integer 
+	Parameter C_MM2S_GENLOCK_REPEAT_EN bound to: 0 - type: integer 
+	Parameter C_MM2S_SOF_ENABLE bound to: 1 - type: integer 
+	Parameter C_INCLUDE_MM2S_DRE bound to: 0 - type: integer 
+	Parameter C_INCLUDE_MM2S_SF bound to: 0 - type: integer 
+	Parameter C_MM2S_LINEBUFFER_DEPTH bound to: 4096 - type: integer 
+	Parameter C_MM2S_LINEBUFFER_THRESH bound to: 4 - type: integer 
+	Parameter C_MM2S_MAX_BURST_LENGTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_MM2S_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_MM2S_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_MM2S_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_AXIS_MM2S_TUSER_BITS bound to: 1 - type: integer 
+	Parameter C_INCLUDE_S2MM bound to: 0 - type: integer 
+	Parameter C_S2MM_GENLOCK_MODE bound to: 0 - type: integer 
+	Parameter C_S2MM_GENLOCK_NUM_MASTERS bound to: 1 - type: integer 
+	Parameter C_S2MM_GENLOCK_REPEAT_EN bound to: 1 - type: integer 
+	Parameter C_S2MM_SOF_ENABLE bound to: 1 - type: integer 
+	Parameter C_INCLUDE_S2MM_DRE bound to: 0 - type: integer 
+	Parameter C_INCLUDE_S2MM_SF bound to: 1 - type: integer 
+	Parameter C_S2MM_LINEBUFFER_DEPTH bound to: 512 - type: integer 
+	Parameter C_S2MM_LINEBUFFER_THRESH bound to: 4 - type: integer 
+	Parameter C_S2MM_MAX_BURST_LENGTH bound to: 8 - type: integer 
+	Parameter C_M_AXI_S2MM_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_S2MM_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_S2MM_TUSER_BITS bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_ALL bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_0 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_1 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_2 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_3 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_4 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_5 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_6 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_7 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_8 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_9 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_10 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_11 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_12 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_13 bound to: 0 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_14 bound to: 1 - type: integer 
+	Parameter C_ENABLE_DEBUG_INFO_15 bound to: 1 - type: integer 
+	Parameter C_INSTANCE bound to: axi_vdma - type: string 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_ENABLE_VERT_FLIP bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-3491] module 'axi_vdma' declared at 'd:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:68582' bound to instance 'U0' of component 'axi_vdma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_dma_0/synth/capture_display_dma_0.vhd:347]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:69021]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_rst_module' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:16221]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reset' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:14734]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter RST_USED bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_pulse' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714' bound to instance 'LITE_RESET_CDC_I' of component 'xpm_cdc_pulse' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:14942]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_pulse' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_pulse' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'LITE_IDLE_CDC_I' of component 'xpm_cdc_single' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:14988]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized1' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized1' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'LITE_MIN_CDC_I' of component 'xpm_cdc_single' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:15055]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter RST_USED bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_pulse' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714' bound to instance 'LITE_CLR_CDC_I' of component 'xpm_cdc_pulse' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:15097]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter RST_USED bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_pulse' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714' bound to instance 'AXIS_RESET_CDC_I' of component 'xpm_cdc_pulse' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:15147]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'AXIS_IDLE_CDC_I' of component 'xpm_cdc_single' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:15194]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'AXIS_MIN_CDC_I' of component 'xpm_cdc_single' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:15256]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter RST_USED bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_pulse' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714' bound to instance 'AXIS_CLR_CDC_I' of component 'xpm_cdc_pulse' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:15299]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'HARD_RESET_CDC_I' of component 'xpm_cdc_single' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:15769]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'AXIS_RESET_CDC_I' of component 'xpm_cdc_single' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:15901]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reset' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:14734]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_rst_module' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:16221]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_if' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:39626]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_lite_if' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:16708]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter RST_USED bound to: 1 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_pulse' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714' bound to instance 'LITE_WVALID_MM2S_CDC_I' of component 'xpm_cdc_pulse' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:17956]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_pulse__parameterized2' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_pulse__parameterized2' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_lite_if' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:16708]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'MM2S_INTRPT_CROSSING_I' of component 'xpm_cdc_single' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:39844]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized3' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized3' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_if' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:39626]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_intrpt' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:40326]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_intrpt' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:40326]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_module' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:38785]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_register' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:18449]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_register' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:18449]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_regdirect' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:20259]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_regdirect' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:20259]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_mux' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:29316]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_mux' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:29316]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_module' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:38785]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mngr' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:63367]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sm' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:61047]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sm' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:61047]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_cmdsts_if' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:62256]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_cmdsts_if' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:62256]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sts_mngr' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:62757]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sts_mngr' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:62757]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vidreg_module' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:55268]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vregister' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:53192]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vregister' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:53192]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vaddrreg_mux' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:54757]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vaddrreg_mux' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:54757]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vidreg_module' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:55268]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mngr' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:57783]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_greycoder' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:57506]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_greycoder' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:57506]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mngr' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:57783]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mngr' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:63367]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_fsync_gen' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:52331]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_fsync_gen' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:52331]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vid_cdc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:13230]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vid_cdc' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:13230]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sof_gen' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:40930]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sof_gen' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:40930]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mm2s_linebuf' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:46006]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sfifo' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:41717]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 4096 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 18 - type: integer 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1717 - type: string 
+	Parameter READ_DATA_WIDTH bound to: 18 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 13 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 13 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975' bound to instance 'xpm_fifo_sync_inst' of component 'xpm_fifo_sync' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:41924]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:522]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-226] default block is never used [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1220]
+INFO: [Synth 8-226] default block is never used [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1287]
+INFO: [Synth 8-226] default block is never used [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sfifo' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:41717]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_skid_buf' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:41171]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_skid_buf' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:41171]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mm2s_linebuf' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:46006]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:55430]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:53569]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2913]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2913]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:13919]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:13919]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:7613]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:4545]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:4545]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:4545]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:4545]
+INFO: [Synth 8-226] default block is never used [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:9687]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:7613]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10191]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10191]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:12364]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10866]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10866]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:12364]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_sf' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:20342]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo__parameterized3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo__parameterized3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:2109]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1372]
+	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 512 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 67 - type: integer 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_DATA_WIDTH bound to: 67 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975' bound to instance 'I_SYNC_FIFOGEN_FIFO' of component 'xpm_fifo_sync' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1498]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized1' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-226] default block is never used [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1220]
+INFO: [Synth 8-226] default block is never used [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1287]
+INFO: [Synth 8-226] default block is never used [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized6' [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized6' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized1' (0#1) [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1975]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1372]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_sf' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:20342]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:53569]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_omit_wrap' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:49625]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_omit_wrap' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:49625]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:55430]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:69021]
+INFO: [Synth 8-256] done synthesizing module 'capture_display_dma_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_dma_0/synth/capture_display_dma_0.vhd:105]
+WARNING: [Synth 8-6014] Unused sequential element dest_pulse_ff_reg was removed.  [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:860]
+WARNING: [Synth 8-6014] Unused sequential element dest_pulse_ff_reg was removed.  [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:860]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3087]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
+INFO: [Synth 8-6014] Unused sequential element GEN_LINEBUF_NO_SOF.m_skid_reset_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:47024]
+INFO: [Synth 8-6014] Unused sequential element GEN_LINEBUF_NO_SOF.s_axis_fifo_ainit_nosync_reg_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd:47064]
+INFO: [Synth 8-6014] Unused sequential element sig_input_reg_full_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:8245]
+INFO: [Synth 8-6014] Unused sequential element sig_xfer_reg_full_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:8556]
+INFO: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10601]
+INFO: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:10608]
+INFO: [Synth 8-6014] Unused sequential element sig_next_strt_strb_reg_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:12997]
+INFO: [Synth 8-6014] Unused sequential element sig_next_last_strb_reg_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:12998]
+INFO: [Synth 8-6014] Unused sequential element sig_next_dre_src_align_reg_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:13065]
+INFO: [Synth 8-6014] Unused sequential element sig_next_dre_dest_align_reg_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:13066]
+INFO: [Synth 8-6014] Unused sequential element sig_first_dbeat_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:13236]
+INFO: [Synth 8-6014] Unused sequential element sig_coelsc_reg_empty_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:13404]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3087]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
+WARNING: [Synth 8-6014] Unused sequential element gen_pntr_flags_cc.gae_cc_std.ram_aempty_i_reg was removed.  [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:982]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
+INFO: [Synth 8-6014] Unused sequential element hold_ff_q_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd:1586]
+INFO: [Synth 8-7129] Port s2mm_aclk in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_aresetn in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmdsts_awclk in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmdsts_aresetn in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wvalid in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[71] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[70] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[69] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[68] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[67] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[66] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[65] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[64] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[63] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[62] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[61] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[60] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[59] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[58] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[57] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[56] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[55] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[54] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[53] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[52] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[51] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[50] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[49] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[48] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[47] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[46] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[45] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[44] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[43] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[42] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[41] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[40] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[39] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[38] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[37] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[36] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[35] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[34] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[33] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[32] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[31] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[30] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[29] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[28] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[27] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[26] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[25] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[24] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[23] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[22] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[21] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[20] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[19] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[18] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[17] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[16] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[15] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[14] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[13] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[12] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[11] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[10] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[9] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[8] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[7] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[6] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[5] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[4] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[3] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[2] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[1] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_cmd_wdata[0] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_sts_wready in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_allow_addr_req in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_awready in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_wready in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_bresp[1] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_bresp[0] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_bvalid in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[31] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[30] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[29] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[28] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[27] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[26] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[25] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[24] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[23] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[22] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[21] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[20] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[19] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[18] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[17] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Synth 8-7129] Port s2mm_strm_wdata[16] in module axi_datamover_s2mm_omit_wrap is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1868.438 ; gain = 872.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1868.438 ; gain = 872.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1868.438 ; gain = 872.207
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1868.438 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_dma_0/capture_display_dma_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_dma_0/capture_display_dma_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_dma_0/capture_display_dma_0.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_dma_0/capture_display_dma_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_dma_0/capture_display_dma_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/capture_display_dma_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/capture_display_dma_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/vision/submission/_build/v25/c.runs/capture_display_dma_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/vision/submission/_build/v25/c.runs/capture_display_dma_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_dma_0/capture_display_dma_0_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_display_dma_0/capture_display_dma_0_clocks.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/capture_display_dma_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/capture_display_dma_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/tool/vivado/2025.2/Vivado/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/capture_display_dma_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/capture_display_dma_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 14 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1868.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1868.438 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1868.438 ; gain = 872.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1868.438 ; gain = 872.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1868.438 ; gain = 872.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'dmacntrl_cs_reg' in module 'axi_vdma_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+              wait_pipe1 |                              001 |                              001
+              wait_pipe2 |                              010 |                              010
+            execute_xfer |                              011 |                              100
+              check_done |                              100 |                              101
+           calc_cmd_addr |                              101 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dmacntrl_cs_reg' using encoding 'sequential' in module 'axi_vdma_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                         00000001 |                              000
+            wait_for_cmd |                         00000010 |                              001
+                  calc_1 |                         00000100 |                              010
+                  calc_2 |                         00001000 |                              011
+                  calc_3 |                         00010000 |                              100
+       wait_on_xfer_push |                         00100000 |                              101
+             chk_if_done |                         01000000 |                              110
+              error_trap |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sig_pcc_sm_state_reg' using encoding 'one-hot' in module 'axi_datamover_pcc'
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1868.438 ; gain = 872.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5784] Optimized 1 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 67 bits, new ram width 66 bits.
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1868.438 ; gain = 872.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1907.906 ; gain = 911.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 1992.402 ; gain = 996.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 1992.402 ; gain = 996.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 2185.746 ; gain = 1189.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 2185.746 ; gain = 1189.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 2185.746 ; gain = 1189.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 2185.746 ; gain = 1189.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 2188.742 ; gain = 1192.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 2188.742 ; gain = 1192.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    55|
+|2     |LUT1     |   255|
+|3     |LUT2     |   153|
+|4     |LUT3     |   145|
+|5     |LUT4     |   203|
+|6     |LUT5     |   180|
+|7     |LUT6     |   317|
+|8     |RAMB36E1 |     3|
+|10    |SRL16E   |   109|
+|11    |FDRE     |  1298|
+|12    |FDSE     |    51|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 2188.742 ; gain = 1192.512
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:37 . Memory (MB): peak = 2188.742 ; gain = 1192.512
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 2188.742 ; gain = 1192.512
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2188.742 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2208.266 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: b6f5bc81
+INFO: [Common 17-83] Releasing license: Synthesis
+329 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 2208.266 ; gain = 1521.293
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2208.266 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_display_dma_0_synth_1/capture_display_dma_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP capture_display_dma_0, cache-ID = 77692927d36b6f0e
+INFO: [Coretcl 2-1174] Renamed 80 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2208.266 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_display_dma_0_synth_1/capture_display_dma_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file capture_display_dma_0_utilization_synth.rpt -pb capture_display_dma_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 21:10:30 2026...

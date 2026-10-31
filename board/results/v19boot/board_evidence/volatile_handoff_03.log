@@ -1,0 +1,11 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+FSBL_REAL_BOOT_MODE r3: 00000005
+
+FSBL_PS_DDR_INIT_AND_JTAG_CLEANUP_PASSED
+HMI word 25 expected 1, observed 0
+HMI word 25 expected 1, observed 0
+    while executing
+"error "HMI word $index expected $expected, observed [hword $index]""
+    (procedure "hwait" line 4)
+    invoked from within
+"hwait 25 1 10000"

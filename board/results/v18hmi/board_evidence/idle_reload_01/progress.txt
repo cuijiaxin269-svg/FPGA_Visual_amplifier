@@ -1,0 +1,8 @@
+phase=normal_stop_drain
+phase=halt_display_master
+phase=halt_both_cores
+phase=replace_elf_without_bit_or_system_reset
+manifest_sha256=0e471e423a8deecedc95a7fb185774baa53a129969546cf2d1aeb1ed0ccb1f86
+system_reset_count=0
+bit_replaced=false
+phase=ready_for_runtime_checks

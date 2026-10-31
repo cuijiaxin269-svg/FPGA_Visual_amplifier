@@ -1,0 +1,22 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+HMI_NATIVE_TX get page0.mode.val
+HMI_SCREEN_NUMBER page0.mode.val=2
+HMI_NATIVE_TX get page0.alpha.val
+HMI_SCREEN_NUMBER page0.alpha.val=12
+HMI_NATIVE_TX get page0.exposure.val
+HMI_SCREEN_NUMBER page0.exposure.val=320
+HMI_NATIVE_TX get page0.runreq.val
+HMI_SCREEN_NUMBER page0.runreq.val=0
+HMI_ASSERT cold_stopped=0
+HMI_ASSERT run_status_stopped=5
+HMI_ASSERT rx_overflow=0
+HMI_ASSERT rx_errors=0
+HMI_NATIVE_TX get page0.vstatus.txt
+HMI_SCREEN_TEXT page0.vstatus.txt=QUEUED
+HMI_NATIVE_TX get page0.astatus.txt
+HMI_SCREEN_TEXT page0.astatus.txt=QUEUED
+HMI_NATIVE_TX get page0.estatus.txt
+HMI_SCREEN_TEXT page0.estatus.txt=QUEUED
+HMI_NATIVE_TX get page0.rstatus.txt
+HMI_SCREEN_TEXT page0.rstatus.txt=STOPPED
+HMI_P4_SCREEN_LINK_READBACK_PASSED

@@ -1,0 +1,6 @@
+
+Family       : zynq
+Device       : xc7z100
+Package      : -ffg900
+Speed Grade  : -2
+Clock Period : 6.667

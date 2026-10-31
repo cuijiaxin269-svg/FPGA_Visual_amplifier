@@ -1,0 +1,19 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+  1  APU
+     2  ARM Cortex-A9 MPCore #0 (Running)
+     3  ARM Cortex-A9 MPCore #1 (Suspended)
+  4  xc7z100
+     5  Legacy Debug Hub
+pc: 00100010
+
+cpsr: 600001d7
+       n (Bits [31]):  0      z (Bits [30]):  1      c (Bits [29]):  1
+       v (Bits [28]):  0      q (Bits [27]):  0  it (Bits [15:25]):  0
+       j (Bits [24]):  0  ge (Bits [19:16]):  0       e (Bits [9]):  0
+        a (Bits [8]):  1       i (Bits [7]):  1       f (Bits [6]):  1
+        t (Bits [5]):  0     m (Bits [4:0]): 17
+
+sp: 00000000
+
+lr: 0010d9a0
+

@@ -1,0 +1,338 @@
+
+*** Running vivado
+    with args -log capture_hdmi_observe_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source capture_hdmi_observe_0.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 30 21:15:21 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source capture_hdmi_observe_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 663.617 ; gain = 221.562
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/clip_copy_checked'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_full_temporal_v2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_shared'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/rgb2dvi_v1_3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/roi256_v3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/spectrum256_pl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tool/vivado/2025.2/Vivado/data/ip'.
+Command: synth_design -top capture_hdmi_observe_0 -part xc7z100ffg900-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34368
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1530.223 ; gain = 540.684
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'capture_hdmi_observe_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_hdmi_observe_0/synth/capture_hdmi_observe_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'full_hdmi_observe' [D:/vision/submission/fpga_visual_amplifier/src/rtl/full_hdmi_observe.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_diagnostic_pattern' [D:/vision/submission/fpga_visual_amplifier/src/rtl/hdmi_diagnostic_pattern.v:2]
+	Parameter HA bound to: 1920 - type: integer 
+	Parameter VA bound to: 1080 - type: integer 
+	Parameter HT bound to: 2200 - type: integer 
+	Parameter VT bound to: 1125 - type: integer 
+	Parameter HS0 bound to: 2008 - type: integer 
+	Parameter HS1 bound to: 2052 - type: integer 
+	Parameter VS0 bound to: 1084 - type: integer 
+	Parameter VS1 bound to: 1089 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_diagnostic_pattern' (0#1) [D:/vision/submission/fpga_visual_amplifier/src/rtl/hdmi_diagnostic_pattern.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'full_hdmi_observe' (0#1) [D:/vision/submission/fpga_visual_amplifier/src/rtl/full_hdmi_observe.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'capture_hdmi_observe_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_hdmi_observe_0/synth/capture_hdmi_observe_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element frame_reg was removed.  [D:/vision/submission/fpga_visual_amplifier/src/rtl/hdmi_diagnostic_pattern.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1657.992 ; gain = 668.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1657.992 ; gain = 668.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1657.992 ; gain = 668.453
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1657.992 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1679.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1679.574 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1679.574 ; gain = 690.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1679.574 ; gain = 690.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1679.574 ; gain = 690.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1679.574 ; gain = 690.035
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 10    
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   3 Input   10 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 21    
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 11    
+	   2 Input   24 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[31] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[30] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[29] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[28] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[27] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[26] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[25] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[24] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[23] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[22] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[21] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[20] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[19] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[18] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[17] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[16] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[15] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[14] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[13] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[12] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[11] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[10] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[9] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[8] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[7] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[6] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[5] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[4] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[3] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[2] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[1] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port probe_id[0] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[31] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[30] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[29] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[28] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[27] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[26] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[25] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[24] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[23] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[22] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[21] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[20] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[19] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[18] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[17] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[16] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[15] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[14] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[13] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[12] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[11] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[10] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[9] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[8] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[7] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[6] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[5] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[4] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[3] driven by constant 1
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[2] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[1] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port geometry[0] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[31] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[30] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[29] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[28] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[27] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[26] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[25] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[24] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[23] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[22] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[21] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[20] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[19] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[18] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[17] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[16] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[15] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[14] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[13] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[12] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[11] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[10] driven by constant 0
+INFO: [Synth 8-3917] design capture_hdmi_observe_0 has port status[9] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1724.754 ; gain = 735.215
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1724.754 ; gain = 735.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1724.754 ; gain = 735.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1944.117 ; gain = 954.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1944.117 ; gain = 954.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1944.117 ; gain = 954.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1944.117 ; gain = 954.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1944.117 ; gain = 954.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1944.117 ; gain = 954.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   111|
+|2     |LUT1   |    35|
+|3     |LUT2   |   326|
+|4     |LUT3   |    64|
+|5     |LUT4   |    92|
+|6     |LUT5   |    37|
+|7     |LUT6   |    49|
+|8     |FDRE   |   789|
+|9     |FDSE   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1944.117 ; gain = 954.578
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1944.117 ; gain = 932.996
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1944.117 ; gain = 954.578
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1956.191 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 111 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'capture_hdmi_observe_0' is not ideal for floorplanning, since the cellview 'full_hdmi_observe' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2060.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8bf99532
+INFO: [Common 17-83] Releasing license: Synthesis
+117 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 2060.617 ; gain = 1374.164
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2060.617 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_hdmi_observe_0_synth_1/capture_hdmi_observe_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file capture_hdmi_observe_0_utilization_synth.rpt -pb capture_hdmi_observe_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 21:16:09 2026...

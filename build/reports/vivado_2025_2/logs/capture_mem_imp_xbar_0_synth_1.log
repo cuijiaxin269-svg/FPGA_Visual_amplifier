@@ -1,0 +1,561 @@
+
+*** Running vivado
+    with args -log capture_mem_imp_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source capture_mem_imp_xbar_0.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 30 21:16:12 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source capture_mem_imp_xbar_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 662.625 ; gain = 222.082
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/clip_copy_checked'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_full_temporal_v2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_shared'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/rgb2dvi_v1_3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/roi256_v3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/spectrum256_pl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tool/vivado/2025.2/Vivado/data/ip'.
+Command: synth_design -top capture_mem_imp_xbar_0 -part xc7z100ffg900-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30584
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1541.336 ; gain = 541.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_xbar_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_xbar_0/synth/capture_mem_imp_xbar_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_axi_crossbar' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_crossbar' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:2232]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_si_transactor' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_addr_decoder' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_comparator_static' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_carry_and' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_carry_and' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_comparator_static' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_addr_decoder' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_axic_srl_fifo' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_ndeep_srl' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165484]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [D:/tool/vivado/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165484]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_ndeep_srl' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_axic_srl_fifo' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_si_transactor' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_splitter' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_splitter' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_wdata_router' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4724]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_wdata_router' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4724]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_axic_srl_fifo__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_ndeep_srl__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_ndeep_srl__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_axic_srl_fifo__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_arbiter_resp' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:1020]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_arbiter_resp' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:1020]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_wdata_router__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4724]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_ndeep_srl__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_ndeep_srl__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_wdata_router__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4724]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_axic_srl_fifo__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_axic_srl_fifo__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_wdata_router__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4724]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_ndeep_srl__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_ndeep_srl__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_wdata_router__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4724]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized4' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized4' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized5' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized5' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized6' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized6' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized7' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized7' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized8' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized8' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized9' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_si_transactor__parameterized9' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_addr_decoder__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_addr_decoder__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_addr_decoder__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_addr_decoder__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_axic_srl_fifo__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_axic_srl_fifo__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_wdata_mux' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_wdata_mux' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axi_register_slice' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axi_register_slice' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_36_axi_register_slice' is unconnected for instance 'reg_slice_mi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+INFO: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_36_axi_register_slice' has 93 connections declared, but only 92 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_addr_decoder__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_addr_decoder__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_axic_srl_fifo__parameterized3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_axic_srl_fifo__parameterized3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_wdata_mux__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_wdata_mux__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
+INFO: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_36_axi_register_slice' is unconnected for instance 'reg_slice_mi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+INFO: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_36_axi_register_slice' has 93 connections declared, but only 92 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_decerr_slave' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3626]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_decerr_slave' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_38_addr_arbiter' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:420]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_addr_arbiter' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:420]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_crossbar' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:2232]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_38_axi_crossbar' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_xbar_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_xbar_0/synth/capture_mem_imp_xbar_0.v:53]
+INFO: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:747]
+INFO: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:786]
+INFO: [Synth 8-6014] Unused sequential element gen_single_thread.gen_debug_r_single_thread.debug_r_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4184]
+INFO: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4142]
+INFO: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:747]
+INFO: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:786]
+INFO: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[0].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
+INFO: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[1].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
+INFO: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[0].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
+INFO: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[1].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
+INFO: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:747]
+INFO: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:786]
+INFO: [Synth 8-6014] Unused sequential element gen_single_thread.gen_debug_r_single_thread.debug_r_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4184]
+INFO: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4142]
+INFO: [Synth 8-6014] Unused sequential element gen_single_thread.gen_debug_r_single_thread.debug_r_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4184]
+INFO: [Synth 8-6014] Unused sequential element gen_single_thread.active_id_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4142]
+INFO: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[0].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
+INFO: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[1].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
+INFO: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[0].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
+INFO: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[1].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
+INFO: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:747]
+INFO: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:786]
+INFO: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:1034]
+INFO: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v:1034]
+INFO: [Synth 8-6014] Unused sequential element gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:2991]
+INFO: [Synth 8-6014] Unused sequential element gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v:2991]
+INFO: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_36_axic_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_36_axic_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_36_axic_register_slice__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_36_axic_register_slice__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_38_addr_decoder is either unconnected or has no load
+INFO: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_38_addr_decoder is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_38_si_transactor__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_38_si_transactor__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_38_si_transactor__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_38_si_transactor__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_38_si_transactor__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_38_si_transactor__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_38_si_transactor__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_38_si_transactor__parameterized6 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_38_si_transactor__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_38_si_transactor__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_38_si_transactor__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_38_si_transactor__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_38_si_transactor is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_38_si_transactor is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[44] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[43] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[42] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[41] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[40] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[34] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[33] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[32] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[31] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[30] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[29] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[28] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[27] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[26] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[25] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[24] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[23] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[22] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[21] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[20] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[19] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[18] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[17] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[16] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[15] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[14] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[13] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[12] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[11] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[10] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[4] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[3] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[2] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[1] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[447] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[446] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[445] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[444] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[443] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[442] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[441] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[440] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[439] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[438] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[437] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[436] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[435] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[434] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[433] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[432] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[431] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[430] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[429] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[428] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[427] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[426] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[425] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[424] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[423] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[422] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[421] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[420] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[419] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[418] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWADDR[417] in module axi_crossbar_v2_1_38_crossbar is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1833.465 ; gain = 833.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1833.465 ; gain = 833.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1833.465 ; gain = 833.367
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 1833.465 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_xbar_0/capture_mem_imp_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_xbar_0/capture_mem_imp_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/vision/submission/_build/v25/c.runs/capture_mem_imp_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/vision/submission/_build/v25/c.runs/capture_mem_imp_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1920.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 1920.672 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.672 ; gain = 920.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.672 ; gain = 920.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.672 ; gain = 920.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.write_cs_reg' in module 'axi_crossbar_v2_1_38_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                              100 |                               10
+                     ONE |                              010 |                               11
+                     TWO |                              001 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                              100 |                               10
+                     ONE |                              010 |                               11
+                     TWO |                              001 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                              100 |                               10
+                     ONE |                              010 |                               11
+                     TWO |                              001 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                              100 |                               10
+                     ONE |                              010 |                               11
+                     TWO |                              001 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                              100 |                               10
+                     ONE |                              010 |                               11
+                     TWO |                              001 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_36_axic_reg_srl_fifo__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.write_cs_reg' using encoding 'one-hot' in module 'axi_crossbar_v2_1_38_decerr_slave'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1920.672 ; gain = 920.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 10    
+	   2 Input    4 Bit       Adders := 15    
+	   2 Input    3 Bit       Adders := 9     
+	   2 Input    2 Bit       Adders := 23    
+	   2 Input    1 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 25    
++---Registers : 
+	              136 Bit    Registers := 4     
+	              100 Bit    Registers := 2     
+	                9 Bit    Registers := 8     
+	                8 Bit    Registers := 31    
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 16    
+	                4 Bit    Registers := 24    
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 40    
+	                1 Bit    Registers := 71    
++---Muxes : 
+	   2 Input  136 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 8     
+	   2 Input    3 Bit        Muxes := 28    
+	   2 Input    2 Bit        Muxes := 53    
+	   3 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 201   
+	   3 Input    1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1920.672 ; gain = 920.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1921.961 ; gain = 921.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1964.359 ; gain = 964.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1983.914 ; gain = 983.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2185.172 ; gain = 1185.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2185.172 ; gain = 1185.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2185.172 ; gain = 1185.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2185.172 ; gain = 1185.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2185.172 ; gain = 1185.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2185.172 ; gain = 1185.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |    19|
+|2     |LUT2    |   374|
+|3     |LUT3    |   588|
+|4     |LUT4    |   425|
+|5     |LUT5    |   196|
+|6     |LUT6    |   817|
+|7     |MUXF7   |     6|
+|8     |SRLC32E |    14|
+|9     |FDRE    |   747|
+|10    |FDSE    |    40|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2185.172 ; gain = 1185.074
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 2185.172 ; gain = 1097.867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2185.172 ; gain = 1185.074
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2185.172 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2204.820 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 53c40629
+INFO: [Common 17-83] Releasing license: Synthesis
+285 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 2204.820 ; gain = 1517.102
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2204.820 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_mem_imp_xbar_0_synth_1/capture_mem_imp_xbar_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP capture_mem_imp_xbar_0, cache-ID = 556e24fff1f7869c
+INFO: [Coretcl 2-1174] Renamed 64 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2204.820 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_mem_imp_xbar_0_synth_1/capture_mem_imp_xbar_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file capture_mem_imp_xbar_0_utilization_synth.rpt -pb capture_mem_imp_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 21:17:19 2026...

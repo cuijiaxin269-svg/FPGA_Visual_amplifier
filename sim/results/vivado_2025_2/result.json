@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-10-30T21:02:50.096400+08:00",
+  "status": "passed",
+  "passed": true,
+  "steps": [
+    {
+      "name": "compile_host",
+      "command": [
+        "D:\\tool\\vivado\\2025.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\bin\\g++.exe",
+        "-std=c++14",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "D:\\vision\\submission\\fpga_visual_amplifier\\sim\\tests\\test_spectrum_ui.cpp",
+        "-o",
+        "D:\\vision\\submission\\_build\\spectrum_2025_2\\test_spectrum_ui.exe"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "prepare_packet",
+      "command": [
+        "D:\\vision\\submission\\_build\\spectrum_2025_2\\test_spectrum_ui.exe",
+        "D:\\vision\\submission\\fpga_visual_amplifier\\data\\inputs\\multitone\\spectrum_00_values.bin",
+        "D:\\vision\\submission\\_build\\spectrum_2025_2\\ui_packet.hex"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "xvlog",
+      "command": [
+        "D:\\tool\\vivado\\2025.2\\Vivado\\bin\\xvlog.bat",
+        "--sv",
+        "D:\\vision\\submission\\fpga_visual_amplifier\\src\\rtl\\motion60_spectrum_overlay.v",
+        "D:\\vision\\submission\\fpga_visual_amplifier\\sim\\tests\\reference_spectrum_overlay.v",
+        "D:\\vision\\submission\\fpga_visual_amplifier\\sim\\tests\\tb_spectrum_ui.sv"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "xelab",
+      "command": [
+        "D:\\tool\\vivado\\2025.2\\Vivado\\bin\\xelab.bat",
+        "tb_spectrum_ui",
+        "--timescale",
+        "1ns/1ps",
+        "-s",
+        "ui_test"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "xsim",
+      "command": [
+        "D:\\tool\\vivado\\2025.2\\Vivado\\bin\\xsim.bat",
+        "ui_test",
+        "-runall",
+        "-log",
+        "D:\\vision\\submission\\_build\\spectrum_2025_2\\ui_rtl.log"
+      ],
+      "returncode": 0
+    }
+  ],
+  "hardware_test": false,
+  "requested_cxx": "D:\\tool\\vivado\\2025.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\bin\\g++.exe",
+  "vivado_root": "D:\\tool\\vivado\\2025.2\\Vivado",
+  "source_sha256": {
+    "src/rtl/motion60_spectrum_overlay.v": "1681f7ae88e9ba7d9321fe9dc6e5120e708b533ec07721c40aa698c0f3630493",
+    "sim/tests/reference_spectrum_overlay.v": "894ef83902cf6ccc0a26fda3696c934cf2f3080d28282e8fb9bae1fa647c9297",
+    "sim/tests/tb_spectrum_ui.sv": "2e52c02b6280b51c36ba41a85e652918c25dc7a7243592b974a6d8fb3caca50c",
+    "sim/tests/test_spectrum_ui.cpp": "4705abe831d8e6c1e081083ae8bcc7bb3930510154a6d1bdd673625828d70be8",
+    "src/ps/spectrum_ui.h": "50f054e2262ce7fce2acf82446a0d65d6675aadea918d7cb675506d7353fbd88",
+    "data/inputs/multitone/spectrum_00_values.bin": "15a585051e7f930454611c3675fdee97362797da49168a458c2685fa8e6d1cc8"
+  },
+  "returncode": 0,
+  "completed_at": "2026-10-30T21:03:09.285883+08:00"
+}

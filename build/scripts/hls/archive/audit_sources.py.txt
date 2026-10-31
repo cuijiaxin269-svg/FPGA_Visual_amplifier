@@ -1,0 +1,24 @@
+from pathlib import Path
+import hashlib,json
+r=Path(__file__).resolve().parents[1];hw=r.parent/'v15spectra';fw=r.parent/'v17spectrum_stability'
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+for base,expected in ((hw,'5a09c1fa33890533bcfb78d1d36fb81c8863cd7fbc0e3cee2dff5daaa1e7c99a'),(fw,'603dac3e58103e917b4b847323100a4c32ec32524b771f411cd6fbe7734603fc')):
+ assert sha(base/'build/candidate/manifest.json')==expected
+ for row in json.loads((base/'build/candidate/manifest.json').read_text())['files']:
+  assert sha(base/row['path'])==row['sha256'],row['path']
+expected={'sw/motion60.c','sw/motion60_clip_pl.c','sw/motion60_clip_process.c'}
+gates=json.loads((r/'provenance/gate_only_patch.json').read_text())
+for g in gates['changes']:
+ rel='ip_repo/motion60_shared/hdl/verilog/'+g['file'];expected.add(rel)
+ assert sha(r/rel)==g['after_sha256'] and sha(hw/rel)==g['before_sha256']
+changed=[]
+for part in ('sw','rtl','constraints','ip_repo','project'):
+ base=fw if part=='sw' else hw
+ for p in sorted((r/part).rglob('*')):
+  if p.is_file() and sha(p)!=sha(base/p.relative_to(r)):changed.append(p.relative_to(r).as_posix())
+assert set(changed)==expected,changed
+for f in ('phase_core.cpp','phase_core.hpp','pipeline.cpp'):
+ assert sha(r/'hls/motion60_shared'/f)==sha(r.parent/'alpha50_probe/hls'/f),f
+assert sha(r/'sw/spectrum_ui.h')==sha(fw/'sw/spectrum_ui.h')
+(r/'reports/source_audit.json').write_text(json.dumps(dict(passed=True,hardware_baseline='v15spectra',firmware_baseline='v17spectrum_stability',changed_production_files=changed,csim_sources_identical=True),indent=2))
+print('ALPHA50_SOURCE_AUDIT_PASSED stable_ui_unchanged=1 source_changes=7')

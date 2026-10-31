@@ -1,0 +1,17 @@
+{
+  "production_fsbl_sha256": "86383b7e4dbb6dcd4d50d0227b1be9649e555a27bfb5819e49137502f02e2133",
+  "fsbl_ocm_payload_bytes": 81928,
+  "fsbl_ocm_capacity_bytes": 196608,
+  "pcap_staging_start": 1048576,
+  "pcap_staging_end_exclusive": 14190720,
+  "application_load_after_pcap": true,
+  "application_entry": 1048576,
+  "mailbox_start": 16711680,
+  "mailbox_explicitly_zeroed_by_application": true,
+  "fsbl_stdout": "UART0 0xe0000000",
+  "application_irq": "UART1 IRQ82",
+  "cpu1_policy": "BootROM parking, no release request",
+  "data_cache_policy": "AMD FSBL flushes/disables before application; app remains uncached",
+  "gic_policy": "Application disables inherited interrupts before enabling only UART1",
+  "timer_policy": "Application resets global timer; CPU clock and 400 MHz timer source unchanged"
+}

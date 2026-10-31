@@ -1,0 +1,9 @@
+{
+  "time": "2026-10-30T15:04:15.0394009+08:00",
+  "pid": 34452,
+  "board_commands": 0,
+  "reset_commands": 0,
+  "stopped": true,
+  "was_running": true,
+  "termination_output": "SUCCESS: The process with PID 11572 (child process of PID 34452) has been terminated.\nSUCCESS: The process with PID 34452 (child process of PID 39028) has been terminated."
+}

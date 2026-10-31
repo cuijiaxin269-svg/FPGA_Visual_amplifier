@@ -1,0 +1,1113 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+INFO: [Hsi 55-2053] elapsed time for repository (D:/xilinx/Vitis/2021.2/data/embeddedsw) loading 1 seconds
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=1
+HMI_NATIVE_TX page0.hexp.val=1
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 31 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 1
+HMI_ASSERT exposure_target=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=1
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=6
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=4195 rounds=1
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=320
+HMI_NATIVE_TX page0.hexp.val=320
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 33 32 30 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 320
+HMI_ASSERT exposure_target=320
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=320
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=7
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=24145 rounds=2
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=898
+HMI_NATIVE_TX page0.hexp.val=898
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 38 39 38 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 898
+HMI_ASSERT exposure_target=898
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=898
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=8
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=43861 rounds=3
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=1
+HMI_NATIVE_TX page0.hexp.val=1
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 31 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 1
+HMI_ASSERT exposure_target=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=1
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=9
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=63828 rounds=4
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=320
+HMI_NATIVE_TX page0.hexp.val=320
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 33 32 30 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 320
+HMI_ASSERT exposure_target=320
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=320
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=10
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=83983 rounds=5
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=898
+HMI_NATIVE_TX page0.hexp.val=898
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 38 39 38 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 898
+HMI_ASSERT exposure_target=898
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=898
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=11
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=104158 rounds=6
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=1
+HMI_NATIVE_TX page0.hexp.val=1
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 31 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 1
+HMI_ASSERT exposure_target=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=1
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=12
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=124053 rounds=7
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=320
+HMI_NATIVE_TX page0.hexp.val=320
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 33 32 30 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 320
+HMI_ASSERT exposure_target=320
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=320
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=13
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=144035 rounds=8
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=898
+HMI_NATIVE_TX page0.hexp.val=898
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 38 39 38 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 898
+HMI_ASSERT exposure_target=898
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=898
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=14
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=164252 rounds=9
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=1
+HMI_NATIVE_TX page0.hexp.val=1
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 31 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 1
+HMI_ASSERT exposure_target=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=1
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=15
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=184085 rounds=10
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=320
+HMI_NATIVE_TX page0.hexp.val=320
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 33 32 30 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 320
+HMI_ASSERT exposure_target=320
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=320
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=16
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=204074 rounds=11
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=898
+HMI_NATIVE_TX page0.hexp.val=898
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 38 39 38 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 898
+HMI_ASSERT exposure_target=898
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=898
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=17
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=224236 rounds=12
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=1
+HMI_NATIVE_TX page0.hexp.val=1
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 31 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 1
+HMI_ASSERT exposure_target=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=1
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=18
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=244078 rounds=13
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=320
+HMI_NATIVE_TX page0.hexp.val=320
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 33 32 30 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 320
+HMI_ASSERT exposure_target=320
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=320
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=19
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=263898 rounds=14
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=898
+HMI_NATIVE_TX page0.hexp.val=898
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 38 39 38 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 898
+HMI_ASSERT exposure_target=898
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=898
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=20
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=284084 rounds=15
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=1
+HMI_NATIVE_TX page0.hexp.val=1
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 31 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 1
+HMI_ASSERT exposure_target=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=1
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=21
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=303976 rounds=16
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=320
+HMI_NATIVE_TX page0.hexp.val=320
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 33 32 30 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 320
+HMI_ASSERT exposure_target=320
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=320
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=22
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=324214 rounds=17
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=898
+HMI_NATIVE_TX page0.hexp.val=898
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 38 39 38 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 898
+HMI_ASSERT exposure_target=898
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=898
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=23
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=344140 rounds=18
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=1
+HMI_NATIVE_TX page0.hexp.val=1
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 31 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 1
+HMI_ASSERT exposure_target=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=1
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=24
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=364151 rounds=19
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=320
+HMI_NATIVE_TX page0.hexp.val=320
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 33 32 30 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 320
+HMI_ASSERT exposure_target=320
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=320
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=25
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=384050 rounds=20
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=898
+HMI_NATIVE_TX page0.hexp.val=898
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 38 39 38 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 898
+HMI_ASSERT exposure_target=898
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=898
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=26
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=404055 rounds=21
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=1
+HMI_NATIVE_TX page0.hexp.val=1
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 31 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 1
+HMI_ASSERT exposure_target=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=1
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=27
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=424064 rounds=22
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=320
+HMI_NATIVE_TX page0.hexp.val=320
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 33 32 30 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 320
+HMI_ASSERT exposure_target=320
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=320
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=28
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=443952 rounds=23
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=898
+HMI_NATIVE_TX page0.hexp.val=898
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 38 39 38 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 898
+HMI_ASSERT exposure_target=898
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=898
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=29
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=464166 rounds=24
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=1
+HMI_NATIVE_TX page0.hexp.val=1
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 31 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 1
+HMI_ASSERT exposure_target=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=1
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=30
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=483908 rounds=25
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=320
+HMI_NATIVE_TX page0.hexp.val=320
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 33 32 30 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 320
+HMI_ASSERT exposure_target=320
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=320
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=31
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=503891 rounds=26
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=898
+HMI_NATIVE_TX page0.hexp.val=898
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 38 39 38 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 898
+HMI_ASSERT exposure_target=898
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=898
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=32
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=524080 rounds=27
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=1
+HMI_NATIVE_TX page0.hexp.val=1
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 31 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 1
+HMI_ASSERT exposure_target=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=1
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=33
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=544133 rounds=28
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=320
+HMI_NATIVE_TX page0.hexp.val=320
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 33 32 30 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 320
+HMI_ASSERT exposure_target=320
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=320
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=34
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=563999 rounds=29
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=898
+HMI_NATIVE_TX page0.hexp.val=898
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 38 39 38 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 898
+HMI_ASSERT exposure_target=898
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A 41 4C 50 48 41 20 33 31 0D 0A 53 54 4F 50 0D 0A
+HMI_BURST {START} {ALPHA 31} {STOP}
+HMI_ASSERT final_stop_cancels_start=0
+HMI_NATIVE_TX printh 56 49 45 57 20 30 0D 0A 56 49 45 57 20 32 0D 0A 56 49 45 57 20 31 0D 0A
+HMI_BURST {VIEW 0} {VIEW 2} {VIEW 1}
+HMI_ASSERT final_queued_view=1
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_ASSERT exposure_applied=898
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 30 0D 0A 41 4C 50 48 41 20 35 30 0D 0A
+HMI_BURST {ALPHA 0} {ALPHA 50}
+HMI_ASSERT latest_alpha=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 31 0D 0A
+HMI_ASSERT invalid_keeps_target=50
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_ASSERT panel_visible=1
+HMI_ASSERT panel_switch_no_restart=35
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_transport_or_execution_error=0
+HMI_ASSERT no_native_error=0
+HMI_ASSERT no_false_reconnect=1
+HMI_SMOKE_PROGRESS elapsed_ms=584068 rounds=30
+HMI_NATIVE_TX printh 53 54 4F 50 0D 0A
+HMI_SCREEN_EMITTED STOP
+HMI_ASSERT stopped=0
+HMI_NATIVE_TX page0.exposure.val=320
+HMI_NATIVE_TX page0.hexp.val=320
+HMI_NATIVE_TX printh 45 58 50 4F 53 55 52 45 20 33 32 30 0D 0A
+HMI_SCREEN_EMITTED EXPOSURE 320
+HMI_ASSERT exposure_target=320
+HMI_NATIVE_TX printh 56 49 45 57 20 32 0D 0A
+HMI_SCREEN_EMITTED VIEW 2
+HMI_NATIVE_TX printh 53 54 41 52 54 0D 0A
+HMI_SCREEN_EMITTED START
+HMI_NATIVE_TX page0.alpha.val=50
+HMI_NATIVE_TX page0.hgain.val=50
+HMI_NATIVE_TX page0.p0.val=0
+HMI_NATIVE_TX page0.p12.val=0
+HMI_NATIVE_TX page0.p50.val=1
+HMI_NATIVE_TX printh 41 4C 50 48 41 20 35 30 0D 0A
+HMI_SCREEN_EMITTED ALPHA 50
+HMI_ASSERT alpha_actual=50
+HMI_NATIVE_TX get page0.alpha.val
+HMI_SCREEN_NUMBER page0.alpha.val=50
+HMI_NATIVE_TX get page0.vstatus.txt
+HMI_SCREEN_TEXT page0.vstatus.txt=APPLIED
+HMI_NATIVE_TX get page0.astatus.txt
+HMI_SCREEN_TEXT page0.astatus.txt=APPLIED
+HMI_NATIVE_TX get page0.estatus.txt
+HMI_SCREEN_TEXT page0.estatus.txt=APPLIED
+HMI_NATIVE_TX get page0.rstatus.txt
+HMI_SCREEN_TEXT page0.rstatus.txt=RUNNING
+HMI_TEN_MINUTE_AUTOMATED_INTERACTION_PASSED

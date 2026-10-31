@@ -1,0 +1,354 @@
+
+*** Running vivado
+    with args -log capture_mem_imp_auto_us_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source capture_mem_imp_auto_us_0.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 30 21:17:21 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source capture_mem_imp_auto_us_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 663.422 ; gain = 221.855
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/clip_copy_checked'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_full_temporal_v2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/motion60_shared'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/rgb2dvi_v1_3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/roi256_v3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/spectrum256_pl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vision/submission/fpga_visual_amplifier/src/ip/tmds_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tool/vivado/2025.2/Vivado/data/ip'.
+Command: synth_design -top capture_mem_imp_auto_us_0 -part xc7z100ffg900-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7140
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1532.742 ; gain = 540.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'capture_mem_imp_auto_us_0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_0/synth/capture_mem_imp_auto_us_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_37_top' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/21f8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14527]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_37_axi_upsizer' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/21f8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7025]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_37_w_upsizer' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/21f8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5552]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_37_w_upsizer' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/21f8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5552]
+INFO: [Synth 8-6157] synthesizing module 'axi_dwidth_converter_v2_1_37_a_upsizer' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/21f8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3594]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_command_fifo' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:648]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_command_fifo' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:648]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_37_a_upsizer' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/21f8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3594]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axi_register_slice' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized0' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized1' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized1' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized2' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized2' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized3' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized3' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axi_register_slice' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_36_axi_register_slice' is unconnected for instance 'si_register_slice_inst' [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/21f8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7367]
+INFO: [Synth 8-7023] instance 'si_register_slice_inst' of module 'axi_register_slice_v2_1_36_axi_register_slice' has 93 connections declared, but only 92 given [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/21f8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7367]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_37_axi_upsizer' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/21f8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7025]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dwidth_converter_v2_1_37_top' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/21f8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14527]
+INFO: [Synth 8-6155] done synthesizing module 'capture_mem_imp_auto_us_0' (0#1) [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_0/synth/capture_mem_imp_auto_us_0.v:53]
+INFO: [Synth 8-3848] Net m_axi_rready in module/entity axi_dwidth_converter_v2_1_37_axi_upsizer does not have driver. [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ipshared/21f8/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7164]
+INFO: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_36_axic_register_slice__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_36_axic_register_slice__parameterized2 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port cmd_id_ready in module axi_dwidth_converter_v2_1_37_a_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AID[0] in module axi_dwidth_converter_v2_1_37_a_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rready in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[7] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[6] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[5] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[4] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[7] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[6] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[5] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[4] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_rready in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_aresetn in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_aclk in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_arready in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[127] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[126] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[125] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[124] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[123] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[122] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[121] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[120] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[119] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[118] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[117] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[116] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[115] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[114] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[113] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[112] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[111] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[110] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[109] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[108] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[107] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[106] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[105] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[104] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[103] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[102] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[101] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[100] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[99] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[98] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[97] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[96] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[95] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[94] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[93] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[92] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[91] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[90] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[89] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[88] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[87] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[86] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[85] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[84] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[83] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[82] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[81] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[80] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[79] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[78] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[77] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[76] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[75] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[74] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[73] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[72] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[71] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[70] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[69] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[68] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[67] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[66] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[65] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[64] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[63] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[62] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[61] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[60] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rdata[59] in module axi_dwidth_converter_v2_1_37_axi_upsizer is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1808.754 ; gain = 816.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1808.754 ; gain = 816.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1808.754 ; gain = 816.148
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1808.754 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_0/capture_mem_imp_auto_us_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/vision/submission/_build/v25/c.gen/sources_1/bd/capture/ip/capture_mem_imp_auto_us_0/capture_mem_imp_auto_us_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/vision/submission/_build/v25/c.runs/capture_mem_imp_auto_us_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/vision/submission/_build/v25/c.runs/capture_mem_imp_auto_us_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1808.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1808.754 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1808.754 ; gain = 816.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1808.754 ; gain = 816.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1808.754 ; gain = 816.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1808.754 ; gain = 816.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1809.652 ; gain = 817.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1893.180 ; gain = 900.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1919.762 ; gain = 927.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1920.547 ; gain = 927.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2148.012 ; gain = 1155.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2148.012 ; gain = 1155.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2148.012 ; gain = 1155.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2148.012 ; gain = 1155.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2148.012 ; gain = 1155.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2148.012 ; gain = 1155.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |     4|
+|2     |LUT2    |    15|
+|3     |LUT3    |    37|
+|4     |LUT4    |    17|
+|5     |LUT5    |   193|
+|6     |LUT6    |    94|
+|7     |SRLC32E |    29|
+|8     |FDRE    |   403|
+|9     |FDSE    |     2|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2148.012 ; gain = 1155.406
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2148.012 ; gain = 1155.406
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2148.012 ; gain = 1155.406
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2151.703 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2162.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 2350c5dd
+INFO: [Common 17-83] Releasing license: Synthesis
+154 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2162.242 ; gain = 1475.902
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2162.242 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_mem_imp_auto_us_0_synth_1/capture_mem_imp_auto_us_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP capture_mem_imp_auto_us_0, cache-ID = e5769ee5dfaa6abc
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2162.242 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vision/submission/_build/v25/c.runs/capture_mem_imp_auto_us_0_synth_1/capture_mem_imp_auto_us_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file capture_mem_imp_auto_us_0_utilization_synth.rpt -pb capture_mem_imp_auto_us_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 21:18:16 2026...

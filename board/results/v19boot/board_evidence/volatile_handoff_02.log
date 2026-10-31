@@ -1,0 +1,15 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+RESET_STATE_CONFIRMED phase=before_fsbl DDR_CTRL=512 FPGA_RST_CTRL=32718607
+bad option '-value': -target-id -defs -nvlist -format-result -no-bits -access-mode -help
+bad option '-value': -target-id -defs -nvlist -format-result -no-bits -access-mode -help
+    while executing
+"error "bad option '$arg': [join $optnames]""
+    (procedure "::xsdb::get_options" line 45)
+    invoked from within
+"::xsdb::get_options args $options 0"
+    (procedure "rrd" line 11)
+    invoked from within
+"rrd -value pc"
+    (procedure "wait_pc" line 5)
+    invoked from within
+"wait_pc 0x881c 20000"

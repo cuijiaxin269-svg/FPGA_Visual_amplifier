@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vision/submission/fpga_visual_amplifier/src/rtl/motion60_spectrum_overlay.v" into library work
+INFO: [VRFC 10-311] analyzing module motion60_spectrum_overlay
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vision/submission/fpga_visual_amplifier/sim/tests/reference_spectrum_overlay.v" into library work
+INFO: [VRFC 10-311] analyzing module reference_spectrum_overlay
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/vision/submission/fpga_visual_amplifier/sim/tests/tb_spectrum_ui.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_spectrum_ui

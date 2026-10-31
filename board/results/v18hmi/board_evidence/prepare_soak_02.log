@@ -1,0 +1,4 @@
+BUTTON_JTAG_FREQUENCY_VERIFIED 1000000
+HMI_ASSERT target_view=2
+HMI_ASSERT target_alpha=50
+target_exposure expected=320 actual=898

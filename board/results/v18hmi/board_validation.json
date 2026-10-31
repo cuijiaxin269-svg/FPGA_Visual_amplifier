@@ -1,0 +1,402 @@
+{
+  "elf_sha256": "d192c7066773cdc7c3e7141eb392fd204e0974490a05902f88319536fd0d4f77",
+  "bit_sha256": "9836f502522085ff01fde7f3194b2dfe9491ffe7e30447ca391e50e4363cc134",
+  "loaded_manifest_sha256": "0e471e423a8deecedc95a7fb185774baa53a129969546cf2d1aeb1ed0ccb1f86",
+  "checks": {
+    "screen_link": true,
+    "five_commands": true,
+    "protocol_edges": true,
+    "screen_soft_restart": true,
+    "native_three_second_timer": true,
+    "final_stop_drain": true,
+    "smoke_10_minutes": true,
+    "soak_60_minutes": false
+  },
+  "physical_screen_hdmi_passed": false,
+  "scope": "Five-command hardware readback and automated real-UART tests; full 17-item physical acceptance is separate.",
+  "user_ended_continuous_run": {
+    "log": "soak_60m_05.jsonl",
+    "observed_interval_ms": 1920000,
+    "samples": 193,
+    "processed_frames": 115929,
+    "display_frames": 57600,
+    "user_requested_early_finish": true,
+    "is_60_minute_pass": false,
+    "jtag_reconnects": 0
+  },
+  "smoke_summary": {
+    "passed": true,
+    "elapsed_ms": 602631,
+    "rounds": 30,
+    "physical_touch_test": false
+  },
+  "user_observations": {
+    "date": "2026-10-30",
+    "electrical": "用户在电平转换指导后报告 FPGA RX 侧测得 2.7V。",
+    "observations": [
+      {
+        "firmware": "revision_02",
+        "view": 2,
+        "alpha": 50,
+        "exposure": 320,
+        "user_report": "画面正常，但是频谱效果比上次差，推测是曝光不足的原因",
+        "interpretation": "仅确认画面正常；曝光原因是用户推测，未作为结论。"
+      },
+      {
+        "firmware_elf_sha256": "d192c7066773cdc7c3e7141eb392fd204e0974490a05902f88319536fd0d4f77",
+        "view": 2,
+        "alpha": 50,
+        "exposure": 320,
+        "user_report": "频谱已有改善",
+        "interpretation": "消除空闲超时中断后、曝光不变时的现场主观对比；不等同频谱精度定量验收。"
+      }
+    ],
+    "manual_touch": {
+      "views_mode_hold_gain_slider": {
+        "user_report": "全部正常",
+        "scope": "三种视图画面/面板与 APPLIED 对应，模式长按不重复执行，增益拖动后最终值正常。"
+      },
+      "exposure_flow": {
+        "user_report": "符合上述流程",
+        "scope": "停止时键盘确认仅改设定，应用后 QUEUED，启动后 APPLIED；运行中改曝光 BUSY。"
+      },
+      "physical_button_and_keypad": {
+        "user_report": "上述都正常，手动操作已结束",
+        "followup_report": "按键同步及键盘保护正常，已回主页面",
+        "scope": "实体按键与屏幕同步，放大视图记忆恢复，键盘打开时不跳页、不覆盖草稿，取消保留设定。"
+      }
+    },
+    "user_requested_early_finish": "我觉得够了吧",
+    "all_17_physical_items_passed": false
+  },
+  "evidence": [
+    {
+      "path": "reports/board_evidence/idle_reload_01.log",
+      "sha256": "6f7d50171b112afeab1dba6a6a8eb729d21e0b2782312603b1ba4f89aa1a1ff7"
+    },
+    {
+      "path": "reports/board_evidence/idle_reload_01/progress.txt",
+      "sha256": "31da5dbbcec9c84fcf68dff07ce710705dc931a228fba5573d30589cfff5e9fa"
+    },
+    {
+      "path": "reports/board_evidence/server_cleanup.json",
+      "sha256": "d3d81987db22a8e61cee4fdab4fa7dd0c3e2fa48856c253901bf9a89fd08010d"
+    },
+    {
+      "path": "reports/board_evidence/prepare_soak_01.log",
+      "sha256": "ee5f8226dc766e497ed37c79fc213e5991ab1541ee1408f3951af00fcdac4a6c"
+    },
+    {
+      "path": "reports/board_evidence/prepare_soak_02.log",
+      "sha256": "20800b81005bd9c219e74f606d0a4abd4dd3b92e342ad1bfff74c416edd1a618"
+    },
+    {
+      "path": "reports/board_evidence/prepare_soak_03.log",
+      "sha256": "3552629164ead32e35c1b159610f06684b193c4080dd1b3a67658a7f05619f4c"
+    },
+    {
+      "path": "reports/board_evidence/load_01.log",
+      "sha256": "e637adc25fe0d2d37d6c413e836947e524c2dbe93ec23cbce986a5de4453e4e9"
+    },
+    {
+      "path": "reports/board_evidence/recover_01.log",
+      "sha256": "3695ae754d5fe8751ad2fad45971eb49e09200b2526e07ae5a6f8e8728fb074d"
+    },
+    {
+      "path": "reports/board_evidence/irq_registers_02.log",
+      "sha256": "04d470a8d6cdb475763a14f946ce10a2f396286815f9b61dc89e047fab00e2e5"
+    },
+    {
+      "path": "reports/board_evidence/abort_recovery_03.log",
+      "sha256": "ebb4680ab25a152a73eb4c6012f4d3adc826db901e77829d400fa056a586cadf"
+    },
+    {
+      "path": "reports/board_evidence/irq_load_01.log",
+      "sha256": "acfa2d8c6a02bca513f52979d30c292dd62da20ed137fc9ae4b29335c7cb0b9c"
+    },
+    {
+      "path": "reports/board_evidence/probe_link_04.log",
+      "sha256": "ccc810d1c2db96d2dbb2f10bba9143e5e946d9898d246b6d17017a0b8cb948a8"
+    },
+    {
+      "path": "reports/board_evidence/runtime_commands_03.log",
+      "sha256": "ec2fac1c07333ee1e4fe9a372f3222305b84ab5bf456d74c002532cc6ff0e654"
+    },
+    {
+      "path": "reports/board_evidence/protocol_edges_01.log",
+      "sha256": "ab6e752b852d07d74e8ef0f5bd6f367a1ae37ad62f691b85f74149cbbae4c4fa"
+    },
+    {
+      "path": "reports/board_evidence/screen_restart_01.log",
+      "sha256": "c4d5bd473e3fa87f64e39ffcbfb7e5445a9f5a431d3c0595c2c576ccbf51fe26"
+    },
+    {
+      "path": "reports/board_evidence/prepare_soak_01.log",
+      "sha256": "ee5f8226dc766e497ed37c79fc213e5991ab1541ee1408f3951af00fcdac4a6c"
+    },
+    {
+      "path": "reports/board_evidence/finish_run_01.log",
+      "sha256": "de7f5090f8e2541358da5b133fcc7c412bb895da4cb3ee1938049bd6b90e0ec5"
+    },
+    {
+      "path": "reports/board_evidence/interaction_smoke_01.log",
+      "sha256": "b733234534119848d5615edf38b372eb0f291faefb12289d9151b3c9219d4ab5"
+    },
+    {
+      "path": "reports/board_evidence/soak_60m_01.log",
+      "sha256": "ca412255082a8a9bcd7cea5634294a5f6589733dd1fc8ad5c53443eaf59f90ae"
+    },
+    {
+      "path": "reports/board_evidence/soak_60m_01.jsonl",
+      "sha256": "8a8819ccab6f282320954867da1de184eca4b62ffb1a75812782bea39d26b7f8"
+    },
+    {
+      "path": "reports/board_evidence/soak_60m_02.jsonl",
+      "sha256": "714f07f8d513ead663fd92fbaf41eeb8a23f6be2e308abe4821ea46df86dbbca"
+    },
+    {
+      "path": "reports/board_evidence/soak_60m_02.log",
+      "sha256": "42276f6fe7bbf78b2b4d0df2ef4b11bf711045cc87b02b78e7e9e7537a418ccd"
+    },
+    {
+      "path": "reports/board_evidence/soak_60m_03.jsonl",
+      "sha256": "548e05685d1a136cdfa84da2c42b0ec499ec492b6c199dbfe0175bfa3db971c3"
+    },
+    {
+      "path": "reports/board_evidence/soak_60m_03.log",
+      "sha256": "d1abfc4b48f5c02818e66ea97108c3dfffffe3dc16e77347fb74e670fa53ba78"
+    },
+    {
+      "path": "reports/board_evidence/soak_60m_04.jsonl",
+      "sha256": "e5aadbd044bf04aeffe6b5ded5bed78d79056e6c735ea662d7b87d4984da470a"
+    },
+    {
+      "path": "reports/board_evidence/soak_60m_04.log",
+      "sha256": "24aebb22b4ca33acfdcd937e7f27f817cfcd07c39853ca2e047d0cb36140bb3a"
+    },
+    {
+      "path": "reports/board_evidence/soak_60m_05.jsonl",
+      "sha256": "baa3e0cf12cb8ec8013ed88c5213efc4c95c0e62c845840402c5d3f666f571bf"
+    },
+    {
+      "path": "reports/board_evidence/soak_60m_05.log",
+      "sha256": "09a9c810f4b77114e6fce279ed469ea197f8fe359c2c61d0f10ededc628d8bfa"
+    },
+    {
+      "path": "reports/board_evidence/interaction_smoke_01.jsonl",
+      "sha256": "0650b793957cf594c9349c1d28072a3816f14907f26942db56b03c0c061262ac"
+    },
+    {
+      "path": "reports/board_evidence/manual_observation_01.log",
+      "sha256": "aef1639b695458e80ec0e79e1a29fe7d3f2ae005897e51e9d228b5b69d06f779"
+    },
+    {
+      "path": "reports/board_evidence/manual_observation_01.jsonl",
+      "sha256": "1c1f84f25726eff467a06105caed228b36c9a35877c8d631c45ac6701d651dc5"
+    },
+    {
+      "path": "reports/board_evidence/manual_observation_02.log",
+      "sha256": "a222f5853c819537cec7eb1d91b1c71f89114c1af76afae209b811b286ff5971"
+    },
+    {
+      "path": "reports/board_evidence/manual_observation_02.jsonl",
+      "sha256": "f1ed7b1bfb802e478ca0d1b8e6cece096c07bfc025fd39205bce6ee7bf9fa4ca"
+    },
+    {
+      "path": "reports/board_evidence/final_snapshot/button.bin",
+      "sha256": "663d09fbefe83ba428a3d6cb56a5a633901e1111e1978d0336b96c51e80c3c79"
+    },
+    {
+      "path": "reports/board_evidence/final_snapshot/camera.bin",
+      "sha256": "16e27a99ce970a2968574a65ec2ade8038b21061f799726ee00367183bf70aab"
+    },
+    {
+      "path": "reports/board_evidence/final_snapshot/capture.bin",
+      "sha256": "9714596b7b88323c14469171da64be45367de2c10c77bb7b077db47d5636d426"
+    },
+    {
+      "path": "reports/board_evidence/final_snapshot/hmi.bin",
+      "sha256": "c7591b49a537d29ddb40d01d7810730fdb3fb00e41d85f9007648371fb6867db"
+    },
+    {
+      "path": "reports/board_evidence/final_snapshot/motion.bin",
+      "sha256": "dcecb8dae971f3dcbe70cc8e8950e977683e9c3d0bee6e0f3a0e66a1e0dbbea0"
+    },
+    {
+      "path": "reports/board_evidence/final_snapshot/rx.bin",
+      "sha256": "dcec9e4961ccaa71fd03f0ed188aaf8eed1de4e9033c75d6cb800ddf0ea2606b"
+    },
+    {
+      "path": "reports/board_evidence/final_snapshot/rx.txt",
+      "sha256": "a69478debed858e014cfd56136e8aaa999a90d413c59699872cfec47857b27ee"
+    },
+    {
+      "path": "reports/board_evidence/final_snapshot/summary.json",
+      "sha256": "ca1992c167405197b4dc1bd2dfefaa094a51744181a7112fa348f45cab2ad86e"
+    },
+    {
+      "path": "reports/board_evidence/final_snapshot/trace.bin",
+      "sha256": "d66a44d97b3f7c2a84ce349ef67bdddf2aebf96f1b979b9ec2e01c16ae1497b4"
+    },
+    {
+      "path": "reports/board_evidence/final_snapshot/trace_window.txt",
+      "sha256": "e206b4649726cd346ead52373d613d0215d719c42a52d627ec78ca0e815ed473"
+    },
+    {
+      "path": "reports/board_evidence/final_snapshot/tx.bin",
+      "sha256": "637359d7947fdfe4288c0270989b596a4e124d41762dd30367982463eb6eac0d"
+    },
+    {
+      "path": "reports/board_evidence/final_snapshot/tx.txt",
+      "sha256": "c92657fe4660a3c33f899cbc60cc93b9c7cdbbe15af31f0fc8ed94365f82faaf"
+    },
+    {
+      "path": "reports/board_evidence/protocol_snapshot/button.bin",
+      "sha256": "84816de9a52d7aee3e2749cdb5abbd389a0404f395b122db0b73a2744ea908b7"
+    },
+    {
+      "path": "reports/board_evidence/protocol_snapshot/camera.bin",
+      "sha256": "3566d14cc9ade0aedb3a1702fc8b31815b8ccfd2a877821e253717b7e8f5ed7d"
+    },
+    {
+      "path": "reports/board_evidence/protocol_snapshot/capture.bin",
+      "sha256": "d22e0c51cad40e17fde6dfc409d0f275b4299eaf4c9d6394ca43564129bf6f49"
+    },
+    {
+      "path": "reports/board_evidence/protocol_snapshot/hmi.bin",
+      "sha256": "750ee4a472bef0c08befcadc868d1eaec7401fdee7fff7eef563d292a0691ebf"
+    },
+    {
+      "path": "reports/board_evidence/protocol_snapshot/motion.bin",
+      "sha256": "5c477f3bdb6f1b66e55642d3e240edd01423c7bfe7ee4b73ac094b169448235c"
+    },
+    {
+      "path": "reports/board_evidence/protocol_snapshot/rx.bin",
+      "sha256": "9cd0566eca9768f3f8e19471f51be0d753b859c97a13fac9251374d8d261fed7"
+    },
+    {
+      "path": "reports/board_evidence/protocol_snapshot/rx.txt",
+      "sha256": "29a6a28abf0cf4937f64c0dd5ba8716c8465fe01ee41fec7ebf217c8c8964d1b"
+    },
+    {
+      "path": "reports/board_evidence/protocol_snapshot/summary.json",
+      "sha256": "0095498713b6de40cf4ece7f9eba242a970b72a928b605be66342a6c4f77985e"
+    },
+    {
+      "path": "reports/board_evidence/protocol_snapshot/trace.bin",
+      "sha256": "154446126d403cab54852cf147bf87871ed9cfafd0583f01403dfa8ee16152f1"
+    },
+    {
+      "path": "reports/board_evidence/protocol_snapshot/trace_window.txt",
+      "sha256": "1da432235d384b6910665bea77d727208190a63baaf4819919d53080b2052fcd"
+    },
+    {
+      "path": "reports/board_evidence/protocol_snapshot/tx.bin",
+      "sha256": "d2ae064f16823a78e01bb57d4ecbc4d35f740e6783096752be52eafc207d565a"
+    },
+    {
+      "path": "reports/board_evidence/protocol_snapshot/tx.txt",
+      "sha256": "5254d97e7242ab7eb5ae09ef6d233e92dd8a2582b2f68f9440ed93d71d764dac"
+    },
+    {
+      "path": "reports/board_evidence/manual_touch_snapshot/button.bin",
+      "sha256": "e347715d5141fe36912981fc890e2a7fc5e8480a3a3a7dc49397c1b22ecf86f2"
+    },
+    {
+      "path": "reports/board_evidence/manual_touch_snapshot/camera.bin",
+      "sha256": "51c3771f353eba55af2890494233bcd9e1e91d8bd2fef2f0448e5423f218587d"
+    },
+    {
+      "path": "reports/board_evidence/manual_touch_snapshot/capture.bin",
+      "sha256": "c50205626dbd307f300ec69f01e80da59d01d6f185a10122d6a0d81531b14ba0"
+    },
+    {
+      "path": "reports/board_evidence/manual_touch_snapshot/hmi.bin",
+      "sha256": "75d21592116d0efce68ab9ebd1e9d3eb039848b20ff24d4cbafda56fd0310808"
+    },
+    {
+      "path": "reports/board_evidence/manual_touch_snapshot/motion.bin",
+      "sha256": "a0ce53f504513280c35a40e2cd648b4a208ddc6e99af58030ebfdf416d2f5404"
+    },
+    {
+      "path": "reports/board_evidence/manual_touch_snapshot/rx.bin",
+      "sha256": "7d61e38004b50b73f66b228fdd8214e0447bfcf6d0ba9cddf26fb1c101fd48b1"
+    },
+    {
+      "path": "reports/board_evidence/manual_touch_snapshot/rx.txt",
+      "sha256": "18a583d0730e0a5eda2c403b82a738f8d2e61ffd524c4a2e1ab3d24a25e4106e"
+    },
+    {
+      "path": "reports/board_evidence/manual_touch_snapshot/summary.json",
+      "sha256": "e3248879d0fbaa2a56705c67e16bb8f2601bbbd3d127701ba0e44399961e284f"
+    },
+    {
+      "path": "reports/board_evidence/manual_touch_snapshot/trace.bin",
+      "sha256": "0ec2344edce258784f369949d310fbd88aaf1388361ae2086b9831983fd9349f"
+    },
+    {
+      "path": "reports/board_evidence/manual_touch_snapshot/trace_window.txt",
+      "sha256": "4568a9fb9549331dad95c051f356fb9c0a3ae0ca864f4b853c34952d72074570"
+    },
+    {
+      "path": "reports/board_evidence/manual_touch_snapshot/tx.bin",
+      "sha256": "65c4d9a6857ad5ec6355c4a6c897d1509c180ca44233fd95339efdf627343792"
+    },
+    {
+      "path": "reports/board_evidence/manual_touch_snapshot/tx.txt",
+      "sha256": "3e97679d560a608f33f964228d4e6d12914d40bfe199384e09c941df9e154d58"
+    },
+    {
+      "path": "reports/board_evidence/jtag_recheck_01/button.bin",
+      "sha256": "58dbcb8203bc770bee1a9101761db3d890849eefb0d62d646215b0e8e2b5e9ab"
+    },
+    {
+      "path": "reports/board_evidence/jtag_recheck_01/camera.bin",
+      "sha256": "16e27a99ce970a2968574a65ec2ade8038b21061f799726ee00367183bf70aab"
+    },
+    {
+      "path": "reports/board_evidence/jtag_recheck_01/capture.bin",
+      "sha256": "3919032069b125f52d5beab9a3762f7654aa703b860b412d07c07639605c3204"
+    },
+    {
+      "path": "reports/board_evidence/jtag_recheck_01/hmi.bin",
+      "sha256": "a18e78baa1d3b1d2750c0ee70acf6fffd6b9ec85fc40ff110f9af60c71c8c44b"
+    },
+    {
+      "path": "reports/board_evidence/jtag_recheck_01/motion.bin",
+      "sha256": "06401d72ee3e3365e16426d8a0788b053c5026a855a77fb27b71a04754b4121f"
+    },
+    {
+      "path": "reports/board_evidence/jtag_recheck_01/rx.bin",
+      "sha256": "36156668e9ac1eaaa27180db6e5b3659ebc7bdd0267535dc7706bbdcaafb08e6"
+    },
+    {
+      "path": "reports/board_evidence/jtag_recheck_01/rx.txt",
+      "sha256": "387207c93b1e31299b72415b712fbcbc1c0eda85b956a95c726a1071f15d75f4"
+    },
+    {
+      "path": "reports/board_evidence/jtag_recheck_01/summary.json",
+      "sha256": "a9c4f98464ad895a82a5c6b70d5c7f41ab493cf293108de8e4358bc6f81d54a7"
+    },
+    {
+      "path": "reports/board_evidence/jtag_recheck_01/trace.bin",
+      "sha256": "0831c5fce4fe2804fbf47e22a1cf2cb53a1ead191a52f2ff1936462873408091"
+    },
+    {
+      "path": "reports/board_evidence/jtag_recheck_01/trace_window.txt",
+      "sha256": "ab871fa82273f7eb4a02d6abca8666064b30a515ad8d271d129661021156b781"
+    },
+    {
+      "path": "reports/board_evidence/jtag_recheck_01/tx.bin",
+      "sha256": "1ff349c4e481130d477070e9570eaaaeec1eacac57b348cefae600742bf9fa0b"
+    },
+    {
+      "path": "reports/board_evidence/jtag_recheck_01/tx.txt",
+      "sha256": "97443c9adbed0e6445fee612829ad56d4ce281d81eab80db368d8040249b872f"
+    },
+    {
+      "path": "reports/board_evidence/user_observations.json",
+      "sha256": "1837c47ba6c8137252b935b1d26c26d710840c8e00caefb63f59552ef6eec195"
+    }
+  ]
+}

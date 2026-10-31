@@ -1,0 +1,21 @@
+{
+  "production_fsbl_loaded": true,
+  "debugger_forced_jtag_branch": true,
+  "ps_ddr_init_completed": true,
+  "official_handoff_exit_executed": true,
+  "pl_downloaded_via_jtag": true,
+  "application_downloaded_via_jtag": true,
+  "mailbox_poison_after_download": "0xa5a5a5a5 across 64 KiB",
+  "application_initialized_mailboxes_and_reserved_tail": true,
+  "defaults_observed": {"run":"STOPPED","view":2,"alpha":12,"exposure":320},
+  "capture_error": 0,
+  "algorithm_error": 0,
+  "hmi_online": false,
+  "hmi_rx_bytes": 0,
+  "peripherals_present": {"camera":false,"hdmi":false,"hmi":false},
+  "peripheral_presence_source": "User explicitly reported only the development board is connected.",
+  "hmi_online_test_timeout_explanation": "No serial screen attached; not evidence of an HMI transport defect.",
+  "bootrom_flash_boot_tested": false,
+  "functional_tests_deferred_by_user": true,
+  "debug_script_issues": ["Core virtual memory read before explicit processor reset; fixed by physical APU read and CPU reset.","XSCT 2021.2 rrd has -nvlist, not -value; script corrected and resumed at checked breakpoint."]
+}

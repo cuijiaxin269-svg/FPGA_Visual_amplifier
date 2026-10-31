@@ -1,0 +1,6 @@
+HMI_PROTOCOL_LINK_PASSED strict_crlf ranges fragmentation binary_ff overflow resync keypad stale_results reconnect
+PASS debounce: boot-held, bounce, 25 ms press/release, long hold, polling gaps
+HMI_DEVICE_PASSED real_scheduler views panel_commit alpha_frame exposure_readback stop_drain rapid_run key fault clip_ownership
+HMI_UART_PASSED initialization_irq82 short_packet_trigger no_idle_storm framing_error overflow ring_wrap atomic_tx backpressure spurious_irq
+HMI_HOST_INPUT_RECEIPT_WRITTEN
+HMI_HOST_TESTS_PASSED

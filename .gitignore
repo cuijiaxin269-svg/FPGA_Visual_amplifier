@@ -1,0 +1,12 @@
+# Keep source IP metadata, HDL and explicit verification reports.
+/_build/
+/build/output/
+**/.Xil/
+**/__pycache__/
+*.pyc
+*.jou
+!/build/reports/**/*.jou
+!/board/results/**/*.jou
+/board/artifacts/
+*.wdb
+*.wcfg

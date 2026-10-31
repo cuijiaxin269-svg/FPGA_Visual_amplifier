@@ -1,0 +1,104 @@
+
+****** Xilinx Program Flash
+****** Program Flash v2021.2 (64-bit)
+  **** SW Build 1967 on 2021-10-14-04:42:58
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+Usage: program_flash   <FLASH OPTIONS>   <CABLE & DEVICE OPTIONS>
+
+ [FLASH OPTIONS]:
+    -f <image file> 
+        Image to be written onto the flash memory 
+    -offset <address> 
+        Offset within the flash memory at which the image should be written
+    -no_erase 
+        Do not erase the flash memory before programming
+    -no_program 
+        Skip programming the flash. Can be used to verify the flash content with image file
+    -erase_only 
+        Only erases the flash as per size of the image file
+    -blank_check 
+        Check if the flash memory is erased
+    -verify 
+        Check if the flash memory is programmed correctly
+    -fsbl <fsbl file> 
+        Specify fsbl file (Zynq & ZynqMP only)
+    -pdi <pdi file> 
+        Image to initialise versal devices(Versal only)
+    -erase_sector <size> 
+        For flashes whose erase sector is other than 64KB (size in bytes)
+    -frequency <frequency in Hz> 
+        Jtag Cable frequency in Hz 
+    -flash_type <type> 
+        Supported flash memory types
+        For SoC Devices 
+                qspi-x4-single
+                qspi-x1-single
+                qspi-x2-single
+                qspi-x8-dual_parallel
+                qspi-x4-dual_stacked
+                qspi-x1-dual_stacked
+                qspi-x2-dual_stacked
+                nand-x8 (Zynq only)
+                nand-x8-single (Zynq MP only)
+                nand-x8-dual (Zynq MP only)
+                nand-x16 (Zynq only)
+                nor(Zynq only)
+                emmc(Zynq MP and Versal only)
+                ospi-x8-single (Versal only)
+                ospi-x8-dual_stacked (Versal only)
+        For FPGA Devices
+                Use "-partlist" option to list all 
+                the flash types
+    -emmc_partition_size  <32|128|1024|2048> 
+        Size of the emmc partition
+                32  ('small' - size upto 32MB)
+                128 ('large' - size upto 128MB)
+                1024
+                2048
+    -partition_type  <fat32|raw-boot-1|raw-boot-2|raw-user> 
+        Type of emmc partition
+    -partlist <bpi|spi> <micron|spansion|macronix|winbond|ISSI> 
+        List all the flash parts for Non-Zynq devices
+                - program_flash -partlist
+                        List all flashes
+                - program_flash -partlist bpi micron
+                        List Micron BPI flashes
+                - program_flash -partlist spi spansion
+                        List Spansion SPI flashes
+    -jtagtargets <cable type> 
+        Returns the available targets on the Jtag chain
+        target information is displayed in the below format
+         " Target ID  Target Name  (device_name  idcode) "
+    -target_name <Target Name> 
+        Use "program_flash -jtagtargets -url <>" command to list all the available target_names
+    -target_id <Target ID> 
+        Use "program_flash -jtagtargets -url <>" command to list all the available target_ids
+    -url <URL of the TCF agent>
+
+
+ EXAMPLE:
+  1. Zynq (QSPI)
+    program_flash -f BOOT.bin -fsbl fsbl.elf -flash_type qspi-x4-single 
+           -blank_check -verify -target_name jsn-DLC10-0000153f74cd01-4ba00477-0 
+                -url tcp:localhost:3121
+
+  2. Non-Zynq (BPI)
+    program_flash -f hello.mcs -flash_type 28f00ap30t-bpi-x16 -blank_check 
+           -verify -target_id 2 -url tcp:localhost:3121
+
+  3. Zynq MP (QSPI Dual Parallel)
+    program_flash -f BOOT.bin -fsbl fsbl.elf -flash_type qspi-x8-dual_parallel 
+           -blank_check -verify -target_name 
+                jsn-JTAG-SMT2NC-210308A3B4B7-5ba00477-0 -url tcp:localhost:3121
+
+  4. Zynq MP (emmc)
+    program_flash -f BOOT.bin -fsbl fsbl.elf -flash_type emmc 
+           -emmc_partition_size large -blank_check -verify 
+                 -target_id 3 -url tcp:localhost:3121
+
+  5. Versal (OSPI)
+    program_flash -f BOOT.pdi -pdi init.pdi -flash_type ospi-x8-single 
+           -blank_check -verify -target_id 2 -url tcp:localhost:3121
+

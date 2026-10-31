@@ -1,0 +1,2 @@
+PASS debounce: boot-held, bounce, 25 ms press/release, long hold, polling gaps
+HMI_DEVICE_PASSED real_scheduler views panel_commit alpha_frame exposure_readback stop_drain rapid_run key fault clip_ownership
