@@ -1,0 +1,16 @@
+{
+  "kind": "JTAG_USB_TRANSPORT_FAILURE",
+  "message": "Cannot flush JTAG server queue. FT_Write failed: io error",
+  "failed_collector": "soak_60m_01",
+  "successful_samples": 200,
+  "observed_duration_s": 2011.3,
+  "failed_exec_session": 42632,
+  "user_observation": "HDMI 和频谱仍正常，刚才没有动线缆",
+  "recovery": "Closed owned session_02 hardware server, opened session_03; one read-only reconnect succeeded. No board reset/write/download/START/STOP",
+  "reconnect_folder": "reconnect_01",
+  "runtime_text_matches": true,
+  "gap_to_reconnect_s": 163.1,
+  "resume_folder": "soak_resume_01",
+  "resume_samples": 141,
+  "end_policy": "Original approximately 21:22 local end time; no extension; report interruption and gaps explicitly"
+}

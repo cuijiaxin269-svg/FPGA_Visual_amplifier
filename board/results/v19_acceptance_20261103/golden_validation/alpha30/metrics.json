@@ -1,0 +1,22 @@
+{
+  "origin_declared": "hls_csim",
+  "shape": [
+    128,
+    64,
+    64
+  ],
+  "mae": 0.0001354217529296875,
+  "rmse": 0.011637085242004868,
+  "max_abs": 1.0,
+  "bias": 2.47955322265625e-05,
+  "psnr_db": 98.88062836320887,
+  "exact_match": false,
+  "input_sha256": "edd19645d5e13ccee5af05a652ed8561e4571c8a768c36ab24f1e718f793ce70",
+  "contract_sha256": "8a060e3b70fd0216609a323a45885a3b7b4496d045c96df4bb1a64fb513bafb1",
+  "frame_map_sha256": "541ab3113b6f02e258d84a50a140954299da97c2913a2fa09de9cfd964de9a82",
+  "physical_gain_measured": false,
+  "latency_measured": false,
+  "alpha": 30,
+  "physical_fpga_output": false,
+  "scope": "Reduced 64x64 host C simulation; no physical FPGA, no timing or full-resolution proof"
+}

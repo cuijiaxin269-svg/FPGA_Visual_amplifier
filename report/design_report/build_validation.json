@@ -1,0 +1,10 @@
+{
+  "pdf": "report_competition_review.pdf",
+  "pages": 24,
+  "figures": 12,
+  "tables": 14,
+  "pdf_sha256": "dd882d9960be524de88fed43a00070a6107ca6aef432fd1ab7b46c9aea2b913c",
+  "layout_review": "All pages reviewed after sentence editing; smaller system/UI photos and adjacent text inspected at full size. Original template header retained on every page.",
+  "compile_checks": "No overfull boxes, missing characters, undersized headers or unresolved references.",
+  "source_format": "UTF-8 XeLaTeX; Windows SimSun/SimHei/Times New Roman fonts"
+}

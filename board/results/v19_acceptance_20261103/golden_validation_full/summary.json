@@ -1,0 +1,98 @@
+[
+  {
+    "origin_declared": "hls_csim",
+    "shape": [
+      8,
+      800,
+      1280
+    ],
+    "mae": 0.0,
+    "rmse": 0.0,
+    "max_abs": 0.0,
+    "bias": 0.0,
+    "psnr_db": null,
+    "exact_match": true,
+    "input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3",
+    "contract_sha256": "cdd9822cda72e08acd29f090094d5dcd581bb7d7c388dbeb9cf166383d7fd78b",
+    "frame_map_sha256": "d61cca4e6bcda790b87ecd4c82eadb94c19ccc1635a181641127feb25f081def",
+    "physical_gain_measured": false,
+    "latency_measured": false,
+    "alpha": 0,
+    "physical_fpga_output": false,
+    "scope": "1280x800, 8 frames, host C simulation; no physical FPGA or timing proof",
+    "runner_sha256": "e2220170f48217834030ffa4733e07f1ec7d0a32b1e3a8d8815d7a7a6f89ed57",
+    "golden_source_sha256": "0ac21d5f634f143aaa435fa8c2723523f8ffee7661436adca0021bcbe8535e62"
+  },
+  {
+    "origin_declared": "hls_csim",
+    "shape": [
+      8,
+      800,
+      1280
+    ],
+    "mae": 1.220703125e-07,
+    "rmse": 0.00034938562148434214,
+    "max_abs": 1.0,
+    "bias": -1.220703125e-07,
+    "psnr_db": 129.33141211056076,
+    "exact_match": false,
+    "input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3",
+    "contract_sha256": "22228846cee228dc7a312309ecd984e166cf061a849b2be225c9a8648432acdc",
+    "frame_map_sha256": "d61cca4e6bcda790b87ecd4c82eadb94c19ccc1635a181641127feb25f081def",
+    "physical_gain_measured": false,
+    "latency_measured": false,
+    "alpha": 12,
+    "physical_fpga_output": false,
+    "scope": "1280x800, 8 frames, host C simulation; no physical FPGA or timing proof",
+    "runner_sha256": "e2220170f48217834030ffa4733e07f1ec7d0a32b1e3a8d8815d7a7a6f89ed57",
+    "golden_source_sha256": "0ac21d5f634f143aaa435fa8c2723523f8ffee7661436adca0021bcbe8535e62"
+  },
+  {
+    "origin_declared": "hls_csim",
+    "shape": [
+      8,
+      800,
+      1280
+    ],
+    "mae": 0.0006016845703125,
+    "rmse": 0.024529259473381988,
+    "max_abs": 1.0,
+    "bias": 1.220703125e-07,
+    "psnr_db": 92.40382392901351,
+    "exact_match": false,
+    "input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3",
+    "contract_sha256": "8743b0751beec13b9c98b12b74d9cf1a1598c1bf417cad32a9574dae756a4971",
+    "frame_map_sha256": "d61cca4e6bcda790b87ecd4c82eadb94c19ccc1635a181641127feb25f081def",
+    "physical_gain_measured": false,
+    "latency_measured": false,
+    "alpha": 30,
+    "physical_fpga_output": false,
+    "scope": "1280x800, 8 frames, host C simulation; no physical FPGA or timing proof",
+    "runner_sha256": "e2220170f48217834030ffa4733e07f1ec7d0a32b1e3a8d8815d7a7a6f89ed57",
+    "golden_source_sha256": "0ac21d5f634f143aaa435fa8c2723523f8ffee7661436adca0021bcbe8535e62"
+  },
+  {
+    "origin_declared": "hls_csim",
+    "shape": [
+      8,
+      800,
+      1280
+    ],
+    "mae": 8.056640625e-06,
+    "rmse": 0.0028384222069663986,
+    "max_abs": 1.0,
+    "bias": -4.8828125e-07,
+    "psnr_db": 111.13597275514208,
+    "exact_match": false,
+    "input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3",
+    "contract_sha256": "213b7d99bf1ebefd9387c60ac61959a64115daf9b31ffa7640839d6738058013",
+    "frame_map_sha256": "d61cca4e6bcda790b87ecd4c82eadb94c19ccc1635a181641127feb25f081def",
+    "physical_gain_measured": false,
+    "latency_measured": false,
+    "alpha": 50,
+    "physical_fpga_output": false,
+    "scope": "1280x800, 8 frames, host C simulation; no physical FPGA or timing proof",
+    "runner_sha256": "e2220170f48217834030ffa4733e07f1ec7d0a32b1e3a8d8815d7a7a6f89ed57",
+    "golden_source_sha256": "0ac21d5f634f143aaa435fa8c2723523f8ffee7661436adca0021bcbe8535e62"
+  }
+]

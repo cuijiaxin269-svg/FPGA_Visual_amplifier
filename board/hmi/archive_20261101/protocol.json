@@ -1,0 +1,90 @@
+{
+  "baud": 115200,
+  "format": "8N1",
+  "screen_to_controller_terminator": "CR LF",
+  "controller_to_screen_terminator": "FF FF FF",
+  "display_commands": [
+    {
+      "command": "VIEW 0",
+      "meaning": "原画面",
+      "implemented_in_handoff": false
+    },
+    {
+      "command": "VIEW 1",
+      "meaning": "放大画面",
+      "implemented_in_handoff": false
+    },
+    {
+      "command": "VIEW 2",
+      "meaning": "详细参数",
+      "implemented_in_handoff": false
+    }
+  ],
+  "gain_command": {
+    "command": "ALPHA <0..50>",
+    "implemented_in_handoff": "0..30 only",
+    "screen_range": [
+      0,
+      50
+    ],
+    "handoff_range": [
+      0,
+      30
+    ],
+    "requires_updated_controller_above_30": true,
+    "meaning": "phase gain; not geometric zoom"
+  },
+  "exposure_command": {
+    "command": "EXPOSURE <1..898>",
+    "unit": "integer sensor lines",
+    "default": 320,
+    "implemented_in_handoff": true,
+    "requires": "STOP then idle; accepted value applies on next START/RECORD",
+    "line_time_us_for_supplied_profile": 18.2,
+    "source": "ZYNQ7100_Handoff_20261025/zynq/sw/motion60.c:290-315"
+  },
+  "start_command": {
+    "command": "START",
+    "event": "press",
+    "implemented_in_handoff": true
+  },
+  "stop_command": {
+    "command": "STOP",
+    "event": "press",
+    "implemented_in_handoff": true
+  },
+  "local_mode_selection": "page0.mode.val (255=not selected,0=raw,1=magnified,2=panel)",
+  "view_confirmation": [
+    "page0.vack.en=0",
+    "page0.vstatus.txt=\"APPLIED\""
+  ],
+  "gain_confirmation": [
+    "page0.aack.en=0",
+    "page0.astatus.txt=\"APPLIED\""
+  ],
+  "exposure_confirmation": [
+    "page0.eack.en=0",
+    "page0.estatus.txt=\"QUEUED\""
+  ],
+  "run_confirmation": [
+    "page0.rack.en=0",
+    "page0.rstatus.txt=\"RUNNING\"",
+    "page0.runreq.val=1",
+    "page0.run.val=1"
+  ],
+  "stop_confirmation": [
+    "page0.rack.en=0",
+    "page0.rstatus.txt=\"STOPPED\"",
+    "page0.runreq.val=0",
+    "page0.run.val=0"
+  ],
+  "run_toggle": "runreq stores last requested state; button label shows the next command",
+  "numeric_input": {
+    "dialog": "keypad",
+    "gain_confirm": "save and send ALPHA once",
+    "exposure_confirm": "save locally; use Apply to send EXPOSURE",
+    "cancel": "leave values and UART unchanged",
+    "maximum_digits": 3
+  },
+  "note": "Only send APPLIED after the actual device has accepted and applied the requested operation."
+}

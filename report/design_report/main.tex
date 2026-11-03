@@ -1,0 +1,99 @@
+% !TeX program = xelatex
+% Compile with: xelatex -interaction=nonstopmode -halt-on-error -jobname=report_competition_review main.tex (three times)
+\documentclass[UTF8,a4paper,zihao=-4,fontset=none]{ctexart}
+% Template header begins 15 mm from the top; allow its full height above body text.
+\usepackage[left=2.5cm,right=2.5cm,top=1.5cm,bottom=2.5cm,includehead,headheight=14mm,headsep=4mm,footskip=7.5mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Consolas}[Scale=MatchLowercase]
+\setCJKmainfont{SimSun}[AutoFakeBold=2]
+\setCJKsansfont{SimHei}
+\setCJKmonofont{SimSun}
+\newCJKfontfamily\songti{SimSun}[AutoFakeBold=2]
+\newCJKfontfamily\heiti{SimHei}[AutoFakeBold=2]
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx,booktabs,tabularx,array,multirow,longtable}
+\usepackage{caption,float,placeins,needspace,setspace,enumitem}
+\usepackage{fancyhdr}
+\usepackage[numbers,sort&compress,square]{natbib}
+\usepackage{xurl}
+\urlstyle{same}
+\usepackage[hidelinks,unicode,bookmarksnumbered]{hyperref}
+\hypersetup{pdftitle={基于Zynq的相位运动放大与区域微振检测系统},pdfauthor={},pdfsubject={AMD FPGA赛道技术文档}}
+\graphicspath{{figures/}}
+\ctexset{
+  section={name={第,部分},number=\chinese{section},format=\zihao{4}\heiti,beforeskip=18pt,afterskip=9pt},
+  subsection={number=\arabic{section}.\arabic{subsection},format=\zihao{-4}\heiti,beforeskip=12pt,afterskip=6pt},
+  subsubsection={number=\arabic{section}.\arabic{subsection}.\arabic{subsubsection},format=\zihao{-4}\songti,beforeskip=9pt,afterskip=4pt},
+  paragraph={format=\zihao{-4}\songti,runin=false,beforeskip=6pt,afterskip=3pt}
+}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0pt}
+\setstretch{1.5}
+\clubpenalty=10000
+\widowpenalty=10000
+\setlength{\emergencystretch}{2em}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\small}{\fontsize{10.5pt}{13pt}\selectfont}
+\renewcommand{\bibfont}{\zihao{5}\songti}
+\captionsetup{font={small},labelfont=normalfont,labelsep=quad,justification=centering,singlelinecheck=false,skip=6pt}
+\captionsetup[table]{position=top}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\renewcommand{\thefigure}{\arabic{section}-\arabic{figure}}
+\renewcommand{\thetable}{\arabic{section}-\arabic{table}}
+\renewcommand{\theequation}{\arabic{equation}}
+\newcommand{\reportfig}[4]{%
+  \begin{figure}[!htbp]\centering
+  \includegraphics[width=#2\linewidth]{#1}
+  \caption{#3}\label{#4}
+  \end{figure}}
+\newcommand{\tabnote}[1]{\par\smallskip{\small\noindent #1\par}}
+\setlist{nosep,leftmargin=2em}
+\renewcommand{\topfraction}{.92}
+\renewcommand{\bottomfraction}{.85}
+\renewcommand{\textfraction}{.08}
+\renewcommand{\floatpagefraction}{.75}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\pagestyle{fancy}
+\fancyhf{}
+\newcommand{\templateheader}{\includegraphics[width=6.5158cm,height=1.1924cm]{template-header-logo.png}}
+\fancyhead[C]{\templateheader}
+\fancyfoot[C]{\fontsize{9pt}{11pt}\selectfont\thepage}
+\renewcommand{\headrulewidth}{0.75pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[C]{\templateheader}%
+  \fancyfoot[C]{\fontsize{9pt}{11pt}\selectfont\thepage}%
+  \renewcommand{\headrulewidth}{0.75pt}}
+\begin{document}
+\pagenumbering{Roman}
+\thispagestyle{plain}
+\begin{center}
+{\zihao{3}\heiti\bfseries 基于Zynq的相位运动放大\par 与区域微振检测系统\par}
+\vspace{.6em}
+{\zihao{-4}\songti AMD FPGA赛道技术文档\par}
+\end{center}
+\noindent{\small 项目源码（GitHub）：\par
+\noindent\url{https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier}\par}
+\input{sections/abstract}
+\clearpage
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\input{sections/overview}
+\FloatBarrier
+\input{sections/methods}
+\FloatBarrier
+\input{sections/results}
+\FloatBarrier
+\input{sections/conclusion}
+\FloatBarrier
+\input{sections/references}
+\end{document}

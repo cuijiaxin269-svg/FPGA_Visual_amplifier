@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "baseline": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "protected_baseline_files_checked": 1393,
+  "protected_baseline_files_changed": [],
+  "source_ip_firmware_build_and_test_entries_unchanged": true,
+  "acceptance_archive_payload_checked": 2264,
+  "acceptance_archive_hash_errors": 0,
+  "report_source_package_files_checked": 39,
+  "hmi_manifest_files_checked": 7,
+  "deferred": [
+    "video",
+    "HLS regeneration item 6"
+  ],
+  "scope": "Documentation and evidence publication only; no new board test, firmware build, HLS run or report compilation."
+}

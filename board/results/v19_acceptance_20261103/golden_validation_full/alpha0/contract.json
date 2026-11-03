@@ -1,0 +1,25 @@
+{
+  "mode": 0,
+  "levels": 3,
+  "alpha": 0,
+  "coefficients_b0_b2_a1_a2": [
+    0.3048012555,
+    -0.3048012555,
+    -1.128076315,
+    0.3903974891
+  ],
+  "reset_indices": [
+    0
+  ],
+  "frame_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "sampling_hz_for_synthetic_input": 60.379777
+}

@@ -1,0 +1,16 @@
+test_amplitude_and_trend (__main__.MeasurementTests.test_amplitude_and_trend) ... ok
+test_clock_reset (__main__.MeasurementTests.test_clock_reset) ... ok
+test_constant_preserved (__main__.MeasurementTests.test_constant_preserved) ... ok
+test_error_known_offset (__main__.MeasurementTests.test_error_known_offset) ... ok
+test_frame_duplicate (__main__.MeasurementTests.test_frame_duplicate) ... ok
+test_frame_mismatch (__main__.MeasurementTests.test_frame_mismatch) ... ok
+test_latency_pairs (__main__.MeasurementTests.test_latency_pairs) ... ok
+test_nan (__main__.MeasurementTests.test_nan) ... ok
+test_reset_restores_first_frame (__main__.MeasurementTests.test_reset_restores_first_frame) ... ok
+test_resize_half_pixel (__main__.MeasurementTests.test_resize_half_pixel) ... ok
+test_unsigned_subtraction (__main__.MeasurementTests.test_unsigned_subtraction) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.120s
+
+OK

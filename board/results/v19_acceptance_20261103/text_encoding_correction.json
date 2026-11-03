@@ -1,0 +1,10 @@
+{
+  "reason": "Chinese text passed through a shell -c argument was corrupted; restored from exact user chat replies using this UTF-8 source file",
+  "scope": [
+    "soak_gain_adjustment",
+    "soak_original_end_time",
+    "usb_failure_video_still_running",
+    "second_jtag_failure_video_still_running"
+  ],
+  "old_report": "final_report is an unsealed draft with corrupted terminal_failure.user_observation text; use final_report_v2"
+}

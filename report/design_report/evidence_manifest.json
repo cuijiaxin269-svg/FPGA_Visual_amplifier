@@ -1,0 +1,223 @@
+{
+  "date": "2026-11-01",
+  "baseline_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "scope": "方形选区显示扩展之前的2025.2基线；历史板测单独标记",
+  "author_review_recorded": false,
+  "sources": [
+    {
+      "id": "E01",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\README.md",
+      "scope": "总体结构、工具版本与验证范围",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "README.md",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "263a2a749238351a24307a6288ee1132d2477fb1cfa06f3476650c0f2e8a3657"
+    },
+    {
+      "id": "E02",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\report\\design_report.md",
+      "scope": "接口、交互与历史工程改进",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "report/design_report.md",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "3b1777de63b77b9f90cfd61d03d87a1391ce2cdf1ba192890d2df61acd96d483"
+    },
+    {
+      "id": "E03",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\report\\submission_gaps.md",
+      "scope": "最终版本尚未完成的验证",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "report/submission_gaps.md",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "1552150c1d06ad2eabdc1f7dc70ca492f5370d5321ab07736cdd9fef30f969fc"
+    },
+    {
+      "id": "E04",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\src\\hls\\motion60_shared\\phase_core.cpp",
+      "scope": "相位、IIR及状态打包公式",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "src/hls/motion60_shared/phase_core.cpp",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "8cdf982fb7ffeef0f46a87b2ae6ccbeac38f8e3a6460ddf52b68a24015ccb3d5"
+    },
+    {
+      "id": "E05",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\src\\hls\\roi256\\roi256.cpp",
+      "scope": "二维相位相关和亚像素插值",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "src/hls/roi256/roi256.cpp",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "3eed84917b7c5c92601be9893aaba0f0bf6c4952626d0ad6545ff24e35816c21"
+    },
+    {
+      "id": "E06",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\src\\hls\\spectrum256_pl\\spectrum256_pl.cpp",
+      "scope": "时间窗预处理与直接DFT",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "src/hls/spectrum256_pl/spectrum256_pl.cpp",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "c777d7a8edd541cd76b4515c387ef95cfbcb3a705dad8f41c13565d9608099bd"
+    },
+    {
+      "id": "E07",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\src\\ps\\motion60.c",
+      "scope": "任务调度、带通配置及缓存所有权",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "src/ps/motion60.c",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "c2cc3f8b093262cd22d0fa0d7d01b87dadca25534a8b366318b3ffc297ca2679"
+    },
+    {
+      "id": "E08",
+      "path": "D:\\vision\\report_planning\\figures\\data\\captions_data.json",
+      "scope": "历史频谱/连续运行数据定义、版本和数值",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "sha256": "cb43c7013fafafd592f43380268ce01a6e9cb6f6cd8500849290aa7363d868a6"
+    },
+    {
+      "id": "E09",
+      "path": "D:\\vision\\report_planning\\figures\\data\\spectrum_accepted_peaks.csv",
+      "scope": "六行插值峰值",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "sha256": "ebb13aa4c20e86fe2ea3717095a0130209b7bcac25e0c6067e18ab9687f76d95"
+    },
+    {
+      "id": "E10",
+      "path": "D:\\vision\\report_planning\\assets\\vivado_2025_2\\module_resources.csv",
+      "scope": "完整设计及模块资源分摊",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "sha256": "4d9fb1598e25613d1276163efc3ba3c0f7032ff54f5f32527e3a5ac8b3066883"
+    },
+    {
+      "id": "E11",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\vivado_2025_2\\routed_utilization.txt",
+      "scope": "2025.2整体资源数量及容量",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "build/reports/vivado_2025_2/routed_utilization.txt",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "dc60fa70bb7cb2bdf462e2ca6b9fe887f8bb7e58ce8f861bb1f3594097704d9c"
+    },
+    {
+      "id": "E12",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\report\\hls_provenance.md",
+      "scope": "HLS源码/导出IP对应范围",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "report/hls_provenance.md",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "fecfde0c6998e5199825a238fb70dff002ec1e2ad4516d5df86e38a93aad8a80"
+    },
+    {
+      "id": "E13",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\board\\results\\v18hmi\\board_validation.json",
+      "scope": "历史v18运行和交互结果",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "board/results/v18hmi/board_validation.json",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "d98a098423aaac1ec9c83ea0daa5db336f10851475e8c60df53945c899b18244"
+    },
+    {
+      "id": "E14",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\data\\inputs\\multitone\\multitone_report.json",
+      "scope": "原始频谱实验解析结果",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "data/inputs/multitone/multitone_report.json",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "f4e23deccc15d5555201768d45f148dc6d988d9bf89af379817e699054cad148"
+    },
+    {
+      "id": "E15",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\skill\\README.md",
+      "scope": "三个工程经验指南的适用范围",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "skill/README.md",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "4792a8e714cf4b055f520184ecc331f22a9e68297d1bfb1082c20f1df44adf98"
+    },
+    {
+      "id": "E16",
+      "path": "D:\\Download\\qq\\技术文档模板.docx",
+      "scope": "模板固定章节、匿名要求和字数上限",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "sha256": "d15a2aa186f600cb9c234bffd9deff0c4e9b05c569643d8a81d536f66f424f0c"
+    },
+    {
+      "id": "E17",
+      "path": "D:\\Download\\qq\\排版.txt",
+      "scope": "用户明确的字体、页边距与图表排版要求",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "sha256": "8d711569956fdaeddf03596c19463b5a54262df6ddfc42545edc07b0d98d0837"
+    },
+    {
+      "id": "E18",
+      "path": "C:\\Users\\lenovo\\Desktop\\选题\\AMD .pdf",
+      "scope": "AMD自主选题赛道五项评测要求，PDF第25页",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "sha256": "c6ad82acd4f7bdcd13bd412e232ed85d05f2a87dd5e2cdd04f9d219f88b569fc"
+    },
+    {
+      "id": "E19",
+      "path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\vivado_2025_2\\input_sha256.json",
+      "scope": "825项硬件构建输入及其哈希",
+      "review": "AI辅助核对；不代表作者人工审定",
+      "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "git_path": "build/reports/vivado_2025_2/input_sha256.json",
+      "source_read": "固定基线Git对象；未使用当前工作树改动",
+      "sha256": "dde4f80d52c55285e3c087d04131d77b5d719011e4eeab706c617e97dd2cffaf"
+    }
+  ],
+  "photo_manifest": "image_provenance.json",
+  "numeric_claims": {
+    "resources": {
+      "evidence": [
+        "E10",
+        "E11"
+      ],
+      "LUT": 138026,
+      "FF": 206397,
+      "BRAM_Tile": 744.5,
+      "DSP": 826,
+      "BRAM_percent": 98.61
+    },
+    "historical_runtime": {
+      "evidence": [
+        "E08",
+        "E13"
+      ],
+      "minutes": 32,
+      "samples": 193,
+      "processed_frames": 115929,
+      "display_frames": 57600
+    },
+    "spectral_window": {
+      "evidence": [
+        "E06",
+        "E08",
+        "E14"
+      ],
+      "N": 256,
+      "single_sided_bins": 129,
+      "sampling_rate_hz": 60.37956260680654
+    },
+    "verification_boundary": {
+      "evidence": [
+        "E01",
+        "E03",
+        "E12"
+      ],
+      "final_2025_2_board_test_completed": false,
+      "full_hls_regeneration_completed": false
+    }
+  }
+}

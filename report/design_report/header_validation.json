@@ -1,0 +1,321 @@
+{
+  "pdf": "report_competition_review.pdf",
+  "logo_sha256": "787db8fa20de80a88e406e5eb8bc8c3076d71592635851045bb8a8cbfb4aaadc",
+  "source_image_unchanged": true,
+  "page_count": 24,
+  "all_pages_have_logo": true,
+  "pages": [
+    {
+      "page": 1,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 92.98699951171875,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 2,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 93.47200012207031,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 3,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 93.47200012207031,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 4,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 5,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 110.47161102294922,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 6,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 7,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 8,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 106.33736419677734,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 9,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 96.98949432373047,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 10,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 11,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 12,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 13,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 14,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 15,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 16,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 239.8591766357422,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 17,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 18,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 19,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 348.1751708984375,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 20,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 21,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 93.62317657470703,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 22,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 93.62317657470703,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 23,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 24,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 93.62317657470703,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    }
+  ]
+}

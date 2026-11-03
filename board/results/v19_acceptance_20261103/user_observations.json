@@ -1,0 +1,79 @@
+{
+  "source": "User replies in this Codex chat on 2026-11-03 Asia/Shanghai; ordering retained, individual action timestamps not independently measured",
+  "observations": [
+    {
+      "id": "equipment",
+      "statement": "板卡、相机、HDMI、触屏均已连接，可配合按键与断电"
+    },
+    {
+      "id": "video_initial",
+      "statement": "已 START，HDMI 画面和频谱正常",
+      "limitation": "The initial telemetry was VIEW0; this statement alone was not counted as VIEW2 proof"
+    },
+    {
+      "id": "measurement_equipment",
+      "statement": "目前只有普通录像，没有同步测量条件"
+    },
+    {
+      "id": "touch_clarification",
+      "statement": "刚才按的是触屏；现在已切到放大＋频谱",
+      "matched_data": "run_motion_02"
+    },
+    {
+      "id": "physical_key",
+      "statement": "已按两次，HDMI 切走后又切回",
+      "matched_data": "buttons_after_01: presses=2, accepted=2, completed=2"
+    },
+    {
+      "id": "stop",
+      "statement": "已 STOP，屏幕显示停止，画面保持",
+      "matched_data": "stopped_01"
+    },
+    {
+      "id": "cold_01",
+      "instruction": "Power off at least 5 s, power on, no START",
+      "statement": "第 1 次已断电再上电，尚未 START",
+      "matched_data": "cold_01"
+    },
+    {
+      "id": "cold_02",
+      "instruction": "Power off at least 5 s, power on, no START",
+      "statement": "第 2 次已完成，尚未 START",
+      "matched_data": "cold_02"
+    },
+    {
+      "id": "cold_03",
+      "instruction": "Power off at least 5 s, power on, no START",
+      "statement": "第 3 次已完成，尚未 START",
+      "matched_data": "cold_03"
+    },
+    {
+      "id": "soak_duration",
+      "statement": "60 分钟，期间可保持参数与连接不变"
+    },
+    {
+      "id": "soak_start",
+      "statement": "已 START，HDMI 画面与频谱正常，保持不动",
+      "matched_data": "soak_60m_01"
+    },
+    {
+      "id": "soak_gain_adjustment",
+      "statement": "是，我刚才操作了增益，最后恢复为 12",
+      "matched_data": "soak samples 160/161; HMI commands 1->9, alpha generation 2->26, spectrum epoch 3->11"
+    },
+    {
+      "id": "soak_original_end_time",
+      "statement": "仍按原计划约 21:22 结束，如实记录中途调参"
+    },
+    {
+      "id": "usb_failure_video_still_running",
+      "statement": "HDMI 和频谱仍正常，刚才没有动线缆",
+      "matched_data": "soak_60m_01 FT_Write failure and reconnect_01"
+    },
+    {
+      "id": "second_jtag_failure_video_still_running",
+      "statement": "HDMI 和频谱仍正常，板卡没有断电或复位",
+      "matched_data": "soak_resume_01 Invalid context; post_soak_01 successful read-only end check"
+    }
+  ]
+}

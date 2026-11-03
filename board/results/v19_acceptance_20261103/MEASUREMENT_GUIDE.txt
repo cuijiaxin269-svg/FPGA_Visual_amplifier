@@ -1,0 +1,70 @@
+V19 整机验收与统一量化对比
+工作目录：board_checks/20261103_v19_acceptance_01
+原封存源码、固件、Flash 均未修改。所有新增工具和记录留在本目录。
+
+一、证据分层
+1. offline/audit.json：V19 1125 项清单复核、5 个重烧候选文件对应、8 组主机回归。
+2. observation_*、run_*、buttons_after_01、stopped_01、cold_01..03、soak_60m_01：本轮原始 JTAG 只读采样。
+   application_text.bin 必须 SHA256=dfb0041ccc0be071ae750dd9eb7f293dda556df764a3a278e184f0f35f0c2719。
+   HMI 文件必须通过序列锁校验；其他 mailbox 块仅为分块诊断，不能当作同一时刻的原子帧快照。
+3. 用户对 HDMI 画面、触屏/实体按键和物理断电的确认，单独列为人工观察。
+4. golden_validation*：主机 HLS C 仿真与独立 float64 黄金参考，不是实板 FPGA 像素输出。
+   原 V16 motion IP 的 212 个 Verilog 文件与封存 V19 一致，来源绑定见 source_binding.json。
+   黄金模型以实际 V19 软件系数生成器为参数来源，覆盖 alpha=0/12/30/50。
+   数学参考不是逐位浮点仿真，必须报告误差，不能把小样本误差上限推广到所有输入。
+
+二、完整验收项目与判断口径
+相机：实板 sensor_id=0x9281，1280×800，采集帧增长；CRC/ECC/溢出等统计保持 0，用户观察画面有更新。
+HDMI：用户观察连续、无黑屏/撕裂/花屏；显示计数仅证明发送链工作，不能独自证明接收端画质。
+触屏：VIEW 0/1/2、alpha、曝光分别核对目标、有效标记、实际值；实测操作与自动串口注入不得混称。
+按键：实体底板 KEY0/SW5，两次物理按下、接受、完成计数各增加 2，视图切走/返回。
+启停：START 后帧计数增长；STOP 后 RUN=STOPPED、算法/ROI/频谱无忙事务与错误；HDMI 保留末帧。
+频谱：有效样本、DFT 结果、发布计数增长且 error=0；绝对频率准确度仍需已知参考源另测。
+冷启动：本轮 3 次人工断电至少 5 秒；每次 BOOT_MODE=1、代码匹配、默认 VIEW2/alpha12/曝光320、保持 STOPPED。
+稳定性：本轮选择 60 分钟；以板端 uptime 差 >=3600 s、固定参数、连续运行、无计数复位和观测错误为条件。
+   10 秒采样不能证明两次采样间所有瞬态均不存在；累计错误计数、历史重置和频谱 epoch 也须核对。
+   环境温度、电源波形和外部 HDMI 全时录像没有自动测量，不能写为已覆盖。
+
+三、处理帧率与延迟的区别
+处理吞吐 = 同一稳定运行区间的 processed 增量 / 板端 uptime 秒数；VIEW0 旁路时不计算算法 FPS。
+显示更新计数 = display 增量 / 同一时间区间；它与算法吞吐分别报告。
+频谱发布速率 = publications 增量 / 时间；fs_millihz 是算法估计的采样率，不能替代已知源的频率精度。
+motion_last_us/max_us 是软件提交至完成观测的任务时间，并含调度/并行 ROI 等影响，不能标为端到端延迟。
+端到端延迟：同一高速摄像画面同时拍摄目标侧 LED/事件和 HDMI 对应变化，或同一示波器采两路光电信号。
+至少记录 30 个不重复 event_id；导出 scene_time_s、screen_time_s，列均值/中位数/P95/最大值及计时不确定度。
+普通录像或只拍 HDMI、互不对时的两段录像，不能单独给出准确端到端延迟。
+
+四、逐帧闭环数据格式
+需要同一 run_id 下 input.npy / golden.npy / fpga.npy，均为 [N,H,W] little-endian uint16 RAW10 (0..1023)。
+frames.csv：input_id,golden_input_id,fpga_input_id；对应输入序号必须一致、唯一、递增。
+contract.json：mode=0, levels=3, alpha, coefficients_b0_b2_a1_a2, frame_ids, reset_indices。
+frame_ids 出现断号时必须在对应 reset_indices 重置时域历史；第一帧必须重置。
+运行工具：
+  C:/msys64/ucrt64/bin/python.exe -B tools/golden.py input.npy contract.json FRESH_GOLDEN_DIRECTORY
+  C:/msys64/ucrt64/bin/python.exe -B tools/measure.py frames comparison.json FRESH_RESULT_DIRECTORY
+可执行的 comparison.json 样例见 golden_validation/alpha12/comparison.json，其 output_origin=hls_csim。
+接入实板数据时必须真实保存采集方法、同一输入/参数的哈希、运行代码证据，明确改为 physical_fpga。
+不能仅改 origin 标签就把仿真输出当实测；工具校验文件一致性，采集来源仍须独立审计。
+
+现有 V19 实时 DDR 使用循环缓冲和时域历史；运行中依次读两块 DDR 不保证对应同一帧，也可能读到半帧。
+本轮没有把这种快照冒充逐帧实板对比。完整闭环需后续建立安全停止/帧号确认的捕获或确定输入重放流程，
+保存完整历史/重置序列；原始 V19 生产版与任何诊断固件必须分别标识。
+
+五、实际位移放大
+用固定相机、稳定照明、带纹理的小振幅目标，输入/输出均保留同一坐标尺度。
+建议测 alpha=0/12/30/50，以及 1/3/5.3/6/12/20 Hz；每档排除启动瞬态并至少记录 5 个稳态周期。
+位移 CSV：t_s,dx_px（Y 轴另建一组）；保存所用 ROI、跟踪方法和原始影像。
+用已知频率拟合正弦+直流+线性漂移；幅值采用峰值，不与 RMS 或峰峰值混用。
+G=(输出幅值×输出坐标尺度)/(输入幅值×输入坐标尺度)。屏幕缩放必须折回同一图像/物方尺度。
+输入幅值低于噪声/标定下限时结果标为未分辨；alpha 设置值不能充当 G。
+measure.py displacement 接受 input_trace/output_trace/calibration 哈希描述，reference_frequency_hz、steady_state_only、
+input_scale/output_scale、scale_unit、input_amplitude_floor、alpha 和 run_id。
+本轮没有同步测量条件，物理位移增益、端到端延迟和频率绝对误差均不得填入模拟或猜测值。
+
+六、工具边界
+measure.py 可做 frames / telemetry / displacement / latency 分析，始终输出 NOT_ASSIGNED 验收状态，供证据审查。
+latency 元数据需 common_clock=true、method=high_speed_same_view 或 oscilloscope_photodiodes、timing_uncertainty_ms，
+sources.events 和 sources.raw_capture；事件文件列为 event_id,scene_time_s,screen_time_s。
+通用元数据需 firmware_boot_sha256=eae2d50a02ab3f8aaa2574d2fcd9573cc657461bc64690f1b1f17b84ba013e54，
+sources 下每项为 {path,sha256}，相对路径以元数据所在目录为基准。
+11 项分析器/黄金模型单元检查见 analyzer_tests.log；它们不属于板卡验收次数。

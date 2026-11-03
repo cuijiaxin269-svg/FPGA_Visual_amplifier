@@ -1,0 +1,12 @@
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/hls_hotbm_apfixed.h:45,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_math.h:1065,
+                 from vision/v16alpha50/hls/motion60_shared/phase_core.cpp:2:
+D:/xilinx/Vitis_HLS/2021.2/include/utils/x_hls_utils.h:246:10: warning: 'hls_preserve' attribute directive ignored [-Wattributes]
+  246 | T reg(T d)
+      |          ^
+In file included from D:/xilinx/Vitis_HLS/2021.2/include/hls_hotbm_apfixed.h:45,
+                 from D:/xilinx/Vitis_HLS/2021.2/include/hls_math.h:1065,
+                 from vision/v16alpha50/hls/motion60_shared/pipeline.cpp:2:
+D:/xilinx/Vitis_HLS/2021.2/include/utils/x_hls_utils.h:246:10: warning: 'hls_preserve' attribute directive ignored [-Wattributes]
+  246 | T reg(T d)
+      |          ^

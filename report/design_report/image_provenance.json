@@ -1,0 +1,62 @@
+[
+  {
+    "label": "作品总体画面",
+    "source": "C:/Users/lenovo/AppData/Local/Temp/codex-clipboard-43b8dc62-c1fd-49f7-9243-86cec8d26749.png",
+    "archive": "D:\\vision\\report_planning\\assets\\system_overview_user_20261101.png",
+    "report_asset": "system-overview.png",
+    "sha256": "935515be77055da3a421078c73919ba956f4040985543b574b50f9dc081a4817",
+    "bytes": 1177679,
+    "dimensions": [
+      1052,
+      595
+    ],
+    "image_edited": false,
+    "version": "未确认",
+    "paired_frame_verified": false
+  },
+  {
+    "label": "原画面",
+    "source": "C:/Users/lenovo/AppData/Local/Temp/codex-clipboard-d93e0f76-3e01-4b65-8d26-9ef901df70e5.png",
+    "archive": "D:\\vision\\report_planning\\assets\\display_original_user_20261101.png",
+    "report_asset": "display-original.png",
+    "sha256": "4916313837538e1c05b3a95d95846a1f489073907d1e83df554049dcd865c4ce",
+    "bytes": 251473,
+    "dimensions": [
+      709,
+      446
+    ],
+    "image_edited": false,
+    "version": "未确认",
+    "paired_frame_verified": false
+  },
+  {
+    "label": "放大输出画面",
+    "source": "C:/Users/lenovo/AppData/Local/Temp/codex-clipboard-096aad81-eecd-4daa-9bde-67bbdb1dae46.png",
+    "archive": "D:\\vision\\report_planning\\assets\\display_amplified_user_20261101.png",
+    "report_asset": "display-amplified.png",
+    "sha256": "7ce748c3c71780acf84122d936e05dce9a71f1796e0f8254e5e313e45e395ecd",
+    "bytes": 175610,
+    "dimensions": [
+      700,
+      453
+    ],
+    "image_edited": false,
+    "version": "未确认",
+    "paired_frame_verified": false
+  },
+  {
+    "label": "串口屏主操作界面（无控件名称标记）",
+    "source": "D:/下载/Tencent Files/196726353/nt_qq/nt_data/Pic/2026-11/Ori/a193a8251b155a7c76d95e8a2b3f3131.png",
+    "archive": "D:\\vision\\report_planning\\assets\\hmi_control_interface_clean_user_20261101.png",
+    "report_asset": "hmi-interface.png",
+    "sha256": "b33db671f757e93f451b706f6ab55fb29f36f468dfd9614eaf1deb47926c7044",
+    "bytes": 248371,
+    "dimensions": [
+      1023,
+      600
+    ],
+    "image_edited": false,
+    "version": "未确认",
+    "paired_frame_verified": false
+  }
+]

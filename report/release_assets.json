@@ -1,0 +1,34 @@
+{
+  "tag": "materials-20261103",
+  "source_baseline": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "deferred": [
+    "video",
+    "HLS regeneration item 6"
+  ],
+  "files": [
+    {
+      "name": "design_report_latex_20261101.zip",
+      "bytes": 5231879,
+      "sha256": "516e0d44c900073d18337bea4fc20f65212e0fc88b755b86e0e3abc87e360111",
+      "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/design_report_latex_20261101.zip"
+    },
+    {
+      "name": "hardware_documents_20261103.7z",
+      "bytes": 559075,
+      "sha256": "835924ba7c031b1dc130193853fdaeb1f50cf30a27816b8c248d2dd090980391",
+      "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/hardware_documents_20261103.7z"
+    },
+    {
+      "name": "hmi_project_20261101.zip",
+      "bytes": 6135948,
+      "sha256": "3eae82f96aa9f1f70cf62742f582ff01c847d77307ce943096f0a83ee7238c58",
+      "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/hmi_project_20261101.zip"
+    },
+    {
+      "name": "v19_acceptance_20261103.7z",
+      "bytes": 844835,
+      "sha256": "a1422b638844a13a41ea716b24a7c91f5895a8106dacdd2f45c91f4e0c6c5d10",
+      "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/v19_acceptance_20261103.7z"
+    }
+  ]
+}

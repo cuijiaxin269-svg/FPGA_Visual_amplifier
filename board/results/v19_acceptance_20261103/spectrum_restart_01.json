@@ -1,0 +1,23 @@
+{
+  "type": "HMI_COMMANDS_AND_SPECTRUM_RESTART",
+  "samples": [
+    160,
+    161
+  ],
+  "window": [
+    "2026-11-03T20:48:24.106000+08:00",
+    "2026-11-03T20:48:34.235000+08:00"
+  ],
+  "hmi_commands_before": 1,
+  "hmi_commands_after": 9,
+  "alpha_generation_before": 2,
+  "alpha_generation_after": 26,
+  "spectrum_epoch_before": 3,
+  "spectrum_epoch_after": 11,
+  "capture_and_algorithm_errors": 0,
+  "status": "user_confirmed_parameter_adjustment",
+  "interpretation": "Sampled alpha values remained 12, but command/generation history changed; do not claim an uninterrupted fixed-configuration soak",
+  "user_confirmation": "是，我刚才操作了增益，最后恢复为 12",
+  "end_time_choice": "仍按原计划约 21:22 结束，如实记录中途调参",
+  "extend_or_restart_soak": false
+}

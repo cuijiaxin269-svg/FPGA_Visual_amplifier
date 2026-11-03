@@ -1,0 +1,15 @@
+{
+  "kind": "JTAG_TARGET_CONTEXT_LOST",
+  "message": "Invalid context",
+  "failed_collector": "soak_resume_01",
+  "successful_samples": 18,
+  "observed_duration_s": 171.7,
+  "failed_exec_session": 52974,
+  "process_exit": 1,
+  "user_observation": "HDMI 和频谱仍正常，板卡没有断电或复位",
+  "final_readonly_check": "post_soak_01",
+  "final_runtime_text_matches": true,
+  "recovery_scope": "One read-only new client connection; no server restart, board reset, parameter write, START/STOP, download or flash",
+  "termination": "No further collector restart; sampling acceptance incomplete after two JTAG failures",
+  "root_cause": "Not independently established"
+}

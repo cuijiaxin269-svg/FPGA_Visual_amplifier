@@ -1,0 +1,17 @@
+{
+  "source": "D:\\Download\\qq\\技术文档模板.docx",
+  "source_sha256": "d15a2aa186f600cb9c234bffd9deff0c4e9b05c569643d8a81d536f66f424f0c",
+  "zip_member": "word/media/image1.png",
+  "asset": "figures\\template-header-logo.png",
+  "sha256": "787db8fa20de80a88e406e5eb8bc8c3076d71592635851045bb8a8cbfb4aaadc",
+  "image_edited": false,
+  "dimensions": [
+    564,
+    103
+  ],
+  "template_extent_emu": {
+    "width": 2345690,
+    "height": 429260
+  },
+  "scope": "赛事标识，直接提取模板内嵌原图"
+}

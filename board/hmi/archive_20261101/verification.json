@@ -1,0 +1,150 @@
+{
+  "steps": [
+    {
+      "name": "touchsafe_geometry_audit",
+      "status": "ok",
+      "report": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\geometry.json",
+      "summary": {
+        "hmi": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\motion60_control.HMI",
+        "checked_count": 43,
+        "missing_end_field_count": 0,
+        "mismatch_count": 0,
+        "mismatches": [],
+        "missing_end_fields": [],
+        "status": "ok"
+      }
+    },
+    {
+      "name": "preview_collision_gate",
+      "status": "ok",
+      "result": {
+        "name": "preview",
+        "command": [
+          "C:\\Users\\31673\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "I:\\Project\\FPGAsettings\\tools\\tjc-usart-hmi-toolchain\\tools\\codex_hmi_beauty_preview.py",
+          "--hmi",
+          "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\motion60_control.HMI",
+          "--out-dir",
+          "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\preview",
+          "--title",
+          "MOTION60 single control page",
+          "--current-only"
+        ],
+        "returncode": 0,
+        "started_at_utc": "2026-10-29T13:56:32.223700+00:00",
+        "completed_at_utc": "2026-10-29T13:56:32.397700+00:00",
+        "stdout_path": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\commands\\preview.stdout.txt",
+        "stderr_path": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\commands\\preview.stderr.txt"
+      },
+      "report": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\preview\\beauty_preview_report.json",
+      "summary": {
+        "source": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\motion60_control.HMI",
+        "preview_only": true,
+        "current_only": true,
+        "page_count": 3,
+        "collision_count": 0,
+        "collisions": {
+          "0.pa": [],
+          "1.pa": [],
+          "2.pa": []
+        },
+        "outputs": {
+          "contact_sheet": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\preview\\beauty_preview_contact_sheet.png",
+          "html": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\preview\\beauty_preview.html",
+          "patch_plan": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\preview\\beauty_patch_plan.json",
+          "page_pngs": {
+            "0.pa": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\preview\\beauty_0_pa.png",
+            "1.pa": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\preview\\beauty_1_pa.png",
+            "2.pa": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\preview\\beauty_2_pa.png"
+          }
+        }
+      }
+    }
+  ],
+  "status": "ok",
+  "official_compile_ok": true,
+  "compile_log": "总可用内存:524288\n全局内存占用:640\n图片总大小:334,950\nFile Check Finishnish Write 1%:page0 占用内存:640+1540=2180\n页面:page1 占用内存:640+64184=64824\n页面:keypad 占用内存:640+1500=2140\nResources Write...\n编译成功! 0个错误, 0个警告,文件大小:4,518,152\n",
+  "hmi": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\motion60_control.HMI",
+  "tft": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\motion60_control.tft",
+  "hmi_sha256": "9c8e3c2dc1b0373b952c1dcb51a450cb3f613c9e16f62d63120cb3e0bdbaa7ff",
+  "tft_sha256": "39d868ef7bac53623f8a008fb743a764300e8b64ff7c2943a79b607fe149aea0",
+  "tft_size": 4518152,
+  "checksum_valid": true,
+  "operating_pages": 1,
+  "input_dialog_pages": 1,
+  "preserved": {
+    "1.pa": true,
+    "0.v": true,
+    "Program.s": true,
+    "0.zi": true
+  },
+  "object_count": 52,
+  "event_readback_verified": true,
+  "logic": {
+    "status": "ok",
+    "mode_and_repeat_cases": 24,
+    "gain_cases": 306,
+    "mode_press_exclusive_cases": 24,
+    "mode_press_highlight_exclusive": true,
+    "exposure_cases": 2694,
+    "exposure_explicit_apply": true,
+    "run_toggle_send_once_on_press": true,
+    "page_entry_and_ack_cases": 80,
+    "mode_highlight_exclusive": true,
+    "slider_preset_number_synchronized": true,
+    "independent_ack_timers": true,
+    "no_optimistic_applied_state": true,
+    "only_numeric_dialog_navigation": true,
+    "evidence": "Interpreted events read back from final HMI, not physical FPGA verification.",
+    "keypad": {
+      "status": "ok",
+      "valid_values": 949,
+      "invalid_values": 5,
+      "first_digit_replaces": true,
+      "cancel_preserves_value": true,
+      "empty_rejected": true,
+      "leading_zeroes_and_three_digit_limit": true,
+      "backspace_verified": true,
+      "gain_confirm_sends_once": true,
+      "exposure_confirm_is_local": true,
+      "run_toggle_preserved_on_return": true
+    }
+  },
+  "backup": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\backups\\before_singlepage_20261029_164055",
+  "backup_sha256_verified": true,
+  "layout": "neutral bench instrument; one operating page, START/STOP toggle and numeric input dialog",
+  "layout_backup": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\backups\\before_fullwidth_20261029_165245",
+  "layout_backup_sha256_verified": true,
+  "logo_pixel_preservation": {
+    "competition": "74a0bd7f6d5b5227fbf7e6c7cd155ba0e370987f0c53a7ecd20d05aa8215fa05",
+    "amd": "24d0ada0526521948681817eab3ecc85dfd56a1763bc706563609b853386ff0a"
+  },
+  "native_numeric_font": "Instrument64 / Bahnschrift",
+  "native_status_font": "Instrument18 / Segoe UI",
+  "native_fonts_verified": true,
+  "native_status_text_fits": true,
+  "tabular_numeric_digits": true,
+  "download_status": "uploaded",
+  "git_backup_commit": "0195d8d0dbef69927d40744b746c003267cb11d9",
+  "physical_touch_tested": false,
+  "hardware_tested": true,
+  "controller_integrated": false,
+  "display_switch_contract": "VIEW 0/1/2 proposed; absent from supplied handoff firmware",
+  "gain_contract": "ALPHA 0..50 on screen; supplied 20261025 firmware accepts only 0..30",
+  "exposure_contract": "EXPOSURE 1..898 integer lines; STOP/idle required; applied next START",
+  "start_contract": "One button alternates START/STOP CR LF on press; release sends nothing",
+  "run_button_is_confirmed_state": false,
+  "numeric_input": "Tap alpha/exposure; first digit replaces; validate before saving; cancel unchanged",
+  "camera_start_backup_commit": "345bec71f1f87c8198c0549d38acff9e2dd450d1",
+  "toggle_keypad_backup_commit": "3a13837a99d78334f4e1f7a3d50535adb6f02bc6",
+  "hardware_evidence": {
+    "report": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\screen_check.json",
+    "kind": "native screen events and captured UART commands",
+    "physical_touch_tested": false,
+    "controller_integrated": false,
+    "external_display_switch_tested": false
+  },
+  "native_editor_visual_checked": true,
+  "native_editor_image": "I:\\Project\\FPGAsettings\\projects\\motion60-hmi\\singlepage\\editor_check.png",
+  "native_editor_capture_method": "PrintWindow of the owned HMI editor window"
+}

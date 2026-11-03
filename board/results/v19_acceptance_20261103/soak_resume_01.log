@@ -1,0 +1,31 @@
+V19_SAMPLE 0 stable=1
+V19_SAMPLE 1 stable=1
+V19_SAMPLE 2 stable=1
+V19_SAMPLE 3 stable=1
+V19_SAMPLE 4 stable=1
+V19_SAMPLE 5 stable=1
+V19_SAMPLE 6 stable=1
+V19_SAMPLE 7 stable=1
+V19_SAMPLE 8 stable=1
+V19_SAMPLE 9 stable=1
+V19_SAMPLE 10 stable=1
+V19_SAMPLE 11 stable=1
+V19_SAMPLE 12 stable=1
+V19_SAMPLE 13 stable=1
+V19_SAMPLE 14 stable=1
+V19_SAMPLE 15 stable=1
+V19_SAMPLE 16 stable=1
+V19_SAMPLE 17 stable=1
+Invalid context
+Invalid context
+    invoked from within
+"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 Memory get siiii {Bea{o{msg o{} A}}} {JTAG-jsn-JTAG-HS3-210299725543-4ba00477-0 16719880 4 4 3}}"
+    (procedure "::tcf::send_command" line 4)
+    invoked from within
+"::tcf::send_command $chan Memory get "siiii" "Bea{o{msg o{} A}}" [list $ctx $start_addr $size $nbytes $mode]"
+    (procedure "mrd" line 87)
+    invoked from within
+"mrd -value $a"
+    (procedure "rd" line 1)
+    invoked from within
+"rd 0x00ff2008"

@@ -1,0 +1,46 @@
+V19 本轮验收接续 — 2026-11-03
+
+用户已授权完整整机验收，并明确同意固定连接/参数连续运行60分钟。
+固件和Flash未修改；所有新文件仅在本目录。当前有后台只读采样，请勿开第二个XSCT。
+
+运行中的采样：exec session 42632，开始约20:21 Asia/Shanghai，预计21:22完成。
+命令：D:/xilinx/Vitis/2021.2/bin/xsct.bat tools/observe.tcl soak_60m_01 361 10000。
+实际命令带完整工作区相对路径；成功标记 V19_READ_ONLY_OBSERVATION_COMPLETE；不能只看XSCT退出码。
+同一会话完成后自动调用measure.py telemetry，生成soak_60m_01_analysis（输出写到对应.log）。
+本轮独占hw_server PID5168，所有权凭据 session_02/server_ownership.json；结束只用其tools/close_owned_server.ps1关闭。
+
+已创建本聊天临时心跳 automationId=v19-60，每5分钟只检查进度。
+未完成且无异常时安静；完成/失败/需要用户操作时通知。工作完成后删除该心跳。
+
+已完成：1125/1125封存哈希、5个重烧候选匹配、8/8主机回归；触屏三视图和alpha变化；
+实体KEY0按下/接受/完成各2；STOP空闲无错误；3/3本轮真实断电启动，匹配V19代码与QSPI默认STOPPED。
+用户确认HDMI画面和频谱正常。当前长稳固定VIEW2/alpha12/曝光320。
+长稳前曾出现VIEW0/alpha50、VIEW1、曝光400，是人工设置阶段，不能合入固定配置长稳数据。
+
+黄金参考：golden_validation为128帧64x64，golden_validation_full为8帧1280x800，均有alpha0/12/30/50。
+完整主机C模型任务exec session35039已成功完成。四档全尺寸max_abs=0/1/1/1 RAW10码值。
+这些是HLS C输出，不是实板像素。保留input/golden/csim、参数、帧号、哈希与逐帧误差。
+分析器新增CSI中间态回归检查，最新版13项测试见analyzer_tests_v2.log。
+
+错误解析注意：capture.stats[5:7]会先写原始传感器metadata再覆盖CSI错误标志。
+sensor_counter_mode=2时原始sensor_frame_gaps随帧增长；JTAG可能采到中间态。
+专用CSI粘滞字段和应用错误、motion历史重置才是判断依据；详见capture_snapshot_note.txt。
+progress_report_01保留最初解析误判；progress_report_02及之后已修正。不要删除原始样本。
+
+收尾步骤：
+1. 确认采样真实完成、样本数361、uptime差>=3600秒；运行tools/report.py可生成独立进度报告。
+2. 在XSCT采样客户端退出后，用现有hw_server运行tools/observe.tcl 新目录post_soak_01 2 1000，只读结束版本核验。
+3. C:/msys64/ucrt64/bin/python.exe -B tools/report.py final_report --final，复核实际数值与范围。
+4. 确认硬件客户端全部退出，运行session_02/tools/close_owned_server.ps1关闭本轮自有服务，保持板卡状态。
+5. C:/msys64/ucrt64/bin/python.exe -B tools/finalize.py：清单、zip及解包哈希校验。
+6. 删除临时心跳v19-60，向用户发简明结果与final_report/验收结果.txt及zip链接。
+
+剩余缺口必须明确：实板逐帧input/golden/output完整闭环、场景到屏幕端到端延迟、
+实际位移倍率、已知源绝对频率误差均未实测。用户只有普通录像，无同步测量条件。
+不能将alpha、处理任务耗时、屏幕频谱标签或C仿真误差当上述真实物理测量。
+
+2026-11-03 20:54 最新：用户确认20:48左右操作过增益并恢复12；HMI命令1->9、alpha代次2->26、频谱epoch3->11。用户明确仍按原计划约21:22结束，不延长。保留含调参的连续运行与恢复证据，不能标为60分钟固定参数通过。事件已记spectrum_restart_01.json，report.py已更新；后续epoch=11本身不需重复通知。
+
+2026-11-03 21:01 最新：原soak_60m_01在样本199后FT_Write failed并退出，200样本/2011.3秒；用户确认HDMI正常且未动线缆。session_02服务已关闭，session_03服务PID2956接续。一次只读重连成功，未复位；观测空档163.1秒，重连到续采又71秒。当前soak_resume_01共141点/10秒、exec session52974，仍约21:22结束。自动报告已支持分段，不能称60分钟无间断或固定参数通过。收尾须关闭session_03服务，finalize.py会核对全部自有服务已关闭。详情transport_interruption_01.json。
+
+2026-11-03 21:11 最终：续采18点后Invalid context退出。post_soak_01唯一一次只读核验成功，V19仍运行无采集/算法/频谱错误。session_03自有服务已关闭，所有采样已结束，不再自动重连。最终报告final_report_v2；原final_report为编码问题草稿。完整长稳未完成，累计有效观测2184秒、观测空档234.1秒。心跳将删除。

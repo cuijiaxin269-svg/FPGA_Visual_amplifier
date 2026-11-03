@@ -1,0 +1,9 @@
+{
+  "time": "2026-11-03T21:10:17.4424307+08:00",
+  "pid": 2956,
+  "board_commands": 0,
+  "reset_commands": 0,
+  "stopped": true,
+  "was_running": true,
+  "termination_output": "SUCCESS: The process with PID 27116 (child process of PID 2956) has been terminated.\nSUCCESS: The process with PID 2956 (child process of PID 884) has been terminated."
+}

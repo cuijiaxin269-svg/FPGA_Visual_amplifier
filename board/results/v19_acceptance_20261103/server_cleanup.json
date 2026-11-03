@@ -1,0 +1,9 @@
+{
+  "time": "2026-11-03T20:02:45.4495428+08:00",
+  "pid": 6388,
+  "board_commands": 0,
+  "reset_commands": 0,
+  "stopped": true,
+  "was_running": true,
+  "termination_output": "SUCCESS: The process with PID 2384 (child process of PID 6388) has been terminated.\nSUCCESS: The process with PID 6388 (child process of PID 36968) has been terminated."
+}

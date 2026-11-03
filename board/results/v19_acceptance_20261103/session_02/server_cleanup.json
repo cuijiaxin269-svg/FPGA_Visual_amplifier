@@ -1,0 +1,9 @@
+{
+  "time": "2026-11-03T20:57:19.3271041+08:00",
+  "pid": 5168,
+  "board_commands": 0,
+  "reset_commands": 0,
+  "stopped": true,
+  "was_running": true,
+  "termination_output": "SUCCESS: The process with PID 35376 (child process of PID 5168) has been terminated.\nSUCCESS: The process with PID 5168 (child process of PID 23040) has been terminated."
+}

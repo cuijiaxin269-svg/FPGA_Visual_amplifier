@@ -1,0 +1,4775 @@
+{
+  "recorded_at": "2026-11-03T20:03:54.658257+08:00",
+  "manifest_sha256": "585bba42463ab4112714312f776db7bca56cd433ba89799da83b3a9e61b7e445",
+  "files_checked": 1125,
+  "files_passed": 1125,
+  "files": [
+    {
+      "path": "ACCEPTANCE.txt",
+      "passed": true
+    },
+    {
+      "path": "board/qspi_program.c",
+      "passed": true
+    },
+    {
+      "path": "board/qspi_read.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/boot.bif",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/BOOT.BIN",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/capture.bit",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/capture.ltx",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/capture.xsa",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_copy_checked_v1_0/data/clip_copy_checked.mdd",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_copy_checked_v1_0/data/clip_copy_checked.tcl",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_copy_checked_v1_0/data/clip_copy_checked.yaml",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_copy_checked_v1_0/src/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_copy_checked_v1_0/src/Makefile",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked.h",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked_hw.h",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked_linux.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked_sinit.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_temporal_full_v1_0/data/clip_temporal_full.mdd",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_temporal_full_v1_0/data/clip_temporal_full.tcl",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_temporal_full_v1_0/data/clip_temporal_full.yaml",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_temporal_full_v1_0/src/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_temporal_full_v1_0/src/Makefile",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full.h",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full_hw.h",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full_linux.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full_sinit.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/motion60_shared_v1_0/data/motion60_shared.mdd",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/motion60_shared_v1_0/data/motion60_shared.tcl",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/motion60_shared_v1_0/data/motion60_shared.yaml",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/motion60_shared_v1_0/src/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/motion60_shared_v1_0/src/Makefile",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/motion60_shared_v1_0/src/xmotion60_shared.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/motion60_shared_v1_0/src/xmotion60_shared.h",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/motion60_shared_v1_0/src/xmotion60_shared_hw.h",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/motion60_shared_v1_0/src/xmotion60_shared_linux.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/motion60_shared_v1_0/src/xmotion60_shared_sinit.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/roi256_v1_0/data/roi256.mdd",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/roi256_v1_0/data/roi256.tcl",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/roi256_v1_0/data/roi256.yaml",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/roi256_v1_0/src/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/roi256_v1_0/src/Makefile",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/roi256_v1_0/src/xroi256.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/roi256_v1_0/src/xroi256.h",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/roi256_v1_0/src/xroi256_hw.h",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/roi256_v1_0/src/xroi256_linux.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/roi256_v1_0/src/xroi256_sinit.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/spectrum256_pl_v1_0/data/spectrum256_pl.mdd",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/spectrum256_pl_v1_0/data/spectrum256_pl.tcl",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/spectrum256_pl_v1_0/data/spectrum256_pl.yaml",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/spectrum256_pl_v1_0/src/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/spectrum256_pl_v1_0/src/Makefile",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl.h",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl_hw.h",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl_linux.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl_sinit.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/fsbl.elf",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/motion60.elf",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/ps7_init.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/ps7_init.h",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/ps7_init.html",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/ps7_init.tcl",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/ps7_init_gpl.c",
+      "passed": true
+    },
+    {
+      "path": "build/candidate/ps7_init_gpl.h",
+      "passed": true
+    },
+    {
+      "path": "constraints/camera.xdc",
+      "passed": true
+    },
+    {
+      "path": "constraints/camera_amd.xdc",
+      "passed": true
+    },
+    {
+      "path": "constraints/camera_counter_cdc.xdc",
+      "passed": true
+    },
+    {
+      "path": "constraints/camera_performance.xdc",
+      "passed": true
+    },
+    {
+      "path": "constraints/common.xdc",
+      "passed": true
+    },
+    {
+      "path": "constraints/control.xdc",
+      "passed": true
+    },
+    {
+      "path": "constraints/hmi_uart_p4.xdc",
+      "passed": true
+    },
+    {
+      "path": "constraints/mode_button.xdc",
+      "passed": true
+    },
+    {
+      "path": "constraints/motion60_hdmi.xdc",
+      "passed": true
+    },
+    {
+      "path": "constraints/observe_debug_hub.xdc",
+      "passed": true
+    },
+    {
+      "path": "constraints/pixel_reset_guard_async.xdc",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/component.xml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/constraints/clip_copy_checked_ooc.xdc",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/dfx_runtime.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/doc/ReleaseNotes.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/drivers/clip_copy_checked_v1_0/data/clip_copy_checked.mdd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/drivers/clip_copy_checked_v1_0/data/clip_copy_checked.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/drivers/clip_copy_checked_v1_0/data/clip_copy_checked.yaml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/Makefile",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked.h",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked_hw.h",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked_linux.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/drivers/clip_copy_checked_v1_0/src/xclip_copy_checked_sinit.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/verilog/clip_copy_checked.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/verilog/clip_copy_checked_block_RAM_2P_BRAM_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/verilog/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_19_2.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/verilog/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_27_4.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/verilog/clip_copy_checked_control_s_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/verilog/clip_copy_checked_flow_control_loop_pipe_sequential_init.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/verilog/clip_copy_checked_input_mem_m_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/verilog/clip_copy_checked_output_mem_m_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/vhdl/clip_copy_checked.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/vhdl/clip_copy_checked_block_RAM_2P_BRAM_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/vhdl/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_19_2.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/vhdl/clip_copy_checked_clip_copy_checked_Pipeline_VITIS_LOOP_27_4.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/vhdl/clip_copy_checked_control_s_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/vhdl/clip_copy_checked_flow_control_loop_pipe_sequential_init.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/vhdl/clip_copy_checked_input_mem_m_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/hdl/vhdl/clip_copy_checked_output_mem_m_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/misc/logo.png",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/pack.bat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/run_ippack.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/sysgen_info.xml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/clip_copy_checked/xgui/clip_copy_checked_v1_0.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/component.xml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/constraints/clip_temporal_full_ooc.xdc",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/dfx_runtime.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/doc/ReleaseNotes.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/data/clip_temporal_full.mdd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/data/clip_temporal_full.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/data/clip_temporal_full.yaml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/Makefile",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full.h",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full_hw.h",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full_linux.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/drivers/clip_temporal_full_v1_0/src/xclip_temporal_full_sinit.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_ip/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x_ip/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_ip/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x_ip/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_ip/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x_ip/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_ip/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x_ip/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1_ip/clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1_ip/clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1_ip/clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1_ip/clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_ip/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/ip/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x_ip/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_42_2.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_52_4_VITIS_LOOP_52_5.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_60_7.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_68_9.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_72_10_VITIS_LOOP_74_11.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_80_12.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_85_13.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_coefficients_RAM_AUTO_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_control_s_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_flow_control_loop_pipe_sequential_init.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_kernel_cos.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_mac_muladd_20ns_7ns_32s_32_4_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_mul_32ns_31ns_63_3_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_mul_32ns_32ns_64_3_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_mul_7ns_31ns_32_3_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_phase_mem_m_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_samples_RAM_2P_BRAM_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_sum_RAM_2P_LUTRAM_2R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/verilog/clip_temporal_full_urem_32ns_32ns_32_36_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_40_1_VITIS_LOOP_42_2.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_52_4_VITIS_LOOP_52_5.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_60_7.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_68_9.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_72_10_VITIS_LOOP_74_11.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_80_12.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_clip_temporal_full_Pipeline_VITIS_LOOP_85_13.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_coefficients_RAM_AUTO_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_control_s_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_flow_control_loop_pipe_sequential_init.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_kernel_cos.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_mac_muladd_20ns_7ns_32s_32_4_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_mul_32ns_31ns_63_3_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_mul_32ns_32ns_64_3_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_mul_7ns_31ns_32_3_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_phase_mem_m_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_samples_RAM_2P_BRAM_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_sum_RAM_2P_LUTRAM_2R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/hdl/vhdl/clip_temporal_full_urem_32ns_32ns_32_36_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/misc/logo.png",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/pack.bat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/run_ippack.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/sysgen_info.xml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_full_temporal_v2/xgui/clip_temporal_full_v1_0.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/component.xml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/constraints/motion60_shared_ooc.xdc",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/dfx_runtime.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/doc/ReleaseNotes.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/drivers/motion60_shared_v1_0/data/motion60_shared.mdd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/drivers/motion60_shared_v1_0/data/motion60_shared.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/drivers/motion60_shared_v1_0/data/motion60_shared.yaml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/drivers/motion60_shared_v1_0/src/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/drivers/motion60_shared_v1_0/src/Makefile",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/drivers/motion60_shared_v1_0/src/xmotion60_shared.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/drivers/motion60_shared_v1_0/src/xmotion60_shared.h",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/drivers/motion60_shared_v1_0/src/xmotion60_shared_hw.h",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/drivers/motion60_shared_v1_0/src/xmotion60_shared_linux.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/drivers/motion60_shared_v1_0/src/xmotion60_shared_sinit.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/ip/motion60_shared_fadd_32ns_32ns_32_8_full_dsp_1_ip/motion60_shared_fadd_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/ip/motion60_shared_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/motion60_shared_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/ip/motion60_shared_fcmp_32ns_32ns_1_2_no_dsp_0_ip/motion60_shared_fcmp_32ns_32ns_1_2_no_dsp_0_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/ip/motion60_shared_fdiv_32ns_32ns_32_22_no_dsp_1_ip/motion60_shared_fdiv_32ns_32ns_32_22_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/ip/motion60_shared_fmul_32ns_32ns_32_4_max_dsp_1_ip/motion60_shared_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/ip/motion60_shared_fsqrt_32ns_32ns_32_28_no_dsp_1_ip/motion60_shared_fsqrt_32ns_32ns_32_28_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/ip/motion60_shared_fsub_32ns_32ns_32_8_full_dsp_1_ip/motion60_shared_fsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/ip/motion60_shared_uitofp_32ns_32_6_no_dsp_1_ip/motion60_shared_uitofp_32ns_32_6_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_atan2_cordic_float_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_atan2_generic_float_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_bitselect_1ns_40ns_6ns_1_1_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_blur_fork_1024000_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_blur_fork_256000_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_blur_fork_64000_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_combine_1024000_false_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_combine_1024000_true_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_combine_256000_false_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_combine_256000_true_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_combine_64000_false_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_combine_64000_true_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_compute_phase11.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_compute_phase14.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_compute_phase8.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_control_s_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_ctlz_30_30_1_0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_ctlz_32_32_1_0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_ctlz_40_40_1_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_downsample_1280_800_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_downsample_1280_800_s_line_RAM_AUTO_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_downsample_320_200_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_downsample_320_200_s_line_RAM_AUTO_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_downsample_640_400_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_downsample_640_400_s_line_RAM_AUTO_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fadd_32ns_32ns_32_8_full_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_faddfsub_32ns_32ns_32_8_full_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fcmp_32ns_32ns_1_2_no_dsp_0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fdiv_32ns_32ns_32_22_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w128_d128_A.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w128_d128_A_x.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w128_d128_A_x0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d131072_A.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d16384_A.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d32_S.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d32_S_x.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d32_S_x0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d64_A.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d64_A_x.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d64_A_x0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d8192_A.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d8192_A_x.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d8192_A_x0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w32_d8192_A_x1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w96_d32_A.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w96_d32_A_x.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w96_d32_A_x0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w96_d64_A.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w96_d64_A_x.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fifo_w96_d64_A_x0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_flow_control_loop_delay_pipe.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_flow_control_loop_pipe.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_flow_control_loop_pipe_sequential_init.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fmul_32ns_32ns_32_4_max_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fork_float_16000_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fork_float_256000_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fork_float_64000_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fsqrt_32ns_32ns_32_28_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_fsub_32ns_32ns_32_8_full_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_hls_deadlock_detection_unit.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_hls_deadlock_detector.vh",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_hls_deadlock_report_unit.vh",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_images_m_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_mul_15ns_15ns_30_1_0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_mul_15ns_15s_30_1_0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_mul_23s_22ns_45_4_0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_mul_30s_29ns_58_3_0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_mul_80s_24ns_80_5_0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_pack_history12.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_pack_history15.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_pack_history9.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_phase_band_1280_800_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_phase_band_320_200_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_phase_band_640_400_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_phase_core_shared.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_phase_core_shared_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_phase_core_shared_2.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_phase_dataflow.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_phase_dataflow_6.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_phase_dataflow_7.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_pyramid_1280_800_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_pyramid_320_200_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_pyramid_640_400_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_read_image.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_read_image_Pipeline_VITIS_LOOP_155_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_read_words.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_read_words_10.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_read_words_10_Pipeline_VITIS_LOOP_10_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_read_words_8.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_read_words_8_Pipeline_VITIS_LOOP_10_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_read_words_Pipeline_VITIS_LOOP_10_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_reconstruct_1280_800_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_reconstruct_320_200_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_reconstruct_640_400_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_shared_dataflow.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_ref_4oPi_table_100_ROM_1P_LUTRAM_1R.dat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_ref_4oPi_table_100_ROM_1P_LUTRAM_1R.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K0_ROM_1P_LUTRAM_1R.dat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K0_ROM_1P_LUTRAM_1R.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K1_ROM_1P_LUTRAM_1R.dat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K1_ROM_1P_LUTRAM_1R.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K2_ROM_1P_LUTRAM_1R.dat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K2_ROM_1P_LUTRAM_1R.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_sparsemux_11_3_32_1_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_sparsemux_17_3_1_1_0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_sparsemux_33_4_1_1_0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_srem_10ns_4ns_3_14_seq_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_srem_11ns_4ns_3_15_seq_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_srem_9ns_4ns_3_13_seq_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_blur_fork_1024000_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_blur_fork_256000_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_blur_fork_64000_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_combine_1024000_false_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_combine_1024000_true_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_combine_256000_false_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_combine_256000_true_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_combine_64000_false_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_combine_64000_true_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_compute_phase11_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_compute_phase14_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_compute_phase8_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_downsample_1280_800_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_downsample_320_200_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_downsample_640_400_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_fork_float_16000_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_fork_float_256000_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_fork_float_64000_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_pack_history12_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_pack_history15_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_pack_history9_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_pyramid_1280_800_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_pyramid_320_200_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_pyramid_640_400_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_reconstruct_1280_800_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_reconstruct_320_200_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_reconstruct_640_400_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_unpack_history10_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_unpack_history13_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_unpack_history7_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_upsample_160_100_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_upsample_320_200_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_upsample_640_400_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_write_image_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_write_words_11_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_write_words_9_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_start_for_write_words_U0.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_state0_m_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_state1_m_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_state2_m_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_false_Pipeline_horizontal.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_false_Pipeline_vertical.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_false_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_false_s_even_RAM_2P_BRAM_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_true_Pipeline_horizontal.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_true_Pipeline_vertical.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_1280_800_true_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_false_Pipeline_horizontal.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_false_Pipeline_vertical.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_false_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_false_s_even_RAM_2P_BRAM_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_true_Pipeline_horizontal.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_true_Pipeline_vertical.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_320_200_true_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_false_Pipeline_horizontal.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_false_Pipeline_vertical.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_false_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_false_s_even_RAM_2P_BRAM_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_true_Pipeline_horizontal.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_true_Pipeline_vertical.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_stencil_640_400_true_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_uitofp_32ns_32_6_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_unpack_history10.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_unpack_history13.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_unpack_history7.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_3.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_3_Pipeline_VITIS_LOOP_104_3.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_3_Pipeline_VITIS_LOOP_98_2.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_Pipeline_VITIS_LOOP_104_3.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_Pipeline_VITIS_LOOP_98_2.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_160_100_s_rows_RAM_2P_BRAM_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_4.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_4_Pipeline_VITIS_LOOP_104_3.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_4_Pipeline_VITIS_LOOP_98_2.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_Pipeline_VITIS_LOOP_104_3.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_Pipeline_VITIS_LOOP_98_2.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_320_200_s_rows_RAM_2P_BRAM_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_5.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_5_Pipeline_VITIS_LOOP_104_3.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_5_Pipeline_VITIS_LOOP_98_2.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_Pipeline_VITIS_LOOP_104_3.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_Pipeline_VITIS_LOOP_98_2.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_s.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_upsample_640_400_s_rows_RAM_2P_BRAM_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_urem_10ns_4ns_3_14_seq_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_urem_11ns_4ns_3_15_seq_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_urem_8ns_4ns_3_12_seq_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_urem_9ns_4ns_3_13_seq_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_write_image.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_write_image_Pipeline_VITIS_LOOP_161_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_write_words.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_write_words_11.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_write_words_11_Pipeline_VITIS_LOOP_17_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_write_words_9.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_write_words_9_Pipeline_VITIS_LOOP_17_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/verilog/motion60_shared_write_words_Pipeline_VITIS_LOOP_17_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_addsub_0_0_ap_fixed_40_1_5_3_0_ap_fixed_40_1_0_3_0_ap_uint_1_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_ap_uint_1_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_addsub_0_0_ap_fixed_43_4_5_3_0_ap_fixed_43_4_5_3_0_bool_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_atan2_cordic_float_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_atan2_generic_float_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_bitselect_1ns_40ns_6ns_1_1_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_blur_fork_1024000_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_blur_fork_256000_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_blur_fork_64000_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_combine_1024000_false_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_combine_1024000_true_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_combine_256000_false_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_combine_256000_true_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_combine_64000_false_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_combine_64000_true_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_compute_phase11.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_compute_phase14.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_compute_phase8.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_control_s_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_ctlz_30_30_1_0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_ctlz_32_32_1_0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_ctlz_40_40_1_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_downsample_1280_800_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_downsample_1280_800_s_line_RAM_AUTO_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_downsample_320_200_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_downsample_320_200_s_line_RAM_AUTO_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_downsample_640_400_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_downsample_640_400_s_line_RAM_AUTO_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fadd_32ns_32ns_32_8_full_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_faddfsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fcmp_32ns_32ns_1_2_no_dsp_0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fdiv_32ns_32ns_32_22_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w128_d128_A.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w128_d128_A_x.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w128_d128_A_x0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d131072_A.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d16384_A.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d32_S.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d32_S_x.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d32_S_x0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d64_A.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d64_A_x.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d64_A_x0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d8192_A.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d8192_A_x.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d8192_A_x0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w32_d8192_A_x1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w96_d32_A.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w96_d32_A_x.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w96_d32_A_x0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w96_d64_A.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w96_d64_A_x.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fifo_w96_d64_A_x0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_flow_control_loop_delay_pipe.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_flow_control_loop_pipe.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_flow_control_loop_pipe_sequential_init.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fork_float_16000_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fork_float_256000_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fork_float_64000_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fsqrt_32ns_32ns_32_28_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_fsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_images_m_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_mul_15ns_15ns_30_1_0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_mul_15ns_15s_30_1_0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_mul_23s_22ns_45_4_0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_mul_30s_29ns_58_3_0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_mul_80s_24ns_80_5_0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_pack_history12.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_pack_history15.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_pack_history9.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_phase_band_1280_800_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_phase_band_320_200_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_phase_band_640_400_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_phase_core_shared.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_phase_core_shared_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_phase_core_shared_2.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_phase_dataflow.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_phase_dataflow_6.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_phase_dataflow_7.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_pyramid_1280_800_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_pyramid_320_200_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_pyramid_640_400_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_read_image.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_read_image_Pipeline_VITIS_LOOP_155_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_read_words.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_read_words_10.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_read_words_10_Pipeline_VITIS_LOOP_10_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_read_words_8.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_read_words_8_Pipeline_VITIS_LOOP_10_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_read_words_Pipeline_VITIS_LOOP_10_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_reconstruct_1280_800_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_reconstruct_320_200_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_reconstruct_640_400_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_shared_dataflow.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_sin_or_cos_float_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_sin_or_cos_float_s_ref_4oPi_table_100_ROM_1P_LUTRAM_1R.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K0_ROM_1P_LUTRAM_1R.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K1_ROM_1P_LUTRAM_1R.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_sin_or_cos_float_s_second_order_float_sin_cos_K2_ROM_1P_LUTRAM_1R.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_sparsemux_11_3_32_1_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_sparsemux_17_3_1_1_0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_sparsemux_33_4_1_1_0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_srem_10ns_4ns_3_14_seq_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_srem_11ns_4ns_3_15_seq_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_srem_9ns_4ns_3_13_seq_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_blur_fork_1024000_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_blur_fork_256000_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_blur_fork_64000_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_combine_1024000_false_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_combine_1024000_true_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_combine_256000_false_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_combine_256000_true_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_combine_64000_false_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_combine_64000_true_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_compute_phase11_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_compute_phase14_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_compute_phase8_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_downsample_1280_800_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_downsample_320_200_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_downsample_640_400_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_fork_float_16000_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_fork_float_256000_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_fork_float_64000_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_pack_history12_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_pack_history15_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_pack_history9_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_pyramid_1280_800_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_pyramid_320_200_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_pyramid_640_400_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_reconstruct_1280_800_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_reconstruct_320_200_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_reconstruct_640_400_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_unpack_history10_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_unpack_history13_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_unpack_history7_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_upsample_160_100_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_upsample_320_200_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_upsample_640_400_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_write_image_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_write_words_11_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_write_words_9_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_start_for_write_words_U0.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_state0_m_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_state1_m_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_state2_m_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_false_Pipeline_horizontal.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_false_Pipeline_vertical.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_false_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_false_s_even_RAM_2P_BRAM_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_true_Pipeline_horizontal.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_true_Pipeline_vertical.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_1280_800_true_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_false_Pipeline_horizontal.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_false_Pipeline_vertical.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_false_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_false_s_even_RAM_2P_BRAM_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_true_Pipeline_horizontal.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_true_Pipeline_vertical.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_320_200_true_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_false_Pipeline_horizontal.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_false_Pipeline_vertical.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_false_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_false_s_even_RAM_2P_BRAM_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_true_Pipeline_horizontal.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_true_Pipeline_vertical.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_stencil_640_400_true_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_uitofp_32ns_32_6_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_unpack_history10.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_unpack_history13.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_unpack_history7.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_3.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_3_Pipeline_VITIS_LOOP_104_3.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_3_Pipeline_VITIS_LOOP_98_2.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_Pipeline_VITIS_LOOP_104_3.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_Pipeline_VITIS_LOOP_98_2.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_160_100_s_rows_RAM_2P_BRAM_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_4.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_4_Pipeline_VITIS_LOOP_104_3.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_4_Pipeline_VITIS_LOOP_98_2.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_Pipeline_VITIS_LOOP_104_3.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_Pipeline_VITIS_LOOP_98_2.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_320_200_s_rows_RAM_2P_BRAM_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_5.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_5_Pipeline_VITIS_LOOP_104_3.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_5_Pipeline_VITIS_LOOP_98_2.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_Pipeline_VITIS_LOOP_104_3.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_Pipeline_VITIS_LOOP_98_2.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_s.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_upsample_640_400_s_rows_RAM_2P_BRAM_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_urem_10ns_4ns_3_14_seq_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_urem_11ns_4ns_3_15_seq_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_urem_8ns_4ns_3_12_seq_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_urem_9ns_4ns_3_13_seq_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_write_image.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_write_image_Pipeline_VITIS_LOOP_161_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_write_words.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_write_words_11.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_write_words_11_Pipeline_VITIS_LOOP_17_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_write_words_9.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_write_words_9_Pipeline_VITIS_LOOP_17_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/hdl/vhdl/motion60_shared_write_words_Pipeline_VITIS_LOOP_17_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/misc/logo.png",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/pack.bat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/run_ippack.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/sysgen_info.xml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/motion60_shared/xgui/motion60_shared_v1_0.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/component.xml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/docs/rgb2dvi_v1_2.pdf",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/src/ClockGen.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/src/DVI_Constants.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/src/OutputSERDES.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/src/rgb2dvi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/src/rgb2dvi.xdc",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/src/rgb2dvi_clocks.xdc",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/src/rgb2dvi_ooc.xdc",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/src/SyncAsync.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/src/SyncAsyncReset.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/src/TMDS_Encoder.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/xgui/rgb2dvi_v1_1.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/xgui/rgb2dvi_v1_2.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/rgb2dvi_v1_3/xgui/rgb2dvi_v1_3.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/component.xml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/constraints/roi256_ooc.xdc",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/dfx_runtime.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/doc/ReleaseNotes.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/drivers/roi256_v1_0/data/roi256.mdd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/drivers/roi256_v1_0/data/roi256.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/drivers/roi256_v1_0/data/roi256.yaml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/drivers/roi256_v1_0/src/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/drivers/roi256_v1_0/src/Makefile",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/drivers/roi256_v1_0/src/xroi256.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/drivers/roi256_v1_0/src/xroi256.h",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/drivers/roi256_v1_0/src/xroi256_hw.h",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/drivers/roi256_v1_0/src/xroi256_linux.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/drivers/roi256_v1_0/src/xroi256_sinit.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/ip/roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip/roi256_fadd_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/ip/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/ip/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip/roi256_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/ip/roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip/roi256_fdiv_32ns_32ns_32_22_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/ip/roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip/roi256_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/ip/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/ip/roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip/roi256_fsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/ip/roi256_uitofp_32ns_32_6_no_dsp_1_ip/roi256_uitofp_32ns_32_6_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip/roi256_uitofp_64ns_32_6_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_control_s_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fadd_32ns_32ns_32_8_full_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fcmp_32ns_32ns_1_2_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fdiv_32ns_32ns_32_22_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fft2.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fft_line.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fft_line_ar_RAM_T2P_BRAM_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fft_line_Pipeline_VITIS_LOOP_43_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fft_line_Pipeline_VITIS_LOOP_52_3.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fft_stage.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_cos256_ROM_AUTO_1R.dat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_cos256_ROM_AUTO_1R.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_sin256_ROM_AUTO_1R.dat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_sin256_ROM_AUTO_1R.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_flow_control_loop_pipe_sequential_init.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fmul_32ns_32ns_32_4_max_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_fsub_32ns_32ns_32_8_full_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_image_r_m_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_mac_muladd_16ns_16ns_48s_48_4_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_mul_32ns_32ns_64_3_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_result_m_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_108_3.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_108_3_reference_re_RAM_2P_BRAM_1R1W.dat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_108_3_reference_re_RAM_2P_BRAM_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_121_4.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_hann256_ROM_AUTO_1R.dat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_hann256_ROM_AUTO_1R.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_uitofp_32ns_32_6_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/verilog/roi256_uitofp_64ns_32_6_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_control_s_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fadd_32ns_32ns_32_8_full_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_faddfsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fcmp_32ns_32ns_1_2_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fdiv_32ns_32ns_32_22_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fft2.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fft_line.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fft_line_ar_RAM_T2P_BRAM_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fft_line_Pipeline_VITIS_LOOP_43_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fft_line_Pipeline_VITIS_LOOP_52_3.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fft_stage.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_cos256_ROM_AUTO_1R.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fft_stage_Pipeline_VITIS_LOOP_26_1_sin256_ROM_AUTO_1R.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_flow_control_loop_pipe_sequential_init.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fsqrt_32ns_32ns_32_28_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_fsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_image_r_m_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_mac_muladd_16ns_16ns_48s_48_4_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_mul_32ns_32ns_64_3_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_result_m_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_roi256_Pipeline_VITIS_LOOP_108_3.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_roi256_Pipeline_VITIS_LOOP_108_3_reference_re_RAM_2P_BRAM_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_roi256_Pipeline_VITIS_LOOP_121_4.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_roi256_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_96_2_hann256_ROM_AUTO_1R.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_uitofp_32ns_32_6_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/hdl/vhdl/roi256_uitofp_64ns_32_6_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/misc/logo.png",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/pack.bat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/run_ippack.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/sysgen_info.xml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/roi256_v3/xgui/roi256_v1_0.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/component.xml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/constraints/spectrum256_pl_ooc.xdc",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/dfx_runtime.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/doc/ReleaseNotes.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/drivers/spectrum256_pl_v1_0/data/spectrum256_pl.mdd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/drivers/spectrum256_pl_v1_0/data/spectrum256_pl.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/drivers/spectrum256_pl_v1_0/data/spectrum256_pl.yaml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/Makefile",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl.h",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl_hw.h",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl_linux.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/drivers/spectrum256_pl_v1_0/src/xspectrum256_pl_sinit.c",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/ip/spectrum256_pl_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/spectrum256_pl_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/ip/spectrum256_pl_fcmp_32ns_32ns_1_2_no_dsp_1_ip/spectrum256_pl_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/ip/spectrum256_pl_fdiv_32ns_32ns_32_22_no_dsp_1_ip/spectrum256_pl_fdiv_32ns_32ns_32_22_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/ip/spectrum256_pl_fmul_32ns_32ns_32_4_max_dsp_1_ip/spectrum256_pl_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/ip/spectrum256_pl_fsqrt_32ns_32ns_32_28_no_dsp_1_ip/spectrum256_pl_fsqrt_32ns_32ns_32_28_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/ip/spectrum256_pl_fsub_32ns_32ns_32_8_full_dsp_1_ip/spectrum256_pl_fsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/ip/spectrum256_pl_sitofp_32ns_32_7_no_dsp_1_ip/spectrum256_pl_sitofp_32ns_32_7_no_dsp_1_ip.xci",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_amplitude_RAM_AUTO_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_chronological_RAM_AUTO_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_control_s_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_faddfsub_32ns_32ns_32_8_full_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_fcmp_32ns_32ns_1_2_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_fdiv_32ns_32ns_32_22_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_flow_control_loop_pipe_sequential_init.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_fmul_32ns_32ns_32_4_max_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_fsqrt_32ns_32ns_32_28_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_fsub_32ns_32ns_32_8_full_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_input_mem_m_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_mul_8s_8s_8_1_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_output_mem_m_axi.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_ring_RAM_2P_BRAM_1R1W.dat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_ring_RAM_2P_BRAM_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_sitofp_32ns_32_7_no_dsp_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_sparsemux_7_2_32_1_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_13_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_22_3.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_30_4.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_30_4_hann256_ROM_AUTO_1R.dat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_30_4_hann256_ROM_AUTO_1R.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6_cos256_ROM_AUTO_1R.dat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6_cos256_ROM_AUTO_1R.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6_sin256_ROM_AUTO_1R.dat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6_sin256_ROM_AUTO_1R.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_47_7.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_result_RAM_AUTO_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_samples_RAM_AUTO_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_array_windowed_RAM_AUTO_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_pl_Pipeline_VITIS_LOOP_101_2_VITIS_LOOP_103_3.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_pl_Pipeline_VITIS_LOOP_116_4.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_spectrum256_pl_Pipeline_VITIS_LOOP_94_1.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/verilog/spectrum256_pl_words_RAM_AUTO_1R1W.v",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_amplitude_RAM_AUTO_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_chronological_RAM_AUTO_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_control_s_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_faddfsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_fcmp_32ns_32ns_1_2_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_fdiv_32ns_32ns_32_22_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_flow_control_loop_pipe_sequential_init.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_fsqrt_32ns_32ns_32_28_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_fsub_32ns_32ns_32_8_full_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_input_mem_m_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_mul_8s_8s_8_1_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_output_mem_m_axi.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_ring_RAM_2P_BRAM_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_sitofp_32ns_32_7_no_dsp_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_sparsemux_7_2_32_1_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_13_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_22_3.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_30_4.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_30_4_hann256_ROM_AUTO_1R.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6_cos256_ROM_AUTO_1R.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_36_5_VITIS_LOOP_38_6_sin256_ROM_AUTO_1R.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_Pipeline_VITIS_LOOP_47_7.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_result_RAM_AUTO_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_samples_RAM_AUTO_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_array_windowed_RAM_AUTO_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_pl_Pipeline_VITIS_LOOP_101_2_VITIS_LOOP_103_3.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_pl_Pipeline_VITIS_LOOP_116_4.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_spectrum256_pl_Pipeline_VITIS_LOOP_94_1.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/hdl/vhdl/spectrum256_pl_words_RAM_AUTO_1R1W.vhd",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/misc/logo.png",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/pack.bat",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/run_ippack.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/sysgen_info.xml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/spectrum256_pl/xgui/spectrum256_pl_v1_0.tcl",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/tmds_v1_0/tmds.xml",
+      "passed": true
+    },
+    {
+      "path": "ip_repo/tmds_v1_0/tmds_rtl.xml",
+      "passed": true
+    },
+    {
+      "path": "project/capture_2021_port_bd.tcl",
+      "passed": true
+    },
+    {
+      "path": "project/capture_hmi_bd.tcl",
+      "passed": true
+    },
+    {
+      "path": "project/capture_qspi_bd.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/baseline.json",
+      "passed": true
+    },
+    {
+      "path": "provenance/capture_before_qspi.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/backup_flash.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/close_owned_server.ps1",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/decode_snapshot.py",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/hmi_helpers.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/inspect_entry.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/inspect_flash_stall.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/inspect_handoff.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/inspect_recovery.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/load_helpers.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/memory_help.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/program_entry.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/read_boot_state.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/read_cold_boot.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/read_page_failure.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/recover_program.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/recover_program_ap_attempt06.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/recover_program_bulk_attempt01.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/recover_program_cpu_attempt03.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/recover_program_success_execution.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/snapshot.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/start_owned_server.ps1",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/verify_backup.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/executed_board_tools/volatile_handoff.tcl",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/fsbl.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/fsbl_debug.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/fsbl_handoff.S",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/fsbl_hooks.c",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/fsbl_hooks.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/image_mover.c",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/image_mover.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/lscript.ld",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/main.c",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/Makefile",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/md5.c",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/md5.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/nand.c",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/nand.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/nor.c",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/nor.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/pcap.c",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/pcap.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/ps7_init.c",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/ps7_init.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/qspi.c",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/qspi.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/rsa.c",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/rsa.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/sd.c",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/sd.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/system.mss",
+      "passed": true
+    },
+    {
+      "path": "provenance/fsbl_sources/xparameters.h",
+      "passed": true
+    },
+    {
+      "path": "provenance/v18_board_validation.json",
+      "passed": true
+    },
+    {
+      "path": "provenance/v18_manifest.json",
+      "passed": true
+    },
+    {
+      "path": "provenance/v18_routed_bus_skew.txt",
+      "passed": true
+    },
+    {
+      "path": "provenance/v18_routed_cdc.txt",
+      "passed": true
+    },
+    {
+      "path": "provenance/v18_routed_drc.txt",
+      "passed": true
+    },
+    {
+      "path": "provenance/v18_routed_timing.txt",
+      "passed": true
+    },
+    {
+      "path": "README.txt",
+      "passed": true
+    },
+    {
+      "path": "recovery/backup_verified.json",
+      "passed": true
+    },
+    {
+      "path": "recovery/flash_before_16MiB.bin",
+      "passed": true
+    },
+    {
+      "path": "recovery/qspi_program.elf",
+      "passed": true
+    },
+    {
+      "path": "recovery/qspi_read.elf",
+      "passed": true
+    },
+    {
+      "path": "recovery/qspi_verify.elf",
+      "passed": true
+    },
+    {
+      "path": "reports/application_startup.patch",
+      "passed": true
+    },
+    {
+      "path": "reports/backup_verified.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/backup_flash.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/backup_verified.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/boot_state.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/boot_state_after_question.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/boot_state_switch_trial_01.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/cold_boot_01.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/cold_boot_02/application_text.bin",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/cold_boot_02/boot_registers.txt",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/cold_boot_02/hmi.bin",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/cold_boot_02.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/cold_boot_verified.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/completion.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/entry.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/failed_page_diag.bin",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/failed_page_expected.bin",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/failed_page_rx.bin",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/flash_backup_verification.bin",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/flash_id_status.bin",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/flash_stall_state.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/flash_stall_state_02.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/flash_verified.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/handoff_assessment.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/handoff_snapshot_01.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/hw_server.stderr.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/hw_server.stdout.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/hw_server_attempt01.stderr.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/hw_server_attempt01.stdout.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/hw_server_attempt02.stderr.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/hw_server_attempt02.stdout.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/inspect_recovery_01.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/inspect_recovery_02.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/inspect_recovery_03.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/program_attempt01_stall.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/program_attempt02_stall.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/program_entry_01.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/program_flash_attempt01.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/program_flash_attempt02.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/program_targets.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/programming_plan.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/qspi_program_attempt01.c",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/qspi_program_attempt01.elf",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/read_after_upload_error.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recover_program.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recover_program_ap_attempt05.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recover_program_ap_attempt06.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recover_program_api_attempt04.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recover_program_bulk_attempt01.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recover_program_cpu_attempt03.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recover_program_guard_attempt02.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recover_program_page_attempt08.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recover_program_resume_attempt07.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recovery_ready.bin",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recovery_ready_attempt08.bin",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recovery_upload_checkpoint.txt",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/recovery_verified.bin",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/server_cleanup.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/server_cleanup_attempt01.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/server_cleanup_attempt02.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/server_ownership.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/server_ownership_attempt01.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/server_ownership_attempt02.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/usb_devices.json",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/verify_backup.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/volatile_handoff.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/volatile_handoff_02.log",
+      "passed": true
+    },
+    {
+      "path": "reports/board_evidence/volatile_handoff_03.log",
+      "passed": true
+    },
+    {
+      "path": "reports/boot_image_audit.json",
+      "passed": true
+    },
+    {
+      "path": "reports/bootgen_read.txt",
+      "passed": true
+    },
+    {
+      "path": "reports/build_boot.log",
+      "passed": true
+    },
+    {
+      "path": "reports/build_firmware.log",
+      "passed": true
+    },
+    {
+      "path": "reports/cold_boot_verified.json",
+      "passed": true
+    },
+    {
+      "path": "reports/create_fsbl.log",
+      "passed": true
+    },
+    {
+      "path": "reports/firmware_inputs.json",
+      "passed": true
+    },
+    {
+      "path": "reports/flash_verified.json",
+      "passed": true
+    },
+    {
+      "path": "reports/fsbl_debug_build.log",
+      "passed": true
+    },
+    {
+      "path": "reports/fsbl_disassembly.txt",
+      "passed": true
+    },
+    {
+      "path": "reports/fsbl_handoff_audit.json",
+      "passed": true
+    },
+    {
+      "path": "reports/handoff_assessment.json",
+      "passed": true
+    },
+    {
+      "path": "reports/host_inputs.json",
+      "passed": true
+    },
+    {
+      "path": "reports/hsi_help.log",
+      "passed": true
+    },
+    {
+      "path": "reports/hwh.diff",
+      "passed": true
+    },
+    {
+      "path": "reports/platform_compatibility.json",
+      "passed": true
+    },
+    {
+      "path": "reports/prepare_qspi.jou",
+      "passed": true
+    },
+    {
+      "path": "reports/prepare_qspi.log",
+      "passed": true
+    },
+    {
+      "path": "reports/program_flash_help.log",
+      "passed": true
+    },
+    {
+      "path": "reports/programming_plan.json",
+      "passed": true
+    },
+    {
+      "path": "reports/ps_config_delta.tsv",
+      "passed": true
+    },
+    {
+      "path": "reports/schematic_page3.png",
+      "passed": true
+    },
+    {
+      "path": "reports/test_hmi_all.log",
+      "passed": true
+    },
+    {
+      "path": "reports/test_hmi_device.log",
+      "passed": true
+    },
+    {
+      "path": "reports/test_hmi_protocol.log",
+      "passed": true
+    },
+    {
+      "path": "reports/test_hmi_uart.log",
+      "passed": true
+    },
+    {
+      "path": "rtl/camera_clock_gate.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/capture_core.sv",
+      "passed": true
+    },
+    {
+      "path": "rtl/capture_core.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/capture_csi_core.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/capture_test_source.sv",
+      "passed": true
+    },
+    {
+      "path": "rtl/csi2_raw10_rx.sv",
+      "passed": true
+    },
+    {
+      "path": "rtl/full_hdmi_health.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/full_hdmi_observe.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/hdmi_1080_clock.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/hdmi_diagnostic_motion_ui.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/hdmi_diagnostic_pattern.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/mipi_lane_merge.vhd",
+      "passed": true
+    },
+    {
+      "path": "rtl/motion60_overlay_control.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/motion60_spectrum_overlay.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/motion60_video.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/motion60_video_osd.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/pixel_reset_guard.v",
+      "passed": true
+    },
+    {
+      "path": "rtl/raw10_axis_guard.sv",
+      "passed": true
+    },
+    {
+      "path": "rtl/sccb_bridge.v",
+      "passed": true
+    },
+    {
+      "path": "scripts/audit_boot.py",
+      "passed": true
+    },
+    {
+      "path": "scripts/audit_platform.py",
+      "passed": true
+    },
+    {
+      "path": "scripts/build_boot.ps1",
+      "passed": true
+    },
+    {
+      "path": "scripts/build_firmware.ps1",
+      "passed": true
+    },
+    {
+      "path": "scripts/build_qspi_reader.ps1",
+      "passed": true
+    },
+    {
+      "path": "scripts/build_recovery_writer.ps1",
+      "passed": true
+    },
+    {
+      "path": "scripts/create_fsbl.tcl",
+      "passed": true
+    },
+    {
+      "path": "scripts/create_standalone_qspi.tcl",
+      "passed": true
+    },
+    {
+      "path": "scripts/initialize_candidate.py",
+      "passed": true
+    },
+    {
+      "path": "scripts/input_receipt.py",
+      "passed": true
+    },
+    {
+      "path": "scripts/prepare_qspi_platform.tcl",
+      "passed": true
+    },
+    {
+      "path": "scripts/program_gate.py",
+      "passed": true
+    },
+    {
+      "path": "scripts/record_cold_boot.py",
+      "passed": true
+    },
+    {
+      "path": "scripts/record_flash_verification.py",
+      "passed": true
+    },
+    {
+      "path": "scripts/seal_candidate.py",
+      "passed": true
+    },
+    {
+      "path": "scripts/test_alpha50_controls.ps1",
+      "passed": true
+    },
+    {
+      "path": "scripts/test_firmware.ps1",
+      "passed": true
+    },
+    {
+      "path": "scripts/test_hmi.ps1",
+      "passed": true
+    },
+    {
+      "path": "scripts/test_spectrum.ps1",
+      "passed": true
+    },
+    {
+      "path": "scripts/test_stable_ui.ps1",
+      "passed": true
+    },
+    {
+      "path": "scripts/write_acceptance.py",
+      "passed": true
+    },
+    {
+      "path": "sim/legacy_v8_scheduler.cpp",
+      "passed": true
+    },
+    {
+      "path": "sim/reference_spectrum_overlay.v",
+      "passed": true
+    },
+    {
+      "path": "sim/tb_border_alignment.sv",
+      "passed": true
+    },
+    {
+      "path": "sim/tb_roi_border.sv",
+      "passed": true
+    },
+    {
+      "path": "sim/tb_sccb_button.sv",
+      "passed": true
+    },
+    {
+      "path": "sim/tb_spectrum_ui.sv",
+      "passed": true
+    },
+    {
+      "path": "sim/test_alpha50_controls.cpp",
+      "passed": true
+    },
+    {
+      "path": "sim/test_border_controls.cpp",
+      "passed": true
+    },
+    {
+      "path": "sim/test_hmi_device.cpp",
+      "passed": true
+    },
+    {
+      "path": "sim/test_hmi_protocol.cpp",
+      "passed": true
+    },
+    {
+      "path": "sim/test_hmi_uart.cpp",
+      "passed": true
+    },
+    {
+      "path": "sim/test_mode_button.cpp",
+      "passed": true
+    },
+    {
+      "path": "sim/test_motion60_scheduler.cpp",
+      "passed": true
+    },
+    {
+      "path": "sim/test_spectrum_ui.cpp",
+      "passed": true
+    },
+    {
+      "path": "sim/test_stability.cpp",
+      "passed": true
+    },
+    {
+      "path": "sw/capture.h",
+      "passed": true
+    },
+    {
+      "path": "sw/ddr_probe.c",
+      "passed": true
+    },
+    {
+      "path": "sw/hmi_device.h",
+      "passed": true
+    },
+    {
+      "path": "sw/hmi_diagnostics.h",
+      "passed": true
+    },
+    {
+      "path": "sw/hmi_link.c",
+      "passed": true
+    },
+    {
+      "path": "sw/hmi_link.h",
+      "passed": true
+    },
+    {
+      "path": "sw/hmi_protocol.c",
+      "passed": true
+    },
+    {
+      "path": "sw/hmi_protocol.h",
+      "passed": true
+    },
+    {
+      "path": "sw/hmi_uart.c",
+      "passed": true
+    },
+    {
+      "path": "sw/hmi_uart.h",
+      "passed": true
+    },
+    {
+      "path": "sw/link.ld",
+      "passed": true
+    },
+    {
+      "path": "sw/main.c",
+      "passed": true
+    },
+    {
+      "path": "sw/mode_button.h",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60.c",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60.h",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_camera.h",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_accel.c",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_accel.h",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_driver.c",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_driver.h",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_layout.h",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_pl.c",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_pl.h",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_playback.c",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_playback.h",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_process.c",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_process.h",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_record.c",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_record.h",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_spatial.c",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_clip_spatial.h",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_hmi.inc",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_math_runtime.c",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_spectrum_driver.c",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_spectrum_driver.h",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_spectrum_pl_display.inc",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_spectrum_pl_driver.c",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_spectrum_window.c",
+      "passed": true
+    },
+    {
+      "path": "sw/motion60_spectrum_window.h",
+      "passed": true
+    },
+    {
+      "path": "sw/ov9281.c",
+      "passed": true
+    },
+    {
+      "path": "sw/platform.c",
+      "passed": true
+    },
+    {
+      "path": "sw/spectrum_ui.h",
+      "passed": true
+    },
+    {
+      "path": "sw/start.S",
+      "passed": true
+    }
+  ],
+  "candidate": {
+    "BOOT.BIN": {
+      "sha256": "eae2d50a02ab3f8aaa2574d2fcd9573cc657461bc64690f1b1f17b84ba013e54",
+      "bytes": 13299932,
+      "reflash_same": true
+    },
+    "capture.bit": {
+      "sha256": "9836f502522085ff01fde7f3194b2dfe9491ffe7e30447ca391e50e4363cc134",
+      "bytes": 13142261,
+      "reflash_same": true
+    },
+    "motion60.elf": {
+      "sha256": "b066d1e63a11929eae0b8ca86c233da6d40929d3daa14621ef4b7a88622c7d98",
+      "bytes": 443028,
+      "reflash_same": true
+    },
+    "fsbl.elf": {
+      "sha256": "86383b7e4dbb6dcd4d50d0227b1be9649e555a27bfb5819e49137502f02e2133",
+      "bytes": 296284,
+      "reflash_same": true
+    },
+    "capture.xsa": {
+      "sha256": "bb1fd7525051188e14840edb8ede828c5219e9d97d822e6c8b65ccde7ccad440",
+      "bytes": 422696,
+      "reflash_same": true
+    }
+  },
+  "previous_cold_boot": {
+    "report": "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot_reflash_20261103\\evidence\\cold_boot_verified.json",
+    "sha256": "c83fa099e8188ff31720744984563aba28394027b9d7a3250fd54ef9e6cdcbd1",
+    "evidence_hashes_match": true,
+    "elf_matches": true,
+    "recorded_at": "2026-11-03T18:46:40.450818+08:00",
+    "new_power_cycle_this_run": false
+  },
+  "host_tests": [
+    {
+      "name": "test_hmi_protocol",
+      "command": [
+        "C:/msys64/ucrt64/bin/g++.exe",
+        "-std=c++14",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-D_Static_assert=static_assert",
+        "-DMOTION60_PL_SPECTRUM",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sim\\test_hmi_protocol.cpp",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\hmi_protocol.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\hmi_link.c",
+        "-o",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261103_v19_acceptance_01\\offline\\test_hmi_protocol.exe"
+      ],
+      "compile_exit": 0,
+      "sources": {
+        "sim\\test_hmi_protocol.cpp": "17d1d8e57ce7245fc5c8655782d57fbe713a7bbd06087593e5688c34ec015624",
+        "sw\\hmi_protocol.c": "bd318e3da3a8d9e93fb2cb07163b89b11a8b387106f0e310fc7562eb6b3ca4a1",
+        "sw\\hmi_link.c": "9f65d157bf988ea9b87cced23ad6b522f00aab8fee8aa6950b4eb789dfdf80e8"
+      },
+      "run_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "test_hmi_device",
+      "command": [
+        "C:/msys64/ucrt64/bin/g++.exe",
+        "-std=c++14",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-D_Static_assert=static_assert",
+        "-DMOTION60_PL_SPECTRUM",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sim\\test_hmi_device.cpp",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\hmi_protocol.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\hmi_link.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_record.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_driver.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_pl.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_playback.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_spectrum_pl_driver.c",
+        "-o",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261103_v19_acceptance_01\\offline\\test_hmi_device.exe"
+      ],
+      "compile_exit": 0,
+      "sources": {
+        "sim\\test_hmi_device.cpp": "47bdb4e5a39c3d0be39bd4b546685c0a82321d7704e5b126ae1f38dd02b5a7b0",
+        "sw\\hmi_protocol.c": "bd318e3da3a8d9e93fb2cb07163b89b11a8b387106f0e310fc7562eb6b3ca4a1",
+        "sw\\hmi_link.c": "9f65d157bf988ea9b87cced23ad6b522f00aab8fee8aa6950b4eb789dfdf80e8",
+        "sw\\motion60_clip_record.c": "e0ff363584273aebb1ef3c844cb849f77731b51c91a512745c26a179a58cc08c",
+        "sw\\motion60_clip_driver.c": "a5f7bf49526ad82f844dffc80cf395203bcc024e2429c298daf1d973fb1a20fd",
+        "sw\\motion60_clip_pl.c": "4ea3ac8a1e6c7a57e42ec75e01811b2d5da5a4a6cc65c8da95ef8ce8a76f6168",
+        "sw\\motion60_clip_playback.c": "217e293fcc01a64aa7d36292dce599e2742da6cfaed7fc31a6914dc223d92282",
+        "sw\\motion60_spectrum_pl_driver.c": "bfd918c6e84abbe0ac844a2deac15597b915ec2131b630c070081b715f2f627f"
+      },
+      "run_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "test_hmi_uart",
+      "command": [
+        "C:/msys64/ucrt64/bin/g++.exe",
+        "-std=c++14",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-D_Static_assert=static_assert",
+        "-DMOTION60_PL_SPECTRUM",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sim\\test_hmi_uart.cpp",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\hmi_protocol.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\hmi_link.c",
+        "-o",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261103_v19_acceptance_01\\offline\\test_hmi_uart.exe"
+      ],
+      "compile_exit": 0,
+      "sources": {
+        "sim\\test_hmi_uart.cpp": "d86a9705a874464b43ab54797668ed20992ba367b38556dcc30970962c5ce5c0",
+        "sw\\hmi_protocol.c": "bd318e3da3a8d9e93fb2cb07163b89b11a8b387106f0e310fc7562eb6b3ca4a1",
+        "sw\\hmi_link.c": "9f65d157bf988ea9b87cced23ad6b522f00aab8fee8aa6950b4eb789dfdf80e8"
+      },
+      "run_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "test_mode_button",
+      "command": [
+        "C:/msys64/ucrt64/bin/g++.exe",
+        "-std=c++14",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-D_Static_assert=static_assert",
+        "-DMOTION60_PL_SPECTRUM",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sim\\test_mode_button.cpp",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_record.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_driver.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_pl.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_playback.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_spectrum_pl_driver.c",
+        "-o",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261103_v19_acceptance_01\\offline\\test_mode_button.exe"
+      ],
+      "compile_exit": 0,
+      "sources": {
+        "sim\\test_mode_button.cpp": "5bc60f913534af510f27dd15592a1169be7b478e2fb0b5eada3549b6b76c8c18",
+        "sw\\motion60_clip_record.c": "e0ff363584273aebb1ef3c844cb849f77731b51c91a512745c26a179a58cc08c",
+        "sw\\motion60_clip_driver.c": "a5f7bf49526ad82f844dffc80cf395203bcc024e2429c298daf1d973fb1a20fd",
+        "sw\\motion60_clip_pl.c": "4ea3ac8a1e6c7a57e42ec75e01811b2d5da5a4a6cc65c8da95ef8ce8a76f6168",
+        "sw\\motion60_clip_playback.c": "217e293fcc01a64aa7d36292dce599e2742da6cfaed7fc31a6914dc223d92282",
+        "sw\\motion60_spectrum_pl_driver.c": "bfd918c6e84abbe0ac844a2deac15597b915ec2131b630c070081b715f2f627f"
+      },
+      "run_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "test_alpha50_controls",
+      "command": [
+        "C:/msys64/ucrt64/bin/g++.exe",
+        "-std=c++14",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-D_Static_assert=static_assert",
+        "-DMOTION60_PL_SPECTRUM",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sim\\test_alpha50_controls.cpp",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_record.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_driver.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_pl.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_playback.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_spectrum_pl_driver.c",
+        "-o",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261103_v19_acceptance_01\\offline\\test_alpha50_controls.exe"
+      ],
+      "compile_exit": 0,
+      "sources": {
+        "sim\\test_alpha50_controls.cpp": "720f1258d1c7ae588b1bea72b8733586bd8aebef01498cb768b1c433e863dad6",
+        "sw\\motion60_clip_record.c": "e0ff363584273aebb1ef3c844cb849f77731b51c91a512745c26a179a58cc08c",
+        "sw\\motion60_clip_driver.c": "a5f7bf49526ad82f844dffc80cf395203bcc024e2429c298daf1d973fb1a20fd",
+        "sw\\motion60_clip_pl.c": "4ea3ac8a1e6c7a57e42ec75e01811b2d5da5a4a6cc65c8da95ef8ce8a76f6168",
+        "sw\\motion60_clip_playback.c": "217e293fcc01a64aa7d36292dce599e2742da6cfaed7fc31a6914dc223d92282",
+        "sw\\motion60_spectrum_pl_driver.c": "bfd918c6e84abbe0ac844a2deac15597b915ec2131b630c070081b715f2f627f"
+      },
+      "run_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "test_border_controls",
+      "command": [
+        "C:/msys64/ucrt64/bin/g++.exe",
+        "-std=c++14",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-D_Static_assert=static_assert",
+        "-DMOTION60_PL_SPECTRUM",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sim\\test_border_controls.cpp",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_record.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_driver.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_pl.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_clip_playback.c",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sw\\motion60_spectrum_pl_driver.c",
+        "-o",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261103_v19_acceptance_01\\offline\\test_border_controls.exe"
+      ],
+      "compile_exit": 0,
+      "sources": {
+        "sim\\test_border_controls.cpp": "b57459daefb27b6219ea95afca16d37585510ed68f003dec43d3338aa3326cb9",
+        "sw\\motion60_clip_record.c": "e0ff363584273aebb1ef3c844cb849f77731b51c91a512745c26a179a58cc08c",
+        "sw\\motion60_clip_driver.c": "a5f7bf49526ad82f844dffc80cf395203bcc024e2429c298daf1d973fb1a20fd",
+        "sw\\motion60_clip_pl.c": "4ea3ac8a1e6c7a57e42ec75e01811b2d5da5a4a6cc65c8da95ef8ce8a76f6168",
+        "sw\\motion60_clip_playback.c": "217e293fcc01a64aa7d36292dce599e2742da6cfaed7fc31a6914dc223d92282",
+        "sw\\motion60_spectrum_pl_driver.c": "bfd918c6e84abbe0ac844a2deac15597b915ec2131b630c070081b715f2f627f"
+      },
+      "run_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "test_spectrum_ui",
+      "command": [
+        "C:/msys64/ucrt64/bin/g++.exe",
+        "-std=c++14",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-D_Static_assert=static_assert",
+        "-DMOTION60_PL_SPECTRUM",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sim\\test_spectrum_ui.cpp",
+        "-o",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261103_v19_acceptance_01\\offline\\test_spectrum_ui.exe"
+      ],
+      "compile_exit": 0,
+      "sources": {
+        "sim\\test_spectrum_ui.cpp": "4fe21de76cabc5b59128d39094a3fcdcb6eadbe49fc2e3b49c045eccc7a2334c"
+      },
+      "run_exit": 0,
+      "passed": true
+    },
+    {
+      "name": "test_stability",
+      "command": [
+        "C:/msys64/ucrt64/bin/g++.exe",
+        "-std=c++14",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-D_Static_assert=static_assert",
+        "-DMOTION60_PL_SPECTRUM",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot\\sim\\test_stability.cpp",
+        "-o",
+        "D:\\SWJTU\\FPGA_Visual_amplifier\\board_checks\\20261103_v19_acceptance_01\\offline\\test_stability.exe"
+      ],
+      "compile_exit": 0,
+      "sources": {
+        "sim\\test_stability.cpp": "aefa1ad47869c22616ea2c2bf19e0e727b8869196133e7ae25dcb4309adb8b9d"
+      },
+      "run_exit": 0,
+      "passed": true
+    }
+  ],
+  "host_tests_passed": true,
+  "new_board_measurements": false
+}

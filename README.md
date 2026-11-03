@@ -4,7 +4,13 @@
 
 本目录由已有工程整理而来，以 `v19boot` 为源码起点，保留 `v18hmi` 和 `v19boot` 的原始验证记录。原工程未改动。正式材料缺项见 [submission_gaps.md](report/submission_gaps.md)；历史证据与本轮验证分开保存。
 
+**2026-11-03 资料已补充：** [资料总索引](report/materials_20261103.md)包含串口屏 HMI/TFT、硬件 BOM/供电/拨码照片、v19 验收与黄金参考、24 页报告及 LaTeX 源码。完整原始资料包放在[资料发布页](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/tag/materials-20261103)。视频与 HLS 第 6 项按用户最新要求暂缓发布。本次保持 `a9ab041` 原版工程，后续算法改进与方形选区工程不发布。
+
+新 v19 证据支持 3 次冷启动、实体按键、启停及用户确认的屏幕效果；长稳采样中断，仍未完成完整验收。黄金参考对比中的输出来自 HLS C 仿真，实板逐帧输出、端到端延迟及真实位移倍率仍待测。这些结果不等于下表 2025.2 新构建产物的整机验证。
+
 ## 当前验证
+
+下表保留 2025.2 构建基线的验证范围；11 月 3 日 v19 实板增补见[独立验收说明](board/results/v19_acceptance_20261103/README.md)。
 
 | 项目 | 状态与证据 |
 |---|---|
@@ -71,6 +77,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Boot package failed; inspect its reports/resul
 三个 Python 入口在有效命令启动后先将收据标为 `running`，正常结束标为 `passed` 或 `failed`；缺少工具或子进程异常也会写入失败原因。可用 `--report-dir` 指向独立报告目录进行诊断，避免覆盖正式验证记录。
 
 当前硬件入口使用随仓库保存的已导出 IP。`motion60_shared` 的历史版本包含 alpha 上限常量 ECO，不能将重新生成的 HLS IP 未经比对直接覆盖；完整 C++ 到 IP 的重生成状态见 HLS 来源报告。
+
 
 启动包入口生成新的 FSBL、BIF 和 BOOT，并检查 XSA 内位流、UART0/QSPI 配置和应用载荷；细节见 [build/scripts/README.md](build/scripts/README.md)。此入口只构建文件，不执行上板或烧写。
 

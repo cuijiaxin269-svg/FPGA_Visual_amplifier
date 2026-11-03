@@ -1,0 +1,332 @@
+{
+  "recorded_at": "2026-11-03T21:00:11.786902+08:00",
+  "firmware_boot_sha256": "eae2d50a02ab3f8aaa2574d2fcd9573cc657461bc64690f1b1f17b84ba013e54",
+  "source_manifest_passed": true,
+  "source_files": 1125,
+  "host_tests_passed": 8,
+  "physical_key_passed": true,
+  "physical_key_counts": {
+    "presses": 2,
+    "accepted": 2,
+    "completed": 2
+  },
+  "stopped_passed": true,
+  "cold_boot": [
+    {
+      "cycle": 1,
+      "passed": true,
+      "uptime_first_ms": 15500,
+      "uptime_last_ms": 16500,
+      "runtime_text_sha256": "dfb0041ccc0be071ae750dd9eb7f293dda556df764a3a278e184f0f35f0c2719"
+    },
+    {
+      "cycle": 2,
+      "passed": true,
+      "uptime_first_ms": 19200,
+      "uptime_last_ms": 20300,
+      "runtime_text_sha256": "dfb0041ccc0be071ae750dd9eb7f293dda556df764a3a278e184f0f35f0c2719"
+    },
+    {
+      "cycle": 3,
+      "passed": true,
+      "uptime_first_ms": 16200,
+      "uptime_last_ms": 17200,
+      "runtime_text_sha256": "dfb0041ccc0be071ae750dd9eb7f293dda556df764a3a278e184f0f35f0c2719"
+    }
+  ],
+  "soak": {
+    "status": "IN_PROGRESS",
+    "fixed_configuration_60min_passed": false,
+    "duration_s": 2317.1,
+    "samples": 210,
+    "collector_complete": false,
+    "terminal_collector": "soak_resume_01",
+    "transport_interrupted": true,
+    "observation_segments": [
+      {
+        "folder": "soak_60m_01",
+        "samples": 200,
+        "duration_s": 2011.3,
+        "processed_fps": 60.37985382588376,
+        "display_hz": 30.0
+      },
+      {
+        "folder": "reconnect_01",
+        "samples": 2,
+        "duration_s": 1.0,
+        "processed_fps": 60.0,
+        "display_hz": 30.0
+      },
+      {
+        "folder": "soak_resume_01",
+        "samples": 8,
+        "duration_s": 70.69999999999982,
+        "processed_fps": 60.381895332390535,
+        "display_hz": 30.000000000000078
+      }
+    ],
+    "unobserved_gaps": [
+      {
+        "before": "soak_60m_01",
+        "after": "reconnect_01",
+        "seconds": 163.1
+      },
+      {
+        "before": "reconnect_01",
+        "after": "soak_resume_01",
+        "seconds": 71.0
+      }
+    ],
+    "observed_segment_duration_s": 2083.0,
+    "rate_scope": "Endpoint counter rate across observed span, including unobserved gaps",
+    "command_change_samples": [
+      161
+    ],
+    "spectrum_epoch_change_samples": [
+      161
+    ],
+    "user_confirmed_parameter_adjustment": true,
+    "sampled_unchanged_control_segments": [
+      {
+        "first_sample": 0,
+        "last_sample": 160,
+        "duration_s": 1617.3
+      },
+      {
+        "first_sample": 162,
+        "last_sample": 209,
+        "duration_s": 679.6
+      }
+    ],
+    "parameters_applied": true,
+    "diagnostics_clean": true,
+    "no_history_or_spectrum_resets": false,
+    "all_spectrum_intervals_advanced": true,
+    "max_sample_gap_s": 163.0999999999999,
+    "capture_mid_publish_samples": [
+      12,
+      34,
+      38,
+      54,
+      65,
+      72,
+      124,
+      130,
+      131,
+      145,
+      146,
+      147,
+      163,
+      170,
+      179,
+      182,
+      184,
+      185,
+      186,
+      197
+    ],
+    "processed_frames": 139906,
+    "display_frames": 69513,
+    "processed_fps": 60.3797850761728,
+    "display_counter_hz": 30.0,
+    "spectrum_publication_hz": 4.985110698718225
+  },
+  "physical_video_evidence": "User-confirmed HDMI image/spectrum at start; no continuous independent receiver recording",
+  "incomplete": [
+    "Physical FPGA frame-by-frame input / golden / output comparison",
+    "End-to-end scene-to-screen latency",
+    "Calibrated physical displacement amplification",
+    "Absolute frequency error against known vibration reference",
+    "Uninterrupted 60-minute fixed-parameter soak; user chose the original end time after adjusting gain",
+    "Uninterrupted observation: JTAG USB FT_Write failure interrupted sampling; resumed without board reset"
+  ],
+  "overall_final_acceptance": "INCOMPLETE",
+  "golden_validation": [
+    {
+      "origin_declared": "hls_csim",
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "mae": 1.9073486328125e-05,
+      "rmse": 0.004367320268554277,
+      "max_abs": 1.0,
+      "bias": 1.1444091796875e-05,
+      "psnr_db": 107.39321185039962,
+      "exact_match": false,
+      "input_sha256": "edd19645d5e13ccee5af05a652ed8561e4571c8a768c36ab24f1e718f793ce70",
+      "contract_sha256": "c0c972a943f3f4826f6b8fb3aa3242ed3f612075b8dcc823a0579d726942cc1f",
+      "frame_map_sha256": "541ab3113b6f02e258d84a50a140954299da97c2913a2fa09de9cfd964de9a82",
+      "physical_gain_measured": false,
+      "latency_measured": false,
+      "alpha": 0,
+      "physical_fpga_output": false,
+      "scope": "Reduced 64x64 host C simulation; no physical FPGA, no timing or full-resolution proof"
+    },
+    {
+      "origin_declared": "hls_csim",
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "mae": 7.43865966796875e-05,
+      "rmse": 0.008624766471023289,
+      "max_abs": 1.0,
+      "bias": 1.33514404296875e-05,
+      "psnr_db": 101.48256578013465,
+      "exact_match": false,
+      "input_sha256": "edd19645d5e13ccee5af05a652ed8561e4571c8a768c36ab24f1e718f793ce70",
+      "contract_sha256": "6c2c93aac217b55b93319c386cead6a245eb64e2356292260de6831f96f0c42b",
+      "frame_map_sha256": "541ab3113b6f02e258d84a50a140954299da97c2913a2fa09de9cfd964de9a82",
+      "physical_gain_measured": false,
+      "latency_measured": false,
+      "alpha": 12,
+      "physical_fpga_output": false,
+      "scope": "Reduced 64x64 host C simulation; no physical FPGA, no timing or full-resolution proof"
+    },
+    {
+      "origin_declared": "hls_csim",
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "mae": 0.0001354217529296875,
+      "rmse": 0.011637085242004868,
+      "max_abs": 1.0,
+      "bias": 2.47955322265625e-05,
+      "psnr_db": 98.88062836320887,
+      "exact_match": false,
+      "input_sha256": "edd19645d5e13ccee5af05a652ed8561e4571c8a768c36ab24f1e718f793ce70",
+      "contract_sha256": "8a060e3b70fd0216609a323a45885a3b7b4496d045c96df4bb1a64fb513bafb1",
+      "frame_map_sha256": "541ab3113b6f02e258d84a50a140954299da97c2913a2fa09de9cfd964de9a82",
+      "physical_gain_measured": false,
+      "latency_measured": false,
+      "alpha": 30,
+      "physical_fpga_output": false,
+      "scope": "Reduced 64x64 host C simulation; no physical FPGA, no timing or full-resolution proof"
+    },
+    {
+      "origin_declared": "hls_csim",
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "mae": 0.000255584716796875,
+      "rmse": 0.01598701713256338,
+      "max_abs": 1.0,
+      "bias": 1.52587890625e-05,
+      "psnr_db": 96.12216386675156,
+      "exact_match": false,
+      "input_sha256": "edd19645d5e13ccee5af05a652ed8561e4571c8a768c36ab24f1e718f793ce70",
+      "contract_sha256": "76fb6e1a9e8b65de484474084819ff411287a87215029cdf4376ee4fc105574a",
+      "frame_map_sha256": "541ab3113b6f02e258d84a50a140954299da97c2913a2fa09de9cfd964de9a82",
+      "physical_gain_measured": false,
+      "latency_measured": false,
+      "alpha": 50,
+      "physical_fpga_output": false,
+      "scope": "Reduced 64x64 host C simulation; no physical FPGA, no timing or full-resolution proof"
+    }
+  ],
+  "golden_validation_full": [
+    {
+      "origin_declared": "hls_csim",
+      "shape": [
+        8,
+        800,
+        1280
+      ],
+      "mae": 0.0,
+      "rmse": 0.0,
+      "max_abs": 0.0,
+      "bias": 0.0,
+      "psnr_db": null,
+      "exact_match": true,
+      "input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3",
+      "contract_sha256": "cdd9822cda72e08acd29f090094d5dcd581bb7d7c388dbeb9cf166383d7fd78b",
+      "frame_map_sha256": "d61cca4e6bcda790b87ecd4c82eadb94c19ccc1635a181641127feb25f081def",
+      "physical_gain_measured": false,
+      "latency_measured": false,
+      "alpha": 0,
+      "physical_fpga_output": false,
+      "scope": "1280x800, 8 frames, host C simulation; no physical FPGA or timing proof",
+      "runner_sha256": "e2220170f48217834030ffa4733e07f1ec7d0a32b1e3a8d8815d7a7a6f89ed57",
+      "golden_source_sha256": "0ac21d5f634f143aaa435fa8c2723523f8ffee7661436adca0021bcbe8535e62"
+    },
+    {
+      "origin_declared": "hls_csim",
+      "shape": [
+        8,
+        800,
+        1280
+      ],
+      "mae": 1.220703125e-07,
+      "rmse": 0.00034938562148434214,
+      "max_abs": 1.0,
+      "bias": -1.220703125e-07,
+      "psnr_db": 129.33141211056076,
+      "exact_match": false,
+      "input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3",
+      "contract_sha256": "22228846cee228dc7a312309ecd984e166cf061a849b2be225c9a8648432acdc",
+      "frame_map_sha256": "d61cca4e6bcda790b87ecd4c82eadb94c19ccc1635a181641127feb25f081def",
+      "physical_gain_measured": false,
+      "latency_measured": false,
+      "alpha": 12,
+      "physical_fpga_output": false,
+      "scope": "1280x800, 8 frames, host C simulation; no physical FPGA or timing proof",
+      "runner_sha256": "e2220170f48217834030ffa4733e07f1ec7d0a32b1e3a8d8815d7a7a6f89ed57",
+      "golden_source_sha256": "0ac21d5f634f143aaa435fa8c2723523f8ffee7661436adca0021bcbe8535e62"
+    },
+    {
+      "origin_declared": "hls_csim",
+      "shape": [
+        8,
+        800,
+        1280
+      ],
+      "mae": 0.0006016845703125,
+      "rmse": 0.024529259473381988,
+      "max_abs": 1.0,
+      "bias": 1.220703125e-07,
+      "psnr_db": 92.40382392901351,
+      "exact_match": false,
+      "input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3",
+      "contract_sha256": "8743b0751beec13b9c98b12b74d9cf1a1598c1bf417cad32a9574dae756a4971",
+      "frame_map_sha256": "d61cca4e6bcda790b87ecd4c82eadb94c19ccc1635a181641127feb25f081def",
+      "physical_gain_measured": false,
+      "latency_measured": false,
+      "alpha": 30,
+      "physical_fpga_output": false,
+      "scope": "1280x800, 8 frames, host C simulation; no physical FPGA or timing proof",
+      "runner_sha256": "e2220170f48217834030ffa4733e07f1ec7d0a32b1e3a8d8815d7a7a6f89ed57",
+      "golden_source_sha256": "0ac21d5f634f143aaa435fa8c2723523f8ffee7661436adca0021bcbe8535e62"
+    },
+    {
+      "origin_declared": "hls_csim",
+      "shape": [
+        8,
+        800,
+        1280
+      ],
+      "mae": 8.056640625e-06,
+      "rmse": 0.0028384222069663986,
+      "max_abs": 1.0,
+      "bias": -4.8828125e-07,
+      "psnr_db": 111.13597275514208,
+      "exact_match": false,
+      "input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3",
+      "contract_sha256": "213b7d99bf1ebefd9387c60ac61959a64115daf9b31ffa7640839d6738058013",
+      "frame_map_sha256": "d61cca4e6bcda790b87ecd4c82eadb94c19ccc1635a181641127feb25f081def",
+      "physical_gain_measured": false,
+      "latency_measured": false,
+      "alpha": 50,
+      "physical_fpga_output": false,
+      "scope": "1280x800, 8 frames, host C simulation; no physical FPGA or timing proof",
+      "runner_sha256": "e2220170f48217834030ffa4733e07f1ec7d0a32b1e3a8d8815d7a7a6f89ed57",
+      "golden_source_sha256": "0ac21d5f634f143aaa435fa8c2723523f8ffee7661436adca0021bcbe8535e62"
+    }
+  ]
+}

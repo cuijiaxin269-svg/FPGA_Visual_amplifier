@@ -1,0 +1,80 @@
+{
+  "template": "D:/Download/qq/技术文档模板.docx",
+  "format_requirements": "D:/Download/qq/排版.txt",
+  "structure": "五部分及模板固定小节已按顺序检查；允许增加内部细分",
+  "word_limit_method": "移除LaTeX控制命令后按非空可见字符保守计数，含数字、英文、标点、表格及题注，不计图内文字",
+  "word_limits": [
+    {
+      "section": "摘要",
+      "count": 640,
+      "limit": 800
+    },
+    {
+      "section": "功能与特性",
+      "count": 334,
+      "limit": 400
+    },
+    {
+      "section": "应用领域",
+      "count": 290,
+      "limit": 400
+    },
+    {
+      "section": "主要技术特点",
+      "count": 306,
+      "limit": 400
+    },
+    {
+      "section": "主要性能指标",
+      "count": 172,
+      "limit": 200
+    },
+    {
+      "section": "主要创新点",
+      "count": 148,
+      "limit": 200
+    },
+    {
+      "section": "设计流程",
+      "count": 163,
+      "limit": 200
+    },
+    {
+      "section": "可扩展之处",
+      "count": 243,
+      "limit": 300
+    },
+    {
+      "section": "心得体会",
+      "count": 836,
+      "limit": 1000
+    }
+  ],
+  "references": 6,
+  "reference_limit": 20,
+  "school_or_team_identifiers_found": false,
+  "github": {
+    "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier",
+    "in_title_page": true,
+    "in_reproduction_section": true,
+    "in_references": true
+  },
+  "rubric_weights": [
+    30,
+    20,
+    20,
+    15,
+    15
+  ],
+  "rubric_note": "内容与证据对应，不代表评委评分结果",
+  "paragraph_layout": "A4纵向，正文左右/下边距2.5cm；模板原图页眉距顶约1.5cm，预留顶部约3.3cm正文起点；正文小四及1.5倍行距",
+  "template_visuals": {
+    "header_asset": "figures/template-header-logo.png",
+    "source_member": "word/media/image1.png",
+    "all_pages_including_first": true,
+    "width_mm": 65.158,
+    "height_mm": 11.924,
+    "bottom_rule_pt": 0.75,
+    "footer": "居中9pt页码"
+  }
+}

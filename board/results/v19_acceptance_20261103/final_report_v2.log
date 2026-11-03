@@ -1,0 +1,262 @@
+{
+  "recorded_at": "2026-11-03T21:10:11.441574+08:00",
+  "firmware_boot_sha256": "eae2d50a02ab3f8aaa2574d2fcd9573cc657461bc64690f1b1f17b84ba013e54",
+  "source_manifest_passed": true,
+  "source_files": 1125,
+  "host_tests_passed": 8,
+  "physical_key_passed": true,
+  "physical_key_counts": {
+    "presses": 2,
+    "accepted": 2,
+    "completed": 2
+  },
+  "stopped_passed": true,
+  "cold_boot": [
+    {
+      "cycle": 1,
+      "passed": true,
+      "uptime_first_ms": 15500,
+      "uptime_last_ms": 16500,
+      "runtime_text_sha256": "dfb0041ccc0be071ae750dd9eb7f293dda556df764a3a278e184f0f35f0c2719"
+    },
+    {
+      "cycle": 2,
+      "passed": true,
+      "uptime_first_ms": 19200,
+      "uptime_last_ms": 20300,
+      "runtime_text_sha256": "dfb0041ccc0be071ae750dd9eb7f293dda556df764a3a278e184f0f35f0c2719"
+    },
+    {
+      "cycle": 3,
+      "passed": true,
+      "uptime_first_ms": 16200,
+      "uptime_last_ms": 17200,
+      "runtime_text_sha256": "dfb0041ccc0be071ae750dd9eb7f293dda556df764a3a278e184f0f35f0c2719"
+    }
+  ],
+  "soak": {
+    "status": "SAMPLING_INTERRUPTED_NOT_COMPLETE",
+    "fixed_configuration_60min_passed": false,
+    "duration_s": 2418.1,
+    "samples": 220,
+    "collector_complete": false,
+    "sampling_terminated": true,
+    "terminal_failure": {
+      "kind": "JTAG_TARGET_CONTEXT_LOST",
+      "message": "Invalid context",
+      "failed_collector": "soak_resume_01",
+      "successful_samples": 18,
+      "observed_duration_s": 171.7,
+      "failed_exec_session": 52974,
+      "process_exit": 1,
+      "user_observation": "HDMI 和频谱仍正常，板卡没有断电或复位",
+      "final_readonly_check": "post_soak_01",
+      "final_runtime_text_matches": true,
+      "recovery_scope": "One read-only new client connection; no server restart, board reset, parameter write, START/STOP, download or flash",
+      "termination": "No further collector restart; sampling acceptance incomplete after two JTAG failures",
+      "root_cause": "Not independently established"
+    },
+    "terminal_collector": "soak_resume_01",
+    "transport_interrupted": true,
+    "observation_segments": [
+      {
+        "folder": "soak_60m_01",
+        "samples": 200,
+        "duration_s": 2011.3,
+        "processed_fps": 60.37985382588376,
+        "display_hz": 30.0
+      },
+      {
+        "folder": "reconnect_01",
+        "samples": 2,
+        "duration_s": 1.0,
+        "processed_fps": 60.0,
+        "display_hz": 30.0
+      },
+      {
+        "folder": "soak_resume_01",
+        "samples": 18,
+        "duration_s": 171.69999999999982,
+        "processed_fps": 60.37856726849162,
+        "display_hz": 30.000000000000032
+      }
+    ],
+    "unobserved_gaps": [
+      {
+        "before": "soak_60m_01",
+        "after": "reconnect_01",
+        "seconds": 163.1
+      },
+      {
+        "before": "reconnect_01",
+        "after": "soak_resume_01",
+        "seconds": 71.0
+      }
+    ],
+    "observed_segment_duration_s": 2184.0,
+    "rate_scope": "Endpoint counter rate across observed span, including unobserved gaps",
+    "command_change_samples": [
+      161
+    ],
+    "spectrum_epoch_change_samples": [
+      161
+    ],
+    "user_confirmed_parameter_adjustment": true,
+    "sampled_unchanged_control_segments": [
+      {
+        "first_sample": 0,
+        "last_sample": 160,
+        "source_segment": "soak_60m_01",
+        "duration_s": 1617.3
+      },
+      {
+        "first_sample": 162,
+        "last_sample": 199,
+        "source_segment": "soak_60m_01",
+        "duration_s": 373.8
+      },
+      {
+        "first_sample": 200,
+        "last_sample": 201,
+        "source_segment": "reconnect_01",
+        "duration_s": 1.0
+      },
+      {
+        "first_sample": 202,
+        "last_sample": 219,
+        "source_segment": "soak_resume_01",
+        "duration_s": 171.7
+      }
+    ],
+    "parameters_applied": true,
+    "diagnostics_clean": true,
+    "no_history_or_spectrum_resets": false,
+    "all_spectrum_intervals_advanced": true,
+    "max_sample_gap_s": 163.0999999999999,
+    "capture_mid_publish_samples": [
+      12,
+      34,
+      38,
+      54,
+      65,
+      72,
+      124,
+      130,
+      131,
+      145,
+      146,
+      147,
+      163,
+      170,
+      179,
+      182,
+      184,
+      185,
+      186,
+      197,
+      210,
+      216
+    ],
+    "processed_frames": 146004,
+    "display_frames": 72543,
+    "processed_fps": 60.37963690500807,
+    "display_counter_hz": 30.0,
+    "spectrum_publication_hz": 4.985732599975187
+  },
+  "physical_video_evidence": "User-confirmed HDMI image/spectrum at start; no continuous independent receiver recording",
+  "incomplete": [
+    "Physical FPGA frame-by-frame input / golden / output comparison",
+    "End-to-end scene-to-screen latency",
+    "Calibrated physical displacement amplification",
+    "Absolute frequency error against known vibration reference",
+    "Uninterrupted 60-minute fixed-parameter soak; user chose the original end time after adjusting gain",
+    "Uninterrupted observation: JTAG USB FT_Write failure interrupted sampling; resumed without board reset"
+  ],
+  "overall_final_acceptance": "INCOMPLETE",
+  "post_soak_runtime_text_matches": true,
+  "post_soak_last_state": {
+    "uptime_ms": 2869019,
+    "running": 1,
+    "run_status": 4,
+    "view": 2,
+    "alpha": 12,
+    "view_actual": 2,
+    "alpha_actual": 12,
+    "view_valid": 1,
+    "alpha_valid": 1,
+    "exposure_target": 320,
+    "exposure_actual": 320,
+    "exposure_valid": 1,
+    "capture_error": 0,
+    "algorithm_error": 0,
+    "processed": 171233,
+    "display": 85077,
+    "control_generations": [
+      3,
+      26,
+      2,
+      4
+    ],
+    "received_commands": 9,
+    "rx_overflow": 0,
+    "rx_errors": 0,
+    "transport_faults": 0,
+    "native_errors": 0
+  },
+  "post_soak_last_diagnostic": {
+    "sample": 1,
+    "sensor_id": 37505,
+    "capture_state": 2,
+    "capture_error": 0,
+    "camera_frames": 171238,
+    "camera_error_counters": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "raw_stats_3_through_8": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "raw_stats_mid_publish": false,
+    "csi_sticky_isr": 2147614720,
+    "csi_sticky_error_bits": 0,
+    "csi_sticky_csr": 0,
+    "first_error_isr": 0,
+    "diagnostic_rearm_enabled": 0,
+    "camera_sequence_gaps": 0,
+    "sensor_counter_mode": 2,
+    "sensor_frame_metadata": [
+      0,
+      171237,
+      0,
+      171238
+    ],
+    "camera_overflow": false,
+    "input_width": 1280,
+    "input_height": 800,
+    "motion_state": 2,
+    "motion_error": 0,
+    "motion_last_us": 14889,
+    "motion_max_us": 15231,
+    "history_resets": 0,
+    "bypass": 0,
+    "spectrum_state": 1,
+    "spectrum_error": 0,
+    "spectrum_samples": 171237,
+    "spectrum_results": 14124,
+    "spectrum_epoch": 11,
+    "spectrum_fs_millihz": 60380,
+    "spectrum_publications": 14124,
+    "button_presses": 0,
+    "button_accepted": 0,
+    "button_ignored": 0
+  }
+}

@@ -1,0 +1,51 @@
+test_hmi_protocol True
+test_hmi_device True
+test_hmi_uart True
+test_mode_button True
+test_alpha50_controls True
+test_border_controls True
+test_spectrum_ui True
+test_stability True
+{
+  "recorded_at": "2026-11-03T20:03:54.658257+08:00",
+  "manifest_sha256": "585bba42463ab4112714312f776db7bca56cd433ba89799da83b3a9e61b7e445",
+  "files_checked": 1125,
+  "files_passed": 1125,
+  "candidate": {
+    "BOOT.BIN": {
+      "sha256": "eae2d50a02ab3f8aaa2574d2fcd9573cc657461bc64690f1b1f17b84ba013e54",
+      "bytes": 13299932,
+      "reflash_same": true
+    },
+    "capture.bit": {
+      "sha256": "9836f502522085ff01fde7f3194b2dfe9491ffe7e30447ca391e50e4363cc134",
+      "bytes": 13142261,
+      "reflash_same": true
+    },
+    "motion60.elf": {
+      "sha256": "b066d1e63a11929eae0b8ca86c233da6d40929d3daa14621ef4b7a88622c7d98",
+      "bytes": 443028,
+      "reflash_same": true
+    },
+    "fsbl.elf": {
+      "sha256": "86383b7e4dbb6dcd4d50d0227b1be9649e555a27bfb5819e49137502f02e2133",
+      "bytes": 296284,
+      "reflash_same": true
+    },
+    "capture.xsa": {
+      "sha256": "bb1fd7525051188e14840edb8ede828c5219e9d97d822e6c8b65ccde7ccad440",
+      "bytes": 422696,
+      "reflash_same": true
+    }
+  },
+  "previous_cold_boot": {
+    "report": "D:\\SWJTU\\FPGA_Visual_amplifier\\vision\\v19boot_reflash_20261103\\evidence\\cold_boot_verified.json",
+    "sha256": "c83fa099e8188ff31720744984563aba28394027b9d7a3250fd54ef9e6cdcbd1",
+    "evidence_hashes_match": true,
+    "elf_matches": true,
+    "recorded_at": "2026-11-03T18:46:40.450818+08:00",
+    "new_power_cycle_this_run": false
+  },
+  "host_tests_passed": true,
+  "new_board_measurements": false
+}

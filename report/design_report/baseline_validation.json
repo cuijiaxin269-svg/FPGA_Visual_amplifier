@@ -1,0 +1,102 @@
+{
+  "checked_at_utc": "2026-11-01T13:16:16.497794+00:00",
+  "baseline_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "repository": "D:\\vision\\submission\\fpga_visual_amplifier",
+  "status": "passed",
+  "method": "Exact SHA256 comparison of Git blob bytes at the fixed baseline against recorded input hashes; no line-ending normalization.",
+  "scope": "Evidence correspondence only; existing project tests, synthesis, implementation, deployment and board tests were not rerun.",
+  "script_sha256": "a27d1b821399b147ab16eeda33a82ccab8313b3a56de68deb6848d475640dee4",
+  "groups": [
+    {
+      "id": "hardware_inputs",
+      "source_receipt_path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\vivado_2025_2\\input_sha256.json",
+      "source_receipt_git_path": "build/reports/vivado_2025_2/input_sha256.json",
+      "source_receipt_sha256": "dde4f80d52c55285e3c087d04131d77b5d719011e4eeab706c617e97dd2cffaf",
+      "workspace_receipt_sha256": "dde4f80d52c55285e3c087d04131d77b5d719011e4eeab706c617e97dd2cffaf",
+      "workspace_receipt_matches_baseline": true,
+      "recorded_test_status": null,
+      "expected_inputs": 825,
+      "inputs_checked": 825,
+      "exact_matches": 825,
+      "missing": [],
+      "mismatches": [],
+      "passed": true
+    },
+    {
+      "id": "host_test_inputs",
+      "source_receipt_path": "D:\\vision\\submission\\fpga_visual_amplifier\\sim\\results\\current_host\\result.json",
+      "source_receipt_git_path": "sim/results/current_host/result.json",
+      "source_receipt_sha256": "e0de8e99067571b02bdc15ad1d09c1c7fa330f09e0d444a139f5d4cbb333a95d",
+      "workspace_receipt_sha256": "e0de8e99067571b02bdc15ad1d09c1c7fa330f09e0d444a139f5d4cbb333a95d",
+      "workspace_receipt_matches_baseline": true,
+      "recorded_test_status": "passed",
+      "expected_inputs": 58,
+      "inputs_checked": 58,
+      "exact_matches": 58,
+      "missing": [],
+      "mismatches": [],
+      "passed": true
+    },
+    {
+      "id": "rtl_comparison_inputs",
+      "source_receipt_path": "D:\\vision\\submission\\fpga_visual_amplifier\\sim\\results\\vivado_2025_2\\result.json",
+      "source_receipt_git_path": "sim/results/vivado_2025_2/result.json",
+      "source_receipt_sha256": "8cc372b636b84d10f9c3ad7f1184474fa5e71aecfbeb2350e0ff1433ae2c51ba",
+      "workspace_receipt_sha256": "8cc372b636b84d10f9c3ad7f1184474fa5e71aecfbeb2350e0ff1433ae2c51ba",
+      "workspace_receipt_matches_baseline": true,
+      "recorded_test_status": "passed",
+      "expected_inputs": 6,
+      "inputs_checked": 6,
+      "exact_matches": 6,
+      "missing": [],
+      "mismatches": [],
+      "passed": true
+    },
+    {
+      "id": "arm_firmware_inputs",
+      "source_receipt_path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\firmware_2025_2\\result.json",
+      "source_receipt_git_path": "build/reports/firmware_2025_2/result.json",
+      "source_receipt_sha256": "519ae647d286d1e8a4a384b5dacdb5da019466f999da80e7a2e08db62214b711",
+      "workspace_receipt_sha256": "519ae647d286d1e8a4a384b5dacdb5da019466f999da80e7a2e08db62214b711",
+      "workspace_receipt_matches_baseline": true,
+      "recorded_test_status": "passed",
+      "expected_inputs": 43,
+      "inputs_checked": 43,
+      "exact_matches": 43,
+      "missing": [],
+      "mismatches": [],
+      "passed": true
+    }
+  ],
+  "release": {
+    "source_receipt_path": "D:\\vision\\submission\\release_assets\\vivado_2025_2\\release_receipt.json",
+    "source_receipt_sha256": "197f54fa7e354df5ed7822a58c456637a67b7cb2dc98c68f743273130ccd4d67",
+    "status": "built_and_statically_validated",
+    "toolchain": "2025.2",
+    "board_runtime_validated": false,
+    "physical_flash_boot_validated": false,
+    "artifacts": [
+      {
+        "file": "capture.bit",
+        "path": "D:\\vision\\submission\\release_assets\\vivado_2025_2\\capture.bit",
+        "bytes": 13198397,
+        "sha256": "d05b1a2806b50cbcfc7e642b6c4166afee59d63c74d284197401a1332e67336a",
+        "receipt_sha256": "d05b1a2806b50cbcfc7e642b6c4166afee59d63c74d284197401a1332e67336a",
+        "matches_release_receipt": true
+      },
+      {
+        "file": "boot.bin",
+        "path": "D:\\vision\\submission\\release_assets\\vivado_2025_2\\boot.bin",
+        "bytes": 13357152,
+        "sha256": "21d3d6c99f9706e048382a6e0c95861261b04fd70db77836948e8f273c02c589",
+        "receipt_sha256": "21d3d6c99f9706e048382a6e0c95861261b04fd70db77836948e8f273c02c589",
+        "matches_release_receipt": true
+      }
+    ]
+  },
+  "limitations": [
+    "Current working-tree MAGROI changes are not covered by this baseline record.",
+    "Historical v18 performance and v19 cold-boot results remain bound to their respective historical artifacts.",
+    "Baseline 2025.2 hardware and boot validation are host-side build/static checks, not new board validation."
+  ]
+}

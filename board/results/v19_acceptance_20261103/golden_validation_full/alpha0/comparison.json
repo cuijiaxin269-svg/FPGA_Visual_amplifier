@@ -1,0 +1,31 @@
+{
+  "run_id": "HOST_CSIM_alpha0",
+  "firmware_boot_sha256": "eae2d50a02ab3f8aaa2574d2fcd9573cc657461bc64690f1b1f17b84ba013e54",
+  "output_origin": "hls_csim",
+  "sources": {
+    "input": {
+      "path": "..\\input.npy",
+      "sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3"
+    },
+    "golden": {
+      "path": "golden.npy",
+      "sha256": "ee9c3ef74a77178f32d980d785efcbe4fcd2a8432f0da9dfbf5ec26861c26990"
+    },
+    "fpga": {
+      "path": "csim.npy",
+      "sha256": "ee9c3ef74a77178f32d980d785efcbe4fcd2a8432f0da9dfbf5ec26861c26990"
+    },
+    "contract": {
+      "path": "contract.json",
+      "sha256": "cdd9822cda72e08acd29f090094d5dcd581bb7d7c388dbeb9cf166383d7fd78b"
+    },
+    "frame_map": {
+      "path": "frames.csv",
+      "sha256": "d61cca4e6bcda790b87ecd4c82eadb94c19ccc1635a181641127feb25f081def"
+    }
+  },
+  "golden_input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3",
+  "fpga_input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3",
+  "golden_contract_sha256": "cdd9822cda72e08acd29f090094d5dcd581bb7d7c388dbeb9cf166383d7fd78b",
+  "fpga_contract_sha256": "cdd9822cda72e08acd29f090094d5dcd581bb7d7c388dbeb9cf166383d7fd78b"
+}

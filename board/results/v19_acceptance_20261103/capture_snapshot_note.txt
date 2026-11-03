@@ -1,0 +1,22 @@
+相机 mailbox 分块读取的中间态说明
+
+长稳样本 12 与 34 的原始 stats[6] 曾分别为 9686、23079，后续又为 0。
+该值等于当时的原始 sensor_frame_gaps，并非该时刻发生了同等数量的 ECC 错误。
+
+依据封存 V19 sw/main.c snapshot()：
+第 24 行先将 16 个硬件统计字逐个写入 mailbox.stats。
+第 29 行将原始 stats[5:7] 转存 sensor_frame_last/gaps/changes。
+第 54 行发布 csi_isr_observed / csi_csr_observed 的粘滞副本。
+第 56..58 行再将 stats[5:7] 改写为 CSI ECC/CRC 存在标志。
+这些写入没有包在 HMI 序列锁里，因此异步 JTAG 分块读取可以看到中间态。
+
+本轮 sensor_frame_counter_mode=2；main.c 第 523..529 行明确说明传感器处于不输出帧号的模式，
+原始 sensor_frame_gaps 会随每帧重复的零帧号增加。这不是丢帧计数。
+帧连续性应核对 SOF、camera.sequence_gaps、motion.history_resets 与频谱 epoch。
+
+分析工具已修正：保留 raw_stats_3_through_8 和 raw_stats_mid_publish；
+错误判定使用专门的 csi_isr_observed / csi_csr_observed、first_error_isr、
+诊断重置开关、真实 PL drop/shape/dest 统计和应用错误状态。
+CSI 错误位按生产源码 mask=0x58747fff，正常接收事件位不作为错误。
+运行期间没有写入 CSI W1C，也没有修改固件或为了消除告警重置板卡。
+progress_report_01 保留最初将临时 stats 数值误判为错误的报告，后续报告使用修正后的解析器。
