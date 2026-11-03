@@ -1,0 +1,54 @@
+{
+  "received_date": "2026-11-03",
+  "source_filename": "减少大小版完整版.mp4",
+  "release_filename": "demo_complete_20261103.mp4",
+  "bytes": 251776761,
+  "sha256": "bce3d7ebc0150209beb47c845f9baa08407685ae9c7199177cceff60d26523de",
+  "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/demo_complete_20261103.mp4",
+  "uploaded_bytes_unchanged": true,
+  "transcoded_by_this_update": false,
+  "media_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "hevc",
+        "codec_type": "video",
+        "width": 2560,
+        "height": 1440,
+        "r_frame_rate": "30/1",
+        "nb_frames": "5399"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "44100",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "nb_frames": "7752"
+      }
+    ],
+    "format": {
+      "duration": "180.001088",
+      "size": "251776761"
+    }
+  },
+  "checks": {
+    "sha256_matches_user_file": true,
+    "full_video_and_audio_decode_exit_code": 0,
+    "decode_errors_reported": false,
+    "sampled_frames_seconds": [
+      5,
+      25,
+      45,
+      65,
+      85,
+      105,
+      125,
+      145,
+      165
+    ],
+    "sampled_frame_count": 9
+  },
+  "scope": "File integrity, metadata, full decode and sampled readability only; no new hardware performance measurement."
+}

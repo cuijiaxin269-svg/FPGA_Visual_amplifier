@@ -4,9 +4,7 @@
   "source_baseline": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
   "current_status": "Author confirms the system is deployed and usable; other deliverables complete.",
   "remaining_tasks": [
-    "HLS verification",
-    "demo video",
-    "AI collaboration records"
+    "HLS verification results and archive"
   ],
   "functional_baseline_files_checked": 977,
   "functional_baseline_file_changes": [],
@@ -29,5 +27,13 @@
     "report_original_zip_files": 39,
     "hmi_manifest_files": 7
   },
-  "scope": "Repository-wide file/document scan and documentation/evidence cleanup; no new physical experiment or algorithm change."
+  "scope": "Documentation/evidence publication and cleanup; latest update adds the supplied video and author AI summary. No new physical experiment or algorithm change.",
+  "latest_materials_update": {
+    "video": "media/video_manifest.json",
+    "author_ai_summary": "report/ai_logs/author_collaboration_summary_20261103.md",
+    "ai_record_type": "Author collaboration summary, not a full verbatim conversation export",
+    "video_remote_digest_verified": "bce3d7ebc0150209beb47c845f9baa08407685ae9c7199177cceff60d26523de",
+    "video_transcoded": false,
+    "new_hls_results_published": false
+  }
 }

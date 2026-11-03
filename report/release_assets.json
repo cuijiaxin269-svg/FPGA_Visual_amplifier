@@ -2,10 +2,15 @@
   "tag": "materials-20261103",
   "source_baseline": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
   "deferred": [
-    "video",
     "HLS regeneration item 6"
   ],
   "files": [
+    {
+      "name": "demo_complete_20261103.mp4",
+      "bytes": 251776761,
+      "sha256": "bce3d7ebc0150209beb47c845f9baa08407685ae9c7199177cceff60d26523de",
+      "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/demo_complete_20261103.mp4"
+    },
     {
       "name": "design_report_latex_20261101.zip",
       "bytes": 5231879,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T21:58:49.787602+08:00",
+  "generated_at": "2026-11-03T22:36:26.689164+08:00",
   "baseline": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
   "files": [
     {
@@ -3967,8 +3967,8 @@
       "source_sha256": null,
       "adapted": false,
       "path": "board/results/v19_acceptance_20261103/README.md",
-      "bytes": 5952,
-      "sha256": "d895b88765c0af19fd654fd95e2f201053a16dfa2e4f57514cc10feda5ac9822"
+      "bytes": 5982,
+      "sha256": "9a8ebf0b680a861e47f1b5a986931752af9fde87e418e073b4a8d79b48439f64"
     },
     {
       "source": null,
@@ -21083,12 +21083,36 @@
       "adapted": false
     },
     {
+      "source": null,
+      "source_sha256": null,
+      "adapted": false,
+      "path": "media/README.md",
+      "bytes": 1282,
+      "sha256": "0c28b0310e98ba7a1fdc667541efb41fe073087bb2fc23ae7dfecee72d4b245b"
+    },
+    {
+      "source": null,
+      "source_sha256": null,
+      "adapted": false,
+      "path": "media/video_manifest.json",
+      "bytes": 1424,
+      "sha256": "07e2ac6590c5359d5353b207ee52590985519220032bcca422582263c6e3015f"
+    },
+    {
       "path": "README.md",
-      "bytes": 5354,
-      "sha256": "3146c56cbeb985cdd706c7dab8b6ac6008420d402e396a7f8eedb7951b303c75",
+      "bytes": 5438,
+      "sha256": "dd8752eee236c413f9d9ff4af217cfb361b9c97b9281983af3397c0abc8eb358",
       "source": null,
       "source_sha256": null,
       "adapted": false
+    },
+    {
+      "source": null,
+      "source_sha256": null,
+      "adapted": false,
+      "path": "report/ai_logs/author_collaboration_summary_20261103.md",
+      "bytes": 10826,
+      "sha256": "f095fe0972ab6cc1e146b1da25632d3b73a4a8e9b448b002e036f93debac49c5"
     },
     {
       "path": "report/ai_logs/current_session_summary.md",
@@ -21100,8 +21124,8 @@
     },
     {
       "path": "report/ai_logs/README.md",
-      "bytes": 1731,
-      "sha256": "54fef7446b9abf33f3e09984e1ca0880fc24735be888cc5d40deac2bbaf460d7",
+      "bytes": 1348,
+      "sha256": "03508ebc8a82d16facf25f41611847d78ece68d2210ee07d12fcb8f1abe0e9c5",
       "source": null,
       "source_sha256": null,
       "adapted": false
@@ -21311,16 +21335,16 @@
       "source_sha256": null,
       "adapted": false,
       "path": "report/design_report/PUBLICATION_NOTE.md",
-      "bytes": 3036,
-      "sha256": "8fb8715b68326e416dd262df572ef226d68e46e699222c479a66567413500f62"
+      "bytes": 3100,
+      "sha256": "ad41cd58f7b92cd32f87d4c16f6f92980a22947bb4b70bc80790ba55b35d1910"
     },
     {
       "source": null,
       "source_sha256": null,
       "adapted": false,
       "path": "report/design_report/README.md",
-      "bytes": 5418,
-      "sha256": "533e6ab183e985e39588cfaa5936972f23f4dd2843a8c4da604dd454fdc3af59"
+      "bytes": 5457,
+      "sha256": "29f1a6e45af6f44bf629d27181f8b3e6a6ddf22a313f98200d81ddfd6f092a9a"
     },
     {
       "source": null,
@@ -21436,16 +21460,16 @@
     },
     {
       "path": "report/design_report.md",
-      "bytes": 1137,
-      "sha256": "9334e8aacc519c5da2028dd6b9f63f62007bb0e9c3819616f07674ca2172803f",
+      "bytes": 1162,
+      "sha256": "964adec0a2842d908e015d0a11e90623f30688c61fc94dbd9d3150ec7faa7370",
       "source": null,
       "source_sha256": null,
       "adapted": false
     },
     {
       "path": "report/evidence_index.md",
-      "bytes": 5554,
-      "sha256": "75d54d2cfb941e8233eb240b4fd2d8cbe0de19eebdce55c512fc93345be15bcd",
+      "bytes": 5687,
+      "sha256": "b7717fc19b8d484c97d3da2bded396617510b2e5793ceb9fa001a79f86e42a5d",
       "source": null,
       "source_sha256": null,
       "adapted": false
@@ -21471,16 +21495,16 @@
       "source_sha256": null,
       "adapted": false,
       "path": "report/materials_20261103.md",
-      "bytes": 3098,
-      "sha256": "110eadae2d91dcbdf811e36f1463f6584937e08d6dd19e003c6850175186b0e8"
+      "bytes": 3512,
+      "sha256": "09b06ea4eeba23a8ea0dd5da2f0a71c4aa61517eb42719c31fcc78a00bd0d0bc"
     },
     {
       "source": null,
       "source_sha256": null,
       "adapted": false,
       "path": "report/materials_validation.json",
-      "bytes": 1162,
-      "sha256": "932dc10a9fa589dd44db3fd01be32ba0c3d8852974229f0a5168c14cc306c25e"
+      "bytes": 1601,
+      "sha256": "3148cbaf335b05bca3dcb30c4b797300b76648b32f68badb63bdc66ddd08779d"
     },
     {
       "path": "report/original_notes/v18hmi/acceptance.txt",
@@ -21863,21 +21887,21 @@
       "source_sha256": null,
       "adapted": false,
       "path": "report/README.md",
-      "bytes": 943,
-      "sha256": "920e13fa5c82e3b6de9db37f4267d83bcbfe7a5db535930a7aebcf2fdeb05761"
+      "bytes": 1043,
+      "sha256": "bae0f06e918931bef4ac36ed072823eee7e3464c0a39c48d4c99c045d9786c80"
     },
     {
       "source": null,
       "source_sha256": null,
       "adapted": false,
       "path": "report/release_assets.json",
-      "bytes": 1436,
-      "sha256": "873c3f1c9c44050e98aa45d79b167841237258c7dc0645345884707b87ec2ba5"
+      "bytes": 1693,
+      "sha256": "16e4a920bde2cfdc2e2310651c89d0f4e8dbccc6d4dab0d2790d516737dcdd58"
     },
     {
       "path": "report/submission_gaps.md",
-      "bytes": 1424,
-      "sha256": "bdd9183d457048193630e3edfc7e7d270fd8614c7b5b3c2ad0181a00f3606e09",
+      "bytes": 1059,
+      "sha256": "86f596d7c21a0b3cc47837c058094bf20de9e063934d9067986ff3ca1f69a277",
       "source": null,
       "source_sha256": null,
       "adapted": false
@@ -21885,7 +21909,7 @@
     {
       "path": "report/third_party.md",
       "bytes": 931,
-      "sha256": "446562cb1291cfc2947ae051b9be2ed5dd7e2d37c68bfa1bab6c9697f0d3f6d5",
+      "sha256": "8d62250b47113b464a4144917a7c5259a3f3246f42982371c675a73f5e7054e7",
       "source": null,
       "source_sha256": null,
       "adapted": false

@@ -10,6 +10,8 @@
 | 芯片 BOM、供电链路、拨码照片 | [硬件资料](../board/hardware/README.md) | [原 7z](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/hardware_documents_20261103.7z) |
 | v19 实板验收与软件黄金参考 | [验收范围和原始记录](../board/results/v19_acceptance_20261103/README.md) | [完整验收包](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/v19_acceptance_20261103.7z) |
 | 24 页设计报告与 LaTeX 工程 | [报告 PDF](design_report/report_competition_review.pdf)、[发布说明](design_report/PUBLICATION_NOTE.md) | [报告源码包](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/design_report_latex_20261101.zip) |
+| 作品演示视频 | [文件信息](../media/README.md) | [完整视频](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/demo_complete_20261103.mp4) |
+| 作者 AI 协作记录 | [本人协作摘要](ai_logs/author_collaboration_summary_20261103.md) | [记录目录](ai_logs/README.md) |
 
 附件大小与 SHA-256 见 [release_assets.json](release_assets.json)；发布页提供 `SHA256SUMS.txt`。仓库可读文件的逐项校验在 [file_manifest.json](file_manifest.json)，运行 `python build/scripts/verify_package.py` 可检查。
 
@@ -19,6 +21,6 @@
 - **2025.2 原版重新构建**：沿用已有 71 IP、实现、BIT/XSA/BOOT 静态检查证据；新 v19 包不能转记为这套新产物的整机实测。两套启动文件不可混用。
 - **量化对比**：已有同输入、参数、帧号的独立黄金参考与 HLS C 模型输出/误差；这些是软件结果，数值范围不包含实板逐像素比较、端到端延迟或实际位移倍率。
 
-作者于 2026-11-03 最新确认整套系统已上板、可以正常使用，当前仅保留 **HLS 验证、视频、AI 协作记录** 三项收尾，其他交付内容已完成，见[当前清单](submission_gaps.md)。报告 PDF 原文仍为已归档的 2026-11-01 版本；本次状态更新不修改其正文或原始证据。视频重做与 HLS 新材料继续暂缓发布。
+作者于 2026-11-03 最新确认整套系统已上板、可以正常使用，视频和本人 AI 协作摘要已补充归档，当前仅剩 **HLS 验证结果整理与归档**，其他交付内容已完成，见[当前清单](submission_gaps.md)。报告 PDF 原文仍为已归档的 2026-11-01 版本；本次状态更新不修改其正文或原始证据。本轮发布作者新提供的视频及本人 AI 协作摘要，HLS 新材料仍等待单独整理。
 
 历史日志的本地路径、未上传字段、待办和失败记录保留产生时的含义；本次通过外围说明更新状态，不倒改原始证据。原验收完整清单覆盖 Release 完整包，仓库轻量副本的省略项见其 README。
