@@ -1,10 +1,14 @@
 {
+  "revision_date": "2026-11-03",
   "pdf": "report_competition_review.pdf",
-  "pages": 24,
+  "pages": 26,
   "figures": 12,
-  "tables": 14,
-  "pdf_sha256": "dd882d9960be524de88fed43a00070a6107ca6aef432fd1ab7b46c9aea2b913c",
-  "layout_review": "All pages reviewed after sentence editing; smaller system/UI photos and adjacent text inspected at full size. Original template header retained on every page.",
-  "compile_checks": "No overfull boxes, missing characters, undersized headers or unresolved references.",
-  "source_format": "UTF-8 XeLaTeX; Windows SimSun/SimHei/Times New Roman fonts"
+  "tables": 15,
+  "references": 7,
+  "pdf_sha256": "3a9238d3821e8374651f534216d7b204dbd99a0086b0261745e0e7326feedeb8",
+  "layout_review": "All 26 pages rendered and inspected; final abstract, numerical comparison and validation tables reviewed at full size. Original template header verified on every page.",
+  "compile_checks": "Three XeLaTeX passes; no overfull boxes, missing glyphs, unresolved references or undersized headers. Template structure and word limits passed.",
+  "source_format": "UTF-8 XeLaTeX; Windows SimSun/SimHei/Times New Roman fonts",
+  "source_baseline": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "new_physical_experiments": false
 }

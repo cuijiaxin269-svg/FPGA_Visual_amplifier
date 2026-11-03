@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-03",
   "baseline_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
-  "scope": "方形选区显示扩展之前的2025.2基线；历史板测单独标记",
+  "scope": "原公开工程基线；11月3日修订补充v19实板、HLS C模型比较、交付资料和本地HLS阶段结果；不含后续算法改进或方形选区工程",
   "author_review_recorded": false,
   "sources": [
     {
@@ -175,6 +175,191 @@
       "git_path": "build/reports/vivado_2025_2/input_sha256.json",
       "source_read": "固定基线Git对象；未使用当前工作树改动",
       "sha256": "dde4f80d52c55285e3c087d04131d77b5d719011e4eeab706c617e97dd2cffaf"
+    },
+    {
+      "id": "E20",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\results\\v19_acceptance_20261103\\final_report_v2\\summary.json",
+      "scope": "v19/2021.2三次冷启动、KEY0两次、STOP与计数速率；历史INCOMPLETE仅为那次采样任务状态",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "5874c88f040aecb6b9f9257c0561e89a473d8c96090ba924825c882d7e87e7a4",
+      "bytes": 14566,
+      "availability": "repository_file",
+      "repository_path": "board/results/v19_acceptance_20261103/final_report_v2/summary.json"
+    },
+    {
+      "id": "E21",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\results\\v19_acceptance_20261103\\user_observations.json",
+      "scope": "作者现场确认触屏、HDMI/频谱、KEY0、STOP和三次断电；不补测独立时间戳",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "2bb7a500a5b89edbdb21a0c985474f5e97446223c30c476ecb99e9b73e39e16e",
+      "bytes": 2850,
+      "availability": "repository_file",
+      "repository_path": "board/results/v19_acceptance_20261103/user_observations.json"
+    },
+    {
+      "id": "E22",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\results\\v19_acceptance_20261103\\golden_validation\\summary.json",
+      "scope": "64x64、128帧、alpha=0/12/30/50的黄金参考与主机HLS C模型比较；不是板端FPGA像素",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "acb5324e62dff98699c6ced7956fd22fa5833fc013388b2d67dbd99a049545b0",
+      "bytes": 3165,
+      "availability": "repository_file",
+      "repository_path": "board/results/v19_acceptance_20261103/golden_validation/summary.json"
+    },
+    {
+      "id": "E23",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\results\\v19_acceptance_20261103\\golden_validation_full\\summary.json",
+      "scope": "1280x800、8帧、alpha=0/12/30/50的黄金参考与主机HLS C模型比较；最大绝对误差0/1/1/1 RAW10码值",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "0fbef3b059237b53d6b4c3ebc92554ec4e7131a74ee0e3fe6dc8c24b04fa8591",
+      "bytes": 3777,
+      "availability": "repository_file",
+      "repository_path": "board/results/v19_acceptance_20261103/golden_validation_full/summary.json"
+    },
+    {
+      "id": "E24",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\results\\v19_acceptance_20261103\\golden_validation\\source_binding.json",
+      "scope": "小尺寸比较的输入、源码及运行器绑定；仅支持记录所列C模型样例",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "6927368ccdaae499ea3d184e396e8ddbc29e850d7e9a9452f20d8117cd2035e6",
+      "bytes": 25599,
+      "availability": "repository_file",
+      "repository_path": "board/results/v19_acceptance_20261103/golden_validation/source_binding.json"
+    },
+    {
+      "id": "E25",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\results\\v19_acceptance_20261103\\golden_validation_full\\source_binding.json",
+      "scope": "全尺寸比较的输入、源码及运行器绑定；不支持物理位移倍率或端到端延迟结论",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "c9646dca4a194d4bec1f3412a677c214d82dcaa7ec284d59b8a4462a50cfa097",
+      "bytes": 25585,
+      "availability": "repository_file",
+      "repository_path": "board/results/v19_acceptance_20261103/golden_validation_full/source_binding.json"
+    },
+    {
+      "id": "E26",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\hmi\\archive_20261101\\motion60_control.HMI",
+      "scope": "已归档默认串口屏可编辑源工程；不代表编辑器精确版本已确定",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "9c8e3c2dc1b0373b952c1dcb51a450cb3f613c9e16f62d63120cb3e0bdbaa7ff",
+      "bytes": 11349406,
+      "availability": "repository_file",
+      "repository_path": "board/hmi/archive_20261101/motion60_control.HMI"
+    },
+    {
+      "id": "E27",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\hmi\\archive_20261101\\motion60_control.tft",
+      "scope": "与默认串口屏源工程一同提供的编译文件",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "39d868ef7bac53623f8a008fb743a764300e8b64ff7c2943a79b607fe149aea0",
+      "bytes": 4518152,
+      "availability": "repository_file",
+      "repository_path": "board/hmi/archive_20261101/motion60_control.tft"
+    },
+    {
+      "id": "E28",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\hmi\\archive_20261101\\verification.json",
+      "scope": "屏工程独立编译及布局检查旧记录；旧物理触摸/整机集成状态不覆盖E20/E21",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "f2505d950d5da5daa238239bf9ccf47960b7f145e9391600f00360a81b19530a",
+      "bytes": 7199,
+      "availability": "repository_file",
+      "repository_path": "board/hmi/archive_20261101/verification.json"
+    },
+    {
+      "id": "E29",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\hardware\\archive_20261103\\OS-ZYNQ7100_芯片BOM.md",
+      "scope": "板卡芯片BOM；不冒充包含全部外设的整机采购清单",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "878cda1954fe3c4cca3d0e24b48b3b0ab65e4b760aa2dc9db4e8bebbca6c4871",
+      "bytes": 1677,
+      "availability": "repository_file",
+      "repository_path": "board/hardware/archive_20261103/OS-ZYNQ7100_芯片BOM.md"
+    },
+    {
+      "id": "E30",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\hardware\\archive_20261103\\OS-ZYNQ7100_供电链路.md",
+      "scope": "已归档电源轨及供电设计说明",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "6146443527ba3957c2dd68a4b39c01152234c63e2d997009df6b7bbf3ee399fd",
+      "bytes": 10967,
+      "availability": "repository_file",
+      "repository_path": "board/hardware/archive_20261103/OS-ZYNQ7100_供电链路.md"
+    },
+    {
+      "id": "E31",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\hardware\\archive_20261103\\启动拨码1.jpg",
+      "scope": "作者提供的启动拨码原图",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "abf8b6c158f4b364c6db799832f14f8bcab313716c974d95a9bb0ed400e07a14",
+      "bytes": 403680,
+      "availability": "repository_file",
+      "repository_path": "board/hardware/archive_20261103/启动拨码1.jpg"
+    },
+    {
+      "id": "E32",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\hardware\\archive_20261103\\启动拨码2.jpg",
+      "scope": "作者提供的启动拨码原图",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "38b52c9fcf764915a45d659ad9e1bfa4bfd46785542b5ecd045fe24f3b3c8105",
+      "bytes": 156250,
+      "availability": "repository_file",
+      "repository_path": "board/hardware/archive_20261103/启动拨码2.jpg"
+    },
+    {
+      "id": "E33",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\media\\video_manifest.json",
+      "scope": "约180秒演示视频的文件哈希、下载地址及既有媒体检查；不是新硬件性能测量",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "07e2ac6590c5359d5353b207ee52590985519220032bcca422582263c6e3015f",
+      "bytes": 1424,
+      "availability": "repository_file",
+      "repository_path": "media/video_manifest.json"
+    },
+    {
+      "id": "E34",
+      "path": "D:\\vision\\submission\\publish_original_20261103\\report\\ai_logs\\author_collaboration_summary_20261103.md",
+      "scope": "作者本人协作摘要与当前整机使用确认；非完整逐字导出，不含队友记录",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "2026-11-03报告修订时的仓库补充资料",
+      "sha256": "1d497f94ca0d4852b2c189f9b124111939477d5d2311b43c49fbfa08635ec701",
+      "bytes": 10826,
+      "availability": "repository_file",
+      "repository_path": "report/ai_logs/author_collaboration_summary_20261103.md"
+    },
+    {
+      "id": "E35",
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\results.json",
+      "scope": "截至19:48五个C仿真、综合/导出及声明接口核对完成，部分RTL未完成；不代表全流程等价、后续集成或新上板通过",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "外部本地归档文件；本轮未发布附件",
+      "sha256": "34bc99c32bbc5adbfd64f405c5d30b72b09b2053b38165ed22507e2af294b2d9",
+      "bytes": 407859,
+      "availability": "external_local_archive_not_published"
+    },
+    {
+      "id": "E36",
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\deliverables\\hls_regeneration_evidence_20261103.verification.json",
+      "scope": "本地HLS证据ZIP完整性校验；不是新HLS功能或板测结果，附件本轮未公开",
+      "review": "AI辅助读取与文件哈希核对；未重新运行所引实验",
+      "source_read": "外部本地归档文件；本轮未发布附件",
+      "sha256": "4dcff25120e16abd999db819cefd1017ee2fb5f369d8054d01c611ef99dd9f0f",
+      "bytes": 584,
+      "availability": "external_local_archive_not_published"
     }
   ],
   "photo_manifest": "image_provenance.json",
@@ -217,7 +402,268 @@
         "E12"
       ],
       "final_2025_2_board_test_completed": false,
-      "full_hls_regeneration_completed": false
+      "full_hls_regeneration_completed": false,
+      "recorded_date": "2026-11-01",
+      "scope": "旧基线历史范围，不是11月3日当前项目待办；当前进度见supplemental_v19及local_hls_snapshot"
+    },
+    "supplemental_v19": {
+      "evidence": [
+        "E20",
+        "E21"
+      ],
+      "version": "v19 / Vivado 2021.2",
+      "cold_boot_passed": 3,
+      "cold_boot_recorded": 3,
+      "physical_key_counts": {
+        "presses": 2,
+        "accepted": 2,
+        "completed": 2
+      },
+      "stopped_passed": true,
+      "processed_counter_fps": 60.37963690500807,
+      "display_counter_hz": 30.0,
+      "spectrum_publication_hz": 4.985732599975187,
+      "counter_span_seconds": 2418.1,
+      "unobserved_gap_seconds": 234.1,
+      "rate_scope": "Endpoint counter rate across observed span, including unobserved gaps",
+      "fixed_configuration_60min_passed": false,
+      "archived_sampling_status": "INCOMPLETE",
+      "status_scope": "历史采样任务，不覆盖作者当前整机可用确认"
+    },
+    "golden_c_model_comparison": {
+      "evidence": [
+        "E22",
+        "E23",
+        "E24",
+        "E25"
+      ],
+      "origin": "hls_csim",
+      "physical_fpga_output": false,
+      "physical_gain_measured": false,
+      "latency_measured": false,
+      "unit": "RAW10 code value",
+      "small": [
+        {
+          "alpha": 0,
+          "shape": [
+            128,
+            64,
+            64
+          ],
+          "mae": 1.9073486328125e-05,
+          "rmse": 0.004367320268554277,
+          "max_abs": 1.0,
+          "input_sha256": "edd19645d5e13ccee5af05a652ed8561e4571c8a768c36ab24f1e718f793ce70"
+        },
+        {
+          "alpha": 12,
+          "shape": [
+            128,
+            64,
+            64
+          ],
+          "mae": 7.43865966796875e-05,
+          "rmse": 0.008624766471023289,
+          "max_abs": 1.0,
+          "input_sha256": "edd19645d5e13ccee5af05a652ed8561e4571c8a768c36ab24f1e718f793ce70"
+        },
+        {
+          "alpha": 30,
+          "shape": [
+            128,
+            64,
+            64
+          ],
+          "mae": 0.0001354217529296875,
+          "rmse": 0.011637085242004868,
+          "max_abs": 1.0,
+          "input_sha256": "edd19645d5e13ccee5af05a652ed8561e4571c8a768c36ab24f1e718f793ce70"
+        },
+        {
+          "alpha": 50,
+          "shape": [
+            128,
+            64,
+            64
+          ],
+          "mae": 0.000255584716796875,
+          "rmse": 0.01598701713256338,
+          "max_abs": 1.0,
+          "input_sha256": "edd19645d5e13ccee5af05a652ed8561e4571c8a768c36ab24f1e718f793ce70"
+        }
+      ],
+      "full": [
+        {
+          "alpha": 0,
+          "shape": [
+            8,
+            800,
+            1280
+          ],
+          "mae": 0.0,
+          "rmse": 0.0,
+          "max_abs": 0.0,
+          "input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3"
+        },
+        {
+          "alpha": 12,
+          "shape": [
+            8,
+            800,
+            1280
+          ],
+          "mae": 1.220703125e-07,
+          "rmse": 0.00034938562148434214,
+          "max_abs": 1.0,
+          "input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3"
+        },
+        {
+          "alpha": 30,
+          "shape": [
+            8,
+            800,
+            1280
+          ],
+          "mae": 0.0006016845703125,
+          "rmse": 0.024529259473381988,
+          "max_abs": 1.0,
+          "input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3"
+        },
+        {
+          "alpha": 50,
+          "shape": [
+            8,
+            800,
+            1280
+          ],
+          "mae": 8.056640625e-06,
+          "rmse": 0.0028384222069663986,
+          "max_abs": 1.0,
+          "input_sha256": "6ba7bb487932f892c529386244d34731a535f03df8a3f0690c39a29c3b9633f3"
+        }
+      ],
+      "scope": "仅覆盖同输入、参数和帧映射样例，不外推全部输入或板端输出"
+    },
+    "local_hls_snapshot": {
+      "evidence": [
+        "E35",
+        "E36"
+      ],
+      "recorded_at": "2026-11-03T19:48:56.821140+08:00",
+      "source_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+      "targets": [
+        {
+          "target": "clip_copy_checked",
+          "c_simulation_status": "passed",
+          "synthesis_export_status": "passed",
+          "declared_interface_matches": true,
+          "selected_rtl_coverage_status": "passed",
+          "selected_rtl_coverage_scope": "已完成10个独立组共21次调用，覆盖原12个案例和11个相邻切换；G0及P2-P10分别通过。独立仿真不证明连续12次调用行为。",
+          "accepted_rtl_units": [
+            "G0",
+            "P2",
+            "P3",
+            "P4",
+            "P5",
+            "P6",
+            "P7",
+            "P8",
+            "P9",
+            "P10"
+          ],
+          "accepted_rtl_top_calls": 21,
+          "pending_or_unaccepted_rtl_units": []
+        },
+        {
+          "target": "spectrum256_pl",
+          "c_simulation_status": "passed",
+          "synthesis_export_status": "passed",
+          "declared_interface_matches": true,
+          "selected_rtl_coverage_status": "passed",
+          "selected_rtl_coverage_scope": "原始测试台311次事务完成，按原exact-float判据通过；属于Verilog/XSim向量覆盖，不等于形式等价或板级时序。",
+          "accepted_rtl_units": [
+            "original_tb"
+          ],
+          "accepted_rtl_top_calls": 311,
+          "pending_or_unaccepted_rtl_units": []
+        },
+        {
+          "target": "roi256",
+          "c_simulation_status": "passed",
+          "synthesis_export_status": "passed",
+          "declared_interface_matches": true,
+          "selected_rtl_coverage_status": "partial",
+          "selected_rtl_coverage_scope": "仅LOW、RANGE两个拒绝输入组各1次调用通过。正常P1组中止，RTL进度0/2、退出码1；P2、P3、GAP、BOUND正常路径组未完成，不得将七组计划范围写成已通过。",
+          "accepted_rtl_units": [
+            "LOW",
+            "RANGE"
+          ],
+          "accepted_rtl_top_calls": 2,
+          "pending_or_unaccepted_rtl_units": [
+            "P1",
+            "P2",
+            "P3",
+            "GAP",
+            "BOUND"
+          ]
+        },
+        {
+          "target": "motion60_full_temporal_v2",
+          "c_simulation_status": "passed",
+          "synthesis_export_status": "passed",
+          "declared_interface_matches": true,
+          "selected_rtl_coverage_status": "passed",
+          "selected_rtl_coverage_scope": "G0-G3四个独立组共11次调用完成，AXI depth=15360；70个综合HDL与生产版本一致。未验证生产内存口径122880000或连续11次调用。",
+          "accepted_rtl_units": [
+            "G0",
+            "G1",
+            "G2",
+            "G3"
+          ],
+          "accepted_rtl_top_calls": 11,
+          "pending_or_unaccepted_rtl_units": []
+        },
+        {
+          "target": "motion60_shared",
+          "c_simulation_status": "passed",
+          "synthesis_export_status": "passed",
+          "declared_interface_matches": true,
+          "selected_rtl_coverage_status": "incomplete",
+          "selected_rtl_coverage_scope": "全尺寸cold RTL因资源限制中止，完成进度0/1、退出码1；warm未运行。没有已接受的完整Motion RTL调用，不得将cold/warm计划写成已通过。",
+          "accepted_rtl_units": [],
+          "accepted_rtl_top_calls": 0,
+          "pending_or_unaccepted_rtl_units": [
+            "cold",
+            "warm"
+          ]
+        }
+      ],
+      "formal_equivalence_completed": false,
+      "full_flow_equivalence_completed": false,
+      "new_candidate_integration_status": "后续仍在进行；本快照不含其通过结论",
+      "sealed_ip_replaced": false,
+      "snapshot_uploaded": false,
+      "board_test_performed": false,
+      "availability": "external_local_archive_not_published",
+      "scope": "声明接口匹配不等于功能等价；有界/分组RTL覆盖不等于连续生产配置、时序收敛或板级验收"
     }
+  },
+  "original_manifest_date": "2026-11-01",
+  "author_review_scope": "author_review_recorded保留为报告逐项人工审定记录；不否定作者已确认当前整机可用",
+  "source_version_policy": "E01-E19保留11月1日历史记录；E20起按实际文件记录新哈希，不归入旧工程提交",
+  "current_project_status": {
+    "date": "2026-11-03",
+    "evidence": [
+      "E34"
+    ],
+    "author_confirmed_system_usable": true,
+    "completed_materials": [
+      "串口屏工程",
+      "硬件资料",
+      "演示视频",
+      "作者本人AI协作摘要"
+    ],
+    "remaining_work": "HLS后续RTL覆盖、新候选集成及结果整理；进行中结果不记为通过",
+    "scope": "作者当前使用确认与文件状态，不冒充特定构建产物的新增实测"
   }
 }

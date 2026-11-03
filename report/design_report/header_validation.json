@@ -2,7 +2,7 @@
   "pdf": "report_competition_review.pdf",
   "logo_sha256": "787db8fa20de80a88e406e5eb8bc8c3076d71592635851045bb8a8cbfb4aaadc",
   "source_image_unchanged": true,
-  "page_count": 24,
+  "page_count": 26,
   "all_pages_have_logo": true,
   "pages": [
     {
@@ -104,7 +104,7 @@
         389.988525390625,
         77.88500213623047
       ],
-      "first_text_y_pt": 106.33736419677734,
+      "first_text_y_pt": 95.19000244140625,
       "logo_present": true,
       "centered": true,
       "header_body_separated": true
@@ -182,7 +182,7 @@
         389.988525390625,
         77.88500213623047
       ],
-      "first_text_y_pt": 95.19000244140625,
+      "first_text_y_pt": 309.942138671875,
       "logo_present": true,
       "centered": true,
       "header_body_separated": true
@@ -247,7 +247,7 @@
         389.988525390625,
         77.88500213623047
       ],
-      "first_text_y_pt": 348.1751708984375,
+      "first_text_y_pt": 102.61265563964844,
       "logo_present": true,
       "centered": true,
       "header_body_separated": true
@@ -260,7 +260,7 @@
         389.988525390625,
         77.88500213623047
       ],
-      "first_text_y_pt": 95.19000244140625,
+      "first_text_y_pt": 348.1751708984375,
       "logo_present": true,
       "centered": true,
       "header_body_separated": true
@@ -273,7 +273,7 @@
         389.988525390625,
         77.88500213623047
       ],
-      "first_text_y_pt": 93.62317657470703,
+      "first_text_y_pt": 95.19000244140625,
       "logo_present": true,
       "centered": true,
       "header_body_separated": true
@@ -312,7 +312,33 @@
         389.988525390625,
         77.88500213623047
       ],
-      "first_text_y_pt": 93.62317657470703,
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 25,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
+      "logo_present": true,
+      "centered": true,
+      "header_body_separated": true
+    },
+    {
+      "page": 26,
+      "logo_bbox_pt": [
+        205.28799438476562,
+        44.083770751953125,
+        389.988525390625,
+        77.88500213623047
+      ],
+      "first_text_y_pt": 95.19000244140625,
       "logo_present": true,
       "centered": true,
       "header_body_separated": true

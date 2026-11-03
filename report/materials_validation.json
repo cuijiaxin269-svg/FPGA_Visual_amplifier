@@ -27,13 +27,25 @@
     "report_original_zip_files": 39,
     "hmi_manifest_files": 7
   },
-  "scope": "Documentation/evidence publication and cleanup; latest update adds the supplied video and author AI summary. No new physical experiment or algorithm change.",
+  "scope": "Original-project documentation publication; latest update repairs the report against existing evidence. No new physical experiment or algorithm change.",
   "latest_materials_update": {
     "video": "media/video_manifest.json",
     "author_ai_summary": "report/ai_logs/author_collaboration_summary_20261103.md",
     "ai_record_type": "Author collaboration summary, not a full verbatim conversation export",
     "video_remote_digest_verified": "bce3d7ebc0150209beb47c845f9baa08407685ae9c7199177cceff60d26523de",
     "video_transcoded": false,
-    "new_hls_results_published": false
+    "new_hls_results_published": false,
+    "report_revision": {
+      "date": "2026-11-03",
+      "pages": 26,
+      "tables": 15,
+      "pdf_sha256": "3a9238d3821e8374651f534216d7b204dbd99a0086b0261745e0e7326feedeb8",
+      "source_zip": "design_report_latex_20261103.zip",
+      "source_zip_files": 40,
+      "source_zip_sha256": "33fc97e36252451d646b3257e731843d50583dce2c00540c5b053c6a9f97f3c3",
+      "all_pages_header_checked": true,
+      "new_hls_artifacts_published": false,
+      "hls_progress_summary_in_report": true
+    }
   }
 }

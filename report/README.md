@@ -4,7 +4,7 @@
 
 | 用途 | 阅读入口 |
 |---|---|
-| 了解项目 | [设计报告](design_report.md)、[24 页 PDF](design_report/report_competition_review.pdf) |
+| 了解项目 | [设计报告](design_report.md)、[26 页 PDF](design_report/report_competition_review.pdf) |
 | 查找资料 | [配套材料索引](materials_20261103.md) |
 | 查看已有结果 | [验证证据索引](evidence_index.md) |
 | 追溯 HLS | [源码与封存 IP 来源](hls_provenance.md) |
@@ -12,4 +12,6 @@
 | 查看 AI 记录 | [协作记录目录](ai_logs/README.md) |
 | 了解归档范围 | [收录与清理说明](excluded_files.md)、[版权与来源](third_party.md) |
 
-`original_notes`、`original_scripts`、原始验收记录和报告正文保留产生时的内容，可能含当时的待办或旧路径。当前项目状态以上述收尾清单为准；归档中的旧状态不作为新增交付任务。
+`original_notes`、`original_scripts`和原始验收记录保留产生时的内容，可能含当时的待办或旧路径。当前项目状态以上述收尾清单为准；归档中的旧状态不作为新增交付任务。
+
+报告正文与 PDF 已于 2026-11-03 修订，合入三次冷启动、交互和黄金参考比较，并删除已完成项目的旧待办；各项结论保留实际版本和测量范围。

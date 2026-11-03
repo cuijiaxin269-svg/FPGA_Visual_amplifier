@@ -6,7 +6,7 @@
   "word_limits": [
     {
       "section": "摘要",
-      "count": 640,
+      "count": 709,
       "limit": 800
     },
     {
@@ -36,21 +36,21 @@
     },
     {
       "section": "设计流程",
-      "count": 163,
+      "count": 167,
       "limit": 200
     },
     {
       "section": "可扩展之处",
-      "count": 243,
+      "count": 251,
       "limit": 300
     },
     {
       "section": "心得体会",
-      "count": 836,
+      "count": 812,
       "limit": 1000
     }
   ],
-  "references": 6,
+  "references": 7,
   "reference_limit": 20,
   "school_or_team_identifiers_found": false,
   "github": {

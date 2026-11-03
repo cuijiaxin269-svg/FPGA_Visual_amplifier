@@ -34,6 +34,13 @@
       "bytes": 844835,
       "sha256": "a1422b638844a13a41ea716b24a7c91f5895a8106dacdd2f45c91f4e0c6c5d10",
       "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/v19_acceptance_20261103.7z"
+    },
+    {
+      "name": "design_report_latex_20261103.zip",
+      "bytes": 5265764,
+      "sha256": "33fc97e36252451d646b3257e731843d50583dce2c00540c5b053c6a9f97f3c3",
+      "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/design_report_latex_20261103.zip",
+      "role": "current revised report source and PDF; 20261101 retained as historical"
     }
   ]
 }

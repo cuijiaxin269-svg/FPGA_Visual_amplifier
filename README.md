@@ -10,7 +10,7 @@
 
 | 内容 | 入口 |
 |---|---|
-| 设计报告 | [24 页 PDF](report/design_report/report_competition_review.pdf)、[LaTeX 源码与说明](report/design_report/PUBLICATION_NOTE.md) |
+| 设计报告 | [26 页 PDF](report/design_report/report_competition_review.pdf)、[LaTeX 源码与说明](report/design_report/PUBLICATION_NOTE.md) |
 | 串口屏 | [HMI/TFT 工程、页面及串口接口](board/hmi/README.md) |
 | 硬件 | [芯片 BOM、供电和启动拨码照片](board/hardware/README.md)、[接线说明](board/wiring/README.md) |
 | 实板与量化记录 | [v19 验收记录](board/results/v19_acceptance_20261103/README.md)、[证据索引](report/evidence_index.md) |
