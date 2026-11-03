@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "name": "temporal_synth_02",
+  "started_at": "2026-11-03T14:19:34.147568+08:00",
+  "command": [
+    "D:/tool/vivado/2025.2/Vitis/bin/vitis-run.bat",
+    "--mode",
+    "hls",
+    "--tcl",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\tools\\build_hls_verified.tcl"
+  ],
+  "explicit_settings": {
+    "FPGA_HLS_TARGET": "motion60_full_temporal_v2",
+    "FPGA_HLS_MODE": "synth",
+    "FPGA_HLS_OUTPUT_DIR": "D:/vision/submission/_build/hls_regeneration_20261103/runs/t02"
+  },
+  "script_sha256": "36abb4065b0fe890b6b2cd6f4c0e676dff316cd43bf62d2e64ec02b8d307df51",
+  "log": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\logs\\temporal_synth_02.log",
+  "expected_completion_marker": "HLS_LOCAL_RUN_COMPLETED target=motion60_full_temporal_v2 mode=synth",
+  "source_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "does_not_replace_sealed_ip": true,
+  "pid": 33384,
+  "exit_code": 0,
+  "completion_marker_found": true,
+  "finished_at": "2026-11-03T14:22:04.790070+08:00",
+  "elapsed_seconds": 150.642
+}

@@ -1,0 +1,2 @@
+MOTION60_CLOCK_SOURCE_GATE_PASSED
+single_mmcm=1 pixel_period=13.468 serial_period=2.694

@@ -12,8 +12,9 @@
 | 26 页设计报告与 LaTeX 工程 | [报告 PDF](design_report/report_competition_review.pdf)、[发布说明](design_report/PUBLICATION_NOTE.md) | [报告源码包](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/design_report_latex_20261103.zip) |
 | 作品演示视频 | [文件信息](../media/README.md) | [完整视频](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/demo_complete_20261103.mp4) |
 | 作者 AI 协作记录 | [本人协作摘要](ai_logs/author_collaboration_summary_20261103.md) | [记录目录](ai_logs/README.md) |
+| 基线 HLS 重生成与验证 | [阶段结果及最终实现状态](hls_regeneration_20261103/README.md)、[REPRODUCE](hls_regeneration_20261103/REPRODUCE.md) | 附件清单与验证范围见专门记录 |
 
-附件大小与 SHA-256 见 [release_assets.json](release_assets.json)；发布页提供 `SHA256SUMS.txt`。仓库可读文件的逐项校验在 [file_manifest.json](file_manifest.json)，运行 `python build/scripts/verify_package.py` 可检查。
+原配套材料附件的大小与 SHA-256 见 [release_assets.json](release_assets.json)；HLS 附件清单见[专门记录](hls_regeneration_20261103/README.md)。各发布页提供 `SHA256SUMS.txt`。仓库可读文件的逐项校验在 [file_manifest.json](file_manifest.json)，运行 `python build/scripts/verify_package.py` 可检查。
 
 ## 证据应如何对应
 
@@ -21,6 +22,8 @@
 - **2025.2 原版重新构建**：沿用已有 71 IP、实现、BIT/XSA/BOOT 静态检查证据；新 v19 包不能转记为这套新产物的整机实测。两套启动文件不可混用。
 - **量化对比**：已有同输入、参数、帧号的独立黄金参考与 HLS C 模型输出/误差；这些是软件结果，数值范围不包含实板逐像素比较、端到端延迟或实际位移倍率。
 
-作者于 2026-11-03 最新确认整套系统已上板、可以正常使用，视频和本人 AI 协作摘要已补充归档，当前仅剩 **HLS 验证结果整理与归档**，其他交付内容已完成，见[当前清单](submission_gaps.md)。报告 PDF 与 LaTeX 已修订为 26 页，纳入补充验收、C 模型误差和当前资料状态；原始测量记录保持不变。新版源码包标记为 `design_report_latex_20261103.zip`，旧 11 月 1 日附件保留供历史追溯。HLS 只在报告中记录已核实的阶段进度，新候选 IP 与完整验证附件仍等待单独整理。
+作者于 2026-11-03 最新确认整套系统已上板、可以正常使用，视频和本人 AI 协作摘要已补充归档，其他交付内容已完成，见[当前清单](submission_gaps.md)。报告 PDF 与 LaTeX 已修订为 26 页，纳入补充验收、C 模型误差和当前资料状态；原始测量记录保持不变。新版源码包标记为 `design_report_latex_20261103.zip`，旧 11 月 1 日附件保留供历史追溯。
+
+本轮 HLS 阶段结果和最终实现状态见[专门记录](hls_regeneration_20261103/README.md)，复现步骤见[REPRODUCE](hls_regeneration_20261103/REPRODUCE.md)。新候选正常 ROI 和 motion 全帧 RTL 仍待补验，原主工程封存 IP 未替换；历史报告中的阶段进度按原记录保留。
 
 历史日志的本地路径、未上传字段、待办和失败记录保留产生时的含义；本次通过外围说明更新状态，不倒改原始证据。原验收完整清单覆盖 Release 完整包，仓库轻量副本的省略项见其 README。

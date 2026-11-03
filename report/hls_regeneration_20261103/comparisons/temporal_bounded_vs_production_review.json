@@ -1,0 +1,279 @@
+{
+  "reviewed_at": "2026-11-03T07:34:50.395766+00:00",
+  "production_syn": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\syn",
+  "bounded_syn": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\syn",
+  "status": "all_synthesized_hdl_bytes_identical",
+  "source_sha256": "7d35d10029372428798dee4372c8f69938bdbd86034cfa8f76b716e3846d145b",
+  "source_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\source_snapshot\\src\\hls\\motion60_shared\\clip_temporal_v2.cpp",
+  "config_sha256": {
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls_config.cfg": "cd17984265998ad9d22859bb4086fcd3ea08ec904c6464fd9048a612813d2bd1",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls_config.cfg": "f01222f328c058685a1aee9239f12f6ceb0d82cc9fdf4e661e0065eaf0b612eb"
+  },
+  "compile_setting_difference": "Same DUT source/top/part/clock; bounded syn.file_cflags adds -DCLIP_PHASE_AXI_DEPTH=15360 instead of source default 122880000. TB file and package config differ separately.",
+  "depth": {
+    "production": 122880000,
+    "bounded": 15360,
+    "unit": "float elements",
+    "production_bytes": 491520000,
+    "bounded_bytes": 61440
+  },
+  "hdl": {
+    "verilog_files": 35,
+    "vhdl_files": 35,
+    "raw_sha256_equal": 70,
+    "tokens_equal": 70,
+    "no_numeric_or_metadata_exclusions_needed": true
+  },
+  "synthesis_inventory": {
+    "baseline_files": 124,
+    "candidate_files": 124,
+    "raw_equal": 113,
+    "raw_different": 11,
+    "baseline_hdl": 70,
+    "candidate_hdl": 70,
+    "hdl_tokens_equal": 70,
+    "hdl_tokens_equal_excluding_core_generation_info": 70
+  },
+  "input_inventory_unchanged_on_postcheck": true,
+  "tcl_files": {
+    "count": 31,
+    "all_bytes_equal": true
+  },
+  "memory_initialization": {
+    "standalone_files": 0,
+    "external_init_references": [],
+    "embedded_constants": "Covered by byte-identical HDL; no independent initialization files found in either syn tree."
+  },
+  "report_changes": [
+    {
+      "file": "report/clip_temporal_full_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_45_2_csynth.rpt",
+      "classification": "Generation Date and Project header rows only."
+    },
+    {
+      "file": "report/clip_temporal_full_Pipeline_VITIS_LOOP_55_4_VITIS_LOOP_55_5_csynth.rpt",
+      "classification": "Generation Date and Project header rows only."
+    },
+    {
+      "file": "report/clip_temporal_full_Pipeline_VITIS_LOOP_63_7_csynth.rpt",
+      "classification": "Generation Date and Project header rows only."
+    },
+    {
+      "file": "report/clip_temporal_full_Pipeline_VITIS_LOOP_71_9_csynth.rpt",
+      "classification": "Generation Date and Project header rows only."
+    },
+    {
+      "file": "report/clip_temporal_full_Pipeline_VITIS_LOOP_75_10_VITIS_LOOP_77_11_csynth.rpt",
+      "classification": "Generation Date and Project header rows only."
+    },
+    {
+      "file": "report/clip_temporal_full_Pipeline_VITIS_LOOP_83_12_csynth.rpt",
+      "classification": "Generation Date and Project header rows only."
+    },
+    {
+      "file": "report/clip_temporal_full_Pipeline_VITIS_LOOP_88_13_csynth.rpt",
+      "classification": "Generation Date and Project header rows only."
+    },
+    {
+      "file": "report/clip_temporal_full_csynth.rpt",
+      "classification": "Generation Date and Project header rows only."
+    },
+    {
+      "file": "report/csynth.rpt",
+      "classification": "Generation date/project, explicit interface pragma depth 122880000 -> 15360, and resulting ASCII table width/whitespace."
+    },
+    {
+      "file": "report/csynth.xml",
+      "changes": [
+        {
+          "tag": "Pragma",
+          "baseline": {
+            "type": "interface",
+            "location": "../source_snapshot/src/hls/motion60_shared/clip_temporal_v2.cpp:27",
+            "status": "valid",
+            "parentFunction": "clip_temporal_full",
+            "variable": "phase",
+            "isDirective": "0",
+            "options": "m_axi port=phase offset=slave bundle=phase_mem depth=122880000 max_read_burst_length=64 max_write_burst_length=64"
+          },
+          "candidate": {
+            "type": "interface",
+            "location": "../source_snapshot/src/hls/motion60_shared/clip_temporal_v2.cpp:27",
+            "status": "valid",
+            "parentFunction": "clip_temporal_full",
+            "variable": "phase",
+            "isDirective": "0",
+            "options": "m_axi port=phase offset=slave bundle=phase_mem depth=15360 max_read_burst_length=64 max_write_burst_length=64"
+          }
+        }
+      ],
+      "classification": "Explicit interface depth pragma metadata differs; value is retained, not ignored."
+    },
+    {
+      "file": "report/kernel_cos_csynth.rpt",
+      "classification": "Generation Date and Project header rows only."
+    }
+  ],
+  "top_csynth_xml_raw_equal": true,
+  "resources_both": {
+    "BRAM_18K": "21",
+    "DSP": "196",
+    "FF": "25026",
+    "LUT": "30826",
+    "URAM": "0"
+  },
+  "latency_both": {
+    "unit": "clock cycles",
+    "Best-caseLatency": "undef",
+    "Average-caseLatency": "undef",
+    "Worst-caseLatency": "undef",
+    "Best-caseRealTimeLatency": "undef",
+    "Average-caseRealTimeLatency": "undef",
+    "Worst-caseRealTimeLatency": "undef",
+    "Interval-min": "undef",
+    "Interval-max": "undef",
+    "PerformancePragma": "-"
+  },
+  "timing_warning_both": "Timing Violation",
+  "xci": {
+    "in_syn_count": 0,
+    "syn_comparison_status": "not_applicable_no_xci_in_either_syn_tree",
+    "runtime_to_export_count": 15,
+    "component_and_model_parameters_match": true,
+    "scope": "Production exported floating-point IP XCI vs bounded simulator-generated floating-point IP XCI. Component reference and PARAM_VALUE/MODELPARAM_VALUE fields only; runtime/project/schema metadata and vendor-internal generated HDL are outside this parameter comparison.",
+    "hashes": [
+      {
+        "relative": "clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_ip/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_ip\\clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_ip\\clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_ip.xci",
+        "production_sha256": "2b106bde9c1b1f4d33d5505acc2f2635a8c4b20cc55d1de49a9721162e63a815",
+        "bounded_sha256": "2c098f8ac881a47c832ac9ce0b8ca2c71670ce942e94e73ba285178884144957",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x_ip/clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x_ip\\clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x_ip\\clip_temporal_full_dadd_64ns_64ns_64_9_full_dsp_1_x_ip.xci",
+        "production_sha256": "38333d5e1fa4ca317f4d415b8a1f621d1bc9df38b7c737e5a11210dba82276b9",
+        "bounded_sha256": "852ec3ee7777d37dba9b689e706ef50b5b7212ff9f6d01922f0da5ba9466e633",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_ip/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_ip\\clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_ip\\clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_ip.xci",
+        "production_sha256": "418959dd31b400a744fac235d24c7c02387715bf315e0291a3bd30c445342a3b",
+        "bounded_sha256": "e4d82746aa3fb8a21734c838cb1bc3f3150dd6c5bd8d49d560d3a9e6b27dd703",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x_ip/clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x_ip\\clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x_ip\\clip_temporal_full_dcmp_64ns_64ns_1_3_no_dsp_1_x_ip.xci",
+        "production_sha256": "4baa5f58733b7691264ba6f9ee11665b6e333a4220c4f7d4170e2e487361f80f",
+        "bounded_sha256": "1c881dad7831dfebd476aecc67284f8f7d9a21b81b515619dff547b1dc1f788a",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_ip/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_ip\\clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_ip\\clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_ip.xci",
+        "production_sha256": "5b8e6cf50c76fd8798bcf01c5f90fad2693c60ff235a10caf46a5dfaf56c78a7",
+        "bounded_sha256": "2bbd30f5afaa983bbbca83f6f3f0bfcacf2424a7c9a64a76a454b1c03c9c3b21",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x_ip/clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x_ip\\clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x_ip\\clip_temporal_full_ddiv_64ns_64ns_64_59_no_dsp_1_x_ip.xci",
+        "production_sha256": "7f4bb4171abd5961c32c551cf72c134a05ab847e5abac179f0ecd25d6bd598d6",
+        "bounded_sha256": "40bfa94ba693fe79eff672286b698c8997473bcbda79f2e72ebc0d9d94d288f7",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_ip/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_ip\\clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_ip\\clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_ip.xci",
+        "production_sha256": "736258d5fcad72a49b70c92d4659508354b69090d1c16427c5f0e507eccaeb72",
+        "bounded_sha256": "063e95b948ee710d6ac87544cd337466d46cf797be237ad588acd8d7d0c7c1ce",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x_ip/clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x_ip\\clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x_ip\\clip_temporal_full_dmul_64ns_64ns_64_9_max_dsp_1_x_ip.xci",
+        "production_sha256": "e0e2404f84eccaa7c0279d83abe09324deb4943bffd2d8adc9eae428e4c306da",
+        "bounded_sha256": "f5fee448efd608c2c86766035b4f1f38ab5d430e3da00b00cb93155793a03be7",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1_ip/clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1_ip\\clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1_ip\\clip_temporal_full_dsub_64ns_64ns_64_9_full_dsp_1_ip.xci",
+        "production_sha256": "f866035b60a50bab61fa317a6cd601a1e2542c75d246bdbeeed1f236fccea8af",
+        "bounded_sha256": "da87dc75056ed327fde4ab008adb905e593535051f8974f139ea457a21ec547a",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1_ip\\clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1_ip\\clip_temporal_full_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+        "production_sha256": "06c71d8dcf74be01160edecc1adecc55785987fc689201696f123a5d711e3276",
+        "bounded_sha256": "4327a2ca65964a9e14869e4c017b6f0d4f958df8f32defd8236119e27cdb9e8d",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1_ip/clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1_ip\\clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1_ip\\clip_temporal_full_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci",
+        "production_sha256": "31ca23b108b00583f0ebe167da6fea76bd1f61d655f903120ec912c6d607e96e",
+        "bounded_sha256": "e8c308a9b11ff8a4c05a541fdd8fc9beaefa5fcb1511a0bd1df8836f37a7a69b",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1_ip/clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1_ip\\clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1_ip\\clip_temporal_full_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+        "production_sha256": "ebf8bdb7bb4916858817c54d4d6ef49aa9f02b2e0a11755495e5c35de3ced11a",
+        "bounded_sha256": "73c873aaf700155cbf755db44069e8d6a9d95820c28e40da7070c76d4b039bd5",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1_ip/clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1_ip\\clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1_ip\\clip_temporal_full_fptrunc_64ns_32_2_no_dsp_1_ip.xci",
+        "production_sha256": "0fd50725a833a7a185df7a5a139132ebd7d9ac48c8c9aa5197626b4f25762689",
+        "bounded_sha256": "5a2c0d85ff61eae8a8fa3b675b47a7667d5a7073d35d3c7bd725703d6577d8d8",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_ip/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_ip\\clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_ip\\clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_ip.xci",
+        "production_sha256": "359130547a567b508cebbffd9f6e8141fab5450b2d15052fd5b9fb670f678c4b",
+        "bounded_sha256": "38c8f4eb035b5857bd93a3fb954768fbfb8b2c8b2956a0e4c9e340cd25716665",
+        "component_and_model_parameters_match": true
+      },
+      {
+        "relative": "clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x_ip/clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x_ip.xci",
+        "production_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\hdl\\ip\\clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x_ip\\clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x_ip.xci",
+        "bounded_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\tc01\\hls\\.autopilot\\db\\ip_tmp\\prj.srcs\\sources_1\\ip\\clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x_ip\\clip_temporal_full_uitodp_32ns_64_6_no_dsp_1_x_ip.xci",
+        "production_sha256": "0ecdb098e2bc78a623ee6e1888b9a24be18f5909284257c7a722a2507601ee64",
+        "bounded_sha256": "c30fc032a9cc25daa7db4bb75baa56bb0363d64a71949b26796ee60bb7fc2677",
+        "component_and_model_parameters_match": true
+      }
+    ]
+  },
+  "evidence": {
+    "full_file_and_hdl_sha": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\comparisons\\temporal_bounded_vs_production_hdl.json",
+    "explicit_report_diffs": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\comparisons\\temporal_bounded_vs_production_report_diffs.patch",
+    "xci_parameter_comparison": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\comparisons\\temporal_bounded_vs_production_xci_runtime.json"
+  },
+  "conclusion": "For this exact tool build and these inputs, changing the interface depth did not alter emitted synthesis HDL bytes. It changed declared depth metadata and simulation memory aperture. This supports core correspondence without proving production-aperture execution.",
+  "limits": [
+    "The active bounded RTL simulation is not declared passed by this audit.",
+    "Production aperture 122880000 float elements, full-frame accesses, large address/range boundaries, full-frame throughput and board behavior remain untested.",
+    "VHDL bytes match, but the running simulation uses Verilog; no VHDL execution claim.",
+    "No formal equivalence, physical timing closure or generalized claim about all HLS depth changes.",
+    "No source/synthesis/runtime files changed and no HLS/Vivado launch."
+  ]
+}

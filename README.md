@@ -2,7 +2,7 @@
 
 基于 Zynq-7000 `xc7z100ffg900-2` 的区域相位运动放大与微振检测系统，包含 OV9281 图像采集、PL 图像处理与频谱分析、HDMI 1080p30 显示，以及 PS 裸机串口屏和实体按键交互。
 
-**项目状态：整机已上板，系统可正常使用。** 作者已确认其他交付内容完成；最新演示视频和本人 AI 协作摘要已补充归档，**当前仅剩 HLS 验证结果整理与归档**。见[当前清单](report/submission_gaps.md)。
+**项目状态：整机已上板，系统可正常使用。** 作者已确认其他交付内容完成；最新演示视频和本人 AI 协作摘要已补充归档。本轮 HLS 阶段结果和最终实现状态见[专门记录](report/hls_regeneration_20261103/README.md)，待补验范围见[当前清单](report/submission_gaps.md)。
 
 本仓库保留 `a9ab041` 对应的原版工程；后续算法改进和方形选区工程不纳入公开版本。源码以 `v19boot` 为整理起点，构建资料同时保留历史 2021.2 与 2025.2 重新构建的版本信息。
 
@@ -16,7 +16,7 @@
 | 实板与量化记录 | [v19 验收记录](board/results/v19_acceptance_20261103/README.md)、[证据索引](report/evidence_index.md) |
 | 全部配套材料 | [资料索引](report/materials_20261103.md)、[完整资料包](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/tag/materials-20261103) |
 | 演示视频 | [约 3 分钟完整视频及下载](media/README.md) |
-| HLS 与 AI 记录 | [HLS 来源及当前入口](report/hls_provenance.md)、[AI 协作记录](report/ai_logs/README.md) |
+| HLS 与 AI 记录 | [HLS 阶段结果](report/hls_regeneration_20261103/README.md)、[复现说明](report/hls_regeneration_20261103/REPRODUCE.md)、[来源说明](report/hls_provenance.md)、[AI 协作记录](report/ai_logs/README.md) |
 
 历史记录保留各自的版本和测量条件。当前作者使用确认与原始实验数据分别记录，不将软件仿真输出当作实板像素输出，也不新增未经测量的延迟或位移倍率。
 
@@ -68,7 +68,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Boot package failed; inspect its reports/resul
 
 构建与启动包说明见 [build/scripts/README.md](build/scripts/README.md)。上述命令生成文件和运行软件/RTL 测试，不执行烧录。不同版本的 BIT、XSA、初始化文件、ELF 和 BOOT 应成套使用。
 
-主工程使用 `src/ip` 中的封存 IP。HLS 重生成是当前剩余收尾项，其新结果待单独整理；本次文档清理不替换 IP 或算法代码。
+主工程继续使用 `src/ip` 中的封存 IP，未替换为新候选。HLS 重生成的阶段结果、验证范围和最终实现状态见[专门记录](report/hls_regeneration_20261103/README.md)，独立工作目录中的复现步骤见[REPRODUCE](report/hls_regeneration_20261103/REPRODUCE.md)。新候选的正常 ROI 和 motion 全帧 RTL 仍待补验。
 
 ## 发布与文件校验
 

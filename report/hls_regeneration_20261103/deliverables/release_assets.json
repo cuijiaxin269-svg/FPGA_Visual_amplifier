@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "release_tag": "hls-validation-20261103",
+  "kind": "baseline_hls_candidate_and_verification_evidence",
+  "production_ip_replaced": false,
+  "complete_functional_rtl_validation": false,
+  "assets": [
+    {
+      "name": "hls_regeneration_evidence_20261103.zip",
+      "bytes": 36069995,
+      "sha256": "1517b58043683e6e360c38ef32b02e4fc1a216e88f3add1fb91e745cab53722a",
+      "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/hls-validation-20261103/hls_regeneration_evidence_20261103.zip"
+    },
+    {
+      "name": "five_ip_candidates_20261103.zip",
+      "bytes": 51650930,
+      "sha256": "73e250fbd0e809b92b06d6cb3bf61cbb4b7446c8a445ed2f43c054a3f3ddf2c3",
+      "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/hls-validation-20261103/five_ip_candidates_20261103.zip"
+    },
+    {
+      "name": "timing_validation_evidence_20261103.zip",
+      "bytes": 192972631,
+      "sha256": "6c1f60d40dec6433d35a641bdc9db1389a5c466f709b0aeb5ca19f102269e3f2",
+      "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/hls-validation-20261103/timing_validation_evidence_20261103.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 309,
+      "sha256": "3654fcbdebf779e5f3211f6abbf7d56aead285cb15b527d4878fef3e3356d304",
+      "url": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/hls-validation-20261103/SHA256SUMS.txt"
+    }
+  ]
+}

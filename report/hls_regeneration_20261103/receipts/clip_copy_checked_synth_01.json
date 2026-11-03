@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "target": "clip_copy_checked",
+  "mode": "synth",
+  "command": [
+    "D:\\tool\\vivado\\2025.2\\Vitis\\bin\\vitis-run.bat",
+    "--mode",
+    "hls",
+    "--tcl",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\source_snapshot\\build\\scripts\\hls\\build_hls.tcl"
+  ],
+  "source_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "source_script_sha256": "586ccd9e697b970d2690144a8329f4cfb787d335ff2f2407d67689db6dfcffa6",
+  "output": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\clip_copy_checked_synth_01",
+  "log": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\logs\\clip_copy_checked_synth_01.log",
+  "started_at": "2026-11-03T14:06:20.248926+08:00",
+  "does_not_replace_sealed_ip": true,
+  "pid": 7908,
+  "exit_code": 0,
+  "completion_marker_found": true,
+  "elapsed_seconds": 92.087,
+  "finished_at": "2026-11-03T14:07:52.337040+08:00"
+}

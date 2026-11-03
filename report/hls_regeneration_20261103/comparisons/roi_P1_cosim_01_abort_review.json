@@ -1,0 +1,81 @@
+{
+  "reviewed_at": "2026-11-03T09:25:04.874564+00:00",
+  "status": "resource_guard_abort_not_passed",
+  "attempt": "roi_P1_cosim_01",
+  "exit_code": 1,
+  "elapsed_seconds": 1454.74,
+  "last_rtl_progress": {
+    "completed": 0,
+    "total": 2,
+    "simulation_time_as_logged": "117000"
+  },
+  "guard_event": {
+    "at": "2026-11-03T17:20:44.848652+08:00",
+    "pid": 50020,
+    "exe": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\rp1\\hls\\sim\\verilog\\xsim.dir\\roi256\\xsimk.exe",
+    "private_bytes": 8906739712,
+    "free_commit_bytes": 450650112,
+    "reason": "host free commit below configured reserve; newest owned simulator exceeds 512 MiB",
+    "test_passed": false
+  },
+  "guard_policy": {
+    "minimum_free_commit_bytes": 536870912,
+    "private_abort_bytes": 30064771072,
+    "minimum_owned_private_for_commit_abort": 536870912,
+    "commit_pressure_victim": "newest owned simulator first",
+    "reason": "Single RTL job only; system-managed pagefile enabled and 107GB disk free observed. Permit automatic pagefile growth while retaining explicit commit reserve; no OS setting changed."
+  },
+  "live_monitor": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\receipts\\simulator_resource_monitor_04.json",
+  "immutable_snapshot": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\comparisons\\roi_P1_cosim_01_monitor04_snapshot.json",
+  "post_cosim_original_syn_and_hdl_unchanged": true,
+  "post_cosim_protected_inputs_and_c_trace_audit_verified": true,
+  "actual_c_audit_rechecked": {
+    "original_calls": 9,
+    "group_calls": 13,
+    "groups": {
+      "P1": [
+        0,
+        1
+      ],
+      "P2": [
+        0,
+        2
+      ],
+      "P3": [
+        0,
+        3
+      ],
+      "GAP": [
+        0,
+        4,
+        5
+      ],
+      "BOUND": [
+        5,
+        6
+      ],
+      "LOW": [
+        7
+      ],
+      "RANGE": [
+        8
+      ]
+    },
+    "all_13_group_traces_byte_equal_to_original_cases": true,
+    "trace_files": 22,
+    "csim_logs": 8
+  },
+  "limits": [
+    "No completed normal ROI RTL call in this attempt; 0/2 is not partial case coverage.",
+    "A resource-guard abort is not evidence of numerical or algorithm failure.",
+    "LOW and RANGE completed passes are separate rejection-path coverage.",
+    "A future one-call C0 would be supplementary only and cannot satisfy seven-group acceptance."
+  ],
+  "evidence_sha256": {
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\receipts\\roi_P1_cosim_01.json": "9cf45ab3fdb3abc5f6505aaf31178e39667e9345bed223f84492de0b5f396051",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\logs\\roi_P1_cosim_01.log": "d62d24e82df2e666953f982a83702b45b387ef4a895662420157f8cf1704c644",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\receipts\\rp1_roi_after.json": "e94a7bfbf3ce705349e4fcfff883237f5ed6696585414f1b4007a1a04f2eb712",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\comparisons\\roi_P1_cosim_01_monitor04_snapshot.json": "d43a2df2cb51a6767918e7556e805adf1f3cc70ab5b5335ad04392996f3b3fed",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\comparisons\\roi_group_c_audit_01\\roi_group_c_audit_result.json": "f1bdab99efb02fe097d8b79a2610e94aacb1805c04b8b8873d1c2d4de157f03c"
+  }
+}

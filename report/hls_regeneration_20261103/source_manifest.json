@@ -1,0 +1,206 @@
+{
+  "git_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "snapshot_root": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\source_snapshot",
+  "files": [
+    {
+      "path": "build/scripts/hls/archive/audit_sources.py.txt",
+      "bytes": 1664,
+      "sha256": "279d8d2550e0aff3b3687bba7206ccf33ae9ba67de42ee379289123aff829c64"
+    },
+    {
+      "path": "build/scripts/hls/archive/build_clip_copy_checked.tcl.txt",
+      "bytes": 838,
+      "sha256": "74f8324c187194f22d2eca1c24c3b280320f02582cab1bc1d2862903a9cb36de"
+    },
+    {
+      "path": "build/scripts/hls/archive/build_motion60_full_temporal_v2.tcl.txt",
+      "bytes": 592,
+      "sha256": "453209042f945616539f5268e79068529c99a12977112a54a505b4bfac910a37"
+    },
+    {
+      "path": "build/scripts/hls/archive/build_motion60_shared.tcl.txt",
+      "bytes": 871,
+      "sha256": "73581bccac68e0f47d62d13596612bf5ab23b6f4555f78ea864e37b32c18838f"
+    },
+    {
+      "path": "build/scripts/hls/archive/build_roi256.tcl.txt",
+      "bytes": 855,
+      "sha256": "b978577794fa601b87692b6c10c89cda97e94340057d8b5bc75914fda29e41d9"
+    },
+    {
+      "path": "build/scripts/hls/archive/build_spectrum256_pl.tcl.txt",
+      "bytes": 925,
+      "sha256": "ce7df7f672d1eb995f9bf559cfb525b53768a2ffbbbdc51bb730c2ec2008735e"
+    },
+    {
+      "path": "build/scripts/hls/archive/generate_roi256_vectors.py.txt",
+      "bytes": 1138,
+      "sha256": "ca110c1e5a6b9f31b7ab0dbc621cedca0284b8a4bd9ae29c5f7e88f5e6ca2776"
+    },
+    {
+      "path": "build/scripts/hls/archive/prepare_gate_eco_2021.tcl.txt",
+      "bytes": 2775,
+      "sha256": "d734fedfc15d11f416eff0b79f91fc30a157e142fe8f5a1479dd6fa75ae7c3ff"
+    },
+    {
+      "path": "build/scripts/hls/archive/preserve_motion60_fifo_address.py.txt",
+      "bytes": 916,
+      "sha256": "84a8004f8f2678b7dcead28cb3d3a0f44b3a3f338883ce910d383e9c335e848b"
+    },
+    {
+      "path": "build/scripts/hls/archive/test_alpha50_2021.tcl.txt",
+      "bytes": 719,
+      "sha256": "b300584ecabf819a81736e0c87a0e2c8679a6bf42fc00becf390c15168df6dbc"
+    },
+    {
+      "path": "build/scripts/hls/build_hls.tcl",
+      "bytes": 4249,
+      "sha256": "586ccd9e697b970d2690144a8329f4cfb787d335ff2f2407d67689db6dfcffa6"
+    },
+    {
+      "path": "build/scripts/hls/generate_roi_vectors.py",
+      "bytes": 1797,
+      "sha256": "fd9cbc870afd5a637eff3c2e2a01b584fcb68cc93dfe4ad4bd3f47ee14557de2"
+    },
+    {
+      "path": "build/scripts/hls/preserve_motion60_fifo_address.py",
+      "bytes": 916,
+      "sha256": "84a8004f8f2678b7dcead28cb3d3a0f44b3a3f338883ce910d383e9c335e848b"
+    },
+    {
+      "path": "build/scripts/hls/README.md",
+      "bytes": 2872,
+      "sha256": "ef2903dbd23c872e9b5e2f4e997ccb871f4d40355aa0228b8e1d9e8218c3a018"
+    },
+    {
+      "path": "src/hls/clip_copy/test_clip_copy.cpp",
+      "bytes": 1222,
+      "sha256": "e9ae1ec1f445f83b407e9176115d397396b09a8c0402d2d725b698dbbc8f4e4a"
+    },
+    {
+      "path": "src/hls/motion60_shared/clip_copy_checked.cpp",
+      "bytes": 1601,
+      "sha256": "7c827ee72bcc33badce7d2b6455554b85c2e43bd54dd11c57e3e5c6e17d1d13a"
+    },
+    {
+      "path": "src/hls/motion60_shared/clip_temporal_v2.cpp",
+      "bytes": 3944,
+      "sha256": "7d35d10029372428798dee4372c8f69938bdbd86034cfa8f76b716e3846d145b"
+    },
+    {
+      "path": "src/hls/motion60_shared/phase_core.cpp",
+      "bytes": 6584,
+      "sha256": "8cdf982fb7ffeef0f46a87b2ae6ccbeac38f8e3a6460ddf52b68a24015ccb3d5"
+    },
+    {
+      "path": "src/hls/motion60_shared/phase_core.hpp",
+      "bytes": 820,
+      "sha256": "a282ef2815a54e0376dba77e8eb9460e2638c4bc155a1602772d06ba1d817637"
+    },
+    {
+      "path": "src/hls/motion60_shared/pipeline.cpp",
+      "bytes": 9619,
+      "sha256": "5d6f6964d4da58cfbe3652ae99b9fb528807321e3ccb1f0b025d8b35c423bf73"
+    },
+    {
+      "path": "src/hls/motion60_shared/test_copy_checked.cpp",
+      "bytes": 775,
+      "sha256": "6bedb0b7375f96c8802c523ef8eaac167a277eca5b59a92e046e89b67bbe4212"
+    },
+    {
+      "path": "src/hls/motion60_shared/test_temporal.cpp",
+      "bytes": 2049,
+      "sha256": "28094a915932b3aa49dcb0cd7a7321843d8a10f6a9b7085ec0e96e00cf4cbf1b"
+    },
+    {
+      "path": "src/hls/motion60_shared/test_temporal_v2.cpp",
+      "bytes": 540,
+      "sha256": "d830b71ec179e5ce7adad148f2d32acaf3104420aeb55ec4e2b452a791612398"
+    },
+    {
+      "path": "src/hls/provenance/alpha50/csim_2021.stdout.log",
+      "bytes": 11954,
+      "sha256": "4d927d1d9273a5ca7c0922b76b672a0f82689476fbdfa3aa33ff6a10813bb3a0"
+    },
+    {
+      "path": "src/hls/provenance/alpha50/gate_only_patch.json",
+      "bytes": 1654,
+      "sha256": "07cc704f957de6adf86ba5a6588c2b9ec432c1e802301570e86912faa843ce62"
+    },
+    {
+      "path": "src/hls/provenance/alpha50/limit_audit.json",
+      "bytes": 1340,
+      "sha256": "27bd4a18d2992a6eb36b7345f0498dffebb7025b40c14a8841dd2761d2f41fcb"
+    },
+    {
+      "path": "src/hls/provenance/alpha50/source_audit.json",
+      "bytes": 575,
+      "sha256": "6c86ee0ecd91a7dbb4a86bc2421ee6008a042bdec0ac65c882c2a9e3cde35d8c"
+    },
+    {
+      "path": "src/hls/provenance/collection_validation.json",
+      "bytes": 420,
+      "sha256": "c80ecb97200add1e2ad4354c99cdc828f7eec60ad5f936b8384dd942ab14da95"
+    },
+    {
+      "path": "src/hls/provenance/source_files.json",
+      "bytes": 8150,
+      "sha256": "5b2550271fe96c3b54097f5846b65f8fdc454c116f4519d8471729346f221bbf"
+    },
+    {
+      "path": "src/hls/README.md",
+      "bytes": 1560,
+      "sha256": "cf09430f6da583591a827c8b4c1d01f0b7c01f65722756575a5c1240c2ea7bb3"
+    },
+    {
+      "path": "src/hls/reference/motion60_spectrum.py",
+      "bytes": 5890,
+      "sha256": "09941485c30d36ecf3b22db71f073d28c486f3dce52f7da2e8594456dffc8303"
+    },
+    {
+      "path": "src/hls/roi256/roi256.cpp",
+      "bytes": 5915,
+      "sha256": "3eed84917b7c5c92601be9893aaba0f0bf6c4952626d0ad6545ff24e35816c21"
+    },
+    {
+      "path": "src/hls/roi256/test_roi256.cpp",
+      "bytes": 2144,
+      "sha256": "77d2f570eb1907cb7a13c148381ac821a893ca1383a053c83a35be8f9d57e00a"
+    },
+    {
+      "path": "src/hls/spectrum256/spectrum256.cpp",
+      "bytes": 2414,
+      "sha256": "6027b65f71408ee315d26d09751a7279bb41b0befd87b975ac6e1cb1d3b4f4de"
+    },
+    {
+      "path": "src/hls/spectrum256/tables.hpp",
+      "bytes": 13710,
+      "sha256": "11c0de89c626caad0e7ed9d37a4553d6a1d72d79e2fd67a3bd288bd7c45b0742"
+    },
+    {
+      "path": "src/hls/spectrum256/test_spectrum256.cpp",
+      "bytes": 1584,
+      "sha256": "44bf55b35c9bc5d73f4bcd5f08e74ceab3a779df5618da73851d17bd8acc7e27"
+    },
+    {
+      "path": "src/hls/spectrum256_pl/spectrum256_pl.cpp",
+      "bytes": 5121,
+      "sha256": "c777d7a8edd541cd76b4515c387ef95cfbcb3a705dad8f41c13565d9608099bd"
+    },
+    {
+      "path": "src/hls/spectrum256_pl/test_spectrum256_pl.cpp",
+      "bytes": 2130,
+      "sha256": "432e6824e0e8cdd70fc17615fdfa26bc1586d5ce16bdf2cc0f3e44b11a00a3ad"
+    },
+    {
+      "path": "src/hls/tests/alpha50/baseline_phase.cpp",
+      "bytes": 6584,
+      "sha256": "044c4b7fad6a27f9f675362d9d43e455dbda84b17ec4a112f534c1122871afa9"
+    },
+    {
+      "path": "src/hls/tests/alpha50/test_alpha50.cpp",
+      "bytes": 3558,
+      "sha256": "38734101ff9b36b6856e420cb62e3c93e1c825d00fef18d7eb3d5a5437f6b225"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 主 Vivado 构建使用仓库中的已导出 IP。本目录用于进一步检查 C++ 或重新生成候选 IP，生成结果保存在独立目录，不自动替换 `src/ip/`。
 
-`build_hls.tcl` 根据已有脚本调整相对路径，使用支持 `open_component` 的 Vitis HLS Tcl 环境。入库时完成了 Tcl 语法和输入路径检查；当前 HLS 验证任务的结果待单独整理上传，见[收尾清单](../../../report/submission_gaps.md)。已归档的 alpha50 历史 C 仿真使用 2021.2，其原脚本在 `archive/test_alpha50_2021.tcl.txt`。
+`build_hls.tcl` 根据已有脚本调整相对路径，使用支持 `open_component` 的 Vitis HLS Tcl 环境，入库时完成了 Tcl 语法和输入路径检查。11 月 3 日实际执行的五项重生成使用完整证据包中的 `tools/build_hls_verified.tcl`，其中修正了本机 include 路径引号与冻结快照定位；新运行请按[经核对的复现步骤](../../../report/hls_regeneration_20261103/REPRODUCE.md)准备新目录，实际覆盖见[验证报告](../../../report/hls_regeneration_20261103/README.md)。本页以下保留原入口的参数说明。已归档的 alpha50 历史 C 仿真使用 2021.2，其原脚本在 `archive/test_alpha50_2021.tcl.txt`。
 
 ## 配置
 

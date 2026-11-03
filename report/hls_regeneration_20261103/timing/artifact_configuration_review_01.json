@@ -1,0 +1,211 @@
+{
+  "schema": 1,
+  "status": "accepted_metadata_differences",
+  "checked_at": "2026-11-04T01:08:39.676059+08:00",
+  "original_checker_status_preserved": "needs_review",
+  "artifact_audit": {
+    "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\final_artifact_audit_01.json",
+    "bytes": 10154567,
+    "sha256": "4c0b08af685316b6f25210e51e240ff621ea516469533c8dc4bc6b201bed05e2"
+  },
+  "execution_audit": {
+    "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume02_final_execution_audit_02.json",
+    "bytes": 131132,
+    "sha256": "3897b0888896731e608d7547f255c43f1a56d70c15920816412623a04d781887"
+  },
+  "public_baseline_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "prepared_receipt": {
+    "path": "D:\\vision\\submission\\_build\\v26c02\\prepared.json",
+    "bytes": 7318,
+    "sha256": "0befc45cc392d45b0c5cf5573c91af9e4b3eb64849529f44d82a0fd489174ab6"
+  },
+  "reviewed_differences": [
+    {
+      "path": "/modules//clip_dma/attributes/COREREVISION",
+      "baseline": "2114840385",
+      "candidate": "2114857687",
+      "classification": "IP packaging core revision metadata",
+      "decision": "accepted",
+      "reason": "Each HWH value exactly matches its own public-baseline or selected-regenerated component.xml coreRevision. The candidate component.xml exactly matches the SHA-pinned candidate ZIP. The full captured HWH snapshot reports no accompanying parameter, port, bus, address or connection change. This metadata match is not numerical/RTL equivalence evidence.",
+      "evidence": {
+        "baseline_git_blob_relative_path": "src/ip/clip_copy_checked/component.xml",
+        "baseline_component_sha256": "6f310bd2550d0750d9b7a9e7ea6c1e14149d33a5c29fc554b9b0f33b4ef7fa0a",
+        "sealed_component": {
+          "path": "D:\\vision\\submission\\_build\\v26c02\\sealed_ip_backup\\clip_copy_checked\\component.xml",
+          "bytes": 203492,
+          "sha256": "6f310bd2550d0750d9b7a9e7ea6c1e14149d33a5c29fc554b9b0f33b4ef7fa0a"
+        },
+        "candidate_component": {
+          "path": "D:\\vision\\submission\\_build\\v26c02\\s\\src\\ip\\clip_copy_checked\\component.xml",
+          "bytes": 203490,
+          "sha256": "71f40264853436f2323633cd36325fe8702c0b1db62fc526ce730935bdae361b"
+        },
+        "candidate_package": {
+          "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\clip_copy_checked_synth_01\\hls\\impl\\ip\\xilinx_com_hls_clip_copy_checked_1_0.zip",
+          "bytes": 136044,
+          "sha256": "7d613030191396f4bcf7f446132086d7b0503e5a87b3cc72501e675e18338a19"
+        }
+      }
+    },
+    {
+      "path": "/modules//f/attributes/COREREVISION",
+      "baseline": "2114840367",
+      "candidate": "2114857701",
+      "classification": "IP packaging core revision metadata",
+      "decision": "accepted",
+      "reason": "Each HWH value exactly matches its own public-baseline or selected-regenerated component.xml coreRevision. The candidate component.xml exactly matches the SHA-pinned candidate ZIP. The full captured HWH snapshot reports no accompanying parameter, port, bus, address or connection change. This metadata match is not numerical/RTL equivalence evidence.",
+      "evidence": {
+        "baseline_git_blob_relative_path": "src/ip/motion60_full_temporal_v2/component.xml",
+        "baseline_component_sha256": "0934b426f05a706577dbf7fe9008dfb38425849cc6ef0875076283f6cd58dc80",
+        "sealed_component": {
+          "path": "D:\\vision\\submission\\_build\\v26c02\\sealed_ip_backup\\motion60_full_temporal_v2\\component.xml",
+          "bytes": 185234,
+          "sha256": "0934b426f05a706577dbf7fe9008dfb38425849cc6ef0875076283f6cd58dc80"
+        },
+        "candidate_component": {
+          "path": "D:\\vision\\submission\\_build\\v26c02\\s\\src\\ip\\motion60_full_temporal_v2\\component.xml",
+          "bytes": 185232,
+          "sha256": "57f448dd43e3c664f25f0c0fe003d3888f9492fb11da8acc3d860f80eadbe066"
+        },
+        "candidate_package": {
+          "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\xilinx_com_hls_clip_temporal_full_1_0.zip",
+          "bytes": 290585,
+          "sha256": "8a56f3aad7fa2ea810910278e906ee5baf61446fef09abe077c0369d244152bb"
+        }
+      }
+    },
+    {
+      "path": "/modules//motion/attributes/COREREVISION",
+      "baseline": "2114840364",
+      "candidate": "2114857706",
+      "classification": "IP packaging core revision metadata",
+      "decision": "accepted",
+      "reason": "Each HWH value exactly matches its own public-baseline or selected-regenerated component.xml coreRevision. The candidate component.xml exactly matches the SHA-pinned candidate ZIP. The full captured HWH snapshot reports no accompanying parameter, port, bus, address or connection change. This metadata match is not numerical/RTL equivalence evidence.",
+      "evidence": {
+        "baseline_git_blob_relative_path": "src/ip/motion60_shared/component.xml",
+        "baseline_component_sha256": "e819fbce8c251e6e3e58422a182aa9ad3e71cac2d2f3e691f49b6253aa52bcea",
+        "sealed_component": {
+          "path": "D:\\vision\\submission\\_build\\v26c02\\sealed_ip_backup\\motion60_shared\\component.xml",
+          "bytes": 537606,
+          "sha256": "e819fbce8c251e6e3e58422a182aa9ad3e71cac2d2f3e691f49b6253aa52bcea"
+        },
+        "candidate_component": {
+          "path": "D:\\vision\\submission\\_build\\v26c02\\s\\src\\ip\\motion60_shared\\component.xml",
+          "bytes": 537688,
+          "sha256": "d0f77eefd0d91933d5b57d13dd602fc8226fd933a9c787343820fd2017f67deb"
+        },
+        "candidate_package": {
+          "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\candidates\\m01_verilog_candidate\\m01_verilog_candidate_verilog_route.zip",
+          "bytes": 49705990,
+          "sha256": "06ea01ff90327ea108b6e6e6f6c8d762124918bba2a03ab66a46b8987619b9fa"
+        }
+      }
+    },
+    {
+      "path": "/modules//roi/attributes/COREREVISION",
+      "baseline": "2114839832",
+      "candidate": "2114857691",
+      "classification": "IP packaging core revision metadata",
+      "decision": "accepted",
+      "reason": "Each HWH value exactly matches its own public-baseline or selected-regenerated component.xml coreRevision. The candidate component.xml exactly matches the SHA-pinned candidate ZIP. The full captured HWH snapshot reports no accompanying parameter, port, bus, address or connection change. This metadata match is not numerical/RTL equivalence evidence.",
+      "evidence": {
+        "baseline_git_blob_relative_path": "src/ip/roi256_v3/component.xml",
+        "baseline_component_sha256": "fb8d5c46e4fcaac7ebe06e0dbb621b5cc50b780eaf1ac485b13bb443d12b5470",
+        "sealed_component": {
+          "path": "D:\\vision\\submission\\_build\\v26c02\\sealed_ip_backup\\roi256_v3\\component.xml",
+          "bytes": 237224,
+          "sha256": "fb8d5c46e4fcaac7ebe06e0dbb621b5cc50b780eaf1ac485b13bb443d12b5470"
+        },
+        "candidate_component": {
+          "path": "D:\\vision\\submission\\_build\\v26c02\\s\\src\\ip\\roi256_v3\\component.xml",
+          "bytes": 237222,
+          "sha256": "f5e908adb2380c655506f154b2e765f6d1d7c0bc0b9ede49b320cffde767fee0"
+        },
+        "candidate_package": {
+          "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\roi256_synth_01\\hls\\impl\\ip\\xilinx_com_hls_roi256_1_0.zip",
+          "bytes": 298692,
+          "sha256": "8cdb23d89b38a061b4fff93a46be50683342fef2080c261dd8f968c2c3d96399"
+        }
+      }
+    },
+    {
+      "path": "/modules//spec_fft/attributes/COREREVISION",
+      "baseline": "2114840413",
+      "candidate": "2114857689",
+      "classification": "IP packaging core revision metadata",
+      "decision": "accepted",
+      "reason": "Each HWH value exactly matches its own public-baseline or selected-regenerated component.xml coreRevision. The candidate component.xml exactly matches the SHA-pinned candidate ZIP. The full captured HWH snapshot reports no accompanying parameter, port, bus, address or connection change. This metadata match is not numerical/RTL equivalence evidence.",
+      "evidence": {
+        "baseline_git_blob_relative_path": "src/ip/spectrum256_pl/component.xml",
+        "baseline_component_sha256": "77ac20d44598437998354ad83b712c45a944c5d18fd24e732dd50bda09367816",
+        "sealed_component": {
+          "path": "D:\\vision\\submission\\_build\\v26c02\\sealed_ip_backup\\spectrum256_pl\\component.xml",
+          "bytes": 252443,
+          "sha256": "77ac20d44598437998354ad83b712c45a944c5d18fd24e732dd50bda09367816"
+        },
+        "candidate_component": {
+          "path": "D:\\vision\\submission\\_build\\v26c02\\s\\src\\ip\\spectrum256_pl\\component.xml",
+          "bytes": 252441,
+          "sha256": "3d70f005d7ad7558f1c7414da130a7e5db52bba06ba67846ec48d7f821ade9e6"
+        },
+        "candidate_package": {
+          "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\spectrum256_pl_synth_01\\hls\\impl\\ip\\xilinx_com_hls_spectrum256_pl_1_0.zip",
+          "bytes": 279098,
+          "sha256": "e5897c18f137cb774337be803d65a7f2aaceb5e63db3a94abfb334cb772117bb"
+        }
+      }
+    },
+    {
+      "path": "/modules//hdmi/other_children/0/children/0/attributes/SOURCE",
+      "baseline": "d:/vision/submission/fpga_visual_amplifier/src/ip/rgb2dvi_v1_3/docs/rgb2dvi_v1_2.pdf",
+      "candidate": "d:/vision/submission/_build/v26c02/s/src/ip/rgb2dvi_v1_3/docs/rgb2dvi_v1_2.pdf",
+      "classification": "Documentation absolute source path relocation",
+      "decision": "accepted",
+      "reason": "The PDF path moved from the original repository root to the isolated prepared source root. The complete candidate PDF is byte-identical to this file at public commit a9ab041; it is a documentation SOURCE field, not a synthesis source, address, clock or runtime parameter.",
+      "evidence": {
+        "baseline_git_blob_relative_path": "src/ip/rgb2dvi_v1_3/docs/rgb2dvi_v1_2.pdf",
+        "baseline_pdf_bytes": 385156,
+        "baseline_pdf_sha256": "cbd8609fb8b415031e6260db92a324f71697afe4f606f95c5216045e320fa04b",
+        "candidate_pdf": {
+          "path": "D:\\vision\\submission\\_build\\v26c02\\s\\src\\ip\\rgb2dvi_v1_3\\docs\\rgb2dvi_v1_2.pdf",
+          "bytes": 385156,
+          "sha256": "cbd8609fb8b415031e6260db92a324f71697afe4f606f95c5216045e320fa04b"
+        }
+      }
+    }
+  ],
+  "header_metadata_review": [
+    {
+      "path": "/TIMESTAMP",
+      "baseline": "Fri Oct 30 21:01:12 2026",
+      "candidate": "Tue Nov  3 20:52:00 2026"
+    }
+  ],
+  "board_runtime_validated": false,
+  "does_not_establish_full_functional_equivalence": true,
+  "routed_timing_review_by_separate_audit_required": true,
+  "header_metadata_explanation": "Only the HWH generation TIMESTAMP changed; the candidate timestamp is the create-project handoff generation time. It does not assert board execution time or a successful build by itself.",
+  "artifact_integrity_and_required_hardware_contract_passed": true,
+  "remaining_unreviewed_hwh_configuration_differences": [],
+  "observed_nonmetadata_hwh_configuration_differences": [],
+  "publication_scope": "These bound files can support publication of the regenerated-candidate build/execution and artifact-integrity verification evidence with all existing functional coverage limits retained. This review does not qualify board operation, unrestricted numerical equivalence, or safety of publishing unrelated unfinished ROI/algorithm changes. Routed timing must be cited from the separate real timing reports/review.",
+  "artifacts_match_runner": [
+    {
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\artifacts\\capture.bit",
+      "bytes": 13198397,
+      "sha256": "f1a45db6c1cc6ac694bec1002288998f8bc60d485026e9a96772e2a449e476ca"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\artifacts\\capture.ltx",
+      "bytes": 139492,
+      "sha256": "dd5ba2d10d069cfafb33561bf51d0a34b809c0ea5ba2ca8195847a8ff5d96613"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\artifacts\\capture.xsa",
+      "bytes": 5885956,
+      "sha256": "ff737a60df9353e465dfb57e57a7beeeb294ff5f4cb4c59d67efe3dab8f5f617"
+    }
+  ],
+  "ltx_scope": "Actual LTX is parsed JSON with ltx_root/ltx_data. Probe correspondence to live hardware has not been exercised.",
+  "review_inputs_and_artifacts_still_match_at_end": true
+}

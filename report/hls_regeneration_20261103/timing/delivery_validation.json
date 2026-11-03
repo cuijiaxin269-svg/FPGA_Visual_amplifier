@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "status": "passed_after_metadata_review",
+  "recorded_at": "2026-11-04T01:16:20.027676+08:00",
+  "baseline_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "runner_finished_at": "2026-11-04T00:58:19.735623+08:00",
+  "runner_exit_code": 0,
+  "runner_elapsed_seconds": 10223.581,
+  "guard_status": "completed",
+  "guard_terminations": 0,
+  "guard_abort_samples": 0,
+  "guard_peak_owned_amd_private_bytes": 9310900224,
+  "source_files_preserved": 989,
+  "imported_files_preserved": 324,
+  "completed_synthesis_runs": 72,
+  "original_completed_runs_reused": 48,
+  "original48_cache_reuse_count": 7,
+  "new_actual_uncached_synthesis_runs": 24,
+  "actual_uncached_hls_syntheses": 5,
+  "owned_processes_still_running": 0,
+  "artifacts": [
+    {
+      "name": "capture.bit",
+      "bytes": 13198397,
+      "sha256": "f1a45db6c1cc6ac694bec1002288998f8bc60d485026e9a96772e2a449e476ca"
+    },
+    {
+      "name": "capture.xsa",
+      "bytes": 5885956,
+      "sha256": "ff737a60df9353e465dfb57e57a7beeeb294ff5f4cb4c59d67efe3dab8f5f617"
+    },
+    {
+      "name": "capture.ltx",
+      "bytes": 139492,
+      "sha256": "dd5ba2d10d069cfafb33561bf51d0a34b809c0ea5ba2ca8195847a8ff5d96613"
+    }
+  ],
+  "xsa_all_member_crc_passed": true,
+  "xsa_embedded_bit_matches_standalone": true,
+  "required_device_clocks_addresses_hp_mapping_passed": true,
+  "hwh_configuration_differences": [
+    {
+      "path": "/modules//clip_dma/attributes/COREREVISION",
+      "baseline": "2114840385",
+      "candidate": "2114857687"
+    },
+    {
+      "path": "/modules//f/attributes/COREREVISION",
+      "baseline": "2114840367",
+      "candidate": "2114857701"
+    },
+    {
+      "path": "/modules//hdmi/other_children/0/children/0/attributes/SOURCE",
+      "baseline": "d:/vision/submission/fpga_visual_amplifier/src/ip/rgb2dvi_v1_3/docs/rgb2dvi_v1_2.pdf",
+      "candidate": "d:/vision/submission/_build/v26c02/s/src/ip/rgb2dvi_v1_3/docs/rgb2dvi_v1_2.pdf"
+    },
+    {
+      "path": "/modules//motion/attributes/COREREVISION",
+      "baseline": "2114840364",
+      "candidate": "2114857706"
+    },
+    {
+      "path": "/modules//roi/attributes/COREREVISION",
+      "baseline": "2114839832",
+      "candidate": "2114857691"
+    },
+    {
+      "path": "/modules//spec_fft/attributes/COREREVISION",
+      "baseline": "2114840413",
+      "candidate": "2114857689"
+    }
+  ],
+  "hwh_header_metadata_differences": [
+    {
+      "path": "/TIMESTAMP",
+      "baseline": "Fri Oct 30 21:01:12 2026",
+      "candidate": "Tue Nov  3 20:52:00 2026"
+    }
+  ],
+  "metadata_review": "artifact_configuration_review_01.json",
+  "raw_artifact_audit": {
+    "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\final_artifact_audit_01.json",
+    "bytes": 10154567,
+    "sha256": "4c0b08af685316b6f25210e51e240ff621ea516469533c8dc4bc6b201bed05e2",
+    "archive_member": "continuation/resume_02/final_artifact_audit_01.json",
+    "status_preserved": "needs_review"
+  },
+  "raw_runner_receipt": {
+    "path": "D:\\vision\\submission\\_build\\v26c02\\receipts\\timing_resume_02.json",
+    "bytes": 32919,
+    "sha256": "9ce9d007fd1704902943a8d75cc7313ee7745052fd4bc0ac1526ec127e5b6496"
+  },
+  "raw_guard_receipt": {
+    "path": "D:\\vision\\submission\\_build\\v26c02\\guard_receipts\\timing_resume_02.json",
+    "bytes": 21068,
+    "sha256": "2ea2890ecc7b48bf8f1a2c98ce0d6c3555625860b0485725b896ae19bffc67e8"
+  },
+  "execution_audit": "execution_audit_02.json",
+  "earlier_execution_audit_note": "Audit 01 incorrectly required fresh synthesis logs for seven already-completed cached vendor runs. It is retained in the full evidence ZIP; Audit 02 separately verifies the original 48 preserved runs and 24 fresh runs. No build result was rewritten.",
+  "windows_settings_changed": false,
+  "board_runtime_validated": false,
+  "complete_functional_rtl_validation": false,
+  "limitations": [
+    "Normal ROI and full-frame motion RTL coverage remains incomplete.",
+    "The new candidate BIT/XSA/LTX has not been validated on a board.",
+    "Original report warnings and display/truncation limits remain.",
+    "LTX was parsed as JSON; no board/probe connectivity test was performed."
+  ]
+}

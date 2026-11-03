@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "destination": "execution_audit_02.json",
+      "source": {
+        "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume02_final_execution_audit_02.json",
+        "bytes": 131132,
+        "sha256": "3897b0888896731e608d7547f255c43f1a56d70c15920816412623a04d781887"
+      }
+    },
+    {
+      "destination": "artifact_configuration_review_01.json",
+      "source": {
+        "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\final_artifact_configuration_review_01.json",
+        "bytes": 12855,
+        "sha256": "cfe141ff4c62840b95e32ae65960586361ff3aacff9a26efbe73421f900b67bc"
+      }
+    }
+  ],
+  "raw_large_audit_in_timing_zip": {
+    "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\final_artifact_audit_01.json",
+    "bytes": 10154567,
+    "sha256": "4c0b08af685316b6f25210e51e240ff621ea516469533c8dc4bc6b201bed05e2"
+  }
+}

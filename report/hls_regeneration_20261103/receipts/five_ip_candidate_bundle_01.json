@@ -1,0 +1,79 @@
+{
+  "status": "packaged_candidates_verified_not_accepted",
+  "finished_at": "2026-11-03T16:47:21.604754+08:00",
+  "source_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "outputs": {
+    "zip": {
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\deliverables\\five_ip_candidates_20261103.zip",
+      "bytes": 51650930,
+      "sha256": "73e250fbd0e809b92b06d6cb3bf61cbb4b7446c8a445ed2f43c054a3f3ddf2c3"
+    },
+    "manifest": {
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\deliverables\\five_ip_candidates_20261103.manifest.json",
+      "bytes": 5080,
+      "sha256": "ea74f10d3e27e2627d6f9544d1da681ade1f598d87ab1895de2ec1e3647666f1"
+    },
+    "readme": {
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\deliverables\\five_ip_candidates_20261103.README.md",
+      "bytes": 2677,
+      "sha256": "c937f892f2f1e117c68153b97f5edf2fdecf0e774be978c7c9c63f2daa898632"
+    },
+    "checksums": {
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\deliverables\\five_ip_candidates_20261103.sha256sums.txt",
+      "bytes": 310,
+      "sha256": "e5325e2967fe714208e0b8e89feee9e3064e5fbff88add3c6625f268d51de8bf"
+    }
+  },
+  "ip_archives": [
+    {
+      "target": "clip_copy_checked",
+      "sha256": "7d613030191396f4bcf7f446132086d7b0503e5a87b3cc72501e675e18338a19",
+      "bytes": 136044,
+      "payload_files": 31,
+      "declared_references": 30
+    },
+    {
+      "target": "spectrum256_pl",
+      "sha256": "e5897c18f137cb774337be803d65a7f2aaceb5e63db3a94abfb334cb772117bb",
+      "bytes": 279098,
+      "payload_files": 92,
+      "declared_references": 91
+    },
+    {
+      "target": "roi256",
+      "sha256": "8cdb23d89b38a061b4fff93a46be50683342fef2080c261dd8f968c2c3d96399",
+      "bytes": 298692,
+      "payload_files": 88,
+      "declared_references": 87
+    },
+    {
+      "target": "motion60_full_temporal_v2",
+      "sha256": "8a56f3aad7fa2ea810910278e906ee5baf61446fef09abe077c0369d244152bb",
+      "bytes": 290585,
+      "payload_files": 100,
+      "declared_references": 99
+    },
+    {
+      "target": "motion60_shared",
+      "sha256": "06ea01ff90327ea108b6e6e6f6c8d762124918bba2a03ab66a46b8987619b9fa",
+      "bytes": 49705990,
+      "payload_files": 532,
+      "declared_references": 439
+    }
+  ],
+  "all_five_inner_zip_crc_passed": true,
+  "all_inner_payloads_match_original_exported_files": true,
+  "all_component_references_present": true,
+  "outer_zip_crc_passed": true,
+  "outer_payload_exact_sha256_verified": true,
+  "embedded_external_manifest_identical": true,
+  "original_input_zip_hashes_unchanged": true,
+  "raw_motion_vendor_zip_included": false,
+  "hls_or_vivado_launched": false,
+  "component_or_source_changed": false,
+  "all_rtl_passed_claimed": false,
+  "production_integration_accepted": false,
+  "board_accepted": false,
+  "sealed_ip_replaced": false,
+  "github_uploaded": false
+}

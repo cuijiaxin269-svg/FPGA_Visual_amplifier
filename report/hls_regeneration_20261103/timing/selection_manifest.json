@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "kind": "verbatim_routed_report_selection",
+  "prepared_at": "2026-11-04T00:48:19.169056+08:00",
+  "baseline_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "frozen_routed_audit_timestamp": "2026-11-04T00:45:39.870222+08:00",
+  "copied_files": [
+    {
+      "repository_file": "routed_timing.txt",
+      "original_source": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\routed_timing.txt",
+      "bytes": 456542,
+      "sha256": "3aff526a02ecaeccd7b459d3e2969acd35d6518e40cdb9cfca16da9e49d5485b"
+    },
+    {
+      "repository_file": "routed_utilization.txt",
+      "original_source": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\routed_utilization.txt",
+      "bytes": 17194,
+      "sha256": "d3f15c0ffcafa78cf641346dfc57e3fde731d343297e519a3a92600783af5684"
+    },
+    {
+      "repository_file": "routed_cdc.txt",
+      "original_source": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\routed_cdc.txt",
+      "bytes": 70462,
+      "sha256": "b0dbffcbb3e490f422910b6f6e079e1a9fb9d2a8f272ac06a40fa3a71333e382"
+    },
+    {
+      "repository_file": "methodology_standalone_qspi2025_2.txt",
+      "original_source": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\methodology_standalone_qspi2025_2.txt",
+      "bytes": 6017,
+      "sha256": "5578f80e8cfe82ab86558b868c09b8e900e0338d57ab1d448d89f192efdcd500"
+    },
+    {
+      "repository_file": "clock_source_gate_standalone_qspi2025_2.txt",
+      "original_source": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\clock_source_gate_standalone_qspi2025_2.txt",
+      "bytes": 90,
+      "sha256": "a0de3f038daa43419c5f77dc5d0420102755d2ffb99bb1c3345f60035a057cce"
+    },
+    {
+      "repository_file": "routed_reports_audit_01.md",
+      "original_source": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\routed_reports_audit_01.md",
+      "bytes": 4402,
+      "sha256": "fd34bbab36c162fc2d317c145d0fe2580228fa7574cf1d4a299c1563526f593e"
+    },
+    {
+      "repository_file": "routed_reports_audit_01.json",
+      "original_source": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\routed_reports_audit_01.json",
+      "bytes": 139137,
+      "sha256": "2d26d7926e25e739a5bbcc7cb93dbe6e8efb3e25c6a2b52c19ee9b49c7911508"
+    }
+  ],
+  "copied_file_count": 7,
+  "copied_bytes": 693844,
+  "full_reports_not_embedded_here": [
+    "routed_drc.txt",
+    "routed_bus_skew.txt",
+    "routed_io.txt"
+  ],
+  "full_report_sha256_reference": "routed_reports_audit_01.json:report_files.candidate",
+  "planned_full_evidence_release_asset": "https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/hls-validation-20261103/timing_validation_evidence_20261103.zip",
+  "release_upload_status_at_preparation": "pending_final_publisher_confirmation",
+  "artifact_build_completion_claimed": false,
+  "board_runtime_validated": false
+}

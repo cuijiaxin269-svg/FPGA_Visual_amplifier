@@ -1,0 +1,125 @@
+{
+  "reviewed_at": "2026-11-03T19:48:35.056802+08:00",
+  "status": "resource_guard_abort_not_passed",
+  "attempt": "motion_cold_single_cosim_01",
+  "source_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "started_at": "2026-11-03T18:47:48.983520+08:00",
+  "finished_at": "2026-11-03T19:45:41.860194+08:00",
+  "exit_code": 1,
+  "elapsed_seconds": 3472.876,
+  "completion_marker_found": false,
+  "last_rtl_progress": {
+    "completed": 0,
+    "total": 1,
+    "intra_transaction_percent_as_logged": 0.0,
+    "simulation_time_as_logged": "117000"
+  },
+  "actual_cosim_report_verilog_status": "Fail",
+  "actual_verilog_pass": false,
+  "guard_event": {
+    "at": "2026-11-03T19:45:36.164508+08:00",
+    "pid": 10320,
+    "exe": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\mc01\\hls\\sim\\verilog\\xsim.dir\\motion60_shared\\xsimk.exe",
+    "private_bytes": 9289478144,
+    "free_commit_bytes": 486014976,
+    "reason": "host free commit below configured reserve; newest owned simulator exceeds 512 MiB",
+    "test_passed": false
+  },
+  "guard_policy": {
+    "minimum_free_commit_bytes": 536870912,
+    "private_abort_bytes": 30064771072,
+    "minimum_owned_private_for_commit_abort": 536870912,
+    "commit_pressure_victim": "newest owned simulator first",
+    "reason": "Single RTL job only; system-managed pagefile enabled and 107GB disk free observed. Permit automatic pagefile growth while retaining explicit commit reserve; no OS setting changed."
+  },
+  "guard_event_matches_exact_owned_executable_and_run_interval": true,
+  "native_oom_diagnostic_observed_in_run_and_xsim_logs": false,
+  "classification": "External resource guard terminated the matching XSim process after host free commit fell below its reserve. No native allocation exception or numerical mismatch is established.",
+  "live_monitor": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\receipts\\simulator_resource_monitor_04.json",
+  "immutable_snapshot": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\comparisons\\motion_cold_single_cosim_01_monitor04_snapshot.json",
+  "snapshot_captured_at": "2026-11-03T19:48:35.056802+08:00",
+  "snapshot_monitor_status": "completed",
+  "snapshot_monitor_last_sample_at": "2026-11-03T19:47:30.434074+08:00",
+  "post_cosim_checks": {
+    "stage": "cold",
+    "component": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\mc01",
+    "verified_at": "2026-11-03T11:45:40.584672+00:00",
+    "all_original_synthesis_files_identical": true,
+    "hdl_files": 410,
+    "protected_inputs_and_fixture_full_sha_verified": true,
+    "fixture_manifest_sha256": "6a7dcb2f43b16e5ae29042bc2417210c7d5c36676ab336b3ed64dca01fe3cbc7",
+    "not_functional_verification": true,
+    "resource_pilot_not_guaranteed": true
+  },
+  "fixture_read_only_recheck": {
+    "fixture_sha256_manifest_hash": "6a7dcb2f43b16e5ae29042bc2417210c7d5c36676ab336b3ed64dca01fe3cbc7",
+    "fixture_json_metadata_hash": "169f975a5430add6445215d9e206bde6a09f7f38bd3abf9458a6d34612b357d1",
+    "data_files": {
+      "input.u16le": {
+        "bytes": 2048000,
+        "sha256": "e4ffec9240274177f0f71e84dc6179b7d8c818cb36d5976cff9a47daf2f86cd3"
+      },
+      "expected_output.u16le": {
+        "bytes": 2048000,
+        "sha256": "e2c695f494ecff683f7e40d07f3bde73001efb9729771c023c88919e297f9976"
+      },
+      "expected_state0.u128le": {
+        "bytes": 16384000,
+        "sha256": "db49f27a87ef5a4aaf6aac526845dd2ade7371241ce002973a5084ae87fbdb91"
+      },
+      "expected_state1.u128le": {
+        "bytes": 4096000,
+        "sha256": "60a49eef3adbea97ee70c0adc6e1d32bea6a35f9734280137095862f70b29f4d"
+      },
+      "expected_state2.u128le": {
+        "bytes": 1024000,
+        "sha256": "ec9d45b635d8282f042af34134d47758d4f084512e17ec4eef34469304705c76"
+      },
+      "reference.txt": {
+        "bytes": 189,
+        "sha256": "9e63d34e8c13b6185176716d1fcb8a45919332f88c49cbd3e6e4a588440c753b"
+      }
+    },
+    "all_protected_inputs_current_sha256_match": true
+  },
+  "coverage": {
+    "geometry": [
+      1280,
+      800
+    ],
+    "alpha": 50,
+    "mode": 0,
+    "planned_top_calls": 1,
+    "completed_rtl_top_calls_as_logged": 0,
+    "axi_depths": {
+      "input": 1024000,
+      "output": 1024000,
+      "state0": 1024000,
+      "state1": 256000,
+      "state2": 64000
+    },
+    "comparison": "Exact unsigned packed image/state bits, no tolerance relaxation",
+    "continuous_rtl_restart_covered": false
+  },
+  "limits": [
+    "No completed cold RTL call or C/RTL output-state comparison was established; 0/1 is not partial case coverage.",
+    "The actual Verilog Fail report follows a resource-guard interruption and is not evidence of numerical or algorithm failure.",
+    "Full-size C simulation and C reference fixtures are separate evidence, not RTL equivalence.",
+    "No warm RTL or continuous RTL restart coverage is established by this attempt.",
+    "Post-run source, fixture and original-synthesis integrity success (410 HDL files) is not functional verification.",
+    "Only this review JSON, Markdown and monitor snapshot were created; no source/test/config/repository/sealed-IP/archive/OS change or new HLS/simulator job."
+  ],
+  "evidence_sha256": {
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\receipts\\motion_cold_single_cosim_01.json": "4565687a5f01fd244a7a37c7bc48898eafeff83180a6a685874090b37e3b23ee",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\receipts\\mc01_motion_after.json": "51beda34efce83f86cbdf4aebcae97d380e4b365f86a112e6710f72570f81452",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\receipts\\mc01_motion_before.json": "0bc5a662bf0486e2b6ffac9331b6e13a5f6dae7588ca286f3895bb34de0d3d72",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\receipts\\temporal_motion_rtl_01.json": "4bfca639778734c55eccd95bb35d88f4c12894eb43bed1e5dd813bc2cdd5cf33",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\logs\\motion_cold_single_cosim_01.log": "8d3794263fa73ebc23ff389a6f8901cf289c5a41826067e1499270b0df8709ce",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\mc01\\hls\\sim\\verilog\\xsim.log": "c6e4238d7fc3e2eabaeefd7129bc82949736ab2d9d02fd62878a5c5f8b46fcc7",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\mc01\\hls\\sim\\report\\motion60_shared_cosim.rpt": "e0540105a93074f25e85d90f7664ee9b5585511f78ab6bd4786cfcea40b4d165",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\fixtures\\motion_cold01\\fixture.json": "169f975a5430add6445215d9e206bde6a09f7f38bd3abf9458a6d34612b357d1",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\fixtures\\motion_cold01\\fixture.sha256": "6a7dcb2f43b16e5ae29042bc2417210c7d5c36676ab336b3ed64dca01fe3cbc7",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\mc01\\motion_single_clone.json": "8b6a7d2b1766562cd70b7ff5905747e00f290a4206fc74bbd7a284987d803e32",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\comparisons\\motion_cold_single_cosim_01_monitor04_snapshot.json": "b47817c393238f86361fcd2b6e61c5ee850d5b0a210a4029f96645f087b8f83b"
+  }
+}

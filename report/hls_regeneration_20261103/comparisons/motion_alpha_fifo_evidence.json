@@ -1,0 +1,217 @@
+{
+  "audit_scope": "Static source/HDL/package audit only; no HLS or Vivado execution and no source/IP edits",
+  "baseline_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "float_constants": {
+    "1106247680": 30.0,
+    "1112014848": 50.0
+  },
+  "frozen_sources": [
+    {
+      "path": "src/hls/motion60_shared/pipeline.cpp",
+      "sha256": "5d6f6964d4da58cfbe3652ae99b9fb528807321e3ccb1f0b025d8b35c423bf73",
+      "matches_frozen_manifest": true,
+      "alpha_limit_lines": [
+        {
+          "line": 222,
+          "text": "if(mode>2 || !(alpha>=0 && alpha<=50))return;"
+        }
+      ]
+    },
+    {
+      "path": "src/hls/motion60_shared/phase_core.cpp",
+      "sha256": "8cdf982fb7ffeef0f46a87b2ae6ccbeac38f8e3a6460ddf52b68a24015ccb3d5",
+      "matches_frozen_manifest": true,
+      "alpha_limit_lines": [
+        {
+          "line": 129,
+          "text": "if (!(alpha >= 0 && alpha <= 50)) { status = 3; return; }"
+        }
+      ]
+    },
+    {
+      "path": "src/hls/motion60_shared/phase_core.hpp",
+      "sha256": "a282ef2815a54e0376dba77e8eb9460e2638c4bc155a1602772d06ba1d817637",
+      "matches_frozen_manifest": true,
+      "alpha_limit_lines": []
+    }
+  ],
+  "sealed_verilog_gates": [
+    {
+      "file": "motion60_shared.v",
+      "sha256": "56c24f81bdc8a13039d09bc6d68ae43b665f69ae191ee1d28eae9c696fb12b48",
+      "matches_eco_after_sha256": true,
+      "matches_git_baseline": true,
+      "alpha50_literal_count": 1,
+      "alpha30_literal_count": 0,
+      "reverse_literal_patch_matches_before_sha256": true,
+      "verilog_gate": [
+        {
+          "line": 1394,
+          "text": ".din1(32'd1112014848),"
+        }
+      ],
+      "vhdl_file": "src/ip/motion60_shared/hdl/vhdl/motion60_shared.vhd",
+      "vhdl_sha256": "cad1cfc9e1354ac075a08fa48d2fece6e80b6cf4d98e3968baff6f02b835a78f",
+      "vhdl_matches_git_baseline": true,
+      "vhdl_alpha30_gate": [
+        {
+          "line": 1877,
+          "text": "din1 => ap_const_lv32_41F00000,"
+        }
+      ],
+      "vhdl_alpha50_constant_occurrences": 0
+    },
+    {
+      "file": "motion60_shared_phase_core_shared.v",
+      "sha256": "01ef9df1d7f50060c04c3581cc54d544bafaf6d4f535ace36ed386707295517c",
+      "matches_eco_after_sha256": true,
+      "matches_git_baseline": true,
+      "alpha50_literal_count": 1,
+      "alpha30_literal_count": 0,
+      "reverse_literal_patch_matches_before_sha256": true,
+      "verilog_gate": [
+        {
+          "line": 369,
+          "text": ".din1(32'd1112014848),"
+        }
+      ],
+      "vhdl_file": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_phase_core_shared.vhd",
+      "vhdl_sha256": "d64a1d2f80b0a988a4c48d1b84b593cc8542914313c271ef04766127d23172c4",
+      "vhdl_matches_git_baseline": true,
+      "vhdl_alpha30_gate": [
+        {
+          "line": 421,
+          "text": "din1 => ap_const_lv32_41F00000,"
+        }
+      ],
+      "vhdl_alpha50_constant_occurrences": 0
+    },
+    {
+      "file": "motion60_shared_phase_core_shared_1.v",
+      "sha256": "8505877bf3958233ba4500d084545d3c53abdee8fa17864542b934bde92e1c86",
+      "matches_eco_after_sha256": true,
+      "matches_git_baseline": true,
+      "alpha50_literal_count": 1,
+      "alpha30_literal_count": 0,
+      "reverse_literal_patch_matches_before_sha256": true,
+      "verilog_gate": [
+        {
+          "line": 369,
+          "text": ".din1(32'd1112014848),"
+        }
+      ],
+      "vhdl_file": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_phase_core_shared_1.vhd",
+      "vhdl_sha256": "a12c803400ecbdd86e628439002c0382d5dbd6a03851b0944b7b6645a6f05596",
+      "vhdl_matches_git_baseline": true,
+      "vhdl_alpha30_gate": [
+        {
+          "line": 421,
+          "text": "din1 => ap_const_lv32_41F00000,"
+        }
+      ],
+      "vhdl_alpha50_constant_occurrences": 0
+    },
+    {
+      "file": "motion60_shared_phase_core_shared_2.v",
+      "sha256": "175cb2d0e99eb7de61c5694d02d53bc96d0967ba540262acd06912693a7bec8c",
+      "matches_eco_after_sha256": true,
+      "matches_git_baseline": true,
+      "alpha50_literal_count": 1,
+      "alpha30_literal_count": 0,
+      "reverse_literal_patch_matches_before_sha256": true,
+      "verilog_gate": [
+        {
+          "line": 369,
+          "text": ".din1(32'd1112014848),"
+        }
+      ],
+      "vhdl_file": "src/ip/motion60_shared/hdl/vhdl/motion60_shared_phase_core_shared_2.vhd",
+      "vhdl_sha256": "81654863eb630e385815f594b1581bd6622eec163441b9594aa66aedbcfe021b",
+      "vhdl_matches_git_baseline": true,
+      "vhdl_alpha30_gate": [
+        {
+          "line": 421,
+          "text": "din1 => ap_const_lv32_41F00000,"
+        }
+      ],
+      "vhdl_alpha50_constant_occurrences": 0
+    }
+  ],
+  "fifo": {
+    "verilog_sha256": "d43d31d5607d0ae03880481d6e1952caf7aab69b8b2140a8337362b25f46cfc5",
+    "verilog_matches_git_baseline": true,
+    "verilog_dont_touch_lines": [
+      {
+        "line": 40,
+        "text": "(* DONT_TOUCH = \"true\" *) reg  [MEM_AWIDTH-1:0] waddr;"
+      },
+      {
+        "line": 41,
+        "text": "(* DONT_TOUCH = \"true\" *) reg  [MEM_AWIDTH-1:0] raddr;"
+      }
+    ],
+    "vhdl_sha256": "a3fc3041b65eeba0bbbb52c038c21d4a071472c7f8d7a3b694702f93b0a42fa6",
+    "vhdl_matches_git_baseline": true,
+    "vhdl_has_dont_touch": false
+  },
+  "component": {
+    "sha256": "e819fbce8c251e6e3e58422a182aa9ad3e71cac2d2f3e691f49b6253aa52bcea",
+    "matches_git_baseline": true,
+    "hdl_views": [
+      {
+        "name": "xilinx_verilogsynthesis",
+        "language": "verilog",
+        "file_sets": [
+          "xilinx_verilogsynthesis_xilinx_com_ip_floating_point_7_1__ref_view_fileset",
+          "xilinx_verilogsynthesis_view_fileset"
+        ]
+      },
+      {
+        "name": "xilinx_verilogbehavioralsimulation",
+        "language": "verilog",
+        "file_sets": [
+          "xilinx_verilogbehavioralsimulation_xilinx_com_ip_floating_point_7_1__ref_view_fileset",
+          "xilinx_verilogbehavioralsimulation_view_fileset"
+        ]
+      },
+      {
+        "name": "xilinx_vhdlsynthesis",
+        "language": "vhdl",
+        "file_sets": [
+          "xilinx_vhdlsynthesis_xilinx_com_ip_floating_point_7_1__ref_view_fileset",
+          "xilinx_vhdlsynthesis_view_fileset"
+        ]
+      },
+      {
+        "name": "xilinx_vhdlbehavioralsimulation",
+        "language": "vhdl",
+        "file_sets": [
+          "xilinx_vhdlbehavioralsimulation_xilinx_com_ip_floating_point_7_1__ref_view_fileset",
+          "xilinx_vhdlbehavioralsimulation_view_fileset"
+        ]
+      }
+    ]
+  },
+  "baseline_project_language_lines": [
+    {
+      "line": 8,
+      "text": "set_property target_language Verilog [current_project]"
+    }
+  ],
+  "postprocessor": {
+    "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\source_snapshot\\build\\scripts\\hls\\preserve_motion60_fifo_address.py",
+    "sha256": "84a8004f8f2678b7dcead28cb3d3a0f44b3a3f338883ce910d383e9c335e848b",
+    "matches_frozen_manifest": true
+  },
+  "entry_order": [
+    {
+      "line": 81,
+      "text": "export_design -format ip_catalog"
+    },
+    {
+      "line": 85,
+      "text": "puts [exec $::env(FPGA_PYTHON) [file join $root build scripts hls preserve_motion60_fifo_address.py] [lindex $fifo 0]]"
+    }
+  ],
+  "regenerated_motion_export_zip_audited": false
+}

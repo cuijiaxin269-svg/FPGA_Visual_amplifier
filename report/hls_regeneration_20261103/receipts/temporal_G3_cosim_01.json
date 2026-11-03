@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "name": "temporal_G3_cosim_01",
+  "started_at": "2026-11-03T18:15:33.792288+08:00",
+  "command": [
+    "D:/tool/vivado/2025.2/Vitis/bin/vitis-run.bat",
+    "--mode",
+    "hls",
+    "--tcl",
+    "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\tools\\run_temporal_group.tcl"
+  ],
+  "explicit_settings": {
+    "FPGA_TEMPORAL_GROUP": "G3"
+  },
+  "script_sha256": "090715aca026aaefba590e831f3f368c72d90bbb08da0bd3004b7875bf1dc05a",
+  "script_snapshot": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\script_snapshots\\090715aca026aaefba590e831f3f368c72d90bbb08da0bd3004b7875bf1dc05a_run_temporal_group.tcl",
+  "log": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\logs\\temporal_G3_cosim_01.log",
+  "expected_completion_marker": "HLS_TEMPORAL_GROUP_COMPLETED group=G3",
+  "source_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "does_not_replace_sealed_ip": true,
+  "pid": 41772,
+  "exit_code": 0,
+  "completion_marker_found": true,
+  "finished_at": "2026-11-03T18:47:48.544151+08:00",
+  "elapsed_seconds": 1934.752
+}

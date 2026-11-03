@@ -1,0 +1,787 @@
+{
+  "scope": "Candidate archive only; static warning-origin review, no Vivado rerun and no production replacement",
+  "candidate_root": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\candidates\\m01_verilog_candidate",
+  "log": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\logs\\motion_candidate_refresh_01.log",
+  "log_sha256": "4340bd9820f78194e8d00c6a57be757994f543e6d01f8eecb05edda543f03edc",
+  "component_sha256": {
+    "sealed": "e819fbce8c251e6e3e58422a182aa9ad3e71cac2d2f3e691f49b6253aa52bcea",
+    "original_export": "4ef34b37841a9c6da41b1cc51a5ea3677f4f71461be46f34602cab5956f2eb7c",
+    "refreshed_candidate": "d0f77eefd0d91933d5b57d13dd602fc8226fd933a9c787343820fd2017f67deb"
+  },
+  "counts": {
+    "CRITICAL WARNING": 9,
+    "WARNING": 31
+  },
+  "ids": {
+    "IP_Flow 19-3161": 8,
+    "IP_Flow 19-3000": 28,
+    "IP_Flow 19-11770": 1,
+    "IP_Flow 19-4663": 1,
+    "IP_Flow 19-4662": 1,
+    "IP_Flow 19-2187": 1
+  },
+  "diagnostics": [
+    {
+      "severity": "CRITICAL WARNING",
+      "id": "IP_Flow 19-3161",
+      "message": "Port 'm_axi_images_BID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "line": "CRITICAL WARNING: [IP_Flow 19-3161] Port 'm_axi_images_BID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "metadata_category": [
+        "ports",
+        "m_axi_images_BID"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "bb38c10d07e2d87f47fd85b57b16520059aa9746d138d74c70d6e2299cef0e79",
+        "original_export": "bb38c10d07e2d87f47fd85b57b16520059aa9746d138d74c70d6e2299cef0e79",
+        "refreshed_candidate": "bb38c10d07e2d87f47fd85b57b16520059aa9746d138d74c70d6e2299cef0e79"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "CRITICAL WARNING",
+      "id": "IP_Flow 19-3161",
+      "message": "Port 'm_axi_images_RID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "line": "CRITICAL WARNING: [IP_Flow 19-3161] Port 'm_axi_images_RID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "metadata_category": [
+        "ports",
+        "m_axi_images_RID"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "26b2e0e9c475488e63c170a619f8b5b61dc2e60874b5b6b07945289ba95008a5",
+        "original_export": "26b2e0e9c475488e63c170a619f8b5b61dc2e60874b5b6b07945289ba95008a5",
+        "refreshed_candidate": "26b2e0e9c475488e63c170a619f8b5b61dc2e60874b5b6b07945289ba95008a5"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "CRITICAL WARNING",
+      "id": "IP_Flow 19-3161",
+      "message": "Port 'm_axi_state0_BID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "line": "CRITICAL WARNING: [IP_Flow 19-3161] Port 'm_axi_state0_BID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "metadata_category": [
+        "ports",
+        "m_axi_state0_BID"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "23fc09857f76db23aa3fe49fce2dab8146cc19b985e6d48840aae4231e14a999",
+        "original_export": "23fc09857f76db23aa3fe49fce2dab8146cc19b985e6d48840aae4231e14a999",
+        "refreshed_candidate": "23fc09857f76db23aa3fe49fce2dab8146cc19b985e6d48840aae4231e14a999"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "CRITICAL WARNING",
+      "id": "IP_Flow 19-3161",
+      "message": "Port 'm_axi_state0_RID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "line": "CRITICAL WARNING: [IP_Flow 19-3161] Port 'm_axi_state0_RID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "metadata_category": [
+        "ports",
+        "m_axi_state0_RID"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "90cfb60a27b15016d6a48d1087c4a2b2213368326d8b46eb9e9b22f5e18d680f",
+        "original_export": "90cfb60a27b15016d6a48d1087c4a2b2213368326d8b46eb9e9b22f5e18d680f",
+        "refreshed_candidate": "90cfb60a27b15016d6a48d1087c4a2b2213368326d8b46eb9e9b22f5e18d680f"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "CRITICAL WARNING",
+      "id": "IP_Flow 19-3161",
+      "message": "Port 'm_axi_state1_BID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "line": "CRITICAL WARNING: [IP_Flow 19-3161] Port 'm_axi_state1_BID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "metadata_category": [
+        "ports",
+        "m_axi_state1_BID"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "e0b6d98993920e8c70fb4a9ea7f72cdab7ff1b3a60298e0d6fa8335978fdd83e",
+        "original_export": "e0b6d98993920e8c70fb4a9ea7f72cdab7ff1b3a60298e0d6fa8335978fdd83e",
+        "refreshed_candidate": "e0b6d98993920e8c70fb4a9ea7f72cdab7ff1b3a60298e0d6fa8335978fdd83e"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "CRITICAL WARNING",
+      "id": "IP_Flow 19-3161",
+      "message": "Port 'm_axi_state1_RID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "line": "CRITICAL WARNING: [IP_Flow 19-3161] Port 'm_axi_state1_RID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "metadata_category": [
+        "ports",
+        "m_axi_state1_RID"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "09b178e00ed111cd45bf1f5126ab8cf859d025c82d855a39f577f5db2009e560",
+        "original_export": "09b178e00ed111cd45bf1f5126ab8cf859d025c82d855a39f577f5db2009e560",
+        "refreshed_candidate": "09b178e00ed111cd45bf1f5126ab8cf859d025c82d855a39f577f5db2009e560"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "CRITICAL WARNING",
+      "id": "IP_Flow 19-3161",
+      "message": "Port 'm_axi_state2_BID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "line": "CRITICAL WARNING: [IP_Flow 19-3161] Port 'm_axi_state2_BID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "metadata_category": [
+        "ports",
+        "m_axi_state2_BID"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "e7ba02f09e36002e8405cc4599476194528d6287258b72041b5280709d67ea43",
+        "original_export": "e7ba02f09e36002e8405cc4599476194528d6287258b72041b5280709d67ea43",
+        "refreshed_candidate": "e7ba02f09e36002e8405cc4599476194528d6287258b72041b5280709d67ea43"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "CRITICAL WARNING",
+      "id": "IP_Flow 19-3161",
+      "message": "Port 'm_axi_state2_RID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "line": "CRITICAL WARNING: [IP_Flow 19-3161] Port 'm_axi_state2_RID': The tie-offs driver value is not specified for the input port with an enablement condition.",
+      "metadata_category": [
+        "ports",
+        "m_axi_state2_RID"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "46915947afb292329b9e3dc41a700f073323c70b82f72fecff1e12eea0b00210",
+        "original_export": "46915947afb292329b9e3dc41a700f073323c70b82f72fecff1e12eea0b00210",
+        "refreshed_candidate": "46915947afb292329b9e3dc41a700f073323c70b82f72fecff1e12eea0b00210"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_IMAGES_ID_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_IMAGES_ID_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_IMAGES_ID_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "564f2a6837c8bd23b77c1bbfde6d410f95fe31802355644de2964c407de07814",
+        "original_export": "564f2a6837c8bd23b77c1bbfde6d410f95fe31802355644de2964c407de07814",
+        "refreshed_candidate": "564f2a6837c8bd23b77c1bbfde6d410f95fe31802355644de2964c407de07814"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_IMAGES_AWUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_IMAGES_AWUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_IMAGES_AWUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "8a79772a2018db7b3370d05594bfd97f16165271b873c2ba5afc08cb1b8a2441",
+        "original_export": "8a79772a2018db7b3370d05594bfd97f16165271b873c2ba5afc08cb1b8a2441",
+        "refreshed_candidate": "8a79772a2018db7b3370d05594bfd97f16165271b873c2ba5afc08cb1b8a2441"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_IMAGES_ARUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_IMAGES_ARUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_IMAGES_ARUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "a1f8cb326894f32d71e55c66c3c25813f042be7a42c7ff77c6ca45c63ad37faf",
+        "original_export": "a1f8cb326894f32d71e55c66c3c25813f042be7a42c7ff77c6ca45c63ad37faf",
+        "refreshed_candidate": "a1f8cb326894f32d71e55c66c3c25813f042be7a42c7ff77c6ca45c63ad37faf"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_IMAGES_WUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_IMAGES_WUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_IMAGES_WUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "9d969d125c9bba86c5dd3befb57730a65f5ddfdbf55d09ca95240570e05b975b",
+        "original_export": "9d969d125c9bba86c5dd3befb57730a65f5ddfdbf55d09ca95240570e05b975b",
+        "refreshed_candidate": "9d969d125c9bba86c5dd3befb57730a65f5ddfdbf55d09ca95240570e05b975b"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_IMAGES_RUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_IMAGES_RUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_IMAGES_RUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "d0366bb443eb51bfaed09bc06e0b204d1e47d2bdb317fb7cb0bf086db846a910",
+        "original_export": "d0366bb443eb51bfaed09bc06e0b204d1e47d2bdb317fb7cb0bf086db846a910",
+        "refreshed_candidate": "d0366bb443eb51bfaed09bc06e0b204d1e47d2bdb317fb7cb0bf086db846a910"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_IMAGES_BUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_IMAGES_BUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_IMAGES_BUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "3765ed46b04b860697b3399850292627e5ccc8bde8ccda7fc27c7f6cbdeb1e2a",
+        "original_export": "3765ed46b04b860697b3399850292627e5ccc8bde8ccda7fc27c7f6cbdeb1e2a",
+        "refreshed_candidate": "3765ed46b04b860697b3399850292627e5ccc8bde8ccda7fc27c7f6cbdeb1e2a"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_IMAGES_USER_VALUE': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_IMAGES_USER_VALUE': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_IMAGES_USER_VALUE"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "74d4c99326bd812185c327b6012d3fb3f59f7f1e0fb6e0c38b5dc334822a9dbd",
+        "original_export": "74d4c99326bd812185c327b6012d3fb3f59f7f1e0fb6e0c38b5dc334822a9dbd",
+        "refreshed_candidate": "74d4c99326bd812185c327b6012d3fb3f59f7f1e0fb6e0c38b5dc334822a9dbd"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE0_ID_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE0_ID_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE0_ID_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "2b81dc69a2089d3538a603ced7c919f95817b3dca406db9cefb4435ad8b49440",
+        "original_export": "2b81dc69a2089d3538a603ced7c919f95817b3dca406db9cefb4435ad8b49440",
+        "refreshed_candidate": "2b81dc69a2089d3538a603ced7c919f95817b3dca406db9cefb4435ad8b49440"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE0_AWUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE0_AWUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE0_AWUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "17e0f5cdff06e15f4e898a456b4d604a388599e1422fccab146550371d70bd5d",
+        "original_export": "17e0f5cdff06e15f4e898a456b4d604a388599e1422fccab146550371d70bd5d",
+        "refreshed_candidate": "17e0f5cdff06e15f4e898a456b4d604a388599e1422fccab146550371d70bd5d"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE0_ARUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE0_ARUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE0_ARUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "25ad38a9ebef4212a59b7a68b2cb4b3a5f409d63b01213735e369bbfddd0bf99",
+        "original_export": "25ad38a9ebef4212a59b7a68b2cb4b3a5f409d63b01213735e369bbfddd0bf99",
+        "refreshed_candidate": "25ad38a9ebef4212a59b7a68b2cb4b3a5f409d63b01213735e369bbfddd0bf99"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE0_WUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE0_WUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE0_WUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "6694d80bc89c066de3e89027ecfdbd45fd4d3791c68a9f05fb1d923a08ef6b91",
+        "original_export": "6694d80bc89c066de3e89027ecfdbd45fd4d3791c68a9f05fb1d923a08ef6b91",
+        "refreshed_candidate": "6694d80bc89c066de3e89027ecfdbd45fd4d3791c68a9f05fb1d923a08ef6b91"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE0_RUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE0_RUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE0_RUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "036baa09478dd898098be8156094d1414364ad985d87d2d7d1d53a3e0d314a13",
+        "original_export": "036baa09478dd898098be8156094d1414364ad985d87d2d7d1d53a3e0d314a13",
+        "refreshed_candidate": "036baa09478dd898098be8156094d1414364ad985d87d2d7d1d53a3e0d314a13"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE0_BUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE0_BUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE0_BUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "6f23862abfdfa107a3c8f92a4dd8aa58340d662f6a8c63e32ba711946c94588a",
+        "original_export": "6f23862abfdfa107a3c8f92a4dd8aa58340d662f6a8c63e32ba711946c94588a",
+        "refreshed_candidate": "6f23862abfdfa107a3c8f92a4dd8aa58340d662f6a8c63e32ba711946c94588a"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE0_USER_VALUE': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE0_USER_VALUE': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE0_USER_VALUE"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "8794b7c8631c6bff38c8da491ac81c3bb9cce5792cc8d25774caad1749f8cf0d",
+        "original_export": "8794b7c8631c6bff38c8da491ac81c3bb9cce5792cc8d25774caad1749f8cf0d",
+        "refreshed_candidate": "8794b7c8631c6bff38c8da491ac81c3bb9cce5792cc8d25774caad1749f8cf0d"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE1_ID_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE1_ID_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE1_ID_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "af50d926413b426e8ba63a652ca2386e2680c870d1fb3ad319ab05aabbe15a45",
+        "original_export": "af50d926413b426e8ba63a652ca2386e2680c870d1fb3ad319ab05aabbe15a45",
+        "refreshed_candidate": "af50d926413b426e8ba63a652ca2386e2680c870d1fb3ad319ab05aabbe15a45"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE1_AWUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE1_AWUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE1_AWUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "8d3fcb0c482b3e346bd0751c12c7fe72d7a19d6ded249802e9eb3c7f6f087bfe",
+        "original_export": "8d3fcb0c482b3e346bd0751c12c7fe72d7a19d6ded249802e9eb3c7f6f087bfe",
+        "refreshed_candidate": "8d3fcb0c482b3e346bd0751c12c7fe72d7a19d6ded249802e9eb3c7f6f087bfe"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE1_ARUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE1_ARUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE1_ARUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "751bd4cb44812e8778305696a31ec835bf244a8f909465696458de5095337f82",
+        "original_export": "751bd4cb44812e8778305696a31ec835bf244a8f909465696458de5095337f82",
+        "refreshed_candidate": "751bd4cb44812e8778305696a31ec835bf244a8f909465696458de5095337f82"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE1_WUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE1_WUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE1_WUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "658dfd64f362ad762f38623d190a82840aa5ce013e2b16689f0f7ef45ca97c56",
+        "original_export": "658dfd64f362ad762f38623d190a82840aa5ce013e2b16689f0f7ef45ca97c56",
+        "refreshed_candidate": "658dfd64f362ad762f38623d190a82840aa5ce013e2b16689f0f7ef45ca97c56"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE1_RUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE1_RUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE1_RUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "b222d38916db94d5cebc6198c78dc07ffa58a260cd3009e12e2d1471bff25ad0",
+        "original_export": "b222d38916db94d5cebc6198c78dc07ffa58a260cd3009e12e2d1471bff25ad0",
+        "refreshed_candidate": "b222d38916db94d5cebc6198c78dc07ffa58a260cd3009e12e2d1471bff25ad0"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE1_BUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE1_BUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE1_BUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "5d91fb6076092c91d73dc9a8946ee7b4a11dd3664d3e85f7c37db1b68c3e015b",
+        "original_export": "5d91fb6076092c91d73dc9a8946ee7b4a11dd3664d3e85f7c37db1b68c3e015b",
+        "refreshed_candidate": "5d91fb6076092c91d73dc9a8946ee7b4a11dd3664d3e85f7c37db1b68c3e015b"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE1_USER_VALUE': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE1_USER_VALUE': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE1_USER_VALUE"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "99dc6c0036cb724d1783b88a88b88c5d8e8fd4402754b0be0ef243ad0f529fea",
+        "original_export": "99dc6c0036cb724d1783b88a88b88c5d8e8fd4402754b0be0ef243ad0f529fea",
+        "refreshed_candidate": "99dc6c0036cb724d1783b88a88b88c5d8e8fd4402754b0be0ef243ad0f529fea"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE2_ID_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE2_ID_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE2_ID_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "bd3de020617b3b649a8114d20b0197d0a141acc47a8b4b9f2ae19cf89976df65",
+        "original_export": "bd3de020617b3b649a8114d20b0197d0a141acc47a8b4b9f2ae19cf89976df65",
+        "refreshed_candidate": "bd3de020617b3b649a8114d20b0197d0a141acc47a8b4b9f2ae19cf89976df65"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE2_AWUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE2_AWUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE2_AWUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "9e007a6063118fefc0902ba30cf06752c4850688ba1bd90643be76c829a63a4d",
+        "original_export": "9e007a6063118fefc0902ba30cf06752c4850688ba1bd90643be76c829a63a4d",
+        "refreshed_candidate": "9e007a6063118fefc0902ba30cf06752c4850688ba1bd90643be76c829a63a4d"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE2_ARUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE2_ARUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE2_ARUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "0319bd0ad2c718e0ff15ebf5ef35968a06a0857796757cd5e4d3b26314088733",
+        "original_export": "0319bd0ad2c718e0ff15ebf5ef35968a06a0857796757cd5e4d3b26314088733",
+        "refreshed_candidate": "0319bd0ad2c718e0ff15ebf5ef35968a06a0857796757cd5e4d3b26314088733"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE2_WUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE2_WUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE2_WUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "6e9a48e9bfff4d44c8922dfb68af647ed51413b5c5f894744aa154e1af52fefb",
+        "original_export": "6e9a48e9bfff4d44c8922dfb68af647ed51413b5c5f894744aa154e1af52fefb",
+        "refreshed_candidate": "6e9a48e9bfff4d44c8922dfb68af647ed51413b5c5f894744aa154e1af52fefb"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE2_RUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE2_RUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE2_RUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "bc83317a4bf08552ffc47467d6d373bd17a47dee7d34c5ca2eac7ff5c271d8f3",
+        "original_export": "bc83317a4bf08552ffc47467d6d373bd17a47dee7d34c5ca2eac7ff5c271d8f3",
+        "refreshed_candidate": "bc83317a4bf08552ffc47467d6d373bd17a47dee7d34c5ca2eac7ff5c271d8f3"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE2_BUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE2_BUSER_WIDTH': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE2_BUSER_WIDTH"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "218026fcab639351fd1ec64c6ab6b511669b61c263e2bcd1cb73fdb97dbe6e2b",
+        "original_export": "218026fcab639351fd1ec64c6ab6b511669b61c263e2bcd1cb73fdb97dbe6e2b",
+        "refreshed_candidate": "218026fcab639351fd1ec64c6ab6b511669b61c263e2bcd1cb73fdb97dbe6e2b"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-3000",
+      "message": "HDL Parameter 'C_M_AXI_STATE2_USER_VALUE': Found empty enablement dependency with resolve type of 'dependent'",
+      "line": "WARNING: [IP_Flow 19-3000] HDL Parameter 'C_M_AXI_STATE2_USER_VALUE': Found empty enablement dependency with resolve type of 'dependent'",
+      "metadata_category": [
+        "params",
+        "C_M_AXI_STATE2_USER_VALUE"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "58ab2c3c4cc7ec867cd06bb3e7697643966e49d62672f5dcd18a6522404bd9c6",
+        "original_export": "58ab2c3c4cc7ec867cd06bb3e7697643966e49d62672f5dcd18a6522404bd9c6",
+        "refreshed_candidate": "58ab2c3c4cc7ec867cd06bb3e7697643966e49d62672f5dcd18a6522404bd9c6"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-11770",
+      "message": "Clock interface 'ap_clk' has no FREQ_HZ parameter.",
+      "line": "WARNING: [IP_Flow 19-11770] Clock interface 'ap_clk' has no FREQ_HZ parameter.",
+      "metadata_category": [
+        "clock"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "68cc6efc6ed4046adabdc6dafb9a1e2ef7bf9f22503a6b3618ce2cd4dbb2476c",
+        "original_export": "68cc6efc6ed4046adabdc6dafb9a1e2ef7bf9f22503a6b3618ce2cd4dbb2476c",
+        "refreshed_candidate": "68cc6efc6ed4046adabdc6dafb9a1e2ef7bf9f22503a6b3618ce2cd4dbb2476c"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "CRITICAL WARNING",
+      "id": "IP_Flow 19-4663",
+      "message": "IP found with multiple 'Synthesis' file groups packaged. Only one file group of this type may exist per IP.",
+      "line": "CRITICAL WARNING: [IP_Flow 19-4663] IP found with multiple 'Synthesis' file groups packaged. Only one file group of this type may exist per IP.",
+      "metadata_category": [
+        "views"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "bc8007a9d9b89f3157576bdd215b39a97909dc626ee794da35620660ba1cf9d2",
+        "original_export": "bc8007a9d9b89f3157576bdd215b39a97909dc626ee794da35620660ba1cf9d2",
+        "refreshed_candidate": "bc8007a9d9b89f3157576bdd215b39a97909dc626ee794da35620660ba1cf9d2"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-4662",
+      "message": "IP found with more than one behavioral language simulation file groups ('Verilog Simulation' and 'VHDL Simulation'). It is recommended that only single language preferably Verilog simulation model is delivered.",
+      "line": "WARNING: [IP_Flow 19-4662] IP found with more than one behavioral language simulation file groups ('Verilog Simulation' and 'VHDL Simulation'). It is recommended that only single language preferably Verilog simulation model is delivered.",
+      "metadata_category": [
+        "views"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "bc8007a9d9b89f3157576bdd215b39a97909dc626ee794da35620660ba1cf9d2",
+        "original_export": "bc8007a9d9b89f3157576bdd215b39a97909dc626ee794da35620660ba1cf9d2",
+        "refreshed_candidate": "bc8007a9d9b89f3157576bdd215b39a97909dc626ee794da35620660ba1cf9d2"
+      },
+      "classification": "inherited_metadata"
+    },
+    {
+      "severity": "WARNING",
+      "id": "IP_Flow 19-2187",
+      "message": "The Product Guide file is missing.",
+      "line": "WARNING: [IP_Flow 19-2187] The Product Guide file is missing.",
+      "metadata_category": [
+        "product_guide_refs"
+      ],
+      "candidate_matches_original_export": true,
+      "original_matches_sealed": true,
+      "metadata_sha256": {
+        "sealed": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "original_export": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "refreshed_candidate": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "classification": "inherited_metadata"
+    }
+  ],
+  "integrity_pass_message_present": true,
+  "classification_note": "Inherited means the relevant XML metadata matches the original export and sealed baseline; it does not claim the warning was rerun on the sealed package or is harmless in every integration.",
+  "range_serialization_annotations": [
+    {
+      "address_space": "Data_m_axi_images",
+      "range_value_before": "16E",
+      "range_value_after": "16E",
+      "attributes_before": {},
+      "attributes_after": {
+        "format": "long"
+      },
+      "same_range_value": true
+    },
+    {
+      "address_space": "Data_m_axi_state0",
+      "range_value_before": "16E",
+      "range_value_after": "16E",
+      "attributes_before": {},
+      "attributes_after": {
+        "format": "long"
+      },
+      "same_range_value": true
+    },
+    {
+      "address_space": "Data_m_axi_state1",
+      "range_value_before": "16E",
+      "range_value_after": "16E",
+      "attributes_before": {},
+      "attributes_after": {
+        "format": "long"
+      },
+      "same_range_value": true
+    },
+    {
+      "address_space": "Data_m_axi_state2",
+      "range_value_before": "16E",
+      "range_value_after": "16E",
+      "attributes_before": {},
+      "attributes_after": {
+        "format": "long"
+      },
+      "same_range_value": true
+    }
+  ],
+  "candidate_archival_allowed_with_warnings": true,
+  "production_integration_accepted": false
+}

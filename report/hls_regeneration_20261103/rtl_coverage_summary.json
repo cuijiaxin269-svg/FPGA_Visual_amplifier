@@ -1,0 +1,809 @@
+{
+  "schema": 1,
+  "kind": "derived_release_rtl_summary_not_new_test",
+  "derived_at": "2026-11-03T23:21:59.111947+08:00",
+  "source_results_sha256": "34bc99c32bbc5adbfd64f405c5d30b72b09b2053b38165ed22507e2af294b2d9",
+  "source_results_generated_at": "2026-11-03T19:48:56.821140+08:00",
+  "source_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "language": "Verilog/XSim",
+  "source_of_acceptance": "Copied frozen results.selected_coverage; actual receipts and co-sim reports are included where a run occurred. Read full results for C-audit and post-hash conditions.",
+  "coverage": {
+    "clip_copy_checked": {
+      "status": "passed",
+      "scope": "Original12 cases and11 adjacent transitions, full128000-word AXI depths. G0 credits P0/P1; P2..P10 require real passes. Independent simulators do not validate uninterrupted12-call execution.",
+      "accepted_units": [
+        "G0",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9",
+        "P10"
+      ],
+      "pending_or_unaccepted_units": [],
+      "units": {
+        "G0": {
+          "name": "copy_G0_cosim_03",
+          "status": "passed",
+          "elapsed_seconds": 228.047,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 3,
+          "last_rtl_progress": [
+            3,
+            3
+          ],
+          "total_execution_cycles": 524332,
+          "receipt": "receipts/copy_G0_cosim_03.json",
+          "receipt_sha256": "5f803b61339479d781b322acd437c5fa5e2feb3a523b6be358c519c312e6e99e",
+          "report": {
+            "path": "runs/cg0_r03/hls/sim/report/clip_copy_checked_cosim.rpt",
+            "sha256": "3dbbb648cd05fea6ce4636cd32d5313ba81256b414e82c38beaa46eb62aaec7e"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_original_synthesis_files_identical": true,
+            "post_hash_source_and_tb_inputs_unchanged": true,
+            "post_hash_solution_project_binding_matches": true
+          }
+        },
+        "P2": {
+          "name": "copy_P2_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 225.616,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": [
+            2,
+            2
+          ],
+          "total_execution_cycles": 524309,
+          "receipt": "receipts/copy_P2_cosim_01.json",
+          "receipt_sha256": "36fad314124c75443e599a2871261569836d0fcdf1891e2eecf1e0b0cd7c5215",
+          "report": {
+            "path": "runs/cp2/hls/sim/report/clip_copy_checked_cosim.rpt",
+            "sha256": "cd6da7fabfb71186bb3a27ff0902ad706a0c9ab1e770539bfd25f5e6dad1ca9a"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_original_synthesis_files_identical": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        },
+        "P3": {
+          "name": "copy_P3_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 224.667,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": [
+            2,
+            2
+          ],
+          "total_execution_cycles": 524309,
+          "receipt": "receipts/copy_P3_cosim_01.json",
+          "receipt_sha256": "ddaaba317584ecd7e6fdbec9c5797bcdaa00c6f5d54e309466b6c5fd891320cf",
+          "report": {
+            "path": "runs/cp3/hls/sim/report/clip_copy_checked_cosim.rpt",
+            "sha256": "aca2e96d4da970c12a44fec4a34f8718cafdf6f7b2d77e3bfcced27d6e8a1da4"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_original_synthesis_files_identical": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        },
+        "P4": {
+          "name": "copy_P4_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 230.578,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": [
+            2,
+            2
+          ],
+          "total_execution_cycles": 524309,
+          "receipt": "receipts/copy_P4_cosim_01.json",
+          "receipt_sha256": "61321ef066ad15d25c1d65b47ee946e0892cbc0732c1fabe965d64af861ac3aa",
+          "report": {
+            "path": "runs/cp4/hls/sim/report/clip_copy_checked_cosim.rpt",
+            "sha256": "1455f4db53220a5ad6e12da88690692066dea46b8356fffc4c85b57e74d651b5"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_original_synthesis_files_identical": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        },
+        "P5": {
+          "name": "copy_P5_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 225.487,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": [
+            2,
+            2
+          ],
+          "total_execution_cycles": 524309,
+          "receipt": "receipts/copy_P5_cosim_01.json",
+          "receipt_sha256": "e76c93df958bbdf7fbe7c70987585e81cae7d708534c9273766245b32857070b",
+          "report": {
+            "path": "runs/cp5/hls/sim/report/clip_copy_checked_cosim.rpt",
+            "sha256": "8b70236077d03dd15a95d487376228c73b80bf745909e5fea206588c15f57b48"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_original_synthesis_files_identical": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        },
+        "P6": {
+          "name": "copy_P6_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 227.119,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": [
+            2,
+            2
+          ],
+          "total_execution_cycles": 524309,
+          "receipt": "receipts/copy_P6_cosim_01.json",
+          "receipt_sha256": "e1e53a497acd78388b1e24cb1c6fe2de2fab8c218c2fa76192ed605527ef27c3",
+          "report": {
+            "path": "runs/cp6/hls/sim/report/clip_copy_checked_cosim.rpt",
+            "sha256": "b0ec54a38ce67d41842217a6cb7dd7a5646bcb37ac8fdaecf03b6a3fe7c803e4"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_original_synthesis_files_identical": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        },
+        "P7": {
+          "name": "copy_P7_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 221.782,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": [
+            2,
+            2
+          ],
+          "total_execution_cycles": 524309,
+          "receipt": "receipts/copy_P7_cosim_01.json",
+          "receipt_sha256": "b923aa8c1610b7c2df561563be75db45d9c12a4b6b17b07d082f7992a5387f2b",
+          "report": {
+            "path": "runs/cp7/hls/sim/report/clip_copy_checked_cosim.rpt",
+            "sha256": "d06cacc93b7806f30637108e04a9beb3a2009adefdacfca04a639961636ad98f"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_original_synthesis_files_identical": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        },
+        "P8": {
+          "name": "copy_P8_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 223.841,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": [
+            2,
+            2
+          ],
+          "total_execution_cycles": 524309,
+          "receipt": "receipts/copy_P8_cosim_01.json",
+          "receipt_sha256": "ad87cd552cb9aa60c1ea6c964ef368d5ee1d5157b055de9013ae031215c683b0",
+          "report": {
+            "path": "runs/cp8/hls/sim/report/clip_copy_checked_cosim.rpt",
+            "sha256": "15f1609522cea4b2efdc7b484aa7f9a3126a62e5d4243a1ec00a4328a506625a"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_original_synthesis_files_identical": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        },
+        "P9": {
+          "name": "copy_P9_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 221.661,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": [
+            2,
+            2
+          ],
+          "total_execution_cycles": 524309,
+          "receipt": "receipts/copy_P9_cosim_01.json",
+          "receipt_sha256": "bcec789876e35c369e681465b45e2d046e5c60df2d36b701638ad4a67342edd7",
+          "report": {
+            "path": "runs/cp9/hls/sim/report/clip_copy_checked_cosim.rpt",
+            "sha256": "faee410f3d0949b7291a86ab755c411a10897ccf0c45d1d4de94226a9c0adbf1"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_original_synthesis_files_identical": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        },
+        "P10": {
+          "name": "copy_P10_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 221.175,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": [
+            2,
+            2
+          ],
+          "total_execution_cycles": 524309,
+          "receipt": "receipts/copy_P10_cosim_01.json",
+          "receipt_sha256": "322378f1fb73e1ba41a0c20cd38939fe70668df55dc1a4f29abf75913856632d",
+          "report": {
+            "path": "runs/cp10/hls/sim/report/clip_copy_checked_cosim.rpt",
+            "sha256": "1a0b91748089ebe2325305fe4aa802412a38dd15112090034e8963fc95cc8e19"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_original_synthesis_files_identical": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        }
+      }
+    },
+    "spectrum256_pl": {
+      "status": "passed",
+      "scope": "Original spectrum TB,311 transactions, unchanged exact-float checks. Post-run integrity checks use actual pre-cosim hashes:66 HDL,4 dat,1 top csynth XML (71 of110 syn files),172 exported files and40 frozen inputs. The other39 syn files have no saved prehash. Observed generated Python cache is inventoried separately. Verilog/XSim vector coverage only.",
+      "accepted_units": [
+        "original_tb"
+      ],
+      "pending_or_unaccepted_units": [],
+      "units": {
+        "original_tb": {
+          "name": "spectrum256_pl_cosim_02",
+          "status": "passed",
+          "elapsed_seconds": 471.513,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 311,
+          "last_rtl_progress": [
+            311,
+            311
+          ],
+          "total_execution_cycles": 550413,
+          "receipt": "receipts/spectrum256_pl_cosim_02.json",
+          "receipt_sha256": "72a1ad18bbcbeab2a1283a8279bb569b004e5ea42b704b431e5efc3168803a18",
+          "report": {
+            "path": "runs/spectrum256_pl_synth_01/hls/sim/report/spectrum256_pl_cosim.rpt",
+            "sha256": "fdb7976f8427f08b045ec8453934bd5310e816874d31f798c0622dc51a697cab"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_prehash_manifests_predate_cosim": true,
+            "post_hash_all_prehashed_export_files_unchanged": true,
+            "post_hash_all_synthesized_hdl_match_pre_cosim_export_hashes": true,
+            "post_hash_prehashed_dat_files_unchanged": true,
+            "post_hash_prehashed_top_csynth_xml_unchanged": true,
+            "post_hash_frozen_source_manifest_files_unchanged": true,
+            "post_hash_source_snapshot_zip_matches_frozen_manifest": true,
+            "post_hash_source_extras_only_observed_generated_cache": true,
+            "post_hash_registered_hls_source_and_tb_are_frozen_inputs": true,
+            "post_hash_verification_status_passed": true,
+            "post_hash_bound_to_selected_cosim_receipt": true,
+            "prehash_manifest_provenance_unchanged": true
+          }
+        }
+      }
+    },
+    "roi256": {
+      "status": "partial",
+      "scope": "Seven groups,13 calls including repeated seeds cover9 original cases; full1280x800 frame/256x256 ROI and production AXI depths. Original golden tolerances and guards retained. GAP preserves invalid-frame recovery; S3 is only a BOUND seed. No uninterrupted9-call operation or all original adjacency coverage.",
+      "accepted_units": [
+        "LOW",
+        "RANGE"
+      ],
+      "pending_or_unaccepted_units": [
+        "P1",
+        "P2",
+        "P3",
+        "GAP",
+        "BOUND"
+      ],
+      "units": {
+        "P1": {
+          "name": "roi_P1_cosim_01",
+          "status": "failed",
+          "elapsed_seconds": 1454.74,
+          "exit_code": 1,
+          "completion_marker_found": false,
+          "completed_pass": false,
+          "verilog_status": "Fail",
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": [
+            0,
+            2
+          ],
+          "receipt": "receipts/roi_P1_cosim_01.json",
+          "receipt_sha256": "9cf45ab3fdb3abc5f6505aaf31178e39667e9345bed223f84492de0b5f396051",
+          "report": {
+            "path": "runs/rp1/hls/sim/report/roi256_cosim.rpt",
+            "sha256": "291f24aba3988692ce38904093c93560fcb067b1a6ef87b8ec5ca480e050b22a"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": false,
+            "actual_end_marker_in_log": false,
+            "verilog_report_pass": false,
+            "all_expected_transactions_completed": false,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_original_synthesis_identical": true,
+            "post_hash_protected_inputs_verified": true,
+            "post_hash_c_trace_audit_verified": true
+          }
+        },
+        "P2": {
+          "name": "roi_P2_cosim_01",
+          "status": "not_run",
+          "completed_pass": false,
+          "verilog_status": null,
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": null,
+          "receipt": null,
+          "report": null,
+          "acceptance_checks": {
+            "completed_run_receipt": false,
+            "actual_end_marker_in_log": false,
+            "verilog_report_pass": false,
+            "all_expected_transactions_completed": false,
+            "not_dry_run": true,
+            "post_hash_component_matches": false,
+            "post_hash_original_synthesis_identical": false,
+            "post_hash_protected_inputs_verified": false,
+            "post_hash_c_trace_audit_verified": false
+          }
+        },
+        "P3": {
+          "name": "roi_P3_cosim_01",
+          "status": "not_run",
+          "completed_pass": false,
+          "verilog_status": null,
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": null,
+          "receipt": null,
+          "report": null,
+          "acceptance_checks": {
+            "completed_run_receipt": false,
+            "actual_end_marker_in_log": false,
+            "verilog_report_pass": false,
+            "all_expected_transactions_completed": false,
+            "not_dry_run": true,
+            "post_hash_component_matches": false,
+            "post_hash_original_synthesis_identical": false,
+            "post_hash_protected_inputs_verified": false,
+            "post_hash_c_trace_audit_verified": false
+          }
+        },
+        "GAP": {
+          "name": "roi_GAP_cosim_01",
+          "status": "not_run",
+          "completed_pass": false,
+          "verilog_status": null,
+          "expected_runtime_top_calls": 3,
+          "last_rtl_progress": null,
+          "receipt": null,
+          "report": null,
+          "acceptance_checks": {
+            "completed_run_receipt": false,
+            "actual_end_marker_in_log": false,
+            "verilog_report_pass": false,
+            "all_expected_transactions_completed": false,
+            "not_dry_run": true,
+            "post_hash_component_matches": false,
+            "post_hash_original_synthesis_identical": false,
+            "post_hash_protected_inputs_verified": false,
+            "post_hash_c_trace_audit_verified": false
+          }
+        },
+        "BOUND": {
+          "name": "roi_BOUND_cosim_01",
+          "status": "not_run",
+          "completed_pass": false,
+          "verilog_status": null,
+          "expected_runtime_top_calls": 2,
+          "last_rtl_progress": null,
+          "receipt": null,
+          "report": null,
+          "acceptance_checks": {
+            "completed_run_receipt": false,
+            "actual_end_marker_in_log": false,
+            "verilog_report_pass": false,
+            "all_expected_transactions_completed": false,
+            "not_dry_run": true,
+            "post_hash_component_matches": false,
+            "post_hash_original_synthesis_identical": false,
+            "post_hash_protected_inputs_verified": false,
+            "post_hash_c_trace_audit_verified": false
+          }
+        },
+        "LOW": {
+          "name": "roi_LOW_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 234.445,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 1,
+          "last_rtl_progress": [
+            1,
+            1
+          ],
+          "total_execution_cycles": 66859,
+          "receipt": "receipts/roi_LOW_cosim_01.json",
+          "receipt_sha256": "718802c56fc3c932feb4fdbd938c12c2218baa9339d658e12bbd3e3de8473013",
+          "report": {
+            "path": "runs/rlow/hls/sim/report/roi256_cosim.rpt",
+            "sha256": "afcf3a2dbb984dfb6d5d03cd504cc4b1a0ed2c86377d1aaed1a6f458d7d9c005"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_original_synthesis_identical": true,
+            "post_hash_protected_inputs_verified": true,
+            "post_hash_c_trace_audit_verified": true
+          }
+        },
+        "RANGE": {
+          "name": "roi_RANGE_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 230.991,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 1,
+          "last_rtl_progress": [
+            1,
+            1
+          ],
+          "total_execution_cycles": 66843,
+          "receipt": "receipts/roi_RANGE_cosim_01.json",
+          "receipt_sha256": "7755468bc086409ac7b6365876e15de60b16376077e18bd2710df92e33c0d76d",
+          "report": {
+            "path": "runs/rrange/hls/sim/report/roi256_cosim.rpt",
+            "sha256": "b6ea3829734f04ad386125c6dde60b78b55558a1ad20ce6a2eaf2102b48e4777"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_original_synthesis_identical": true,
+            "post_hash_protected_inputs_verified": true,
+            "post_hash_c_trace_audit_verified": true
+          }
+        }
+      }
+    },
+    "motion60_full_temporal_v2": {
+      "status": "passed",
+      "scope": "G0:N30/31 x pixels1/64/65, NaN and disabled; G1/G2/G3:N120 x pixels1/64/65. AXI depth15360;70 synthesized HDL files byte-equal to production. Does not validate production memory aperture122880000 or uninterrupted11 calls.",
+      "accepted_units": [
+        "G0",
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "pending_or_unaccepted_units": [],
+      "units": {
+        "G0": {
+          "name": "temporal_G0_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 811.975,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 8,
+          "last_rtl_progress": [
+            8,
+            8
+          ],
+          "total_execution_cycles": 728735,
+          "receipt": "receipts/temporal_G0_cosim_01.json",
+          "receipt_sha256": "6741c9aa53a54e7fe8fff5503acca401ae299bbead41904da3ea3a70c1fa0952",
+          "report": {
+            "path": "runs/tg0/hls/sim/report/clip_temporal_full_cosim.rpt",
+            "sha256": "8255edd448cfa191971e8f6aff5b356f6118128b04ada930959685ea157f6c87"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_124_syn_files_unchanged": true,
+            "post_hash_all_70_hdl_bytes_equal_to_production": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        },
+        "G1": {
+          "name": "temporal_G1_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 1090.431,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 1,
+          "last_rtl_progress": [
+            1,
+            1
+          ],
+          "total_execution_cycles": 1016745,
+          "receipt": "receipts/temporal_G1_cosim_01.json",
+          "receipt_sha256": "289de1bb6bc9f513655a788c93acbf07395eaf766f976b0b9c2c4b2689e5eb37",
+          "report": {
+            "path": "runs/tg1/hls/sim/report/clip_temporal_full_cosim.rpt",
+            "sha256": "32e0d45a9da086129790e1beffd9eaa7b2460d35f332f2b6ea387db08f3e0e70"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_124_syn_files_unchanged": true,
+            "post_hash_all_70_hdl_bytes_equal_to_production": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        },
+        "G2": {
+          "name": "temporal_G2_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 1260.501,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 1,
+          "last_rtl_progress": [
+            1,
+            1
+          ],
+          "total_execution_cycles": 1177728,
+          "receipt": "receipts/temporal_G2_cosim_01.json",
+          "receipt_sha256": "8f71b68bbb9638bf567f444acf44da3ae85c337de441ff2039a04d8d5b0cf05d",
+          "report": {
+            "path": "runs/tg2/hls/sim/report/clip_temporal_full_cosim.rpt",
+            "sha256": "2b8697567c699606843d44b2b6709824e59568e704b29067b916172716f258ac"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_124_syn_files_unchanged": true,
+            "post_hash_all_70_hdl_bytes_equal_to_production": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        },
+        "G3": {
+          "name": "temporal_G3_cosim_01",
+          "status": "passed",
+          "elapsed_seconds": 1934.752,
+          "exit_code": 0,
+          "completion_marker_found": true,
+          "completed_pass": true,
+          "verilog_status": "Pass",
+          "expected_runtime_top_calls": 1,
+          "last_rtl_progress": [
+            1,
+            1
+          ],
+          "total_execution_cycles": 2121860,
+          "receipt": "receipts/temporal_G3_cosim_01.json",
+          "receipt_sha256": "c1fc905f8167368077e09258a333b11f089085b9de6546b9de9a4b6247b01025",
+          "report": {
+            "path": "runs/tg3/hls/sim/report/clip_temporal_full_cosim.rpt",
+            "sha256": "42ae70970a9364950d9a0a959f3d4156222261d8970caeb50dacf1419494b4d9"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": true,
+            "actual_end_marker_in_log": true,
+            "verilog_report_pass": true,
+            "all_expected_transactions_completed": true,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_124_syn_files_unchanged": true,
+            "post_hash_all_70_hdl_bytes_equal_to_production": true,
+            "post_hash_protected_inputs_unchanged": true,
+            "post_hash_solution_owner_matches": true
+          }
+        }
+      }
+    },
+    "motion60_shared": {
+      "status": "incomplete",
+      "scope": "Two separate full1280x800 alpha50/mode0 single-call RTL runs, exact full output/packed-state comparison, production AXI depths. Warm arithmetic acceptance requires cold full-state RTL PASS and matching C-state chain. No uninterrupted RTL restart, rejection paths, other modes or post-export FIFO-patch validation.",
+      "accepted_units": [],
+      "pending_or_unaccepted_units": [
+        "cold",
+        "warm"
+      ],
+      "units": {
+        "cold": {
+          "name": "motion_cold_single_cosim_01",
+          "status": "failed",
+          "elapsed_seconds": 3472.876,
+          "exit_code": 1,
+          "completion_marker_found": false,
+          "completed_pass": false,
+          "verilog_status": "Fail",
+          "expected_runtime_top_calls": 1,
+          "last_rtl_progress": [
+            0,
+            1
+          ],
+          "receipt": "receipts/motion_cold_single_cosim_01.json",
+          "receipt_sha256": "4565687a5f01fd244a7a37c7bc48898eafeff83180a6a685874090b37e3b23ee",
+          "report": {
+            "path": "runs/mc01/hls/sim/report/motion60_shared_cosim.rpt",
+            "sha256": "e0540105a93074f25e85d90f7664ee9b5585511f78ab6bd4786cfcea40b4d165"
+          },
+          "acceptance_checks": {
+            "completed_run_receipt": false,
+            "actual_end_marker_in_log": false,
+            "verilog_report_pass": false,
+            "all_expected_transactions_completed": false,
+            "not_dry_run": true,
+            "post_hash_component_matches": true,
+            "post_hash_all_original_synthesis_files_identical": true,
+            "post_hash_protected_inputs_and_fixture_full_sha_verified": true,
+            "post_hash_fixture_manifest_matches": true
+          }
+        },
+        "warm": {
+          "name": "motion_warm_cosim_01",
+          "status": "not_run",
+          "completed_pass": false,
+          "verilog_status": null,
+          "expected_runtime_top_calls": 1,
+          "last_rtl_progress": null,
+          "receipt": null,
+          "report": null,
+          "acceptance_checks": {
+            "completed_run_receipt": false,
+            "actual_end_marker_in_log": false,
+            "verilog_report_pass": false,
+            "all_expected_transactions_completed": false,
+            "not_dry_run": true,
+            "post_hash_component_matches": false,
+            "post_hash_all_original_synthesis_files_identical": false,
+            "post_hash_protected_inputs_and_fixture_full_sha_verified": false,
+            "post_hash_fixture_manifest_matches": false
+          }
+        }
+      }
+    }
+  },
+  "formal_equivalence_claimed": false,
+  "board_acceptance_claimed": false,
+  "all_rtl_passed_claimed": false
+}

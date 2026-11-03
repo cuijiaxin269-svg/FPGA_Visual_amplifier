@@ -1,0 +1,2773 @@
+{
+  "schema": 1,
+  "status": "passed_with_existing_warnings_and_report_limits",
+  "checked_at": "2026-11-04T00:45:39.870222+08:00",
+  "audit_script_sha256": "f41fd47d9ab202fbc6c68d46e428fd5c37c75490c5e2f13a81ba82422cf2f148",
+  "scope": "Eight final routed reports and actual clock/pin/reset gates only; not runner/bitstream, board or functional RTL completion.",
+  "baseline_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "baseline_git_blob_checks": {
+    "routed_timing.txt": {
+      "git_blob": "7a4bc236fb801a2ca84a6a3142a69a13ad9156c8",
+      "matches": true
+    },
+    "routed_drc.txt": {
+      "git_blob": "581b794cb67c02a490d2869e3861c1eb7eb6048f",
+      "matches": true
+    },
+    "routed_cdc.txt": {
+      "git_blob": "bf6778f29b3dfb8ca35f69b10242a85a8d32e636",
+      "matches": true
+    },
+    "routed_bus_skew.txt": {
+      "git_blob": "28d7f19369a62e73c7cfe402a195bbc72903900a",
+      "matches": true
+    },
+    "routed_io.txt": {
+      "git_blob": "8eec610c36257bd1578f2ca239e7ac0556771e29",
+      "matches": true
+    },
+    "routed_utilization.txt": {
+      "git_blob": "391d4bf8f84617648863106ebda774ff71f8af53",
+      "matches": true
+    },
+    "clock_source_gate_standalone_qspi2025_2.txt": {
+      "git_blob": "1eab71ed8fb2f96688feeed2dcaa65a14780c19f",
+      "matches": true
+    },
+    "methodology_standalone_qspi2025_2.txt": {
+      "git_blob": "07cb74300b644d90baba6bd60b01f74b267c63e7",
+      "matches": true
+    },
+    "README.md": {
+      "git_blob": "08815745e3351c1972253045f52124044af35179",
+      "matches": true
+    }
+  },
+  "report_files": {
+    "candidate": {
+      "routed_timing.txt": {
+        "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\routed_timing.txt",
+        "bytes": 456542,
+        "sha256": "3aff526a02ecaeccd7b459d3e2969acd35d6518e40cdb9cfca16da9e49d5485b",
+        "mtime": "2026-11-04T00:33:23.049038+08:00"
+      },
+      "routed_drc.txt": {
+        "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\routed_drc.txt",
+        "bytes": 2537937,
+        "sha256": "8c249be8130fd28ea0b217aa96a70ac9a4651cbf82e0a118731d75920e485a9a",
+        "mtime": "2026-11-04T00:35:16.267660+08:00"
+      },
+      "routed_cdc.txt": {
+        "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\routed_cdc.txt",
+        "bytes": 70462,
+        "sha256": "b0dbffcbb3e490f422910b6f6e079e1a9fb9d2a8f272ac06a40fa3a71333e382",
+        "mtime": "2026-11-04T00:35:41.885753+08:00"
+      },
+      "routed_bus_skew.txt": {
+        "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\routed_bus_skew.txt",
+        "bytes": 784437,
+        "sha256": "fd24999cf611a85e13f2b63bea7693713fc20fb10bcd68bb174273683f1fc436",
+        "mtime": "2026-11-04T00:35:43.296617+08:00"
+      },
+      "routed_io.txt": {
+        "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\routed_io.txt",
+        "bytes": 291691,
+        "sha256": "1ef118cd0cf8f16733c9cfd392e3c2d60fb9c6aedd26414b3b22a756b3d7c72b",
+        "mtime": "2026-11-04T00:35:43.627620+08:00"
+      },
+      "routed_utilization.txt": {
+        "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\routed_utilization.txt",
+        "bytes": 17194,
+        "sha256": "d3f15c0ffcafa78cf641346dfc57e3fde731d343297e519a3a92600783af5684",
+        "mtime": "2026-11-04T00:35:50.756452+08:00"
+      },
+      "clock_source_gate_standalone_qspi2025_2.txt": {
+        "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\clock_source_gate_standalone_qspi2025_2.txt",
+        "bytes": 90,
+        "sha256": "a0de3f038daa43419c5f77dc5d0420102755d2ffb99bb1c3345f60035a057cce",
+        "mtime": "2026-11-04T00:40:09.025992+08:00"
+      },
+      "methodology_standalone_qspi2025_2.txt": {
+        "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\reports\\methodology_standalone_qspi2025_2.txt",
+        "bytes": 6017,
+        "sha256": "5578f80e8cfe82ab86558b868c09b8e900e0338d57ab1d448d89f192efdcd500",
+        "mtime": "2026-11-04T00:39:33.181929+08:00"
+      }
+    },
+    "baseline": {
+      "routed_timing.txt": {
+        "path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\vivado_2025_2\\routed_timing.txt",
+        "bytes": 456412,
+        "sha256": "0cd234eedb1f2f4ef3eeda8395c39d62441bf4c93977b7f20ea82f4541897b76",
+        "mtime": "2026-10-30T22:26:09.393423+08:00"
+      },
+      "routed_drc.txt": {
+        "path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\vivado_2025_2\\routed_drc.txt",
+        "bytes": 2537927,
+        "sha256": "e78ef409a3b40f12c84bb6a044c1fe9921a5ac1b688b15302af171657d2f83f7",
+        "mtime": "2026-10-30T22:26:35.148742+08:00"
+      },
+      "routed_cdc.txt": {
+        "path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\vivado_2025_2\\routed_cdc.txt",
+        "bytes": 70386,
+        "sha256": "61af0525816891e646315b505ec4918878ceb8ab41bfbb03eb9bcb988462f176",
+        "mtime": "2026-10-30T22:26:38.983114+08:00"
+      },
+      "routed_bus_skew.txt": {
+        "path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\vivado_2025_2\\routed_bus_skew.txt",
+        "bytes": 784359,
+        "sha256": "792eab5345f918042e9d344c526b73e0d44653eeae2d0ba9c290ca7de7a82bc2",
+        "mtime": "2026-10-30T22:26:39.457945+08:00"
+      },
+      "routed_io.txt": {
+        "path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\vivado_2025_2\\routed_io.txt",
+        "bytes": 291637,
+        "sha256": "94b3ef7a9c2ce3017a09f7410689915d88a70612e31d62102f84fe3441d67f07",
+        "mtime": "2026-10-30T22:26:39.602576+08:00"
+      },
+      "routed_utilization.txt": {
+        "path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\vivado_2025_2\\routed_utilization.txt",
+        "bytes": 17104,
+        "sha256": "dc60fa70bb7cb2bdf462e2ca6b9fe887f8bb7e58ce8f861bb1f3594097704d9c",
+        "mtime": "2026-10-30T22:26:42.461597+08:00"
+      },
+      "clock_source_gate_standalone_qspi2025_2.txt": {
+        "path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\vivado_2025_2\\clock_source_gate_standalone_qspi2025_2.txt",
+        "bytes": 90,
+        "sha256": "a0de3f038daa43419c5f77dc5d0420102755d2ffb99bb1c3345f60035a057cce",
+        "mtime": "2026-10-30T22:27:36.176039+08:00"
+      },
+      "methodology_standalone_qspi2025_2.txt": {
+        "path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\vivado_2025_2\\methodology_standalone_qspi2025_2.txt",
+        "bytes": 5892,
+        "sha256": "d8fff205b7b6e68d1ea6ea9d4da72f6c527fcf41d3b931accfb3a40921d7dffb",
+        "mtime": "2026-10-30T22:27:28.525098+08:00"
+      }
+    }
+  },
+  "all_eight_reports_nonempty_and_sha_stable": true,
+  "timing": {
+    "global": {
+      "wns_ns": 0.177,
+      "tns_ns": 0.0,
+      "setup_failing_endpoints": 0,
+      "setup_total_endpoints": 520460,
+      "whs_ns": 0.01,
+      "ths_ns": 0.0,
+      "hold_failing_endpoints": 0,
+      "hold_total_endpoints": 519856,
+      "wpws_ns": 0.264,
+      "tpws_ns": 0.0,
+      "pulse_width_failing_endpoints": 0,
+      "pulse_width_total_endpoints": 225476
+    },
+    "fclk1": {
+      "wns_ns": 0.177,
+      "tns_ns": 0.0,
+      "setup_failing_endpoints": 0,
+      "setup_total_endpoints": 484949,
+      "whs_ns": 0.01,
+      "ths_ns": 0.0,
+      "hold_failing_endpoints": 0,
+      "hold_total_endpoints": 484949,
+      "wpws_ns": 2.565,
+      "tpws_ns": 0.0,
+      "pulse_width_failing_endpoints": 0,
+      "pulse_width_total_endpoints": 208990
+    },
+    "clocks": {
+      "clk_fpga_0": {
+        "waveform_ns": [
+          0.0,
+          5.0
+        ],
+        "period_ns": 10.0,
+        "frequency_mhz_reported": 100.0
+      },
+      "fast": {
+        "waveform_ns": [
+          0.0,
+          1.347
+        ],
+        "period_ns": 2.694,
+        "frequency_mhz_reported": 371.25
+      },
+      "pixel_clock_clk_out1": {
+        "waveform_ns": [
+          0.0,
+          5.387
+        ],
+        "period_ns": 13.468,
+        "frequency_mhz_reported": 74.25
+      },
+      "fb_out": {
+        "waveform_ns": [
+          0.0,
+          25.0
+        ],
+        "period_ns": 50.0,
+        "frequency_mhz_reported": 20.0
+      },
+      "fb_in": {
+        "waveform_ns": [
+          0.0,
+          25.0
+        ],
+        "period_ns": 50.0,
+        "frequency_mhz_reported": 20.0
+      },
+      "clk_fpga_1": {
+        "waveform_ns": [
+          0.0,
+          3.333
+        ],
+        "period_ns": 6.666,
+        "frequency_mhz_reported": 150.015
+      },
+      "clk_fpga_2": {
+        "waveform_ns": [
+          0.0,
+          2.5
+        ],
+        "period_ns": 5.0,
+        "frequency_mhz_reported": 200.0
+      },
+      "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK": {
+        "waveform_ns": [
+          0.0,
+          16.5
+        ],
+        "period_ns": 33.0,
+        "frequency_mhz_reported": 30.303
+      },
+      "dphy_clk_hs_p": {
+        "waveform_ns": [
+          0.0,
+          2.5
+        ],
+        "period_ns": 5.0,
+        "frequency_mhz_reported": 200.0
+      },
+      "csi_rxbyteclkhs": {
+        "waveform_ns": [
+          0.0,
+          10.0
+        ],
+        "period_ns": 20.0,
+        "frequency_mhz_reported": 50.0
+      }
+    },
+    "check_timing": {
+      "no_clock": 0,
+      "constant_clock": 0,
+      "pulse_width_clock": 0,
+      "unconstrained_internal_endpoints": 0,
+      "no_input_delay": 9,
+      "no_output_delay": 4,
+      "multiple_clock": 0,
+      "generated_clocks": 0,
+      "loops": 0,
+      "partial_input_delay": 0,
+      "partial_output_delay": 0,
+      "latch_loops": 0
+    },
+    "all_user_specified_constraints_met": true,
+    "top_port_path_examples": {
+      "Source": [
+        "dphy_clk_lp_n",
+        "dphy_clk_lp_p",
+        "dphy_data_hs_p[0]",
+        "dphy_data_hs_p[1]",
+        "dphy_data_lp_n[1]",
+        "key0_n"
+      ],
+      "Destination": [
+        "TMDS_0_clk_n",
+        "TMDS_0_data_n[0]"
+      ]
+    }
+  },
+  "timing_summary_and_clock_checks_equal_baseline": true,
+  "nominal_hls_clock_mhz": 150,
+  "clock_display_note": "Original constraints report FCLK1 period6.666ns/frequency150.015MHz due report precision. Nominal150MHz and original constraints were not relaxed.",
+  "io_limits": {
+    "no_input_delay": 9,
+    "no_output_delay": 4,
+    "eight_methodology_missing_input_ports": [
+      "dphy_clk_lp_n",
+      "dphy_clk_lp_p",
+      "dphy_data_hs_p[0]",
+      "dphy_data_hs_p[1]",
+      "dphy_data_lp_n[0]",
+      "dphy_data_lp_n[1]",
+      "dphy_data_lp_p[0]",
+      "dphy_data_lp_p[1]"
+    ],
+    "ninth_input": "key0_n, intentional false path to first synchronizer",
+    "four_output_groups": "HDMI TMDS differential output groups. Reported worst-path examples do not enumerate every missing-delay endpoint.",
+    "same_methodology_ports_and_routed_io_as_baseline": true,
+    "external_MIPI_TMDS_timing_or_signal_integrity_proven": false
+  },
+  "drc": {
+    "summary": [
+      {
+        "rule": "CHECK-3",
+        "severity": "Warning",
+        "description": "Report rule limit reached",
+        "count": 2
+      },
+      {
+        "rule": "DPIP-1",
+        "severity": "Warning",
+        "description": "Input pipelining",
+        "count": 779
+      },
+      {
+        "rule": "DPOP-1",
+        "severity": "Warning",
+        "description": "PREG Output pipelining",
+        "count": 871
+      },
+      {
+        "rule": "DPOP-2",
+        "severity": "Warning",
+        "description": "MREG Output pipelining",
+        "count": 195
+      },
+      {
+        "rule": "DPREG-4",
+        "severity": "Warning",
+        "description": "DSP48E1_PregDynOpmodeZmuxP:",
+        "count": 91
+      },
+      {
+        "rule": "PDCN-1569",
+        "severity": "Warning",
+        "description": "LUT equation term check",
+        "count": 74
+      },
+      {
+        "rule": "PDRC-61",
+        "severity": "Warning",
+        "description": "SLICEM_5lutO5_C5",
+        "count": 1
+      },
+      {
+        "rule": "REQP-107",
+        "severity": "Warning",
+        "description": "enum_IOBDELAY_BOTH_enum_IOBDELAY_IBUF_connects_O",
+        "count": 2
+      },
+      {
+        "rule": "REQP-1839",
+        "severity": "Warning",
+        "description": "RAMB36 async control check",
+        "count": 20
+      },
+      {
+        "rule": "REQP-1840",
+        "severity": "Warning",
+        "description": "RAMB18 async control check",
+        "count": 20
+      },
+      {
+        "rule": "RTSTAT-10",
+        "severity": "Warning",
+        "description": "No routable loads",
+        "count": 1
+      },
+      {
+        "rule": "AVAL-4",
+        "severity": "Advisory",
+        "description": "enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND",
+        "count": 626
+      },
+      {
+        "rule": "AVAL-5",
+        "severity": "Advisory",
+        "description": "enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND",
+        "count": 163
+      },
+      {
+        "rule": "REQP-165",
+        "severity": "Advisory",
+        "description": "writefirst",
+        "count": 14
+      },
+      {
+        "rule": "REQP-181",
+        "severity": "Advisory",
+        "description": "writefirst",
+        "count": 9
+      },
+      {
+        "rule": "REQP-1725",
+        "severity": "Advisory",
+        "description": "DSP_Abus_sign_bit_alert",
+        "count": 105
+      }
+    ],
+    "details_count": 2973,
+    "error_count": 0,
+    "critical_warning_count": 0,
+    "detail_comparison": [
+      {
+        "rule": "AVAL-4",
+        "baseline_count": 626,
+        "candidate_count": 626,
+        "matching_detail_count": 626
+      },
+      {
+        "rule": "AVAL-5",
+        "baseline_count": 163,
+        "candidate_count": 163,
+        "matching_detail_count": 163
+      },
+      {
+        "rule": "CHECK-3",
+        "baseline_count": 2,
+        "candidate_count": 2,
+        "matching_detail_count": 2
+      },
+      {
+        "rule": "DPIP-1",
+        "baseline_count": 779,
+        "candidate_count": 779,
+        "matching_detail_count": 779
+      },
+      {
+        "rule": "DPOP-1",
+        "baseline_count": 871,
+        "candidate_count": 871,
+        "matching_detail_count": 871
+      },
+      {
+        "rule": "DPOP-2",
+        "baseline_count": 195,
+        "candidate_count": 195,
+        "matching_detail_count": 195
+      },
+      {
+        "rule": "DPREG-4",
+        "baseline_count": 91,
+        "candidate_count": 91,
+        "matching_detail_count": 91
+      },
+      {
+        "rule": "PDCN-1569",
+        "baseline_count": 74,
+        "candidate_count": 74,
+        "matching_detail_count": 74
+      },
+      {
+        "rule": "PDRC-61",
+        "baseline_count": 1,
+        "candidate_count": 1,
+        "matching_detail_count": 1
+      },
+      {
+        "rule": "REQP-107",
+        "baseline_count": 2,
+        "candidate_count": 2,
+        "matching_detail_count": 2
+      },
+      {
+        "rule": "REQP-165",
+        "baseline_count": 14,
+        "candidate_count": 14,
+        "matching_detail_count": 14
+      },
+      {
+        "rule": "REQP-1725",
+        "baseline_count": 105,
+        "candidate_count": 105,
+        "matching_detail_count": 105
+      },
+      {
+        "rule": "REQP-181",
+        "baseline_count": 9,
+        "candidate_count": 9,
+        "matching_detail_count": 9
+      },
+      {
+        "rule": "REQP-1839",
+        "baseline_count": 20,
+        "candidate_count": 20,
+        "matching_detail_count": 20
+      },
+      {
+        "rule": "REQP-1840",
+        "baseline_count": 20,
+        "candidate_count": 20,
+        "matching_detail_count": 20
+      },
+      {
+        "rule": "RTSTAT-10",
+        "baseline_count": 1,
+        "candidate_count": 1,
+        "matching_detail_count": 0
+      }
+    ],
+    "matched_after_exact_temporal_identifier_mapping": 2972,
+    "mapping_evidence": {
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\comparisons\\temporal_line_name_audit.json",
+      "sha256": "0359e1d470e7b60633c062abd0db5da9838c512af3d51af0b72318926cc238a4",
+      "identifier_mapping_count": 880,
+      "not_formal_equivalence": true
+    },
+    "remaining_differences": {
+      "baseline_only": {
+        "reported_nets": 956,
+        "shown_first": 15,
+        "listed_total": 633,
+        "shown_endpoints": [
+          "capture_i/display_mem/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/display_mem/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/display_mem/s01_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/m_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/m00_couplers/auto_ds/inst/gen_downsizer.gen_cascaded_downsizer.first_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s02_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_ar/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s04_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s07_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s08_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/state_large/s00_couplers/auto_ds/inst/gen_downsizer.gen_cascaded_downsizer.gen_axi3_conv.axi3_conv_inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/state_large/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/state_small/s00_couplers/auto_ds/inst/gen_downsizer.gen_cascaded_downsizer.gen_axi3_conv.axi3_conv_inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/state_small/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_5_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS"
+        ],
+        "full_shown_detail": "No routable loads  \n956 net(s) have no routable loads. The problem bus(es) and/or net(s) are capture_i/display_mem/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/display_mem/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/display_mem/s01_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/m_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/m00_couplers/auto_ds/inst/gen_downsizer.gen_cascaded_downsizer.first_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s02_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_ar/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s04_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s07_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s08_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/state_large/s00_couplers/auto_ds/inst/gen_downsizer.gen_cascaded_downsizer.gen_axi3_conv.axi3_conv_inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/state_large/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/state_small/s00_couplers/auto_ds/inst/gen_downsizer.gen_cascaded_downsizer.gen_axi3_conv.axi3_conv_inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/state_small/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ndbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_5_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ndbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS\n (the first 15 of 633 listed nets/buses).\nRelated violations: <none>"
+      },
+      "candidate_only": {
+        "reported_nets": 956,
+        "shown_first": 15,
+        "listed_total": 633,
+        "shown_endpoints": [
+          "capture_i/display_mem/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/display_mem/s01_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/s_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/m00_couplers/auto_ds/inst/gen_downsizer.gen_cascaded_downsizer.first_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/m00_couplers/auto_ds/inst/gen_downsizer.gen_cascaded_downsizer.first_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s03_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s04_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/m_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s04_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/s_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s05_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst/dw_fifogen_aw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s08_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/m_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/mem/s08_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/s_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "capture_i/state_small/s00_couplers/auto_ds/inst/gen_downsizer.gen_cascaded_downsizer.first_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i",
+          "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS"
+        ],
+        "full_shown_detail": "No routable loads  \n956 net(s) have no routable loads. The problem bus(es) and/or net(s) are capture_i/display_mem/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/display_mem/s01_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/s_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/m00_couplers/auto_ds/inst/gen_downsizer.gen_cascaded_downsizer.first_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/m00_couplers/auto_ds/inst/gen_downsizer.gen_cascaded_downsizer.first_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s03_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s04_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/m_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s04_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/s_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s05_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst/dw_fifogen_aw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s08_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/m_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/mem/s08_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/s_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ncapture_i/state_small/s00_couplers/auto_ds/inst/gen_downsizer.gen_cascaded_downsizer.first_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,\ndbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS\n (the first 15 of 633 listed nets/buses).\nRelated violations: <none>"
+      }
+    },
+    "limitations": [
+      "REQP1839/1840 displayed violation counts capped at20 each.",
+      "RTSTAT10 reports956 nets/633 listed nets or buses but displays15; shown15 differ. Full633 endpoint identity is not claimed."
+    ]
+  },
+  "cdc": {
+    "summary": [
+      {
+        "rule": "CDC-3",
+        "severity": "Info",
+        "count": 135,
+        "description": "1-bit synchronized with ASYNC_REG property"
+      },
+      {
+        "rule": "CDC-6",
+        "severity": "Warning",
+        "count": 6,
+        "description": "Multi-bit synchronized with ASYNC_REG property"
+      },
+      {
+        "rule": "CDC-9",
+        "severity": "Info",
+        "count": 5,
+        "description": "Asynchronous reset synchronized with ASYNC_REG property"
+      },
+      {
+        "rule": "CDC-15",
+        "severity": "Warning",
+        "count": 6,
+        "description": "Clock enable controlled CDC structure detected"
+      }
+    ],
+    "all_152_detail_rows_match_baseline_multiset": true,
+    "critical_count": 0,
+    "warning_count": 12,
+    "all_detail_rows": [
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/display_dma/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_MIN_FOR_ASYNC.LITE_CLR_CDC_I/src_level_ff_reg/C",
+        "destination": "capture_i/display_dma/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_MIN_FOR_ASYNC.LITE_CLR_CDC_I/xpm_cdc_single_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/display_dma/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_MIN_FOR_ASYNC.LITE_IDLE_CDC_I/src_ff_reg/C",
+        "destination": "capture_i/display_dma/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_MIN_FOR_ASYNC.LITE_IDLE_CDC_I/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/display_dma/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_MIN_FOR_ASYNC.LITE_RESET_CDC_I/src_level_ff_reg/C",
+        "destination": "capture_i/display_dma/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_MIN_FOR_ASYNC.LITE_RESET_CDC_I/xpm_cdc_single_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/pixels_cdc/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg/C",
+        "destination": "capture_i/pixels_cdc/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/vdma/U0/AXI_LITE_REG_INTERFACE_I/GEN_S2MM_LITE_CROSSINGS.GEN_S2MM_CROSSINGS_ASYNC.S2MM_INTRPT_CROSSING_I/src_ff_reg/C",
+        "destination": "capture_i/vdma/U0/AXI_LITE_REG_INTERFACE_I/GEN_S2MM_LITE_CROSSINGS.GEN_S2MM_CROSSINGS_ASYNC.S2MM_INTRPT_CROSSING_I/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/vdma/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_MIN_FOR_ASYNC.LITE_CLR_CDC_I/src_level_ff_reg/C",
+        "destination": "capture_i/vdma/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_MIN_FOR_ASYNC.LITE_CLR_CDC_I/xpm_cdc_single_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/vdma/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_MIN_FOR_ASYNC.LITE_IDLE_CDC_I/src_ff_reg/C",
+        "destination": "capture_i/vdma/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_MIN_FOR_ASYNC.LITE_IDLE_CDC_I/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/vdma/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_MIN_FOR_ASYNC.LITE_RESET_CDC_I/src_level_ff_reg/C",
+        "destination": "capture_i/vdma/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_MIN_FOR_ASYNC.LITE_RESET_CDC_I/xpm_cdc_single_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "csi_rxbyteclkhs",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "capture_i/core/inst/byte_div_reg[7]/C",
+        "destination": "capture_i/core/inst/toggle_sync_reg[0]/D"
+      },
+      {
+        "source_clock": "csi_rxbyteclkhs",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-6",
+        "severity": "Warning",
+        "description": "Multi-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[0].rx_data_lane_inst/pkt_cnt_r_reg[15:0]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/dl0_pkt_cnt_sync/s_level_out_bus_d1_cdc_to_reg[15:0]/D"
+      },
+      {
+        "source_clock": "csi_rxbyteclkhs",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-6",
+        "severity": "Warning",
+        "description": "Multi-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[1].rx_data_lane_inst/pkt_cnt_r_reg[15:0]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/dl1_pkt_cnt_sync/s_level_out_bus_d1_cdc_to_reg[15:0]/D"
+      },
+      {
+        "source_clock": "csi_rxbyteclkhs",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-6",
+        "severity": "Warning",
+        "description": "Multi-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/active_lanes_reg[1:0]/C",
+        "destination": "capture_i/csi/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/xpm_array_single_04/syncstages_ff_reg[0][1:0]/D"
+      },
+      {
+        "source_clock": "csi_rxbyteclkhs",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "csi_rxbyteclkhs",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/icn_cmd_en_temp_reg/C",
+        "destination": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_1_reg[0]/D"
+      },
+      {
+        "source_clock": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/icn_cmd_en_temp_reg/C",
+        "destination": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_ld_reg[0]/D"
+      },
+      {
+        "source_clock": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/icn_cmd_en_temp_reg/C",
+        "destination": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_ld_reg[0]/D"
+      },
+      {
+        "source_clock": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/icn_cmd_en_temp_reg/C",
+        "destination": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/ctl_reg_en_1_reg[0]/D"
+      },
+      {
+        "source_clock": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/icn_cmd_en_temp_reg/C",
+        "destination": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/ctl_reg_en_1_reg[0]/D"
+      },
+      {
+        "source_clock": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-9",
+        "severity": "Info",
+        "description": "Asynchronous reset synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/wrdata_rst_reg/C",
+        "destination": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_5_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_rd_reg1_reg/PRE"
+      },
+      {
+        "source_clock": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/icn_cmd_en_temp_reg/C",
+        "destination": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_1_reg[0]/D"
+      },
+      {
+        "source_clock": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/icn_cmd_en_temp_reg/C",
+        "destination": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_ld_reg[0]/D"
+      },
+      {
+        "source_clock": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/icn_cmd_en_reg[5]/C",
+        "destination": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/icn_cmd_en_5_temp_reg/D"
+      },
+      {
+        "source_clock": "input port clock",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "key0_n",
+        "destination": "capture_i/sccb/inst/key_meta_reg/D"
+      },
+      {
+        "source_clock": "pixel_clock_clk_out1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "capture_i/hdmi_observe/inst/frame_toggle_reg/C",
+        "destination": "capture_i/hdmi_health/inst/sync_frame/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "pixel_clock_clk_out1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "capture_i/pixel_reset_guard/inst/release_pipeline_reg[15]/C",
+        "destination": "capture_i/hdmi_health/inst/sync_reset/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "pixel_clock_clk_out1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "capture_i/hdmi_observe/inst/selected_bars_reg/C",
+        "destination": "capture_i/hdmi_health/inst/sync_selected/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "pixel_clock_clk_out1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "capture_i/hdmi_observe/inst/snapshot_valid_reg/C",
+        "destination": "capture_i/hdmi_health/inst/sync_valid/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "pixel_clock_clk_out1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/dest_ack_reg/C",
+        "destination": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "pixel_clock_clk_out1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/dest_ack_reg/C",
+        "destination": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "pixel_clock_clk_out1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/dest_ack_reg/C",
+        "destination": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "pixel_clock_clk_out1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "pixel_clock_clk_out1",
+        "destination_clock": "clk_fpga_0",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m04_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m05_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m08_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/dest_ack_reg/C",
+        "destination": "capture_i/ctrl_intercon/m09_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/display_dma/U0/AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_LITE_IS_ASYNC.GEN_MM2S_ONLY_ASYNC_LITE_ACCESS.LITE_WVALID_MM2S_CDC_I/src_level_ff_reg/C",
+        "destination": "capture_i/display_dma/U0/AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_LITE_IS_ASYNC.GEN_MM2S_ONLY_ASYNC_LITE_ACCESS.LITE_WVALID_MM2S_CDC_I/xpm_cdc_single_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/display_dma/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_MIN_FOR_ASYNC.LITE_MIN_CDC_I/src_ff_reg/C",
+        "destination": "capture_i/display_dma/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_MIN_FOR_ASYNC.LITE_MIN_CDC_I/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/display_dma/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_RESET_FOR_ASYNC.HARD_RESET_CDC_I/src_ff_reg/C",
+        "destination": "capture_i/display_dma/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_RESET_FOR_ASYNC.HARD_RESET_CDC_I/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/pixels_cdc/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_wr_rst_ic_reg/C",
+        "destination": "capture_i/pixels_cdc/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/vdma/U0/AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_LITE_IS_ASYNC.GEN_S2MM_ONLY_ASYNC_LITE_ACCESS.LITE_WVALID_S2MM_CDC_I/src_level_ff_reg/C",
+        "destination": "capture_i/vdma/U0/AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_LITE_IS_ASYNC.GEN_S2MM_ONLY_ASYNC_LITE_ACCESS.LITE_WVALID_S2MM_CDC_I/xpm_cdc_single_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/vdma/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_MIN_FOR_ASYNC.LITE_MIN_CDC_I/src_ff_reg/C",
+        "destination": "capture_i/vdma/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_MIN_FOR_ASYNC.LITE_MIN_CDC_I/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/vdma/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_RESET_FOR_ASYNC.HARD_RESET_CDC_I/src_ff_reg/C",
+        "destination": "capture_i/vdma/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_RESET_FOR_ASYNC.HARD_RESET_CDC_I/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "pixel_clock_clk_out1",
+        "destination_clock": "clk_fpga_1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/display_cdc/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg/C",
+        "destination": "capture_i/display_cdc/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-6",
+        "severity": "Warning",
+        "description": "Multi-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/hs_settle_reg_ln1_axi_r2_reg[8:0]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/hs_settle_reg_ln1_sync/s_level_out_bus_d1_cdc_to_reg[8:0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-6",
+        "severity": "Warning",
+        "description": "Multi-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/hs_settle_reg_axi_r2_reg[8:0]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/hs_settle_reg_sync/s_level_out_bus_d1_cdc_to_reg[8:0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/gen_regs_wo_debug_wo_timeout.idelay_fixed_tap1_reg[0]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/idelay_value_sync/s_level_out_bus_d1_cdc_to_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/gen_regs_wo_debug_wo_timeout.idelay_fixed_tap1_reg[1]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/idelay_value_sync/s_level_out_bus_d1_cdc_to_reg[1]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/gen_regs_wo_debug_wo_timeout.idelay_fixed_tap1_reg[2]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/idelay_value_sync/s_level_out_bus_d1_cdc_to_reg[2]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/gen_regs_wo_debug_wo_timeout.idelay_fixed_tap1_reg[3]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/idelay_value_sync/s_level_out_bus_d1_cdc_to_reg[3]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/gen_regs_wo_debug_wo_timeout.idelay_fixed_tap1_reg[4]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/idelay_value_sync/s_level_out_bus_d1_cdc_to_reg[4]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/gen_regs_wo_debug_wo_timeout.idelay_fixed_tap1_reg[8]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/idelay_value_sync/s_level_out_bus_d1_cdc_to_reg[8]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/gen_regs_wo_debug_wo_timeout.idelay_fixed_tap1_reg[9]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/idelay_value_sync/s_level_out_bus_d1_cdc_to_reg[9]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/gen_regs_wo_debug_wo_timeout.idelay_fixed_tap1_reg[10]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/idelay_value_sync/s_level_out_bus_d1_cdc_to_reg[10]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/gen_regs_wo_debug_wo_timeout.idelay_fixed_tap1_reg[11]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/idelay_value_sync/s_level_out_bus_d1_cdc_to_reg[11]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/gen_regs_wo_debug_wo_timeout.idelay_fixed_tap1_reg[12]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/idelay_value_sync/s_level_out_bus_d1_cdc_to_reg[12]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-6",
+        "severity": "Warning",
+        "description": "Multi-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/gen_regs_wo_debug_wo_timeout.init_value_axi_reg[20:8]/C",
+        "destination": "capture_i/csi/inst/phy/inst/inst/bd_adc2_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_regs.gen_regs_wo_debug_wo_timeout.rx_reg_inst/init_reg_sync/s_level_out_bus_d1_cdc_to_reg[20:8]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 4,
+        "exception": "False Path",
+        "source": "capture_i/r100/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C",
+        "destination": "capture_i/csi/inst/r_sync/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "csi_rxbyteclkhs",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "csi_rxbyteclkhs",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "csi_rxbyteclkhs",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "input port clock",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dphy_clk_lp_n",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "input port clock",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dphy_clk_lp_p",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "input port clock",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dphy_data_lp_n[0]",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "input port clock",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dphy_data_lp_n[1]",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "input port clock",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dphy_data_lp_p[0]",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "input port clock",
+        "destination_clock": "clk_fpga_2",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dphy_data_lp_p[1]",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-9",
+        "severity": "Info",
+        "description": "Asynchronous reset synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-9",
+        "severity": "Info",
+        "description": "Asynchronous reset synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-9",
+        "severity": "Info",
+        "description": "Asynchronous reset synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-15",
+        "severity": "Warning",
+        "description": "Clock enable controlled CDC structure detected",
+        "depth": 0,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-15",
+        "severity": "Warning",
+        "description": "Clock enable controlled CDC structure detected",
+        "depth": 0,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-15",
+        "severity": "Warning",
+        "description": "Clock enable controlled CDC structure detected",
+        "depth": 0,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-15",
+        "severity": "Warning",
+        "description": "Clock enable controlled CDC structure detected",
+        "depth": 0,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_2",
+        "destination_clock": "csi_rxbyteclkhs",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_phy_0/bd_adc2_phy_0_core/bd_adc2_phy_0_c1/bd_adc2_phy_0_support/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_csi_0/capture_csi_0_bd_adc2/bd_adc2_rx_0/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+        "rule": "CDC-9",
+        "severity": "Info",
+        "description": "Asynchronous reset synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/rddata_rst_reg/C",
+        "destination": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_5_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_rd_reg1_reg/PRE"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_reg[0]/C",
+        "destination": "dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/ma_rst_1_reg/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "pixel_clock_clk_out1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "pixel_clock_clk_out1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "pixel_clock_clk_out1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_sendd_ff_reg/C",
+        "destination": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "pixel_clock_clk_out1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/dest_ack_reg/C",
+        "destination": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "pixel_clock_clk_out1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/dest_ack_reg/C",
+        "destination": "capture_i/overlay_cdc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "pixel_clock_clk_out1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 2,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_observe_pixel_vio_0/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_observe_pixel_vio_0/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "pixel_clock_clk_out1",
+        "rule": "CDC-15",
+        "severity": "Warning",
+        "description": "Clock enable controlled CDC structure detected",
+        "depth": 0,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_observe_pixel_vio_0/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_observe_pixel_vio_0/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_0",
+        "destination_clock": "pixel_clock_clk_out1",
+        "rule": "CDC-15",
+        "severity": "Warning",
+        "description": "Clock enable controlled CDC structure detected",
+        "depth": 0,
+        "exception": "False Path",
+        "source": "capture_wrapper/capture/capture_observe_pixel_vio_0/<hidden>/<hidden>/<hidden>",
+        "destination": "capture_wrapper/capture/capture_observe_pixel_vio_0/<hidden>/<hidden>/<hidden>"
+      },
+      {
+        "source_clock": "clk_fpga_1",
+        "destination_clock": "pixel_clock_clk_out1",
+        "rule": "CDC-3",
+        "severity": "Info",
+        "description": "1-bit synchronized with ASYNC_REG property",
+        "depth": 3,
+        "exception": "False Path",
+        "source": "capture_i/display_cdc/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_wr_rst_ic_reg/C",
+        "destination": "capture_i/display_cdc/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst/syncstages_ff_reg[0]/D"
+      }
+    ],
+    "hidden_endpoint_limit": "Four CSI-PHY and two pixel-VIO CDC15 rows contain tool-hidden path components; those encrypted internals were not decoded."
+  },
+  "bus_skew": {
+    "constraints_count": 42,
+    "all_met": true,
+    "minimum_slack_ns": 6.019,
+    "maximum_slack_ns": 39.899,
+    "full_report_body_matches_baseline": true,
+    "constraints": [
+      {
+        "id": 1,
+        "constraint_position": 160,
+        "corner": "Slow",
+        "requirement_ns": 10.0,
+        "actual_ns": 0.331,
+        "slack_ns": 9.669
+      },
+      {
+        "id": 2,
+        "constraint_position": 162,
+        "corner": "Slow",
+        "requirement_ns": 10.0,
+        "actual_ns": 0.376,
+        "slack_ns": 9.624
+      },
+      {
+        "id": 3,
+        "constraint_position": 164,
+        "corner": "Slow",
+        "requirement_ns": 10.0,
+        "actual_ns": 0.597,
+        "slack_ns": 9.403
+      },
+      {
+        "id": 4,
+        "constraint_position": 166,
+        "corner": "Slow",
+        "requirement_ns": 10.0,
+        "actual_ns": 0.716,
+        "slack_ns": 9.284
+      },
+      {
+        "id": 5,
+        "constraint_position": 168,
+        "corner": "Slow",
+        "requirement_ns": 6.666,
+        "actual_ns": 0.647,
+        "slack_ns": 6.019
+      },
+      {
+        "id": 6,
+        "constraint_position": 170,
+        "corner": "Slow",
+        "requirement_ns": 6.666,
+        "actual_ns": 0.5,
+        "slack_ns": 6.166
+      },
+      {
+        "id": 7,
+        "constraint_position": 176,
+        "corner": "Slow",
+        "requirement_ns": 6.666,
+        "actual_ns": 0.56,
+        "slack_ns": 6.106
+      },
+      {
+        "id": 8,
+        "constraint_position": 178,
+        "corner": "Slow",
+        "requirement_ns": 6.666,
+        "actual_ns": 0.522,
+        "slack_ns": 6.144
+      },
+      {
+        "id": 9,
+        "constraint_position": 184,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.375,
+        "slack_ns": 19.623
+      },
+      {
+        "id": 10,
+        "constraint_position": 186,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.274,
+        "slack_ns": 19.724
+      },
+      {
+        "id": 11,
+        "constraint_position": 188,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.796,
+        "slack_ns": 19.202
+      },
+      {
+        "id": 12,
+        "constraint_position": 190,
+        "corner": "Slow",
+        "requirement_ns": 30.0,
+        "actual_ns": 0.296,
+        "slack_ns": 29.704
+      },
+      {
+        "id": 13,
+        "constraint_position": 192,
+        "corner": "Slow",
+        "requirement_ns": 30.0,
+        "actual_ns": 1.042,
+        "slack_ns": 28.958
+      },
+      {
+        "id": 14,
+        "constraint_position": 194,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.76,
+        "slack_ns": 19.238
+      },
+      {
+        "id": 15,
+        "constraint_position": 196,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.394,
+        "slack_ns": 19.604
+      },
+      {
+        "id": 16,
+        "constraint_position": 198,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.717,
+        "slack_ns": 19.281
+      },
+      {
+        "id": 17,
+        "constraint_position": 200,
+        "corner": "Slow",
+        "requirement_ns": 30.0,
+        "actual_ns": 0.317,
+        "slack_ns": 29.683
+      },
+      {
+        "id": 18,
+        "constraint_position": 202,
+        "corner": "Slow",
+        "requirement_ns": 30.0,
+        "actual_ns": 1.644,
+        "slack_ns": 28.356
+      },
+      {
+        "id": 19,
+        "constraint_position": 204,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.516,
+        "slack_ns": 19.482
+      },
+      {
+        "id": 20,
+        "constraint_position": 206,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.478,
+        "slack_ns": 19.52
+      },
+      {
+        "id": 21,
+        "constraint_position": 208,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.652,
+        "slack_ns": 19.346
+      },
+      {
+        "id": 22,
+        "constraint_position": 210,
+        "corner": "Slow",
+        "requirement_ns": 30.0,
+        "actual_ns": 0.39,
+        "slack_ns": 29.61
+      },
+      {
+        "id": 23,
+        "constraint_position": 212,
+        "corner": "Slow",
+        "requirement_ns": 30.0,
+        "actual_ns": 1.015,
+        "slack_ns": 28.985
+      },
+      {
+        "id": 24,
+        "constraint_position": 214,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.361,
+        "slack_ns": 19.637
+      },
+      {
+        "id": 25,
+        "constraint_position": 216,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.247,
+        "slack_ns": 19.751
+      },
+      {
+        "id": 26,
+        "constraint_position": 218,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.716,
+        "slack_ns": 19.282
+      },
+      {
+        "id": 27,
+        "constraint_position": 220,
+        "corner": "Slow",
+        "requirement_ns": 30.0,
+        "actual_ns": 0.536,
+        "slack_ns": 29.464
+      },
+      {
+        "id": 28,
+        "constraint_position": 222,
+        "corner": "Slow",
+        "requirement_ns": 30.0,
+        "actual_ns": 0.736,
+        "slack_ns": 29.264
+      },
+      {
+        "id": 29,
+        "constraint_position": 224,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.791,
+        "slack_ns": 19.207
+      },
+      {
+        "id": 30,
+        "constraint_position": 226,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.323,
+        "slack_ns": 19.675
+      },
+      {
+        "id": 31,
+        "constraint_position": 228,
+        "corner": "Slow",
+        "requirement_ns": 19.998,
+        "actual_ns": 0.918,
+        "slack_ns": 19.08
+      },
+      {
+        "id": 32,
+        "constraint_position": 230,
+        "corner": "Slow",
+        "requirement_ns": 30.0,
+        "actual_ns": 0.438,
+        "slack_ns": 29.562
+      },
+      {
+        "id": 33,
+        "constraint_position": 232,
+        "corner": "Slow",
+        "requirement_ns": 30.0,
+        "actual_ns": 1.94,
+        "slack_ns": 28.06
+      },
+      {
+        "id": 34,
+        "constraint_position": 234,
+        "corner": "Slow",
+        "requirement_ns": 40.404,
+        "actual_ns": 0.505,
+        "slack_ns": 39.899
+      },
+      {
+        "id": 35,
+        "constraint_position": 236,
+        "corner": "Slow",
+        "requirement_ns": 40.404,
+        "actual_ns": 0.808,
+        "slack_ns": 39.596
+      },
+      {
+        "id": 36,
+        "constraint_position": 238,
+        "corner": "Slow",
+        "requirement_ns": 40.404,
+        "actual_ns": 3.026,
+        "slack_ns": 37.378
+      },
+      {
+        "id": 37,
+        "constraint_position": 240,
+        "corner": "Slow",
+        "requirement_ns": 30.0,
+        "actual_ns": 0.541,
+        "slack_ns": 29.459
+      },
+      {
+        "id": 38,
+        "constraint_position": 242,
+        "corner": "Slow",
+        "requirement_ns": 30.0,
+        "actual_ns": 0.84,
+        "slack_ns": 29.16
+      },
+      {
+        "id": 39,
+        "constraint_position": 495,
+        "corner": "Slow",
+        "requirement_ns": 10.0,
+        "actual_ns": 0.504,
+        "slack_ns": 9.496
+      },
+      {
+        "id": 40,
+        "constraint_position": 497,
+        "corner": "Slow",
+        "requirement_ns": 10.0,
+        "actual_ns": 0.306,
+        "slack_ns": 9.694
+      },
+      {
+        "id": 41,
+        "constraint_position": 500,
+        "corner": "Slow",
+        "requirement_ns": 10.0,
+        "actual_ns": 0.481,
+        "slack_ns": 9.519
+      },
+      {
+        "id": 42,
+        "constraint_position": 502,
+        "corner": "Slow",
+        "requirement_ns": 10.0,
+        "actual_ns": 0.475,
+        "slack_ns": 9.525
+      }
+    ]
+  },
+  "methodology": {
+    "summary": [
+      {
+        "rule": "PDRC-190",
+        "severity": "Warning",
+        "description": "Suboptimally placed synchronized register chain",
+        "count": 2
+      },
+      {
+        "rule": "TIMING-9",
+        "severity": "Warning",
+        "description": "Unknown CDC Logic",
+        "count": 1
+      },
+      {
+        "rule": "TIMING-18",
+        "severity": "Warning",
+        "description": "Missing input or output delay",
+        "count": 8
+      },
+      {
+        "rule": "XDCB-5",
+        "severity": "Warning",
+        "description": "Runtime inefficient way to find pin objects",
+        "count": 1
+      }
+    ],
+    "error_count": 0,
+    "critical_warning_count": 0,
+    "detail_body_matches_baseline_except_exact_local_project_path": true,
+    "local_path_normalization": [
+      "D:/vision/submission/_build/v25/",
+      "D:/vision/submission/_build/v26c02/p/"
+    ],
+    "missing_input_ports": [
+      "dphy_clk_lp_n",
+      "dphy_clk_lp_p",
+      "dphy_data_hs_p[0]",
+      "dphy_data_hs_p[1]",
+      "dphy_data_lp_n[0]",
+      "dphy_data_lp_n[1]",
+      "dphy_data_lp_p[0]",
+      "dphy_data_lp_p[1]"
+    ]
+  },
+  "clock_gate": {
+    "actual_text": "MOTION60_CLOCK_SOURCE_GATE_PASSED\nsingle_mmcm=1 pixel_period=13.468 serial_period=2.694\n",
+    "single_mmcm_and_fclk0_100mhz_root_gate_passed": true,
+    "pixel_mhz": 74.25,
+    "serial_mhz": 371.25
+  },
+  "pins": {
+    "hmi_uart_rx": {
+      "pin": "AG12",
+      "direction": "INPUT",
+      "iostandard": "LVCMOS33"
+    },
+    "hmi_uart_tx": {
+      "pin": "AH12",
+      "direction": "OUTPUT",
+      "iostandard": "LVCMOS33"
+    },
+    "key0_n": {
+      "pin": "Y22",
+      "direction": "INPUT",
+      "iostandard": "LVCMOS33"
+    }
+  },
+  "reset_camera_checks": {
+    "key_sync_stages": 2,
+    "both_async_reg": true,
+    "pixel_reset_FDCE_stages": 16,
+    "camera_hs_ports": 6,
+    "all_six_diff_term_false": true,
+    "evidence": "Actual sequential Tcl proceeds past all assertions through close_design and write_bitstream launch; HMI marker alone does not prove later checks."
+  },
+  "actual_gate_log_evidence": [
+    {
+      "line": 3419,
+      "text": "HMI_P4_IO_BINDING_VERIFIED"
+    },
+    {
+      "line": 3420,
+      "text": "# set key [get_ports key0_n]"
+    },
+    {
+      "line": 3421,
+      "text": "# if {[llength $key]!=1 || [get_property PACKAGE_PIN $key] ne \"Y22\" || [get_property IOSTANDARD $key] ne \"LVCMOS33\" || [get_property DIRECTION $key] ne \"IN\"} {error \"KEY0 pin binding\"}"
+    },
+    {
+      "line": 3422,
+      "text": "# set stages [get_cells -hier -filter {NAME =~ */sccb/inst/key_meta_reg || NAME =~ */sccb/inst/key_sync_reg}]"
+    },
+    {
+      "line": 3423,
+      "text": "# if {[llength $stages]!=2} {error \"KEY0 synchronizer missing\"}"
+    },
+    {
+      "line": 3424,
+      "text": "# foreach cell $stages {if {![get_property ASYNC_REG $cell]} {error \"KEY0 ASYNC_REG missing\"}}"
+    },
+    {
+      "line": 3425,
+      "text": "# set guards [get_cells -hier -filter {REF_NAME == FDCE && NAME =~ *pixel_reset_guard*/release_pipeline_reg*}]"
+    },
+    {
+      "line": 3426,
+      "text": "# if {[llength $guards]!=16} {error \"Original 16-stage pixel reset guard missing\"}"
+    },
+    {
+      "line": 3427,
+      "text": "# set all_hs [get_ports {dphy_clk_hs_p dphy_clk_hs_n dphy_data_hs_p[*] dphy_data_hs_n[*]}]"
+    },
+    {
+      "line": 3428,
+      "text": "# if {[llength $all_hs]!=6} {error \"Camera HS ports missing\"}"
+    },
+    {
+      "line": 3429,
+      "text": "# foreach port $all_hs {if {[get_property DIFF_TERM $port]} {error \"Camera has external termination\"}}"
+    },
+    {
+      "line": 3430,
+      "text": "# close_design"
+    },
+    {
+      "line": 3431,
+      "text": "close_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 6269.625 ; gain = 0.000"
+    },
+    {
+      "line": 3432,
+      "text": "# launch_runs impl_1 -to_step write_bitstream -jobs 1"
+    }
+  ],
+  "console_prefix_read": {
+    "path": "D:\\vision\\submission\\_build\\v26c02\\logs\\timing_resume_02.console.log",
+    "bytes_at_read": 549545,
+    "sha256_of_bytes_read": "5e7f0c90814584153c1d02d3a9c7678266414c130ebd5b30ab6b8d375e244f9a",
+    "active_log_not_final_hash": true
+  },
+  "state_at_audit": {
+    "guard_status": "running",
+    "guard_heartbeat": "2026-11-04T00:45:38.881878+08:00",
+    "guard_terminations": [],
+    "runner_status": "running",
+    "runner_exit_code": null
+  },
+  "routed_report_acceptance_passed": true,
+  "runner_or_bitstream_complete_claimed": false,
+  "board_runtime_validated": false,
+  "motion_roi_functional_rtl_gaps_filled": false
+}

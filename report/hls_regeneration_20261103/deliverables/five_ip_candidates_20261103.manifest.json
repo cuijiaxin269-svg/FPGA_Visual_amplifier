@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "kind": "five_ip_candidates_only",
+  "created_at": "2026-11-03T16:47:21.362456+08:00",
+  "source_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "source_manifest_sha256": "9bd23fddac80685e54bade7942993e2e396dee490da686511153716d9a2419f6",
+  "packaging_script": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\tools\\package_five_ip_candidates.py",
+  "packaging_script_sha256": "dd3412ac6335ad4300a03c9ce33b962004003ca54153b6d191440b717496f340",
+  "selected_route": "Verilog",
+  "payload": {
+    "ip/clip_copy_checked/xilinx_com_hls_clip_copy_checked_1_0.zip": {
+      "bytes": 136044,
+      "sha256": "7d613030191396f4bcf7f446132086d7b0503e5a87b3cc72501e675e18338a19",
+      "source_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\clip_copy_checked_synth_01\\hls\\impl\\ip\\xilinx_com_hls_clip_copy_checked_1_0.zip"
+    },
+    "ip/spectrum256_pl/xilinx_com_hls_spectrum256_pl_1_0.zip": {
+      "bytes": 279098,
+      "sha256": "e5897c18f137cb774337be803d65a7f2aaceb5e63db3a94abfb334cb772117bb",
+      "source_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\spectrum256_pl_synth_01\\hls\\impl\\ip\\xilinx_com_hls_spectrum256_pl_1_0.zip"
+    },
+    "ip/roi256/xilinx_com_hls_roi256_1_0.zip": {
+      "bytes": 298692,
+      "sha256": "8cdb23d89b38a061b4fff93a46be50683342fef2080c261dd8f968c2c3d96399",
+      "source_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\roi256_synth_01\\hls\\impl\\ip\\xilinx_com_hls_roi256_1_0.zip"
+    },
+    "ip/motion60_full_temporal_v2/xilinx_com_hls_clip_temporal_full_1_0.zip": {
+      "bytes": 290585,
+      "sha256": "8a56f3aad7fa2ea810910278e906ee5baf61446fef09abe077c0369d244152bb",
+      "source_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\t02\\hls\\impl\\ip\\xilinx_com_hls_clip_temporal_full_1_0.zip"
+    },
+    "ip/motion60_shared/m01_verilog_candidate_verilog_route.zip": {
+      "bytes": 49705990,
+      "sha256": "06ea01ff90327ea108b6e6e6f6c8d762124918bba2a03ab66a46b8987619b9fa",
+      "source_path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\candidates\\m01_verilog_candidate\\m01_verilog_candidate_verilog_route.zip"
+    },
+    "validation/clip_copy_checked_csynth.xml": {
+      "bytes": 31518,
+      "sha256": "3446b169344be9f50de9b6ae82e8e61a4a1e743db642bae67ab8e1e98c1df449",
+      "kind": "frozen_delivery_metadata"
+    },
+    "validation/spectrum256_pl_csynth.xml": {
+      "bytes": 30789,
+      "sha256": "3991e8c7634b497f42dd3f4acd90f25d1baaa76c6514c8eb4d26aac982129408",
+      "kind": "frozen_delivery_metadata"
+    },
+    "validation/roi256_csynth.xml": {
+      "bytes": 30222,
+      "sha256": "c0cc16a0fa0408d3b7148c4268f4ffcbd967dfa415debf98d29476fba021e254",
+      "kind": "frozen_delivery_metadata"
+    },
+    "validation/clip_temporal_full_csynth.xml": {
+      "bytes": 20850,
+      "sha256": "b3a0181ae6632f0c75a00420f24eb0ed2ef312222a02e197bd10b8d39f511e9e",
+      "kind": "frozen_delivery_metadata"
+    },
+    "validation/motion_packaged.json": {
+      "bytes": 55061,
+      "sha256": "516377246221602c541684e63e9b4de8dc4bff09fa906df0e120bfb9d5d76dc7",
+      "kind": "frozen_delivery_metadata"
+    },
+    "validation/motion_candidate_warning_review.md": {
+      "bytes": 4696,
+      "sha256": "15285450cc76260d6db20ffe1b8f96e4e70fb818ca0e4c8da13824f841d6b4ab",
+      "kind": "frozen_delivery_metadata"
+    },
+    "validation/motion60_shared_csynth.xml": {
+      "bytes": 53706,
+      "sha256": "e23ed80ec5cee41c12f6b2f8b692fa5da315844c5244ff7beba19bdca545648c",
+      "kind": "frozen_delivery_metadata"
+    },
+    "source_manifest.json": {
+      "bytes": 7477,
+      "sha256": "9bd23fddac80685e54bade7942993e2e396dee490da686511153716d9a2419f6",
+      "kind": "frozen_delivery_metadata"
+    },
+    "validation/status_snapshot.json": {
+      "bytes": 374973,
+      "sha256": "8db9099bc749b6e499be1ffdb72f88706fef3fdb1e9a71a5c95ea63dbaecef07",
+      "kind": "frozen_delivery_metadata"
+    },
+    "validation/zip_payload_checks.json": {
+      "bytes": 276511,
+      "sha256": "3fbc7d42d2d25e7aa216ee6453f940a2969623a9fa41341f786d5b9a94125096",
+      "kind": "frozen_delivery_metadata"
+    },
+    "validation/hls_warning_summary.json": {
+      "bytes": 4844,
+      "sha256": "ee7013019876207eeae26415b66c415efb530d1b84d0dbd2845536afa08d8730",
+      "kind": "frozen_delivery_metadata"
+    },
+    "validation/motion_candidate_warning_review.json": {
+      "bytes": 39095,
+      "sha256": "698b6b43144dc579fa0c7573296bcf2e072a319cd8dcc31b713a34ca5690d299",
+      "kind": "frozen_delivery_metadata"
+    },
+    "README.md": {
+      "bytes": 2677,
+      "sha256": "c937f892f2f1e117c68153b97f5edf2fdecf0e774be978c7c9c63f2daa898632",
+      "kind": "frozen_delivery_metadata"
+    }
+  },
+  "manifest_self_hash_excluded": true,
+  "raw_motion_vendor_zip_included": false,
+  "all_rtl_passed_claimed": false,
+  "production_integration_accepted": false,
+  "physical_timing_accepted": false,
+  "board_accepted": false,
+  "sealed_ip_replaced": false,
+  "github_uploaded": false
+}

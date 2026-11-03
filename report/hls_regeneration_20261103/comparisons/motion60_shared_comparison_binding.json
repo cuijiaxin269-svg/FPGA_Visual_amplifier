@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "synthesis_receipt_status": "passed",
+  "synthesis_finished_at": "2026-11-03T14:27:12.579653+08:00",
+  "hdl_comparison_created_utc": "2026-11-03T06:28:11.630448+00:00",
+  "candidate_files_verified": 530,
+  "hash_mismatches": [],
+  "component_interface_vs_hdl_sha_matches": true,
+  "raw_export_zip": {
+    "archive": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\runs\\m01\\hls\\impl\\ip\\xilinx_com_hls_motion60_shared_1_0.zip",
+    "member_files": 440,
+    "members_different_from_final_directory": [
+      "hdl/verilog/motion60_shared_fifo_w32_d131072_A.v"
+    ],
+    "archive_only": [],
+    "final_only_excluding_build_logs_zip_and_subcore": [
+      "dfx_runtime.txt",
+      "pack.bat",
+      "run_ippack.tcl",
+      "sysgen_info.xml"
+    ]
+  }
+}

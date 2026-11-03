@@ -1,0 +1,68 @@
+{
+  "scope": "XML PARAM_VALUE/MODELPARAM_VALUE versus JSON component/model parameters only; project/runtime/boundary schemas not compared",
+  "files": [
+    {
+      "path": "hdl/ip/spectrum256_pl_faddfsub_32ns_32ns_32_8_full_dsp_1_ip/spectrum256_pl_faddfsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "candidate_component_reference": "xilinx.com:ip:floating_point:7.1",
+      "candidate_ip_revision": "21",
+      "compared_common_parameters": 120,
+      "changed": [],
+      "baseline_only": {},
+      "candidate_only": {}
+    },
+    {
+      "path": "hdl/ip/spectrum256_pl_fcmp_32ns_32ns_1_2_no_dsp_1_ip/spectrum256_pl_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci",
+      "candidate_component_reference": "xilinx.com:ip:floating_point:7.1",
+      "candidate_ip_revision": "21",
+      "compared_common_parameters": 120,
+      "changed": [],
+      "baseline_only": {},
+      "candidate_only": {}
+    },
+    {
+      "path": "hdl/ip/spectrum256_pl_fdiv_32ns_32ns_32_22_no_dsp_1_ip/spectrum256_pl_fdiv_32ns_32ns_32_22_no_dsp_1_ip.xci",
+      "candidate_component_reference": "xilinx.com:ip:floating_point:7.1",
+      "candidate_ip_revision": "21",
+      "compared_common_parameters": 120,
+      "changed": [],
+      "baseline_only": {},
+      "candidate_only": {}
+    },
+    {
+      "path": "hdl/ip/spectrum256_pl_fmul_32ns_32ns_32_4_max_dsp_1_ip/spectrum256_pl_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci",
+      "candidate_component_reference": "xilinx.com:ip:floating_point:7.1",
+      "candidate_ip_revision": "21",
+      "compared_common_parameters": 120,
+      "changed": [],
+      "baseline_only": {},
+      "candidate_only": {}
+    },
+    {
+      "path": "hdl/ip/spectrum256_pl_fsqrt_32ns_32ns_32_28_no_dsp_1_ip/spectrum256_pl_fsqrt_32ns_32ns_32_28_no_dsp_1_ip.xci",
+      "candidate_component_reference": "xilinx.com:ip:floating_point:7.1",
+      "candidate_ip_revision": "21",
+      "compared_common_parameters": 120,
+      "changed": [],
+      "baseline_only": {},
+      "candidate_only": {}
+    },
+    {
+      "path": "hdl/ip/spectrum256_pl_fsub_32ns_32ns_32_8_full_dsp_1_ip/spectrum256_pl_fsub_32ns_32ns_32_8_full_dsp_1_ip.xci",
+      "candidate_component_reference": "xilinx.com:ip:floating_point:7.1",
+      "candidate_ip_revision": "21",
+      "compared_common_parameters": 120,
+      "changed": [],
+      "baseline_only": {},
+      "candidate_only": {}
+    },
+    {
+      "path": "hdl/ip/spectrum256_pl_sitofp_32ns_32_7_no_dsp_1_ip/spectrum256_pl_sitofp_32ns_32_7_no_dsp_1_ip.xci",
+      "candidate_component_reference": "xilinx.com:ip:floating_point:7.1",
+      "candidate_ip_revision": "21",
+      "compared_common_parameters": 120,
+      "changed": [],
+      "baseline_only": {},
+      "candidate_only": {}
+    }
+  ]
+}

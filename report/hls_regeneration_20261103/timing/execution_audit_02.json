@@ -1,0 +1,2868 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "checked_at": "2026-11-04T01:06:01.136480+08:00",
+  "runner_receipt": {
+    "path": "D:\\vision\\submission\\_build\\v26c02\\receipts\\timing_resume_02.json",
+    "bytes": 32919,
+    "sha256": "9ce9d007fd1704902943a8d75cc7313ee7745052fd4bc0ac1526ec127e5b6496"
+  },
+  "guard_receipt": {
+    "path": "D:\\vision\\submission\\_build\\v26c02\\guard_receipts\\timing_resume_02.json",
+    "bytes": 21068,
+    "sha256": "2ea2890ecc7b48bf8f1a2c98ce0d6c3555625860b0485725b896ae19bffc67e8"
+  },
+  "resume_plan": {
+    "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\plan.json",
+    "bytes": 204932,
+    "sha256": "2d73ba3ffb5495be1d3c7588c23587249e8bd0a601151e90465d141642dc19b6"
+  },
+  "intermediate_synthesis_audit": {
+    "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume02_synthesis_intermediate_01.json",
+    "bytes": 74611,
+    "sha256": "43de651848da5abd3ebaaa389015ee5cfcc268c9d181fd97f0f2be15e4ca2161"
+  },
+  "scope": "Independent terminal execution, immutable inputs, 72 synthesis completions and 48 preserved DCP/log/end markers. Final artifact integrity is audited separately.",
+  "board_runtime_validated": false,
+  "project_or_control_modified": false,
+  "amd_tools_launched_by_audit": false,
+  "independent_source_import_original48_postcheck": {
+    "source_files_verified": 989,
+    "imported_hdl_and_data_verified": 324,
+    "completed_runs_preserved": 48
+  },
+  "all_original48_protected_files": [
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_phy_0_synth_1\\bd_adc2_phy_0.dcp",
+      "bytes": 479577,
+      "sha256": "fe7a745ec37957a7403e9a80cbef26815fb2e11963cda4f60cff8278aac559ae"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_phy_0_synth_1\\runme.log",
+      "bytes": 80852,
+      "sha256": "9dfbf745c45eacb792af3259f35bcef7cb2384a23a15f242569a114eb7de7765"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_phy_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_r_sync_0_synth_1\\bd_adc2_r_sync_0.dcp",
+      "bytes": 26656,
+      "sha256": "435605797280ef9b7afaa16bfd2f73be3dfb44b7d460c39bef43866954f60ef8"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_r_sync_0_synth_1\\runme.log",
+      "bytes": 23799,
+      "sha256": "89f7f5a6ab125a8296538f6df6335ad255fb44d7d2521d9431ae7105a70956be"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_r_sync_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_rx_0_synth_1\\bd_adc2_rx_0.dcp",
+      "bytes": 807959,
+      "sha256": "3591fd8a165d231a1a86dff85d1c85d15b9eba8a03e1b4de1a7ff04809a14262"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_rx_0_synth_1\\runme.log",
+      "bytes": 70999,
+      "sha256": "fe2cbfad6083f6cbc51a50819598798301490accaf0e81c8f4788e564abe5c88"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_rx_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_vfb_0_0_synth_1\\bd_adc2_vfb_0_0.dcp",
+      "bytes": 187634,
+      "sha256": "84c438d0ec550460f4c0cefaed293e3cf1a0dc34652952cf1b8340112237ad6c"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_vfb_0_0_synth_1\\runme.log",
+      "bytes": 35784,
+      "sha256": "3d9003fbf17d8bdb7cbfd20e6508f1de0d81d672a892d633239b126611bb2205"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_vfb_0_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_xbar_0_synth_1\\bd_adc2_xbar_0.dcp",
+      "bytes": 528260,
+      "sha256": "7a006477dcc90739af5d54afdbdc38fe622b9c6b920388cfbc201783ef18e3a4"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_xbar_0_synth_1\\runme.log",
+      "bytes": 60039,
+      "sha256": "bb9b3416ecb54e5b2d432952b847c2698f3e4ad466a0164ccdd67b19e034a841"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_xbar_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_clip_dma_0_synth_1\\capture_clip_dma_0.dcp",
+      "bytes": 572371,
+      "sha256": "1ae7a02422d5c69a7e70dcbf1cedf05d3c4bea8adb91a63f67aef07ecd1f0caf"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_clip_dma_0_synth_1\\runme.log",
+      "bytes": 66552,
+      "sha256": "3fbd2edad90e1913a14dd7e03870f89b085657b211cc5baadc97434e977487e5"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_clip_dma_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_controls_0_synth_1\\capture_controls_0.dcp",
+      "bytes": 93338,
+      "sha256": "72567fb9e2c7bfa77c53a79c23559011290c7c3e5b9abf604ee954201970fee2"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_controls_0_synth_1\\runme.log",
+      "bytes": 43280,
+      "sha256": "36ed20597823f2b0f090e4763bcd40a8d048fb6ea8d4d391e286f2820aff36d1"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_controls_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_core_0_synth_1\\capture_core_0.dcp",
+      "bytes": 261130,
+      "sha256": "b23721d2094eea956f98f60653f3500e0fcf042888f2460e190bae9ca00a4235"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_core_0_synth_1\\runme.log",
+      "bytes": 24690,
+      "sha256": "4dd1ad6350a52be357bb584cf370522e896649f0e15fca77b67f188b8aa4f42b"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_core_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_csi_0_synth_1\\capture_csi_0.dcp",
+      "bytes": 59130,
+      "sha256": "16535d88d4e16bd53eb52bec3a91c84ddb96c244ba8deb466b132e1c9c32f03c"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_csi_0_synth_1\\runme.log",
+      "bytes": 27914,
+      "sha256": "5fae829a940d9a19d5ba99b425e6e80d768c46eaac8f8c16da670ed0fed289d4"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_csi_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_0_synth_1\\capture_ctrl_intercon_imp_auto_cc_0.dcp",
+      "bytes": 69472,
+      "sha256": "0b9b5c68f1eb59779e9cc04ea8176ce49c81ca8e3cfceada58d0ff63c5e53c1d"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_0_synth_1\\runme.log",
+      "bytes": 44521,
+      "sha256": "ec6fdabd1d40238ca93d0bda271a0c3cd7bc3d6c59b196e03c377c771ce248f9"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_1_synth_1\\capture_ctrl_intercon_imp_auto_cc_1.dcp",
+      "bytes": 69319,
+      "sha256": "4bd0dcc828877ccd99fe9d618adb75d73ae6ba24fbd08d618236361ccda420dd"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_1_synth_1\\runme.log",
+      "bytes": 44517,
+      "sha256": "edd4bb1822d0759dc9e6dcf78c797a2edfbd05cc2059fe728b96d782f4248c3f"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_1_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_2_synth_1\\capture_ctrl_intercon_imp_auto_cc_2.dcp",
+      "bytes": 69113,
+      "sha256": "2d9ec8a998409748d32a58329a149a30d5a3656423d955232efe5ea7b43788f1"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_2_synth_1\\runme.log",
+      "bytes": 1911,
+      "sha256": "a696f87425ac7f792ef6ace6bb95dcb9bae7bd78d99fd943269949956eb3cca1"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_2_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_3_synth_1\\capture_ctrl_intercon_imp_auto_cc_3.dcp",
+      "bytes": 67837,
+      "sha256": "b18e1303494e3b1b6fbecd8302af41917ebb7e448146378a8acf5f9914d0d31b"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_3_synth_1\\runme.log",
+      "bytes": 44517,
+      "sha256": "38768fbed0753e5129fb8cbeedef279954d05efe1c4d22af9c227d1c7411b3ab"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_3_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_4_synth_1\\capture_ctrl_intercon_imp_auto_cc_4.dcp",
+      "bytes": 68656,
+      "sha256": "7b8821c0647a8a50b996b0eb2253dea9995cf574a4381f8acf7a9575ea8e20e1"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_4_synth_1\\runme.log",
+      "bytes": 1911,
+      "sha256": "aef395a0562943a14dc77729763658af0ffe3052a4968c9402d7847e599d74b5"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_4_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_pc_0_synth_1\\capture_ctrl_intercon_imp_auto_pc_0.dcp",
+      "bytes": 223689,
+      "sha256": "24e1e7c034380c6d808f3348bff3e17fccd93168059efff4e931b69d1f8f9306"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_pc_0_synth_1\\runme.log",
+      "bytes": 48924,
+      "sha256": "6de7dd312f938b51a775006af9171ecdc523109e7b5e87f6f60e18f38bc911b6"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_pc_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_xbar_0_synth_1\\capture_ctrl_intercon_imp_xbar_0.dcp",
+      "bytes": 178361,
+      "sha256": "9f271ae872311d2eba41eb061491d922d06f2b0fa2329a2e6b587f01f1911b7b"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_xbar_0_synth_1\\runme.log",
+      "bytes": 41152,
+      "sha256": "b63b4e11dd341937fd1f306598e0568a0c4187e249f3d67b145a3b70aa8607c8"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_xbar_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_cdc_0_synth_1\\capture_display_cdc_0.dcp",
+      "bytes": 106058,
+      "sha256": "94ed067ea8fd8f07a1a81eced4901683b1fab50a6dcd61a77fd30127d442e5e7"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_cdc_0_synth_1\\runme.log",
+      "bytes": 42015,
+      "sha256": "322a3d66815453d12867b5b8c4b29cae2b00e72e6adb2f0dea6cb5abc4b60142"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_cdc_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_dma_0_synth_1\\capture_display_dma_0.dcp",
+      "bytes": 513001,
+      "sha256": "17c29bbf7db02dfa37c8b996f492d9d76ba709160aac5b011c3206452b09582b"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_dma_0_synth_1\\runme.log",
+      "bytes": 81818,
+      "sha256": "1c3328253c36bcf259013911996950eeb0893b68128c949ea805d50bbeb828b6"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_dma_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_pc_0_synth_1\\capture_display_mem_imp_auto_pc_0.dcp",
+      "bytes": 114610,
+      "sha256": "50de12a0e92566d2fd77715cea70c96f0e4dd8d32c72f29c2e856cbc4b33ab00"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_pc_0_synth_1\\runme.log",
+      "bytes": 32587,
+      "sha256": "3be4981d384d92d286be814b9429c827c431cec166f2f4dfde6c4334fbc8a88b"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_pc_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_pc_1_synth_1\\capture_display_mem_imp_auto_pc_1.dcp",
+      "bytes": 234867,
+      "sha256": "35885c03855d3550d2731dc5def8c7fb3d988fff5469f988f1c411e079e8756c"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_pc_1_synth_1\\runme.log",
+      "bytes": 35304,
+      "sha256": "55946a1496b59112cf227d67509f3f79e9143b129425f21d955d92582d5a0fc1"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_pc_1_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_us_df_0_synth_1\\capture_display_mem_imp_auto_us_df_0.dcp",
+      "bytes": 470898,
+      "sha256": "b11a85d490a49713433c0f2262b9395bae7a4ffd126fbd52c40506b6b6eddb0c"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_us_df_0_synth_1\\runme.log",
+      "bytes": 48813,
+      "sha256": "0bf77634bbf6331fc82b2b9f279e6a1d412032c4572568a6f4ce2e3a646c8d72"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_us_df_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_s00_data_fifo_0_synth_1\\capture_display_mem_imp_s00_data_fifo_0.dcp",
+      "bytes": 214717,
+      "sha256": "d9d640865d3b627183ba305fd113ce193e6c917f8f124a6e6fa40453562ae34c"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_s00_data_fifo_0_synth_1\\runme.log",
+      "bytes": 32748,
+      "sha256": "bda251bb738a0622a49668b07215b3339bf7cf80e9c3171d8cc2fca00bcb9695"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_s00_data_fifo_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_xbar_0_synth_1\\capture_display_mem_imp_xbar_0.dcp",
+      "bytes": 226220,
+      "sha256": "d20332536569904bb6e6e232885c75e5f5dfe65f2b964087086cbd40116f476f"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_xbar_0_synth_1\\runme.log",
+      "bytes": 54565,
+      "sha256": "7021dcbe454283245fbed40d21d36c5f96bfcb716a93720c5b686614b530e13e"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_xbar_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_f_0_synth_1\\capture_f_0.dcp",
+      "bytes": 10844643,
+      "sha256": "dd6e97b8154e326630bb43a62874134b6130c02c2e5fc5c8b73a14ed51ece88a"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_f_0_synth_1\\runme.log",
+      "bytes": 311081,
+      "sha256": "2cc0c3596fa7da276f14539e0739ace9a33bfe2df90a1c5aa099ed333d0bb03e"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_f_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_0_synth_1\\capture_hdmi_0.dcp",
+      "bytes": 56244,
+      "sha256": "e5c91bb9efc173705f2a8fed6ba36b3fb38fefe05f3d22f493407bb48671e037"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_0_synth_1\\runme.log",
+      "bytes": 22749,
+      "sha256": "7f8e8a653c512fda5dd706475855c575796d98351a3fce9b9fec86807c2f3af4"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_health_0_synth_1\\capture_hdmi_health_0.dcp",
+      "bytes": 31322,
+      "sha256": "2491cee798aba018f2f5dd2a27dd9ae0864acbedec571d074834644dbbf7f0f2"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_health_0_synth_1\\runme.log",
+      "bytes": 22843,
+      "sha256": "3fbc2bf19f5c60e842c3e3b7b86f00071a57ba7b55001f1644ca9ded2b0687a2"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_health_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_observe_0_synth_1\\capture_hdmi_observe_0.dcp",
+      "bytes": 168799,
+      "sha256": "62d24de5a9871cfc7d0eb97291cceb62e42b5099a39a7b5784c9c9e42290383e"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_observe_0_synth_1\\runme.log",
+      "bytes": 25860,
+      "sha256": "a660cf14902a8605a4db681719a31071f799266a5c9920c1ca4a3863f82f80b7"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_observe_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_ds_0_synth_1\\capture_mem_imp_auto_ds_0.dcp",
+      "bytes": 475733,
+      "sha256": "58c9aa9149ffbd6be4cf91867b0d1e22b6616b879466a55644b0ffa74e413fa3"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_ds_0_synth_1\\runme.log",
+      "bytes": 40475,
+      "sha256": "e1ea1622c6b02910a951b5677ed6570252fb5b15d443fc0c07a8ae2669cfe40d"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_ds_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_0_synth_1\\capture_mem_imp_auto_pc_0.dcp",
+      "bytes": 138788,
+      "sha256": "b644ac80b3d18e72d2f97d8cdb5a4623b6fa1e493a5285e6b95713b48bf6370d"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_0_synth_1\\runme.log",
+      "bytes": 32193,
+      "sha256": "05d20cd4e03fadfd068b7cd66d9d3120be3b8711bbffc1f087d1c2a446345da2"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_1_synth_1\\capture_mem_imp_auto_pc_1.dcp",
+      "bytes": 248776,
+      "sha256": "0d5acc6ef76b0a0fa3caba0204ac3e55487465b7547c8c60f3e9be79bfd29ead"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_1_synth_1\\runme.log",
+      "bytes": 35120,
+      "sha256": "a5488bc43a69c4bbe3687beeaf63892299388a3ac5cbdc104a542dd4937af322"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_1_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_2_synth_1\\capture_mem_imp_auto_pc_2.dcp",
+      "bytes": 133019,
+      "sha256": "2c1214aee5ce2141ca122b42cf0fc65bd4a6e87b2a4acbf1897a6cf80324267d"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_2_synth_1\\runme.log",
+      "bytes": 32431,
+      "sha256": "0d2ba2d0fbcd34e93d4aa0dec9f2dbc07942908ca16266511f3d5d2ab7cf9fe9"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_2_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_3_synth_1\\capture_mem_imp_auto_pc_3.dcp",
+      "bytes": 164621,
+      "sha256": "fa2c3b85a5eb7781201c905df81ed456f29a83cd5efb9e16e680fd8f1411d408"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_3_synth_1\\runme.log",
+      "bytes": 32197,
+      "sha256": "b0e337e3912629dbbe4efaad1bf989883837b067935ef0c4b287d97cff882f90"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_3_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_4_synth_1\\capture_mem_imp_auto_pc_4.dcp",
+      "bytes": 132253,
+      "sha256": "dc243a3f30a17b33a8fb5b90d437717109d36d9869ebb600ab6f6cade2a17498"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_4_synth_1\\runme.log",
+      "bytes": 1871,
+      "sha256": "ccfb1c4c69269315aafc64915a37c3619ada5c24546dd725660ff84289ecdfa7"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_4_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_5_synth_1\\capture_mem_imp_auto_pc_5.dcp",
+      "bytes": 163954,
+      "sha256": "1676237f4399d1f247952a46096daf1f4ab9fa2a2aa34c7095266aef5a28a3e8"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_5_synth_1\\runme.log",
+      "bytes": 1871,
+      "sha256": "adf8651ba8949029dc96445f9ab8688ca49088f9874fcac58d312e4c35a66d3c"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_5_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_6_synth_1\\capture_mem_imp_auto_pc_6.dcp",
+      "bytes": 141798,
+      "sha256": "e09f8da27674c85ed420beac32c676d5f2f599fd8327a892b4d2b38fc603d95a"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_6_synth_1\\runme.log",
+      "bytes": 32435,
+      "sha256": "2e8e6556c201905692a6576e5cb9cbd6d0e8f70ce818c4393ceeea39d6a0c2f6"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_6_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_7_synth_1\\capture_mem_imp_auto_pc_7.dcp",
+      "bytes": 173269,
+      "sha256": "bf43d0a37f51facde40503a01fe96376c17f2adeb7332499deaac0e6960a0039"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_7_synth_1\\runme.log",
+      "bytes": 32192,
+      "sha256": "0cacfd6dd36ccf2e930e08b49bcfa6972787d3855a222d2a8d4e9a0c24e6230e"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_7_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_8_synth_1\\capture_mem_imp_auto_pc_8.dcp",
+      "bytes": 234776,
+      "sha256": "fb80b2b299bfdc6f8c45f147ea4d5b0fd4afe6bd4eff124736026732b43ca600"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_8_synth_1\\runme.log",
+      "bytes": 1871,
+      "sha256": "ca552ca69fba6014cb6932c856cea54cb72d81c77b37039a41dac00e4db465e2"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_8_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_0_synth_1\\capture_mem_imp_auto_us_0.dcp",
+      "bytes": 144159,
+      "sha256": "47800c901110471c6151e382e1d7647a0be85cfd499ba327e3fd9bc737e4297e"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_0_synth_1\\runme.log",
+      "bytes": 36567,
+      "sha256": "7a908229bfcf4fc76a48b73b42f16e3a5b66222455d30a5477575e455bcda828"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_0_synth_1\\capture_mem_imp_auto_us_df_0.dcp",
+      "bytes": 280488,
+      "sha256": "5fa403a546cad72dc1e94abe9173f37c784ca002998a0660e11416522e9b67f0"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_0_synth_1\\runme.log",
+      "bytes": 38687,
+      "sha256": "e2272cfa841fe7c7133c672816f447cb7458c09f4a440707442ac1397d2ceb6d"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_1_synth_1\\capture_mem_imp_auto_us_df_1.dcp",
+      "bytes": 304418,
+      "sha256": "2ffba6f0064903de8c47d6744715f857fea3218af582fc673f7455ddc5f2dc6f"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_1_synth_1\\runme.log",
+      "bytes": 45498,
+      "sha256": "c1b53e54ab4c63edbf6913c56aabfb765d7910a8ee3c3b4fc3e8efce96887eed"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_1_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_2_synth_1\\capture_mem_imp_auto_us_df_2.dcp",
+      "bytes": 280399,
+      "sha256": "8d812adb7dcc1ddc737263b7c1492b1e04c7569e8a145d8acd9aa5f4b9008409"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_2_synth_1\\runme.log",
+      "bytes": 1883,
+      "sha256": "c014763beda61aa3d7d96626eac83a651143f50f9dc99e13e0683a5850b877a3"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_2_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_3_synth_1\\capture_mem_imp_auto_us_df_3.dcp",
+      "bytes": 303323,
+      "sha256": "773f8d4882fee93bcc296225d9f001e6dfde064363b05eed6736ef07f84a85c2"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_3_synth_1\\runme.log",
+      "bytes": 1883,
+      "sha256": "b0272d9d4dbe8ae4b394591ed5f516577669aec09fd7c90906bdbbefe8ca03f0"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_3_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_4_synth_1\\capture_mem_imp_auto_us_df_4.dcp",
+      "bytes": 520040,
+      "sha256": "6c6c44c8cfd8d5f077739d708534f202453dcff1ec3768dcec50ac3868a24c94"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_4_synth_1\\runme.log",
+      "bytes": 48629,
+      "sha256": "319e121c679b8724a56b1a6c3a05987ed4b1d110e8f9de2eb36a22371b5502b1"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_4_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s01_data_fifo_0_synth_1\\capture_mem_imp_s01_data_fifo_0.dcp",
+      "bytes": 445124,
+      "sha256": "a5254508f3e55d234478eea153e3024777efe072dce1c86a9992fd7fa8f64656"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s01_data_fifo_0_synth_1\\runme.log",
+      "bytes": 32531,
+      "sha256": "8991316519443d7b66e3b5769369b69ccee94a2ef6eb55c7d0c2c020c1856c6d"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s01_data_fifo_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s06_data_fifo_0_synth_1\\capture_mem_imp_s06_data_fifo_0.dcp",
+      "bytes": 273357,
+      "sha256": "45b5d685cabc4779172279d6a97a886b1ff89f9c5f320d602aa2fd0aab4db744"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s06_data_fifo_0_synth_1\\runme.log",
+      "bytes": 32488,
+      "sha256": "4d8cde0234084aa7c180541430cefd85dac14a09671bfeef27b28c2abfd61a68"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s06_data_fifo_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s07_data_fifo_0_synth_1\\capture_mem_imp_s07_data_fifo_0.dcp",
+      "bytes": 278251,
+      "sha256": "b74c816ba6fbc80c0cf927ca116443574a3fc942fc249530c7eb16d3927f508f"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s07_data_fifo_0_synth_1\\runme.log",
+      "bytes": 32523,
+      "sha256": "9118e6da80e4ad1fbf32b0925ab04e5b49f84f8ba9b6fe43a42050509a06095b"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s07_data_fifo_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_xbar_0_synth_1\\capture_mem_imp_xbar_0.dcp",
+      "bytes": 659218,
+      "sha256": "978717e86951c472b0c0b74e5b75f9e821f01e4f1b6fa1cec30cb4985ad27d96"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_xbar_0_synth_1\\runme.log",
+      "bytes": 67942,
+      "sha256": "630c242fa74b64157e265bae1c5106bc5029c51257aad1bcbbcbdc1754d69d42"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_xbar_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_r100_0_synth_1\\capture_r100_0.dcp",
+      "bytes": 26476,
+      "sha256": "153f370773990e626dab4d77479d8f51f370fbf45048492764f3bb19e4a579b1"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_r100_0_synth_1\\runme.log",
+      "bytes": 23666,
+      "sha256": "8cd891b8ea5fcc76774ac64ad61f7fff17dac209fb5f87283a36a86818840217"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_r100_0_synth_1\\.vivado.end.rst",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "owned_process_independent_check": {
+    "observed_identity_count": 222,
+    "no_such_process": 219,
+    "pid_reused_by_other_process": 3,
+    "still_alive": [],
+    "unverifiable": [],
+    "runner_lifecycle": {
+      "actions": [],
+      "errors": [],
+      "remaining_observed_identities": [],
+      "exact_child_exited": true,
+      "all_observed_processes_ended": true
+    },
+    "guard_terminations": [],
+    "guard_abort_samples": [],
+    "guard_peak_owned_amd_private_bytes": 9310900224
+  },
+  "previous_failed_audit": {
+    "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume02_final_execution_audit_01.json",
+    "bytes": 37256,
+    "sha256": "b78df0b6a90cc77a26df20c1ddc044aae0a0ded90bb32f4aef4b98492f9a51c2"
+  },
+  "audit_criteria_correction": "The first audit incorrectly required a fresh synth_design success log for every one of 72 completed runs. Original48 already included explicitly recorded vendor IP-cache reuse. Correct rule: all72 must retain a completed end marker, no error marker, exact DCP/log hashes from the intermediate audit, and actual successful synthesis OR the same original48 cache-reuse message. New24 must all be uncached actual syntheses; the five HLS IPs must all have actual synthesis success. No existing evidence or project was modified.",
+  "all72_completed_artifact_gates": true,
+  "all72_synthesis_inventory": [
+    {
+      "name": "bd_adc2_phy_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_phy_0_synth_1\\bd_adc2_phy_0.dcp",
+        "bytes": 479577,
+        "sha256": "fe7a745ec37957a7403e9a80cbef26815fb2e11963cda4f60cff8278aac559ae"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_phy_0_synth_1\\runme.log",
+        "bytes": 80852,
+        "sha256": "9dfbf745c45eacb792af3259f35bcef7cb2384a23a15f242569a114eb7de7765"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_phy_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "bd_adc2_r_sync_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_r_sync_0_synth_1\\bd_adc2_r_sync_0.dcp",
+        "bytes": 26656,
+        "sha256": "435605797280ef9b7afaa16bfd2f73be3dfb44b7d460c39bef43866954f60ef8"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_r_sync_0_synth_1\\runme.log",
+        "bytes": 23799,
+        "sha256": "89f7f5a6ab125a8296538f6df6335ad255fb44d7d2521d9431ae7105a70956be"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_r_sync_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "bd_adc2_rx_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_rx_0_synth_1\\bd_adc2_rx_0.dcp",
+        "bytes": 807959,
+        "sha256": "3591fd8a165d231a1a86dff85d1c85d15b9eba8a03e1b4de1a7ff04809a14262"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_rx_0_synth_1\\runme.log",
+        "bytes": 70999,
+        "sha256": "fe2cbfad6083f6cbc51a50819598798301490accaf0e81c8f4788e564abe5c88"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_rx_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "bd_adc2_vfb_0_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_vfb_0_0_synth_1\\bd_adc2_vfb_0_0.dcp",
+        "bytes": 187634,
+        "sha256": "84c438d0ec550460f4c0cefaed293e3cf1a0dc34652952cf1b8340112237ad6c"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_vfb_0_0_synth_1\\runme.log",
+        "bytes": 35784,
+        "sha256": "3d9003fbf17d8bdb7cbfd20e6508f1de0d81d672a892d633239b126611bb2205"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_vfb_0_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "bd_adc2_xbar_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_xbar_0_synth_1\\bd_adc2_xbar_0.dcp",
+        "bytes": 528260,
+        "sha256": "7a006477dcc90739af5d54afdbdc38fe622b9c6b920388cfbc201783ef18e3a4"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_xbar_0_synth_1\\runme.log",
+        "bytes": 60039,
+        "sha256": "bb9b3416ecb54e5b2d432952b847c2698f3e4ad466a0164ccdd67b19e034a841"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\bd_adc2_xbar_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_clip_dma_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_clip_dma_0_synth_1\\capture_clip_dma_0.dcp",
+        "bytes": 572371,
+        "sha256": "1ae7a02422d5c69a7e70dcbf1cedf05d3c4bea8adb91a63f67aef07ecd1f0caf"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_clip_dma_0_synth_1\\runme.log",
+        "bytes": 66552,
+        "sha256": "3fbd2edad90e1913a14dd7e03870f89b085657b211cc5baadc97434e977487e5"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_clip_dma_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_controls_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_controls_0_synth_1\\capture_controls_0.dcp",
+        "bytes": 93338,
+        "sha256": "72567fb9e2c7bfa77c53a79c23559011290c7c3e5b9abf604ee954201970fee2"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_controls_0_synth_1\\runme.log",
+        "bytes": 43280,
+        "sha256": "36ed20597823f2b0f090e4763bcd40a8d048fb6ea8d4d391e286f2820aff36d1"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_controls_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_core_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_core_0_synth_1\\capture_core_0.dcp",
+        "bytes": 261130,
+        "sha256": "b23721d2094eea956f98f60653f3500e0fcf042888f2460e190bae9ca00a4235"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_core_0_synth_1\\runme.log",
+        "bytes": 24690,
+        "sha256": "4dd1ad6350a52be357bb584cf370522e896649f0e15fca77b67f188b8aa4f42b"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_core_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_csi_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_csi_0_synth_1\\capture_csi_0.dcp",
+        "bytes": 59130,
+        "sha256": "16535d88d4e16bd53eb52bec3a91c84ddb96c244ba8deb466b132e1c9c32f03c"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_csi_0_synth_1\\runme.log",
+        "bytes": 27914,
+        "sha256": "5fae829a940d9a19d5ba99b425e6e80d768c46eaac8f8c16da670ed0fed289d4"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_csi_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_ctrl_intercon_imp_auto_cc_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_0_synth_1\\capture_ctrl_intercon_imp_auto_cc_0.dcp",
+        "bytes": 69472,
+        "sha256": "0b9b5c68f1eb59779e9cc04ea8176ce49c81ca8e3cfceada58d0ff63c5e53c1d"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_0_synth_1\\runme.log",
+        "bytes": 44521,
+        "sha256": "ec6fdabd1d40238ca93d0bda271a0c3cd7bc3d6c59b196e03c377c771ce248f9"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_ctrl_intercon_imp_auto_cc_1_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_1_synth_1\\capture_ctrl_intercon_imp_auto_cc_1.dcp",
+        "bytes": 69319,
+        "sha256": "4bd0dcc828877ccd99fe9d618adb75d73ae6ba24fbd08d618236361ccda420dd"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_1_synth_1\\runme.log",
+        "bytes": 44517,
+        "sha256": "edd4bb1822d0759dc9e6dcf78c797a2edfbd05cc2059fe728b96d782f4248c3f"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_1_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_ctrl_intercon_imp_auto_cc_2_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_2_synth_1\\capture_ctrl_intercon_imp_auto_cc_2.dcp",
+        "bytes": 69113,
+        "sha256": "2d9ec8a998409748d32a58329a149a30d5a3656423d955232efe5ea7b43788f1"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_2_synth_1\\runme.log",
+        "bytes": 1911,
+        "sha256": "a696f87425ac7f792ef6ace6bb95dcb9bae7bd78d99fd943269949956eb3cca1"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_2_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": false,
+      "original48_vendor_cache_reuse": true,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_ctrl_intercon_imp_auto_cc_3_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_3_synth_1\\capture_ctrl_intercon_imp_auto_cc_3.dcp",
+        "bytes": 67837,
+        "sha256": "b18e1303494e3b1b6fbecd8302af41917ebb7e448146378a8acf5f9914d0d31b"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_3_synth_1\\runme.log",
+        "bytes": 44517,
+        "sha256": "38768fbed0753e5129fb8cbeedef279954d05efe1c4d22af9c227d1c7411b3ab"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_3_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_ctrl_intercon_imp_auto_cc_4_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_4_synth_1\\capture_ctrl_intercon_imp_auto_cc_4.dcp",
+        "bytes": 68656,
+        "sha256": "7b8821c0647a8a50b996b0eb2253dea9995cf574a4381f8acf7a9575ea8e20e1"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_4_synth_1\\runme.log",
+        "bytes": 1911,
+        "sha256": "aef395a0562943a14dc77729763658af0ffe3052a4968c9402d7847e599d74b5"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_cc_4_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": false,
+      "original48_vendor_cache_reuse": true,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_ctrl_intercon_imp_auto_pc_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_pc_0_synth_1\\capture_ctrl_intercon_imp_auto_pc_0.dcp",
+        "bytes": 223689,
+        "sha256": "24e1e7c034380c6d808f3348bff3e17fccd93168059efff4e931b69d1f8f9306"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_pc_0_synth_1\\runme.log",
+        "bytes": 48924,
+        "sha256": "6de7dd312f938b51a775006af9171ecdc523109e7b5e87f6f60e18f38bc911b6"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_auto_pc_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_ctrl_intercon_imp_xbar_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_xbar_0_synth_1\\capture_ctrl_intercon_imp_xbar_0.dcp",
+        "bytes": 178361,
+        "sha256": "9f271ae872311d2eba41eb061491d922d06f2b0fa2329a2e6b587f01f1911b7b"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_xbar_0_synth_1\\runme.log",
+        "bytes": 41152,
+        "sha256": "b63b4e11dd341937fd1f306598e0568a0c4187e249f3d67b145a3b70aa8607c8"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ctrl_intercon_imp_xbar_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_display_cdc_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_cdc_0_synth_1\\capture_display_cdc_0.dcp",
+        "bytes": 106058,
+        "sha256": "94ed067ea8fd8f07a1a81eced4901683b1fab50a6dcd61a77fd30127d442e5e7"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_cdc_0_synth_1\\runme.log",
+        "bytes": 42015,
+        "sha256": "322a3d66815453d12867b5b8c4b29cae2b00e72e6adb2f0dea6cb5abc4b60142"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_cdc_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_display_dma_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_dma_0_synth_1\\capture_display_dma_0.dcp",
+        "bytes": 513001,
+        "sha256": "17c29bbf7db02dfa37c8b996f492d9d76ba709160aac5b011c3206452b09582b"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_dma_0_synth_1\\runme.log",
+        "bytes": 81818,
+        "sha256": "1c3328253c36bcf259013911996950eeb0893b68128c949ea805d50bbeb828b6"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_dma_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_display_mem_imp_auto_pc_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_pc_0_synth_1\\capture_display_mem_imp_auto_pc_0.dcp",
+        "bytes": 114610,
+        "sha256": "50de12a0e92566d2fd77715cea70c96f0e4dd8d32c72f29c2e856cbc4b33ab00"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_pc_0_synth_1\\runme.log",
+        "bytes": 32587,
+        "sha256": "3be4981d384d92d286be814b9429c827c431cec166f2f4dfde6c4334fbc8a88b"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_pc_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_display_mem_imp_auto_pc_1_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_pc_1_synth_1\\capture_display_mem_imp_auto_pc_1.dcp",
+        "bytes": 234867,
+        "sha256": "35885c03855d3550d2731dc5def8c7fb3d988fff5469f988f1c411e079e8756c"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_pc_1_synth_1\\runme.log",
+        "bytes": 35304,
+        "sha256": "55946a1496b59112cf227d67509f3f79e9143b129425f21d955d92582d5a0fc1"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_pc_1_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_display_mem_imp_auto_us_df_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_us_df_0_synth_1\\capture_display_mem_imp_auto_us_df_0.dcp",
+        "bytes": 470898,
+        "sha256": "b11a85d490a49713433c0f2262b9395bae7a4ffd126fbd52c40506b6b6eddb0c"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_us_df_0_synth_1\\runme.log",
+        "bytes": 48813,
+        "sha256": "0bf77634bbf6331fc82b2b9f279e6a1d412032c4572568a6f4ce2e3a646c8d72"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_auto_us_df_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_display_mem_imp_s00_data_fifo_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_s00_data_fifo_0_synth_1\\capture_display_mem_imp_s00_data_fifo_0.dcp",
+        "bytes": 214717,
+        "sha256": "d9d640865d3b627183ba305fd113ce193e6c917f8f124a6e6fa40453562ae34c"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_s00_data_fifo_0_synth_1\\runme.log",
+        "bytes": 32748,
+        "sha256": "bda251bb738a0622a49668b07215b3339bf7cf80e9c3171d8cc2fca00bcb9695"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_s00_data_fifo_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_display_mem_imp_xbar_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_xbar_0_synth_1\\capture_display_mem_imp_xbar_0.dcp",
+        "bytes": 226220,
+        "sha256": "d20332536569904bb6e6e232885c75e5f5dfe65f2b964087086cbd40116f476f"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_xbar_0_synth_1\\runme.log",
+        "bytes": 54565,
+        "sha256": "7021dcbe454283245fbed40d21d36c5f96bfcb716a93720c5b686614b530e13e"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_display_mem_imp_xbar_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_f_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_f_0_synth_1\\capture_f_0.dcp",
+        "bytes": 10844643,
+        "sha256": "dd6e97b8154e326630bb43a62874134b6130c02c2e5fc5c8b73a14ed51ece88a"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_f_0_synth_1\\runme.log",
+        "bytes": 311081,
+        "sha256": "2cc0c3596fa7da276f14539e0739ace9a33bfe2df90a1c5aa099ed333d0bb03e"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_f_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_hdmi_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_0_synth_1\\capture_hdmi_0.dcp",
+        "bytes": 56244,
+        "sha256": "e5c91bb9efc173705f2a8fed6ba36b3fb38fefe05f3d22f493407bb48671e037"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_0_synth_1\\runme.log",
+        "bytes": 22749,
+        "sha256": "7f8e8a653c512fda5dd706475855c575796d98351a3fce9b9fec86807c2f3af4"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_hdmi_health_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_health_0_synth_1\\capture_hdmi_health_0.dcp",
+        "bytes": 31322,
+        "sha256": "2491cee798aba018f2f5dd2a27dd9ae0864acbedec571d074834644dbbf7f0f2"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_health_0_synth_1\\runme.log",
+        "bytes": 22843,
+        "sha256": "3fbc2bf19f5c60e842c3e3b7b86f00071a57ba7b55001f1644ca9ded2b0687a2"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_health_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_hdmi_observe_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_observe_0_synth_1\\capture_hdmi_observe_0.dcp",
+        "bytes": 168799,
+        "sha256": "62d24de5a9871cfc7d0eb97291cceb62e42b5099a39a7b5784c9c9e42290383e"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_observe_0_synth_1\\runme.log",
+        "bytes": 25860,
+        "sha256": "a660cf14902a8605a4db681719a31071f799266a5c9920c1ca4a3863f82f80b7"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_hdmi_observe_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_ds_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_ds_0_synth_1\\capture_mem_imp_auto_ds_0.dcp",
+        "bytes": 475733,
+        "sha256": "58c9aa9149ffbd6be4cf91867b0d1e22b6616b879466a55644b0ffa74e413fa3"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_ds_0_synth_1\\runme.log",
+        "bytes": 40475,
+        "sha256": "e1ea1622c6b02910a951b5677ed6570252fb5b15d443fc0c07a8ae2669cfe40d"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_ds_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_pc_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_0_synth_1\\capture_mem_imp_auto_pc_0.dcp",
+        "bytes": 138788,
+        "sha256": "b644ac80b3d18e72d2f97d8cdb5a4623b6fa1e493a5285e6b95713b48bf6370d"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_0_synth_1\\runme.log",
+        "bytes": 32193,
+        "sha256": "05d20cd4e03fadfd068b7cd66d9d3120be3b8711bbffc1f087d1c2a446345da2"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_pc_1_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_1_synth_1\\capture_mem_imp_auto_pc_1.dcp",
+        "bytes": 248776,
+        "sha256": "0d5acc6ef76b0a0fa3caba0204ac3e55487465b7547c8c60f3e9be79bfd29ead"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_1_synth_1\\runme.log",
+        "bytes": 35120,
+        "sha256": "a5488bc43a69c4bbe3687beeaf63892299388a3ac5cbdc104a542dd4937af322"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_1_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_pc_2_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_2_synth_1\\capture_mem_imp_auto_pc_2.dcp",
+        "bytes": 133019,
+        "sha256": "2c1214aee5ce2141ca122b42cf0fc65bd4a6e87b2a4acbf1897a6cf80324267d"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_2_synth_1\\runme.log",
+        "bytes": 32431,
+        "sha256": "0d2ba2d0fbcd34e93d4aa0dec9f2dbc07942908ca16266511f3d5d2ab7cf9fe9"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_2_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_pc_3_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_3_synth_1\\capture_mem_imp_auto_pc_3.dcp",
+        "bytes": 164621,
+        "sha256": "fa2c3b85a5eb7781201c905df81ed456f29a83cd5efb9e16e680fd8f1411d408"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_3_synth_1\\runme.log",
+        "bytes": 32197,
+        "sha256": "b0e337e3912629dbbe4efaad1bf989883837b067935ef0c4b287d97cff882f90"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_3_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_pc_4_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_4_synth_1\\capture_mem_imp_auto_pc_4.dcp",
+        "bytes": 132253,
+        "sha256": "dc243a3f30a17b33a8fb5b90d437717109d36d9869ebb600ab6f6cade2a17498"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_4_synth_1\\runme.log",
+        "bytes": 1871,
+        "sha256": "ccfb1c4c69269315aafc64915a37c3619ada5c24546dd725660ff84289ecdfa7"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_4_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": false,
+      "original48_vendor_cache_reuse": true,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_pc_5_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_5_synth_1\\capture_mem_imp_auto_pc_5.dcp",
+        "bytes": 163954,
+        "sha256": "1676237f4399d1f247952a46096daf1f4ab9fa2a2aa34c7095266aef5a28a3e8"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_5_synth_1\\runme.log",
+        "bytes": 1871,
+        "sha256": "adf8651ba8949029dc96445f9ab8688ca49088f9874fcac58d312e4c35a66d3c"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_5_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": false,
+      "original48_vendor_cache_reuse": true,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_pc_6_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_6_synth_1\\capture_mem_imp_auto_pc_6.dcp",
+        "bytes": 141798,
+        "sha256": "e09f8da27674c85ed420beac32c676d5f2f599fd8327a892b4d2b38fc603d95a"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_6_synth_1\\runme.log",
+        "bytes": 32435,
+        "sha256": "2e8e6556c201905692a6576e5cb9cbd6d0e8f70ce818c4393ceeea39d6a0c2f6"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_6_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_pc_7_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_7_synth_1\\capture_mem_imp_auto_pc_7.dcp",
+        "bytes": 173269,
+        "sha256": "bf43d0a37f51facde40503a01fe96376c17f2adeb7332499deaac0e6960a0039"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_7_synth_1\\runme.log",
+        "bytes": 32192,
+        "sha256": "0cacfd6dd36ccf2e930e08b49bcfa6972787d3855a222d2a8d4e9a0c24e6230e"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_7_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_pc_8_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_8_synth_1\\capture_mem_imp_auto_pc_8.dcp",
+        "bytes": 234776,
+        "sha256": "fb80b2b299bfdc6f8c45f147ea4d5b0fd4afe6bd4eff124736026732b43ca600"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_8_synth_1\\runme.log",
+        "bytes": 1871,
+        "sha256": "ca552ca69fba6014cb6932c856cea54cb72d81c77b37039a41dac00e4db465e2"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_pc_8_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": false,
+      "original48_vendor_cache_reuse": true,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_us_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_0_synth_1\\capture_mem_imp_auto_us_0.dcp",
+        "bytes": 144159,
+        "sha256": "47800c901110471c6151e382e1d7647a0be85cfd499ba327e3fd9bc737e4297e"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_0_synth_1\\runme.log",
+        "bytes": 36567,
+        "sha256": "7a908229bfcf4fc76a48b73b42f16e3a5b66222455d30a5477575e455bcda828"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_us_df_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_0_synth_1\\capture_mem_imp_auto_us_df_0.dcp",
+        "bytes": 280488,
+        "sha256": "5fa403a546cad72dc1e94abe9173f37c784ca002998a0660e11416522e9b67f0"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_0_synth_1\\runme.log",
+        "bytes": 38687,
+        "sha256": "e2272cfa841fe7c7133c672816f447cb7458c09f4a440707442ac1397d2ceb6d"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_us_df_1_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_1_synth_1\\capture_mem_imp_auto_us_df_1.dcp",
+        "bytes": 304418,
+        "sha256": "2ffba6f0064903de8c47d6744715f857fea3218af582fc673f7455ddc5f2dc6f"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_1_synth_1\\runme.log",
+        "bytes": 45498,
+        "sha256": "c1b53e54ab4c63edbf6913c56aabfb765d7910a8ee3c3b4fc3e8efce96887eed"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_1_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_us_df_2_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_2_synth_1\\capture_mem_imp_auto_us_df_2.dcp",
+        "bytes": 280399,
+        "sha256": "8d812adb7dcc1ddc737263b7c1492b1e04c7569e8a145d8acd9aa5f4b9008409"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_2_synth_1\\runme.log",
+        "bytes": 1883,
+        "sha256": "c014763beda61aa3d7d96626eac83a651143f50f9dc99e13e0683a5850b877a3"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_2_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": false,
+      "original48_vendor_cache_reuse": true,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_us_df_3_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_3_synth_1\\capture_mem_imp_auto_us_df_3.dcp",
+        "bytes": 303323,
+        "sha256": "773f8d4882fee93bcc296225d9f001e6dfde064363b05eed6736ef07f84a85c2"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_3_synth_1\\runme.log",
+        "bytes": 1883,
+        "sha256": "b0272d9d4dbe8ae4b394591ed5f516577669aec09fd7c90906bdbbefe8ca03f0"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_3_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": false,
+      "original48_vendor_cache_reuse": true,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_auto_us_df_4_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_4_synth_1\\capture_mem_imp_auto_us_df_4.dcp",
+        "bytes": 520040,
+        "sha256": "6c6c44c8cfd8d5f077739d708534f202453dcff1ec3768dcec50ac3868a24c94"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_4_synth_1\\runme.log",
+        "bytes": 48629,
+        "sha256": "319e121c679b8724a56b1a6c3a05987ed4b1d110e8f9de2eb36a22371b5502b1"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_auto_us_df_4_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_s01_data_fifo_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s01_data_fifo_0_synth_1\\capture_mem_imp_s01_data_fifo_0.dcp",
+        "bytes": 445124,
+        "sha256": "a5254508f3e55d234478eea153e3024777efe072dce1c86a9992fd7fa8f64656"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s01_data_fifo_0_synth_1\\runme.log",
+        "bytes": 32531,
+        "sha256": "8991316519443d7b66e3b5769369b69ccee94a2ef6eb55c7d0c2c020c1856c6d"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s01_data_fifo_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_s06_data_fifo_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s06_data_fifo_0_synth_1\\capture_mem_imp_s06_data_fifo_0.dcp",
+        "bytes": 273357,
+        "sha256": "45b5d685cabc4779172279d6a97a886b1ff89f9c5f320d602aa2fd0aab4db744"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s06_data_fifo_0_synth_1\\runme.log",
+        "bytes": 32488,
+        "sha256": "4d8cde0234084aa7c180541430cefd85dac14a09671bfeef27b28c2abfd61a68"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s06_data_fifo_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_s07_data_fifo_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s07_data_fifo_0_synth_1\\capture_mem_imp_s07_data_fifo_0.dcp",
+        "bytes": 278251,
+        "sha256": "b74c816ba6fbc80c0cf927ca116443574a3fc942fc249530c7eb16d3927f508f"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s07_data_fifo_0_synth_1\\runme.log",
+        "bytes": 32523,
+        "sha256": "9118e6da80e4ad1fbf32b0925ab04e5b49f84f8ba9b6fe43a42050509a06095b"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_s07_data_fifo_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_mem_imp_xbar_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_xbar_0_synth_1\\capture_mem_imp_xbar_0.dcp",
+        "bytes": 659218,
+        "sha256": "978717e86951c472b0c0b74e5b75f9e821f01e4f1b6fa1cec30cb4985ad27d96"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_xbar_0_synth_1\\runme.log",
+        "bytes": 67942,
+        "sha256": "630c242fa74b64157e265bae1c5106bc5029c51257aad1bcbbcbdc1754d69d42"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_mem_imp_xbar_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_motion_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_motion_0_synth_1\\capture_motion_0.dcp",
+        "bytes": 29405089,
+        "sha256": "e2847944f34fd753216eb3900928540ced0a43f302e75e91d25aaf84391a95c5"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_motion_0_synth_1\\runme.log",
+        "bytes": 538190,
+        "sha256": "b82e1ff2aa2c84bd37da2771ff6e7239ffa34825fe737c6a8440818bf388eaa9"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_motion_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=10960 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_observe_health_vio_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_observe_health_vio_0_synth_1\\capture_observe_health_vio_0.dcp",
+        "bytes": 180413,
+        "sha256": "6351eb676b31e878b171e4569cc47feeee397af82ee9ab2e4dd31828de437190"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_observe_health_vio_0_synth_1\\runme.log",
+        "bytes": 29125,
+        "sha256": "2947a1a6fa6a2ce119e86dd45b13e3ac6e414da16259e6efaeaf125b6db9fa39"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_observe_health_vio_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=15644 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_observe_pixel_vio_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_observe_pixel_vio_0_synth_1\\capture_observe_pixel_vio_0.dcp",
+        "bytes": 391688,
+        "sha256": "9a5e1f61f71c9b6a11a3b4d69e07635d3a409d00c951cfc3da443dadfec99356"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_observe_pixel_vio_0_synth_1\\runme.log",
+        "bytes": 29630,
+        "sha256": "97f5ba50d7a288a312eb03a4a9b9b9cf16823a0fe5ed16c247843c53f4a9b4a1"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_observe_pixel_vio_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=51072 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_overlay_cdc_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_overlay_cdc_0_synth_1\\capture_overlay_cdc_0.dcp",
+        "bytes": 77419,
+        "sha256": "eda969a064e9d2e2f68ab72c5689dc932d54b2068acc5cc93be3bcac7f731796"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_overlay_cdc_0_synth_1\\runme.log",
+        "bytes": 43937,
+        "sha256": "10b7b7938e704fa3243edfb1ea6b6d96e8b7243896e92ca4bd49bafc394c8f1a"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_overlay_cdc_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=51012 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_overlay_control_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_overlay_control_0_synth_1\\capture_overlay_control_0.dcp",
+        "bytes": 64192,
+        "sha256": "62af8907eaf3a8503aa0b0fcb5aff75bab0424adac5e57883e90baf224b34265"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_overlay_control_0_synth_1\\runme.log",
+        "bytes": 16572,
+        "sha256": "668c1c8d8cb7c37d2174bba1936ed75dca02b371e07e73a527dc628503942888"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_overlay_control_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=10500 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_pixel_clock_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_pixel_clock_0_synth_1\\capture_pixel_clock_0.dcp",
+        "bytes": 12958,
+        "sha256": "be3ab24eb8b36835e8166d43f5a6a12b100110a3bc20de17f18b8519d1b43b74"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_pixel_clock_0_synth_1\\runme.log",
+        "bytes": 19511,
+        "sha256": "e9fe192ffd05d8268beb7f461852f8e81093c3e6d9f86d33fec38c4d4ea734ec"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_pixel_clock_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=17024 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_pixel_reset_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_pixel_reset_0_synth_1\\capture_pixel_reset_0.dcp",
+        "bytes": 26583,
+        "sha256": "38d1078edafb26b016f8feb10ce2193e49208888d02de05c95e0fe258141853a"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_pixel_reset_0_synth_1\\runme.log",
+        "bytes": 23673,
+        "sha256": "4a77a8db0ef325b84e31b6f211f5f93baa65ce8e9a5bdbb3b5ff8ad47c126da5"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_pixel_reset_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=24448 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_pixel_reset_guard_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_pixel_reset_guard_0_synth_1\\capture_pixel_reset_guard_0.dcp",
+        "bytes": 14864,
+        "sha256": "4c1532dfc8d3c2efae021f3b7cbdaed3e7c7c2b0f582397cd62304697c625f29"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_pixel_reset_guard_0_synth_1\\runme.log",
+        "bytes": 15698,
+        "sha256": "d6c9e8347cff3761e976d6a0f2541510e4f0ad1c4bb69a2fad90e51433b46830"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_pixel_reset_guard_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=50976 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_pixels_cdc_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_pixels_cdc_0_synth_1\\capture_pixels_cdc_0.dcp",
+        "bytes": 121203,
+        "sha256": "4d12a13ed78b635c5799d26094ea32911641a9b00e88ccee5bf8d2f871894858"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_pixels_cdc_0_synth_1\\runme.log",
+        "bytes": 44736,
+        "sha256": "b5d371d14d5cb9fabdd9376310627bb5673ad91305c6433936b3bc89c858d0bc"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_pixels_cdc_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=50852 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_ps_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ps_0_synth_1\\capture_ps_0.dcp",
+        "bytes": 172000,
+        "sha256": "d85ed357978755ede8626e99340ff2848d3475a23bc244b74ab8724aa01a55b1"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ps_0_synth_1\\runme.log",
+        "bytes": 35154,
+        "sha256": "108c8b113df99b0332a27d4f61ddb7dbf810f8aa22d81e0f2e7e47376c731b82"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_ps_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=41828 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_r100_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_r100_0_synth_1\\capture_r100_0.dcp",
+        "bytes": 26476,
+        "sha256": "153f370773990e626dab4d77479d8f51f370fbf45048492764f3bb19e4a579b1"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_r100_0_synth_1\\runme.log",
+        "bytes": 23666,
+        "sha256": "8cd891b8ea5fcc76774ac64ad61f7fff17dac209fb5f87283a36a86818840217"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_r100_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": true,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": []
+    },
+    {
+      "name": "capture_r150_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_r150_0_synth_1\\capture_r150_0.dcp",
+        "bytes": 26361,
+        "sha256": "8d409aa20c6358a04b631bc4894298754becfdccc0f6541119560f7a749a8a9b"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_r150_0_synth_1\\runme.log",
+        "bytes": 23469,
+        "sha256": "4919199fd2b852174845a211d0f76d060cf3289d548ca0135234c01e8420cffd"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_r150_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=44884 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_r200_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_r200_0_synth_1\\capture_r200_0.dcp",
+        "bytes": 26369,
+        "sha256": "016a79cf881e477683e05f3c8f4c00ca02e50ab494b0761c6fbda254f580bfd0"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_r200_0_synth_1\\runme.log",
+        "bytes": 23481,
+        "sha256": "dcf139b0efe24f7bd302493ac1e1745faf434fecb0a60f237b197de7cf22db2c"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_r200_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=47392 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_roi_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_roi_0_synth_1\\capture_roi_0.dcp",
+        "bytes": 3996201,
+        "sha256": "c86f8919731356670ad01fba6fca63253f89e5bab0a576cff82da359e57134f4"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_roi_0_synth_1\\runme.log",
+        "bytes": 181466,
+        "sha256": "a542e4c85b81f393e85ce25f9b8aaa2469a056bd07c997e0656dc18763124eed"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_roi_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=6668 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_sccb_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_sccb_0_synth_1\\capture_sccb_0.dcp",
+        "bytes": 14299,
+        "sha256": "4dd353712c9998555e036d3d7202de0709603e82fd06b2d5d0f425443d318abf"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_sccb_0_synth_1\\runme.log",
+        "bytes": 16639,
+        "sha256": "fe3e5fd46e63088663fa65b650bff94413fc68c5be0dc5a0a896102b6942a761"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_sccb_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=39640 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_spec_fft_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_spec_fft_0_synth_1\\capture_spec_fft_0.dcp",
+        "bytes": 2209922,
+        "sha256": "e9cf24c5a4256fb7ff2aa7c1041e59b0b6b8f9887bb1b13e676927967819067b"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_spec_fft_0_synth_1\\runme.log",
+        "bytes": 136957,
+        "sha256": "ad764eb23392a9564495208e48961a9088a0a719461b737277c5d5bad904f6d0"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_spec_fft_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=47248 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_state_large_imp_auto_ds_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_large_imp_auto_ds_0_synth_1\\capture_state_large_imp_auto_ds_0.dcp",
+        "bytes": 542735,
+        "sha256": "b488366d61edd223fd90f19d7486b765e9c3c9e406a729f08f6f86d97fa76ba3"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_large_imp_auto_ds_0_synth_1\\runme.log",
+        "bytes": 40408,
+        "sha256": "2f14b4d3f7d62c9ac01fae26d695a8871a118a8f8d92d6349c1621d103a1ea0f"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_large_imp_auto_ds_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=8784 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_state_large_imp_auto_pc_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_large_imp_auto_pc_0_synth_1\\capture_state_large_imp_auto_pc_0.dcp",
+        "bytes": 114966,
+        "sha256": "5d8cbde241aa0e374c9a6e8296673d03db31a5e7249629a706378c8546f77805"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_large_imp_auto_pc_0_synth_1\\runme.log",
+        "bytes": 32554,
+        "sha256": "6ba323d25a02963a60122f71efc3e2d80454d1088ab49a7d2938c5976d2f30d2"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_large_imp_auto_pc_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=25836 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_state_large_imp_s00_data_fifo_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_large_imp_s00_data_fifo_0_synth_1\\capture_state_large_imp_s00_data_fifo_0.dcp",
+        "bytes": 368184,
+        "sha256": "b5e35ce80534548c914223549e50441566b4920e6d3503b827df84ad91295135"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_large_imp_s00_data_fifo_0_synth_1\\runme.log",
+        "bytes": 32442,
+        "sha256": "93bad766f16c2d84a6db5eb21c53e7ecbb00a5e242872763f1040d7cf5846387"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_large_imp_s00_data_fifo_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=3220 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_state_small_imp_auto_ds_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_small_imp_auto_ds_0_synth_1\\capture_state_small_imp_auto_ds_0.dcp",
+        "bytes": 542814,
+        "sha256": "7d6d46877db49ed42dbc480fdd0a1800e22432d1dbdb44004e9c643b5f16d2df"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_small_imp_auto_ds_0_synth_1\\runme.log",
+        "bytes": 40411,
+        "sha256": "3066590929c0e5233dbcc74fbfe009284a6f151fb3f50684774a0506537980b1"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_small_imp_auto_ds_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=37472 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_state_small_imp_auto_pc_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_small_imp_auto_pc_0_synth_1\\capture_state_small_imp_auto_pc_0.dcp",
+        "bytes": 114966,
+        "sha256": "e38013592dcab6bfd4d1688b0465d235e68dfa82a1ad4abdbc7efb0d2a5d72f2"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_small_imp_auto_pc_0_synth_1\\runme.log",
+        "bytes": 32559,
+        "sha256": "0bb4be36f3ca1efc2cebbaca2fc84f4fc1771f1c5ece2522fc75bb7a3a876441"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_small_imp_auto_pc_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=47384 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_state_small_imp_s00_data_fifo_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_small_imp_s00_data_fifo_0_synth_1\\capture_state_small_imp_s00_data_fifo_0.dcp",
+        "bytes": 368291,
+        "sha256": "b2a59e6c2ef5e369c2b3995db45b6bb14024d59b0473711160de790d771be4e1"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_small_imp_s00_data_fifo_0_synth_1\\runme.log",
+        "bytes": 32451,
+        "sha256": "70b4b8c2c493ec1b1dd1a0b3c860819b5209f66d14ffb4843597cd3804580f2c"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_state_small_imp_s00_data_fifo_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=36516 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_vdma_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_vdma_0_synth_1\\capture_vdma_0.dcp",
+        "bytes": 729054,
+        "sha256": "83c0d30e88ac28e71063db291ebcbaa8bd949bae77aa392b7b030cb0aef559a2"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_vdma_0_synth_1\\runme.log",
+        "bytes": 97276,
+        "sha256": "4294c8753d88104ac54a1a535af087e1d8f0ca2793491383af9be88aac3bd08f"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_vdma_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=44644 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "capture_video_0_synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_video_0_synth_1\\capture_video_0.dcp",
+        "bytes": 211081,
+        "sha256": "4a1f81750ffe2cae92c24f1dfd892efac232f6866008ff4faf2a076021c4e7c0"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_video_0_synth_1\\runme.log",
+        "bytes": 25638,
+        "sha256": "d7e82c7dcd3c258b0533eff4c42526ac332b9512cf8d06e4befb9278a1614f31"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_video_0_synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=1096 general=1 synth=1"
+      ]
+    },
+    {
+      "name": "synth_1",
+      "dcp": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\synth_1\\capture_wrapper.dcp",
+        "bytes": 1023086,
+        "sha256": "07e7a51a1e515cbafc1924203c8b371d7ad62394339b3f12f0561d9e6da00a83"
+      },
+      "log": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\synth_1\\runme.log",
+        "bytes": 134334,
+        "sha256": "925206bd228777d3f113d1924c62f5f5d8d70f329886b88561a439890e36ef88"
+      },
+      "end_marker": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\synth_1\\.vivado.end.rst",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_synthesis_success_marker": true,
+      "original48_vendor_cache_reuse": false,
+      "original48_preserved": false,
+      "unchanged_from_intermediate_audit": true,
+      "new_single_thread_pre_markers": [
+        "VIVADO_RESUME_SYNTH_PRE_THREADS_1 pid=21412 general=1 synth=1"
+      ]
+    }
+  ],
+  "original48_vendor_cache_reuse_names": [
+    "capture_ctrl_intercon_imp_auto_cc_2_synth_1",
+    "capture_ctrl_intercon_imp_auto_cc_4_synth_1",
+    "capture_mem_imp_auto_pc_4_synth_1",
+    "capture_mem_imp_auto_pc_5_synth_1",
+    "capture_mem_imp_auto_pc_8_synth_1",
+    "capture_mem_imp_auto_us_df_2_synth_1",
+    "capture_mem_imp_auto_us_df_3_synth_1"
+  ],
+  "new24_actual_uncached_synthesis_count": 24,
+  "five_hls_actual_uncached_synthesis_count": 5,
+  "original48_not_rerun_evidence": {
+    "protected_dcp_log_end_hashes_match_frozen_plan": true,
+    "original48_live_status_markers": [
+      [
+        "bd_adc2_phy_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "bd_adc2_r_sync_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "bd_adc2_rx_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "bd_adc2_vfb_0_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "bd_adc2_xbar_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_clip_dma_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_controls_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_core_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_csi_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_ctrl_intercon_imp_auto_cc_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_ctrl_intercon_imp_auto_cc_1_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_ctrl_intercon_imp_auto_cc_2_synth_1",
+        "Using cached IP results"
+      ],
+      [
+        "capture_ctrl_intercon_imp_auto_cc_3_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_ctrl_intercon_imp_auto_cc_4_synth_1",
+        "Using cached IP results"
+      ],
+      [
+        "capture_ctrl_intercon_imp_auto_pc_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_ctrl_intercon_imp_xbar_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_display_cdc_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_display_dma_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_display_mem_imp_auto_pc_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_display_mem_imp_auto_pc_1_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_display_mem_imp_auto_us_df_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_display_mem_imp_s00_data_fifo_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_display_mem_imp_xbar_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_f_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_hdmi_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_hdmi_health_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_hdmi_observe_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_auto_ds_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_auto_pc_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_auto_pc_1_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_auto_pc_2_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_auto_pc_3_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_auto_pc_4_synth_1",
+        "Using cached IP results"
+      ],
+      [
+        "capture_mem_imp_auto_pc_5_synth_1",
+        "Using cached IP results"
+      ],
+      [
+        "capture_mem_imp_auto_pc_6_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_auto_pc_7_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_auto_pc_8_synth_1",
+        "Using cached IP results"
+      ],
+      [
+        "capture_mem_imp_auto_us_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_auto_us_df_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_auto_us_df_1_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_auto_us_df_2_synth_1",
+        "Using cached IP results"
+      ],
+      [
+        "capture_mem_imp_auto_us_df_3_synth_1",
+        "Using cached IP results"
+      ],
+      [
+        "capture_mem_imp_auto_us_df_4_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_s01_data_fifo_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_s06_data_fifo_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_s07_data_fifo_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_mem_imp_xbar_0_synth_1",
+        "synth_design Complete!"
+      ],
+      [
+        "capture_r100_0_synth_1",
+        "synth_design Complete!"
+      ]
+    ],
+    "reset_allowlist_count": 24,
+    "reset_allowlist": [
+      "capture_motion_0_synth_1",
+      "capture_observe_health_vio_0_synth_1",
+      "capture_observe_pixel_vio_0_synth_1",
+      "capture_overlay_cdc_0_synth_1",
+      "capture_overlay_control_0_synth_1",
+      "capture_pixel_clock_0_synth_1",
+      "capture_pixel_reset_0_synth_1",
+      "capture_pixel_reset_guard_0_synth_1",
+      "capture_pixels_cdc_0_synth_1",
+      "capture_ps_0_synth_1",
+      "capture_r150_0_synth_1",
+      "capture_r200_0_synth_1",
+      "capture_roi_0_synth_1",
+      "capture_sccb_0_synth_1",
+      "capture_spec_fft_0_synth_1",
+      "capture_state_large_imp_auto_ds_0_synth_1",
+      "capture_state_large_imp_auto_pc_0_synth_1",
+      "capture_state_large_imp_s00_data_fifo_0_synth_1",
+      "capture_state_small_imp_auto_ds_0_synth_1",
+      "capture_state_small_imp_auto_pc_0_synth_1",
+      "capture_state_small_imp_s00_data_fifo_0_synth_1",
+      "capture_vdma_0_synth_1",
+      "capture_video_0_synth_1",
+      "synth_1"
+    ],
+    "reason": "All original48 DCP, timestamped runme.log, and completion-marker hashes remain identical to the pre-resume plan; 48 native reuse-status markers are present. The hash-bound driver reset only the 24 predeclared pending names."
+  },
+  "five_candidate_synthesis_results": [
+    {
+      "target": "copy",
+      "run": "capture_clip_dma_0_synth_1",
+      "synthesis_success": true,
+      "warnings": [],
+      "critical": [],
+      "errors": [],
+      "actual_synth_time": [
+        "synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 2190.887 ; gain = 1506.414"
+      ],
+      "utilization_report": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_clip_dma_0_synth_1\\capture_clip_dma_0_utilization_synth.rpt",
+        "bytes": 9092,
+        "sha256": "c8633513a369ec89a03c06d3839e5262cce660c371b68d435fb995813c620a4d"
+      },
+      "resource_rows": [
+        "| Slice LUTs*                | 1416 |     0 |          0 |    277400 |  0.51 |",
+        "| Slice Registers            | 2362 |     0 |          0 |    554800 |  0.43 |",
+        "| Block RAM Tile    |    6 |     0 |          0 |       755 |  0.79 |",
+        "| DSPs      |    0 |     0 |          0 |      2020 |  0.00 |"
+      ]
+    },
+    {
+      "target": "spectrum",
+      "run": "capture_spec_fft_0_synth_1",
+      "synthesis_success": true,
+      "warnings": [],
+      "critical": [],
+      "errors": [],
+      "actual_synth_time": [
+        "synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:39 . Memory (MB): peak = 2335.363 ; gain = 1648.758"
+      ],
+      "utilization_report": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_spec_fft_0_synth_1\\capture_spec_fft_0_utilization_synth.rpt",
+        "bytes": 9464,
+        "sha256": "6e400de39dea8b4307c183abdb24e7f3743c226f17cc247285e54bc2ea1985b6"
+      },
+      "resource_rows": [
+        "| Slice LUTs*                | 5222 |     0 |          0 |    277400 |  1.88 |",
+        "| Slice Registers            | 7011 |     0 |          0 |    554800 |  1.26 |",
+        "| Block RAM Tile    |  6.5 |     0 |          0 |       755 |  0.86 |",
+        "| DSPs           |   12 |     0 |          0 |      2020 |  0.59 |"
+      ]
+    },
+    {
+      "target": "roi",
+      "run": "capture_roi_0_synth_1",
+      "synthesis_success": true,
+      "warnings": [],
+      "critical": [],
+      "errors": [],
+      "actual_synth_time": [
+        "synth_design: Time (s): cpu = 00:02:12 ; elapsed = 00:02:47 . Memory (MB): peak = 2551.477 ; gain = 1865.777"
+      ],
+      "utilization_report": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_roi_0_synth_1\\capture_roi_0_utilization_synth.rpt",
+        "bytes": 9484,
+        "sha256": "e7853ef104613213c1c907d74ba90c709107257da00459a9b8118c22ea28f1ad"
+      },
+      "resource_rows": [
+        "| Slice LUTs*                |  9180 |     0 |          0 |    277400 |  3.31 |",
+        "| Slice Registers            | 12291 |     0 |          0 |    554800 |  2.22 |",
+        "| Block RAM Tile    |  266 |     0 |          0 |       755 | 35.23 |",
+        "| DSPs           |   61 |     0 |          0 |      2020 |  3.02 |"
+      ]
+    },
+    {
+      "target": "temporal",
+      "run": "capture_f_0_synth_1",
+      "synthesis_success": true,
+      "warnings": [],
+      "critical": [],
+      "errors": [],
+      "actual_synth_time": [
+        "synth_design: Time (s): cpu = 00:02:35 ; elapsed = 00:03:31 . Memory (MB): peak = 2902.848 ; gain = 2214.789"
+      ],
+      "utilization_report": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_f_0_synth_1\\capture_f_0_utilization_synth.rpt",
+        "bytes": 9521,
+        "sha256": "d3bc7195e3ccdb21122f3d50ea6b0f5c44a561fd9458d1c667b64d7e63d3dec9"
+      },
+      "resource_rows": [
+        "| Slice LUTs*                | 22997 |     0 |          0 |    277400 |  8.29 |",
+        "| Slice Registers            | 34808 |     0 |          0 |    554800 |  6.27 |",
+        "| Block RAM Tile    |   10 |     0 |          0 |       755 |  1.32 |",
+        "| DSPs           |  196 |     0 |          0 |      2020 |  9.70 |"
+      ]
+    },
+    {
+      "target": "motion",
+      "run": "capture_motion_0_synth_1",
+      "synthesis_success": true,
+      "warnings": [],
+      "critical": [],
+      "errors": [],
+      "actual_synth_time": [
+        "synth_design: Time (s): cpu = 00:15:59 ; elapsed = 00:17:17 . Memory (MB): peak = 4454.129 ; gain = 3768.777"
+      ],
+      "utilization_report": {
+        "path": "D:\\vision\\submission\\_build\\v26c02\\p\\c.runs\\capture_motion_0_synth_1\\capture_motion_0_utilization_synth.rpt",
+        "bytes": 9542,
+        "sha256": "b983594f7802b562f4a255983a51a64b4c7612f022b0d45764e3c4225d00a984"
+      },
+      "resource_rows": [
+        "| Slice LUTs*                |  86132 |     0 |          0 |    277400 | 31.05 |",
+        "| Slice Registers            | 119439 |     0 |          0 |    554800 | 21.53 |",
+        "| Block RAM Tile    |  391 |     0 |          0 |       755 | 51.79 |",
+        "| DSPs           |  563 |     0 |          0 |      2020 | 27.87 |"
+      ]
+    }
+  ],
+  "actual_runtime_gate_markers": [
+    "VIVADO_RESUME_INPUTS_AND_REUSED_DCPS_VERIFIED {\"source_files_verified\": 989, \"imported_hdl_and_data_verified\": 324, \"completed_runs_preserved\": 48}",
+    "VIVADO_RESUME_INPUTS_AND_REUSED_DCPS_VERIFIED {\"source_files_verified\": 989, \"imported_hdl_and_data_verified\": 324, \"completed_runs_preserved\": 48}",
+    "ALPHA50_EFFECTIVE_GATE_SOURCES_VERIFIED",
+    "ALPHA50_EFFECTIVE_GATE_SOURCES_VERIFIED",
+    "ALPHA50_SYNTH_WATCHDOG_BITS 8",
+    "VIVADO_RESUME_IMPL_INIT_PRE_THREADS_1 pid=36952 general=1",
+    "BUTTON_PREOPT_PIN_AND_SYNCHRONIZER_PASSED",
+    "VIVADO_RESUME_IMPL_GENERAL_MAXTHREADS_1"
+  ],
+  "completion_marker": "QSPI_2025_2_RESUME_BIT_BUILT_REQUIRES_RUNTIME_VALIDATION",
+  "console_log": {
+    "path": "D:\\vision\\submission\\_build\\v26c02\\logs\\timing_resume_02.console.log",
+    "bytes": 555478,
+    "sha256": "0bcbb7edb208655e3faf54c88124ae970b633b29dd618df9f81c0eabd71218a1"
+  },
+  "runner_elapsed_seconds": 10223.581,
+  "runner_outputs_for_separate_artifact_audit": [
+    {
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\artifacts\\capture.bit",
+      "bytes": 13198397,
+      "sha256": "f1a45db6c1cc6ac694bec1002288998f8bc60d485026e9a96772e2a449e476ca"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\artifacts\\capture.xsa",
+      "bytes": 5885956,
+      "sha256": "ff737a60df9353e465dfb57e57a7beeeb294ff5f4cb4c59d67efe3dab8f5f617"
+    },
+    {
+      "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\resume_02\\artifacts\\capture.ltx",
+      "bytes": 139492,
+      "sha256": "dd5ba2d10d069cfafb33561bf51d0a34b809c0ea5ba2ca8195847a8ff5d96613"
+    }
+  ]
+}

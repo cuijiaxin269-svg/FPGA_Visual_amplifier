@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "finished_at": "2026-11-04T01:19:07.829394+08:00",
+  "bundle": {
+    "path": "D:\\vision\\submission\\_build\\hls_regeneration_20261103\\continuation_20261103\\deliverables\\timing_validation_evidence_20261103.zip",
+    "bytes": 192972631,
+    "sha256": "6c1f60d40dec6433d35a641bdc9db1389a5c466f709b0aeb5ca19f102269e3f2"
+  },
+  "payload_members": 1709,
+  "zip_crc_passed": true,
+  "all_decompressed_member_sha256_passed": true,
+  "all_input_hashes_stable": true,
+  "timing_runner_status": "passed",
+  "timing_result_inferred_from_packaging": false
+}

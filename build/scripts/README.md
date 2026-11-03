@@ -2,7 +2,9 @@
 
 `build_boot.py` 用于在完整硬件编译成功后，将新 XSA、匹配位流和新 ARM 应用组成独立的 QSPI 启动包。2026-10-30 已用 AMD 2025.2 实际完成 XSCT/HSI 生成、FSBL 编译、bootgen、bootgen 读回解析与镜像静态审计，所有子进程退出码为 0；详见[启动包报告](../reports/boot_2025_2/README.md)。此处记录主机构建流程，整机使用状态见[项目首页](../../README.md)。
 
-它调用 `create_fsbl.tcl`，使用所选 AMD 安装中的官方 `zynq_fsbl` 模板生成 FSBL。流程只在主机运行，不调用板卡连接、下载或 Flash 编程工具。
+本轮 HLS 阶段结果和最终实现状态见[专门记录](../../report/hls_regeneration_20261103/README.md)，五个 IP 的独立复现步骤见[REPRODUCE](../../report/hls_regeneration_20261103/REPRODUCE.md)。主工程封存 IP 未替换；新候选正常 ROI 和 motion 全帧 RTL 仍待补验，不能把已有启动包或整机使用记录转记为新候选的验收结果。
+
+`build_boot.py` 调用 `create_fsbl.tcl`，使用所选 AMD 安装中的官方 `zynq_fsbl` 模板生成 FSBL。流程只在主机运行，不调用板卡连接、下载或 Flash 编程工具。
 
 ## 输入和输出
 

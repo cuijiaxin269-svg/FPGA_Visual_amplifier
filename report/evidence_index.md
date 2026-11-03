@@ -2,11 +2,11 @@
 
 本索引区分主机软件测试、RTL 仿真、硬件构建、板内读回、人工视觉确认和真实冷启动。路径相对于仓库根目录。原始记录中的旧绝对路径作为历史来源保留，不是本仓库的执行入口。
 
-作者最新确认整套系统已上板且可正常使用；视频和本人 AI 协作摘要已归档，当前收尾仅为 HLS 验证结果整理与归档，见[当前清单](submission_gaps.md)。下列条目是可复查的历史证据，其原有范围与状态保留。
+作者最新确认整套系统已上板且可正常使用；视频和本人 AI 协作摘要已归档。本轮 HLS 阶段结果和最终实现状态见[专门记录](hls_regeneration_20261103/README.md)，待补验范围见[当前清单](submission_gaps.md)。下列历史证据保留原有范围与状态。
 
 ## 2026-11-03 新增资料
 
-完整目录见[资料总索引](materials_20261103.md)。[v19 新验收](../board/results/v19_acceptance_20261103/README.md)新增 3 次冷启动、按键、STOP 和人工屏幕确认；长稳中断，软件黄金对比不属于实板像素输出。另有[屏工程](../board/hmi/README.md)、[硬件资料](../board/hardware/README.md)和[报告](design_report/PUBLICATION_NOTE.md)。视频及[本人 AI 协作摘要](ai_logs/author_collaboration_summary_20261103.md)已补充归档，HLS 新材料继续单独处理。下列历史记录保留原有验证时点；v19 新结果不能用于证明 2025.2 产物已整机验收。
+完整目录见[资料总索引](materials_20261103.md)。[v19 新验收](../board/results/v19_acceptance_20261103/README.md)新增 3 次冷启动、按键、STOP 和人工屏幕确认；长稳中断，软件黄金对比不属于实板像素输出。另有[屏工程](../board/hmi/README.md)、[硬件资料](../board/hardware/README.md)和[报告](design_report/PUBLICATION_NOTE.md)。视频及[本人 AI 协作摘要](ai_logs/author_collaboration_summary_20261103.md)已补充归档；HLS 新记录及复现步骤见[阶段结果](hls_regeneration_20261103/README.md)和[REPRODUCE](hls_regeneration_20261103/REPRODUCE.md)。新候选正常 ROI 和 motion 全帧 RTL 仍待补验，主工程封存 IP 未替换。下列历史记录保留原有验证时点；v19 新结果不能用于证明 2025.2 产物已整机验收。
 
 ## 本轮目录整理与 2025.2 验证
 
