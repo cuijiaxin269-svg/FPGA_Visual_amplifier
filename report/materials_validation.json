@@ -1,17 +1,33 @@
 {
   "date": "2026-11-03",
   "timezone": "Asia/Shanghai",
-  "baseline": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
-  "protected_baseline_files_checked": 1393,
-  "protected_baseline_files_changed": [],
-  "source_ip_firmware_build_and_test_entries_unchanged": true,
-  "acceptance_archive_payload_checked": 2264,
-  "acceptance_archive_hash_errors": 0,
-  "report_source_package_files_checked": 39,
-  "hmi_manifest_files_checked": 7,
-  "deferred": [
-    "video",
-    "HLS regeneration item 6"
+  "source_baseline": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "current_status": "Author confirms the system is deployed and usable; other deliverables complete.",
+  "remaining_tasks": [
+    "HLS verification",
+    "demo video",
+    "AI collaboration records"
   ],
-  "scope": "Documentation and evidence publication only; no new board test, firmware build, HLS run or report compilation."
+  "functional_baseline_files_checked": 977,
+  "functional_baseline_file_changes": [],
+  "authorized_document_changes_in_functional_trees": [
+    "build/scripts/README.md",
+    "build/scripts/hls/README.md",
+    "sim/reference_model/README.md",
+    "skill/README.md",
+    "skill/boot_image_verification.md",
+    "skill/evidence_handoff.md",
+    "skill/uart_state_validation.md",
+    "src/hls/README.md"
+  ],
+  "redundant_files_removed": 43,
+  "removed_bytes": 1662029,
+  "removed_local_backups_hash_verified": 43,
+  "original_register_and_code_readbacks_preserved": 2033,
+  "archive_origin_checks": {
+    "v19_payload_hashes": 2264,
+    "report_original_zip_files": 39,
+    "hmi_manifest_files": 7
+  },
+  "scope": "Repository-wide file/document scan and documentation/evidence cleanup; no new physical experiment or algorithm change."
 }

@@ -2,6 +2,8 @@
 
 本索引区分主机软件测试、RTL 仿真、硬件构建、板内读回、人工视觉确认和真实冷启动。路径相对于仓库根目录。原始记录中的旧绝对路径作为历史来源保留，不是本仓库的执行入口。
 
+作者最新确认整套系统已上板且可正常使用；当前收尾仅为 HLS 验证、视频及 AI 协作记录，见[当前清单](submission_gaps.md)。下列条目是可复查的历史证据，其原有范围与状态保留。
+
 ## 2026-11-03 新增资料
 
 完整目录见[资料总索引](materials_20261103.md)。[v19 新验收](../board/results/v19_acceptance_20261103/README.md)新增 3 次冷启动、按键、STOP 和人工屏幕确认；长稳中断，软件黄金对比不属于实板像素输出。另有[屏工程](../board/hmi/README.md)、[硬件资料](../board/hardware/README.md)和[报告](design_report/PUBLICATION_NOTE.md)。视频与 HLS 第 6 项本次暂缓。下列历史记录保留原有验证时点；v19 新结果不能用于证明 2025.2 产物已整机验收。
@@ -48,7 +50,7 @@
 | `board/results/v19boot/flash_verified.json` | 最终 Flash 镜像读回及未涉及尾部的验证 |
 | `board/results/v19boot/cold_boot_verified.json` | 一次真实断电/上电；BOOT_MODE=1；.text 69876 字节与原候选逐字节一致，运行计时增长，状态 STOPPED |
 | `board/results/v19boot/board_evidence/` | 传输失败、恢复、读回与冷启动的原始记录 |
-| `report/original_notes/v19boot/acceptance.txt` | 摄像头/HDMI/HMI、重复掉电和长稳尚未验证 |
+| `report/original_notes/v19boot/acceptance.txt` | 当时尚未覆盖的外设、重复掉电和长稳项目（历史快照） |
 
 冷启动证据绑定的应用 ELF SHA256 是 `b066d1e63a11929eae0b8ca86c233da6d40929d3daa14621ef4b7a88622c7d98`，与本轮 2025.2 编译得到的 ELF 不同。它只证明历史候选的那次冷启动。文件 `volatile_handoff*.log` 属于调试器辅助交接，不能单独证明 BootROM 从 Flash 自启动。
 

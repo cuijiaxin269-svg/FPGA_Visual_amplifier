@@ -1,49 +1,40 @@
 # FPGA_Visual_amplifier
 
-区域相位运动放大与微振检测。基于 Zynq-7000 `xc7z100ffg900-2`，结合 OV9281 图像采集、PL 图像处理与频谱、HDMI 1080p30 显示及 PS 裸机串口屏交互。
+基于 Zynq-7000 `xc7z100ffg900-2` 的区域相位运动放大与微振检测系统，包含 OV9281 图像采集、PL 图像处理与频谱分析、HDMI 1080p30 显示，以及 PS 裸机串口屏和实体按键交互。
 
-本目录由已有工程整理而来，以 `v19boot` 为源码起点，保留 `v18hmi` 和 `v19boot` 的原始验证记录。原工程未改动。正式材料缺项见 [submission_gaps.md](report/submission_gaps.md)；历史证据与本轮验证分开保存。
+**项目状态：整机已上板，系统可正常使用。** 作者于 2026-11-03 确认，除 **HLS 验证、演示视频、AI 协作记录** 三项外，其他交付内容均已完成。当前收尾见[三项清单](report/submission_gaps.md)。
 
-**2026-11-03 资料已补充：** [资料总索引](report/materials_20261103.md)包含串口屏 HMI/TFT、硬件 BOM/供电/拨码照片、v19 验收与黄金参考、24 页报告及 LaTeX 源码。完整原始资料包放在[资料发布页](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/tag/materials-20261103)。视频与 HLS 第 6 项按用户最新要求暂缓发布。本次保持 `a9ab041` 原版工程，后续算法改进与方形选区工程不发布。
+本仓库保留 `a9ab041` 对应的原版工程；后续算法改进和方形选区工程不纳入公开版本。源码以 `v19boot` 为整理起点，构建资料同时保留历史 2021.2 与 2025.2 重新构建的版本信息。
 
-新 v19 证据支持 3 次冷启动、实体按键、启停及用户确认的屏幕效果；长稳采样中断，仍未完成完整验收。黄金参考对比中的输出来自 HLS C 仿真，实板逐帧输出、端到端延迟及真实位移倍率仍待测。这些结果不等于下表 2025.2 新构建产物的整机验证。
+## 项目资料
 
-## 当前验证
-
-下表保留 2025.2 构建基线的验证范围；11 月 3 日 v19 实板增补见[独立验收说明](board/results/v19_acceptance_20261103/README.md)。
-
-| 项目 | 状态与证据 |
+| 内容 | 入口 |
 |---|---|
-| 现有 8 项主机测试 | 迁移到新目录后全部通过；[结果](sim/results/current_host/result.json) |
-| ARM 裸机程序 | 使用 AMD 2025.2 配套编译器重新编译通过；[结果](build/reports/firmware_2025_2/result.json) |
-| 频谱 UI RTL 对比 | Vivado 2025.2 的 xvlog/xelab/xsim 通过；[结果](sim/results/vivado_2025_2/result.json) |
-| Vivado 2025.2 完整硬件构建 | 71 个 IP、顶层综合、布局布线、位流/XSA/LTX 导出全部通过；WNS +0.177 ns、WHS +0.010 ns；[硬件构建报告](build/reports/vivado_2025_2/README.md) |
-| 2025.2 匹配启动包 | 新 XSA 生成 FSBL，bootgen 与镜像静态检查通过；BOOT 13,357,152 字节；[启动包报告](build/reports/boot_2025_2/README.md) |
-| 2025.2 新构建的板级运行 | 尚未验证；编译/仿真通过不能替代上板结果 |
+| 设计报告 | [24 页 PDF](report/design_report/report_competition_review.pdf)、[LaTeX 源码与说明](report/design_report/PUBLICATION_NOTE.md) |
+| 串口屏 | [HMI/TFT 工程、页面及串口接口](board/hmi/README.md) |
+| 硬件 | [芯片 BOM、供电和启动拨码照片](board/hardware/README.md)、[接线说明](board/wiring/README.md) |
+| 实板与量化记录 | [v19 验收记录](board/results/v19_acceptance_20261103/README.md)、[证据索引](report/evidence_index.md) |
+| 全部配套材料 | [资料索引](report/materials_20261103.md)、[完整资料包](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/tag/materials-20261103) |
+| HLS 与 AI 记录 | [HLS 来源及当前入口](report/hls_provenance.md)、[AI 协作记录](report/ai_logs/README.md) |
 
-历史 v18 记录包括部分实体屏/HDMI 确认、10 分钟自动交互和 32 分钟连续运行；历史 v19 包括 Flash 固化和一次真实冷启动，当时未接相机、HDMI 或串口屏。详情见 [证据索引](report/evidence_index.md) 和 `report/original_notes/`。
+历史记录保留各自的版本和测量条件。当前作者使用确认与原始实验数据分别记录，不将软件仿真输出当作实板像素输出，也不新增未经测量的延迟或位移倍率。
 
-2025.2 最终资源为 LUT 138026、FF 206397、BRAM 744.5/755、DSP 826。原约束中 MIPI HS 输入及 HDMI 输出的板外时序窗口仍需实测，内部正时序余量不能证明板外采样/输出裕量，详见[硬件报告的约束边界](build/reports/vivado_2025_2/README.md#原设计的外部-io-约束边界)。
-
-## 目录
+## 工程目录
 
 | 目录 | 内容 |
 |---|---|
-| `src/rtl`、`src/ps` | 自研 RTL 与 PS 裸机程序 |
-| `src/hls` | 追溯得到的 HLS 源码及相关测试；[来源与限制](report/hls_provenance.md) |
-| `src/ip`、`src/bd`、`src/constraints` | 当前导出 IP、BD Tcl、引脚与时序约束 |
-| `sim` | 原有测试、移植后的运行入口、新旧结果 |
-| `build` | 可配置构建入口与报告，编译中间目录另置 |
-| `board` | 接线资料、历史运行脚本、对应版本的板级证据 |
-| `data` | 已有多频输入测试记录 |
-| `skill` | 从已有失败与观察中整理的可复用经验 |
-| `report` | 设计材料、协作记录状态、来源清单及缺项 |
+| `src/rtl`、`src/ps` | RTL 与 PS 裸机程序 |
+| `src/hls`、`src/ip` | HLS 源码与主工程使用的封存 IP |
+| `src/bd`、`src/constraints` | BD Tcl、引脚及时序约束 |
+| `build`、`sim` | 构建入口、功能测试、参考模型及已有结果 |
+| `board`、`data` | 硬件/屏端资料、实板记录与输入测试数据 |
+| `report`、`skill` | 报告、资料索引、协作记录及复用经验 |
 
-## 2025.2 环境与构建
+## 环境与复现
 
-本轮验证环境为 Windows、AMD unified tools 2025.2、Python 3。主机 C++ 测试使用 AMD 安装内附的完整 MinGW 工具链；系统原有 `D:/mingw64` 缺失标准头文件，失败记录保留于 `sim/results/environment_failure/`。配置安装路径时请使用实际目录。
+已使用 Windows、AMD unified tools 2025.2 和 Python 3 完成构建。2025.2 记录包括 71 个 IP、综合、布局布线和 BIT/XSA/LTX 导出；WNS +0.177 ns、WHS +0.010 ns，详见[硬件报告](build/reports/vivado_2025_2/README.md)。主机测试使用 AMD 安装内附的 MinGW 工具链。
 
-以下 PowerShell 示例假设当前目录为仓库根目录。所有大型输出放到独立目录，避免将 Vivado 缓存提交到 Git。创建工程的输出目录必须尚不存在。
+从仓库根目录执行以下命令，并将工具安装路径改为本机实际位置。输出放到仓库外的新目录：
 
 ```powershell
 $repoRoot = (Get-Location).Path
@@ -74,17 +65,14 @@ python build/scripts/build_boot.py --tool-root $amdRoot `
 if ($LASTEXITCODE -ne 0) { throw 'Boot package failed; inspect its reports/result.json.' }
 ```
 
-三个 Python 入口在有效命令启动后先将收据标为 `running`，正常结束标为 `passed` 或 `failed`；缺少工具或子进程异常也会写入失败原因。可用 `--report-dir` 指向独立报告目录进行诊断，避免覆盖正式验证记录。
+构建与启动包说明见 [build/scripts/README.md](build/scripts/README.md)。上述命令生成文件和运行软件/RTL 测试，不执行烧录。不同版本的 BIT、XSA、初始化文件、ELF 和 BOOT 应成套使用。
 
-当前硬件入口使用随仓库保存的已导出 IP。`motion60_shared` 的历史版本包含 alpha 上限常量 ECO，不能将重新生成的 HLS IP 未经比对直接覆盖；完整 C++ 到 IP 的重生成状态见 HLS 来源报告。
+主工程使用 `src/ip` 中的封存 IP。HLS 重生成是当前三项收尾之一，其新结果待单独整理；本次文档清理不替换 IP 或算法代码。
 
+## 发布与文件校验
 
-启动包入口生成新的 FSBL、BIF 和 BOOT，并检查 XSA 内位流、UART0/QSPI 配置和应用载荷；细节见 [build/scripts/README.md](build/scripts/README.md)。此入口只构建文件，不执行上板或烧写。
+[GitHub Releases](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases) 提供成套构建产物和完整资料附件。2025.2 构建附件包含 BIT、XSA、LTX、应用/FSBL ELF、BOOT/BIF、初始化文件和 SHA-256 清单；资料补充附件包含串口屏、硬件、v19 验收及报告工程。
 
-## 发布附件和许可
+当前仓库文件清单可运行 `python build/scripts/verify_package.py` 核对；完整附件按发布页的 `SHA256SUMS.txt` 校验。重复阶段报告和失效交接等材料仅在完整附件或历史提交中保留，具体见[收录范围](report/excluded_files.md)。
 
-公开源码仓库为 [cuijiaxin269-svg/FPGA_Visual_amplifier](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier)，配套构建产物通过 [GitHub Releases](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases) 提供。`fpga_visual_amplifier_vivado_2025_2_artifacts.zip` 包含匹配的 bit、XSA、LTX、应用/FSBL ELF、BOOT/BIF、新平台初始化文件、SHA256 清单及验证范围说明。
-
-本地成套文件仍位于提交目录旁 `release_assets/vivado_2025_2/`。原 2021.2 历史产物单独保存在本地 `release_assets/v19_2021_2/`，本次发布附件采用 2025.2 版本，不能混用两套初始化文件和产物。源码仓库不包含 Vivado 构建缓存；从仓库根可运行 `python build/scripts/verify_package.py` 核对文件清单与 IP 引用。
-
-项目级开源协议尚待确定，当前未添加声称覆盖所有第三方文件的 LICENSE。[第三方说明](report/third_party.md) 保留待核对项；公开仓库不表示第三方文件已被重新许可。
+版权和来源说明见 [third_party.md](report/third_party.md)。各文件保留原有声明，本次整理不改变授权范围。

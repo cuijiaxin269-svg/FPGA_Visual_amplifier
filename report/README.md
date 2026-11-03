@@ -1,0 +1,14 @@
+# 项目文档
+
+作者已确认整机上板并正常使用，其他交付内容已完成；当前只剩 **HLS 验证、演示视频、AI 协作记录**，见[收尾清单](submission_gaps.md)。
+
+| 用途 | 阅读入口 |
+|---|---|
+| 了解项目 | [设计报告](design_report.md)、[24 页 PDF](design_report/report_competition_review.pdf) |
+| 查找资料 | [配套材料索引](materials_20261103.md) |
+| 查看已有结果 | [验证证据索引](evidence_index.md) |
+| 追溯 HLS | [源码与封存 IP 来源](hls_provenance.md) |
+| 整理 AI 记录 | [协作记录目录](ai_logs/README.md) |
+| 了解归档范围 | [收录与清理说明](excluded_files.md)、[版权与来源](third_party.md) |
+
+`original_notes`、`original_scripts`、原始验收记录和报告正文保留产生时的内容，可能含当时的待办或旧路径。当前项目状态以上述收尾清单为准；归档中的旧状态不作为新增交付任务。

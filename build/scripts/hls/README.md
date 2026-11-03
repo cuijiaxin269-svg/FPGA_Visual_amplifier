@@ -2,7 +2,7 @@
 
 主 Vivado 构建使用仓库中的已导出 IP。本目录用于进一步检查 C++ 或重新生成候选 IP，生成结果保存在独立目录，不自动替换 `src/ip/`。
 
-`build_hls.tcl` 根据已有脚本调整相对路径，使用支持 `open_component` 的 Vitis HLS Tcl 环境。此次只做了 Tcl 语法完整性和输入路径检查，尚未在 HLS 工具中运行；具体 HLS 运行环境及结果仍需验证。已归档的 alpha50 历史 C 仿真实际使用 2021.2，其原脚本在 `archive/test_alpha50_2021.tcl.txt`。
+`build_hls.tcl` 根据已有脚本调整相对路径，使用支持 `open_component` 的 Vitis HLS Tcl 环境。入库时完成了 Tcl 语法和输入路径检查；当前 HLS 验证任务的结果待单独整理上传，见[收尾清单](../../../report/submission_gaps.md)。已归档的 alpha50 历史 C 仿真使用 2021.2，其原脚本在 `archive/test_alpha50_2021.tcl.txt`。
 
 ## 配置
 
@@ -34,6 +34,6 @@ python -B build/scripts/hls/generate_roi_vectors.py
 
 `motion60_shared` 的历史导出流程带有 FIFO 地址寄存器 `DONT_TOUCH` 处理。本入口保留该步骤，并在生成模板不符合预期时停止。处理对象是导出目录中的 Verilog；使用其他压缩封装前须检查它是否包含处理后的内容。
 
-当前封存 IP 还包含 alpha30→alpha50 的四处 Verilog 常量修补，详见 [来源报告](../../../report/hls_provenance.md)。本目录的 C++ 已含 alpha50 检查；重新 HLS 生成可能改变调度、资源及物理实现，须重新进行接口、数值、时序、资源和板端验证后才能选为正式 IP。
+当前封存 IP 包含 alpha30→alpha50 的四处 Verilog 常量修补，详见 [来源报告](../../../report/hls_provenance.md)。本目录的 C++ 已含 alpha50 检查，不应再次套用旧常量修补。重生成候选与现有封存 IP 分开保存；替换正式 IP 时依据该候选的接口、功能与实现结果选择回归范围。
 
 `archive/` 保留原始脚本的字节副本并附加 `.txt`。它们含旧目录及安装环境，用于来源追溯，不作为新仓库直接执行入口。

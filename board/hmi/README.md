@@ -14,6 +14,6 @@
 
 原交接说明描述的是 2026-10-25 旧固件，所述“VIEW 未实现、板端 alpha 上限 30”不代表本仓库 a9ab041 基线。基线板端已支持 VIEW 和 alpha≤50；归档文件保留原文，不把历史待办重复当成当前缺陷。该屏工程没有新增 MAGROI 方形选区协议。
 
-原 verification 的 `physical_touch_tested=false`、`controller_integrated=false` 是屏工程独立检查时的状态；后续 v19 的[人工交互记录](../results/v19_acceptance_20261103/README.md)另列，尚不能仅凭本次文件到齐证明某个 HMI 文件哈希与所有实板录像一一对应。
+作者已确认整套系统上板可正常使用；后续 v19 的[人工交互记录](../results/v19_acceptance_20261103/README.md)已归档。原 verification 的 `physical_touch_tested=false`、`controller_integrated=false` 属于屏工程独立检查时的历史状态。
 
-编辑器精确版本尚缺；原本机工具路径仅作历史来源。未重新编译或烧屏。独立 `amd_boot_final.HMI` 不作为默认烧录文件，也不宣称它与 `motion60_control.HMI` 等价。标识、字库和编辑器相关第三方范围见[许可状态](../../report/third_party.md)。
+复现默认工程时使用上表对应的 HMI/TFT；独立 `amd_boot_final.HMI` 作为源文件变体保留，不作为默认烧录文件。归档未记录编辑器精确版本，本机工具路径仅作来源信息。标识与字库沿用[现有许可状态](../../report/third_party.md)。

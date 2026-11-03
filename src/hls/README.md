@@ -13,6 +13,6 @@
 | `reference/` | ROI 测试向量使用的 Python 黄金参考 | `ab12/algorithm/motion60_spectrum.py` |
 | `provenance/` | 历史 C 仿真、RTL 常量修补记录和本次收集检查 | 见各记录 |
 
-主工程在 Vivado 中使用 `../ip/` 的已导出 IP。当前目录的完整重新 HLS 综合不属于这次目录整理已验证的结果。两条路线的区别及仍需验证的环节见 [HLS 来源报告](../../report/hls_provenance.md)。
+主工程在 Vivado 中使用 `../ip/` 的已导出 IP。C++ 重生成验证作为当前单独收尾任务，结果归档前不替换封存 IP；当前安排见[收尾清单](../../report/submission_gaps.md)，源码与导出 IP 的来源见 [HLS 来源报告](../../report/hls_provenance.md)。
 
 可选的 HLS Tcl 入口位于 [build/scripts/hls](../../build/scripts/hls/README.md)。C++ 还需要 AMD HLS 提供的 `ap_int.h`、`hls_stream.h`、`hls_math.h` 等工具库；这些库由工具安装提供，不复制到本仓库。
