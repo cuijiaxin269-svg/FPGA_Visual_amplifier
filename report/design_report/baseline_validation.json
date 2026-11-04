@@ -1,7 +1,7 @@
 {
-  "checked_at_utc": "2026-11-01T13:16:16.497794+00:00",
+  "checked_at_utc": "2026-11-04T09:16:50.842307+00:00",
   "baseline_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
-  "repository": "D:\\vision\\submission\\fpga_visual_amplifier",
+  "repository": "D:\\vision\\submission\\publish_original_20261103",
   "status": "passed",
   "method": "Exact SHA256 comparison of Git blob bytes at the fixed baseline against recorded input hashes; no line-ending normalization.",
   "scope": "Evidence correspondence only; existing project tests, synthesis, implementation, deployment and board tests were not rerun.",
@@ -9,7 +9,7 @@
   "groups": [
     {
       "id": "hardware_inputs",
-      "source_receipt_path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\vivado_2025_2\\input_sha256.json",
+      "source_receipt_path": "D:\\vision\\submission\\publish_original_20261103\\build\\reports\\vivado_2025_2\\input_sha256.json",
       "source_receipt_git_path": "build/reports/vivado_2025_2/input_sha256.json",
       "source_receipt_sha256": "dde4f80d52c55285e3c087d04131d77b5d719011e4eeab706c617e97dd2cffaf",
       "workspace_receipt_sha256": "dde4f80d52c55285e3c087d04131d77b5d719011e4eeab706c617e97dd2cffaf",
@@ -24,7 +24,7 @@
     },
     {
       "id": "host_test_inputs",
-      "source_receipt_path": "D:\\vision\\submission\\fpga_visual_amplifier\\sim\\results\\current_host\\result.json",
+      "source_receipt_path": "D:\\vision\\submission\\publish_original_20261103\\sim\\results\\current_host\\result.json",
       "source_receipt_git_path": "sim/results/current_host/result.json",
       "source_receipt_sha256": "e0de8e99067571b02bdc15ad1d09c1c7fa330f09e0d444a139f5d4cbb333a95d",
       "workspace_receipt_sha256": "e0de8e99067571b02bdc15ad1d09c1c7fa330f09e0d444a139f5d4cbb333a95d",
@@ -39,7 +39,7 @@
     },
     {
       "id": "rtl_comparison_inputs",
-      "source_receipt_path": "D:\\vision\\submission\\fpga_visual_amplifier\\sim\\results\\vivado_2025_2\\result.json",
+      "source_receipt_path": "D:\\vision\\submission\\publish_original_20261103\\sim\\results\\vivado_2025_2\\result.json",
       "source_receipt_git_path": "sim/results/vivado_2025_2/result.json",
       "source_receipt_sha256": "8cc372b636b84d10f9c3ad7f1184474fa5e71aecfbeb2350e0ff1433ae2c51ba",
       "workspace_receipt_sha256": "8cc372b636b84d10f9c3ad7f1184474fa5e71aecfbeb2350e0ff1433ae2c51ba",
@@ -54,7 +54,7 @@
     },
     {
       "id": "arm_firmware_inputs",
-      "source_receipt_path": "D:\\vision\\submission\\fpga_visual_amplifier\\build\\reports\\firmware_2025_2\\result.json",
+      "source_receipt_path": "D:\\vision\\submission\\publish_original_20261103\\build\\reports\\firmware_2025_2\\result.json",
       "source_receipt_git_path": "build/reports/firmware_2025_2/result.json",
       "source_receipt_sha256": "519ae647d286d1e8a4a384b5dacdb5da019466f999da80e7a2e08db62214b711",
       "workspace_receipt_sha256": "519ae647d286d1e8a4a384b5dacdb5da019466f999da80e7a2e08db62214b711",

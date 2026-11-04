@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-04",
+  "source_baseline": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "code_version": "V19 (v19boot), archived source with documented 2025.2 adaptation",
+  "board": "OS-ZYNQ7100",
+  "chip_bom": "XC7Z100-2FFG900I",
+  "vivado_part": "xc7z100ffg900-2",
+  "scope": "Chip/camera/CPU identity, algorithm names and formulas, code/tool version attribution; no new physical experiments.",
+  "source_files": [
+    {
+      "path": "main.tex",
+      "sha256": "683a1e2a23b048d26cd17d9b297bf70a992ac9dfe3edaa9ad236cee5907ea7d1"
+    },
+    {
+      "path": "sections/abstract.tex",
+      "sha256": "190db4f0cb8a1a649796180193f55aa05b5369f4c16739a3449dd4bf0dc2fea1"
+    },
+    {
+      "path": "sections/conclusion.tex",
+      "sha256": "4e2850e138ba409815392a812c0a867bfabaf2fb241ec7c25a7dfa8d982f5fc6"
+    },
+    {
+      "path": "sections/methods.tex",
+      "sha256": "51b05a45be22585146e5db3543bc05e72d1c6dab7d5166d2de1be09f18be5271"
+    },
+    {
+      "path": "sections/overview.tex",
+      "sha256": "0dad63830a0759a99c70b06d1b6a2fa212836917930f54516ce62fe909094851"
+    },
+    {
+      "path": "sections/references.tex",
+      "sha256": "0943e1322d8dab0a67b38f6428f562657d5f3d69022a58ebe2beeb35fb8bc301"
+    },
+    {
+      "path": "sections/results.tex",
+      "sha256": "2abb36bcff93d0a5e9b4ca0bf9e181f90504f849348d455082d2313cda3e4398"
+    }
+  ],
+  "evidence_files": [
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\hardware\\archive_20261103\\OS-ZYNQ7100_芯片BOM.md",
+      "sha256": "878cda1954fe3c4cca3d0e24b48b3b0ab65e4b760aa2dc9db4e8bebbca6c4871"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\README.md",
+      "sha256": "a0d3220a2c7f9b7bc1ec23b98fb61138427e38dd8c807d4d75555976430a7974"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\report\\file_manifest.json",
+      "sha256": "d8b564840911eb491a4ffbb5ea59e469a33e0ecafc8e1bb5a5a2caa85e87021c"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\report\\hls_provenance.md",
+      "sha256": "fecfde0c6998e5199825a238fb70dff002ec1e2ad4516d5df86e38a93aad8a80"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\report\\original_notes\\v19boot\\README.txt",
+      "sha256": "b70ec0c6d810127e8eec525a7dcb0731bbc6cc007cf3dba9d42a50ba305ee4f8"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\src\\bd\\capture_qspi_bd.tcl",
+      "sha256": "e760e152aa73ac2ada5e563dce0b045aa05ee42c7a69b2d5eda8af2a0526789f"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\src\\ps\\platform.c",
+      "sha256": "3b5237a837edcd295af924cb7f11e69058c1eb4a5cfb0693eb95ee81642f2832"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\src\\ps\\motion60.c",
+      "sha256": "c2cc3f8b093262cd22d0fa0d7d01b87dadca25534a8b366318b3ffc297ca2679"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\src\\ps\\motion60_spectrum_pl_driver.c",
+      "sha256": "bfd918c6e84abbe0ac844a2deac15597b915ec2131b630c070081b715f2f627f"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\src\\hls\\motion60_shared\\phase_core.cpp",
+      "sha256": "8cdf982fb7ffeef0f46a87b2ae6ccbeac38f8e3a6460ddf52b68a24015ccb3d5"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\src\\hls\\motion60_shared\\pipeline.cpp",
+      "sha256": "5d6f6964d4da58cfbe3652ae99b9fb528807321e3ccb1f0b025d8b35c423bf73"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\src\\hls\\roi256\\roi256.cpp",
+      "sha256": "3eed84917b7c5c92601be9893aaba0f0bf6c4952626d0ad6545ff24e35816c21"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\src\\hls\\spectrum256_pl\\spectrum256_pl.cpp",
+      "sha256": "c777d7a8edd541cd76b4515c387ef95cfbcb3a705dad8f41c13565d9608099bd"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\build\\scripts\\build_firmware.py",
+      "sha256": "e56b8e77a53def847f0425c7f49fe5375e02cdc52b0059b579d8eb26ea7f0242"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\build\\reports\\firmware_2025_2\\result.json",
+      "sha256": "519ae647d286d1e8a4a384b5dacdb5da019466f999da80e7a2e08db62214b711"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\results\\v18hmi\\board_validation.json",
+      "sha256": "d98a098423aaac1ec9c83ea0daa5db336f10851475e8c60df53945c899b18244"
+    },
+    {
+      "path": "D:\\vision\\submission\\publish_original_20261103\\board\\results\\v19_acceptance_20261103\\README.md",
+      "sha256": "9a8ebf0b680a861e47f1b5a986931752af9fde87e418e073b4a8d79b48439f64"
+    }
+  ],
+  "vector_figure_checks": [
+    {
+      "path": "fig1-1-development.pdf",
+      "sha256": "71d3ad1584c663a713c9a0b1e28c21439c190e5528ee3ac201adb28353d57c5a",
+      "text": "需求分析\n与指标定义\n算法分析\n与参考模型\n软硬件划分\n与接口定义\nHLS、RTL与PS\n程序实现\n模块测试\n与RTL比对\n综合、布局布线\n与时序检查\n板级联调\n与功能验证\n启动固化\n与版本归档\n发现问题后返回相关实现模块，完成修正并重新验证。\n不通过\n未满足约束\n联调异常\n"
+    },
+    {
+      "path": "fig2-1-system.pdf",
+      "sha256": "ad93d15742a64da0a39c752745b191d34cc033490a038642279dda6423068215",
+      "text": "OV9281 相机\nPL：CSI接收\nRAW10\n采集DMA\nDDR：原始帧\n三缓冲\n1280×800\nPL：全帧相位\n运动放大\n1280×800\nPL：固定ROI\n位移估计\n256×256，dx/dy\nDDR：处理帧\n缓冲\nPL：256样本\n时间窗口\nDFT幅度结果\nPL：视图选择\n显示DMA\nPL：视频时序\n频谱与状态\n叠加\nHDMI显示器\n1920×1080\n30 Hz\nPS：裸机控制与调度\n配置相机/算法/显示\n管理完成及错误状态\n串口屏 / 实体按键\n独立日志终端\ndx / dy\n原画旁路\n配置 / 调度\n完成 / 错误\n相机配置\n请求\n反馈\nUART0\n"
+    },
+    {
+      "path": "fig2-3-main-flow.pdf",
+      "sha256": "7de67cd834da1ae178f0e1aca88ad1fdaf323c08e92b6d3327ce047bde736b4f",
+      "text": "上电初始化\n平台与计时器\n控制与通信\n待机轮询\n合法启动\n请求？\n释放显示DMA读取\n配置相机\n启动采集\n启动\n成功？\n恢复算法参数\n与窗口\n服务采集/计算/显示\n处理命令与错误\n就绪后报告运行\n存在\n故障？\nSTOP或\n定时结束？\n记录错误\n按故障清理\n反馈ERROR\n请求采集DMA停止\n等待帧边界\nHALTED\n关闭采集输出\n排空计算\n与频谱任务\n相机停流\n完成最终检查\n停止\n成功？\n确认STOPPED\n返回待机\n保持末帧\n否\n是\n是\n否\n是\n否\n否\n是\n是\n否\n"
+    },
+    {
+      "path": "fig2-4-phase.pdf",
+      "sha256": "3a3b16b45f70b9c0e28a711e8380d80fd8746ae424b28626076bff875b39feeb",
+      "text": "（a）多尺度处理与重建\n原始帧\n1280×800\n三级空间\n金字塔\n逐级上采样\n与叠加\n加入残差\n放大帧\n0—1023\n粗尺度残差 160×100\n（b）单层相位处理展开\n局部相位\nφ=atan2(B,r)\n参考相位差\nx=φ−φ₀\n二阶IIR\n时间带通\n相位调制\nθ=αy\n子带重建\nB′=B·cos(αy)+r·sin(αy)\n状态 z₁、z₂\nB、r\n写回\n下一帧\n各尺度独立保存首帧参考相位与时间滤波状态。\n第1层带通\n1280×800\n单层相位处理\n独立历史状态\n第2层带通\n640×400\n单层相位处理\n独立历史状态\n第3层带通\n320×200\n单层相位处理\n独立历史状态\n"
+    },
+    {
+      "path": "fig2-5-roi-spectrum.pdf",
+      "sha256": "48d8e996bca8db937604002bf4dac6bd3d47c8ddd6bb27c73d381b25f71f4fc5",
+      "text": "（a）逐帧ROI位移估计\n原始帧固定ROI\n256×256\n位置(512,272)\n有效帧且\n纹理充分？\n二维Hann窗\n二维FFT\n归一化\n互功率谱\n二维IFFT\n相关峰与\n亚像素插值\n（dx、dy）\n无效状态\n参考/窗口失效\n参考频域数据\n首个有效帧\n逐帧位移，单位px\n（b）时间位移频谱分析\n连续有效位移\n256点滑动窗口\n满256点且\n到发布时机？\n去均值 / 去线性趋势\nHann窗\n256点直接DFT\n129个单边频点\nAₓ、Aᵧ（px）\n继续收入\n下一帧样本\n帧序号不连续时清空旧窗口；\n当前有效样本入窗。\n约5 Hz仅为发布节奏\n否\n是\n首帧存储\n否\n是\n"
+    },
+    {
+      "path": "fig2-6-parameter-sequence.pdf",
+      "sha256": "ea4893973c3b46e25aca780249de3fa938e0999db14831fb62602ac81bce4cf5",
+      "text": "（a）运行中修改alpha\n（放大模式VIEW 1/2）\n用户/\n串口屏\nPS\n命令处理\nPL /\n相机\n状态\n反馈\n（b）停止状态设置曝光\n并在下次启动应用\n用户/\n串口屏\nPS\n命令处理\nPL /\n相机\n状态\n反馈\n校验并标记\n待应用\n仅空闲时\n排队\nALPHA请求\n任务完成后\n安全写参数\n新帧完成且\n读回匹配\n确认APPLIED\n更新参数状态\nEXPOSURE\n请求\n后续START\n写入曝光\n寄存器\n读回值一致\n确认曝光已应用\n更新参数状态\n"
+    },
+    {
+      "path": "fig3-5-spectrum.pdf",
+      "sha256": "24afde4f0abfbd39d06c1f578b5787f39841f0f04f4bc3124ac5da4e0a40aacc",
+      "text": "0\n5\n10\n15\n20\n25\n30\n频率 / Hz\n0.00\n0.04\n0.08\n0.12\n0.16\nROI 图像位移谱幅 / px\n频点 21\n4.953 Hz\n频点 42\n9.906 Hz\nX 方向\nY 方向\n目标频率\n"
+    },
+    {
+      "path": "fig3-6-runtime.pdf",
+      "sha256": "765d0020c9bb066bb7133f32787e4b1d818077991a69a1584ea5858e931bb19f",
+      "text": "59.5\n60.0\n60.5\n61.0\n速率 / (frame/s)\n(a) 处理速率\n平均 60.37969 frame/s\n分段速率\n全段平均\n0\n4\n8\n12\n16\n20\n24\n28\n32\n运行时间 / min\n29.0\n29.5\n30.0\n30.5\n31.0\n速率 / (frame/s)\n(b) 显示速率\n平均 30.00000 frame/s\n"
+    }
+  ],
+  "algorithm_errors_found": [],
+  "source_and_pdf_assertions": "passed",
+  "version_source_audit": "version_source_validation.json",
+  "build_input_audit": "baseline_validation.json",
+  "correction_record": "事实复检记录_20261104.md",
+  "pdf_sha256": "8660b9922661b310c091691ddf569d2fe6280851c7989a81216a5a7536631cbf",
+  "pages": 26
+}

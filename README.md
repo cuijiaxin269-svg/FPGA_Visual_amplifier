@@ -1,6 +1,6 @@
 # FPGA_Visual_amplifier
 
-基于 Zynq-7000 `xc7z100ffg900-2` 的区域相位运动放大与微振检测系统，包含 OV9281 图像采集、PL 图像处理与频谱分析、HDMI 1080p30 显示，以及 PS 裸机串口屏和实体按键交互。
+基于 OS-ZYNQ7100 开发板（主芯片 Zynq-7100 / `XC7Z100-2FFG900I`，Vivado 目标 `xc7z100ffg900-2`） 的区域相位运动放大与微振检测系统，包含 OV9281 图像采集、PL 图像处理与频谱分析、HDMI 1080p30 显示，以及 PS 裸机串口屏和实体按键交互。
 
 **项目状态：整机已上板，系统可正常使用。** 作者已确认其他交付内容完成；最新演示视频和本人 AI 协作摘要已补充归档。本轮 HLS 阶段结果和最终实现状态见[专门记录](report/hls_regeneration_20261103/README.md)，待补验范围见[当前清单](report/submission_gaps.md)。
 
@@ -10,7 +10,7 @@
 
 | 内容 | 入口 |
 |---|---|
-| 设计报告 | [26 页 PDF](report/design_report/report_competition_review.pdf)、[LaTeX 源码与说明](report/design_report/PUBLICATION_NOTE.md) |
+| 设计报告（2026-11-04 事实复检版） | [26 页 PDF](report/design_report/report_competition_review.pdf)、[LaTeX 源码与说明](report/design_report/PUBLICATION_NOTE.md) |
 | 串口屏 | [HMI/TFT 工程、页面及串口接口](board/hmi/README.md) |
 | 硬件 | [芯片 BOM、供电和启动拨码照片](board/hardware/README.md)、[接线说明](board/wiring/README.md) |
 | 实板与量化记录 | [v19 验收记录](board/results/v19_acceptance_20261103/README.md)、[证据索引](report/evidence_index.md) |

@@ -1,5 +1,7 @@
 # 2026-11-03 资料补充与版本边界
 
+报告已于 **2026-11-04** 完成事实复检：明确 Zynq-7100 / XC7Z100-2FFG900I 与 **V19（v19boot）** 代码版本，逐项核对算法名称；[核对记录](design_report/事实复检记录_20261104.md)随 PDF 和 LaTeX 源码归档。 本次更新通过 Git 发布，最新可编译源码位于 [design_report/](design_report/)；Release 中的11月3日ZIP保留为历史版本。
+
 本次只整理原版项目的配套资料。工程源码、封存 IP、BD、约束、固件、构建及仿真入口均保持公开基线 `a9ab041021c269b446be4e5aa00ae3141f01ec8d`；后续算法改进、方形选区工程与其调试产物不在本次发布中。
 
 ## 阅读与下载
@@ -9,7 +11,7 @@
 | 串口屏 HMI/TFT、交接与检查 | [屏端资料](../board/hmi/README.md) | [原 ZIP](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/hmi_project_20261101.zip) |
 | 芯片 BOM、供电链路、拨码照片 | [硬件资料](../board/hardware/README.md) | [原 7z](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/hardware_documents_20261103.7z) |
 | v19 实板验收与软件黄金参考 | [验收范围和原始记录](../board/results/v19_acceptance_20261103/README.md) | [完整验收包](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/v19_acceptance_20261103.7z) |
-| 26 页设计报告与 LaTeX 工程 | [报告 PDF](design_report/report_competition_review.pdf)、[发布说明](design_report/PUBLICATION_NOTE.md) | [报告源码包](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/design_report_latex_20261103.zip) |
+| 26 页设计报告与 LaTeX 工程 | [报告 PDF](design_report/report_competition_review.pdf)、[发布说明](design_report/PUBLICATION_NOTE.md) | [11月3日历史源码包](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/design_report_latex_20261103.zip) |
 | 作品演示视频 | [文件信息](../media/README.md) | [完整视频](https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier/releases/download/materials-20261103/demo_complete_20261103.mp4) |
 | 作者 AI 协作记录 | [本人协作摘要](ai_logs/author_collaboration_summary_20261103.md) | [记录目录](ai_logs/README.md) |
 | 基线 HLS 重生成与验证 | [阶段结果及最终实现状态](hls_regeneration_20261103/README.md)、[REPRODUCE](hls_regeneration_20261103/REPRODUCE.md) | 附件清单与验证范围见专门记录 |
@@ -22,7 +24,7 @@
 - **2025.2 原版重新构建**：沿用已有 71 IP、实现、BIT/XSA/BOOT 静态检查证据；新 v19 包不能转记为这套新产物的整机实测。两套启动文件不可混用。
 - **量化对比**：已有同输入、参数、帧号的独立黄金参考与 HLS C 模型输出/误差；这些是软件结果，数值范围不包含实板逐像素比较、端到端延迟或实际位移倍率。
 
-作者于 2026-11-03 最新确认整套系统已上板、可以正常使用，视频和本人 AI 协作摘要已补充归档，其他交付内容已完成，见[当前清单](submission_gaps.md)。报告 PDF 与 LaTeX 已修订为 26 页，纳入补充验收、C 模型误差和当前资料状态；原始测量记录保持不变。新版源码包标记为 `design_report_latex_20261103.zip`，旧 11 月 1 日附件保留供历史追溯。
+作者于 2026-11-03 最新确认整套系统已上板、可以正常使用，视频和本人 AI 协作摘要已补充归档，其他交付内容已完成，见[当前清单](submission_gaps.md)。报告 PDF 与 LaTeX 已修订为 26 页，纳入补充验收、C 模型误差和当前资料状态；原始测量记录保持不变。11月3日归档源码包标记为 `design_report_latex_20261103.zip`，旧 11 月 1 日附件保留供历史追溯。
 
 本轮 HLS 阶段结果和最终实现状态见[专门记录](hls_regeneration_20261103/README.md)，复现步骤见[REPRODUCE](hls_regeneration_20261103/REPRODUCE.md)。新候选正常 ROI 和 motion 全帧 RTL 仍待补验，原主工程封存 IP 未替换；历史报告中的阶段进度按原记录保留。
 

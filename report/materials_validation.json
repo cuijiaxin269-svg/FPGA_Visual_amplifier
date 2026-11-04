@@ -47,5 +47,14 @@
       "new_hls_artifacts_published": false,
       "hls_progress_summary_in_report": true
     }
+  },
+  "report_factual_revision_20261104": {
+    "source": "report/design_report/",
+    "pdf": "report/design_report/report_competition_review.pdf",
+    "pdf_sha256": "8660b9922661b310c091691ddf569d2fe6280851c7989a81216a5a7536631cbf",
+    "pages": 26,
+    "code_version": "V19 (v19boot)",
+    "audit": "report/design_report/事实复检记录_20261104.md",
+    "publication": "Git repository update; historical Release asset hashes remain unchanged."
   }
 }

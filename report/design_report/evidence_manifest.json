@@ -665,5 +665,11 @@
     ],
     "remaining_work": "HLS后续RTL覆盖、新候选集成及结果整理；进行中结果不记为通过",
     "scope": "作者当前使用确认与文件状态，不冒充特定构建产物的新增实测"
+  },
+  "factual_revision_20261104": {
+    "code_version": "V19 (v19boot)",
+    "report": "事实复检记录_20261104.md",
+    "audit": "factcheck_validation.json",
+    "scope": "型号具体化、代码与工具版本说明；算法名称逐项核实；原实验来源与数值保留"
   }
 }

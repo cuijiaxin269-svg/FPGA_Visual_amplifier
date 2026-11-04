@@ -1,0 +1,69 @@
+{
+  "recorded_at_utc": "2026-11-04T09:19:50.5660951Z",
+  "audit_date_local": "2026-11-04",
+  "audit_timezone": "Asia/Shanghai",
+  "status": "passed",
+  "code_version": "V19 (v19boot)",
+  "baseline_commit": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
+  "published_repository": "D:\\vision\\submission\\publish_original_20261103",
+  "published_head_commit": "a6da919e0b9f622f3d7068784ba878b2d0a69dbe",
+  "original_source_root": "D:\\vision\\FPGA_Visual_amplifier\\FPGA_Visual_amplifier",
+  "source_manifest": {
+    "path": "D:\\vision\\submission\\publish_original_20261103\\report\\file_manifest.json",
+    "sha256": "d8b564840911eb491a4ffbb5ea59e469a33e0ecafc8e1bb5a5a2caa85e87021c",
+    "bytes": 1197243,
+    "last_write_time_utc": "2026-11-03T15:00:55.8217353Z"
+  },
+  "method": {
+    "selection": "Manifest entries with path beginning src/ and source beginning vision/v19boot/.",
+    "hash_algorithm": "SHA-256",
+    "comparison": "Get-FileHash on the original source file and current published file. Require original-source SHA-256 to equal source_sha256 and published-file SHA-256 to equal sha256 from the manifest. For entries without adapted=true, also require original-source and published-file SHA-256 to be identical. No line-ending normalization.",
+    "result_origin": "This record preserves the completed read-only 866-file comparison in the current audit session. The full comparison was not repeated merely to write this record. The manifest hash, published HEAD, and src commit diff were read again when recording it.",
+    "scope": "Version/source correspondence only. No synthesis, HLS regeneration, software test, flash programming, or board run was performed by this audit. HLS source provenance is not included in this 866-entry subset because those entries originate from earlier algorithm directories."
+  },
+  "results": {
+    "selected_files": 866,
+    "original_source_hashes_matching_manifest": 866,
+    "published_file_hashes_matching_manifest": 866,
+    "direct_source_identical_files": 865,
+    "documented_adapted_files": 1,
+    "groups": {
+      "bd": 3,
+      "board_support": 2,
+      "constraints": 11,
+      "ip": 788,
+      "ps": 43,
+      "rtl": 19
+    },
+    "missing_files": [],
+    "source_manifest_mismatches": [],
+    "published_manifest_mismatches": [],
+    "unadapted_source_published_mismatches": []
+  },
+  "adapted_entries": [
+    {
+      "path": "src/bd/capture_qspi_bd.tcl",
+      "source": "vision/v19boot/project/capture_qspi_bd.tcl",
+      "source_sha256": "b5f076a4071588aa96e008b5390102a6ce8ef814ce825b689205a423982aacbd",
+      "published_sha256": "e760e152aa73ac2ada5e563dce0b045aa05ee42c7a69b2d5eda8af2a0526789f",
+      "adapted": true,
+      "original_source_matches_manifest": true,
+      "published_file_matches_manifest": true,
+      "header": "# Adapted from the v19 Vivado 2021.2 export for Vivado 2025.2."
+    }
+  ],
+  "baseline_to_published_head_src_diff": {
+    "command": "git diff a9ab041021c269b446be4e5aa00ae3141f01ec8d a6da919e0b9f622f3d7068784ba878b2d0a69dbe -- src",
+    "changed_paths": [
+      "src/hls/README.md"
+    ],
+    "documentation_only": true,
+    "executable_source_changes": [],
+    "summary": "One README paragraph updated the status and links for separately tracked HLS regeneration. No code or archived IP changes between the named commits."
+  },
+  "interpretation": {
+    "source_version": "The report baseline is the V19/v19boot-derived project, with the documented Vivado 2025.2 BD adaptation.",
+    "tool_version": "2021.2 and 2025.2 identify separate tool/build versions; they do not replace V19 as the source version.",
+    "historical_evidence": "V18 fixed-configuration endurance results, V19/2021.2 board acceptance, and 2025.2 implementation resources remain attributed to their respective versions. This source audit does not reassign experimental results."
+  }
+}

@@ -1,5 +1,7 @@
 # 设计报告
 
+报告已于 **2026-11-04** 完成事实复检：明确 Zynq-7100 / XC7Z100-2FFG900I 与 **V19（v19boot）** 代码版本，逐项核对算法名称；[核对记录](design_report/事实复检记录_20261104.md)随 PDF 和 LaTeX 源码归档。
+
 项目中文名：区域相位运动放大与微振检测。
 
 正式报告入口为 [26 页设计报告 PDF](design_report/report_competition_review.pdf)，配套 [LaTeX 源码与编译说明](design_report/README.md) 已归档。原先位于本页的早期材料整理说明已由完整报告替代，项目介绍、系统结构、算法、资源和实验内容以该报告为阅读入口。

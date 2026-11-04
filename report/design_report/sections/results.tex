@@ -2,7 +2,7 @@
 \label{sec:results}
 
 \subsection{整体介绍}
-作品已搭建由Zynq开发板、OV9281相机、HDMI显示器和串口屏组成的实验系统，如图\ref{fig:system-photo}所示。相机安装在可调支架上，对准扬声器膜片；开发板完成图像处理与控制，HDMI显示器呈现视频结果，串口屏提供参数设置和启停操作。实验仪器用于产生和观察激励信号。系统采用现成板卡和外围设备，设计重点为图像算法的FPGA实现及采集、处理、显示和控制的联调。
+作品已搭建由OS-ZYNQ7100开发板、OV9281相机、HDMI显示器和串口屏组成的实验系统，如图\ref{fig:system-photo}所示。相机安装在可调支架上，对准扬声器膜片；开发板完成图像处理与控制，HDMI显示器呈现视频结果，串口屏提供参数设置和启停操作。实验仪器用于产生和观察激励信号。系统采用现成板卡和外围设备，设计重点为图像算法的FPGA实现及采集、处理、显示和控制的联调。
 
 \reportfig{system-overview.png}{0.82}{系统实验布置实物照片，包含被测扬声器、相机、开发板、串口屏、显示器及实验仪器。}{fig:system-photo}
 
@@ -20,7 +20,7 @@
 
 \subsection{特性成果}
 \subsubsection{测试环境与版本说明}
-实验以扬声器为被测对象，检测固定ROI内的运动，并展示整帧相位运动放大结果。本节按测试版本列出板级运行结果、启动结果及Vivado~2025.2构建结果，见表\ref{tab:evidence-versions}。各项测试的原始数据和日志可通过仓库证据索引查阅\cite{repo}。
+本文代码版本为V19（\texttt{v19boot}），整理后的工程固定于提交\texttt{a9ab041021c2}；2021.2与2025.2表示AMD工具版本。实验以扬声器为被测对象，检测固定ROI内的运动，并展示整帧相位运动放大结果。本节按测试版本列出板级运行结果、启动结果及Vivado~2025.2构建结果，见表\ref{tab:evidence-versions}。各项测试的原始数据和日志可通过仓库证据索引查阅\cite{repo}。
 
 \begin{table}[htbp]
 \centering\small
@@ -273,9 +273,9 @@ UART短包停留FIFO & RX触发阈值设为1，中断内排空FIFO & 对应主�
 
 \subsubsection{工程复现与材料组织}
 \label{sec:reproduction}
-项目源码仓库为\url{https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier}，包含RTL、HLS与PS源码、构建脚本和验证记录。配套发布附件及使用方法见仓库README。完整演示视频与文件哈希见\path{media/video_manifest.json}；作者AI协作总结见\path{report/ai_logs/author_collaboration_summary_20261103.md}。本次报告修订与资料包见\path{report/design_report/PUBLICATION_NOTE.md}，资料通过\texttt{materials-20261103}发布入口获取。
+项目源码仓库为\url{https://github.com/cuijiaxin269-svg/FPGA_Visual_amplifier}，包含RTL、HLS与PS源码、构建脚本和验证记录。配套发布附件及使用方法见仓库README。完整演示视频与文件哈希见\path{media/video_manifest.json}；作者AI协作总结见\path{report/ai_logs/author_collaboration_summary_20261103.md}。11月3日配套资料的发布说明见\path{report/design_report/PUBLICATION_NOTE.md}，资料通过\texttt{materials-20261103}发布入口获取。
 
-报告对应的2025.2基线为提交\texttt{a9ab041021c2}，完整提交号及文件哈希保存在配套清单中。已核对该提交的825项硬件输入、58项主机测试输入、6项频谱RTL验证输入和43项固件输入，均与构建记录的SHA256一致。重建原版工程时在独立目录检出该提交，并使用对应的位流、XSA、初始化文件和固件。该提交用于固定工程源码，11月3日新增的验收、黄金参考、屏端与硬件、视频及AI总结随当前资料版本提供；两者分别记录版本和哈希。
+报告对应的代码基线为V19（\texttt{v19boot}）整理版，固定于提交\texttt{a9ab041021c2}；资源与时序来自该基线的Vivado~2025.2重新构建。完整提交号及文件哈希保存在配套清单中。已核对该提交的825项硬件输入、58项主机测试输入、6项频谱RTL验证输入和43项固件输入，均与构建记录的SHA256一致。重建原版工程时在独立目录检出该提交，并使用对应的位流、XSA、初始化文件和固件。该提交用于固定工程源码，11月3日新增的验收、黄金参考、屏端与硬件、视频及AI总结随当前资料版本提供；两者分别记录版本和哈希。
 
 构建环境为Windows、AMD~2025.2工具、Python~3及包含标准头文件与库的C++工具链。硬件重建采用归档的导出IP；软件、仿真与硬件输出分别写入独立目录，保留各阶段结果。表\ref{tab:reproduction}列出执行顺序、入口和通过判据，命令参数及路径配置见仓库README和构建说明\cite{repo}。
 
