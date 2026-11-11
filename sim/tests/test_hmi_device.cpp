@@ -41,7 +41,10 @@ static void drained(){
  busy=0;spectrum.roi_busy=spectrum.fft_busy=spectrum.reset_pending=spectrum.sample_pending=spectrum.window.due=0;
  enabled=0;mailbox.status=3;test_motion_tm[1]=3;stop_requested=1;motion60_hmi_completed(0);
 }
-int main(){
+#ifndef HMI_DEVICE_TEST_MAIN
+#define HMI_DEVICE_TEST_MAIN main
+#endif
+int HMI_DEVICE_TEST_MAIN(){
  CHECK(debounce_test()==0);cold();
  const char *query="get page0.mode.val";
  for(unsigned i=0;query[i];i++)hmi_probe.command[i]=(uint8_t)query[i];

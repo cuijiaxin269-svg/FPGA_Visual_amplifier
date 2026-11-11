@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T17:32:25.091218+08:00",
+  "generated_at": "2026-11-11T18:38:12.543673+08:00",
   "baseline": "a9ab041021c269b446be4e5aa00ae3141f01ec8d",
   "files": [
     {
@@ -20,8 +20,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5931,
-      "sha256": "6651bd2ca8c4d9aa03a7794168d6813ff68ab6a8fb6c58d1e705bb00a05f649d",
+      "bytes": 6393,
+      "sha256": "61bcd31aa9bcf7d7c7c020fc72e7fa04180c3403291cd61b3ef647fdf15dcb89",
       "source": null,
       "source_sha256": null,
       "adapted": false
@@ -20524,8 +20524,8 @@
     },
     {
       "path": "build/scripts/build_hardware.tcl",
-      "bytes": 6571,
-      "sha256": "dd3be2143ea273c21e67a8bd0651e5b15c4b566011e9c1a2515de7527b3e0a9d",
+      "bytes": 7819,
+      "sha256": "21dcf69412640bc65bb047ce591e3f683a716c20f3a0f36591c7cbfc88d7b5e0",
       "source": "vision/v18hmi/scripts/build_standalone.tcl",
       "source_sha256": "de36c8c21ec856f2652d77a83baf21d1e3489b1957e4cb4c1ed942e348452985",
       "adapted": true
@@ -20556,8 +20556,8 @@
     },
     {
       "path": "build/scripts/create_project.tcl",
-      "bytes": 8259,
-      "sha256": "009168160edbe14edf94ddadbf8ba772ccb2e5eb15161a28fcf45c4a3acd4049",
+      "bytes": 8876,
+      "sha256": "c1fc2f8c8382602d0daca57be224923fbfb67236f65e7cf4968d448e7df3822f",
       "source": "vision/v19boot/scripts/create_standalone_qspi.tcl",
       "source_sha256": "6e8a7bb0a442652bba7027ccdbd2574c72a93f32125446c5326c76e9ccf3e5ed",
       "adapted": true
@@ -20672,6 +20672,14 @@
       "sha256": "84a8004f8f2678b7dcead28cb3d3a0f44b3a3f338883ce910d383e9c335e848b",
       "source": "vision/ab12/scripts/preserve_motion60_fifo_address.py",
       "source_sha256": "84a8004f8f2678b7dcead28cb3d3a0f44b3a3f338883ce910d383e9c335e848b",
+      "adapted": false
+    },
+    {
+      "path": "build/scripts/validate_roi_design.tcl",
+      "bytes": 3468,
+      "sha256": "af6e0ded44ef828212be023e5f648899be0aa11441d306e78e18b9e80c88c62a",
+      "source": null,
+      "source_sha256": null,
       "adapted": false
     },
     {
@@ -22643,6 +22651,22 @@
       "sha256": "15c30f925201a9039a59fd71afa1d712b8e84aa9e8bff381958ba8735c249893"
     },
     {
+      "path": "report/roi_hmi_protocol.md",
+      "bytes": 14351,
+      "sha256": "0c09d90831ff3a1e0cd105aae5ee2f512fdc35f29fcda0aeae96a9a71525bab2",
+      "source": null,
+      "source_sha256": null,
+      "adapted": false
+    },
+    {
+      "path": "report/square_roi_implementation.md",
+      "bytes": 6490,
+      "sha256": "98189f4739ff56c24132d1676a003bb6d41d4a7cf578519ea3b5e6d632dac735",
+      "source": null,
+      "source_sha256": null,
+      "adapted": false
+    },
+    {
       "path": "report/submission_gaps.md",
       "bytes": 1296,
       "sha256": "f382b3ec72a95b495772603048270f810dd11610eaaefb3d315e4b7b296f1749",
@@ -22662,6 +22686,14 @@
       "path": "report/validation_receipt_check.json",
       "bytes": 659,
       "sha256": "87b6297c0005f5ef828286bc6094ebc9c5db4594cdfd81ee0ca9c9a46b175203",
+      "source": null,
+      "source_sha256": null,
+      "adapted": false
+    },
+    {
+      "path": "report/方框振动放大串口使用说明.md",
+      "bytes": 7380,
+      "sha256": "dc2daf6cef15599cc9024ca15bd63143dc08161e778c89a957704cf86ae5f259",
       "source": null,
       "source_sha256": null,
       "adapted": false
@@ -23044,8 +23076,16 @@
     },
     {
       "path": "sim/scripts/run_host_tests.py",
-      "bytes": 3952,
-      "sha256": "9d5625bf921839edd8b249d042fd6b0c16ae4ae666af361e923ef3fb2d154b07",
+      "bytes": 3990,
+      "sha256": "5494596ba355be236509d2c50c1901bcd03603231706ef71bf198e664c298188",
+      "source": null,
+      "source_sha256": null,
+      "adapted": false
+    },
+    {
+      "path": "sim/scripts/run_roi_rtl.py",
+      "bytes": 5487,
+      "sha256": "b2cb8658d4c96078f33a9050e25aa411059e7d7188a37ea37e96e573df9306b3",
       "source": null,
       "source_sha256": null,
       "adapted": false
@@ -23068,26 +23108,34 @@
     },
     {
       "path": "sim/tests/reference_spectrum_overlay.v",
-      "bytes": 8702,
-      "sha256": "894ef83902cf6ccc0a26fda3696c934cf2f3080d28282e8fb9bae1fa647c9297",
+      "bytes": 8797,
+      "sha256": "9c078ef402d004f9224a28d1fa3ec12597fb018f0215586b9b0d1ed1cc276eed",
       "source": "vision/v19boot/sim/reference_spectrum_overlay.v",
       "source_sha256": "894ef83902cf6ccc0a26fda3696c934cf2f3080d28282e8fb9bae1fa647c9297",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "sim/tests/tb_border_alignment.sv",
-      "bytes": 2641,
-      "sha256": "51b4b808efd9da5d57c96e71008a1482b9540b15c38a478ef1f44439a597fa04",
+      "bytes": 2545,
+      "sha256": "62e9bd37cc4936c852919f1008c1aa6ffe03ad214e03b47e25a2badfe243f098",
       "source": "vision/v19boot/sim/tb_border_alignment.sv",
       "source_sha256": "51b4b808efd9da5d57c96e71008a1482b9540b15c38a478ef1f44439a597fa04",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "sim/tests/tb_roi_border.sv",
-      "bytes": 2142,
-      "sha256": "321833eca1601110c5810f2b22e65351f3c2929e2e281217feb3d5a487da7610",
+      "bytes": 2088,
+      "sha256": "308ba3e084ed7f182566945414fcf6fb3b0cf3116382db2e748ddad24130da40",
       "source": "vision/v19boot/sim/tb_roi_border.sv",
       "source_sha256": "321833eca1601110c5810f2b22e65351f3c2929e2e281217feb3d5a487da7610",
+      "adapted": true
+    },
+    {
+      "path": "sim/tests/tb_roi_compose.sv",
+      "bytes": 11941,
+      "sha256": "2f251a3b19191864e6f6bada8308f4bbf86b5fe0052835dc313a5721b3531858",
+      "source": null,
+      "source_sha256": null,
       "adapted": false
     },
     {
@@ -23100,8 +23148,8 @@
     },
     {
       "path": "sim/tests/tb_spectrum_ui.sv",
-      "bytes": 3839,
-      "sha256": "2e52c02b6280b51c36ba41a85e652918c25dc7a7243592b974a6d8fb3caca50c",
+      "bytes": 4271,
+      "sha256": "dfe241254128ed445413d637d05dc63f77ce64897ed8a3575869f1c25341d5f4",
       "source": "vision/v19boot/sim/tb_spectrum_ui.sv",
       "source_sha256": "25767488d4edb540ecb5e7400180771b47320fb45a1a18249633f329a5e4d35d",
       "adapted": true
@@ -23124,16 +23172,16 @@
     },
     {
       "path": "sim/tests/test_hmi_device.cpp",
-      "bytes": 6365,
-      "sha256": "47bdb4e5a39c3d0be39bd4b546685c0a82321d7704e5b126ae1f38dd02b5a7b0",
+      "bytes": 6451,
+      "sha256": "8dd8fd8b552a3ff1736ea737b177158657d072832c68eb4dbed0af047ca02c9d",
       "source": "vision/v19boot/sim/test_hmi_device.cpp",
       "source_sha256": "47bdb4e5a39c3d0be39bd4b546685c0a82321d7704e5b126ae1f38dd02b5a7b0",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "sim/tests/test_hmi_protocol.cpp",
-      "bytes": 4436,
-      "sha256": "77c39b564431871a1a1571125efb8830ba114ce7b18cb3c001cb76a81f2b62fa",
+      "bytes": 9194,
+      "sha256": "02268ec2f9c1af9324f5d6b0e10ff8868543bf320b99e3be93e6414cc4713c1e",
       "source": "vision/v19boot/sim/test_hmi_protocol.cpp",
       "source_sha256": "17d1d8e57ce7245fc5c8655782d57fbe713a7bbd06087593e5688c34ec015624",
       "adapted": true
@@ -23161,6 +23209,14 @@
       "source": "vision/v19boot/sim/test_motion60_scheduler.cpp",
       "source_sha256": "0789e0ed21140b3c8b836c2741a7f2273b3e2aed5550d9f1929c6933e5123991",
       "adapted": true
+    },
+    {
+      "path": "sim/tests/test_roi_scheduler.cpp",
+      "bytes": 8937,
+      "sha256": "3d8d22bea6379d5f53760d7d732fa07033e9374e3b68554f46a8eccc2bf56dd0",
+      "source": null,
+      "source_sha256": null,
+      "adapted": false
     },
     {
       "path": "sim/tests/test_spectrum_ui.cpp",
@@ -23236,8 +23292,8 @@
     },
     {
       "path": "src/bd/capture_qspi_bd.tcl",
-      "bytes": 62256,
-      "sha256": "e760e152aa73ac2ada5e563dce0b045aa05ee42c7a69b2d5eda8af2a0526789f",
+      "bytes": 63614,
+      "sha256": "209744f53fb8331c0f9c26b43e38577e9c7515e73b04ee3e680dfada9007ce4f",
       "source": "vision/v19boot/project/capture_qspi_bd.tcl",
       "source_sha256": "b5f076a4071588aa96e008b5390102a6ce8ef814ce825b689205a423982aacbd",
       "adapted": true
@@ -29876,11 +29932,11 @@
     },
     {
       "path": "src/ps/hmi_device.h",
-      "bytes": 446,
-      "sha256": "26c6085cb922889174572d66c20f883875d7c27d2a09bfc27a8d447c26f8fe1e",
+      "bytes": 603,
+      "sha256": "eedc62ee32445c19d19c4cd7610509f91abcef0030357d221c4daeafbdffb0fe",
       "source": "vision/v19boot/sw/hmi_device.h",
       "source_sha256": "26c6085cb922889174572d66c20f883875d7c27d2a09bfc27a8d447c26f8fe1e",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/ps/hmi_diagnostics.h",
@@ -29892,35 +29948,35 @@
     },
     {
       "path": "src/ps/hmi_link.c",
-      "bytes": 5436,
-      "sha256": "9f65d157bf988ea9b87cced23ad6b522f00aab8fee8aa6950b4eb789dfdf80e8",
+      "bytes": 6939,
+      "sha256": "c76fa35abed126943aab9e61d7fef3f87e9b4c66ea235bf76dc642beb785ade6",
       "source": "vision/v19boot/sw/hmi_link.c",
       "source_sha256": "9f65d157bf988ea9b87cced23ad6b522f00aab8fee8aa6950b4eb789dfdf80e8",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/ps/hmi_link.h",
-      "bytes": 718,
-      "sha256": "c983ec2da2464d89ac991322edd9d6bb6919f8eb6ff5b7e9a734a06de0c3aa93",
+      "bytes": 869,
+      "sha256": "0f396b9ffaf6e596755f7fefbc4853d2d9c5ce65c41c2db7c24b5d67f081a96f",
       "source": "vision/v19boot/sw/hmi_link.h",
       "source_sha256": "c983ec2da2464d89ac991322edd9d6bb6919f8eb6ff5b7e9a734a06de0c3aa93",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/ps/hmi_protocol.c",
-      "bytes": 3636,
-      "sha256": "bd318e3da3a8d9e93fb2cb07163b89b11a8b387106f0e310fc7562eb6b3ca4a1",
+      "bytes": 4747,
+      "sha256": "7743c58b0cc8ee012bfcb3f90b35887e4df7e585e4eb4040c418c1ebc2225feb",
       "source": "vision/v19boot/sw/hmi_protocol.c",
       "source_sha256": "bd318e3da3a8d9e93fb2cb07163b89b11a8b387106f0e310fc7562eb6b3ca4a1",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/ps/hmi_protocol.h",
-      "bytes": 1152,
-      "sha256": "2097c8dbab4d0cca9b4dcc274248e36509b78ce8379f607693e2d59c66d13647",
+      "bytes": 1538,
+      "sha256": "6fb448af264ffdeca0d56492f0a7a5c93cc44263725a7d869df4f523f7803860",
       "source": "vision/v19boot/sw/hmi_protocol.h",
       "source_sha256": "2097c8dbab4d0cca9b4dcc274248e36509b78ce8379f607693e2d59c66d13647",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/ps/hmi_uart.c",
@@ -29948,11 +30004,11 @@
     },
     {
       "path": "src/ps/main.c",
-      "bytes": 32689,
-      "sha256": "1432c214880de913bfdc1ed03fcaee07498bdf075d3195fc8759b25489b999be",
+      "bytes": 32940,
+      "sha256": "81ddaa9ffc8b7da6d646357498f3f6cbcd6babc3dd7a8f1d8f083b55b6cd80b6",
       "source": "vision/v19boot/sw/main.c",
       "source_sha256": "1432c214880de913bfdc1ed03fcaee07498bdf075d3195fc8759b25489b999be",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/ps/mode_button.h",
@@ -29964,19 +30020,19 @@
     },
     {
       "path": "src/ps/motion60.c",
-      "bytes": 37203,
-      "sha256": "c2cc3f8b093262cd22d0fa0d7d01b87dadca25534a8b366318b3ffc297ca2679",
+      "bytes": 40140,
+      "sha256": "c5d279da40975d04793f543ceb654f235f44617bd41ae4e0fe3a8418cbdc6c4d",
       "source": "vision/v19boot/sw/motion60.c",
       "source_sha256": "c2cc3f8b093262cd22d0fa0d7d01b87dadca25534a8b366318b3ffc297ca2679",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/ps/motion60.h",
-      "bytes": 383,
-      "sha256": "1ddb871a3863b93e988deb0d55acb59d64bf35bb7fa6a74cffb734437d6a28c2",
+      "bytes": 410,
+      "sha256": "47cae1750006cac9bbf79f6a40e97f6508a22d0efdc1972d06c71476df81007a",
       "source": "vision/v19boot/sw/motion60.h",
       "source_sha256": "1ddb871a3863b93e988deb0d55acb59d64bf35bb7fa6a74cffb734437d6a28c2",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/ps/motion60_camera.h",
@@ -30108,11 +30164,11 @@
     },
     {
       "path": "src/ps/motion60_hmi.inc",
-      "bytes": 10276,
-      "sha256": "31e535156c2f87b9645ecaff8108d21ff283581f1fbcda59e44dc1163bbb8b44",
+      "bytes": 11693,
+      "sha256": "2bea188959d5baaad7fd08f0df5d1f51be890b5fca5c1a88c94079de1c0a915c",
       "source": "vision/v19boot/sw/motion60_hmi.inc",
       "source_sha256": "31e535156c2f87b9645ecaff8108d21ff283581f1fbcda59e44dc1163bbb8b44",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/ps/motion60_math_runtime.c",
@@ -30120,6 +30176,14 @@
       "sha256": "1b1151c6414de8682dd63e30b03729d5cd2bf3d26b0b368b1e1a2dac60500644",
       "source": "vision/v19boot/sw/motion60_math_runtime.c",
       "source_sha256": "1b1151c6414de8682dd63e30b03729d5cd2bf3d26b0b368b1e1a2dac60500644",
+      "adapted": false
+    },
+    {
+      "path": "src/ps/motion60_roi.inc",
+      "bytes": 5449,
+      "sha256": "57356993c7deb7790b230ab863dc652397826acdca9c9c9999a38636c27a61d5",
+      "source": null,
+      "source_sha256": null,
       "adapted": false
     },
     {
@@ -30148,27 +30212,27 @@
     },
     {
       "path": "src/ps/motion60_spectrum_pl_driver.c",
-      "bytes": 6309,
-      "sha256": "bfd918c6e84abbe0ac844a2deac15597b915ec2131b630c070081b715f2f627f",
+      "bytes": 6442,
+      "sha256": "1c3ce0f17cf92ddc5a304cccca5307eda6f5cc7f5731aa3bba6ae1a26d6d360c",
       "source": "vision/v19boot/sw/motion60_spectrum_pl_driver.c",
       "source_sha256": "bfd918c6e84abbe0ac844a2deac15597b915ec2131b630c070081b715f2f627f",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/ps/motion60_spectrum_window.c",
-      "bytes": 2175,
-      "sha256": "8831e9e0051b1d37dd90e77b84a5d5e070f8d7a67784dfc773329a82a8d0a1e0",
+      "bytes": 2128,
+      "sha256": "0f339983447fdec2eb85005bd8eabbb6bfb2995237bab044e29d04a7cf38745b",
       "source": "vision/v19boot/sw/motion60_spectrum_window.c",
       "source_sha256": "8831e9e0051b1d37dd90e77b84a5d5e070f8d7a67784dfc773329a82a8d0a1e0",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/ps/motion60_spectrum_window.h",
-      "bytes": 942,
-      "sha256": "0940cf5d9d844dff84d2de3799620f11df55dc3d12d746e32e29454c4126d4b5",
+      "bytes": 1004,
+      "sha256": "a636d83bae5c6d84d04fb9c2954a43e32137d4cae3930c0b7f91234bd13d7ba9",
       "source": "vision/v19boot/sw/motion60_spectrum_window.h",
       "source_sha256": "0940cf5d9d844dff84d2de3799620f11df55dc3d12d746e32e29454c4126d4b5",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/ps/ov9281.c",
@@ -30307,12 +30371,20 @@
       "adapted": false
     },
     {
+      "path": "src/rtl/motion60_roi_compose.v",
+      "bytes": 12954,
+      "sha256": "56afab6b2b3e550ce057482c1d6bf832d850ef51f3c3c660ae26efdc083749a6",
+      "source": null,
+      "source_sha256": null,
+      "adapted": false
+    },
+    {
       "path": "src/rtl/motion60_spectrum_overlay.v",
-      "bytes": 10658,
-      "sha256": "1681f7ae88e9ba7d9321fe9dc6e5120e708b533ec07721c40aa698c0f3630493",
+      "bytes": 10830,
+      "sha256": "f0488845d1272307662e19a37096b9b161b4a4d3cfceeba7b6531c4338dbedab",
       "source": "vision/v19boot/rtl/motion60_spectrum_overlay.v",
       "source_sha256": "1681f7ae88e9ba7d9321fe9dc6e5120e708b533ec07721c40aa698c0f3630493",
-      "adapted": false
+      "adapted": true
     },
     {
       "path": "src/rtl/motion60_video.v",

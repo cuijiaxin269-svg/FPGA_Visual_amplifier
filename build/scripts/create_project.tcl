@@ -1,6 +1,11 @@
 # Generated from the actual b18hw file list; custom inputs verified byte-for-byte.
 set root [file normalize [file join [file dirname [info script]] ../..]]
-if {$argc!=1} {error "Usage: fresh-project-directory"}
+if {$argc < 1 || $argc > 2} {error "Usage: fresh-project-directory ?validate-only?"}
+set validate_only 0
+if {$argc == 2} {
+    if {[lindex $argv 1] ne "validate-only"} {error "Unknown project creation mode"}
+    set validate_only 1
+}
 set destination [file normalize [lindex $argv 0]]
 if {[file exists $destination]} {error "Preserve existing destination"}
 if {![string match "2025.2*" [version -short]]} {error "Vivado 2025.2 required"}
@@ -29,6 +34,11 @@ set_property USED_IN_SYNTHESIS true [get_files $f]
 set_property USED_IN_IMPLEMENTATION true [get_files $f]
 set_property USED_IN_SIMULATION true [get_files $f]
 set f [file join $root {src/rtl/motion60_overlay_control.v}]
+add_files -fileset sources_1 -norecurse $f
+set_property USED_IN_SYNTHESIS true [get_files $f]
+set_property USED_IN_IMPLEMENTATION true [get_files $f]
+set_property USED_IN_SIMULATION true [get_files $f]
+set f [file join $root {src/rtl/motion60_roi_compose.v}]
 add_files -fileset sources_1 -norecurse $f
 set_property USED_IN_SYNTHESIS true [get_files $f]
 set_property USED_IN_IMPLEMENTATION true [get_files $f]
@@ -143,8 +153,14 @@ set_property USED_IN_IMPLEMENTATION true [get_files $f]
 source [file join $root src bd capture_qspi_bd.tcl]
 if {![info exists bCheckIPsPassed] || !$bCheckIPsPassed || [llength [get_bd_cells -quiet csi]]!=1 || [llength [get_bd_cells -quiet ps]]!=1} {error "Incomplete block design"}
 validate_bd_design
+source [file join $root build scripts validate_roi_design.tcl]
 save_bd_design
 report_ip_status -file [file join $destination ip_status.txt]
+if {$validate_only} {
+    puts ROI_PROJECT_VALIDATED_WITHOUT_SYNTHESIS
+    close_project
+    exit
+}
 generate_target all [get_files capture.bd]
 add_files -norecurse [make_wrapper -files [get_files capture.bd] -top]
 set_property top capture_wrapper [current_fileset]

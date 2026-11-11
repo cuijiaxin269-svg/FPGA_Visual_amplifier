@@ -29,10 +29,7 @@ module tb_border_alignment;
   for(n=0;n<HT*VT+4;n=n+1)begin
    @(posedge clk);
    expected=brgb;ehs=bhs;evs=bvs;ede=bde;
-   if(previous_valid && bde && px>=510&&px<770&&py>=270&&py<530 &&
-      !(px>=512&&px<768&&py>=272&&py<528))begin
-    expected=24'hff0000;red_count=red_count+1;
-   end
+   // With the spectrum panel disabled, the complete viewport is unchanged.
    if(ready!==base_ready)$fatal(1,"stream backpressure changed");
    #1;
    if(rgb!==expect1||{hs,vs,de}!==sync1)
@@ -43,7 +40,7 @@ module tb_border_alignment;
    @(negedge clk);px=sx;py=sy;previous_valid=1;
    if(sx==HT-1)begin sx=0;sy=(sy==VT-1)?0:sy+1;end else sx=sx+1;
   end
-  if(red_count!=2064||underflows!=0||framing!=0)$fatal(1,"count/error red=%0d underflows=%0d framing=%0d",red_count,underflows,framing);
+  if(red_count!=0||underflows!=0||framing!=0)$fatal(1,"count/error red=%0d underflows=%0d framing=%0d",red_count,underflows,framing);
   $display("BORDER_WRAPPER_ALIGNMENT_PASSED full_1080p_frame=1 red_pixels=%0d backpressure_unchanged=1 overlay_latency=3",red_count);
   $finish;
  end

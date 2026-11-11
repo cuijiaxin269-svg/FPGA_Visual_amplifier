@@ -1,10 +1,17 @@
 if {![string match "2025.2*" [version -short]]} {error "Vivado 2025.2 required"}
 set root [file normalize [file join [file dirname [info script]] ../..]]
-if {!$argc} {error "Usage: project.xpr ?restart-impl?"}
+if {!$argc} {error "Usage: project.xpr ?restart-impl|restart-unstarted|resume-synth?"}
 set project [file normalize [lindex $argv 0]]
 set argv [lrange $argv 1 end];incr argc -1
+if {$argc > 1 || ($argc && [lindex $argv 0] ni {restart-impl restart-unstarted resume-synth})} {error "Unknown build mode"}
+set build_jobs 2
+if {[info exists ::env(FPGA_BUILD_JOBS)]} {
+ set build_jobs $::env(FPGA_BUILD_JOBS)
+ if {![string is integer -strict $build_jobs] || $build_jobs < 1 || $build_jobs > 16} {error "FPGA_BUILD_JOBS must be an integer in 1..16"}
+}
+puts "FPGA_BUILD_JOBS $build_jobs"
 set report_root [file join [file dirname $project] reports];file mkdir $report_root
-set_param general.maxThreads 2
+set_param general.maxThreads $build_jobs
 open_project $project
 # save_project_as retains this user-disable property under the old absolute
 # path. Rebind it to the actual copied IP, as in the original v14 build.
@@ -28,8 +35,25 @@ if {$argc && [lindex $argv 0] eq "restart-unstarted"} {
  # checkpoint existed in this attempt; reset the queued run states normally.
  reset_runs [get_runs -filter {IS_SYNTHESIS == 1}]
 }
+if {$argc && [lindex $argv 0] eq "resume-synth"} {
+ # Use only after the previous owned Vivado process tree has stopped. Preserve
+ # current completed checkpoints, and clear interrupted/queued run states.
+ set incomplete {}
+ set preserved {}
+ foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
+  if {[get_property PROGRESS $run] eq "100%" && ![get_property NEEDS_REFRESH $run]} {
+   lappend preserved $run
+  } else {lappend incomplete $run}
+ }
+ puts "FPGA_RESUME_PRESERVED_RUNS $preserved"
+ puts "FPGA_RESUME_RESET_RUNS $incomplete"
+ if {[llength $incomplete]} {reset_runs $incomplete}
+ foreach run $preserved {
+  if {[get_property PROGRESS $run] ne "100%" || [get_property NEEDS_REFRESH $run]} {error "Resume invalidated completed run: $run"}
+ }
+}
 if {!$argc || [lindex $argv 0] ne "restart-impl"} {
- launch_runs synth_1 -jobs 2
+ launch_runs synth_1 -jobs $build_jobs
  wait_on_run synth_1
 }
 if {[get_property PROGRESS [get_runs synth_1]] ne "100%"} {error "Button synthesis failed"}
@@ -50,7 +74,7 @@ set_property AUTO_INCREMENTAL_CHECKPOINT 0 [get_runs impl_1]
 set_property STEPS.INIT_DESIGN.TCL.POST [file join $root build scripts check_button_preopt.tcl] [get_runs impl_1]
 set_property STEPS.POST_ROUTE_PHYS_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
 set_property STEPS.POST_ROUTE_PHYS_OPT_DESIGN.ARGS.DIRECTIVE AggressiveExplore [get_runs impl_1]
-launch_runs impl_1 -to_step {phys_opt_design (Post-Route)} -jobs 2
+launch_runs impl_1 -to_step {phys_opt_design (Post-Route)} -jobs $build_jobs
 wait_on_run impl_1
 if {[get_property PROGRESS [get_runs impl_1]] ne "100%"} {error "Button implementation failed"}
 open_run impl_1
@@ -88,7 +112,7 @@ set all_hs [get_ports {dphy_clk_hs_p dphy_clk_hs_n dphy_data_hs_p[*] dphy_data_h
 if {[llength $all_hs]!=6} {error "Camera HS ports missing"}
 foreach port $all_hs {if {[get_property DIFF_TERM $port]} {error "Camera has external termination"}}
 close_design
-launch_runs impl_1 -to_step write_bitstream -jobs 2
+launch_runs impl_1 -to_step write_bitstream -jobs $build_jobs
 wait_on_run impl_1
 if {[get_property PROGRESS [get_runs impl_1]] ne "100%"} {error "Bitstream failed"}
 open_run impl_1

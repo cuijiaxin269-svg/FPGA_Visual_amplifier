@@ -175,7 +175,9 @@ module motion60_spectrum_overlay #(parameter ROI_X=512,ROI_Y=272,ROI_SIZE=256,RO
   end else begin
    s1_bank<=active_bank;s1_payload<=payload;s1_high<=byte_high;s1_character<=character;
    s1_text<=text_on&&gx<10&&gy<14;s1_bit<=6'd34-({3'b0,gy[3:1]}<<2)-{3'b0,gy[3:1]}-{3'b0,gx[3:1]};
-   s1_background<=background;s1_ink<=ink;s1_roi<=de_in&&roi_outer&&!roi_inner;
+   // The fixed red square belongs to the spectrum panel (VIEW 2). The local
+   // magnification outline is already composed into the image independently.
+   s1_background<=background;s1_ink<=ink;s1_roi<=de_in&&enable_active&&roi_outer&&!roi_inner;
    s1_plot<=plot;s1_level<=level;s1_half<=x[1];s1_needle<=!x[1];
    s1_hs<=hsync_in;s1_vs<=vsync_in;s1_de<=de_in;
    s2_glyph<=font(decoded);s2_bit<=s1_bit;s2_background<=plot_background;s2_ink<=s1_ink;

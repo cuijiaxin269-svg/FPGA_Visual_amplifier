@@ -97,6 +97,8 @@ static unsigned spectrum_has_work(void){return 0;}
 #define DISPLAY 0x43100000u
 #define OUT_BASE 0x11000000u
 #define UART 0xe0000000u
+#define LIVE_FRAME_LIMIT_TICKS 8000000u
+#define ROI_FRAME_LIMIT_TICKS 12000000u
 // Readable via JTAG without halting CPU; no overlap with capture mailbox.
 #ifdef MOTION60_TEST_IO
 extern volatile uint32_t test_motion_tm[32];
@@ -106,9 +108,11 @@ static volatile uint32_t *const tm=(volatile uint32_t *)(uintptr_t)0x00ff1000u;
 #endif
 static unsigned enabled,busy,first=1,display_started,in_slot,out_slot,last_slot=3;
 static unsigned last_events,stop_requested,config_pending,line_discard;
+static unsigned live_stride=1,observed_events;
 // HLS ap_done is clear-on-read. Latch it while the parallel ROI still owns input.
 static unsigned motion_done;
 static uint64_t started;
+#include "motion60_roi.inc"
 static char line[96],tx[512];static unsigned line_n,tx_r,tx_w;
 static void serial_poll(void);
 #ifdef MOTION60_BUTTON
@@ -310,8 +314,8 @@ static float root(float x){float y=x>1?x:1;for(unsigned i=0;i<14;i++)y=.5f*(y+x/
 static float sine(float x){float term=x,sum=x;for(unsigned i=1;i<9;i++){term*=(-x*x)/(float)((2*i)*(2*i+1));sum+=term;}return sum;}
 static float cosine(float x){float term=1,sum=1;for(unsigned i=1;i<10;i++){term*=(-x*x)/(float)((2*i-1)*(2*i));sum+=term;}return sum;}
 static void config(void){
- // Baseline sensor's measured sampling rate; display is independently 60Hz.
- const float fps=60.379777f;
+ // Match the temporal filter to the frames actually fed to HLS.
+ const float fps=60.379777f/(float)live_stride;
  // Division preserves integer endpoints (notably ALPHA 30). Multiplication
  // by rounded .001f produced 30.0000019 and tripped the HLS alpha<=30 gate.
  float lo=(float)lo_milli/1000.0f,hi=(float)hi_milli/1000.0f,f0=root(lo*hi),q=f0/(hi-lo);
@@ -454,7 +458,13 @@ static void command(void){
  }
 #endif
  if(equal(args[0],"BAND")&&count==3){unsigned lo=decimal(args[1],&ok),hi=decimal(args[2],&ok);
-  if(ok&&lo>=500&&lo<hi&&hi<=20000){lo_milli=lo;hi_milli=hi;config_pending=1;say("OK BAND pending frame boundary\r\n");return;}}
+  if(ok&&lo>=500&&lo<hi&&hi<=20000){
+   if(roi_target.config.enable&&hi>ROI_BAND_MAX_MILLIHZ){
+    say("ERROR MAGROI requires BAND high <= 15 Hz\r\n");return;
+   }
+   lo_milli=lo;hi_milli=hi;config_pending=1;say("OK BAND pending frame boundary\r\n");return;
+  }
+ }
  else if(equal(args[0],"ALPHA")&&count==2){unsigned a=decimal(args[1],&ok);
   if(ok&&a<=50000){alpha_milli=a;config_pending=1;
 #ifdef MOTION60_HMI
@@ -502,6 +512,22 @@ static int display_start(unsigned slot,unsigned base){
  wr(DISPLAY+0x28,slot);wr(DISPLAY,0x00011001u);wr(DISPLAY+0x50,HEIGHT);
  display_started=1;return 0;
 }
+static int motion60_publish_frame(void){
+ uint64_t completed=timer_ticks();
+ motion_roi_publish();
+ if(display_started)wr(DISPLAY+0x28,out_slot);
+ else{
+  int error=display_start(out_slot,OUT_BASE);
+  if(error)return error;
+ }
+ busy=0;first=0;
+ if(!tm[2]){tm[16]=(uint32_t)completed;tm[17]=(uint32_t)(completed>>32);}
+ tm[18]=(uint32_t)completed;tm[19]=(uint32_t)(completed>>32);
+ tm[2]++;
+ tm[3]=(uint32_t)((completed-started)/400u);
+ if(tm[3]>tm[4])tm[4]=tm[3];
+ return 0;
+}
 static void display_poll(void){
  if(!display_started)return;
  uint32_t status=rd(DISPLAY+4);tm[13]=status;
@@ -510,6 +536,7 @@ static void display_poll(void){
   if(!tm[23]){tm[24]=(uint32_t)now;tm[25]=(uint32_t)(now>>32);}
   tm[26]=(uint32_t)now;tm[27]=(uint32_t)(now>>32);tm[23]++;
  }
+ motion_roi_display_poll((status&0x1000u)!=0);
 }
 int motion60_prepare_reset(void){
  // STOP holds the last picture by leaving MM2S scanning. Before a subsequent
@@ -523,6 +550,8 @@ int motion60_prepare_reset(void){
  return 0;
 }
 void motion60_init(void){
+ live_stride=1;observed_events=0;
+ motion_roi_init();
 #ifdef MOTION60_BUTTON
  // Keep the camera SCCB bits intact. EMIO3 is exclusively a key input.
  wr(BUTTON_GPIO_OEN,rd(BUTTON_GPIO_OEN)&~8u);
@@ -563,6 +592,9 @@ void motion60_begin(void){
 #endif
  // Acquisition warm-up resets all PL. Restore HLS registers AFTER that reset.
  busy=0;motion_done=0;first=1;display_started=0;last_slot=3;last_events=0;
+ live_stride=enabled==1&&roi_target.config.enable?2u:1u;
+ observed_events=0;
+ motion_roi_begin();
 #ifdef MOTION60_SPECTRUM
  spectrum_active=0;
 #endif
@@ -607,13 +639,28 @@ void motion60_begin(void){
  motion60_hmi_started();
 #endif
 }
+static unsigned motion60_job_limit(void){
+ return roi_job.config.enable?ROI_FRAME_LIMIT_TICKS:LIVE_FRAME_LIMIT_TICKS;
+}
+static int motion60_check_live_job(unsigned write_slot){
+ if(!busy)return 0;
+ uint64_t elapsed=timer_ticks()-started;
+ if(write_slot<3&&write_slot!=in_slot&&elapsed<=motion60_job_limit())return 0;
+ spectrum_invalidate();
+ enabled=0;tm[5]=101;tm[6]=(uint32_t)(elapsed/400u);
+ return -101;
+}
 void motion60_drain_poll(void){
 #ifdef MOTION60_CLIP
  if(clip_active)return;
 #endif
- if(!busy)return;
+ if(!busy||tm[1]!=2u||tm[5])return;
+ if(!(rd(VDMA_BASE+0x34)&1u)&&motion60_check_live_job((rd(VDMA_BASE+0x28)>>24)&31u))return;
  if(rd(HLS)&2u)motion_done=1;
  int error=spectrum_service();if(error)tm[5]=(unsigned)-error;
+ if(!tm[5]&&motion_done){
+  int result=motion_roi_service();if(result<0)tm[5]=(unsigned)-result;
+ }
 }
 int motion60_end(void){
  enabled=0;
@@ -625,24 +672,26 @@ int motion60_end(void){
   return clip.record.error?-(int)clip.record.error:0;
  }
 #endif
+ // A frame rejected during capture/composition must never be published by
+ // the later STOP drain just because its accelerators eventually complete.
+ if(tm[5])return -(int)tm[5];
  for(unsigned i=3;i<=8;i++)if(mailbox.stats[i]){spectrum_invalidate();tm[5]=106;return -106;}
  if(mailbox.stats[13]&2u){spectrum_invalidate();tm[5]=106;return -106;}
  if(busy){
-  uint64_t deadline=timer_ticks()+8000000u;
-  while(!motion_done||spectrum_owns_input()){
+  uint64_t deadline=timer_ticks()+motion60_job_limit();
+  int composed=0;
+  while(!motion_done||spectrum_owns_input()||!composed){
    if(rd(HLS)&2u)motion_done=1;
    int error=spectrum_service();if(error){tm[5]=(unsigned)-error;return error;}
+   composed=motion_roi_service();
+   if(composed<0){tm[5]=(unsigned)-composed;return composed;}
    if(timer_ticks()>deadline){spectrum_invalidate();tm[5]=101;return -101;}
   }
 #ifdef MOTION60_PL_OFFLINE
   if(rd(HLS+0x84)){spectrum_invalidate();tm[5]=174;return -174;}
 #endif
-  busy=0;uint64_t completed=timer_ticks();
-  if(!tm[2]){tm[16]=(uint32_t)completed;tm[17]=(uint32_t)(completed>>32);}
-  tm[18]=(uint32_t)completed;tm[19]=(uint32_t)(completed>>32);
-  tm[2]++;first=0;
-  if(display_started)wr(DISPLAY+0x28,out_slot);
-  else{int e=display_start(out_slot,OUT_BASE);if(e)return e;}
+  int error=motion60_publish_frame();
+  if(error)return error;
  }
 #ifdef MOTION60_PL_SPECTRUM
  // Drain pending ROI ingest/reset/transform before a subsequent capture can
@@ -655,7 +704,33 @@ int motion60_end(void){
 #endif
  tm[1]=3;return 0;
 }
+void motion60_abort(void){
+#ifdef MOTION60_CLIP
+ if(clip_active)return;
+#endif
+ enabled=0;
+ if(tm[1]!=2u)return;
+ // Keep START blocked until the failed job can no longer touch DDR.
+ tm[1]=4;busy=1;
+ motion_roi_reset_display();
+}
+static void motion60_abort_poll(void){
+ if(tm[1]!=4u||!busy)return;
+#ifdef MOTION60_CLIP
+ if(clip_active)return;
+#endif
+ if(!(rd(VDMA_BASE+0x34)&1u)||(rd(HLS)&0x85u)!=4u)return;
+ if(roi_started&&(rd(MAGROI_BASE+4)&1u))return;
+#ifdef MOTION60_SPECTRUM
+ if(spectrum_active&&((rd(SPECTRUM_ROI_BASE)&0x85u)!=4u||
+                     (rd(SPECTRUM_FFT_BASE)&0x85u)!=4u))return;
+ spectrum_active=0;
+#endif
+ motion_done=0;busy=0;
+}
 void motion60_idle(void){
+ display_poll();
+ motion60_abort_poll();
 #ifdef MOTION60_CLIP
  if(clip_active){
   if(clip_play_pending){
@@ -742,8 +817,11 @@ int motion60_tick(unsigned events){
  for(unsigned i=3;i<=8;i++)if(mailbox.stats[i]){spectrum_invalidate();enabled=0;tm[5]=106;return -106;}
  if(mailbox.stats[13]&2u){spectrum_invalidate();enabled=0;tm[5]=106;return -106;}
  unsigned write_slot=(rd(VDMA_BASE+0x28)>>24)&31u;
- if(enabled!=2 && busy && ((timer_ticks()-started)>8000000u||write_slot==in_slot)){
-  spectrum_invalidate();enabled=0;tm[5]=101;tm[6]=(uint32_t)((timer_ticks()-started)/400u);return -101;
+ unsigned fresh_event=events!=observed_events;
+ observed_events=events;
+ if(enabled!=2){
+  int error=motion60_check_live_job(write_slot);
+  if(error)return error;
  }
  // Normal STOP uses capture's frame-boundary shutdown/drain path. Check
  // CRC, ownership and existing video errors before accepting that request.
@@ -767,38 +845,53 @@ int motion60_tick(unsigned events){
  }
  {int error=spectrum_service();if(error){spectrum_invalidate();enabled=0;tm[5]=(unsigned)-error;return error;}}
  if(busy){
-  uint32_t hs=rd(HLS);uint32_t us=(uint32_t)((timer_ticks()-started)/400u);
+  uint32_t hs=rd(HLS);
   if(hs&2u)motion_done=1;
-  if(motion_done&&!spectrum_owns_input()){
+  int composed=motion_roi_service();
+  if(composed<0){spectrum_invalidate();enabled=0;tm[5]=(unsigned)-composed;return composed;}
+  if(motion_done&&composed&&!spectrum_owns_input()){
 #ifdef MOTION60_PL_OFFLINE
    if(rd(HLS+0x84)){spectrum_invalidate();enabled=0;tm[5]=174;return -174;}
 #endif
-   busy=0;uint64_t completed=timer_ticks();
-   if(!tm[2]){tm[16]=(uint32_t)completed;tm[17]=(uint32_t)(completed>>32);}
-   tm[18]=(uint32_t)completed;tm[19]=(uint32_t)(completed>>32);
-   tm[2]++;tm[3]=us;if(us>tm[4])tm[4]=us;first=0;
-   if(!display_started){int e=display_start(out_slot,OUT_BASE);if(e)return e;}
-   else wr(DISPLAY+0x28,out_slot);
+   if(roi_job.config.enable){
+    int error=motion60_check_live_job((rd(VDMA_BASE+0x28)>>24)&31u);
+    if(error)return error;
+   }
+   int error=motion60_publish_frame();
+   if(error)return error;
   }
  }
  if(!busy && events>=3 && events!=last_events && write_slot<3){
+  unsigned stride=roi_target.config.enable?2u:1u;
+  // Start ROI work on a fresh capture event. A delayed launch would
+  // spend part of the source slot's lifetime waiting in the scheduler.
+  if((stride==2u&&!(events&1u))||((stride==2u||stride!=live_stride)&&!fresh_event))return 0;
   unsigned slot=(write_slot+2)%3;
   if(slot==last_slot)return 0;
-  if(last_slot<3 && (slot!=(last_slot+1)%3 || events-last_events!=1)){first=1;tm[7]++;}
-  if(config_pending)config();
   unsigned park=display_started?rd(DISPLAY+0x28):0;
   unsigned active=(park>>16)&31u,pending=park&31u;
   out_slot=0;while(out_slot<3 && display_started && (out_slot==active||out_slot==pending))out_slot++;
   if(out_slot==3)return 0;
+  if(stride!=live_stride){
+   live_stride=stride;
+   config_pending=1;
+  }else if(last_slot<3&&(slot!=(last_slot+stride)%3||events-last_events!=stride)){
+   first=1;tm[7]++;
+  }
+  if(config_pending)config();
   wr(HLS+0x10,FRAME0+slot*FRAME_SPACING);wr(HLS+0x14,0);
   wr(HLS+0x1c,OUT_BASE+out_slot*FRAME_SPACING);wr(HLS+0x20,0);
   wr(HLS+0x74,first);in_slot=slot;last_slot=slot;last_events=events;
   tm[20]=mailbox.stats[1];tm[21]=slot;tm[22]=out_slot;
   started=timer_ticks();motion_done=0;
+  motion_roi_job_begin(events);
 #ifdef MOTION60_SPECTRUM
   if(spectrum_active){
-   spectrum_ui_clock(&spectrum.ui,mailbox.stats[1],(uint64_t)mailbox.stats[11]|((uint64_t)mailbox.stats[12]<<32));
-   int error=motion_spectrum_frame_start(&spectrum,FRAME0+slot*FRAME_SPACING,events,first,started);
+   spectrum.window.sample_millihz=MOTION_SPECTRUM_CAPTURE_MILLIHZ/live_stride;
+   spectrum_ui_clock(&spectrum.ui,mailbox.stats[1]/live_stride,
+                     (uint64_t)mailbox.stats[11]|((uint64_t)mailbox.stats[12]<<32));
+   int error=motion_spectrum_frame_start(&spectrum,FRAME0+slot*FRAME_SPACING,
+                                         events/live_stride,first,started);
    if(error){spectrum_invalidate();enabled=0;tm[5]=(unsigned)-error;return error;}
   }
 #endif

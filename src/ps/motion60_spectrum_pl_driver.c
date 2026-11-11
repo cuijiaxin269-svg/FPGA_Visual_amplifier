@@ -24,6 +24,7 @@ int motion_spectrum_driver_init(motion_spectrum_driver*s,motion_spectrum_io io){
  volatile unsigned char *clear=(volatile unsigned char*)s;
  for(unsigned i=0;i<sizeof(*s);i++)clear[i]=0;
  s->io=io;if(!io.read||!io.write)return fail(s,120);
+ s->window.sample_millihz=MOTION_SPECTRUM_CAPTURE_MILLIHZ;
  if(read32(s,SPECTRUM_OSD_BASE)!=0x4f534432u)return fail(s,121);
  s->x=512;s->y=272;s->enable=1;s->dirty=1;
  motion_spectrum_invalidate(s,0);
@@ -87,7 +88,12 @@ int motion_spectrum_poll(motion_spectrum_driver*s,uint64_t now){
     s->valid_samples++;s->roi_first=0;
     if(count<256)state(s,0);
     else if(previous<256){s->window.due=1;s->window.phase=0;}
-    else{s->window.phase+=5000;if(s->window.phase>=60380){s->window.phase-=60380;s->window.due=1;}}
+    else{
+     s->window.phase+=5000;
+     if(s->window.phase>=s->window.sample_millihz){
+      s->window.phase-=s->window.sample_millihz;s->window.due=1;
+     }
+    }
    }else if(s->pl_operation==2){
     if(read32(s,SPECTRUM_FFT_BASE+PL_COUNT)!=256||read32(s,SPECTRUM_FFT_BASE+PL_LAST)!=s->snapshot.last_sequence)return fail(s,134);
     // Freeze display readout ownership; bounded postprocessing runs below.

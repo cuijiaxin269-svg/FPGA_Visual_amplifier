@@ -178,6 +178,7 @@ capture_csi_core\
 full_hdmi_health\
 full_hdmi_observe\
 motion60_overlay_control\
+motion60_roi_compose\
 hdmi_1080_clock\
 pixel_reset_guard\
 sccb_bridge\
@@ -315,7 +316,7 @@ proc create_root_design { parentCell } {
   # Create instance: ctrl_intercon, and set properties
   set ctrl_intercon [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ctrl_intercon ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {10} \
+   CONFIG.NUM_MI {11} \
    CONFIG.NUM_SI {1} \
  ] $ctrl_intercon
 
@@ -433,7 +434,7 @@ proc create_root_design { parentCell } {
   set mem [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 mem ]
   set_property -dict [ list \
    CONFIG.NUM_MI {1} \
-   CONFIG.NUM_SI {9} \
+   CONFIG.NUM_SI {10} \
    CONFIG.S01_HAS_DATA_FIFO {2} \
    CONFIG.S02_HAS_DATA_FIFO {2} \
    CONFIG.S03_HAS_DATA_FIFO {2} \
@@ -446,6 +447,10 @@ proc create_root_design { parentCell } {
 
   # Create instance: motion, and set properties
   set motion [ create_bd_cell -type ip -vlnv xilinx.com:hls:motion60_shared:1.0 motion ]
+
+  # Compose a square motion ROI in a held DDR output frame. The sealed motion
+  # accelerator and the existing single-stream HDMI path remain unchanged.
+  set roi_compose [create_bd_cell -type module -reference motion60_roi_compose roi_compose]
 
   # Create instance: observe_health_vio, and set properties
   set observe_health_vio [ create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 observe_health_vio ]
@@ -907,6 +912,8 @@ unassigned#qspi0_ss_b#qspi0_io[0]#qspi0_io[1]#qspi0_io[2]#qspi0_io[3]/HOLD_B#qsp
   connect_bd_intf_net -intf_net ctrl_intercon_M07_AXI [get_bd_intf_pins ctrl_intercon/M07_AXI] [get_bd_intf_pins overlay_cdc/S_AXI]
   connect_bd_intf_net -intf_net ctrl_intercon_M08_AXI [get_bd_intf_pins clip_dma/s_axi_control] [get_bd_intf_pins ctrl_intercon/M08_AXI]
   connect_bd_intf_net -intf_net ctrl_intercon_M09_AXI [get_bd_intf_pins ctrl_intercon/M09_AXI] [get_bd_intf_pins f/s_axi_control]
+  connect_bd_intf_net -intf_net ctrl_intercon_M10_AXI [get_bd_intf_pins ctrl_intercon/M10_AXI] [get_bd_intf_pins roi_compose/S_AXI]
+  connect_bd_intf_net -intf_net roi_compose_M_AXI [get_bd_intf_pins roi_compose/M_AXI] [get_bd_intf_pins mem/S09_AXI]
   connect_bd_intf_net -intf_net display_cdc_M_AXIS [get_bd_intf_pins display_cdc/M_AXIS] [get_bd_intf_pins video/S_AXIS]
   connect_bd_intf_net -intf_net display_dma_M_AXIS_MM2S [get_bd_intf_pins display_cdc/S_AXIS] [get_bd_intf_pins display_dma/M_AXIS_MM2S]
   connect_bd_intf_net -intf_net display_dma_M_AXI_MM2S [get_bd_intf_pins display_dma/M_AXI_MM2S] [get_bd_intf_pins display_mem/S00_AXI]
@@ -1020,7 +1027,14 @@ unassigned#qspi0_ss_b#qspi0_io[0]#qspi0_io[1]#qspi0_io[2]#qspi0_io[3]/HOLD_B#qsp
   connect_bd_net -net video_write_ready [get_bd_pins overlay_control/write_ready] [get_bd_pins video/write_ready]
   connect_bd_net -net zero_dout [get_bd_pins pixel_reset/aux_reset_in] [get_bd_pins pixel_reset/mb_debug_sys_rst] [get_bd_pins r100/aux_reset_in] [get_bd_pins r100/mb_debug_sys_rst] [get_bd_pins r150/aux_reset_in] [get_bd_pins r150/mb_debug_sys_rst] [get_bd_pins r200/aux_reset_in] [get_bd_pins r200/mb_debug_sys_rst] [get_bd_pins zero/dout]
 
-  # Create address segments
+  # The new control endpoint and DDR master share FCLK1 (150 MHz). The control
+  # interconnect supplies the existing GP0-to-FCLK1 clock conversion.
+  connect_bd_net [get_bd_pins ps/FCLK_CLK1] [get_bd_pins ctrl_intercon/M10_ACLK] [get_bd_pins mem/S09_ACLK] [get_bd_pins roi_compose/aclk]
+  connect_bd_net [get_bd_pins r150/peripheral_aresetn] [get_bd_pins ctrl_intercon/M10_ARESETN] [get_bd_pins mem/S09_ARESETN] [get_bd_pins roi_compose/aresetn]
+
+  # Create address segments. 0x43c50000 belongs to the offline temporal IP.
+  assign_bd_address -offset 0x43C60000 -range 0x00001000 -target_address_space [get_bd_addr_spaces ps/Data] [get_bd_addr_segs roi_compose/S_AXI/reg0] -force
+  assign_bd_address -offset 0x00000000 -range 0x40000000 -target_address_space [get_bd_addr_spaces roi_compose/M_AXI] [get_bd_addr_segs ps/S_AXI_HP0/HP0_DDR_LOWOCM] -force
   assign_bd_address -offset 0x00000000 -range 0x40000000 -target_address_space [get_bd_addr_spaces clip_dma/Data_m_axi_input_mem] [get_bd_addr_segs ps/S_AXI_HP0/HP0_DDR_LOWOCM] -force
   assign_bd_address -offset 0x00000000 -range 0x40000000 -target_address_space [get_bd_addr_spaces clip_dma/Data_m_axi_output_mem] [get_bd_addr_segs ps/S_AXI_HP0/HP0_DDR_LOWOCM] -force
   assign_bd_address -offset 0x00000000 -range 0x40000000 -target_address_space [get_bd_addr_spaces display_dma/Data_MM2S] [get_bd_addr_segs ps/S_AXI_HP1/HP1_DDR_LOWOCM] -force

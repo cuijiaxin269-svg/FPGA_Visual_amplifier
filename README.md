@@ -2,9 +2,13 @@
 
 基于 OS-ZYNQ7100 开发板（主芯片 Zynq-7100 / `XC7Z100-2FFG900I`，Vivado 目标 `xc7z100ffg900-2`） 的区域相位运动放大与微振检测系统，包含 OV9281 图像采集、PL 图像处理与频谱分析、HDMI 1080p30 显示，以及 PS 裸机串口屏和实体按键交互。
 
-**项目状态：整机已上板，系统可正常使用。** 作者已确认其他交付内容完成；最新演示视频和本人 AI 协作摘要已补充归档。本轮 HLS 阶段结果和最终实现状态见[专门记录](report/hls_regeneration_20261103/README.md)，待补验范围见[当前清单](report/submission_gaps.md)。
+## 方形选区版本
 
-本仓库保留 `a9ab041` 对应的原版工程；后续算法改进和方形选区工程不纳入公开版本。源码以 `v19boot` 为整理起点，构建资料同时保留历史 2021.2 与 2025.2 重新构建的版本信息。
+本分支增加串口控制的方形局部振动放大。框内显示运动放大结果，框外保留同帧原画。相机内容区为 1280×800，HDMI 输出时序为 1920×1080、30 Hz。
+
+已在 Zynq 7100 上完成 QSPI 固化、重新上电启动，以及 COM8 控制的方框移动、改大小和 α 调节。JTAG 回读验证了框外像素与原画一致。使用步骤见[串口使用说明](report/方框振动放大串口使用说明.md)，实现与验证范围见[方形选区实现说明](report/square_roi_implementation.md)。
+
+以下项目资料、演示视频和既有发布附件对应比赛提交版。源码以 `v19boot` 为整理起点，构建资料保留历史 2021.2 和 2025.2 的版本信息。
 
 ## 项目资料
 
@@ -33,7 +37,7 @@
 
 ## 环境与复现
 
-已使用 Windows、AMD unified tools 2025.2 和 Python 3 完成构建。2025.2 记录包括 71 个 IP、综合、布局布线和 BIT/XSA/LTX 导出；WNS +0.177 ns、WHS +0.010 ns，详见[硬件报告](build/reports/vivado_2025_2/README.md)。主机测试使用 AMD 安装内附的 MinGW 工具链。
+方形选区版使用 Windows、AMD unified tools 2025.2 和 Python 3 构建。完整硬件构建包含 75 个 IP、综合、布局布线和 BIT/XSA/LTX 导出，WNS +0.091 ns、WHS +0.009 ns。主机测试使用 AMD 安装内附的 MinGW 工具链。
 
 从仓库根目录执行以下命令，并将工具安装路径改为本机实际位置。输出放到仓库外的新目录：
 
@@ -48,20 +52,23 @@ $env:TEMP = Join-Path $outputRoot 'tmp'
 $env:TMP = $env:TEMP
 New-Item -ItemType Directory -Force $env:TEMP | Out-Null
 
-python sim/scripts/run_host_tests.py --cxx $cxx --output "$outputRoot/host"
+py -3 sim/scripts/run_host_tests.py --cxx $cxx --output "$outputRoot/host" --report-dir "$outputRoot/host/reports"
 if ($LASTEXITCODE -ne 0) { throw 'Host tests failed; inspect the result receipt.' }
-python build/scripts/build_firmware.py --tool-root $amdRoot --output "$outputRoot/firmware"
+py -3 build/scripts/build_firmware.py --tool-root $amdRoot --output "$outputRoot/firmware" --report-dir "$outputRoot/firmware/reports"
 if ($LASTEXITCODE -ne 0) { throw 'ARM firmware build failed; inspect the result receipt.' }
-python sim/scripts/run_spectrum_rtl.py --cxx $cxx --vivado-root "$amdRoot/Vivado" --output "$outputRoot/rtl_sim"
+py -3 sim/scripts/run_spectrum_rtl.py --cxx $cxx --vivado-root "$amdRoot/Vivado" --output "$outputRoot/rtl_sim" --report-dir "$outputRoot/rtl_sim/reports"
 if ($LASTEXITCODE -ne 0) { throw 'Spectrum RTL comparison failed; inspect the result receipt.' }
+py -3 sim/scripts/run_roi_rtl.py --vivado-root "$amdRoot/Vivado" --output "$outputRoot/roi_sim"
+if ($LASTEXITCODE -ne 0) { throw 'ROI RTL simulation failed; inspect the result receipt.' }
 
+$env:FPGA_BUILD_JOBS = '1'
 & "$repoRoot/build/scripts/build_hardware.ps1" -Vivado $vivado -BuildDirectory "$outputRoot/hardware"
 
-python build/scripts/build_boot.py --tool-root $amdRoot `
+py -3 build/scripts/build_boot.py --tool-root $amdRoot `
     --xsa "$outputRoot/hardware/artifacts/capture.xsa" `
     --bit "$outputRoot/hardware/artifacts/capture.bit" `
     --app "$outputRoot/firmware/motion60.elf" `
-    --app-receipt 'build/reports/firmware_2025_2/result.json' `
+    --app-receipt "$outputRoot/firmware/reports/result.json" `
     --output "$outputRoot/boot"
 if ($LASTEXITCODE -ne 0) { throw 'Boot package failed; inspect its reports/result.json.' }
 ```

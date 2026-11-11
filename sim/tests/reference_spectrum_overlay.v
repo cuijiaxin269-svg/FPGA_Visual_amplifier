@@ -146,7 +146,8 @@ module reference_spectrum_overlay #(parameter ROI_X=512,ROI_Y=272,ROI_SIZE=256,R
    glyph=font(character);
    if(text_on&&gx<10&&gy<14&&glyph[34-(gy>>1)*5-(gx>>1)])composed=ink;
   end
-  if(de_in&&roi_outer&&!roi_inner)composed=24'hff0000;
+  // Intentional UI contract update: the measurement box follows panel enable.
+  if(de_in&&enable_active&&roi_outer&&!roi_inner)composed=24'hff0000;
  end
  always @(posedge pixel_clk)begin
   if(!resetn)begin

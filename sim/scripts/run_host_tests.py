@@ -26,7 +26,7 @@ def main():
         save_receipt()
         scheduler=['motion60_clip_record.c','motion60_clip_driver.c','motion60_clip_pl.c','motion60_clip_playback.c','motion60_spectrum_pl_driver.c']
         common=['hmi_protocol.c','hmi_link.c']
-        tests={'test_hmi_protocol':common,'test_hmi_device':common+scheduler,'test_hmi_uart':common,'test_mode_button':scheduler,'test_alpha50_controls':scheduler,'test_border_controls':scheduler,'test_spectrum_ui':[],'test_stability':[]}
+        tests={'test_hmi_protocol':common,'test_hmi_device':common+scheduler,'test_roi_scheduler':common+scheduler,'test_hmi_uart':common,'test_mode_button':scheduler,'test_alpha50_controls':scheduler,'test_border_controls':scheduler,'test_spectrum_ui':[],'test_stability':[]}
         for name,extra in tests.items():
             exe=out/(name+('.exe' if os.name=='nt' else ''))
             cmd=[cxx,'-std=c++14','-O2','-Wall','-Wextra','-Werror','-D_Static_assert=static_assert','-DMOTION60_PL_SPECTRUM',str(repo/'sim/tests'/f'{name}.cpp')]+[str(repo/'src/ps'/s) for s in extra]+['-o',str(exe)]

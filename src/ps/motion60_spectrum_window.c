@@ -1,13 +1,12 @@
 #include "motion60_spectrum_window.h"
-// 60.380 samples/s, 5 publications/s. Rational scheduling alternates 12/13
-// samples; it does not decimate the underlying motion measurements.
-#define SAMPLE_MILLIHZ 60380u
+// Publish at 5 Hz using the scheduler's nominal input sampling rate.
 #define REFRESH_MILLIHZ 5000u
 void motion_spectrum_window_reset(motion_spectrum_window *w){
  w->head=0;w->count=0;w->have_sequence=0;w->last_sequence=0;
  w->phase=0;w->due=0;w->epoch++;
 }
 void motion_spectrum_window_init(motion_spectrum_window *w){
+ w->sample_millihz=MOTION_SPECTRUM_CAPTURE_MILLIHZ;
  w->epoch=0;motion_spectrum_window_reset(w);
 }
 static int finite_motion(float v){
@@ -28,7 +27,7 @@ int motion_spectrum_window_push(motion_spectrum_window *w,float dx,float dy,
  }else{
   // Bounded modulo accumulator even if a consumer is stalled indefinitely.
   w->phase+=REFRESH_MILLIHZ;
-  if(w->phase>=SAMPLE_MILLIHZ){w->phase-=SAMPLE_MILLIHZ;w->due=1;}
+  if(w->phase>=w->sample_millihz){w->phase-=w->sample_millihz;w->due=1;}
  }
  return 1;
 }

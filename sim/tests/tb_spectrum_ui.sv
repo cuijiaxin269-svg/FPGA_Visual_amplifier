@@ -72,6 +72,13 @@ module tb_spectrum_ui;
   settle;if(out===24'h6ef0b0)$fatal(1,"stale peak in low texture");
   @(negedge clk);de=0;x=510;y=270;hs=1;
   settle;if(out!==rgb||deo||!ho)$fatal(1,"blanking/sync alignment changed");
-  $display("SPECTRA_RTL_PASSED packet_integrity=1 roi=1 invalid_clear=1 watchdog=1 sync=1 pixel_equivalence=1 latency=3");$finish;
+  // A pending panel-off request must not remove its box before the swap.
+  @(negedge clk);de=1;hs=0;en=0;
+  settle;if(out!==24'hff0000)$fatal(1,"uncommitted panel disable removed ROI");
+  for(i=0;i<256;i++)sendword(i);
+  publish;settle;if(out!==rgb)$fatal(1,"disabled spectrum left a fixed ROI box");
+  @(negedge clk);x=1396;y=334;
+  settle;if(out!==rgb)$fatal(1,"disabled spectrum altered panel pixels");
+  $display("SPECTRA_RTL_PASSED packet_integrity=1 roi=1 invalid_clear=1 watchdog=1 sync=1 pixel_equivalence=1 panel_gates_roi=1 latency=3");$finish;
  end
 endmodule

@@ -29,6 +29,7 @@ static void hmi_diagnostics_publish(uint64_t ms){
  d[46]=mailbox.status;d[47]=mailbox.error;d[48]=tm[5];d[49]=tm[2];d[50]=tm[23];
  d[51]=spectrum.display_generation;d[52]=spectrum.displayed_enable;d[53]=tm[12];
  d[57]=hlink.last_number;d[58]=hlink.numeric_replies;d[59]=hmi_probe.completed;d[60]=hmi_probe.result;
+ d[61]=live_stride;d[62]=roi_last_us;d[63]=roi_max_us;
 #ifdef MOTION60_CAMERA_CONTROLS
  d[54]=CAMERA_CONTROL->revision;d[55]=CAMERA_CONTROL->applied_revision;d[56]=CAMERA_CONTROL->exposure_readback;
 #endif
@@ -52,12 +53,40 @@ static unsigned hclip_owns(void){
 #endif
 }
 static unsigned hidle(void){return !busy&&!spectrum_has_work()&&!mailbox.command&&mailbox.status!=2&&!hbooting;}
+static void hmi_roi_status(hmi_status value){
+ if(hdev.roi.status!=value){hdev.roi.status=value;hdev.roi.generation++;}
+}
+static void hmi_magroi_request(void*unused,const hmi_roi_request*r){
+ (void)unused;
+ if(!r->valid){hmi_roi_status(HMI_REJECTED);return;}
+ hdev.roi.seen=1;
+ if(hclip_owns()){hmi_roi_status(HMI_BUSY);return;}
+ int accepted=motion_roi_accept(&r->config);
+ if(accepted<0){hmi_roi_status(HMI_REJECTED);return;}
+ hdev.roi.target=roi_target.config;hdev.roi.generation++;
+ hmi_roi_status(mailbox.status==2&&enabled==1&&!stop_requested?HMI_WAIT:HMI_QUEUED);
+}
+static void hmi_roi_poll(void){
+ if(!hdev.roi.seen)return;
+ if(hdev.roi.applied_valid!=roi_actual_valid||
+    (roi_actual_valid&&!motion_roi_equal(&hdev.roi.actual,&roi_actual.config))){
+  hdev.roi.applied_valid=roi_actual_valid;
+  if(roi_actual_valid)hdev.roi.actual=roi_actual.config;
+  hdev.roi.generation++;
+ }
+ if(mailbox.error||tm[5]||roi_fault){hmi_roi_status(HMI_ERROR);return;}
+ if(hdev.roi.status==HMI_REJECTED||hdev.roi.status==HMI_BUSY)return;
+ if(roi_seen&&roi_actual_valid&&roi_actual.revision==roi_target.revision){
+  hmi_roi_status(HMI_APPLIED);
+ }else hmi_roi_status(mailbox.status==2&&enabled==1&&!stop_requested?HMI_WAIT:HMI_QUEUED);
+}
 static void hmi_device_init(void){
  unsigned char*p=(unsigned char*)&hdev;for(size_t i=0;i<sizeof(hdev);i++)p[i]=0;
  hdev.target[HMI_VIEW]=2;hdev.target[HMI_ALPHA]=alpha_milli/1000u;
  hdev.target[HMI_EXPOSURE]=mailbox.sensor_exposure_lines;
  hdev.status[HMI_VIEW]=HMI_QUEUED;hdev.status[HMI_ALPHA]=HMI_QUEUED;
  hdev.status[HMI_EXPOSURE]=HMI_QUEUED;hdev.status[HMI_RUN]=HMI_STOPPED;
+ hdev.roi.target=roi_target.config;hdev.roi.status=HMI_QUEUED;
  for(unsigned i=0;i<HMI_FIELDS;i++)hdev.generation[i]=1;
  hstart_pending=hswitch_pending=hbooting=hbutton_switch=0;hlast_mag=2;
  halpha_config=halpha_frame=0;hlink_next=0;hmi_ready=1;
@@ -143,6 +172,7 @@ void motion60_hmi_completed(int error){
 }
 void motion60_hmi_poll(void){
  if(!hmi_ready)return;
+ hmi_roi_poll();
 #ifdef MOTION60_CAMERA_CONTROLS
  if(CAMERA_CONTROL->applied_revision&&CAMERA_CONTROL->applied_revision==CAMERA_CONTROL->revision&&
     CAMERA_CONTROL->exposure_readback==hdev.target[HMI_EXPOSURE]){
@@ -183,6 +213,7 @@ void motion60_hmi_poll(void){
 static int hmi_transmit(void*c,const uint8_t*b,size_t n){(void)c;return hmi_uart_write(b,n);}
 static void hmi_app_init(void){
  hmi_device_init();hmi_link_init(&hlink,0,motion60_hmi_request,hmi_transmit);
+ hmi_link_set_roi_handler(&hlink,hmi_magroi_request);
 #ifndef MOTION60_TEST_IO
  hmi_uart_init();
 #endif

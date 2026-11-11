@@ -9,6 +9,7 @@ void motion60_begin(void);
 int motion60_prepare_reset(void);
 void motion60_drain_poll(void);
 int motion60_end(void);
+void motion60_abort(void);
 // 0: continue, 1: requested normal stop, negative: hardware/integrity fault.
 int motion60_tick(unsigned dma_events);
 #endif

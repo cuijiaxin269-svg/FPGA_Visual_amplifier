@@ -1,10 +1,34 @@
 #include "hmi_protocol.h"
 static int same(const char *a,const char *b){while(*a&&*a==*b){a++;b++;}return *a==*b;}
+/* Exactly five unsigned decimal fields, separated by one ASCII space. */
+static void parse_roi(hmi_parser*p,const char*arg){
+ hmi_roi_request r={{0,0,0,0,0},0};
+ uint32_t fields[5]={0,0,0,0,0};
+ const uint32_t limits[5]={65535u,1279u,799u,800u,1u};
+ unsigned valid=arg!=0;
+ for(unsigned i=0;valid&&i<5;i++){
+  if(*arg<'0'||*arg>'9'){valid=0;break;}
+  while(*arg>='0'&&*arg<='9'){
+   uint32_t digit=(uint32_t)(*arg-'0');
+   if(fields[i]>limits[i]/10u || (fields[i]==limits[i]/10u&&digit>limits[i]%10u)){valid=0;break;}
+   fields[i]=fields[i]*10u+digit;arg++;
+  }
+  if(!valid)break;
+  if(i<4){if(*arg!=' '){valid=0;break;}arg++;}
+  else if(*arg)valid=0;
+ }
+ r.config.seq=fields[0];r.config.x=fields[1];r.config.y=fields[2];
+ r.config.size=fields[3];r.config.enable=fields[4];
+ r.valid=valid&&r.config.size>0&&r.config.x<=1280u-r.config.size&&r.config.y<=800u-r.config.size;
+ if(r.valid)p->commands++;else p->rejected++;
+ if(p->roi_request)p->roi_request(p->context,&r);
+}
 static void parse(hmi_parser *p){
  hmi_request r={HMI_UNKNOWN,0,0};
  char *arg=0;unsigned n=0;
  while(p->line[n]&&p->line[n]!=' ')n++;
  if(p->line[n]){p->line[n]=0;arg=p->line+n+1;}
+ if(same(p->line,"MAGROI")){parse_roi(p,arg);return;}
  if(same(p->line,"VIEW"))r.operation=HMI_SET_VIEW;
  else if(same(p->line,"ALPHA"))r.operation=HMI_SET_ALPHA;
  else if(same(p->line,"EXPOSURE"))r.operation=HMI_SET_EXPOSURE;
@@ -41,6 +65,7 @@ void hmi_parser_init(hmi_parser*p,void*c,hmi_request_fn r,hmi_native_fn n){
  unsigned char *b=(unsigned char*)p;for(size_t i=0;i<sizeof(*p);i++)b[i]=0;
  p->context=c;p->request=r;p->native=n;
 }
+void hmi_parser_set_roi_handler(hmi_parser*p,hmi_roi_request_fn r){p->roi_request=r;}
 void hmi_parser_resync(hmi_parser*p){
  p->length=p->cr=p->native_length=p->native_expected=p->ff=0;p->discard=1;
 }

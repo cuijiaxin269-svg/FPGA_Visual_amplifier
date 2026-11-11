@@ -466,13 +466,23 @@ static int run_capture(int camera,int single){
  uint64_t end=timer_ticks()+(uint64_t)measurement_ms*400000u;
  while(continuous||timer_ticks()<end){
   uint32_t s=rd(VDMA_BASE+0x34);mailbox.dma_status=s;
-  if(s&0x4ff0u){if(camera)(void)sensor_write(addr,0x0100,0);set_control(0);(void)vdma_stop();return -15;}
+  if(s&0x4ff0u){
+#ifdef MOTION60_FIRMWARE
+   motion60_abort();
+#endif
+   if(camera)(void)sensor_write(addr,0x0100,0);
+   set_control(0);(void)vdma_stop();return -15;
+  }
   if(s&0x1000u){events++;wr(VDMA_BASE+0x34,0x1000);}
   snapshot();uint32_t seq=mailbox.stats[1];
 #ifdef MOTION60_FIRMWARE
   int motion_error=motion60_tick(events);
   if(motion_error==1)user_stopped=1;
-  else if(motion_error){if(camera)(void)sensor_write(addr,0x0100,0);set_control(0);(void)vdma_stop();return motion_error;}
+  else if(motion_error){
+   motion60_abort();
+   if(camera)(void)sensor_write(addr,0x0100,0);
+   set_control(0);(void)vdma_stop();return motion_error;
+  }
 #endif
   if(seq!=lastseq){
    if(lastseq && seq-lastseq!=1u)mailbox.sequence_gaps+=seq-lastseq-1u;
@@ -494,7 +504,9 @@ static int run_capture(int camera,int single){
 #ifdef MOTION60_FIRMWARE
  // vdma_stop polls in-flight completions. Finish the drain before the slow
  // SCCB/CSI shutdown; do not extend the capture window with a pre-stop drain.
- int motion_end_error=motion60_end();
+ int motion_end_error=0;
+ if(stop)motion60_abort();
+ else motion_end_error=motion60_end();
 #endif
  // PARK_PTR's current write slot resets to zero on HALTED. Preserve the
  // live value before stopping, otherwise a partially overwritten slot can
@@ -592,6 +604,9 @@ void main(void){
   }
   else e=-19;
   if(e){
+#ifdef MOTION60_FIRMWARE
+   if(cmd==1||cmd==2||cmd==4||cmd==7)motion60_abort();
+#endif
    if((cmd==3 || cmd==4 || cmd==5 || cmd==7) && mailbox.electrical_ok==0x9281u && mailbox.sensor_id==0x9281u)
     (void)sensor_write((uint8_t)mailbox.sensor_address,0x0100,0);
    set_control(0);

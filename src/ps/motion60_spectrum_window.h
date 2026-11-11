@@ -1,13 +1,14 @@
 #ifndef MOTION60_SPECTRUM_WINDOW_H
 #define MOTION60_SPECTRUM_WINDOW_H
 #include <stdint.h>
+#define MOTION_SPECTRUM_CAPTURE_MILLIHZ 60380u
 #ifdef __cplusplus
 extern "C" {
 #endif
 typedef struct {
  float xy[256][2];
  uint32_t head,count,last_sequence,have_sequence,epoch;
- uint32_t phase,due;
+ uint32_t phase,due,sample_millihz;
 } motion_spectrum_window;
 typedef struct {uint32_t first_sequence,last_sequence,epoch;} motion_spectrum_snapshot;
 void motion_spectrum_window_init(motion_spectrum_window *w);
